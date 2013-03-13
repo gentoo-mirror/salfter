@@ -1,0 +1,18 @@
+diff -ur '--exclude=.git' bitcoin/src/wallet.cpp bitcoin-nftf/src/wallet.cpp
+--- bitcoin/src/wallet.cpp	2012-11-27 12:03:27.189890168 -0800
++++ bitcoin-nftf/src/wallet.cpp	2012-11-27 12:04:54.488029382 -0800
+@@ -1244,8 +1244,13 @@
+ 
+                 // Check that enough fee is included
+                 int64 nPayFee = nTransactionFee * (1 + (int64)nBytes / 1000);
+-                bool fAllowFree = CTransaction::AllowFree(dPriority);
++                
++                //Bitcoin NFTF Patch - by ShadowOfHarbringer START
++
++                bool fAllowFree = true;
+                 int64 nMinFee = wtxNew.GetMinFee(1, fAllowFree, GMF_SEND);
++                //Bitcoin NFTF Patch - by ShadowOfHarbringer END
++                
+                 if (nFeeRet < max(nPayFee, nMinFee))
+                 {
+                     nFeeRet = max(nPayFee, nMinFee);

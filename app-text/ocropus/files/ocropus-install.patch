@@ -1,0 +1,11 @@
+--- ocropy/setup.py~	2013-03-07 11:10:07.000000000 -0800
++++ ocropy/setup.py	2013-03-08 07:30:10.311743578 -0800
+@@ -8,6 +8,8 @@
+ from distutils.core import setup, Extension, Command
+ from distutils.command.install_data import install_data
+ 
++import matplotlib
++matplotlib.use('Agg')
+ from ocrolib import default
+ modeldir = "models/"
+ modelfiles = default.installable

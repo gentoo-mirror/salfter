@@ -1,0 +1,11 @@
+--- makemkv_v1.6.4_oss/makefile.linux~	2011-02-14 15:33:07.000000000 -0800
++++ makemkv_v1.6.4_oss/makefile.linux	2011-02-14 15:33:30.586994909 -0800
+@@ -54,7 +54,7 @@
+ 	$(MAKEMKVGUI_SRC) $(MAKEMKVGUI_SRC_LINUX) $(MAKEMKVGUI_GEN) $(SSTRING_SRC) $(LIBDRIVEIO_SRC_PUB) \
+ 	-DHAVE_BUILDINFO_H -Itmp \
+ 	-I/usr/include/qt4 -I/usr/lib/qt4/include -L/usr/lib/qt4 -L/usr/lib/qt4/lib -lc -lstdc++ -lQtGui -lQtCore \
+-	-lpthread -lz -lrt
++	-lQtDBus -lpthread -lz -lrt
+ 
+ tmp/gen_buildinfo.h:
+ 	mkdir -p tmp
