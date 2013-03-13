@@ -1,0 +1,12 @@
+diff -ur LVM2.2.02.73.orig/scripts/lvm2create_initrd/lvm2create_initrd LVM2.2.02.73/scripts/lvm2create_initrd/lvm2create_initrd
+--- LVM2.2.02.73.orig/scripts/lvm2create_initrd/lvm2create_initrd	2012-02-02 09:05:37.698569105 -0800
++++ LVM2.2.02.73/scripts/lvm2create_initrd/lvm2create_initrd	2012-02-02 09:06:21.257634471 -0800
+@@ -388,7 +388,7 @@
+     RETCODE=$?
+     ;;
+ gentoo)
+-    (cd $TMPMNT/dev; /usr/sbin/MAKEDEV $OPT_Q $BASICDEVICES $BLOCKDEVICES)
++    (cd $TMPMNT/dev; /sbin/MAKEDEV $OPT_Q $BASICDEVICES $BLOCKDEVICES)
+     RETCODE=$?
+     ;;
+ *)

@@ -1,0 +1,13 @@
+diff -ur concerto-1.9.3-NoCAS/common/upload.php concerto-1.9.3-NoCAS-patched/common/upload.php
+--- concerto-1.9.3-NoCAS/common/upload.php	2011-10-14 12:49:47.303421687 -0700
++++ concerto-1.9.3-NoCAS-patched/common/upload.php	2011-10-14 12:50:03.213302656 -0700
+@@ -501,8 +501,7 @@
+ 		if(move_uploaded_file($this->content_i['tmp_name'], $temp_dest)){
+ 			$source = $temp_dest;
+ 			$target = $temp_dir . $this->user_id . "-" . time() . ".pdf";
+-			$command = COMMON_DIR . "scripts/DocumentConverter.py " . $source . " " . $target; //This command relies on open office
+-        		//echo $command;
++			$command = "/usr/lib/openoffice/program/python " . COMMON_DIR . "scripts/DocumentConverter.py " . $source . " " . $target; //This command relies on open office
+ 			exec($command, $output, $return);
+ 	        	//print_r($output); echo "RETURNING: $return..";
+ 			unlink($source);

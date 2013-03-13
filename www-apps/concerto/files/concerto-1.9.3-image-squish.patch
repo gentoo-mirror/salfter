@@ -1,0 +1,160 @@
+--- concerto-1.9.3-NoCAS/screen/image.php.orig	2011-10-14 07:07:41.460575229 -0700
++++ concerto-1.9.3-NoCAS/screen/image.php	2011-10-14 07:09:18.129981919 -0700
+@@ -30,5 +30,15 @@
+ 
+ error_reporting(0);
+ 
+-render('image',$_GET['file'], $_GET['width'], $_GET['height']);
++if ($_GET['stretch']!="")
++  $stretch=$_GET['stretch'];
++else
++  $stretch=false;
++
++if ($_GET['squish']!="")
++  $squish=$_GET['squish'];
++else
++  $squish=false;
++
++render('image',$_GET['file'], $_GET['width'], $_GET['height'], $stretch, $squish);
+ ?>
+--- concerto-1.9.3-NoCAS/screen/signage.js.orig	2010-11-29 11:59:13.000000000 -0800
++++ concerto-1.9.3-NoCAS/screen/signage.js	2011-10-14 10:49:36.052720799 -0700
+@@ -70,7 +70,8 @@
+                                     //create the background image
+                                     $("<img>")
+                                         .attr({"src": imgSrc,
+-                                               "alt": ""
++                                               "alt": "",
++                                               "id": "bkgndimg"
+                                         })
+                                         .css({"position": "absolute", 
+                                               "left": "0",
+@@ -133,6 +134,8 @@
+                                             });
+                                     } else if(json["mime_type"].match(/image/)){
+                                         var imgSrc = "image.php?file=" + escape(json["content"]) + "&width=" + field["width"] + "&height=" + field["height"];
++                                        if ((document.getElementById("bkgndimg").width==1280)&&(document.getElementById("bkgndimg").height==1024))
++                                            imgSrc+="&squish=1";
+                                         //load the image to cache
+                                         var img = new Image();
+                                         //set onload event handler
+@@ -143,7 +146,8 @@
+                                                 .css({"position": "absolute", 
+                         					          "opacity": "0.0",
+ 	                                                  "left": field["left"] + (field["width"] - img.width) / 2,
+-	                                                  "top": field["top"] + (field["height"] - img.height) / 2
++	                                                  "top": field["top"] + (field["height"] - img.height) / 2,
++                                                          "border": "0px"
+                                                 })
+                                                 .appendTo(document.body)
+                                                 .fadeGlobal(field["prevdiv"], function(){
+--- concerto-1.9.3-NoCAS/content/render/render.php.orig	2011-10-14 07:08:37.910228879 -0700
++++ concerto-1.9.3-NoCAS/content/render/render.php	2011-10-14 07:35:00.479377175 -0700
+@@ -24,7 +24,7 @@
+  * @version      $Revision: 712 $
+  */
+ 
+-function render($type, $filename, $width = false, $height = false, $stretch = false){
++function render($type, $filename, $width = false, $height = false, $stretch = false, $squish = false){
+ 	$fileinfo = split("\.", $filename);
+ 	if($type == 'image'){
+ 		$cache_path = IMAGE_DIR . 'cache/' . $fileinfo[0] . '_' . $width . '_' . $height . '.' . $fileinfo[1];
+@@ -66,7 +66,7 @@
+ 		} else { 
+ 			include_once(COMMON_DIR.'image.inc.php');
+ 			ob_start(); //Start a buffer to catch the image data
+-			$type = resize($path, $width, $height, $stretch); //If not, lets resize it.
++			$type = resize($path, $width, $height, $stretch, $squish); //If not, lets resize it.
+ 			$dat = ob_get_contents(); //Read the image data generated
+ 			$size = mb_strlen($dat);
+ 			header('Content-Length: ' . $size);
+--- concerto-1.9.3-NoCAS/common/image.inc.php.orig	2011-10-14 07:34:04.809760344 -0700
++++ concerto-1.9.3-NoCAS/common/image.inc.php	2011-10-14 10:04:13.441813233 -0700
+@@ -23,7 +23,7 @@
+  * @license      GPLv2, see www.gnu.org/licenses/gpl-2.0.html
+  * @version      $Revision: 712 $
+  */
+-function resize($filename, $new_width = false, $new_height = false, $stretch = false){
++function resize($filename, $new_width = false, $new_height = false, $stretch = false, $squish = false){
+     list($width, $height, $type_int) = getimagesize($filename);
+     if(!$stretch) {
+         if(!$new_width || !$new_height) {
+@@ -43,36 +43,52 @@
+         }
+     }
+ 
+-    $new_image = imagecreatetruecolor($new_width, $new_height);
+-    $image = @imagecreatefromjpeg($filename) or //Read JPEG
+-    $image = @imagecreatefrompng($filename) or //Read PNG
+-    $image = @imagecreatefromgif($filename) or //Read GIF
+-    $image = false;
++    if (!$squish) {
++      $new_image = imagecreatetruecolor($new_width, $new_height);
++      $image = @imagecreatefromjpeg($filename) or //Read JPEG
++      $image = @imagecreatefrompng($filename) or //Read PNG
++      $image = @imagecreatefromgif($filename) or //Read GIF
++      $image = false;
+ 
+-    $type = image_type_to_mime_type($type_int);
++      $type = image_type_to_mime_type($type_int);
+     
+-    //If the image is a PNG, make sure the alpha layer is respected!
+-    if($image && ($type == 'image/png' || $type == 'image/x-png')){
+-      $alpha = imagecolortransparent($image);
+-      if($alpha >= 0){
+-        $color = imagecolorsforindex($image, $alpha);
+-        $alpha = imagecolorallocate($new_image, $color['red'], $color['green'], $color['blue']);
+-        imagefill($new_image, 0, 0, $alpha);
+-        imagecolortransparent($new_image, $alpha);
+-      } else {
+-        imagealphablending($new_image, false);
+-        $color = imagecolorallocatealpha($new_image, 0, 0, 0, 127);
+-        imagefill($new_image, 0, 0, $color);
+-        imagesavealpha($new_image, true);
++      //If the image is a PNG, make sure the alpha layer is respected!
++      if($image && ($type == 'image/png' || $type == 'image/x-png')){
++        $alpha = imagecolortransparent($image);
++        if($alpha >= 0){
++          $color = imagecolorsforindex($image, $alpha);
++          $alpha = imagecolorallocate($new_image, $color['red'], $color['green'], $color['blue']);
++          imagefill($new_image, 0, 0, $alpha);
++          imagecolortransparent($new_image, $alpha);
++        } else {
++          imagealphablending($new_image, false);
++          $color = imagecolorallocatealpha($new_image, 0, 0, 0, 127);
++          imagefill($new_image, 0, 0, $color);
++          imagesavealpha($new_image, true);
++        }
++      }
++      if($image) {
++  	    imagecopyresampled($new_image, $image, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
++          imagedestroy($image);
++      } else
++          $new_image = imagecreatetruecolor(3, 3);
++    } else { // pillarbox it
++      $src_image=imagecreatetruecolor($new_width*3/4, $new_height);
++      $src_image = @imagecreatefromjpeg($filename) or //Read JPEG
++      $src_image = @imagecreatefrompng($filename) or //Read PNG
++      $src_image = @imagecreatefromgif($filename) or //Read GIF
++      $src_image = false;
++      $type="image/png"; // force PNG output
++
++      $new_image=imagecreatetruecolor($new_width, $new_height);
++      imagealphablending($new_image, false);
++      imagesavealpha($new_image, true);
++      imagefill($new_image, 0, 0, imagecolorallocatealpha($new_image, 0, 0, 0, 127));
++      if ($src_image) {
++        imagecopyresampled($new_image, $src_image, $new_width/8, 0, 0, 0, $new_width*3/4, $new_height, $width, $height);
+       }
+-      
+     }
+-    
+-    if($image) {
+-	    imagecopyresampled($new_image, $image, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
+-        imagedestroy($image);
+-    } else
+-        $new_image = imagecreatetruecolor(3, 3);
++
+         
+     
+     if($type == "image/jpeg" || $type == 'image/pjpeg' || $type == 'image/jpg'){
