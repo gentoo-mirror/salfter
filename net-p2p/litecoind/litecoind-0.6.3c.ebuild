@@ -9,7 +9,7 @@ SRC_URI=""
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="*"
+KEYWORDS="~x86 ~amd64"
 IUSE="ipv6 qrcode +upnp nofee"
 GITHUB_REPO="litecoin"
 GITHUB_USER="litecoin-project"
