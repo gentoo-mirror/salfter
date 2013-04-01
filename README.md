@@ -1,4 +1,4 @@
-portage
-=======
+Scott Alfter's Gentoo Overlay
+=============================
 
-My Gentoo ebuilds
+Go to http://salfter.github.com/ for instructions.
