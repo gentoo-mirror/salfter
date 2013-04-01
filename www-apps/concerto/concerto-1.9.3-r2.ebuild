@@ -2,6 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
+EAPI="2"
 inherit webapp depend.php
 
 DESCRIPTION="Concerto Digital Signage"
@@ -14,10 +15,8 @@ LICENSE="GPL-2"
 KEYWORDS="~x86"
 IUSE="mysql curl gd gd-external truetype squish"
 
-EAPI="2"
 DEPEND="dev-db/mysql 
-	app-text/ghostscript-gpl 
-	media-gfx/imagemagick[gs,jpeg,png,tiff] 
+	media-gfx/imagemagick[postscript,jpeg,png,tiff] 
 	|| ( app-office/libreoffice-bin app-office/openoffice-bin )"
 RDEPEND=""
 
