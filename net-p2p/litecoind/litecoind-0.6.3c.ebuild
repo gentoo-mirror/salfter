@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="*"
-IUSE="ipv6 qrcode +upnp"
+IUSE="ipv6 qrcode +upnp nofee"
 GITHUB_REPO="litecoin"
 GITHUB_USER="litecoin-project"
 GITHUB_TAG="v${PV}"
@@ -29,8 +29,10 @@ src_unpack() {
 }
 
 src_prepare() {
-	cd ${S}
-	epatch ${FILESDIR}/zero-tx-fee.patch || die
+	if use nofee; then
+	  cd ${S}
+	  epatch ${FILESDIR}/zero-tx-fee.patch || die
+	fi
 }
 
 src_compile() {
