@@ -19,7 +19,7 @@ DEPEND="dev-libs/openssl[-bindist] \
 =sys-libs/db-4.8*[cxx] \
 dev-libs/boost \
 upnp? ( net-libs/miniupnpc ) \
-qrcode? ( media-gfx/libqrencode )"
+qrcode? ( media-gfx/qrencode )"
 RDEPEND="${DEPEND}"
 SRC_URI="https://www.github.com/${GITHUB_USER}/${GITHUB_REPO}/tarball/${GITHUB_TAG} -> ${PN}-${GITHUB_TAG}.tar.gz"
 
