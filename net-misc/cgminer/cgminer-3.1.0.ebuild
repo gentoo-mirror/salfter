@@ -74,6 +74,7 @@ src_configure() {
 	econf \
 		$(use_enable adl) \
 		$(use_enable bitforce) \
+		$(use_enable cpumining) \
 		$(use_enable icarus) \
 		$(use_enable modminer) \
 		$(use_with ncurses curses) \
