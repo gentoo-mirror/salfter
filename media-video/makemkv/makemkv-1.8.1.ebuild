@@ -8,13 +8,13 @@ RESTRICT="mirror"
 
 inherit multilib eutils
 
-MY_P="makemkv_v${PV}_oss"
-MY_PB="makemkv_v${PV}_bin"
+MY_P="makemkv-oss-${PV}"
+MY_PB="makemkv-bin-${PV}"
 
 DESCRIPTION="Tool for converting Blu-Ray, HD-DVD and DVD videos to matroska."
 HOMEPAGE="http://www.makemkv.com"
-SRC_URI="http://www.makemkv.com/download/makemkv_v${PV}_oss.tar.gz
-	http://www.makemkv.com/download/makemkv_v${PV}_bin.tar.gz"
+SRC_URI="http://www.makemkv.com/download/makemkv-oss-${PV}.tar.gz
+	http://www.makemkv.com/download/makemkv-bin-${PV}.tar.gz"
 
 LICENSE="makemkv-EULA"
 SLOT="0"
@@ -26,9 +26,9 @@ DEPEND="x11-libs/qt-gui
 	media-libs/mesa
 	x11-libs/qt-dbus"
 
-src_prepare() {
-	cd "${MY_P}"
-}
+#src_prepare() {
+#	cd "${MY_P}"
+#}
 
 src_compile() {
 	cd "${MY_P}"
@@ -45,7 +45,7 @@ src_install() {
 	into /usr
 	dobin out/makemkv
 
-	newicon makemkvgui/src/img/128/mkv_icon.png ${PN}.png
+	newicon makemkvgui/share/icons/128x128/makemkv.png ${PN}.png
 	make_desktop_entry ${PN} "MakeMKV" ${PN} "Qt;AudioVideo;Video"
 
 	# install bin package
