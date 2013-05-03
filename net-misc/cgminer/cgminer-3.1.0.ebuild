@@ -17,9 +17,9 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 
-IUSE="+adl bitforce examples hardened icarus modminer ncurses +opencl scrypt +udev ztex"
+IUSE="+adl bitforce bflsc examples hardened icarus modminer ncurses +opencl scrypt +udev ztex"
 REQUIRED_USE='
-	|| ( bitforce icarus modminer opencl ztex )
+	|| ( bitforce bflsc icarus modminer opencl ztex )
 	adl? ( opencl )
 	opencl? ( ncurses )
 	scrypt? ( opencl )
@@ -51,6 +51,9 @@ DEPEND='
 	ztex? (
 		virtual/libusb:1
 	)
+	bflsc? (
+		virtual/libusb:1
+	)
 '
 RDEPEND="${DEPEND}"
 DEPEND="${DEPEND}
@@ -74,7 +77,7 @@ src_configure() {
 	econf \
 		$(use_enable adl) \
 		$(use_enable bitforce) \
-		$(use_enable cpumining) \
+		$(use_enable bflsc) \
 		$(use_enable icarus) \
 		$(use_enable modminer) \
 		$(use_with ncurses curses) \
@@ -94,6 +97,9 @@ src_install() {
 	fi
 	if use icarus || use bitforce; then
 		dodoc FPGA-README
+	fi
+	if use bflsc; then
+		dodoc ASIC-README
 	fi
 	if use modminer; then
 		insinto /usr/lib/cgminer/modminer
