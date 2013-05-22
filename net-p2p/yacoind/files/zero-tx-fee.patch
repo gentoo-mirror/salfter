@@ -1,0 +1,13 @@
+--- yacoind-9999/src/main.h	2013-05-22 09:05:56.000000000 -0700
++++ yacoind-9999/src/main.h	2013-05-22 09:06:24.961065051 -0700
+@@ -30,8 +30,8 @@
+ static const unsigned int MAX_BLOCK_SIGOPS = MAX_BLOCK_SIZE/50;
+ static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
+ static const unsigned int MAX_INV_SZ = 50000;
+-static const int64 MIN_TX_FEE = CENT;
+-static const int64 MIN_RELAY_TX_FEE = CENT;
++static const int64 MIN_TX_FEE = 0;
++static const int64 MIN_RELAY_TX_FEE = 0;
+ static const int64 MAX_MONEY = 2000000000 * COIN;
+ static const int64 MAX_MINT_PROOF_OF_WORK = 100 * COIN;
+ static const int64 MIN_TXOUT_AMOUNT = MIN_TX_FEE;
