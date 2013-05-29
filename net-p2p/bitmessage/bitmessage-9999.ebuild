@@ -36,10 +36,10 @@ src_install () {
                 cp -R * "${D}"/usr/share/"${PN}"/ || die
                 
                 #add shebang
-                sed -e '1i#!/usr/bin/env python' -i "${D}"/usr/share/"${PN}"/bitmessagemain.py || die
+                sed -e '1i#!/usr/bin/env python' -i "${D}"/usr/share/"${PN}"/src/bitmessagemain.py || die
                 
                 dodir /usr/bin/
-                dosym /usr/share/"${PN}"/bitmessagemain.py /usr/bin/bitmessage-${PYTHON_ABI} || die
+                dosym /usr/share/"${PN}"/src/bitmessagemain.py /usr/bin/bitmessage-${PYTHON_ABI} || die
 
         }
          
