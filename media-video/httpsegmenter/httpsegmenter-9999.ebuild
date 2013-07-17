@@ -10,7 +10,6 @@ KEYWORDS="**"
 DEPEND="media-video/ffmpeg"
 
 src_compile() {
-	echo ${WORKDIR}/${P}
 	cd ${WORKDIR}/${P}
 	make -f Makefile.txt
 }
