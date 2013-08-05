@@ -41,5 +41,5 @@ src_compile() {
 src_install() {
 	dobin ${S}/src/litecoind
 	cd ${S}/doc
-	dodoc README README_ScryptMiner.txt Tor.txt assets-attribution.txt
+	dodoc README.md Tor.txt release-notes.md
 }
