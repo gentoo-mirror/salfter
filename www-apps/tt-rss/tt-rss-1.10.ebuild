@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-apps/tt-rss/tt-rss-1.7.6.ebuild,v 1.1 2013/04/03 08:22:10 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-apps/tt-rss/tt-rss-1.9.ebuild,v 1.2 2013/09/12 08:33:47 tomka Exp $
 
 EAPI=5
 
@@ -10,7 +10,7 @@ DESCRIPTION="Tiny Tiny RSS - A web-based news feed (RSS/Atom) aggregator using A
 HOMEPAGE="http://tt-rss.org/"
 SRC_URI="https://github.com/gothfox/Tiny-Tiny-RSS/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="GPL-2"
+LICENSE="GPL-3"
 KEYWORDS="~amd64 ~x86"
 IUSE="daemon +mysql postgres"
 
@@ -57,17 +57,17 @@ src_install() {
 	webapp_src_preinst
 
 	insinto "/${MY_HTDOCSDIR}"
-	doins -r * || die "Could not copy the files to ${MY_HTDOCSDIR}."
+	doins -r *
 	keepdir "/${MY_HTDOCSDIR}"/feed-icons
 
-	for DIR in cache cache/simplepie cache/images cache/export lock feed-icons; do
+	for DIR in cache lock feed-icons; do
 			webapp_serverowned -R "${MY_HTDOCSDIR}/${DIR}"
 	done
 
 	webapp_configfile "${MY_HTDOCSDIR}"/config.php
 	if use daemon; then
 			webapp_postinst_txt en "${FILESDIR}"/postinstall-en-with-daemon.txt
-			newinitd "${FILESDIR}"/ttrssd.initd-r1 ttrssd
+			newinitd "${FILESDIR}"/ttrssd.initd-r2 ttrssd
 			newconfd "${FILESDIR}"/ttrssd.confd-r1 ttrssd
 			insinto /etc/logrotate.d/
 			newins "${FILESDIR}"/ttrssd.logrotated ttrssd
