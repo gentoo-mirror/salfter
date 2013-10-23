@@ -18,18 +18,3 @@ EGIT_REPO_URI="https://github.com/dangardner/pylcdsysinfo/"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-#src_prepare() {
-#  cd ${WORKDIR} || die
-#  mv ${P}/python-jsonrpc ${P}.new || die
-#  rm -r ${P} || die
-#  mv ${P}.new ${P} || die
-#}
-
-#src_compile() {
-#  echo ""
-#}
-
-#src_install() {
-#  distutils_src_install
-#}
-
