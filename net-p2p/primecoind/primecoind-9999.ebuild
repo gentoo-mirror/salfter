@@ -6,7 +6,7 @@ EAPI="4"
 
 DB_VER="4.8"
 
-inherit db-use eutils versionator toolchain-funcs git-2
+inherit db-use eutils versionator toolchain-funcs git-2 user
 
 MyPV="${PV/_/}"
 MyPN="primecoin"
