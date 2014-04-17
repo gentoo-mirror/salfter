@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/mail-mta/netqmail/netqmail-1.06-r1.ebuild,v 1.2 2013/05/27 00:45:52 robbat2 Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-mta/netqmail/netqmail-1.06-r2.ebuild,v 1.13 2013/06/09 16:01:23 ago Exp $
 
 EAPI=5
 
@@ -9,6 +9,7 @@ QMAIL_SPP_PV=0.42
 
 QMAIL_TLS_PV=20070417
 QMAIL_TLS_F=${PN}-1.05-tls-smtpauth-${QMAIL_TLS_PV}.patch
+QMAIL_TLS_CVE=vu555316.patch
 
 QMAIL_BIGTODO_PV=103
 QMAIL_BIGTODO_F=big-todo.${QMAIL_BIGTODO_PV}.patch
@@ -26,6 +27,7 @@ HOMEPAGE="
 SRC_URI="mirror://qmail/${P}.tar.gz
 	http://dev.gentoo.org/~hollow/distfiles/${GENQMAIL_F}
 	http://www.ckdhr.com/ckd/${QMAIL_LARGE_DNS}
+	http://inoa.net/qmail-tls/${QMAIL_TLS_CVE}
 	!vanilla? (
 		highvolume? ( mirror://qmail/${QMAIL_BIGTODO_F} )
 		qmail-spp? ( mirror://sourceforge/qmail-spp/${QMAIL_SPP_F} )
@@ -35,7 +37,7 @@ SRC_URI="mirror://qmail/${P}.tar.gz
 
 LICENSE="public-domain"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
+KEYWORDS="alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86"
 IUSE="authcram gencertdaily highvolume qmail-spp ssl vanilla"
 REQUIRED_USE='vanilla? ( !ssl !qmail-spp !highvolume )'
 RESTRICT="test"
@@ -44,6 +46,7 @@ DEPEND="
 	!mail-mta/qmail
 	net-mail/queue-repair
 	ssl? ( dev-libs/openssl )
+	sys-apps/groff
 "
 RDEPEND="
 	!mail-mta/courier
@@ -90,6 +93,7 @@ src_prepare() {
 	epatch "${FILESDIR}"/${PV}-exit.patch
 	epatch "${FILESDIR}"/${PV}-readwrite.patch
 	epatch "${DISTDIR}"/${QMAIL_LARGE_DNS}
+	epatch "${FILESDIR}"/${PV}-fbsd-utmpx.patch
 
 	ht_fix_file Makefile*
 
@@ -99,6 +103,7 @@ src_prepare() {
 			<"${DISTDIR}"/${QMAIL_TLS_F} \
 			>"${T}"/${QMAIL_TLS_F}
 		use ssl        && epatch "${T}"/${QMAIL_TLS_F}
+		use ssl        && epatch "${DISTDIR}"/${QMAIL_TLS_CVE}
 		use highvolume && epatch "${DISTDIR}"/${QMAIL_BIGTODO_F}
 
 		if use qmail-spp; then
@@ -107,9 +112,12 @@ src_prepare() {
 			else
 				epatch "${QMAIL_SPP_S}"/netqmail-spp.diff
 			fi
+			cd "${WORKDIR}"
+			epatch "${FILESDIR}"/genqmail-20080406-ldflags.patch
+			cd -
 		fi
 	fi
-	
+
 	epatch_user
 
 	qmail_src_postunpack
