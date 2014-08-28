@@ -2,7 +2,7 @@ EAPI=5
 inherit qt4-r2 eutils multilib
 
 DESCRIPTION="Video metadata scraper"
-#SRC_URI="http://www.mediaelch.de/releases/${PV}/${P}.tar.gz"
+# http://www.kvibes.de/releases/mediaelch/2.1.2/mediaelch-2.1.2.tar.gz
 SRC_URI="http://www.kvibes.de/releases/${PN}/${PV}/${P}.tar.gz"
 HOMEPAGE="http://www.mediaelch.de/"
 
