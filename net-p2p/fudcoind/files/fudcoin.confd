@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/fudcoin
+
+# owner of fudcoind process (don't change, must be existing)
+FUDCOIN_USER="fudcoin"
+
+# See fudcoind --help
+FUDCOIN_OPTS="${FUDCOIN_OPTS}"
+
+# nice level
+NICELEVEL="19"
