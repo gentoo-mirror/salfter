@@ -75,8 +75,6 @@ src_compile() {
 	fi
 	use ipv6 || OPTS+=("USE_IPV6=-")
 
-	#OPTS+=("USE_SYSTEM_LEVELDB=1")
-
 	cd src || die
 	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix leveldb/libleveldb.a || die
 	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" ${PN} || die

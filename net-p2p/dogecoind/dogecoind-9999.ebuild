@@ -1,6 +1,6 @@
 # Copyright 2010-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-p2p/bitcoind/bitcoind-9999.ebuild,v 1.2 2014/11/21 12:14:47 blueness Exp $
+# $Header: $
 
 EAPI=4
 
@@ -38,8 +38,6 @@ RDEPEND="
 	)
 	virtual/bitcoin-leveldb
 "
-#	dev-libs/libsecp256k1
-#"
 DEPEND="${RDEPEND}
 	>=app-shells/bash-4.1
 	sys-apps/sed
