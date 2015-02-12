@@ -12,7 +12,7 @@ MyPV="${PV/_/}"
 MyPN="anoncoin"
 MyP="${MyPN}-${MyPV}"
 
-DESCRIPTION="yet another Novacoin fork"
+DESCRIPTION="Anoncoin"
 HOMEPAGE="http://github.com/Anoncoin/anoncoin"
 EGIT_PROJECT="anoncoin"
 EGIT_REPO_URI="https://github.com/Anoncoin/anoncoin"

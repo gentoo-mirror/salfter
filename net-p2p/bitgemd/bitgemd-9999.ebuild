@@ -12,7 +12,7 @@ MyPV="${PV/_/}"
 MyPN="bitgem"
 MyP="${MyPN}-${MyPV}"
 
-DESCRIPTION="yet another Novacoin fork"
+DESCRIPTION="Bitgem"
 HOMEPAGE="http://github.com/bitgem/bitgem"
 EGIT_PROJECT="bitgem"
 EGIT_REPO_URI="https://github.com/bitgem/bitgem"

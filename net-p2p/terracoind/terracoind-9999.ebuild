@@ -12,7 +12,7 @@ MyPV="${PV/_/}"
 MyPN="terracoin"
 MyP="${MyPN}-${MyPV}"
 
-DESCRIPTION="yet another Novacoin fork"
+DESCRIPTION="Terracoin"
 HOMEPAGE="http://github.com/Terracoin/terracoin"
 EGIT_PROJECT="terracoin"
 EGIT_REPO_URI="https://github.com/Terracoin/terracoin"
