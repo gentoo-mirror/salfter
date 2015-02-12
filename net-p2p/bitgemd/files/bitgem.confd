@@ -3,7 +3,7 @@
 # owner of bitgemd process (don't change, must be existing)
 BITGEM_USER="bitgem"
 
-# See http://www.bitgem.org/smf/index.php?topic=1063
+# See bitgemd --daemon
 BITGEM_OPTS="${BITGEM_OPTS}"
 
 # nice level
