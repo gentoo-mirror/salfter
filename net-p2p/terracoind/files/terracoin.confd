@@ -4,7 +4,7 @@
 TERRACOIN_USER="terracoin"
 
 # See terracoind --help
-TERRACOIN_OPTS="${ANONCOIN_OPTS}"
+TERRACOIN_OPTS="${TERRACOIN_OPTS}"
 
 # nice level
 NICELEVEL="19"
