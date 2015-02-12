@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/terracoin
+
+# owner of terracoind process (don't change, must be existing)
+TERRACOIN_USER="terracoin"
+
+# See terracoind --help
+TERRACOIN_OPTS="${ANONCOIN_OPTS}"
+
+# nice level
+NICELEVEL="19"
