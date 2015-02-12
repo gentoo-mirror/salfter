@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/dogecoin
+
+# owner of dogecoind process (don't change, must be existing)
+DOGECOIN_USER="dogecoin"
+
+# See dogecoind --help
+DOGECOIN_OPTS="${DOGECOIN_OPTS}"
+
+# nice level
+NICELEVEL="19"
