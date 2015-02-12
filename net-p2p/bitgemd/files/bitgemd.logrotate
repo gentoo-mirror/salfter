@@ -1,7 +1,7 @@
-/var/lib/primecoin/.primecoin/debug.log {
+/var/lib/bitgem/.bitgem/debug.log {
 	weekly
 	sharedscripts
 	postrotate
-		killall -HUP primecoind
+		killall -HUP bitgemd
 	endscript
 }

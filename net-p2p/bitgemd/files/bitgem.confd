@@ -1,10 +1,10 @@
-# Config file for /etc/init.d/primecoin
+# Config file for /etc/init.d/bitgem
 
-# owner of primecoind process (don't change, must be existing)
-PRIMECOIN_USER="primecoin"
+# owner of bitgemd process (don't change, must be existing)
+BITGEM_USER="bitgem"
 
-# See http://www.primecoin.org/smf/index.php?topic=1063
-PRIMECOIN_OPTS="${PRIMECOIN_OPTS}"
+# See http://www.bitgem.org/smf/index.php?topic=1063
+BITGEM_OPTS="${BITGEM_OPTS}"
 
 # nice level
 NICELEVEL="19"
