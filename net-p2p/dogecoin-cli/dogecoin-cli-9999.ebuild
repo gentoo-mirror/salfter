@@ -10,7 +10,7 @@ MyPV="${PV/_/}"
 MyPN="dogecoin"
 MyP="${MyPN}-${MyPV}"
 
-DESCRIPTION="Dogecoin "
+DESCRIPTION="Dogecoin CLI"
 HOMEPAGE="http://dogecoin.com/"
 SRC_URI="
 "

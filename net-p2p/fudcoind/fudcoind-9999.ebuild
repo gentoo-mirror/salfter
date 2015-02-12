@@ -12,7 +12,7 @@ MyPV="${PV/_/}"
 MyPN="fudcoin"
 MyP="${MyPN}-${MyPV}"
 
-DESCRIPTION="yet another Novacoin fork"
+DESCRIPTION="Fudcoin"
 HOMEPAGE="http://github.com/CarsonCloak/fudcoin"
 EGIT_PROJECT="fudcoin"
 EGIT_REPO_URI="https://github.com/CarsonCloak/fudcoin"
