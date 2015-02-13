@@ -11,7 +11,7 @@ MyPN="digibyte"
 MyP="${MyPN}-${MyPV}"
 
 DESCRIPTION="Digibyte CLI"
-HOMEPAGE="http://digibyte.com/"
+HOMEPAGE="https://github.com/digibyte/digibyte"
 SRC_URI="
 "
 EGIT_PROJECT='digibyte'

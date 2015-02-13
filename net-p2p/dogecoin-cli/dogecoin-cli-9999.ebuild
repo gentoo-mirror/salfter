@@ -11,7 +11,7 @@ MyPN="dogecoin"
 MyP="${MyPN}-${MyPV}"
 
 DESCRIPTION="Dogecoin CLI"
-HOMEPAGE="http://dogecoin.com/"
+HOMEPAGE="https://github.com/dogecoin/dogecoin"
 SRC_URI="
 "
 EGIT_PROJECT='dogecoin'

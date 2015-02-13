@@ -13,7 +13,7 @@ MyPN="coin42"
 MyP="${MyPN}-${MyPV}"
 
 DESCRIPTION="42"
-HOMEPAGE="http://github.com/fourtytwo42/42"
+HOMEPAGE="https://github.com/fourtytwo42/42"
 EGIT_PROJECT="coin42"
 EGIT_REPO_URI="https://github.com/fourtytwo42/42"
 
