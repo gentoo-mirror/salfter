@@ -1,0 +1,7 @@
+/var/lib/earthcoin/.earthcoin/debug.log {
+	weekly
+	sharedscripts
+	postrotate
+		killall -HUP earthcoind
+	endscript
+}
