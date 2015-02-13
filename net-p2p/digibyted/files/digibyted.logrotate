@@ -1,0 +1,7 @@
+/var/lib/digibyte/.digibyte/debug.log {
+	weekly
+	sharedscripts
+	postrotate
+		killall -HUP digibyted
+	endscript
+}
