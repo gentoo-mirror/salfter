@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/joulecoin
+
+# owner of joulecoind process (don't change, must be existing)
+JOULECOIN_USER="joulecoin"
+
+# See joulecoind --help
+JOULECOIN_OPTS="${JOULECOIN_OPTS}"
+
+# nice level
+NICELEVEL="19"
