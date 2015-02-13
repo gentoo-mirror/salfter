@@ -9,13 +9,13 @@ DB_VER="4.8"
 inherit db-use eutils user versionator toolchain-funcs git-2
 
 MyPV="${PV/_/}"
-MyPN="bitgem"
+MyPN="fastcoin"
 MyP="${MyPN}-${MyPV}"
 
-DESCRIPTION="Bitgem"
-HOMEPAGE="http://github.com/bitgem/bitgem"
-EGIT_PROJECT="bitgem"
-EGIT_REPO_URI="https://github.com/bitgem/bitgem"
+DESCRIPTION="Fastcoin"
+HOMEPAGE="http://github.com/fastcoinproject/fastcoin"
+EGIT_PROJECT="fastcoin"
+EGIT_REPO_URI="https://github.com/fastcoinproject/fastcoin"
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
@@ -42,9 +42,9 @@ DEPEND="${RDEPEND}
 S="${WORKDIR}/${MyP}"
 
 pkg_setup() {
-	local UG='bitgem'
+	local UG='fastcoin'
 	enewgroup "${UG}"
-	enewuser "${UG}" -1 -1 /var/lib/bitgem "${UG}"
+	enewuser "${UG}" -1 -1 /var/lib/fastcoin "${UG}"
 }
 
 src_prepare() {
@@ -53,6 +53,7 @@ src_prepare() {
 	fi
 
     # disable FORTIFY_SOURCE
+    
     sed -i "s/HARDENING+=-D_FORTIFY_SOURCE=2/#HARDENING+=-D_FORTIFY_SOURCE=2/" src/makefile.unix
 }
 
@@ -76,6 +77,7 @@ src_compile() {
 	OPTS+=("USE_SYSTEM_LEVELDB=1")
 
 	cd src || die
+	mkdir obj || die
 	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" ${PN}
 }
 
@@ -88,19 +90,19 @@ src_test() {
 src_install() {
 	dobin src/${PN}
 
-	insinto /etc/bitgem
-	newins "${FILESDIR}/bitgem.conf" bitgem.conf
-	fowners bitgem:bitgem /etc/bitgem/bitgem.conf
-	fperms 600 /etc/bitgem/bitgem.conf
+	insinto /etc/fastcoin
+	newins "${FILESDIR}/fastcoin.conf" fastcoin.conf
+	fowners fastcoin:fastcoin /etc/fastcoin/fastcoin.conf
+	fperms 600 /etc/fastcoin/fastcoin.conf
 
-	newconfd "${FILESDIR}/bitgem.confd" ${PN}
-	newinitd "${FILESDIR}/bitgem.initd" ${PN}
+	newconfd "${FILESDIR}/fastcoin.confd" ${PN}
+	newinitd "${FILESDIR}/fastcoin.initd" ${PN}
 
-	keepdir /var/lib/bitgem/.bitgem
-	fperms 700 /var/lib/bitgem
-	fowners bitgem:bitgem /var/lib/bitgem/
-	fowners bitgem:bitgem /var/lib/bitgem/.bitgem
-	dosym /etc/bitgem/bitgem.conf /var/lib/bitgem/.bitgem/bitgem.conf
+	keepdir /var/lib/fastcoin/.fastcoin
+	fperms 700 /var/lib/fastcoin
+	fowners fastcoin:fastcoin /var/lib/fastcoin/
+	fowners fastcoin:fastcoin /var/lib/fastcoin/.fastcoin
+	dosym /etc/fastcoin/fastcoin.conf /var/lib/fastcoin/.fastcoin/fastcoin.conf
 
 	dodoc doc/README 
 
@@ -111,6 +113,6 @@ src_install() {
 
 	if use logrotate; then
 		insinto /etc/logrotate.d
-		newins "${FILESDIR}/bitgemd.logrotate" bitgemd
+		newins "${FILESDIR}/fastcoind.logrotate" fastcoind
 	fi
 }
