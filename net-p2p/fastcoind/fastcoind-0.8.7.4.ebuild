@@ -16,10 +16,11 @@ DESCRIPTION="Fastcoin"
 HOMEPAGE="http://github.com/fastcoinproject/fastcoin"
 EGIT_PROJECT="fastcoin"
 EGIT_REPO_URI="https://github.com/fastcoinproject/fastcoin"
+EGIT_BRANCH="fastcoin-8.7.4"
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="~amd64"
 IUSE="examples ipv6 logrotate upnp"
 
 RDEPEND="
@@ -77,7 +78,7 @@ src_compile() {
 	OPTS+=("USE_SYSTEM_LEVELDB=1")
 
 	cd src || die
-	mkdir obj || die
+	mkdir -p obj || die
 	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" ${PN}
 }
 
@@ -104,7 +105,7 @@ src_install() {
 	fowners fastcoin:fastcoin /var/lib/fastcoin/.fastcoin
 	dosym /etc/fastcoin/fastcoin.conf /var/lib/fastcoin/.fastcoin/fastcoin.conf
 
-	dodoc doc/README 
+	dodoc doc/README.md
 
 	if use examples; then
 		docinto examples
