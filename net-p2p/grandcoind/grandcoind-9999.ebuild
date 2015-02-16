@@ -9,13 +9,13 @@ DB_VER="4.8"
 inherit db-use eutils user versionator toolchain-funcs git-2
 
 MyPV="${PV/_/}"
-MyPN="bitgem"
+MyPN="grandcoin"
 MyP="${MyPN}-${MyPV}"
 
-DESCRIPTION="Bitgem"
-HOMEPAGE="https://github.com/bitgem/bitgem"
-EGIT_PROJECT="bitgem"
-EGIT_REPO_URI="https://github.com/bitgem/bitgem"
+DESCRIPTION="Grandcoin"
+HOMEPAGE="https://github.com/grandcoin/grandcoin"
+EGIT_PROJECT="grandcoin"
+EGIT_REPO_URI="https://github.com/grandcoin/grandcoin"
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
@@ -42,9 +42,9 @@ DEPEND="${RDEPEND}
 S="${WORKDIR}/${MyP}"
 
 pkg_setup() {
-	local UG='bitgem'
+	local UG='grandcoin'
 	enewgroup "${UG}"
-	enewuser "${UG}" -1 -1 /var/lib/bitgem "${UG}"
+	enewuser "${UG}" -1 -1 /var/lib/grandcoin "${UG}"
 }
 
 src_prepare() {
@@ -76,7 +76,7 @@ src_compile() {
 	OPTS+=("USE_SYSTEM_LEVELDB=1")
 
 	cd src || die
-	mkdir -p obj
+    mkdir -p obj
 	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" ${PN}
 }
 
@@ -89,19 +89,19 @@ src_test() {
 src_install() {
 	dobin src/${PN}
 
-	insinto /etc/bitgem
-	newins "${FILESDIR}/bitgem.conf" bitgem.conf
-	fowners bitgem:bitgem /etc/bitgem/bitgem.conf
-	fperms 600 /etc/bitgem/bitgem.conf
+	insinto /etc/grandcoin
+	newins "${FILESDIR}/grandcoin.conf" grandcoin.conf
+	fowners grandcoin:grandcoin /etc/grandcoin/grandcoin.conf
+	fperms 600 /etc/grandcoin/grandcoin.conf
 
-	newconfd "${FILESDIR}/bitgem.confd" ${PN}
-	newinitd "${FILESDIR}/bitgem.initd" ${PN}
+	newconfd "${FILESDIR}/grandcoin.confd" ${PN}
+	newinitd "${FILESDIR}/grandcoin.initd" ${PN}
 
-	keepdir /var/lib/bitgem/.bitgem
-	fperms 700 /var/lib/bitgem
-	fowners bitgem:bitgem /var/lib/bitgem/
-	fowners bitgem:bitgem /var/lib/bitgem/.bitgem
-	dosym /etc/bitgem/bitgem.conf /var/lib/bitgem/.bitgem/bitgem.conf
+	keepdir /var/lib/grandcoin/.grandcoin
+	fperms 700 /var/lib/grandcoin
+	fowners grandcoin:grandcoin /var/lib/grandcoin/
+	fowners grandcoin:grandcoin /var/lib/grandcoin/.grandcoin
+	dosym /etc/grandcoin/grandcoin.conf /var/lib/grandcoin/.grandcoin/grandcoin.conf
 
 	dodoc doc/README 
 
@@ -112,6 +112,6 @@ src_install() {
 
 	if use logrotate; then
 		insinto /etc/logrotate.d
-		newins "${FILESDIR}/bitgemd.logrotate" bitgemd
+		newins "${FILESDIR}/grandcoind.logrotate" grandcoind
 	fi
 }
