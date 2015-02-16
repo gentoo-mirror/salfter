@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/opensourcecoin
+
+# owner of opensourcecoind process (don't change, must be existing)
+OPENSOURCECOIN_USER="opensourcecoin"
+
+# See opensourcecoind --daemon
+OPENSOURCECOIN_OPTS="${OPENSOURCECOIN_OPTS}"
+
+# nice level
+NICELEVEL="19"
