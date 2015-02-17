@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/titcoin
+
+# owner of titcoind process (don't change, must be existing)
+TITCOIN_USER="titcoin"
+
+# See titcoind --daemon
+TITCOIN_OPTS="${TITCOIN_OPTS}"
+
+# nice level
+NICELEVEL="19"
