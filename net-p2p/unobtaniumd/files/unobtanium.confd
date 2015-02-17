@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/unobtanium
+
+# owner of unobtaniumd process (don't change, must be existing)
+UNOBTANIUM_USER="unobtanium"
+
+# See unobtaniumd --daemon
+UNOBTANIUM_OPTS="${UNOBTANIUM_OPTS}"
+
+# nice level
+NICELEVEL="19"

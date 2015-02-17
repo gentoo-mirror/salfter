@@ -1,0 +1,7 @@
+/var/lib/novacoin/.novacoin/debug.log {
+	weekly
+	sharedscripts
+	postrotate
+		killall -HUP novacoind
+	endscript
+}
