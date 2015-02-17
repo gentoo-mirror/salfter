@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/novacoin
+
+# owner of novacoind process (don't change, must be existing)
+NOVACOIN_USER="novacoin"
+
+# See novacoind --daemon
+NOVACOIN_OPTS="${NOVACOIN_OPTS}"
+
+# nice level
+NICELEVEL="19"

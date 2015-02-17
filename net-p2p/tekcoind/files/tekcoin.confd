@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/tekcoin
+
+# owner of tekcoind process (don't change, must be existing)
+TEKCOIN_USER="tekcoin"
+
+# See tekcoind --daemon
+TEKCOIN_OPTS="${TEKCOIN_OPTS}"
+
+# nice level
+NICELEVEL="19"
