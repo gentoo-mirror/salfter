@@ -13,9 +13,9 @@ MyPN="tekcoin"
 MyP="${MyPN}-${MyPV}"
 
 DESCRIPTION="Tekcoin"
-HOMEPAGE="https://github.com/noise23/TEK"
+HOMEPAGE="https://github.com/maxxine/TEK"
 EGIT_PROJECT="tekcoin"
-EGIT_REPO_URI="https://github.com/noise23/TEK"
+EGIT_REPO_URI="https://github.com/maxxine/TEK"
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
