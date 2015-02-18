@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/fluttercoin
+
+# owner of fluttercoind process (don't change, must be existing)
+FLUTTERCOIN_USER="fluttercoin"
+
+# See fluttercoind --daemon
+FLUTTERCOIN_OPTS="${FLUTTERCOIN_OPTS}"
+
+# nice level
+NICELEVEL="19"
