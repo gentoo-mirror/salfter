@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/viacoin
+
+# owner of viacoind process (don't change, must be existing)
+VIACOIN_USER="viacoin"
+
+# See viacoind --help
+VIACOIN_OPTS="${VIACOIN_OPTS}"
+
+# nice level
+NICELEVEL="19"

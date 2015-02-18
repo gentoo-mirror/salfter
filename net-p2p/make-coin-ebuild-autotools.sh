@@ -11,7 +11,7 @@ do
   sed -i "s/dogecoin/${lower}/g;s/Dogecoin/${mixed}/g;s/DOGECOIN/${upper}/g" `echo $i | sed "s/dogecoin/${lower}/"`
 done
 f2=$(echo $2 | sed "s/\//\\\\\//g")
-sed -i "s/^HOMEPAGE=.*/HOMEPAGE=\"https:\/\/github.com\/${f2}\"/;s/^EGIT_REPO_URI=.*/EGIT_REPO_URI=\"https:\/\/github.com\/${f2}\"/" *.ebuild
+sed -i "s/^HOMEPAGE=.*/HOMEPAGE=\"https:\/\/github.com\/${f2}\"/;s/^EGIT_REPO_URI=.*/EGIT_REPO_URI=\"https:\/\/github.com\/${f2}\"/;s/DB_VER=\"5.1\"/DB_VER=\"4.8\"/" *.ebuild
 ebuild *.ebuild digest
 
 cd ..
