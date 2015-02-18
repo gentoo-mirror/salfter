@@ -9,13 +9,13 @@ DB_VER="4.8"
 inherit db-use eutils user versionator toolchain-funcs git-2
 
 MyPV="${PV/_/}"
-MyPN="bitgem"
+MyPN="ppcoin"
 MyP="${MyPN}-${MyPV}"
 
-DESCRIPTION="Bitgem"
-HOMEPAGE="https://github.com/bitgem/bitgem"
-EGIT_PROJECT="bitgem"
-EGIT_REPO_URI="https://github.com/bitgem/bitgem"
+DESCRIPTION="Ppcoin"
+HOMEPAGE="https://github.com/ppcoin/ppcoin"
+EGIT_PROJECT="ppcoin"
+EGIT_REPO_URI="https://github.com/ppcoin/ppcoin"
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
@@ -42,9 +42,9 @@ DEPEND="${RDEPEND}
 S="${WORKDIR}/${MyP}"
 
 pkg_setup() {
-	local UG='bitgem'
+	local UG='ppcoin'
 	enewgroup "${UG}"
-	enewuser "${UG}" -1 -1 /var/lib/bitgem "${UG}"
+	enewuser "${UG}" -1 -1 /var/lib/ppcoin "${UG}"
 }
 
 src_prepare() {
@@ -90,19 +90,19 @@ src_test() {
 src_install() {
 	dobin src/${PN}
 
-	insinto /etc/bitgem
-	newins "${FILESDIR}/bitgem.conf" bitgem.conf
-	fowners bitgem:bitgem /etc/bitgem/bitgem.conf
-	fperms 600 /etc/bitgem/bitgem.conf
+	insinto /etc/ppcoin
+	newins "${FILESDIR}/ppcoin.conf" ppcoin.conf
+	fowners ppcoin:ppcoin /etc/ppcoin/ppcoin.conf
+	fperms 600 /etc/ppcoin/ppcoin.conf
 
-	newconfd "${FILESDIR}/bitgem.confd" ${PN}
-	newinitd "${FILESDIR}/bitgem.initd" ${PN}
+	newconfd "${FILESDIR}/ppcoin.confd" ${PN}
+	newinitd "${FILESDIR}/ppcoin.initd" ${PN}
 
-	keepdir /var/lib/bitgem/.bitgem
-	fperms 700 /var/lib/bitgem
-	fowners bitgem:bitgem /var/lib/bitgem/
-	fowners bitgem:bitgem /var/lib/bitgem/.bitgem
-	dosym /etc/bitgem/bitgem.conf /var/lib/bitgem/.bitgem/bitgem.conf
+	keepdir /var/lib/ppcoin/.ppcoin
+	fperms 700 /var/lib/ppcoin
+	fowners ppcoin:ppcoin /var/lib/ppcoin/
+	fowners ppcoin:ppcoin /var/lib/ppcoin/.ppcoin
+	dosym /etc/ppcoin/ppcoin.conf /var/lib/ppcoin/.ppcoin/ppcoin.conf
 
 	dodoc doc/README 
 
@@ -113,6 +113,6 @@ src_install() {
 
 	if use logrotate; then
 		insinto /etc/logrotate.d
-		newins "${FILESDIR}/bitgemd.logrotate" bitgemd
+		newins "${FILESDIR}/ppcoind.logrotate" ppcoind
 	fi
 }

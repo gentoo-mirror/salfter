@@ -9,13 +9,13 @@ DB_VER="4.8"
 inherit db-use eutils user versionator toolchain-funcs git-2
 
 MyPV="${PV/_/}"
-MyPN="bitgem"
+MyPN="netcoin"
 MyP="${MyPN}-${MyPV}"
 
-DESCRIPTION="Bitgem"
-HOMEPAGE="https://github.com/bitgem/bitgem"
-EGIT_PROJECT="bitgem"
-EGIT_REPO_URI="https://github.com/bitgem/bitgem"
+DESCRIPTION="Netcoin"
+HOMEPAGE="https://github.com/netcoinfoundation/netcoin"
+EGIT_PROJECT="netcoin"
+EGIT_REPO_URI="https://github.com/netcoinfoundation/netcoin"
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
@@ -42,9 +42,9 @@ DEPEND="${RDEPEND}
 S="${WORKDIR}/${MyP}"
 
 pkg_setup() {
-	local UG='bitgem'
+	local UG='netcoin'
 	enewgroup "${UG}"
-	enewuser "${UG}" -1 -1 /var/lib/bitgem "${UG}"
+	enewuser "${UG}" -1 -1 /var/lib/netcoin "${UG}"
 }
 
 src_prepare() {
@@ -90,19 +90,19 @@ src_test() {
 src_install() {
 	dobin src/${PN}
 
-	insinto /etc/bitgem
-	newins "${FILESDIR}/bitgem.conf" bitgem.conf
-	fowners bitgem:bitgem /etc/bitgem/bitgem.conf
-	fperms 600 /etc/bitgem/bitgem.conf
+	insinto /etc/netcoin
+	newins "${FILESDIR}/netcoin.conf" netcoin.conf
+	fowners netcoin:netcoin /etc/netcoin/netcoin.conf
+	fperms 600 /etc/netcoin/netcoin.conf
 
-	newconfd "${FILESDIR}/bitgem.confd" ${PN}
-	newinitd "${FILESDIR}/bitgem.initd" ${PN}
+	newconfd "${FILESDIR}/netcoin.confd" ${PN}
+	newinitd "${FILESDIR}/netcoin.initd" ${PN}
 
-	keepdir /var/lib/bitgem/.bitgem
-	fperms 700 /var/lib/bitgem
-	fowners bitgem:bitgem /var/lib/bitgem/
-	fowners bitgem:bitgem /var/lib/bitgem/.bitgem
-	dosym /etc/bitgem/bitgem.conf /var/lib/bitgem/.bitgem/bitgem.conf
+	keepdir /var/lib/netcoin/.netcoin
+	fperms 700 /var/lib/netcoin
+	fowners netcoin:netcoin /var/lib/netcoin/
+	fowners netcoin:netcoin /var/lib/netcoin/.netcoin
+	dosym /etc/netcoin/netcoin.conf /var/lib/netcoin/.netcoin/netcoin.conf
 
 	dodoc doc/README 
 
@@ -113,6 +113,6 @@ src_install() {
 
 	if use logrotate; then
 		insinto /etc/logrotate.d
-		newins "${FILESDIR}/bitgemd.logrotate" bitgemd
+		newins "${FILESDIR}/netcoind.logrotate" netcoind
 	fi
 }
