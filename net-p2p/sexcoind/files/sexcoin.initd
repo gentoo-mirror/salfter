@@ -41,7 +41,7 @@ checkconfig() {
 
 start() {
 	checkconfig || return 1
-	ebegin "Starting Sexcoind daemon"
+	ebegin "Starting Sexcoin daemon"
 
 	pkg-config openrc
 	if [ $? = 0 ]; then

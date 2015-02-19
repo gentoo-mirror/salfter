@@ -41,7 +41,7 @@ checkconfig() {
 
 start() {
 	checkconfig || return 1
-	ebegin "Starting Bitgemd daemon"
+	ebegin "Starting Bitgem daemon"
 
 	pkg-config openrc
 	if [ $? = 0 ]; then

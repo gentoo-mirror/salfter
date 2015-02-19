@@ -41,7 +41,7 @@ checkconfig() {
 
 start() {
 	checkconfig || return 1
-	ebegin "Starting Fluttercoind daemon"
+	ebegin "Starting Fluttercoin daemon"
 
 	pkg-config openrc
 	if [ $? = 0 ]; then

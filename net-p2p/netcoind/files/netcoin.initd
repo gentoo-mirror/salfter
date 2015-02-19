@@ -41,7 +41,7 @@ checkconfig() {
 
 start() {
 	checkconfig || return 1
-	ebegin "Starting Netcoind daemon"
+	ebegin "Starting Netcoin daemon"
 
 	pkg-config openrc
 	if [ $? = 0 ]; then
