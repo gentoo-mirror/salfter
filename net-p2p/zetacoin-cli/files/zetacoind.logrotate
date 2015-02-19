@@ -1,7 +1,0 @@
-/var/lib/zetacoin/.zetacoin/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP zetacoind
-	endscript
-}

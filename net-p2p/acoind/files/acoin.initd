@@ -41,7 +41,7 @@ checkconfig() {
 
 start() {
 	checkconfig || return 1
-	ebegin "Starting Acoind daemon"
+	ebegin "Starting Acoin daemon"
 
 	pkg-config openrc
 	if [ $? = 0 ]; then

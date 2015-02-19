@@ -41,7 +41,7 @@ checkconfig() {
 
 start() {
 	checkconfig || return 1
-	ebegin "Starting Titcoind daemon"
+	ebegin "Starting Titcoin daemon"
 
 	pkg-config openrc
 	if [ $? = 0 ]; then

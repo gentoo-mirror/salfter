@@ -41,7 +41,7 @@ checkconfig() {
 
 start() {
 	checkconfig || return 1
-	ebegin "Starting Viacoind daemon"
+	ebegin "Starting Viacoin daemon"
 
 	pkg-config openrc
 	if [ $? = 0 ]; then
