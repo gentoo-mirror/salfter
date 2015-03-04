@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/yacoin
+
+# owner of yacoind process (don't change, must be existing)
+YACOIN_USER="yacoin"
+
+# See yacoind --daemon
+YACOIN_OPTS="${YACOIN_OPTS}"
+
+# nice level
+NICELEVEL="19"
