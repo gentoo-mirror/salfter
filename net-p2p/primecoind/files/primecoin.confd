@@ -3,7 +3,7 @@
 # owner of primecoind process (don't change, must be existing)
 PRIMECOIN_USER="primecoin"
 
-# See http://www.primecoin.org/smf/index.php?topic=1063
+# See primecoind --daemon
 PRIMECOIN_OPTS="${PRIMECOIN_OPTS}"
 
 # nice level
