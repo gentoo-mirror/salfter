@@ -6,16 +6,16 @@ EAPI="4"
 
 DB_VER="4.8"
 
-inherit db-use eutils versionator toolchain-funcs git-2 user
+inherit db-use eutils user versionator toolchain-funcs git-2
 
 MyPV="${PV/_/}"
 MyPN="primecoin"
 MyP="${MyPN}-${MyPV}"
 
-DESCRIPTION="cryptocurrency with prime-number proof of work"
-HOMEPAGE="http://github.com/primecoin/primecoin"
+DESCRIPTION="Primecoin"
+HOMEPAGE="https://github.com/mikaelh2/primecoin"
 EGIT_PROJECT="primecoin"
-EGIT_REPO_URI="https://github.com/primecoin/primecoin"
+EGIT_REPO_URI="https://github.com/mikaelh2/primecoin"
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
@@ -51,6 +51,9 @@ src_prepare() {
 	if has_version '>=dev-libs/boost-1.52'; then
 		sed -i 's/\(-l db_cxx\)/-l boost_chrono$(BOOST_LIB_SUFFIX) \1/' src/makefile.unix
 	fi
+
+    # disable FORTIFY_SOURCE
+    sed -i "s/HARDENING+=-D_FORTIFY_SOURCE=2/#HARDENING+=-D_FORTIFY_SOURCE=2/" src/makefile.unix
 }
 
 src_compile() {
@@ -73,6 +76,8 @@ src_compile() {
 	OPTS+=("USE_SYSTEM_LEVELDB=1")
 
 	cd src || die
+	mkdir -p obj
+	#emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix leveldb/libleveldb.a || die
 	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" ${PN}
 }
 
@@ -99,11 +104,11 @@ src_install() {
 	fowners primecoin:primecoin /var/lib/primecoin/.primecoin
 	dosym /etc/primecoin/primecoin.conf /var/lib/primecoin/.primecoin/primecoin.conf
 
-	dodoc doc/README.md doc/release-notes.md
+	dodoc doc/README.md 
 
 	if use examples; then
 		docinto examples
-		dodoc -r contrib/{bitrpc,pyminer,spendfrom,tidy_datadir.sh,wallettools}
+		dodoc -r contrib/{bitrpc,wallettools}
 	fi
 
 	if use logrotate; then
