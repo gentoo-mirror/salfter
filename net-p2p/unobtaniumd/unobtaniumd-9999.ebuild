@@ -16,6 +16,7 @@ DESCRIPTION="Unobtanium"
 HOMEPAGE="https://github.com/unobtanium-official/Unobtanium"
 EGIT_PROJECT="unobtanium"
 EGIT_REPO_URI="https://github.com/unobtanium-official/Unobtanium"
+EGIT_COMMIT="efc1fed" # last commit before breakage
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
