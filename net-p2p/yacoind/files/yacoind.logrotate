@@ -1,0 +1,7 @@
+/var/lib/yacoin/.yacoin/debug.log {
+	weekly
+	sharedscripts
+	postrotate
+		killall -HUP yacoind
+	endscript
+}
