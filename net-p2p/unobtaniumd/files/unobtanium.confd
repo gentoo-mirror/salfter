@@ -3,7 +3,7 @@
 # owner of unobtaniumd process (don't change, must be existing)
 UNOBTANIUM_USER="unobtanium"
 
-# See unobtaniumd --daemon
+# See http://www.unobtanium.org/smf/index.php?topic=1063
 UNOBTANIUM_OPTS="${UNOBTANIUM_OPTS}"
 
 # nice level

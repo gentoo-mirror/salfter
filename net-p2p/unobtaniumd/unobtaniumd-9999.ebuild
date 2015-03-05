@@ -1,46 +1,24 @@
-# Copyright 2010-2013 Gentoo Foundation
+# Copyright 2010-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI=5
 
-DB_VER="4.8"
+UNOBTANIUMCORE_IUSE="examples logrotate test upnp +wallet"
+inherit bash-completion-r1 unobtaniumcore user systemd
 
-inherit db-use eutils user versionator toolchain-funcs git-2
-
-MyPV="${PV/_/}"
-MyPN="unobtanium"
-MyP="${MyPN}-${MyPV}"
-
-DESCRIPTION="Unobtanium"
-HOMEPAGE="https://github.com/unobtanium-official/Unobtanium"
-EGIT_PROJECT="unobtanium"
-EGIT_REPO_URI="https://github.com/unobtanium-official/Unobtanium"
-EGIT_COMMIT="efc1fed" # last commit before breakage
-
-LICENSE="MIT ISC GPL-2"
+DESCRIPTION="Original Unobtanium crypto-currency wallet for automated services"
+LICENSE="MIT"
 SLOT="0"
-KEYWORDS="**"
-IUSE="examples ipv6 logrotate upnp"
+KEYWORDS=""
 
 RDEPEND="
-	>=dev-libs/boost-1.41.0[threads(+)]
-	dev-libs/openssl:0[-bindist]
+	virtual/bitcoin-leveldb
 	logrotate? (
 		app-admin/logrotate
 	)
-	upnp? (
-		net-libs/miniupnpc
-	)
-	sys-libs/db:$(db_ver_to_slot "${DB_VER}")[cxx]
-	=dev-libs/leveldb-1.9.0*[-snappy]
 "
-DEPEND="${RDEPEND}
-	>=app-shells/bash-4.1
-	sys-apps/sed
-"
-
-S="${WORKDIR}/${MyP}"
+DEPEND="${RDEPEND}"
 
 pkg_setup() {
 	local UG='unobtanium'
@@ -48,47 +26,14 @@ pkg_setup() {
 	enewuser "${UG}" -1 -1 /var/lib/unobtanium "${UG}"
 }
 
-src_prepare() {
-	if has_version '>=dev-libs/boost-1.52'; then
-		sed -i 's/\(-l db_cxx\)/-l boost_chrono$(BOOST_LIB_SUFFIX) \1/' src/makefile.unix
-	fi
-
-    # disable FORTIFY_SOURCE
-    sed -i "s/HARDENING+=-D_FORTIFY_SOURCE=2/#HARDENING+=-D_FORTIFY_SOURCE=2/" src/makefile.unix
-}
-
-src_compile() {
-	OPTS=()
-
-	OPTS+=("DEBUGFLAGS=")
-	OPTS+=("CXXFLAGS=${CXXFLAGS}")
-	OPTS+=("LDFLAGS=${LDFLAGS}")
-
-	OPTS+=("BDB_INCLUDE_PATH=$(db_includedir "${DB_VER}")")
-	OPTS+=("BDB_LIB_SUFFIX=-${DB_VER}")
-
-	if use upnp; then
-		OPTS+=(USE_UPNP=1)
-	else
-		OPTS+=(USE_UPNP=)
-	fi
-	use ipv6 || OPTS+=("USE_IPV6=-")
-
-	OPTS+=("USE_SYSTEM_LEVELDB=1")
-
-	cd src || die
-	mkdir -p obj
-	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" ${PN}
-}
-
-src_test() {
-	cd src || die
-	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" test_bitcoin
-	./test_bitcoin || die 'Tests failed'
+src_configure() {
+	# NOTE: --enable-zmq actually disables it
+	unobtaniumcore_conf \
+		--with-daemon
 }
 
 src_install() {
-	dobin src/${PN}
+	unobtaniumcore_src_install
 
 	insinto /etc/unobtanium
 	newins "${FILESDIR}/unobtanium.conf" unobtanium.conf
@@ -96,7 +41,8 @@ src_install() {
 	fperms 600 /etc/unobtanium/unobtanium.conf
 
 	newconfd "${FILESDIR}/unobtanium.confd" ${PN}
-	newinitd "${FILESDIR}/unobtanium.initd" ${PN}
+	newinitd "${FILESDIR}/unobtanium.initd-r1" ${PN}
+	systemd_dounit "${FILESDIR}/unobtaniumd.service"
 
 	keepdir /var/lib/unobtanium/.unobtanium
 	fperms 700 /var/lib/unobtanium
@@ -104,11 +50,11 @@ src_install() {
 	fowners unobtanium:unobtanium /var/lib/unobtanium/.unobtanium
 	dosym /etc/unobtanium/unobtanium.conf /var/lib/unobtanium/.unobtanium/unobtanium.conf
 
-	dodoc doc/README.md 
+	dodoc doc/assets-attribution.md doc/tor.md
 
 	if use examples; then
 		docinto examples
-		dodoc -r contrib/{bitrpc,wallettools}
+		dodoc -r contrib/{bitrpc,qos,spendfrom,tidy_datadir.sh}
 	fi
 
 	if use logrotate; then
