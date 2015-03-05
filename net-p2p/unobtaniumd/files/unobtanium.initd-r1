@@ -9,7 +9,7 @@ depend() {
 }
 
 checkconfig() {
-	if [[ "${UNOBTANIUM_USER}" == "" ]] ; then
+	if [ "${UNOBTANIUM_USER}" = "" ] ; then
 		eerror "Please edit /etc/conf.d/unobtaniumd"
 		eerror "A user must be specified to run unobtaniumd as that user."
 		eerror "Modify USER to your needs (you may also add a group after a colon)"
@@ -41,7 +41,7 @@ checkconfig() {
 
 start() {
 	checkconfig || return 1
-	ebegin "Starting Unobtanium daemon"
+	ebegin "Starting Unobtaniumd daemon"
 
 	pkg-config openrc
 	if [ $? = 0 ]; then
