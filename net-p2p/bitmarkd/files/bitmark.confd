@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/bitmark
+
+# owner of bitmarkd process (don't change, must be existing)
+BITMARK_USER="bitmark"
+
+# See bitmarkd --help
+BITMARK_OPTS="${BITMARK_OPTS}"
+
+# nice level
+NICELEVEL="19"
