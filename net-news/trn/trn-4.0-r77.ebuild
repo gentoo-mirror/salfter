@@ -33,9 +33,10 @@ src_install() {
   dosym /usr/bin/trn /usr/bin/strn
 
   dodir /usr/lib/${PN}
+  insinto /usr/lib/${PN}
   for i in norm.saver newsnews access.def makedir Speller INIT filexp mbox.saver Pnews.header
   do
-    doins ${S}/$i $i
+    newins ${S}/$i $i
   done
 
   dodir /usr/lib/${PN}/HelpFiles
