@@ -7,8 +7,10 @@ ESVN_REPO_URI="http://httpsegmenter.googlecode.com/svn/trunk/"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="**"
-DEPEND="media-video/ffmpeg"
-
+IUSE="libav"
+DEPEND="!libav? ( media-video/ffmpeg ) 
+		libav?  ( media-video/libav )"
+                                                
 src_compile() {
 	cd ${WORKDIR}/${P}
 	make -f Makefile.txt
