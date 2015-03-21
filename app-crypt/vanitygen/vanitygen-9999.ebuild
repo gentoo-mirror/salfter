@@ -33,16 +33,8 @@ src_install()
   if use opencl
   then
     dobin oclvanitygen
-    insinto /usr/share/vanitygen
+    insinto /usr/lib/oclvanitygen
     newins calc_addrs.cl calc_addrs.cl
   fi
 }
 
-pkg_postinst()
-{
-  if use opencl
-  then
-    elog "To use oclvanitygen, copy /usr/share/vanitygen/calc_addrs.cl to"
-    elog "the directory where you plan to run oclvanitygen."
-  fi
-}

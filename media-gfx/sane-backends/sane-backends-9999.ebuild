@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit eutils flag-o-matic git-2
+inherit eutils flag-o-matic git-2 user
 
 # gphoto and v4l are handled by their usual USE flags.
 # The pint backend was disabled because I could not get it to compile.
@@ -97,7 +97,7 @@ for backend in ${IUSE_SANE_BACKENDS}; do
 	IUSE="${IUSE} +sane_backends_${backend}"
 done
 
-EGIT_REPO_URI="http://git.debian.org/git/sane/sane-backends.git"
+EGIT_REPO_URI="git://git.debian.org/sane/sane-backends.git http://git.debian.org/git/sane/sane-backends.git"
 
 DESCRIPTION="Scanner Access Now Easy - Backends"
 HOMEPAGE="http://www.sane-project.org/"
@@ -143,6 +143,7 @@ BACKENDS=" "
 
 pkg_setup() {
 	enewgroup scanner
+	enewuser saned -1 -1 -1 scanner
 
 	use gphoto2 && BACKENDS="gphoto2"
 	use v4l && BACKENDS="${BACKENDS} v4l"
