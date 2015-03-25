@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License, v2 or later
 
 VARDIR="/var/lib/darkcoin"
-CONFFILE="${VARDIR}/.darkcoin/darkcoin.conf"
+CONFFILE="${VARDIR}/.DARK/dark.conf"
 
 depend() {
 	need net
