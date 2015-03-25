@@ -1,7 +1,0 @@
-/var/lib/fudcoin/.fudcoin/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP fudcoind
-	endscript
-}

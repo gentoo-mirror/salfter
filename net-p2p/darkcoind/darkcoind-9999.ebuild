@@ -9,13 +9,13 @@ DB_VER="4.8"
 inherit db-use eutils user versionator toolchain-funcs git-2
 
 MyPV="${PV/_/}"
-MyPN="fudcoin"
+MyPN="darkcoin"
 MyP="${MyPN}-${MyPV}"
 
-DESCRIPTION="Fudcoin"
-HOMEPAGE="http://github.com/CarsonCloak/fudcoin"
-EGIT_PROJECT="fudcoin"
-EGIT_REPO_URI="https://github.com/CarsonCloak/fudcoin"
+DESCRIPTION="Darkcoin"
+HOMEPAGE="https://github.com/CarsonCloak/DARK"
+EGIT_PROJECT="darkcoin"
+EGIT_REPO_URI="https://github.com/CarsonCloak/DARK"
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
@@ -31,9 +31,9 @@ RDEPEND="
 	upnp? (
 		net-libs/miniupnpc
 	)
-	sys-libs/db:$(db_ver_to_slot "${DB_VER}")[cxx]
-	=dev-libs/leveldb-1.9.0*[-snappy]
-"
+	sys-libs/db:$(db_ver_to_slot "${DB_VER}")[cxx]"
+#	=dev-libs/leveldb-1.9.0*[-snappy]
+#"
 DEPEND="${RDEPEND}
 	>=app-shells/bash-4.1
 	sys-apps/sed
@@ -42,20 +42,18 @@ DEPEND="${RDEPEND}
 S="${WORKDIR}/${MyP}"
 
 pkg_setup() {
-	local UG='fudcoin'
+	local UG='darkcoin'
 	enewgroup "${UG}"
-	enewuser "${UG}" -1 -1 /var/lib/fudcoin "${UG}"
+	enewuser "${UG}" -1 -1 /var/lib/darkcoin "${UG}"
 }
 
 src_prepare() {
 	if has_version '>=dev-libs/boost-1.52'; then
 		sed -i 's/\(-l db_cxx\)/-l boost_chrono$(BOOST_LIB_SUFFIX) \1/' src/makefile.unix
 	fi
-    
+
     # disable FORTIFY_SOURCE
-    
     sed -i "s/HARDENING+=-D_FORTIFY_SOURCE=2/#HARDENING+=-D_FORTIFY_SOURCE=2/" src/makefile.unix
-    
 }
 
 src_compile() {
@@ -75,9 +73,12 @@ src_compile() {
 	fi
 	use ipv6 || OPTS+=("USE_IPV6=-")
 
+	OPTS+=("USE_SYSTEM_LEVELDB=1")
+
 	cd src || die
+	mkdir -p obj
 	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix leveldb/libleveldb.a || die
-	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" ${PN} || die
+	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" ${PN}
 }
 
 src_test() {
@@ -89,19 +90,19 @@ src_test() {
 src_install() {
 	dobin src/${PN}
 
-	insinto /etc/fudcoin
-	newins "${FILESDIR}/fudcoin.conf" fudcoin.conf
-	fowners fudcoin:fudcoin /etc/fudcoin/fudcoin.conf
-	fperms 600 /etc/fudcoin/fudcoin.conf
+	insinto /etc/darkcoin
+	newins "${FILESDIR}/dark.conf" dark.conf
+	fowners darkcoin:darkcoin /etc/darkcoin/dark.conf
+	fperms 600 /etc/darkcoin/dark.conf
 
-	newconfd "${FILESDIR}/fudcoin.confd" ${PN}
-	newinitd "${FILESDIR}/fudcoin.initd" ${PN}
+	newconfd "${FILESDIR}/darkcoin.confd" ${PN}
+	newinitd "${FILESDIR}/darkcoin.initd" ${PN}
 
-	keepdir /var/lib/fudcoin/.fudcoin
-	fperms 700 /var/lib/fudcoin
-	fowners fudcoin:fudcoin /var/lib/fudcoin/
-	fowners fudcoin:fudcoin /var/lib/fudcoin/.fudcoin
-	dosym /etc/fudcoin/fudcoin.conf /var/lib/fudcoin/.fudcoin/fudcoin.conf
+	keepdir /var/lib/darkcoin/.DARK
+	fperms 700 /var/lib/darkcoin
+	fowners darkcoin:darkcoin /var/lib/darkcoin/
+	fowners darkcoin:darkcoin /var/lib/darkcoin/.DARK
+	dosym /etc/darkcoin/dark.conf /var/lib/darkcoin/.DARK/dark.conf
 
 	dodoc doc/README 
 
@@ -112,6 +113,6 @@ src_install() {
 
 	if use logrotate; then
 		insinto /etc/logrotate.d
-		newins "${FILESDIR}/fudcoind.logrotate" fudcoind
+		newins "${FILESDIR}/darkcoind.logrotate" darkcoind
 	fi
 }

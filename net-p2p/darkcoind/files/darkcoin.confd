@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/darkcoin
+
+# owner of darkcoind process (don't change, must be existing)
+DARKCOIN_USER="darkcoin"
+
+# See darkcoind --daemon
+DARKCOIN_OPTS="${DARKCOIN_OPTS}"
+
+# nice level
+NICELEVEL="19"
