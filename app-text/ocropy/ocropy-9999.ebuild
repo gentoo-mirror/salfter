@@ -26,6 +26,7 @@ DEPEND="dev-python/pycurl
 src_prepare()
 {
 	cd ${WORKDIR}/${P} || die
+	epatch ${FILESDIR}/sharedir.patch || die
 
 	# fetch models from source 
 	einfo "Fetching OCR models ..."
