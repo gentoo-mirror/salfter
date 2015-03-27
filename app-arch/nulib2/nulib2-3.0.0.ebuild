@@ -2,35 +2,36 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
+EAPI=5
+
 inherit eutils
 
 DESCRIPTION="utility & library for manipulating NuFX archives"
 HOMEPAGE="http://www.nulib.com/"
-SRC_URI="mirror://sourceforge/nulib2/nulibdist-211.tar.gz"
+SRC_URI="https://github.com/fadden/nulib2/archive/v3.0.0.tar.gz -> nulib2-${PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE=""
 
-src_unpack() {
-	unpack ${A}
+src_configure() {
+	cd ${S}/nufxlib || die
+	econf || die "./configure failed"
+	cd ${S}/nulib2 || die
+	econf || die "./configure failed"
 }
 
 src_compile() {
-	cd ${WORKDIR}/nufxlib-211
-	econf || die "./configure failed"
-	make depend || die "make depend failed"
-	make -j1 || die "emake failed"
-	cd ${WORKDIR}/nulib2-211
-	econf || die "./configure failed"
-	make depend || die "make depend failed"
-	make -j1 || die "emake failed"
+	cd ${S}/nufxlib
+	make || die "emake failed"
+	cd ${S}/nulib2
+	make || die "emake failed"
 }
 
 src_install() {
-	cd ${WORKDIR}/nufxlib-211
+	cd ${S}/nufxlib
         einstall libdir="${D}"/usr/$(get_libdir) || die
-	cd ${WORKDIR}/nulib2-211
+	cd ${S}/nulib2
         einstall || die
 }
