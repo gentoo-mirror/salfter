@@ -22,6 +22,12 @@ DEPEND="dev-qt/qtsql:5
 		dev-qt/qtmultimedia:5[widgets]
 		dev-qt/qtscript:5"
 		
+src_prepare()
+{
+	cd ${WORKDIR}/${P} || die
+	epatch ${FILESDIR}/${P}-desktop.patch || die
+}
+
 src_configure()
 {
 	cd ${WORKDIR}/${P} || die
