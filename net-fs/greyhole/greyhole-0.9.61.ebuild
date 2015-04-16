@@ -79,9 +79,11 @@ src_install()
   dobin ${PN}-dfree
 
   insinto /usr/share/greyhole
+  insopts -m755
   newins greyhole-dfree.php greyhole-dfree.php
  
   insinto /etc
+  insopts -m644
   newins greyhole.example.conf ${PN}.conf.example 
   
   doman docs/*
