@@ -16,7 +16,7 @@ DESCRIPTION="Fastcoin"
 HOMEPAGE="http://github.com/fastcoinproject/fastcoin"
 EGIT_PROJECT="fastcoin"
 EGIT_REPO_URI="https://github.com/fastcoinproject/fastcoin"
-EGIT_BRANCH="fastcoin-8.7.4"
+EGIT_BRANCH="fastcoin-8.7.2"
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
