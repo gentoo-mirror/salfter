@@ -7,9 +7,7 @@ ESVN_REPO_URI="http://httpsegmenter.googlecode.com/svn/trunk/"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="**"
-IUSE="libav"
-DEPEND="!libav? ( media-video/ffmpeg ) 
-		libav?  ( media-video/libav )"
+DEPEND="virtual/ffmpeg"
                                                 
 src_compile() {
 	cd ${WORKDIR}/${P}
