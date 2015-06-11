@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=GSport
+Type=Application
+Comment=Apple IIGS emulator
+Exec=gsportx
+TryExec=gsportx
+Icon=gsport
+Categories=Emulator;System;
