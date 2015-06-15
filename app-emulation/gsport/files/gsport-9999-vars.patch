@@ -1,0 +1,19 @@
+--- src/vars	2015-06-15 08:53:06.063728935 -0700
++++ src/vars	2015-06-15 08:57:52.010610917 -0700
+@@ -1,14 +1,14 @@
+ TARGET = gsportx
+ OBJECTS = $(OBJECTS1) $(TFEOBJ) $(ATOBJ) $(PCAPOBJ) xdriver.o
+ CC = gcc
+-CCOPTS = -O2 -Wall -fomit-frame-pointer -std=gnu99 -march=i686 -DHAVE_TFE -DHAVE_ATBRIDGE -DTOGGLE_STATUS
++CCOPTS = -O2 -Wall -fomit-frame-pointer -std=gnu99 -march=native -DHAVE_TFE -DHAVE_ATBRIDGE -DTOGGLE_STATUS
+ OPTS = -DGSPORT_LITTLE_ENDIAN 
+ SUFFIX =
+ NAME = gsportx
+ LDFLAGS =
+ LDOPTS =
+ LD = g++
+-EXTRA_LIBS = -lXext
++EXTRA_LIBS = -lXext -ldl
+ EXTRA_SPECIALS =
+ 
+ AS = cc

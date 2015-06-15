@@ -1,0 +1,39 @@
+--- src/vars	2015-06-15 09:00:18.914146467 -0700
++++ src/vars	2015-06-15 09:02:07.686764302 -0700
+@@ -1,18 +1,18 @@
+-TARGET = gsportx
+-OBJECTS = $(OBJECTS1) $(TFEOBJ) $(ATOBJ) $(PCAPOBJ) xdriver.o
+-CC = gcc
+-CCOPTS = -O2 -Wall -fomit-frame-pointer -std=gnu99 -march=i686 -DHAVE_SDL -DHAVE_TFE -DHAVE_ATBRIDGE -DTOGGLE_STATUS -I/usr/include/SDL -I/usr/include/freetype2
+-CPPOPTS = -O2 -DHAVE_TFE -DHAVE_SDL -DTOGGLE_STATUS -DHAVE_ATBRIDGE -I/usr/include/freetype2 -I/usr/include/SDL
+-OPTS = -DGSPORT_LITTLE_ENDIAN 
+-SUFFIX =
+-NAME = gsportx
+-LDFLAGS =
+-LDOPTS =
+-LD = g++
+-EXTRA_LIBS = -lXext -lfreetype -lSDL
+-EXTRA_SPECIALS =
+-
+-AS = cc
+-PERL = perl
+-
+-XOPTS = -I/usr/X11R6/include
++TARGET = gsportx
++OBJECTS = $(OBJECTS1) $(TFEOBJ) $(ATOBJ) $(PCAPOBJ) xdriver.o
++CC = gcc
++CCOPTS = -O2 -Wall -fomit-frame-pointer -std=gnu99 -march=native -DHAVE_SDL -DHAVE_TFE -DHAVE_ATBRIDGE -DTOGGLE_STATUS -I/usr/include/SDL -I/usr/include/freetype2
++CPPOPTS = -O2 -DHAVE_TFE -DHAVE_SDL -DTOGGLE_STATUS -DHAVE_ATBRIDGE -I/usr/include/freetype2 -I/usr/include/SDL
++OPTS = -DGSPORT_LITTLE_ENDIAN 
++SUFFIX =
++NAME = gsportx
++LDFLAGS =
++LDOPTS =
++LD = g++
++EXTRA_LIBS = -lXext -lfreetype -lSDL -ldl
++EXTRA_SPECIALS =
++
++AS = cc
++PERL = perl
++
++XOPTS = -I/usr/X11R6/include

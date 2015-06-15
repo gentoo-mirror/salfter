@@ -1,20 +1,20 @@
 EAPI="5"
 
-inherit eutils
+inherit eutils subversion
 
 DESCRIPTION="Apple IIGS emulator, based on KEGS"
 HOMEPAGE="http://gsport.sourceforge.net"
-SRC_URI="mirror://sourceforge/gsport/GSport-${PV}/${PN}_${PV}.tar.gz -> ${P}.tar.gz
-         ftp://ftp.apple.asimov.net/pub/apple_II/emulators/kegs/Kegs%20v0.91%20%28with%20system%206%20and%20free%20games%29.zip -> kegs-0.91.zip"
+ESVN_REPO_URI="svn://svn.code.sf.net/p/gsport/code/trunk"
+ESVN_PROJECT="gsport"
+SRC_URI="ftp://ftp.apple.asimov.net/pub/apple_II/emulators/kegs/Kegs%20v0.91%20%28with%20system%206%20and%20free%20games%29.zip -> kegs-0.91.zip"
 DEPEND="x11-libs/libXext"
 LICENSE="GPL"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS=""
+IUSE="sdl"
 
 src_unpack() {
-  mkdir ${WORKDIR}
-  unpack ${P}.tar.gz
-  mv ${PN}_${PV} ${P}
+  subversion_src_unpack
   mkdir kegs-0.91
   cd kegs-0.91
   unpack kegs-0.91.zip
@@ -30,7 +30,15 @@ src_unpack() {
 
 src_prepare() {
   cd ${S}
-  epatch ${FILESDIR}/${P}-vars.patch
+  
+  if use sdl; then
+    cp src/vars_x86linux_sdl src/vars
+    epatch ${FILESDIR}/${P}-vars-sdl.patch
+  else
+    cp src/vars_x86linux src/vars
+    epatch ${FILESDIR}/${P}-vars.patch
+  fi
+
   tr -d "\r" <config.template >config.template~ && mv config.template~ config.template
   epatch ${FILESDIR}/${PN}-config.patch
   epatch ${FILESDIR}/${PN}-path.patch
