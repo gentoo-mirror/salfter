@@ -33,7 +33,7 @@ RDEPEND="
 		net-libs/miniupnpc
 	)
 	sys-libs/db:$(db_ver_to_slot "${DB_VER}")[cxx]
-	=dev-libs/leveldb-1.9.0*[-snappy]
+	>=dev-libs/leveldb-1.9[-snappy]
 "
 DEPEND="${RDEPEND}
 	>=app-shells/bash-4.1
