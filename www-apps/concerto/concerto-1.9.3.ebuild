@@ -7,23 +7,20 @@ inherit webapp depend.php
 
 DESCRIPTION="Concerto Digital Signage"
 HOMEPAGE="http://www.concerto-signage.com/"
-SRC_URI="http://www.concerto-signage.com/downloads/${PN}-${PV}-NoCAS.tar.gz"
+SRC_URI="https://github.com/concerto/concerto_v1/tarball/${PN}-${PV}-NoCAS/${PN}-${PV}-NoCAS.tar.gz"
 
 S="${WORKDIR}/${PN}-${PV}-NoCAS"
 
 LICENSE="GPL-2"
-KEYWORDS="~x86"
-IUSE="mysql curl gd gd-external truetype"
+KEYWORDS="x86 amd64"
+IUSE="mysql curl gd gd-external truetype squish"
 
-DEPEND="dev-db/mysql 
-	app-text/ghostscript-gpl 
-	media-gfx/imagemagick[gs,jpeg,png,tiff] 
-	app-office/openoffice-bin
-	dev-vcs/subversion"
-RDEPEND=""
+DEPEND="media-gfx/imagemagick[postscript,jpeg,png,tiff] 
+	|| ( app-office/libreoffice-bin app-office/openoffice-bin )"
+RDEPEND="|| ( >=dev-lang/php-5[apache2,mysql,curl,truetype,gd] >=dev-lang/php-5[apache2,mysql,curl,truetype,gd-external] )"
 
-need_httpd_cgi
-need_php5_httpd
+#need_httpd_cgi
+#need_php5_httpd
 
 pkg_setup() {
   webapp_pkg_setup
@@ -41,7 +38,18 @@ pkg_setup() {
 
 src_unpack() {
   unpack ${A}
-  epatch "${FILESDIR}"/${P}-NoCAS-multipage-upload-gentoo.patch
+  mv "${WORKDIR}/concerto-concerto_v1-ec28e35" "${S}"
+  epatch "${FILESDIR}/${P}-multipage-upload.patch"
+  epatch "${FILESDIR}/${P}-password-change-fix.patch"
+  epatch "${FILESDIR}/${P}-no-subversion.patch"
+  if has_version app-office/libreoffice-bin; then
+    epatch "${FILESDIR}/${P}-use-libreoffice-bin.patch"
+  else
+    epatch "${FILESDIR}/${P}-use-openoffice-bin.patch"
+  fi
+  if use squish; then
+    epatch "${FILESDIR}/${P}-image-squish.patch"
+  fi
   cd "${S}"
 }
 
