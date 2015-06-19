@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/myriadcoin
+
+# owner of myriadcoind process (don't change, must be existing)
+MYRIADCOIN_USER="myriadcoin"
+
+# See myriadcoind --help
+MYRIADCOIN_OPTS="${MYRIADCOIN_OPTS}"
+
+# nice level
+NICELEVEL="19"

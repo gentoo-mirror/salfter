@@ -1,0 +1,8 @@
+--- mp3val-0.1.8-src/Makefile.linux~	2010-05-03 11:12:44.000000000 -0700
++++ mp3val-0.1.8-src/Makefile.linux	2010-05-03 11:12:44.000000000 -0700
+@@ -1,5 +1,3 @@
+-CXXFLAGS=-Wall -O2
+-
+ mp3val: main.o mpegparse.o out.o report.o crossapi.o crc.o
+ 	$(CXX) $(CXXFLAGS) $^ -o $@
+ 

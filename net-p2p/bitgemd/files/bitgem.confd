@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/bitgem
+
+# owner of bitgemd process (don't change, must be existing)
+BITGEM_USER="bitgem"
+
+# See bitgemd --daemon
+BITGEM_OPTS="${BITGEM_OPTS}"
+
+# nice level
+NICELEVEL="19"

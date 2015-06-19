@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/digibyte
+
+# owner of digibyted process (don't change, must be existing)
+DIGIBYTE_USER="digibyte"
+
+# See digibyted --help
+DIGIBYTE_OPTS="${DIGIBYTE_OPTS}"
+
+# nice level
+NICELEVEL="19"

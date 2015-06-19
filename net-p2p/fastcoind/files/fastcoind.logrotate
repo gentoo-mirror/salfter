@@ -1,0 +1,7 @@
+/var/lib/fastcoin/.fastcoin/debug.log {
+	weekly
+	sharedscripts
+	postrotate
+		killall -HUP fastcoind
+	endscript
+}

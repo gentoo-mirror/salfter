@@ -1,0 +1,10 @@
+# Config file for /etc/init.d/sexcoin
+
+# owner of sexcoind process (don't change, must be existing)
+SEXCOIN_USER="sexcoin"
+
+# See sexcoind --daemon
+SEXCOIN_OPTS="${SEXCOIN_OPTS}"
+
+# nice level
+NICELEVEL="19"

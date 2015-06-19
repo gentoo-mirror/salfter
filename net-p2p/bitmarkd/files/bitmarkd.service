@@ -1,0 +1,30 @@
+# It's not recommended to modify this file in-place, because it will be
+# overwritten during package upgrades. If you want to customize, the
+# best way is to create file
+# "/etc/systemd/system/bitmarkd.service.d/*.conf"
+# containing your changes
+
+# For example, if you want to change some daemon and/or unit options,
+# create a file named
+# "/etc/systemd/system/bitmarkd.service.d/myopts.conf"
+# containing:
+#       [Service]
+#       Environment="BITMARK_OPTS=-debug -logtimestamps"
+#       Nice=10
+# This will override the setting appearing below.
+
+# Note that almost all daemon options could be specified in
+# /etc/bitmark/bitmark.conf
+
+[Unit]
+Description=Bitmark Daemon
+After=network.target
+
+[Service]
+User=bitmark
+Environment=BITMARK_OPTS=
+ExecStart=/usr/bin/bitmarkd -daemon=0 $BITMARK_OPTS
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target

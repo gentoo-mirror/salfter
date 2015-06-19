@@ -1,0 +1,7 @@
+/var/lib/joulecoin/.joulecoin/debug.log {
+	weekly
+	sharedscripts
+	postrotate
+		killall -HUP joulecoind
+	endscript
+}

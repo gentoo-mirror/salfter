@@ -1,0 +1,7 @@
+/var/lib/tekcoin/.tekcoin/debug.log {
+	weekly
+	sharedscripts
+	postrotate
+		killall -HUP tekcoind
+	endscript
+}

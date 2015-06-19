@@ -1,0 +1,7 @@
+/var/lib/42/.42/debug.log {
+	weekly
+	sharedscripts
+	postrotate
+		killall -HUP 42d
+	endscript
+}
