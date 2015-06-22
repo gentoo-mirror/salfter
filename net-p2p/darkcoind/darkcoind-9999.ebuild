@@ -20,16 +20,13 @@ EGIT_REPO_URI="https://github.com/CarsonCloak/DARK"
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
 KEYWORDS="**"
-IUSE="examples ipv6 logrotate upnp"
+IUSE="examples ipv6 logrotate"
 
 RDEPEND="
 	>=dev-libs/boost-1.41.0[threads(+)]
 	dev-libs/openssl:0[-bindist]
 	logrotate? (
 		app-admin/logrotate
-	)
-	upnp? (
-		net-libs/miniupnpc
 	)
 	sys-libs/db:$(db_ver_to_slot "${DB_VER}")[cxx]"
 #	>=dev-libs/leveldb-1.9[-snappy]
@@ -54,6 +51,8 @@ src_prepare() {
 
     # disable FORTIFY_SOURCE
     sed -i "s/HARDENING+=-D_FORTIFY_SOURCE=2/#HARDENING+=-D_FORTIFY_SOURCE=2/" src/makefile.unix
+
+    epatch ${FILESDIR}/makefile-no-static.patch
 }
 
 src_compile() {
@@ -78,7 +77,7 @@ src_compile() {
 	cd src || die
 	mkdir -p obj
 	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix leveldb/libleveldb.a || die
-	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" ${PN}
+	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" DARKd
 }
 
 src_test() {
@@ -88,7 +87,7 @@ src_test() {
 }
 
 src_install() {
-	dobin src/${PN}
+	dobin src/DARKd
 
 	insinto /etc/darkcoin
 	newins "${FILESDIR}/dark.conf" dark.conf
