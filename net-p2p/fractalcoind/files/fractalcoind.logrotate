@@ -1,0 +1,7 @@
+/var/lib/fractalcoin/.fractalcoin/debug.log {
+	weekly
+	sharedscripts
+	postrotate
+		killall -HUP fractalcoind
+	endscript
+}
