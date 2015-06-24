@@ -1,0 +1,11 @@
+--- src/leveldbwrapper.cpp~	2015-06-24 12:09:51.000000000 -0700
++++ src/leveldbwrapper.cpp	2015-06-24 12:12:38.822932966 -0700
+@@ -10,7 +10,7 @@
+ #include <leveldb/cache.h>
+ #include <leveldb/env.h>
+ #include <leveldb/filter_policy.h>
+-#include <memenv.h>
++#include <leveldb/helpers/memenv.h>
+ 
+ void HandleError(const leveldb::Status &status) throw(leveldb_error) {
+     if (status.ok())
