@@ -1,9 +1,9 @@
 EAPI=5
-inherit eutils subversion
+inherit eutils git-2
 
 DESCRIPTION="HTTP Live Streaming segmenter"
 HOMEPAGE="http://www.espend.de/artikel/iphone-ipad-ipod-http-streaming-segmenter-and-m3u8-windows.html"
-ESVN_REPO_URI="http://httpsegmenter.googlecode.com/svn/trunk/"
+EGIT_REPO_URI="https://github.com/salfter/httpsegmenter"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="**"
