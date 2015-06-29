@@ -26,6 +26,12 @@ pkg_setup() {
 	enewuser "${UG}" -1 -1 /var/lib/viacoin "${UG}"
 }
 
+src_prepare()
+{
+	epatch "${FILESDIR}/leveldbwrapper-memenv.patch"
+	eautoreconf
+}
+
 src_configure() {
 	# NOTE: --enable-zmq actually disables it
 	viacoincore_conf \
