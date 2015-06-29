@@ -26,6 +26,12 @@ pkg_setup() {
 	enewuser "${UG}" -1 -1 /var/lib/unobtanium "${UG}"
 }
 
+src_prepare()
+{
+	epatch "${FILESDIR}/leveldbwrapper-memenv.patch"
+	eautoreconf
+}
+
 src_configure() {
 	# NOTE: --enable-zmq actually disables it
 	unobtaniumcore_conf \

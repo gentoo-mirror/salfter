@@ -51,6 +51,7 @@ pkg_setup() {
 
 src_prepare() {
 	epatch "${FILESDIR}/0.9.0-sys_leveldb.patch"
+	epatch "${FILESDIR}/leveldbwrapper-memenv.patch"
 	rm -r src/leveldb 
 	eautoreconf
 }
