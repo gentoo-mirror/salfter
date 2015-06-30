@@ -1,0 +1,7 @@
+/var/lib/digitalcoin/.digitalcoin/debug.log {
+	weekly
+	sharedscripts
+	postrotate
+		killall -HUP digitalcoind
+	endscript
+}
