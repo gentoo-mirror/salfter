@@ -10,9 +10,9 @@ SUPPORT_PYTHON_ABIS="1"
 RESTRICT_PYTHON_ABIS="3.*"
 
 DESCRIPTION="Python binding for the BleuTrade altcoin-trading API"
-HOMEPAGE="https://github.com/salfter/bleuBot"
+HOMEPAGE="https://github.com/Durendal/bleuBot"
 LICENSE="MIT"
-EGIT_REPO_URI="https://github.com/salfter/bleuBot"
+EGIT_REPO_URI="https://github.com/Durendal/bleuBot"
 SLOT="0"
 KEYWORDS="**"
 
