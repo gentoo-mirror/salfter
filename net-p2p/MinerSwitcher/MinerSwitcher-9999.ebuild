@@ -14,7 +14,8 @@ KEYWORDS="**"
 RDEPEND="dev-python/ProfitLib
 		 dev-python/pycgminer
 		 dev-python/python-pushover
-		 dev-python/python-nmap"
+		 dev-python/python-nmap
+		 dev-python/tabulate"
 		 
 src_install()
 {
