@@ -19,3 +19,10 @@ src_install()
   cd ${S}
   dosbin raspi-config
 }
+
+pkg_postinst()
+{
+  ewarn "Since raspi-config was written for Raspbian, not all functionality"
+  ewarn "might work.  Functions that edit /boot/config.txt (such as to control"
+  ewarn "overclocking, I2C, and SPI) are known to work.  Others are untested."
+}
