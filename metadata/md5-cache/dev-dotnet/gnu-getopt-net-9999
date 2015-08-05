@@ -1,0 +1,11 @@
+_eclasses_=subversion	c12bdf4fcc82f86ad89b14c8f76c4026	mono	203a4295c06155d318bdff9c6b2d5e1c	toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=676d416b43b9485f75d63e2f2e1836a4
+SLOT=0
+DEFINED_PHASES=compile install preinst prepare unpack
+EAPI=4
+DEPEND=dev-lang/mono || ( dev-vcs/subversion[http] dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
+DESCRIPTION=a C# port of the Java port of GNU getopt
+LICENSE=LGPL-2
+KEYWORDS=~amd64 ~x86
+HOMEPAGE=http://getopt.codeplex.com/
+RDEPEND=dev-lang/mono

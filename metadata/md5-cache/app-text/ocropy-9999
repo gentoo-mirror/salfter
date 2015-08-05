@@ -1,0 +1,13 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	distutils-r1	715b22a21726d3fd76b17e007c5daf5f	multilib	62927b3db3a589b0806255f3a002d5d3	python-r1	d9c8348f26710ea523a385c2328cf027	git-2	e28f0d8a9b321431b1e699782851b827	multibuild	6d4858dc00f8bc51caf3f957f8430eb0	multiprocessing	d7f2985a2c76c365ee20269db5261414	eutils	9fb270e417e0e83d64ca52586c4a79de	python-utils-r1	295a286ec27cab6af76b3b75ba07a3a
+_md5_=9a1e906e02f4d1e7c09717031339df94
+SLOT=0
+DEFINED_PHASES=compile configure install prepare test unpack
+EAPI=5
+DEPEND=dev-python/pycurl sci-libs/scipy dev-python/matplotlib dev-python/pytables www-client/firefox dev-python/pythonmagick media-libs/opencv[python] dev-python/beautifulsoup:4 dev-vcs/git python_targets_python2_7? ( >=dev-lang/python-2.7.5-r2:2.7 ) >=dev-lang/python-exec-2:=[python_targets_python2_7(-)?,-python_single_target_python2_7(-)]
+DESCRIPTION=open-source document analysis and OCR
+LICENSE=Apache-2.0
+IUSE=python_targets_python2_7
+REQUIRED_USE=|| ( python_targets_python2_7 )
+KEYWORDS=~amd64
+HOMEPAGE=https://github.com/tmbdev/ocropy
+RDEPEND=python_targets_python2_7? ( >=dev-lang/python-2.7.5-r2:2.7 ) >=dev-lang/python-exec-2:=[python_targets_python2_7(-)?,-python_single_target_python2_7(-)]

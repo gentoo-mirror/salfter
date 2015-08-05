@@ -1,0 +1,11 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	user	f54e098dd38ba1c0847a13e685b87747	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=c646f3f0acae951ff716540c693aac3c
+SLOT=0
+DEFINED_PHASES=install postinst setup
+EAPI=0
+DESCRIPTION=Postfix policy server implementing Sender Policy Framework (SPF)
+LICENSE=GPL-2
+SRC_URI=http://launchpad.net/postfix-policyd-spf-perl/trunk/release2.010/+download/postfix-policyd-spf-perl-2.010.tar.gz
+KEYWORDS=amd64 ~hppa ~ppc ppc64 x86
+HOMEPAGE=http://www.openspf.org/Software
+RDEPEND=>=dev-lang/perl-5.6.0 >=dev-perl/Mail-SPF-2.006 dev-perl/NetAddr-IP dev-perl/Sys-Hostname-Long

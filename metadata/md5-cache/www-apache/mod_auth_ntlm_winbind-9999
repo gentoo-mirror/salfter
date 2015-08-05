@@ -1,0 +1,11 @@
+_eclasses_=apache-module	5c4c90da2d68c2dc8391666824f1293c	autotools	2264f05fbbbaaf83d34ec81e72b38ffd	toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	subversion	c12bdf4fcc82f86ad89b14c8f76c4026	libtool	52d0e17251d04645ffaa61bfdd858944	depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=1f2e209a6068002442163029dfe41857
+SLOT=0
+DEFINED_PHASES=compile install postinst preinst setup unpack
+EAPI=0
+DEPEND==www-servers/apache-2.2* dev-vcs/subversion net-misc/rsync !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DESCRIPTION=Active Directory authentication via NTLM for Apache
+LICENSE=Apache-2.0
+KEYWORDS=~amd64 ~x86
+HOMEPAGE=http://adldap.sourceforge.net/wiki/doku.php?id=mod_auth_ntlm_winbind
+RDEPEND==www-servers/apache-2.2*

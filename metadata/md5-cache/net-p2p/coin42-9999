@@ -1,0 +1,12 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	versionator	cd0bcdb170807e4a1984115e9d53a26f	multilib	62927b3db3a589b0806255f3a002d5d3	git-2	e28f0d8a9b321431b1e699782851b827	user	f54e098dd38ba1c0847a13e685b87747	db-use	82d0e62839f20e1e0d5a2259abd5316f	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=1a06c54425fb60140a84b0c13452117d
+SLOT=0
+DEFINED_PHASES=compile install prepare setup test unpack
+EAPI=4
+DEPEND=>=dev-libs/boost-1.41.0[threads(+)] dev-libs/openssl:0[-bindist] logrotate? ( app-admin/logrotate ) upnp? ( net-libs/miniupnpc ) sys-libs/db:4.8[cxx] >=dev-libs/leveldb-1.9[-snappy] >=app-shells/bash-4.1 sys-apps/sed dev-vcs/git
+DESCRIPTION=42
+LICENSE=MIT ISC GPL-2
+IUSE=examples ipv6 logrotate upnp
+KEYWORDS=**
+HOMEPAGE=https://github.com/fourtytwo42/42
+RDEPEND=>=dev-libs/boost-1.41.0[threads(+)] dev-libs/openssl:0[-bindist] logrotate? ( app-admin/logrotate ) upnp? ( net-libs/miniupnpc ) sys-libs/db:4.8[cxx] >=dev-libs/leveldb-1.9[-snappy]

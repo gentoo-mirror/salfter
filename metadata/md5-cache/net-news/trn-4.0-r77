@@ -1,0 +1,10 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3
+_md5_=20d73e986655374d6fb8dc5c8ee4c29d
+SLOT=0
+DEFINED_PHASES=install prepare
+EAPI=5
+DESCRIPTION=threaded news reader
+LICENSE=MIT
+SRC_URI=mirror://sourceforge/trn/trn4/trn-4.0-test77.tar.gz
+KEYWORDS=amd64 x86
+HOMEPAGE=http://trn.sourceforge.net/

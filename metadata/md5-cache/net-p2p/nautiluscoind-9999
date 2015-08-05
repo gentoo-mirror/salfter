@@ -1,0 +1,12 @@
+_eclasses_=systemd	90342761f573a8280dd5aa6b0345f3b	versionator	cd0bcdb170807e4a1984115e9d53a26f	toolchain-funcs	42408102d713fbad60ca21349865edb4	bash-completion-r1	c8399c7c7ecbcf7ed6e5bd3abb3d4af3	multilib	62927b3db3a589b0806255f3a002d5d3	git-2	e28f0d8a9b321431b1e699782851b827	libtool	52d0e17251d04645ffaa61bfdd858944	user	f54e098dd38ba1c0847a13e685b87747	db-use	82d0e62839f20e1e0d5a2259abd5316f	autotools	2264f05fbbbaaf83d34ec81e72b38ffd	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=6e869e7b4421e5b37b5405b3238faf3b
+SLOT=0
+DEFINED_PHASES=configure install prepare setup test unpack
+EAPI=4
+DEPEND=>=dev-libs/boost-1.52.0[threads(+)] dev-libs/openssl:0[-bindist] logrotate? ( app-admin/logrotate ) upnp? ( net-libs/miniupnpc ) wallet? ( sys-libs/db:5.1[cxx] ) virtual/bitcoin-leveldb >=app-shells/bash-4.1 sys-apps/sed !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/git virtual/pkgconfig
+DESCRIPTION=Nautiluscoin daemon
+LICENSE=MIT ISC GPL-2
+IUSE=examples logrotate test upnp +wallet
+SRC_URI=
+HOMEPAGE=https://github.com/nautiluscoin/nautiluscoin
+RDEPEND=>=dev-libs/boost-1.52.0[threads(+)] dev-libs/openssl:0[-bindist] logrotate? ( app-admin/logrotate ) upnp? ( net-libs/miniupnpc ) wallet? ( sys-libs/db:5.1[cxx] ) virtual/bitcoin-leveldb

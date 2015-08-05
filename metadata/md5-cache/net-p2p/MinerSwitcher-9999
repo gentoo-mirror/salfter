@@ -1,0 +1,11 @@
+_eclasses_=git-2	e28f0d8a9b321431b1e699782851b827	toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=21e719dde5d94356df14ca232d260836
+SLOT=0
+DEFINED_PHASES=install postinst unpack
+EAPI=5
+DEPEND=dev-vcs/git
+DESCRIPTION=altcoin mining profitability switcher
+LICENSE=MIT
+KEYWORDS=**
+HOMEPAGE=https://github.com/salfter/MinerSwitcher
+RDEPEND=dev-python/ProfitLib dev-python/pycgminer dev-python/python-pushover dev-python/python-nmap dev-python/tabulate

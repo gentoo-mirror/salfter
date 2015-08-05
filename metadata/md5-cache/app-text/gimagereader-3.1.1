@@ -1,0 +1,12 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	eutils	9fb270e417e0e83d64ca52586c4a79de	cmake-utils	430c386d85cec959d72640afd63ea91	flag-o-matic	c9602887773166fe300444712fc7ff98
+_md5_=f96126f4ee833936c6d6bb980d84cc75
+SLOT=0
+DEFINED_PHASES=compile configure install prepare test
+EAPI=5
+DEPEND=app-text/qtspell app-text/tesseract app-text/poppler[qt4] scanner? ( media-gfx/sane-backends ) sys-devel/make >=dev-util/cmake-2.8.12 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=A tesseract OCR front-end
+LICENSE=GPL-3
+IUSE=scanner
+SRC_URI=https://github.com/manisandro/gImageReader/releases/download/v3.1.1/gimagereader-3.1.1.tar.xz
+KEYWORDS=~amd64 ~x86
+HOMEPAGE=https://github.com/manisandro/gImageReader

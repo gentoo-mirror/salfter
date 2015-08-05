@@ -1,0 +1,12 @@
+_eclasses_=git-2	e28f0d8a9b321431b1e699782851b827	python	3a270b7b1d1e679847ff0faeac25c5a3	toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	distutils	92e738ea29389cb3f34778d7a349ac71
+_md5_=da606c95563aef3de0f913c2c7090a4e
+SLOT=0
+DEFINED_PHASES=compile install postinst postrm prepare unpack
+EAPI=3
+DEPEND=dev-lang/python dev-vcs/git
+DESCRIPTION=cryptocurrency blockchain explorer
+LICENSE=BSD-2
+IUSE=mysql postgres sqlite scrypt
+KEYWORDS=**
+HOMEPAGE=https://github.com/salfter/bitcoin-abe
+RDEPEND=mysql? ( dev-python/mysql-python ) postgres? ( dev-python/psycopg ) sqlite? ( dev-lang/python[sqlite] ) dev-lang/python scrypt? ( dev-python/litecoin_scrypt ) dev-python/pycrypto dev-lang/python
