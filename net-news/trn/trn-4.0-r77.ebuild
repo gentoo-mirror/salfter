@@ -2,7 +2,7 @@ EAPI="5"
 
 inherit toolchain-funcs
 
-MY_P="`echo ${PF} | sed "s/-r/-test/"`"
+MY_P="${PF/-r/-test}"
 S="${WORKDIR}/${MY_P}"
 
 DESCRIPTION="threaded news reader"
