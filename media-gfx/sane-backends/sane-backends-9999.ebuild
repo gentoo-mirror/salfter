@@ -123,7 +123,7 @@ EGIT_REPO_URI="git://git.debian.org/sane/sane-backends.git http://git.debian.org
 
 LICENSE="GPL-2 public-domain"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 
 RDEPEND="
 	sane_backends_dc210? ( >=virtual/jpeg-0-r2[${MULTILIB_USEDEP}] )
