@@ -1,0 +1,13 @@
+_eclasses_=toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	eutils	351a78113be5b393c09a2c948701ad36
+_md5_=a2a5a70d6d30156ae1de6965a242d3b
+SLOT=0
+DEFINED_PHASES=compile configure install postinst prepare
+EAPI=4
+DEPEND=app-portage/gentoolkit
+DESCRIPTION=redundant storage pooling using Samba
+LICENSE=GPL-3
+IUSE=logrotate cron
+SRC_URI=https://github.com/gboudreau/Greyhole/releases/download/0.9.63/greyhole-0.9.63.tar.gz
+KEYWORDS=~amd64
+HOMEPAGE=https://www.greyhole.net/
+RDEPEND=>=net-fs/samba-3.4 <net-fs/samba-4.2 >=dev-lang/php-5.0[mysql,intl]

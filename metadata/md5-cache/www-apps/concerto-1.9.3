@@ -1,0 +1,13 @@
+_eclasses_=toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	depend.php	c595f1a83ba4052bfe96c06daee20004	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	eutils	351a78113be5b393c09a2c948701ad36	webapp	2442891c368d310c1d3fe77d9c77fe5b
+_md5_=bd95af8856ef71de067d05cd4e89d522
+SLOT=1.9.3
+DEFINED_PHASES=install postinst prerm setup unpack
+EAPI=2
+DEPEND=media-gfx/imagemagick[postscript,jpeg,png,tiff] || ( app-office/libreoffice-bin app-office/openoffice-bin ) >=app-admin/webapp-config-1.50.15
+DESCRIPTION=Concerto Digital Signage
+LICENSE=GPL-2
+IUSE=mysql curl gd gd-external truetype squish vhosts
+SRC_URI=https://github.com/concerto/concerto_v1/tarball/concerto-1.9.3-NoCAS/concerto-1.9.3-NoCAS.tar.gz
+KEYWORDS=x86 amd64
+HOMEPAGE=http://www.concerto-signage.com/
+RDEPEND=|| ( >=dev-lang/php-5[apache2,mysql,curl,truetype,gd] >=dev-lang/php-5[apache2,mysql,curl,truetype,gd-external] ) >=app-admin/webapp-config-1.50.15

@@ -1,0 +1,13 @@
+_eclasses_=toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	eutils	351a78113be5b393c09a2c948701ad36
+_md5_=46e628ff7e4c87d44be0809f986409fc
+SLOT=0
+DEFINED_PHASES=compile install setup unpack
+EAPI=0
+DEPEND=media-libs/libsdl player? ( >=x11-libs/gtk+-2 ffmpeg? ( >=media-video/ffmpeg-0.4.7 ) mpeg2? ( media-libs/libmpeg2 ) id3? ( media-libs/libid3tag ) a52? ( media-libs/a52dec ) ) xvid? ( >=media-libs/xvid-0.9.8 ) mp4live? ( >=x11-libs/gtk+-2 lame? ( >=media-sound/lame-3.92 ) aac? ( >=media-libs/faac-1.24-r1 ) ffmpeg? ( >=media-video/ffmpeg-0.4.7 ) x264? ( media-libs/x264-svn ) ) nas? ( media-libs/nas || ( x11-libs/libXt virtual/x11 ) ) alsa? ( media-libs/alsa-lib ) arts? ( kde-base/arts ) esd? ( media-sound/esound ) media-libs/libmp4v2 !<media-libs/faad2-2.0-r9 sys-devel/libtool sys-devel/autoconf sys-devel/automake player? ( mmx? ( >=dev-lang/nasm-0.98.19 ) )
+DESCRIPTION=MPEG 4 implementation library
+LICENSE=MPL-1.1 LGPL-2 GPL-2 LGPL-2.1 BSD UCL MPEG4
+IUSE=ipv6 mmx v4l2 xvid nas alsa esd arts ffmpeg a52 mpeg2 lame aac id3 player mp4live x264
+SRC_URI=mirror://sourceforge/mpeg4ip/mpeg4ip-1.5.0.1.tar.gz
+KEYWORDS=~amd64 ~ppc ~x86
+HOMEPAGE=http://www.mpeg4ip.net/
+RDEPEND=media-libs/libsdl player? ( >=x11-libs/gtk+-2 ffmpeg? ( >=media-video/ffmpeg-0.4.7 ) mpeg2? ( media-libs/libmpeg2 ) id3? ( media-libs/libid3tag ) a52? ( media-libs/a52dec ) ) xvid? ( >=media-libs/xvid-0.9.8 ) mp4live? ( >=x11-libs/gtk+-2 lame? ( >=media-sound/lame-3.92 ) aac? ( >=media-libs/faac-1.24-r1 ) ffmpeg? ( >=media-video/ffmpeg-0.4.7 ) x264? ( media-libs/x264-svn ) ) nas? ( media-libs/nas || ( x11-libs/libXt virtual/x11 ) ) alsa? ( media-libs/alsa-lib ) arts? ( kde-base/arts ) esd? ( media-sound/esound ) media-libs/libmp4v2 !<media-libs/faad2-2.0-r9

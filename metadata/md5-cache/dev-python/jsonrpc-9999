@@ -1,0 +1,11 @@
+_eclasses_=toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	bzr	745bed5705ae699c707ba26ca9e8929a	distutils	def8c8eb435ec28fd9315114640f6c84	python	6d7be3e54573292f012e3cc433d8297	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	eutils	351a78113be5b393c09a2c948701ad36
+_md5_=de308fa239d79821f940ba246984d1ea
+SLOT=0
+DEFINED_PHASES=compile install postinst postrm prepare unpack
+EAPI=3
+DEPEND=dev-lang/python >=dev-vcs/bzr-2.0.1
+DESCRIPTION=JSON-RPC for Python
+LICENSE=LGPL-2.1
+KEYWORDS=~amd64 ~x86
+HOMEPAGE=http://json-rpc.org/wiki/python-json-rpc
+RDEPEND=dev-lang/python
