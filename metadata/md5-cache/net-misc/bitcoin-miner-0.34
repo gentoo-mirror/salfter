@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=dev-lang/jwasm adl? ( x11-libs/amd-adl-sdk ) opencl? ( || ( virtual/opencl virtual/opencl-sdk app-admin/eselect-opencl dev-util/ati-stream-sdk dev-util/ati-stream-sdk-bin dev-util/amdstream dev-util/amd-app-sdk dev-util/amd-app-sdk-bin dev-util/nvidia-cuda-sdk[opencl] dev-util/intel-opencl-sdk ) ) net-misc/curl
 SLOT=0
 SRC_URI=http://ufasoft.com/files/ufasoft_coin-0.34.tar.xz
-_eclasses_=eutils	95613dd6157fb4a3b225eafdc56bd441	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	1dfcad7b3f439dbc511d76c49f23da0d
+_eclasses_=eutils	43da5163ba106e87d22d2e7d6d67537f	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	1dfcad7b3f439dbc511d76c49f23da0d
 _md5_=791bf8e2bccb790a2a635fc251fad63f
