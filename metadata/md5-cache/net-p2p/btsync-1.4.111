@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst preinst setup
+DESCRIPTION=Magic folder style file syncing powered by BitTorrent.
+EAPI=4
+HOMEPAGE=http://www.bittorrent.com/sync
+KEYWORDS=amd64 x86 arm ppc
+LICENSE=BitTorrent
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=amd64? ( http://syncapp.bittorrent.com/1.4.111/btsync_x64-1.4.111.tar.gz ) x86? ( http://syncapp.bittorrent.com/1.4.111/btsync_i386-1.4.111.tar.gz ) ppc? ( http://syncapp.bittorrent.com/1.4.111/btsync_powerpc-1.4.111.tar.gz ) arm? ( http://syncapp.bittorrent.com/1.4.111/btsync_arm-1.4.111.tar.gz )
+_eclasses_=eutils	f813d23e417656bf3917483643165d5a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85	user	906f3c8eb3a2350a4f1191a89baa3e46
+_md5_=09298e6f5bfb92d0cc184313bdf15145

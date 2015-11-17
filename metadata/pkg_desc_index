@@ -58,6 +58,7 @@ net-p2p/bitcoind 9999: Original Bitcoin crypto-currency wallet for automated ser
 net-p2p/bitgemd 9999: Bitgem
 net-p2p/bitmarkd 9999: Bitmark daemon
 net-p2p/bitmessage 9999: Bitmessage is a P2P communications protocol used to send encrypted messages to another person or to many subscribers.
+net-p2p/btsync 1.4.111: Magic folder style file syncing powered by BitTorrent.
 net-p2p/coin42 9999: 42
 net-p2p/darkcoind 9999: Darkcoin
 net-p2p/digibyted 9999: Digibyte daemon
