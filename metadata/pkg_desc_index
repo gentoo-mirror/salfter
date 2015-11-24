@@ -1,60 +1,60 @@
-app-admin/keepass 2.30: A free, open source, light-weight and easy-to-use password manager
-app-arch/nulib2 3.0.0: utility & library for manipulating NuFX archives
+app-admin/keepass 2.30: 
+app-arch/nulib2 3.0.0: 
 app-crypt/vanitygen 9999: cryptocurrency vanity-address generator
-app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
-app-emulation/kegs 0.91: Apple IIGS emulator
-app-misc/raspi-config 9999: Raspberry Pi config tool
-app-misc/triggerhappy 0.3.4: a lightweight hotkey daemon
-app-text/gimagereader 3.1.1: A tesseract OCR front-end
-app-text/ocropy 9999: open-source document analysis and OCR
+app-emulation/gsport 0.31 9999: 
+app-emulation/kegs 0.91: 
+app-misc/raspi-config 9999: 
+app-misc/triggerhappy 0.3.4: 
+app-text/gimagereader 3.1.1: 
+app-text/ocropy 9999: 
 app-text/pdfsandwich 0.1.3: generator of sandwich OCR pdf files
-app-text/qtspell 0.7.4: Spell checking for Qt text widgets
+app-text/qtspell 0.7.4: 
 dev-dotnet/gnu-getopt-net 9999: a C# port of the Java port of GNU getopt
 dev-embedded/cc65 2.13.3: It's a complete cross development package for 65(C)02 systems.
 dev-php/PEAR-Net_NNTP 1.4.0: Provides a POP3 class to access POP3 server.
-dev-python/ProfitLib 9999: altcoin mining profitability calculator
-dev-python/PyCCEX 9999: Python binding for the C-CEX altcoin-trading API
-dev-python/PyCryptopia 9999: Python binding for the Cryptopia altcoin-trading API
-dev-python/PyCryptsy 9999: Python binding for the Cryptsy altcoin-trading API
+dev-python/ProfitLib 9999: 
+dev-python/PyCCEX 9999: 
+dev-python/PyCryptopia 9999: 
+dev-python/PyCryptsy 9999: 
 dev-python/bitcoin-abe 9999: cryptocurrency blockchain explorer
-dev-python/bleuBot 9999: Python binding for the BleuTrade altcoin-trading API
+dev-python/bleuBot 9999: 
 dev-python/cheetah 2.4.2.1: Python-powered template engine and code generator.
 dev-python/g-pypi 0.3: Manages ebuilds using information from Python Package Index
 dev-python/jsonrpc 9999: JSON-RPC for Python
 dev-python/litecoin_scrypt 9999: Python Litecoin SCrypt library from github:forrestv/p2pool
-dev-python/poloniex 9999: Python binding for the Poloniex altcoin-trading API
-dev-python/pycgminer 9999: Python binding for the cgminer RPC API
+dev-python/poloniex 9999: 
+dev-python/pycgminer 9999: 
 dev-python/pylcdsysinfo 9999: Python interface for Coldtears LCD module
 dev-python/python-bitcoinrpc 9999: Python interface to bitcoind's JSON-RPC API
-dev-python/python-bittrex 9999: Python binding for the Bittrex altcoin-trading API
+dev-python/python-bittrex 9999: 
 dev-python/python-nmap 0.3.4: This is a python class to use nmap and access scan results from python3
 dev-python/python-pushover 0.2: Comprehensive bindings and command line utility for the Pushover notification service
-dev-python/python-sane 2.8.1: Python interface to the SANE scanner and frame grabber
+dev-python/python-sane 2.8.1: 
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
-mail-mta/netqmail 1.06-r1 1.06-r2: qmail -- a secure, reliable, efficient, simple message transfer agent
-media-gfx/sane-backends 9999: Scanner Access Now Easy - Backends
+mail-mta/netqmail 1.06-r1 1.06-r2: 
+media-gfx/sane-backends 9999: 
 media-gfx/svglib 0.6.3: An experimental library for reading and converting SVG.
 media-libs/a52dec 0.7.5: library for decoding ATSC A/52 streams used in DVD
 media-libs/libmp4v2 1.5.0.1: libmp4v2 extracted from mpeg4ip
 media-sound/mp3val 0.1.8: MP3 validator
 media-sound/pykaraoke 0.7.5: Python powered karaoke.
 media-video/atomicparsley 0.9.0: command line program for reading, parsing and setting iTunes-style metadata in MPEG4 files
-media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
-media-video/makemkv 1.9.7: Tool for ripping and streaming Blu-Ray, HD-DVD and DVD discs
-media-video/mediaelch 1.7 2.2.2 2.3.2: Video metadata scraper
+media-video/httpsegmenter 9999: 
+media-video/makemkv 1.9.7: 
+media-video/mediaelch 1.7 2.2.2 2.3.2: 
 media-video/mpeg4ip 1.5.0.1: MPEG 4 implementation library
 net-fs/afpfs-ng 0.4.1 0.8 0.8.1: An Apple Filing Protocol client implemented in FUSE
 net-fs/greyhole 0.9.63: redundant storage pooling using Samba
 net-mail/spfpolicy 2.010: Postfix policy server implementing Sender Policy Framework (SPF)
 net-misc/bitcoin-miner 0.34: Ufasoft Bitcoin miner
-net-misc/cgminer 4.9.2: Bitcoin CPU/GPU/FPGA/ASIC miner in C
+net-misc/cgminer 4.9.2: 
 net-misc/cprowl 0.5.1: command-line tool to send Prowl notifications to iOS devices
 net-misc/tigervnc 1.1.0-r4: Remote desktop viewer display system
-net-news/trn 4.0-r77: threaded news reader
-net-p2p/MinerSwitcher 9999: altcoin mining profitability switcher
+net-news/trn 4.0-r77: 
+net-p2p/MinerSwitcher 9999: 
 net-p2p/acoind 9999: Acoin daemon
 net-p2p/anoncoind 9999: Anoncoin
-net-p2p/bitcoind 9999: Original Bitcoin crypto-currency wallet for automated services
+net-p2p/bitcoind 9999: 
 net-p2p/bitgemd 9999: Bitgem
 net-p2p/bitmarkd 9999: Bitmark daemon
 net-p2p/bitmessage 9999: Bitmessage is a P2P communications protocol used to send encrypted messages to another person or to many subscribers.
@@ -74,8 +74,8 @@ net-p2p/fluttercoind 9999: Fluttercoin
 net-p2p/fractalcoind 9999: Fractalcoin daemon
 net-p2p/grandcoind 9999: Grandcoin
 net-p2p/joulecoind 9999: Joulecoin daemon
-net-p2p/litecoin-cli 0.10.2.2: P2P Internet currency based on Bitcoin but easier to mine
-net-p2p/litecoind 0.10.2.2: P2P Internet currency based on Bitcoin but easier to mine
+net-p2p/litecoin-cli 0.10.2.2: 
+net-p2p/litecoind 0.10.2.2: 
 net-p2p/myriadcoin-cli 9999: Myriadcoin CLI
 net-p2p/myriadcoind 9999: Myriadcoin daemon
 net-p2p/nautiluscoind 9999: Nautiluscoin daemon
@@ -91,13 +91,13 @@ net-p2p/takeicoind 9999: Takeicoin
 net-p2p/tekcoind 9999: Tekcoin
 net-p2p/terracoind 9999: Terracoin
 net-p2p/titcoind 9999: Titcoin
-net-p2p/unobtanium-cli 9999: Command-line JSON-RPC client specifically designed for talking to Unobtanium Core Daemon
-net-p2p/unobtaniumd 9999: Original Unobtanium crypto-currency wallet for automated services
-net-p2p/viacoin-cli 9999: Command-line JSON-RPC client specifically designed for talking to Viacoin Core Daemon
-net-p2p/viacoind 9999: Original Viacoin crypto-currency wallet for automated services
+net-p2p/unobtanium-cli 9999: 
+net-p2p/unobtaniumd 9999: 
+net-p2p/viacoin-cli 9999: 
+net-p2p/viacoind 9999: 
 net-p2p/yacoind 9999: Yacoin
 net-p2p/zetacoind 9999: Zetacoin daemon
 www-apache/mod_auth_ntlm_winbind 9999: Active Directory authentication via NTLM for Apache
 www-apps/concerto 1.9.3: Concerto Digital Signage
 www-apps/foswiki 1.0.9: A Web Based Collaboration Platform, forked from TWiki
-www-servers/apache 2.2.29: The Apache Web Server
+www-servers/apache 2.2.29: 

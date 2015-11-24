@@ -7,5 +7,6 @@ KEYWORDS=~amd64 ~x86
 LICENSE=LGPL-2.1
 RDEPEND=dev-lang/python
 SLOT=0
+_eclass_exported_funcs=pkg_postrm:distutils pkg_postinst:distutils src_unpack:bzr src_prepare:- src_compile:- src_install:-
 _eclasses_=bzr	745bed5705ae699c707ba26ca9e8929a	distutils	ad9e4720eb3e69090dd968b152fc611b	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	python	0c2c16ea4f9074d3248bd4365d03890c	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
 _md5_=de308fa239d79821f940ba246984d1ea
