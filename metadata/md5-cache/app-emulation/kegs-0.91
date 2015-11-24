@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst prepare unpack
+DEPEND=x11-libs/libXext
+DESCRIPTION=Apple IIGS emulator
+EAPI=5
+HOMEPAGE=http://kegs.sourceforge.net
+KEYWORDS=amd64 x86
+LICENSE=GPL
+SLOT=0
+SRC_URI=ftp://ftp.apple.asimov.net/pub/apple_II/emulators/kegs/Kegs%20v0.91%20%28with%20system%206%20and%20free%20games%29.zip -> kegs-0.91.zip
+_eclass_exported_funcs=pkg_postinst:- src_unpack:- src_prepare:- src_compile:- src_install:-
+_eclasses_=eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_md5_=334e3e550ce5e4f16a46da47e4486c4b
