@@ -27,7 +27,7 @@ dev-python/pycgminer 9999: Python binding for the cgminer RPC API
 dev-python/pylcdsysinfo 9999: Python interface for Coldtears LCD module
 dev-python/python-bitcoinrpc 9999: Python interface to bitcoind's JSON-RPC API
 dev-python/python-bittrex 9999: Python binding for the Bittrex altcoin-trading API
-dev-python/python-nmap 0.3.4: This is a python class to use nmap and access scan results from python3
+dev-python/python-nmap 0.5.0: This is a python class to use nmap and access scan results from python3
 dev-python/python-pushover 0.2: Comprehensive bindings and command line utility for the Pushover notification service
 dev-python/python-sane 2.8.1: Python interface to the SANE scanner and frame grabber
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
