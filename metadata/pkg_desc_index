@@ -16,6 +16,7 @@ dev-python/ProfitLib 9999: altcoin mining profitability calculator
 dev-python/PyCCEX 9999: Python binding for the C-CEX altcoin-trading API
 dev-python/PyCryptopia 9999: Python binding for the Cryptopia altcoin-trading API
 dev-python/PyCryptsy 9999: Python binding for the Cryptsy altcoin-trading API
+dev-python/arrow 0.7.0: Better dates & times for Python
 dev-python/bitcoin-abe 9999: cryptocurrency blockchain explorer
 dev-python/bleuBot 9999: Python binding for the BleuTrade altcoin-trading API
 dev-python/cheetah 2.4.2.1: Python-powered template engine and code generator.
