@@ -20,7 +20,6 @@ dev-python/bitcoin-abe 9999: cryptocurrency blockchain explorer
 dev-python/bleuBot 9999: Python binding for the BleuTrade altcoin-trading API
 dev-python/cheetah 2.4.2.1: Python-powered template engine and code generator.
 dev-python/g-pypi 0.3: Manages ebuilds using information from Python Package Index
-dev-python/ics 0.3.1: Pythonic and easy iCalendar library (rfc5545)
 dev-python/jsonrpc 9999: JSON-RPC for Python
 dev-python/litecoin_scrypt 9999: Python Litecoin SCrypt library from github:forrestv/p2pool
 dev-python/poloniex 9999: Python binding for the Poloniex altcoin-trading API
