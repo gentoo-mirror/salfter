@@ -54,6 +54,9 @@ src_prepare() {
 
     # disable FORTIFY_SOURCE
     sed -i "s/HARDENING+=-D_FORTIFY_SOURCE=2/#HARDENING+=-D_FORTIFY_SOURCE=2/" src/makefile.unix
+    
+    # -msse2 doesn't work so well on ARM
+    sed -i "s/-msse2//" src/makefile.unix
 }
 
 src_compile() {
