@@ -12,6 +12,7 @@ app-text/qtspell 0.7.4: Spell checking for Qt text widgets
 dev-dotnet/gnu-getopt-net 9999: a C# port of the Java port of GNU getopt
 dev-embedded/cc65 2.13.3: It's a complete cross development package for 65(C)02 systems.
 dev-php/PEAR-Net_NNTP 1.4.0: Provides a POP3 class to access POP3 server.
+dev-php/composer 1.0.0_alpha11: A dependancy manager for PHP
 dev-python/ProfitLib 9999: altcoin mining profitability calculator
 dev-python/PyCCEX 9999: Python binding for the C-CEX altcoin-trading API
 dev-python/PyCryptopia 9999: Python binding for the Cryptopia altcoin-trading API
