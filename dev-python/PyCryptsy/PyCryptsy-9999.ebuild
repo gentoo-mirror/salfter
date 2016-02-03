@@ -14,5 +14,5 @@ HOMEPAGE="https://github.com/salfter/PyCryptsy"
 LICENSE="MIT"
 EGIT_REPO_URI="https://github.com/salfter/PyCryptsy"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="~amd64"
 

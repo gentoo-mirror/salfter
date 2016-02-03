@@ -19,7 +19,7 @@ EGIT_REPO_URI="https://github.com/maxxine/TEK"
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="~amd64 ~arm"
 IUSE="examples ipv6 logrotate upnp"
 
 RDEPEND="
