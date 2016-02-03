@@ -14,5 +14,5 @@ HOMEPAGE="https://github.com/salfter/PyCCEX"
 LICENSE="MIT"
 EGIT_REPO_URI="https://github.com/salfter/PyCCEX"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="~amd64"
 

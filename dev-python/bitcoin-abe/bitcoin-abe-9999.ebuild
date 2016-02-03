@@ -27,7 +27,7 @@ HOMEPAGE="https://github.com/salfter/bitcoin-abe"
 LICENSE="BSD-2"
 EGIT_REPO_URI="https://github.com/salfter/bitcoin-abe"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="~amd64"
 
 #src_prepare() {
 #  cd ${WORKDIR} || die

@@ -6,7 +6,7 @@ HOMEPAGE="http://www.espend.de/artikel/iphone-ipad-ipod-http-streaming-segmenter
 EGIT_REPO_URI="https://github.com/salfter/httpsegmenter"
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="~amd64"
 DEPEND="virtual/ffmpeg"
                                                 
 src_compile() {

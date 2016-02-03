@@ -14,5 +14,5 @@ HOMEPAGE="https://github.com/ericsomdahl/python-bittrex"
 LICENSE="MIT"
 EGIT_REPO_URI="https://github.com/ericsomdahl/python-bittrex"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="~amd64"
 

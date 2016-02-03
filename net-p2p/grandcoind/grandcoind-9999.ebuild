@@ -19,7 +19,7 @@ EGIT_REPO_URI="https://github.com/grandcoin/grandcoin"
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="~amd64"
 IUSE="examples ipv6 logrotate upnp"
 
 RDEPEND="

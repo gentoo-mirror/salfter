@@ -20,5 +20,5 @@ HOMEPAGE="https://github.com/salfter/ProfitLib"
 LICENSE="MIT"
 EGIT_REPO_URI="https://github.com/salfter/ProfitLib"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="~amd64"
 

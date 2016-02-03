@@ -14,5 +14,5 @@ HOMEPAGE="https://github.com/Durendal/bleuBot"
 LICENSE="MIT"
 EGIT_REPO_URI="https://github.com/Durendal/bleuBot"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="~amd64"
 

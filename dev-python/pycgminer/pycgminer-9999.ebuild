@@ -14,5 +14,5 @@ HOMEPAGE="https://github.com/tsileo/pycgminer"
 LICENSE="MIT"
 EGIT_REPO_URI="https://github.com/tsileo/pycgminer"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="~amd64"
 

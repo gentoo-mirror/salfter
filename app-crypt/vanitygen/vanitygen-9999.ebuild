@@ -11,7 +11,7 @@ EGIT_REPO_URI="https://github.com/salfter/vanitygen"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="~amd64"
 IUSE="opencl"
 
 DEPEND="opencl? ( virtual/opencl )
