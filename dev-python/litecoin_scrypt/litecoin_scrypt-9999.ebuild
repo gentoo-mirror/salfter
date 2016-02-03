@@ -18,7 +18,7 @@ HOMEPAGE="https://github.com/Tydus/litecoin_scrypt"
 LICENSE="BSD-2"
 EGIT_REPO_URI="https://github.com/Tydus/litecoin_scrypt"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="~amd64"
 
 #src_prepare() {
 #  cd ${WORKDIR} || die

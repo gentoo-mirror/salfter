@@ -14,5 +14,5 @@ HOMEPAGE="https://github.com/salfter/PyCryptopia"
 LICENSE="MIT"
 EGIT_REPO_URI="https://github.com/salfter/PyCryptopia"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="~amd64"
 
