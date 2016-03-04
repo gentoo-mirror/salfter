@@ -118,8 +118,7 @@ REQUIRED_USE="
 
 DESCRIPTION="Scanner Access Now Easy - Backends"
 HOMEPAGE="http://www.sane-project.org/"
-#SRC_URI="https://alioth.debian.org/frs/download.php/file/3958/${P}.tar.gz"
-EGIT_REPO_URI="git://git.debian.org/sane/sane-backends.git http://git.debian.org/git/sane/sane-backends.git"
+EGIT_REPO_URI="https://anonscm.debian.org/git/collab-maint/sane-backends.git git://anonscm.debian.org/collab-maint/sane-backends.git"
 
 LICENSE="GPL-2 public-domain"
 SLOT="0"
@@ -173,19 +172,14 @@ pkg_setup() {
 }
 
 src_prepare() {
-	cat >> backend/dll.conf.in <<-EOF
-	# Add support for the HP-specific backend.  Needs net-print/hplip installed.
-	hpaio
-	# Add support for the Epson-specific backend.  Needs media-gfx/iscan installed.
-	epkowa
-	EOF
-	epatch "${FILESDIR}"/niash_array_index.patch \
-		"${FILESDIR}"/${PN}-1.0.24-automagic_systemd.patch \
-		"${FILESDIR}"/${PN}-1.0.24-systemd_pkgconfig.patch \
-		"${FILESDIR}"/${PN}-1.0.24-saned_pidfile_location.patch \
-		"${FILESDIR}"/${PN}-1.0.24-cross-compile.patch
+	#cat >> backend/dll.conf.in <<-EOF
+	## Add support for the HP-specific backend.  Needs net-print/hplip installed.
+	#hpaio
+	## Add support for the Epson-specific backend.  Needs media-gfx/iscan installed.
+	#epkowa
+	#EOF
 	# Fix for "make check".
-	sed -i -e 's/sane-backends 1.0.24git/sane-backends 1.0.24/' testsuite/tools/data/html*
+	#sed -i -e 's/sane-backends 1.0.24git/sane-backends 1.0.24/' testsuite/tools/data/html*
 	AT_NOELIBTOOLIZE=yes eautoreconf
 }
 
