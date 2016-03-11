@@ -48,7 +48,7 @@ media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
 media-video/mediaelch 2.4: Video metadata scraper
 media-video/mpeg4ip 1.5.0.1: MPEG 4 implementation library
 net-fs/afpfs-ng 0.4.1 0.8 0.8.1: An Apple Filing Protocol client implemented in FUSE
-net-fs/greyhole 0.9.63: redundant storage pooling using Samba
+net-fs/greyhole 0.9.64: redundant storage pooling using Samba
 net-mail/spfpolicy 2.010: Postfix policy server implementing Sender Policy Framework (SPF)
 net-misc/bitcoin-miner 0.34: Ufasoft Bitcoin miner
 net-misc/cgminer 4.9.2: Bitcoin CPU/GPU/FPGA/ASIC miner in C
