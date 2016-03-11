@@ -1,7 +1,7 @@
 Scott Alfter's Gentoo Overlay
 =============================
 
-Go to http://salfter.github.com/ for instructions...or you can just do this:
+Importing this overlay is simple:
 
 ```
 sudo layman -S && sudo layman -a salfter
