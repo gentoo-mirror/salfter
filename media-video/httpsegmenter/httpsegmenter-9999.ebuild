@@ -3,7 +3,7 @@ inherit eutils git-2
 
 DESCRIPTION="HTTP Live Streaming segmenter"
 HOMEPAGE="http://www.espend.de/artikel/iphone-ipad-ipod-http-streaming-segmenter-and-m3u8-windows.html"
-EGIT_REPO_URI="https://github.com/salfter/httpsegmenter"
+EGIT_REPO_URI="https://gitlab.com/salfter/httpsegmenter.git"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
