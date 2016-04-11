@@ -59,7 +59,7 @@ src_install() {
 	echo ${last_commit} > version.txt
 
 	insinto /usr/share/${PN}
-	doins -r contrib gui lib runscripts sickbeard sickrage tests SickBeard.py version.txt ${FILESDIR}/autoProcessTV
+	doins -r contrib gui lib locale runscripts sickbeard sickrage tests SickBeard.py version.txt ${FILESDIR}/autoProcessTV
 
 	fowners -R ${PN}:${PN} /usr/share/${PN}
 }
