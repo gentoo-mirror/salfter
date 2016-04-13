@@ -2,7 +2,7 @@
 
 EAPI="4"
 
-inherit eutils
+inherit eutils versionator
 
 DESCRIPTION="redundant storage pooling using Samba"
 HOMEPAGE="https://www.greyhole.net/"
@@ -18,11 +18,18 @@ RDEPEND=">=net-fs/samba-3.4
          <net-fs/samba-4.5
          >=dev-lang/php-5.0[mysql,pdo,intl,cli]"
 
-samba_ver=`equery -q belongs /usr/sbin/smbd | sed "s/.*\/samba-//;s/-.*//"`
-samba_majver=`echo $samba_ver | sed "s/\([0-9]*\).\([0-9]*\).\([0-9]*\)/\1.\2/"`
+get_samba_ver()
+{
+  samba_ver=$(best_version net-fs/samba | sed "s/net-fs\/samba-//") 
+  samba_majver=$(get_version_component_range 1-2 $samba_ver)
+  echo "samba_ver="$samba_ver
+  echo "samba_majver="$samba_majver
+}
 
 src_prepare()
 {
+  eval $(get_samba_ver)
+
   tar xf ${PORTDIR}/distfiles/samba-${samba_ver}.tar.* || die "Samba ${samba_ver} tarball missing from ${PORTDIR}/distfiles"
   case $samba_majver in
   3.[4-6])
@@ -41,6 +48,8 @@ src_prepare()
 
 src_configure()
 {
+  eval $(get_samba_ver)
+
   case $samba_majver in
   3.[4-6])
     cd samba-${samba_ver}/source3 || die
@@ -59,6 +68,8 @@ src_configure()
 
 src_compile()
 {
+  eval $(get_samba_ver)
+
   case $samba_majver in
   3.[4-6])
     cd ${WORKDIR}/${P}/samba-*/source3 || die
@@ -73,6 +84,8 @@ src_compile()
 
 src_install()
 {
+  eval $(get_samba_ver)
+
   dodir /var/spool/greyhole || die
   fperms 777 /var/spool/greyhole
   dodir /usr/share/greyhole || die
