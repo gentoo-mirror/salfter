@@ -15,8 +15,8 @@ IUSE="logrotate cron"
 
 DEPEND="app-portage/gentoolkit"
 RDEPEND=">=net-fs/samba-3.4
-         <net-fs/samba-4.2
-         >=dev-lang/php-5.0[mysql,intl]"
+         <net-fs/samba-4.5
+         >=dev-lang/php-5.0[mysql,pdo,intl,cli]"
 
 samba_ver=`equery -q belongs /usr/sbin/smbd | sed "s/.*\/samba-//;s/-.*//"`
 samba_majver=`echo $samba_ver | sed "s/\([0-9]*\).\([0-9]*\).\([0-9]*\)/\1.\2/"`
@@ -27,7 +27,7 @@ src_prepare()
   case $samba_majver in
   3.[4-6])
     ;;
-  4.[0-1])
+  4.[0-4])
     ;;
   *)
     die "${P} doesn't support samba-$samba_majver"
@@ -48,8 +48,11 @@ src_configure()
     econf || die
     patch -p1 <../../samba-module/Makefile-samba-${samba_majver}.patch || die
     ;;
-  4.[0-1])
-    die "FIXME: configure module for Samba 4.x"
+  4.[0-4])
+    cd samba-${samba_ver} || die
+    cp ../samba-module/vfs_greyhole-samba-${samba_majver}.c source3/modules/vfs_greyhole.c || die
+    patch -p1 <../samba-module/wscript-samba-${samba_majver}.patch || die
+    econf --enable-fhs --with-modulesdir=/usr/$(get_libdir)/samba || die    
     ;;
   esac
 }
@@ -61,8 +64,9 @@ src_compile()
     cd ${WORKDIR}/${P}/samba-*/source3 || die
     emake modules || die
   ;;
-  4.[0-1])
-    die "FIXME: compile module for Samba 4.x"
+  4.[0-4])
+    cd ${WORKDIR}/${P}/samba-${samba_ver} || die
+    emake || die
     ;;
   esac
 }
@@ -104,8 +108,16 @@ src_install()
     dosym /usr/$(get_libdir)/greyhole/greyhole-samba`echo $samba_majver | tr -d "."`.so /usr/$(get_libdir)/greyhole/greyhole.so
     dosym /usr/$(get_libdir)/greyhole/greyhole-samba`echo $samba_majver | tr -d "."`.so /usr/$(get_libdir)/samba/vfs/greyhole.so
     ;;
-  4.[0-1])
-    die "FIXME: install module for Samba 4.x"
+  4.[0-4])
+    cd ${WORKDIR}/${P}/samba-${samba_ver} || die
+    
+    dodir /usr/$(get_libdir)/greyhole
+    insinto /usr/$(get_libdir)/greyhole
+    insopts -m755
+    newins bin/default/source3/modules/libvfs_module_greyhole.so greyhole-samba`echo $samba_majver | tr -d "."`.so
+    insopts -m644
+    dosym /usr/$(get_libdir)/greyhole/greyhole-samba`echo $samba_majver | tr -d "."`.so /usr/$(get_libdir)/greyhole/greyhole.so
+    dosym /usr/$(get_libdir)/greyhole/greyhole-samba`echo $samba_majver | tr -d "."`.so /usr/$(get_libdir)/samba/vfs/greyhole.so
     ;;
   esac
 
