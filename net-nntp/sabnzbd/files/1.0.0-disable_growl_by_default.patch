@@ -1,0 +1,20 @@
+--- sabnzbd/cfg.py.orig	2016-03-15 19:25:51.000000000 +0000
++++ sabnzbd/cfg.py	2016-04-08 12:18:21.350620591 +0100
+@@ -286,7 +286,7 @@
+ acenter_prio_other = OptionBool('acenter', 'acenter_prio_other', False)
+ 
+ # [ntfosd]
+-ntfosd_enable = OptionBool('ntfosd', 'ntfosd_enable', not sabnzbd.WIN32 and not sabnzbd.DARWIN)
++ntfosd_enable = OptionBool('ntfosd', 'ntfosd_enable', 0)
+ ntfosd_prio_startup = OptionBool('ntfosd', 'ntfosd_prio_startup', True)
+ ntfosd_prio_download = OptionBool('ntfosd', 'ntfosd_prio_download', False)
+ ntfosd_prio_pp = OptionBool('ntfosd', 'ntfosd_prio_pp', False)
+@@ -299,7 +299,7 @@
+ ntfosd_prio_other = OptionBool('ntfosd', 'ntfosd_prio_other', False)
+ 
+ # [growl]
+-growl_enable = OptionBool('growl', 'growl_enable', sabnzbd.DARWIN and sabnzbd.DARWIN_VERSION < 8)
++growl_enable = OptionBool('growl', 'growl_enable', 0)
+ growl_server = OptionStr('growl', 'growl_server')
+ growl_password = OptionPassword('growl', 'growl_password')
+ growl_prio_startup = OptionBool('growl', 'growl_prio_startup', True)
