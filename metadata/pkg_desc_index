@@ -56,6 +56,7 @@ net-misc/cgminer 4.9.2: Bitcoin CPU/GPU/FPGA/ASIC miner in C
 net-misc/cprowl 0.5.1: command-line tool to send Prowl notifications to iOS devices
 net-misc/tigervnc 1.1.0-r4: Remote desktop viewer display system
 net-news/trn 4.0-r77: threaded news reader
+net-nntp/sabnzbd 1.0.1: Binary newsgrabber with web-interface
 net-nntp/sickrage 9999: SickRage - Searches TheTVDB and TVRage for shows
 net-p2p/MinerSwitcher 9999: altcoin mining profitability switcher
 net-p2p/acoind 9999: Acoin daemon
