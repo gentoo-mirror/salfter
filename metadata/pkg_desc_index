@@ -61,6 +61,7 @@ net-nntp/sickrage 9999: SickRage - Searches TheTVDB and TVRage for shows
 net-p2p/MinerSwitcher 9999: altcoin mining profitability switcher
 net-p2p/acoind 9999: Acoin daemon
 net-p2p/anoncoind 9999: Anoncoin
+net-p2p/bitcoind 9999: Original Bitcoin crypto-currency wallet for automated services
 net-p2p/bitgemd 9999: Bitgem
 net-p2p/bitmarkd 9999: Bitmark daemon
 net-p2p/bitmessage 9999: Bitmessage is a P2P communications protocol used to send encrypted messages to another person or to many subscribers.
