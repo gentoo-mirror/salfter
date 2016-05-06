@@ -15,5 +15,5 @@ LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND="net-fs/samba[smbclient]"
+DEPEND="|| ( >=net-fs/samba-4[client] <net-fs/samba-4[smbclient] )"
 
