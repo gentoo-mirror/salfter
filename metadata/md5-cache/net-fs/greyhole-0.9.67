@@ -8,7 +8,7 @@ KEYWORDS=~amd64
 LICENSE=GPL-3
 RDEPEND=>=net-fs/samba-3.4 <net-fs/samba-4.5 >=dev-lang/php-5.0[mysql,pdo,intl,cli]
 SLOT=0
-SRC_URI=https://github.com/gboudreau/Greyhole/releases/download/0.9.66/greyhole-0.9.66.tar.gz
+SRC_URI=https://github.com/gboudreau/Greyhole/releases/download/0.9.67/greyhole-0.9.67.tar.gz
 _eclass_exported_funcs=pkg_postinst:- src_prepare:- src_configure:- src_compile:- src_install:-
 _eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb	versionator	99ae9d758cbe7cfed19170e7d48f5a9c
 _md5_=8f37a008500b45fdc11630e87a204636
