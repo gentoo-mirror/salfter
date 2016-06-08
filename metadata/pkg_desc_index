@@ -62,7 +62,6 @@ net-nntp/sickrage 9999: SickRage - Searches TheTVDB and TVRage for shows
 net-p2p/MinerSwitcher 9999: altcoin mining profitability switcher
 net-p2p/acoind 9999: Acoin daemon
 net-p2p/anoncoind 9999: Anoncoin
-net-p2p/bitcoind 9999: Original Bitcoin crypto-currency wallet for automated services
 net-p2p/bitgemd 9999: Bitgem
 net-p2p/bitmarkd 9999: Bitmark daemon
 net-p2p/bitmessage 9999: Bitmessage is a P2P communications protocol used to send encrypted messages to another person or to many subscribers.
@@ -105,8 +104,8 @@ net-p2p/viacoin-cli 9999: Command-line JSON-RPC client specifically designed for
 net-p2p/viacoind 9999: Original Viacoin crypto-currency wallet for automated services
 net-p2p/yacoind 9999: Yacoin
 net-p2p/zetacoind 9999: Zetacoin daemon
+sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 www-apache/mod_auth_ntlm_winbind 9999: Active Directory authentication via NTLM for Apache
 www-apps/concerto 1.9.3: Concerto Digital Signage
 www-apps/foswiki 1.0.9: A Web Based Collaboration Platform, forked from TWiki
-www-apps/wordpress 4.5.2: Wordpress PHP and MySQL based content management system (CMS)
 www-servers/apache 2.2.29: The Apache Web Server

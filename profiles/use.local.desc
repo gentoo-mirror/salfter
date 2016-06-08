@@ -39,17 +39,6 @@ net-p2p/acoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
 net-p2p/acoind:logrotate - Use app-admin/logrotate for rotating logs
 net-p2p/acoind:upnp - Enable Universal Plug and Play
 net-p2p/acoind:wallet - Enable wallet support
-net-p2p/bitcoind:bitcoin_policy_cpfp - Child-Pays-For-Parent policy: If you mine, you will give consideration to child transaction fees to pay for their parents
-net-p2p/bitcoind:bitcoin_policy_dcmp - Data Carrier Multi-Push policy: Your node will assist transactions with multiple pushes in their data carrier (if any)
-net-p2p/bitcoind:bitcoin_policy_rbf - Replace By Fee policy: Your node will preferentially mine and relay transactions paying the highest fee, regardless of receive order
-net-p2p/bitcoind:bitcoin_policy_spamfilter - Enhanced spam filter policy: Notorious spammers will not be assisted by your node
-net-p2p/bitcoind:ljr - Enable Luke Dashjr's patches
-net-p2p/bitcoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
-net-p2p/bitcoind:logrotate - Use app-admin/logrotate for rotating logs
-net-p2p/bitcoind:upnp - Enable Universal Plug and Play
-net-p2p/bitcoind:wallet - Enable wallet support
-net-p2p/bitcoind:xt - Enable Mike Hearn's Bitcoin XT patches
-net-p2p/bitcoind:zeromq - Report blocks and transactions via zeromq
 net-p2p/bitmarkd:ljr - Enable Luke Dashjr's patches
 net-p2p/bitmarkd:ljr-antispam - Enable Luke Dashjr's address-based spam filter
 net-p2p/bitmarkd:logrotate - Use app-admin/logrotate for rotating logs
@@ -121,8 +110,6 @@ net-p2p/zetacoind:logrotate - Use app-admin/logrotate for rotating logs
 net-p2p/zetacoind:upnp - Enable Universal Plug and Play
 net-p2p/zetacoind:wallet - Enable wallet support
 www-apps/concerto:squish - fix aspect ratio on monitors with non-square pixels
-www-apps/wordpress:akismet - Installs Akismet comment spam plug-in
-www-apps/wordpress:themes - Installs themes (including default theme)
 www-servers/apache:alpn - Enable support for Application-Layer Protocol Negotiation (ALPN) in TLS. Needed by HTTP/2.0.
 www-servers/apache:apache2_modules_access_compat - Group authorizations based on host (name or IP address). Available as a compatibility module with previous versions.
 www-servers/apache:apache2_modules_authn_core - Provides core authentication capabilities common to all authentication providers (functionality provided by authn_alias in previous versions).
