@@ -11,7 +11,6 @@ KEYWORDS="amd64 x86"
 
 DEPEND="dev-qt/qtsql:5 
 		dev-qt/qtscript:5 
-		dev-qt/qtquick1:5
 		dev-qt/qtquickcontrols:5
 		dev-qt/qtxmlpatterns:5 
 		dev-qt/qtcore:5 
