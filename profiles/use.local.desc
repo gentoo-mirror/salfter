@@ -3,6 +3,10 @@
 # * generated automatically using pmaint *
 
 app-admin/keepass:aot - Generate native code at build time, rather than runtime.
+app-crypt/zuluCrypt:gnome - Enable support for the freedesktop.org Secret Service API via app-crypt/libsecret. This does not control the gui!
+app-crypt/zuluCrypt:gui - Whether to build the QT gui. Highly recommended.
+app-crypt/zuluCrypt:kde - Enable support for KDE, e.g. via kde-apps/kwalletd. This does not control the gui, but NEEDS GUI ENABLED!
+app-crypt/zuluCrypt:udev - Whether udev will be consulted when deciding if a volume is system or not.
 mail-mta/netqmail:authcram - Enable AUTHCRAM support
 mail-mta/netqmail:gencertdaily - Generate SSL certificates daily instead of hourly
 mail-mta/netqmail:highvolume - Prepare netqmail for high volume servers
