@@ -7,6 +7,7 @@ app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
 app-misc/raspi-config 9999: Raspberry Pi config tool
 app-misc/triggerhappy 0.3.4: a lightweight hotkey daemon
+app-text/calibre 2.63.0: Ebook management application
 app-text/gimagereader 3.1.2: A tesseract OCR front-end
 app-text/ocropy 9999: open-source document analysis and OCR
 app-text/pdfsandwich 0.1.3: generator of sandwich OCR pdf files
