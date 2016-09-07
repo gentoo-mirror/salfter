@@ -111,5 +111,5 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 www-apache/mod_auth_ntlm_winbind 9999: Active Directory authentication via NTLM for Apache
 www-apps/concerto 1.9.3: Concerto Digital Signage
 www-apps/foswiki 1.0.9: A Web Based Collaboration Platform, forked from TWiki
-www-apps/wordpress 4.6: Wordpress PHP and MySQL based content management system (CMS)
+www-apps/wordpress 4.6.1: Wordpress PHP and MySQL based content management system (CMS)
 www-servers/apache 2.2.29: The Apache Web Server
