@@ -48,7 +48,7 @@ media-sound/mp3val 0.1.8: MP3 validator
 media-sound/pykaraoke 0.7.5: Python powered karaoke.
 media-video/atomicparsley 0.9.0: command line program for reading, parsing and setting iTunes-style metadata in MPEG4 files
 media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
-media-video/makemkv 1.10.0: Tool for ripping and streaming Blu-ray, HD-DVD and DVD discs
+media-video/makemkv 1.10.2: Tool for ripping and streaming Blu-ray, HD-DVD and DVD discs
 media-video/mediaelch 2.4.2: Video metadata scraper
 media-video/mpeg4ip 1.5.0.1: MPEG 4 implementation library
 net-fs/afpfs-ng 0.4.1 0.8 0.8.1: An Apple Filing Protocol client implemented in FUSE
