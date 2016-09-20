@@ -1,4 +1,4 @@
-#!/sbin/runscript
+#!/sbin/openrc-run
 # Copyright (C) 2013-2014 Jonathan Vasquez <fearedbliss@funtoo.org>
 # Copyright (C) 2014 Sandy McArthur <Sandy@McArthur.org>
 # Distributed under the terms of the Simplified BSD License.
