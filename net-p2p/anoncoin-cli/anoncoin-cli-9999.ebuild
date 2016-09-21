@@ -22,19 +22,13 @@ EGIT_REPO_URI="https://github.com/Anoncoin/anoncoin"
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="examples logrotate test upnp +wallet"
+IUSE="upnp"
 
 RDEPEND="
 	>=dev-libs/boost-1.52.0[threads(+)]
 	dev-libs/openssl:0[-bindist]
-	logrotate? (
-		app-admin/logrotate
-	)
 	upnp? (
 		net-libs/miniupnpc
-	)
-	wallet? (
-		sys-libs/db:$(db_ver_to_slot "${DB_VER}")[cxx]
 	)
 	virtual/bitcoin-leveldb
 "
@@ -63,8 +57,8 @@ src_configure() {
 		$(use_enable test tests)  \
 		$(use_enable wallet)  \
 		--with-system-leveldb  \
-		--without-utils \
-		--with-daemon \
+		--with-utils \
+		--without-daemon \
 		--without-gui
 }
 
@@ -82,33 +76,4 @@ src_test() {
 
 src_install() {
 	emake DESTDIR="${D}" install
-
-	insinto /etc/anoncoin
-	newins "${FILESDIR}/anoncoin.conf" anoncoin.conf
-	fowners anoncoin:anoncoin /etc/anoncoin/anoncoin.conf
-	fperms 600 /etc/anoncoin/anoncoin.conf
-
-	newconfd "${FILESDIR}/anoncoin.confd" ${PN}
-	newinitd "${FILESDIR}/anoncoin.initd-r1" ${PN}
-	systemd_dounit "${FILESDIR}/anoncoind.service"
-
-	keepdir /var/lib/anoncoin/.anoncoin
-	fperms 700 /var/lib/anoncoin
-	fowners anoncoin:anoncoin /var/lib/anoncoin/
-	fowners anoncoin:anoncoin /var/lib/anoncoin/.anoncoin
-	dosym /etc/anoncoin/anoncoin.conf /var/lib/anoncoin/.anoncoin/anoncoin.conf
-
-	dodoc doc/README.md
-	dodoc doc/assets-attribution.md doc/tor.md
-	doman contrib/debian/manpages/{anoncoind.1,anoncoin.conf.5}
-
-	if use examples; then
-		docinto examples
-		dodoc -r contrib/{bitrpc,pyminer,qos,spendfrom,tidy_datadir.sh}
-	fi
-
-	if use logrotate; then
-		insinto /etc/logrotate.d
-		newins "${FILESDIR}/anoncoind.logrotate" anoncoind
-	fi
 }

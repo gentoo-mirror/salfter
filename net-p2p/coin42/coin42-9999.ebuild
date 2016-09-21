@@ -100,7 +100,7 @@ src_install() {
 	fperms 700 /var/lib/coin42
 	fowners coin42:coin42 /var/lib/coin42/
 	fowners coin42:coin42 /var/lib/coin42/.42
-	dosym /etc/coin42/coin42.conf /var/lib/coin42/.42/42.conf
+	dosym /etc/coin42/42.conf /var/lib/coin42/.42/42.conf
 
 	dodoc doc/README
 
