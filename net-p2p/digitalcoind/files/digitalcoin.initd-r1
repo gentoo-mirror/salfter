@@ -19,8 +19,6 @@ depend() {
 }
 
 start_pre() {
-	checkpath -f -o ${digitalcoind_user} -m 0400 ${conffile} || return 1
-
 	if ! grep -q '^rpcpassword=' "${conffile}"; then
 		eerror "Please edit `readlink -f ${conffile}`"
 		eerror "There must be at least a line assigning rpcpassword=something-secure"
