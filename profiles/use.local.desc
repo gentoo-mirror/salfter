@@ -43,6 +43,16 @@ net-p2p/acoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
 net-p2p/acoind:logrotate - Use app-admin/logrotate for rotating logs
 net-p2p/acoind:upnp - Enable Universal Plug and Play
 net-p2p/acoind:wallet - Enable wallet support
+net-p2p/anoncoin-cli:ljr - Enable Luke Dashjr's patches
+net-p2p/anoncoin-cli:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/anoncoin-cli:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/anoncoin-cli:upnp - Enable Universal Plug and Play
+net-p2p/anoncoin-cli:wallet - Enable wallet support
+net-p2p/anoncoind:ljr - Enable Luke Dashjr's patches
+net-p2p/anoncoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/anoncoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/anoncoind:upnp - Enable Universal Plug and Play
+net-p2p/anoncoind:wallet - Enable wallet support
 net-p2p/bitmarkd:ljr - Enable Luke Dashjr's patches
 net-p2p/bitmarkd:ljr-antispam - Enable Luke Dashjr's address-based spam filter
 net-p2p/bitmarkd:logrotate - Use app-admin/logrotate for rotating logs
