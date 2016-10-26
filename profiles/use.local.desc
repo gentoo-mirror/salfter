@@ -68,11 +68,11 @@ net-p2p/digitalcoind:ljr-antispam - Enable Luke Dashjr's address-based spam filt
 net-p2p/digitalcoind:logrotate - Use app-admin/logrotate for rotating logs
 net-p2p/digitalcoind:upnp - Enable Universal Plug and Play
 net-p2p/digitalcoind:wallet - Enable wallet support
-net-p2p/dogecoind:ljr - Enable Luke Dashjr's patches
-net-p2p/dogecoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
-net-p2p/dogecoind:logrotate - Use app-admin/logrotate for rotating logs
-net-p2p/dogecoind:upnp - Enable Universal Plug and Play
-net-p2p/dogecoind:wallet - Enable wallet support
+net-p2p/dobbscoind:ljr - Enable Luke Dashjr's patches
+net-p2p/dobbscoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/dobbscoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/dobbscoind:upnp - Enable Universal Plug and Play
+net-p2p/dobbscoind:wallet - Enable wallet support
 net-p2p/fractalcoind:ljr - Enable Luke Dashjr's patches
 net-p2p/fractalcoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
 net-p2p/fractalcoind:logrotate - Use app-admin/logrotate for rotating logs
