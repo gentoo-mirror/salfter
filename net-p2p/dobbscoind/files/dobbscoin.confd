@@ -3,7 +3,7 @@
 # owner of dobbscoind process (don't change, must be existing)
 DOBBSCOIN_USER="dobbscoin"
 
-# See dobbscoind --daemon
+# See dobbscoind --help
 DOBBSCOIN_OPTS="${DOBBSCOIN_OPTS}"
 
 # nice level

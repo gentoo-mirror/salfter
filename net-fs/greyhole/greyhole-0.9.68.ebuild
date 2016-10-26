@@ -34,7 +34,7 @@ src_prepare()
   case $samba_majver in
   3.[4-6])
     ;;
-  4.[0-4])
+  4.[0-5])
     ;;
   *)
     die "${P} doesn't support samba-$samba_majver"
@@ -57,9 +57,9 @@ src_configure()
     econf || die
     patch -p1 <../../samba-module/Makefile-samba-${samba_majver}.patch || die
     ;;
-  4.[0-4])
+  4.[0-5])
     cd samba-${samba_ver} || die
-    cp ../samba-module/vfs_greyhole-samba-${samba_majver}.c source3/modules/vfs_greyhole.c || die
+    cp ../samba-module/vfs_greyhole-samba-4.x.c source3/modules/vfs_greyhole.c || die
     patch -p1 <../samba-module/wscript-samba-${samba_majver}.patch || die
     econf --enable-fhs --with-modulesdir=/usr/$(get_libdir)/samba || die    
     ;;
