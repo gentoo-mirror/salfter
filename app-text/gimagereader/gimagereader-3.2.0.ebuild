@@ -14,8 +14,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="scanner"
 
-DEPEND="app-text/qtspell
-		app-text/tesseract
-		app-text/poppler[qt4]
-		scanner? ( media-gfx/sane-backends )"
+DEPEND=">=app-text/qtspell-qt5-0.8.0
+	app-text/tesseract
+	app-text/poppler[qt5]
+	scanner? ( media-gfx/sane-backends )"
 
