@@ -2,7 +2,6 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-app-admin/keepass:aot - Generate native code at build time, rather than runtime.
 app-crypt/zuluCrypt:gnome - Enable support for the freedesktop.org Secret Service API via app-crypt/libsecret. This does not control the gui!
 app-crypt/zuluCrypt:gui - Whether to build the QT gui. Highly recommended.
 app-crypt/zuluCrypt:kde - Enable support for KDE, e.g. via kde-apps/kwalletd. This does not control the gui, but NEEDS GUI ENABLED!
