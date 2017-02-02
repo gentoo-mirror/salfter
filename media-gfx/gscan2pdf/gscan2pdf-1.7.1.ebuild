@@ -43,7 +43,8 @@ RDEPEND="dev-lang/perl[ithreads]
 	>=virtual/perl-version-0.990.200-r1
 	media-gfx/imagemagick[perl]
 	media-gfx/sane-backends
-	media-libs/tiff:0"
+	media-libs/tiff:0
+	dev-perl/Date-Calc"
 
 #PATCHES=( "${FILESDIR}/${P}-dialog.patch" )
 
