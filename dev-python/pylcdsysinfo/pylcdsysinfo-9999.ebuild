@@ -1,14 +1,11 @@
 
-EAPI=3
+EAPI=5
+PYTHON_COMPAT=(python{2_6,2_7})
 
-inherit distutils git-2
+inherit distutils-r1 git-2
 
 DEPEND="dev-python/pyusb"
 RDEPEND=""
-
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-#RESTRICT_PYTHON_ABIS="3.*"
 
 DESCRIPTION="Python interface for Coldtears LCD module"
 HOMEPAGE="https://github.com/dangardner/pylcdsysinfo/"

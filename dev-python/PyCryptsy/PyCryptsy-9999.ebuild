@@ -1,13 +1,10 @@
 EAPI=5
+PYTHON_COMPAT=(python{2_6,2_7})
 
-inherit distutils git-2 
+inherit distutils-r1 git-2 
 
 DEPEND=""
 RDEPEND="dev-python/pycurl"
-
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
 
 DESCRIPTION="Python binding for the Cryptsy altcoin-trading API"
 HOMEPAGE="https://github.com/salfter/PyCryptsy"

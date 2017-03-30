@@ -2,16 +2,13 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=3
+EAPI=5
+PYTHON_COMPAT=(python{2_6,2_7})
 
-inherit distutils git-2 
+inherit distutils-r1 git-2 
 
 DEPEND=""
 RDEPEND=""
-
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
 
 DESCRIPTION="Python Litecoin SCrypt library from github:forrestv/p2pool"
 HOMEPAGE="https://github.com/Tydus/litecoin_scrypt"
