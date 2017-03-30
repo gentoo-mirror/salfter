@@ -1,6 +1,7 @@
 EAPI=5
+PYTHON_COMPAT=(python{2_6,2_7})
 
-inherit distutils git-2 
+inherit distutils-r1 git-2 
 
 DEPEND=""
 RDEPEND="dev-python/bitcoinrpc[jsonrpc-compat]
@@ -10,10 +11,6 @@ RDEPEND="dev-python/bitcoinrpc[jsonrpc-compat]
 		 dev-python/poloniex
 		 dev-python/bleuBot
 		 dev-python/python-bittrex"
-
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
 
 DESCRIPTION="altcoin mining profitability calculator"
 HOMEPAGE="https://github.com/salfter/ProfitLib"
