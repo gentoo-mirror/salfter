@@ -2,16 +2,13 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=3
+EAPI=5
+PYTHON_COMPAT=(python{2_6,2_7})
 
-inherit distutils bzr
+inherit distutils-r1 bzr
 
 DEPEND=""
 RDEPEND=""
-
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
 
 DESCRIPTION="JSON-RPC for Python"
 HOMEPAGE="http://json-rpc.org/wiki/python-json-rpc"
@@ -33,6 +30,6 @@ src_compile() {
 }
 
 src_install() {
-  distutils_src_install
+  distutils-r1_src_install
 }
 
