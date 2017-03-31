@@ -27,7 +27,7 @@ RDEPEND="dev-lang/perl[ithreads]
 	dev-perl/Goo-Canvas
 	dev-perl/Gtk2-Ex-Simple-List
 	dev-perl/Gtk2-ImageView
-	>=dev-perl/gtk2-perl-1.043.1
+	>=dev-perl/Gtk2-1.043.1
 	dev-perl/HTML-Parser
 	dev-perl/List-MoreUtils
 	>=dev-perl/Locale-gettext-1.50
