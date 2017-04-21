@@ -7,9 +7,9 @@ DEPEND=""
 RDEPEND="dev-python/pycurl"
 
 DESCRIPTION="Python binding for the Poloniex altcoin-trading API"
-HOMEPAGE="https://github.com/salfter/poloniex"
+HOMEPAGE="https://gitlab.com/salfter/poloniex"
 LICENSE="MIT"
-EGIT_REPO_URI="https://github.com/salfter/poloniex"
+EGIT_REPO_URI="https://gitlab.com/salfter/poloniex.git"
 SLOT="0"
 KEYWORDS="~amd64"
 
