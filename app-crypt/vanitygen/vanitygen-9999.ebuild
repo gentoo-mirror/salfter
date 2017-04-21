@@ -5,9 +5,9 @@ EAPI="4"
 inherit eutils git-2
 
 DESCRIPTION="cryptocurrency vanity-address generator"
-HOMEPAGE="https://github.com/salfter/vanitygen"
+HOMEPAGE="https://gitlab.com/salfter/vanitygen"
 EGIT_PROJECT="vanitygen"
-EGIT_REPO_URI="https://github.com/salfter/vanitygen"
+EGIT_REPO_URI="https://gitlab.com/salfter/vanitygen.git"
 
 LICENSE="GPL-3"
 SLOT="0"

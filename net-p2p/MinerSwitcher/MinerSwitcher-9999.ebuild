@@ -3,9 +3,9 @@ EAPI="5"
 inherit git-2 eutils 
 
 DESCRIPTION="altcoin mining profitability switcher"
-HOMEPAGE="https://github.com/salfter/MinerSwitcher"
+HOMEPAGE="https://gitlab.com/salfter/MinerSwitcher"
 EGIT_PROJECT="MinerSwitcher"
-EGIT_REPO_URI="https://github.com/salfter/MinerSwitcher"
+EGIT_REPO_URI="https://gitlab.com/salfter/MinerSwitcher.git"
 
 LICENSE="MIT"
 SLOT="0"

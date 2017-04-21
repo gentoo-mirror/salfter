@@ -13,9 +13,9 @@ RDEPEND="dev-python/bitcoinrpc[jsonrpc-compat]
 		 dev-python/python-bittrex"
 
 DESCRIPTION="altcoin mining profitability calculator"
-HOMEPAGE="https://github.com/salfter/ProfitLib"
+HOMEPAGE="https://gitlab.com/salfter/ProfitLib"
 LICENSE="MIT"
-EGIT_REPO_URI="https://github.com/salfter/ProfitLib"
+EGIT_REPO_URI="https://gitlab.com/salfter/ProfitLib.git"
 SLOT="0"
 KEYWORDS="~amd64"
 
