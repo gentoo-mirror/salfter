@@ -7,9 +7,9 @@ DEPEND=""
 RDEPEND="dev-python/pycurl"
 
 DESCRIPTION="Python binding for the Cryptsy altcoin-trading API"
-HOMEPAGE="https://github.com/salfter/PyCryptsy"
+HOMEPAGE="https://gitlab.com/salfter/PyCryptsy"
 LICENSE="MIT"
-EGIT_REPO_URI="https://github.com/salfter/PyCryptsy"
+EGIT_REPO_URI="https://gitlab.com/salfter/PyCryptsy.git"
 SLOT="0"
 KEYWORDS="~amd64"
 

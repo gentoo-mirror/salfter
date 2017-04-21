@@ -20,9 +20,9 @@ RDEPEND="mysql? ( dev-python/mysql-python )
 		 dev-python/pycrypto"
 
 DESCRIPTION="cryptocurrency blockchain explorer"
-HOMEPAGE="https://github.com/salfter/bitcoin-abe"
+HOMEPAGE="https://gitlab.com/salfter/bitcoin-abe"
 LICENSE="BSD-2"
-EGIT_REPO_URI="https://github.com/salfter/bitcoin-abe"
+EGIT_REPO_URI="https://gitlab.com/salfter/bitcoin-abe.git"
 SLOT="0"
 KEYWORDS="~amd64"
 

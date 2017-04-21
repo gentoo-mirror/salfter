@@ -7,9 +7,9 @@ DEPEND=""
 RDEPEND="dev-python/pycurl"
 
 DESCRIPTION="Python binding for the C-CEX altcoin-trading API"
-HOMEPAGE="https://github.com/salfter/PyCCEX"
+HOMEPAGE="https://gitlab.com/salfter/PyCCEX"
 LICENSE="MIT"
-EGIT_REPO_URI="https://github.com/salfter/PyCCEX"
+EGIT_REPO_URI="https://gitlab.com/salfter/PyCCEX.git"
 SLOT="0"
 KEYWORDS="~amd64"
 
