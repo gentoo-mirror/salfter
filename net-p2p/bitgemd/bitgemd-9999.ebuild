@@ -54,6 +54,9 @@ src_prepare() {
 
     # disable FORTIFY_SOURCE
     sed -i "s/HARDENING+=-D_FORTIFY_SOURCE=2/#HARDENING+=-D_FORTIFY_SOURCE=2/" src/makefile.unix
+
+    # current miniupnp requires a patch
+    epatch $FILESDIR/bitgemd-miniupnpc-fix.patch
 }
 
 src_compile() {
