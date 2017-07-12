@@ -1,2 +1,0 @@
-Follow the manual upgrade procedure as described on
-http://foswiki.org/Download/DownloadFoswiki#Upgrading_from_an_earlier_versio
