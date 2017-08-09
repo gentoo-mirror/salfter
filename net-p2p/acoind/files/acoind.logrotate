@@ -1,7 +1,0 @@
-/var/lib/acoin/.acoin/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP acoind
-	endscript
-}
