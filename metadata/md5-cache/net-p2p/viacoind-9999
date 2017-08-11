@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare setup test unpack
-DEPEND=virtual/bitcoin-leveldb logrotate? ( app-admin/logrotate ) >=app-portage/elt-patches-20170317 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/git >=dev-libs/boost-1.52.0[threads(+)] upnp? ( net-libs/miniupnpc ) wallet? ( sys-libs/db:4.8[cxx] ) >=app-shells/bash-4.1 sys-apps/sed virtual/pkgconfig
+DEPEND=virtual/bitcoin-leveldb logrotate? ( app-admin/logrotate ) >=app-portage/elt-patches-20170422 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/git >=dev-libs/boost-1.52.0[threads(+)] upnp? ( net-libs/miniupnpc ) wallet? ( sys-libs/db:4.8[cxx] ) >=app-shells/bash-4.1 sys-apps/sed virtual/pkgconfig
 DESCRIPTION=Original Viacoin crypto-currency wallet for automated services
 EAPI=5
 HOMEPAGE=https://github.com/viacoin/viacoin
@@ -8,5 +8,5 @@ LICENSE=MIT
 RDEPEND=virtual/bitcoin-leveldb logrotate? ( app-admin/logrotate ) >=dev-libs/boost-1.52.0[threads(+)] upnp? ( net-libs/miniupnpc ) wallet? ( sys-libs/db:4.8[cxx] )
 SLOT=0
 _eclass_exported_funcs=pkg_setup:- src_unpack:git-2 src_prepare:- src_configure:- src_test:viacoincore src_install:-
-_eclasses_=autotools	7027963e8e8cc12c91117bdb9225dc26	bash-completion-r1	8e447753aaf658afa609fbf961d80ab7	db-use	582140d1a711279e50ce284fc7b609f5	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	git-2	195a672bfaf52d868442171c9469bbb6	libtool	e32ea84bf82cf8987965b574672dba93	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	systemd	e12dd5e3cf1f359292cea2a70abeba5f	toolchain-funcs	185a06792159ca143528e7010368e8af	user	e4b567c44272a719fabf53f0f885d3f7	versionator	c80ccf29e90adea7c5cae94b42eb76d0	viacoincore	b778d67425721685a2e6e05a78152b96
+_eclasses_=autotools	7027963e8e8cc12c91117bdb9225dc26	bash-completion-r1	8e447753aaf658afa609fbf961d80ab7	db-use	582140d1a711279e50ce284fc7b609f5	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	git-2	195a672bfaf52d868442171c9469bbb6	libtool	0081a71a261724730ec4c248494f044d	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	systemd	e12dd5e3cf1f359292cea2a70abeba5f	toolchain-funcs	185a06792159ca143528e7010368e8af	user	e4b567c44272a719fabf53f0f885d3f7	versionator	c80ccf29e90adea7c5cae94b42eb76d0	viacoincore	b778d67425721685a2e6e05a78152b96
 _md5_=53db7ec82e84a98e8e5d5bb1b872fe3f
