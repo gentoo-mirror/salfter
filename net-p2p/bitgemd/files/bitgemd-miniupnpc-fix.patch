@@ -1,0 +1,11 @@
+--- src/net.cpp~	2017-05-11 12:04:16.000000000 -0700
++++ src/net.cpp	2017-05-11 12:04:23.111929217 -0700
+@@ -1034,7 +1034,7 @@
+ #else
+     /* miniupnpc 1.6 */
+     int error = 0;
+-    devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0, 0, &error);
++    devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0, 0, 2, &error);
+ #endif
+ 
+     struct UPNPUrls urls;
