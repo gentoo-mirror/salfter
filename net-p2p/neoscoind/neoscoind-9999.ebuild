@@ -13,9 +13,9 @@ MyPN="neoscoin"
 MyP="${MyPN}-${MyPV}"
 
 DESCRIPTION="Neoscoin"
-HOMEPAGE="https://github.com/bellacoin/neoscoin"
+HOMEPAGE="https://github.com/neoscoin/neos-core"
 EGIT_PROJECT="neoscoin"
-EGIT_REPO_URI="https://github.com/bellacoin/neoscoin"
+EGIT_REPO_URI="https://github.com/neoscoin/neos-core"
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
@@ -73,11 +73,11 @@ src_compile() {
 	fi
 	use ipv6 || OPTS+=("USE_IPV6=-")
 
-	OPTS+=("USE_SYSTEM_LEVELDB=1")
+	#OPTS+=("USE_SYSTEM_LEVELDB=1")
 
 	cd src || die
 	mkdir -p obj
-	#emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix leveldb/libleveldb.a || die
+	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix leveldb/libleveldb.a || die
 	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" ${PN}
 }
 
@@ -104,7 +104,7 @@ src_install() {
 	fowners neoscoin:neoscoin /var/lib/neoscoin/.neoscoin
 	dosym /etc/neoscoin/neoscoin.conf /var/lib/neoscoin/.neoscoin/neoscoin.conf
 
-	dodoc doc/README.md
+	dodoc doc/README
 
 	if use examples; then
 		docinto examples
