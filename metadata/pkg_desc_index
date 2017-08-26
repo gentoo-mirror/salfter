@@ -13,6 +13,7 @@ app-text/qtspell-qt4 0.8.2: Spell checking for Qt text widgets
 app-text/qtspell-qt5 0.8.2: Spell checking for Qt text widgets
 dev-dotnet/gnu-getopt-net 9999: a C# port of the Java port of GNU getopt
 dev-embedded/cc65 2.13.3: It's a complete cross development package for 65(C)02 systems.
+dev-libs/amdgpu-pro-opencl 17.30.465504: Proprietary OpenCL implementation for AMD GPUs
 dev-php/PEAR-Net_NNTP 1.4.0: Provides a POP3 class to access POP3 server.
 dev-php/PEAR-PEAR 1.10.1-r1: PEAR Base System
 dev-php/composer 1.0.0_alpha11: A dependancy manager for PHP
