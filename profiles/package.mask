@@ -1,0 +1,3 @@
+# Both packages were combined in app-text/qtspell, remove one of these before updating
+app-text/qtspell-qt4
+app-text/qtspell-qt5
