@@ -9,6 +9,5 @@ LICENSE=GPL-2
 RDEPEND=virtual/jpeg sys-libs/zlib media-libs/freetype x11-libs/libSM x11-libs/libXtst app-admin/eselect-opengl server? ( x11-libs/libXi x11-libs/libXfont x11-libs/libXmu x11-libs/libxkbfile x11-libs/libXrender x11-libs/pixman x11-apps/xauth x11-apps/xsetroot x11-misc/xkeyboard-config media-fonts/font-adobe-100dpi media-fonts/font-adobe-75dpi media-fonts/font-alias media-fonts/font-cursor-misc media-fonts/font-misc-misc xorgmodule? ( ~x11-base/xorg-server-1.11.2 ) ) !net-misc/vnc !net-misc/tightvnc !net-misc/xf4vnc
 SLOT=0
 SRC_URI=mirror://sourceforge/tigervnc/tigervnc-1.1.0.tar.gz mirror://gentoo/tigervnc.png server? ( ftp://ftp.freedesktop.org/pub/xorg/individual/xserver/xorg-server-1.11.2.tar.bz2 )
-_eclass_exported_funcs=pkg_postinst:- pkg_setup:- src_unpack:- src_compile:- src_install:-
 _eclasses_=autotools	7027963e8e8cc12c91117bdb9225dc26	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	libtool	0081a71a261724730ec4c248494f044d	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
 _md5_=b751fadfe0139efd317c50e495fec33a
