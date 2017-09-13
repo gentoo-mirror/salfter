@@ -12,7 +12,7 @@ MyPV="${PV/_/}"
 MyPN="digibyte"
 MyP="${MyPN}-${MyPV}"
 
-DESCRIPTION="Digibyte daemon"
+DESCRIPTION="Digibyte daemon and CLI"
 HOMEPAGE="https://github.com/digibyte/digibyte"
 SRC_URI="
 "
@@ -50,9 +50,6 @@ pkg_setup() {
 }
 
 src_prepare() {
-#	epatch "${FILESDIR}/0.9.0-sys_leveldb.patch"
-#	epatch "${FILESDIR}/leveldbwrapper-memenv.patch"
-#	rm -r src/leveldb 
 	eautoreconf
 }
 
@@ -63,7 +60,7 @@ src_configure() {
 		$(use_enable test tests)  \
 		$(use_enable wallet)  \
 		--with-system-leveldb  \
-		--without-cli \
+		--with-cli \
 		--with-daemon \
 		--without-gui
 }
@@ -98,7 +95,7 @@ src_install() {
 
 	dodoc doc/README.md
 	dodoc doc/assets-attribution.md doc/tor.md
-	doman doc/man/digibyted.1
+	doman doc/man/{digibyted.1,digibyte-cli.1,digibyte-tx.1}
 
 	if use examples; then
 		docinto examples
