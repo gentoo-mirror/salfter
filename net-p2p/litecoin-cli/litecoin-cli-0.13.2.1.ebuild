@@ -43,10 +43,7 @@ pkg_setup() {
 }
 
 src_prepare() {
-	epatch "${FILESDIR}/0.9.0-sys_leveldb.patch"
-	epatch "${FILESDIR}/leveldbwrapper-memenv.patch"
 	eautoreconf
-	rm -r src/leveldb
 }
 
 src_configure() {
@@ -57,6 +54,7 @@ src_configure() {
 		my_econf="${my_econf} --without-miniupnpc --disable-upnp-default"
 	fi
 	econf \
+		--disable-bench \
 		--disable-wallet \
 		--disable-ccache \
 		--disable-static \

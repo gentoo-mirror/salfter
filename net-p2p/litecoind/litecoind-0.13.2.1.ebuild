@@ -43,10 +43,7 @@ pkg_setup() {
 }
 
 src_prepare() {
-	epatch "${FILESDIR}/0.9.0-sys_leveldb.patch"
-	epatch "${FILESDIR}/leveldbwrapper-memenv.patch"
 	eautoreconf
-	rm -r src/leveldb
 }
 
 src_configure() {
@@ -57,6 +54,7 @@ src_configure() {
 		my_econf="${my_econf} --without-miniupnpc --disable-upnp-default"
 	fi
 	econf \
+		--disable-bench \
 		--disable-ccache \
 		--disable-static \
 		--disable-tests \
@@ -88,7 +86,7 @@ src_install() {
 	fowners litecoin:litecoin /var/lib/litecoin/.litecoin
 	dosym /etc/litecoin/litecoin.conf /var/lib/litecoin/.litecoin/litecoin.conf
 
-	dodoc doc/README.md doc/release-notes.md
+	dodoc doc/README.md doc/release-notes-litecoin.md 
 	newman contrib/debian/manpages/bitcoind.1 litecoind.1
 	newman contrib/debian/manpages/bitcoin.conf.5 litecoin.conf.5
 
