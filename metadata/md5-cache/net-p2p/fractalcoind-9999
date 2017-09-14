@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=>=dev-libs/boost-1.52.0[threads(+)] dev-libs/openssl:0[-bindist] logrotate? ( app-admin/logrotate ) upnp? ( net-libs/miniupnpc ) wallet? ( sys-libs/db:4.8[cxx] ) virtual/bitcoin-leveldb >=app-shells/bash-4.1 sys-apps/sed >=app-portage/elt-patches-20170422 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/git virtual/pkgconfig
+DEPEND=>=dev-libs/boost-1.52.0[threads(+)] dev-libs/openssl:0[-bindist] logrotate? ( app-admin/logrotate ) upnp? ( net-libs/miniupnpc ) wallet? ( sys-libs/db:5.1[cxx] ) virtual/bitcoin-leveldb >=app-shells/bash-4.1 sys-apps/sed >=app-portage/elt-patches-20170422 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/git virtual/pkgconfig
 DESCRIPTION=Fractalcoin daemon
 EAPI=4
 HOMEPAGE=https://github.com/fractalcoin/fractalcoin
 IUSE=examples logrotate test upnp +wallet
 LICENSE=MIT ISC GPL-2
-RDEPEND=>=dev-libs/boost-1.52.0[threads(+)] dev-libs/openssl:0[-bindist] logrotate? ( app-admin/logrotate ) upnp? ( net-libs/miniupnpc ) wallet? ( sys-libs/db:4.8[cxx] ) virtual/bitcoin-leveldb
+RDEPEND=>=dev-libs/boost-1.52.0[threads(+)] dev-libs/openssl:0[-bindist] logrotate? ( app-admin/logrotate ) upnp? ( net-libs/miniupnpc ) wallet? ( sys-libs/db:5.1[cxx] ) virtual/bitcoin-leveldb
 SLOT=0
 SRC_URI=
 _eclasses_=autotools	7027963e8e8cc12c91117bdb9225dc26	bash-completion-r1	8e447753aaf658afa609fbf961d80ab7	db-use	582140d1a711279e50ce284fc7b609f5	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	git-2	195a672bfaf52d868442171c9469bbb6	libtool	0081a71a261724730ec4c248494f044d	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	systemd	34815d3b76e745c5ca33eec9f95074c2	toolchain-funcs	185a06792159ca143528e7010368e8af	user	e4b567c44272a719fabf53f0f885d3f7	versionator	c80ccf29e90adea7c5cae94b42eb76d0
-_md5_=55cdacd05c83ed3e866877b56b44e6ed
+_md5_=cab40b8ce65f6e0a92a7178743b3d150
