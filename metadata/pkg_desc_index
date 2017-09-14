@@ -77,8 +77,8 @@ net-p2p/fluttercoind 9999: Fluttercoin
 net-p2p/fractalcoind 9999: Fractalcoin daemon
 net-p2p/grandcoind 9999: Grandcoin
 net-p2p/joulecoind 9999: Joulecoin daemon
-net-p2p/litecoin-cli 0.10.2.2: P2P Internet currency based on Bitcoin but easier to mine
-net-p2p/litecoind 0.10.2.2: P2P Internet currency based on Bitcoin but easier to mine
+net-p2p/litecoin-cli 0.13.2.1: P2P Internet currency based on Bitcoin but easier to mine
+net-p2p/litecoind 0.13.2.1: P2P Internet currency based on Bitcoin but easier to mine
 net-p2p/myriadcoin-cli 9999: Myriadcoin CLI
 net-p2p/myriadcoind 9999: Myriadcoin daemon
 net-p2p/nautiluscoind 9999: Nautiluscoin daemon
