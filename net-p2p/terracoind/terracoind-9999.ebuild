@@ -67,7 +67,8 @@ src_configure() {
 		--with-utils \
 		--with-daemon \
 		--without-gui \
-		--without-libs
+		--without-libs \
+		--disable-bench
 }
 
 src_compile() {

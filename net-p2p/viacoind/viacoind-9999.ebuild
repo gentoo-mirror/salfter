@@ -35,7 +35,9 @@ src_prepare()
 src_configure() {
 	# NOTE: --enable-zmq actually disables it
 	viacoincore_conf \
-		--with-daemon
+		--with-daemon \
+		--with-utils \
+		--disable-bench
 }
 
 src_install() {
