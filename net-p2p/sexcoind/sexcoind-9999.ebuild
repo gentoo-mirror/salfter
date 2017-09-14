@@ -41,6 +41,7 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	>=app-shells/bash-4.1
 	sys-apps/sed
+	dev-libs/libsecp256k1
 "
 
 pkg_setup() {
