@@ -79,6 +79,11 @@ net-p2p/joulecoind:upnp - Enable Universal Plug and Play
 net-p2p/joulecoind:wallet - Enable wallet support
 net-p2p/litecoin-cli:logrotate - Use app-admin/logrotate for rotating logs
 net-p2p/litecoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/myriadcoin-cli:ljr - Enable Luke Dashjr's patches
+net-p2p/myriadcoin-cli:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/myriadcoin-cli:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/myriadcoin-cli:upnp - Enable Universal Plug and Play
+net-p2p/myriadcoin-cli:wallet - Enable wallet support
 net-p2p/myriadcoind:ljr - Enable Luke Dashjr's patches
 net-p2p/myriadcoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
 net-p2p/myriadcoind:logrotate - Use app-admin/logrotate for rotating logs
@@ -89,6 +94,16 @@ net-p2p/nautiluscoind:ljr-antispam - Enable Luke Dashjr's address-based spam fil
 net-p2p/nautiluscoind:logrotate - Use app-admin/logrotate for rotating logs
 net-p2p/nautiluscoind:upnp - Enable Universal Plug and Play
 net-p2p/nautiluscoind:wallet - Enable wallet support
+net-p2p/sexcoin-cli:ljr - Enable Luke Dashjr's patches
+net-p2p/sexcoin-cli:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/sexcoin-cli:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/sexcoin-cli:upnp - Enable Universal Plug and Play
+net-p2p/sexcoin-cli:wallet - Enable wallet support
+net-p2p/sexcoind:ljr - Enable Luke Dashjr's patches
+net-p2p/sexcoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/sexcoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/sexcoind:upnp - Enable Universal Plug and Play
+net-p2p/sexcoind:wallet - Enable wallet support
 net-p2p/unobtaniumd:bitcoin_policy_cpfp - Child-Pays-For-Parent policy: If you mine, you will give consideration to child transaction fees to pay for their parents
 net-p2p/unobtaniumd:bitcoin_policy_dcmp - Data Carrier Multi-Push policy: Your node will assist transactions with multiple pushes in their data carrier (if any)
 net-p2p/unobtaniumd:bitcoin_policy_spamfilter - Enhanced spam filter policy: Notorious spammers will not be assisted by your node
