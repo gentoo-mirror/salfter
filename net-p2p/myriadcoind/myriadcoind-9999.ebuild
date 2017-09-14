@@ -12,7 +12,7 @@ MyPV="${PV/_/}"
 MyPN="myriadcoin"
 MyP="${MyPN}-${MyPV}"
 
-DESCRIPTION="Myriadcoin daemon"
+DESCRIPTION="Myriadcoin daemon and CLI"
 HOMEPAGE="https://github.com/myriadcoin/myriadcoin"
 SRC_URI="
 "
@@ -63,7 +63,7 @@ src_configure() {
 		$(use_enable test tests)  \
 		$(use_enable wallet)  \
 		--with-system-leveldb  \
-		--without-cli \
+		--with-cli \
 		--with-daemon \
 		--without-gui
 }
@@ -73,6 +73,7 @@ src_compile() {
 	cd "${WORKDIR}/${P}/contrib/debian/manpages" && \
 	  mv bitcoin.conf.5 myriadcoin.conf.5 && \
 	  mv bitcoind.1 myriadcoind.1 && \
+	  mv bitcoin-cli.1 myriadcoin-cli.1 && \
 	  mv bitcoin-qt.1 myriadcoin-qt.1 || die	
 	cd "${WORKDIR}/${P}/contrib" && \
 	  mv bitcoind.bash-completion myriadcoind.bash-completion || die
@@ -104,7 +105,7 @@ src_install() {
 
 	dodoc doc/README.md
 	dodoc doc/assets-attribution.md doc/tor.md
-	doman contrib/debian/manpages/{myriadcoind.1,myriadcoin.conf.5}
+	doman contrib/debian/manpages/{myriadcoind.1,myriadcoin-cli.1,myriadcoin.conf.5}
 
 	newbashcomp contrib/${PN}.bash-completion ${PN}
 
