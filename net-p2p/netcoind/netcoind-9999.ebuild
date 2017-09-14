@@ -54,6 +54,8 @@ src_prepare() {
 
     # disable FORTIFY_SOURCE
     sed -i "s/HARDENING+=-D_FORTIFY_SOURCE=2/#HARDENING+=-D_FORTIFY_SOURCE=2/" src/makefile.unix
+
+    chmod +x ${S}/src/leveldb/build_detect_platform
 }
 
 src_compile() {
@@ -73,11 +75,14 @@ src_compile() {
 	fi
 	use ipv6 || OPTS+=("USE_IPV6=-")
 
-	OPTS+=("USE_SYSTEM_LEVELDB=1")
+	#OPTS+=("USE_SYSTEM_LEVELDB=1")
 
 	cd src || die
 	mkdir -p obj
-	#emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix leveldb/libleveldb.a || die
+	cd leveldb
+	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" libmemenv.a || die
+	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" libleveldb.a || die
+	cd ..
 	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" ${PN}
 }
 
