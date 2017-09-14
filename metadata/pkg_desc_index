@@ -93,7 +93,7 @@ net-p2p/sexcoind 9999: Sexcoin daemon
 net-p2p/spots2d 9999: Spots2
 net-p2p/takeicoind 9999: Takeicoin
 net-p2p/tekcoind 9999: Tekcoin
-net-p2p/terracoind 9999: Terracoin
+net-p2p/terracoind 9999: Terracoin daemon & utilities
 net-p2p/titcoind 9999: Titcoin
 net-p2p/unobtanium-cli 9999: Command-line JSON-RPC client specifically designed for talking to Unobtanium Core Daemon
 net-p2p/unobtaniumd 9999: Original Unobtanium crypto-currency wallet for automated services
