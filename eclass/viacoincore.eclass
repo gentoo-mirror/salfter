@@ -65,7 +65,7 @@ if [[ ! ${_VIACOINCORE_ECLASS} ]]; then
 # supported policies.
 
 # These are expected to change in future versions
-DOCS="${DOCS} doc/README.md doc/release-notes.md"
+DOCS="${DOCS} doc/README.md doc/release-notes-viacoin.md"
 OPENSSL_DEPEND="dev-libs/openssl:0[-bindist]"
 WALLET_DEPEND="sys-libs/db:$(db_ver_to_slot "${DB_VER}")[cxx]"
 
