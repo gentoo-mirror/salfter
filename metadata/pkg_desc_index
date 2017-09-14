@@ -79,8 +79,7 @@ net-p2p/grandcoind 9999: Grandcoin
 net-p2p/joulecoind 9999: Joulecoin daemon
 net-p2p/litecoin-cli 0.13.2.1: P2P Internet currency based on Bitcoin but easier to mine
 net-p2p/litecoind 0.13.2.1: P2P Internet currency based on Bitcoin but easier to mine
-net-p2p/myriadcoin-cli 9999: Myriadcoin CLI
-net-p2p/myriadcoind 9999: Myriadcoin daemon
+net-p2p/myriadcoind 9999: Myriadcoin daemon and CLI
 net-p2p/nautiluscoind 9999: Nautiluscoin daemon
 net-p2p/neoscoind 9999: Neoscoin
 net-p2p/netcoind 9999: Netcoin

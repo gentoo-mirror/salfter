@@ -79,11 +79,6 @@ net-p2p/joulecoind:upnp - Enable Universal Plug and Play
 net-p2p/joulecoind:wallet - Enable wallet support
 net-p2p/litecoin-cli:logrotate - Use app-admin/logrotate for rotating logs
 net-p2p/litecoind:logrotate - Use app-admin/logrotate for rotating logs
-net-p2p/myriadcoin-cli:ljr - Enable Luke Dashjr's patches
-net-p2p/myriadcoin-cli:ljr-antispam - Enable Luke Dashjr's address-based spam filter
-net-p2p/myriadcoin-cli:logrotate - Use app-admin/logrotate for rotating logs
-net-p2p/myriadcoin-cli:upnp - Enable Universal Plug and Play
-net-p2p/myriadcoin-cli:wallet - Enable wallet support
 net-p2p/myriadcoind:ljr - Enable Luke Dashjr's patches
 net-p2p/myriadcoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
 net-p2p/myriadcoind:logrotate - Use app-admin/logrotate for rotating logs
