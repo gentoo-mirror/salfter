@@ -73,11 +73,9 @@ src_compile() {
 	fi
 	use ipv6 || OPTS+=("USE_IPV6=-")
 
-	OPTS+=("USE_SYSTEM_LEVELDB=1")
-
 	cd src || die
 	mkdir -p obj
-	#emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix leveldb/libleveldb.a || die
+	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix leveldb/libleveldb.a || die
 	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" eMarkd || die
 }
 
@@ -103,8 +101,6 @@ src_install() {
 	fowners emark:emark /var/lib/emark/
 	fowners emark:emark /var/lib/emark/.eMark
 	dosym /etc/emark/eMark.conf /var/lib/emark/.eMark/eMark.conf
-
-	dodoc doc/README 
 
 	if use examples; then
 		docinto examples
