@@ -1,0 +1,27 @@
+#!/sbin/openrc-run
+# Copyright 1999-2014 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/terracoind/files/terracoin.initd-r1,v 1.1 2014/02/21 14:22:42 blueness Exp $
+
+vardir="/var/lib/terracoin"
+conffile="${vardir}/.terracoin/terracoin.conf"
+terracoind_user="${TERRACOIN_USER:-nobody:nobody}"
+
+description="Terracoin crypto-currency wallet for automated services"
+pidfile="/run/${SVCNAME}.pid"
+command="/usr/bin/terracoind"
+command_args="${TERRACOIN_OPTS}"
+command_background="true"
+start_stop_daemon_args="-u ${terracoind_user} -e HOME=${vardir} -N ${NICELEVEL:-0} -w 2000"
+
+depend() {
+	need net
+}
+
+start_pre() {
+	if ! grep -q '^rpcpassword=' "${conffile}"; then
+		eerror "Please edit `readlink -f ${conffile}`"
+		eerror "There must be at least a line assigning rpcpassword=something-secure"
+		return 1
+	fi
+}
