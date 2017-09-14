@@ -13,9 +13,9 @@ MyPN="grandcoin"
 MyP="${MyPN}-${MyPV}"
 
 DESCRIPTION="Grandcoin"
-HOMEPAGE="https://github.com/grandcoin/grandcoin"
+HOMEPAGE="https://github.com/stork1/grandcoin"
 EGIT_PROJECT="grandcoin"
-EGIT_REPO_URI="https://github.com/grandcoin/grandcoin"
+EGIT_REPO_URI="https://github.com/stork1/grandcoin"
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
