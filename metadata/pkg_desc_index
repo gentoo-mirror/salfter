@@ -25,6 +25,7 @@ dev-python/PyCryptsy 9999: Python binding for the Cryptsy altcoin-trading API
 dev-python/arrow 0.7.0: Better dates & times for Python
 dev-python/bitcoin-abe 9999: cryptocurrency blockchain explorer
 dev-python/bleuBot 9999: Python binding for the BleuTrade altcoin-trading API
+dev-python/cython-hidapi 9999: Python wrapper for the hidapi
 dev-python/g-pypi 0.3: Manages ebuilds using information from Python Package Index
 dev-python/jsonrpc 9999: JSON-RPC for Python
 dev-python/litecoin_scrypt 9999: Python Litecoin SCrypt library from github:forrestv/p2pool
@@ -33,9 +34,11 @@ dev-python/pycgminer 9999: Python binding for the cgminer RPC API
 dev-python/pylcdsysinfo 9999: Python interface for Coldtears LCD module
 dev-python/python-bitcoinrpc 9999: Python interface to bitcoind's JSON-RPC API
 dev-python/python-bittrex 9999: Python binding for the Bittrex altcoin-trading API
+dev-python/python-mnemonic 9999: Mnemonic code for generating deterministic keys, BIP39
 dev-python/python-nmap 0.5.0: This is a python class to use nmap and access scan results from python3
 dev-python/python-pushover 0.2: Comprehensive bindings and command line utility for the Pushover notification service
 dev-python/python-sane 2.8.1: Python interface to the SANE scanner and frame grabber
+dev-python/python-trezor 9999: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
 mail-mta/netqmail 1.06-r1 1.06-r2: qmail -- a secure, reliable, efficient, simple message transfer agent
 media-gfx/sane-backends 9999: Scanner Access Now Easy - Backends
