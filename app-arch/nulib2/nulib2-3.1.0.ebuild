@@ -8,7 +8,7 @@ inherit eutils
 
 DESCRIPTION="utility & library for manipulating NuFX archives"
 HOMEPAGE="http://www.nulib.com/"
-SRC_URI="https://github.com/fadden/nulib2/archive/v3.0.0.tar.gz -> nulib2-${PV}.tar.gz"
+SRC_URI="https://github.com/fadden/nulib2/archive/v3.1.0.tar.gz -> nulib2-${PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
