@@ -1,4 +1,4 @@
-app-arch/nulib2 3.0.0: utility & library for manipulating NuFX archives
+app-arch/nulib2 3.1.0: utility & library for manipulating NuFX archives
 app-crypt/sshexport 2.4: SSH public key exporter
 app-crypt/vanitygen 9999: cryptocurrency vanity-address generator
 app-crypt/zuluCrypt 5.0.0: Front end to cryptsetup
