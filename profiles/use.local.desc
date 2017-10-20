@@ -132,6 +132,7 @@ net-p2p/zetacoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
 net-p2p/zetacoind:logrotate - Use app-admin/logrotate for rotating logs
 net-p2p/zetacoind:upnp - Enable Universal Plug and Play
 net-p2p/zetacoind:wallet - Enable wallet support
+www-apps/tt-rss:daemon - Install additional init scripts for automated RSS updates
 www-apps/wordpress:akismet - Installs Akismet comment spam plug-in
 www-apps/wordpress:themes - Installs themes (including default theme)
 www-servers/apache:alpn - Enable support for Application-Layer Protocol Negotiation (ALPN) in TLS. Needed by HTTP/2.0.
