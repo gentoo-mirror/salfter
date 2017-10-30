@@ -24,4 +24,6 @@ src_install()
   done
   dodoc README
   dodoc COPYING
+  insinto /usr/share
+  doins diskdefs
 }
