@@ -17,7 +17,6 @@ dev-php/PEAR-Net_NNTP 1.4.0: Provides a POP3 class to access POP3 server.
 dev-php/PEAR-PEAR 1.10.1-r1: PEAR Base System
 dev-php/composer 1.0.0_alpha11: A dependancy manager for PHP
 dev-php/libsmbclient-php 0.7.0: smbclient's extension for PHP
-dev-php/pecl-mailparse 2.1.6-r3: A PHP extension for parsing and working with RFC822 and RFC2045 (MIME) compliant messages
 dev-python/ProfitLib 9999: altcoin mining profitability calculator
 dev-python/PyCCEX 9999: Python binding for the C-CEX altcoin-trading API
 dev-python/PyCryptopia 9999: Python binding for the Cryptopia altcoin-trading API
