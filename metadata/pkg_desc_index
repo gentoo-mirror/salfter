@@ -107,4 +107,5 @@ sys-fs/cpmtools 2.20: CP/M filesystem manipulation tools, similar to mtools
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 www-apache/mod_auth_ntlm_winbind 9999: Active Directory authentication via NTLM for Apache
 www-apps/tt-rss 20171020: Tiny Tiny RSS - A web-based news feed (RSS/Atom) aggregator using AJAX
+www-apps/wordpress 4.9: Wordpress PHP and MySQL based content management system (CMS)
 www-servers/apache 2.2.29: The Apache Web Server
