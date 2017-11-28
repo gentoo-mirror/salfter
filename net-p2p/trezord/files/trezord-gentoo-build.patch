@@ -12,86 +12,22 @@ build instructions:
 
 git clone https://github.com/trezor/trezord 
 cd trezord
-patch -p1 <../trezord-protobuf3.patch
 git submodule update --init
-(cd src/config/ && protoc -I/usr/include -I. --cpp_out=. config.proto)
+cd src/config/
+wget https://raw.githubusercontent.com/trezor/trezor-common/master/protob/config.proto
+patch -p3 <trezord-protobuf3.patch
+protoc -I/usr/include -I. --cpp_out=. config.proto
+cd ../..
 ./build.sh 
 
-diff --git a/src/core.hpp b/src/core.hpp
-index 61fe69a..6dd6ada 100644
---- a/src/core.hpp
-+++ b/src/core.hpp
-@@ -110,7 +110,7 @@ struct kernel_config
-     is_unexpired()
-     {
-         auto current_time = std::time(nullptr);
--        return !c.has_valid_until() || c.valid_until() > current_time;
-+        return c.valid_until() > current_time;
-     }
- 
-     bool
-@@ -445,10 +445,8 @@ private:
-             config.c.known_devices().begin(),
-             config.c.known_devices().end(),
-             [&] (DeviceDescriptor const &dd) {
--                return (!dd.has_vendor_id()
--                        || dd.vendor_id() == info->vendor_id)
--                    && (!dd.has_product_id()
--                        || dd.product_id() == info->product_id);
-+                return (dd.vendor_id() == info->vendor_id)
-+                    && (dd.product_id() == info->product_id);
-             });
-     }
- };
-diff --git a/src/http_api.hpp b/src/http_api.hpp
-index 3e7c409..49941d8 100644
---- a/src/http_api.hpp
-+++ b/src/http_api.hpp
-@@ -190,9 +190,7 @@ struct handler
- 
-             auto version = kernel->get_version();
-             auto configured = kernel->has_config();
--            auto valid_until = kernel->get_config().c.has_valid_until()
--                ? kernel->get_config().c.valid_until()
--                : nil;
-+            auto valid_until = kernel->get_config().c.valid_until();
- 
-             return json_response(200, {
-                     {"version", version},
-diff -urN trezord.orig/src/config/config.proto trezord/src/config/config.proto
---- a/src/config/config.proto	1969-12-31 16:00:00.000000000 -0800
-+++ b/src/config/config.proto	2017-11-28 09:10:49.534534981 -0800
-@@ -0,0 +1,32 @@
-+/**
-+ * Configuration format for TREZOR plugin
-+ */
-+
-+syntax = "proto3";
-+
-+// Sugar for easier handling in Java
-+option java_package = "com.satoshilabs.trezor.lib.protobuf";
-+option java_outer_classname = "TrezorConfig";
-+
-+import "google/protobuf/descriptor.proto";
-+
-+/**
-+ * Device Descriptor used in Configuration
-+ */
-+message DeviceDescriptor {
-+	uint32 vendor_id = 1;		// USB vendor ID
-+	uint32 product_id = 2;		// USB product ID
-+	string serial_number = 3;	// USB serial number
-+	string path = 4;		// USB device path
-+}
-+
-+/**
-+ * Plugin Configuration
-+ */
-+message Configuration {
-+	repeated string whitelist_urls = 1;				// allowed URLs for plugin
-+	repeated string blacklist_urls = 2;				// forbidden URLs for plugin
-+	google.protobuf.FileDescriptorSet wire_protocol = 3;	// compiled specification of write protocol (serialized using "protoc -o")
-+	repeated DeviceDescriptor known_devices = 4;			// descriptors of allowed devices
-+	uint32 valid_until = 5;				// expiration timestamp
-+}
+--- src/config/config.proto     2017-11-28 13:10:43.910590225 -0800
++++ src/config/config.proto     2017-11-28 13:09:03.964398143 -0800
+@@ -2,6 +2,8 @@
+  * Configuration format for TREZOR plugin
+  */
 
++syntax = "proto2";
++
+ // Sugar for easier handling in Java
+ option java_package = "com.satoshilabs.trezor.lib.protobuf";
+ option java_outer_classname = "TrezorConfig";
