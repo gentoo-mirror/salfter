@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI="5"
-PYTHON_COMPAT=( python2_7 )
+PYTHON_COMPAT=( python{2_7,3_4,3_5} )
 
 EGIT_PROJECT="ocropy"
 EGIT_REPO_URI="https://github.com/tmbdev/ocropy"
