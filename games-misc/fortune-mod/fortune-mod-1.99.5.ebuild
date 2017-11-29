@@ -2,12 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/games-misc/fortune-mod/fortune-mod-1.99.1-r2.ebuild,v 1.8 2010/01/25 22:52:18 mr_bones_ Exp $
 
-EAPI=2
+EAPI=5
 inherit eutils toolchain-funcs
 
 DESCRIPTION="The notorious fortune program"
-HOMEPAGE="http://www.redellipse.net/code/fortune"
-SRC_URI="http://www.redellipse.net/code/downloads/${P}.tar.gz"
+HOMEPAGE="http://www.shlomifish.org/open-source/projects/fortune-mod/"
+SRC_URI="http://www.shlomifish.org/open-source/projects/fortune-mod/arcs/${P}.tar.xz"
 
 LICENSE="BSD"
 SLOT="0"
@@ -17,15 +17,12 @@ IUSE="offensive elibc_glibc"
 DEPEND="app-text/recode"
 
 src_prepare() {
-	epatch "${FILESDIR}"/${P}-gentoo.patch \
-		"${FILESDIR}"/01_all_fortune_all-fix.patch
-
 	for i in $FORTUNE_DELETE
 	do
 		find $S -type f -name $i -exec rm \{} \;
 		for j in $S/datfiles/Makefile $S/datfiles/off/Makefile
 		do
-			sed "s/$i//" $j >$j.tmp && mv $j.tmp $j
+			sed "s/$i//" $j >$j.tmp && mv $j.tmp $j || die "delete failed"
 		done
 	done
 
