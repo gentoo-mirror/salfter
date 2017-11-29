@@ -10,8 +10,8 @@ inherit distutils-r1
 
 
 DESCRIPTION="This is a python class to use nmap and access scan results from python3"
-HOMEPAGE="http://xael.org/norman/python/python-nmap/"
-SRC_URI="https://pypi.python.org/packages/source/p/python-nmap/${P}.tar.gz"
+HOMEPAGE="https://pypi.python.org/pypi/python-nmap"
+SRC_URI="https://pypi.python.org/packages/dc/f2/9e1a2953d4d824e183ac033e3d223055e40e695fa6db2cb3e94a864eaa84/${P}.tar.gz"
 
 LICENSE="GPL-2"
 KEYWORDS="~amd64"
