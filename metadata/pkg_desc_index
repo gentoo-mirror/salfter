@@ -35,26 +35,19 @@ dev-python/python-pushover 0.3: Comprehensive bindings and command line utility 
 dev-python/python-sane 2.8.2: Python interface to the SANE scanner and frame grabber
 dev-python/python-trezor 9999: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 games-misc/fortune-mod 1.99.5: The notorious fortune program
-mail-mta/netqmail 1.06-r1 1.06-r2: qmail -- a secure, reliable, efficient, simple message transfer agent
 media-gfx/sane-backends 9999: Scanner Access Now Easy - Backends
-media-gfx/svglib 0.6.3: An experimental library for reading and converting SVG.
 media-libs/a52dec 0.7.5: library for decoding ATSC A/52 streams used in DVD
-media-libs/libmp4v2 1.5.0.1: libmp4v2 extracted from mpeg4ip
 media-sound/mp3val 0.1.8: MP3 validator
 media-sound/pykaraoke 0.7.5: Python powered karaoke.
 media-video/atomicparsley 0.9.0: command line program for reading, parsing and setting iTunes-style metadata in MPEG4 files
 media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
 media-video/mediaelch 2.4.2: Video metadata scraper
-media-video/mpeg4ip 1.5.0.1: MPEG 4 implementation library
-net-fs/afpfs-ng 0.4.1 0.8 0.8.1: An Apple Filing Protocol client implemented in FUSE
-net-fs/greyhole 0.9.68: redundant storage pooling using Samba
+net-fs/afpfs-ng 0.8.1: An Apple Filing Protocol client implemented in FUSE
+net-fs/greyhole 0.10.14: redundant storage pooling using Samba
 net-mail/spfpolicy 2.010: Postfix policy server implementing Sender Policy Framework (SPF)
-net-misc/bitcoin-miner 0.34: Ufasoft Bitcoin miner
-net-misc/cgminer 4.9.2: Bitcoin CPU/GPU/FPGA/ASIC miner in C
+net-misc/cgminer 4.10.0: Bitcoin CPU/GPU/FPGA/ASIC miner in C
 net-misc/cprowl 0.5.1: command-line tool to send Prowl notifications to iOS devices
-net-misc/tigervnc 1.1.0-r4: Remote desktop viewer display system
 net-news/trn 4.0-r77: threaded news reader
-net-nntp/sickrage 9999: SickRage - Searches TheTVDB and TVRage for shows
 net-p2p/MinerSwitcher 9999: altcoin mining profitability switcher
 net-p2p/anoncoin-cli 9999: Anoncoin daemon
 net-p2p/anoncoind 9999: Anoncoin daemon

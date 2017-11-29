@@ -6,11 +6,6 @@ app-crypt/zuluCrypt:gnome - Enable support for the freedesktop.org Secret Servic
 app-crypt/zuluCrypt:gui - Whether to build the QT gui. Highly recommended.
 app-crypt/zuluCrypt:kde - Enable support for KDE, e.g. via kde-apps/kwalletd. This does not control the gui, but NEEDS GUI ENABLED!
 app-crypt/zuluCrypt:udev - Whether udev will be consulted when deciding if a volume is system or not.
-mail-mta/netqmail:authcram - Enable AUTHCRAM support
-mail-mta/netqmail:gencertdaily - Generate SSL certificates daily instead of hourly
-mail-mta/netqmail:highvolume - Prepare netqmail for high volume servers
-mail-mta/netqmail:noauthcram - If you do NOT want AUTHCRAM to be available
-mail-mta/netqmail:tls - Enable TLS support
 net-misc/cgminer:ants1 - Enable support for Antminer S1 Bitmain
 net-misc/cgminer:ants2 - Enable support for Antminer S2 Bitmain
 net-misc/cgminer:ants3 - Enable support for Antminer S3 Bitmain
@@ -35,8 +30,6 @@ net-misc/cgminer:modminer - Enable support for mining with ModMiner FPGAs
 net-misc/cgminer:sp10 - Enable support for Spondoolies SP10
 net-misc/cgminer:sp30 - Enable support for Spondoolies SP30
 net-misc/cgminer:spondoolies - Enable support for Spondoolies
-net-misc/tigervnc:server - Build TigerVNC server
-net-misc/tigervnc:xorgmodule - Build the Xorg module
 net-p2p/anoncoin-cli:ljr - Enable Luke Dashjr's patches
 net-p2p/anoncoin-cli:ljr-antispam - Enable Luke Dashjr's address-based spam filter
 net-p2p/anoncoin-cli:logrotate - Use app-admin/logrotate for rotating logs
