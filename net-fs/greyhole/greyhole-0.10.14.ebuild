@@ -1,8 +1,10 @@
 # $Header: $
 
-EAPI="4"
+EAPI="5"
+PYTHON_COMPAT=( python2_7 )
+PYTHON_REQ_USE='threads(+),xml(+)'
 
-inherit eutils versionator
+inherit eutils versionator python-single-r1
 
 DESCRIPTION="redundant storage pooling using Samba"
 HOMEPAGE="https://www.greyhole.net/"
@@ -59,7 +61,7 @@ src_configure()
     ;;
   4.[0-5])
     cd samba-${samba_ver} || die
-    cp ../samba-module/vfs_greyhole-samba-4.x.c source3/modules/vfs_greyhole.c || die
+    cp ../samba-module/vfs_greyhole-samba-4.0-4.5.c source3/modules/vfs_greyhole.c || die
     patch -p1 <../samba-module/wscript-samba-${samba_majver}.patch || die
     econf --enable-fhs --with-modulesdir=/usr/$(get_libdir)/samba || die    
     ;;
