@@ -7,7 +7,7 @@ inherit user eutils webapp vcs-snapshot
 
 DESCRIPTION="Tiny Tiny RSS - A web-based news feed (RSS/Atom) aggregator using AJAX"
 HOMEPAGE="http://tt-rss.org/"
-SRC_URI="https://alfter.us/wp/wp-content/uploads/2017/10/${P}.tar.bz2"
+SRC_URI="https://alfter.us/wp/wp-content/uploads/2017/11/${P}.tar.bz2"
 
 LICENSE="GPL-3"
 KEYWORDS="~amd64 ~mips ~x86"
