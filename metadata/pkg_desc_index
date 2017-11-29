@@ -34,7 +34,7 @@ dev-python/python-nmap 0.6.1: This is a python class to use nmap and access scan
 dev-python/python-pushover 0.3: Comprehensive bindings and command line utility for the Pushover notification service
 dev-python/python-sane 2.8.2: Python interface to the SANE scanner and frame grabber
 dev-python/python-trezor 9999: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
-games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
+games-misc/fortune-mod 1.99.5: The notorious fortune program
 mail-mta/netqmail 1.06-r1 1.06-r2: qmail -- a secure, reliable, efficient, simple message transfer agent
 media-gfx/sane-backends 9999: Scanner Access Now Easy - Backends
 media-gfx/svglib 0.6.3: An experimental library for reading and converting SVG.
