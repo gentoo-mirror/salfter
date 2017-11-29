@@ -13,20 +13,15 @@ app-text/qtspell 0.8.2-r1: Spell checking for Qt text widgets
 dev-dotnet/gnu-getopt-net 9999: a C# port of the Java port of GNU getopt
 dev-embedded/cc65 2.16: complete cross development package for 65(C)02 systems
 dev-embedded/teensy-hid-listen 1.01: Command line HID-raw listener for Teensy microcontrollers
-dev-libs/amdgpu-pro-opencl 17.30.465504: Proprietary OpenCL implementation for AMD GPUs
-dev-php/PEAR-Net_NNTP 1.4.0: Provides a POP3 class to access POP3 server.
-dev-php/PEAR-PEAR 1.10.1-r1: PEAR Base System
-dev-php/composer 1.0.0_alpha11: A dependancy manager for PHP
-dev-php/libsmbclient-php 0.7.0: smbclient's extension for PHP
+dev-php/PEAR-Net_NNTP 1.5.2: Provides a POP3 class to access POP3 server.
+dev-php/libsmbclient-php 0.9.0: smbclient's extension for PHP
 dev-python/ProfitLib 9999: altcoin mining profitability calculator
 dev-python/PyCCEX 9999: Python binding for the C-CEX altcoin-trading API
 dev-python/PyCryptopia 9999: Python binding for the Cryptopia altcoin-trading API
 dev-python/PyCryptsy 9999: Python binding for the Cryptsy altcoin-trading API
-dev-python/arrow 0.7.0: Better dates & times for Python
 dev-python/bitcoin-abe 9999: cryptocurrency blockchain explorer
 dev-python/bleuBot 9999: Python binding for the BleuTrade altcoin-trading API
 dev-python/cython-hidapi 9999: Python wrapper for the hidapi
-dev-python/g-pypi 0.3: Manages ebuilds using information from Python Package Index
 dev-python/jsonrpc 9999: JSON-RPC for Python
 dev-python/litecoin_scrypt 9999: Python Litecoin SCrypt library from github:forrestv/p2pool
 dev-python/poloniex 9999: Python binding for the Poloniex altcoin-trading API
@@ -35,9 +30,9 @@ dev-python/pylcdsysinfo 9999: Python interface for Coldtears LCD module
 dev-python/python-bitcoinrpc 9999: Python interface to bitcoind's JSON-RPC API
 dev-python/python-bittrex 9999: Python binding for the Bittrex altcoin-trading API
 dev-python/python-mnemonic 9999: Mnemonic code for generating deterministic keys, BIP39
-dev-python/python-nmap 0.5.0: This is a python class to use nmap and access scan results from python3
-dev-python/python-pushover 0.2: Comprehensive bindings and command line utility for the Pushover notification service
-dev-python/python-sane 2.8.1: Python interface to the SANE scanner and frame grabber
+dev-python/python-nmap 0.6.1: This is a python class to use nmap and access scan results from python3
+dev-python/python-pushover 0.3: Comprehensive bindings and command line utility for the Pushover notification service
+dev-python/python-sane 2.8.2: Python interface to the SANE scanner and frame grabber
 dev-python/python-trezor 9999: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
 mail-mta/netqmail 1.06-r1 1.06-r2: qmail -- a secure, reliable, efficient, simple message transfer agent
