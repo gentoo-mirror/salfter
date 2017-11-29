@@ -11,7 +11,7 @@ inherit distutils-r1
 
 DESCRIPTION="Comprehensive bindings and command line utility for the Pushover notification service"
 HOMEPAGE="https://github.com/Thibauth/python-pushover"
-SRC_URI="https://pypi.python.org/packages/source/p/python-pushover/${P}.tar.gz"
+SRC_URI="https://github.com/Thibauth/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 KEYWORDS="~amd64"

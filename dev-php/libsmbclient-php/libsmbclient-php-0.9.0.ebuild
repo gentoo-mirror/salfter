@@ -3,7 +3,7 @@
 EAPI=5
 
 PHP_EXT_NAME="libsmbclient"
-USE_PHP="php5-6 php5-5 php5-4"
+USE_PHP="php5-6 php5-5 php5-4 php7-0"
 
 inherit php-ext-source-r2 eutils
 
@@ -17,3 +17,9 @@ KEYWORDS="~amd64 ~x86"
 
 DEPEND="|| ( >=net-fs/samba-4[client] <net-fs/samba-4[smbclient] )"
 
+src_install() {
+	for i in ${WORKDIR}/php*
+	do
+		(cd $i && emake install INSTALL_ROOT=${D})
+	done
+}
