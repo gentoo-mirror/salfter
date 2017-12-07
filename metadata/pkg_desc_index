@@ -19,12 +19,19 @@ dev-python/ProfitLib 9999: altcoin mining profitability calculator
 dev-python/PyCCEX 9999: Python binding for the C-CEX altcoin-trading API
 dev-python/PyCryptopia 9999: Python binding for the Cryptopia altcoin-trading API
 dev-python/PyCryptsy 9999: Python binding for the Cryptsy altcoin-trading API
+dev-python/base58 0.2.5: Base58 and Base58Check implementation
+dev-python/bitcoin 1.1.42: Python Bitcoin Tools
 dev-python/bitcoin-abe 9999: cryptocurrency blockchain explorer
+dev-python/bitmerchant 0.1.8: Bitmerchant is a work-in-progress python library for common bitcoin/altcoin merchant uses.
 dev-python/bleuBot 9999: Python binding for the BleuTrade altcoin-trading API
+dev-python/commontools 0.1.0: Common functions that are often needed but don't really belong anywhere
 dev-python/cython-hidapi 9999: Python wrapper for the hidapi
 dev-python/jsonrpc 9999: JSON-RPC for Python
+dev-python/keychain 0.14.2.0: Library for BIP32 hierarchical deterministic keychains/wallets.
+dev-python/keylib 0.1.1: Library for creating and working with private keys, public keys, and bitcoin addresses.
 dev-python/litecoin_scrypt 9999: Python Litecoin SCrypt library from github:forrestv/p2pool
 dev-python/poloniex 9999: Python binding for the Poloniex altcoin-trading API
+dev-python/pybitcoin 0.9.9: Library for Bitcoin & other cryptocurrencies. Tools are provided for blockchain transactions, RPC calls, and private keys, public keys, and addresses.
 dev-python/pycgminer 9999: Python binding for the cgminer RPC API
 dev-python/pylcdsysinfo 9999: Python interface for Coldtears LCD module
 dev-python/python-bitcoinrpc 9999: Python interface to bitcoind's JSON-RPC API
@@ -34,6 +41,7 @@ dev-python/python-nmap 0.6.1: This is a python class to use nmap and access scan
 dev-python/python-pushover 0.3: Comprehensive bindings and command line utility for the Pushover notification service
 dev-python/python-sane 2.8.2: Python interface to the SANE scanner and frame grabber
 dev-python/python-trezor 9999: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
+dev-python/utilitybelt 0.2.6: Generally useful tools. A python utility belt.
 games-misc/fortune-mod 1.99.5: The notorious fortune program
 media-gfx/sane-backends 9999: Scanner Access Now Easy - Backends
 media-libs/a52dec 0.7.5: library for decoding ATSC A/52 streams used in DVD
