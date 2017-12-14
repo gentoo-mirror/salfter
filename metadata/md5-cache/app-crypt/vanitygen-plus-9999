@@ -1,11 +1,11 @@
-DEFINED_PHASES=compile install unpack
-DEPEND=opencl? ( virtual/opencl ) >=dev-libs/openssl-1.0.0d dev-libs/libpcre !app-crypt/vanitygen-plus dev-vcs/git
+DEFINED_PHASES=compile install prepare unpack
+DEPEND=opencl? ( virtual/opencl ) >=dev-libs/openssl-1.0.0d dev-libs/libpcre !app-crypt/vanitygen dev-vcs/git
 DESCRIPTION=cryptocurrency vanity-address generator
 EAPI=4
-HOMEPAGE=https://gitlab.com/salfter/vanitygen
+HOMEPAGE=https://github.com/exploitagency/vanitygen-plus
 IUSE=opencl
 KEYWORDS=~amd64
 LICENSE=GPL-3
 SLOT=0
 _eclasses_=desktop	2ccd1dd1dd7bfb8795eea024a4f91bb6	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	97ce9decef1ff4b6c5be700283f67343	git-2	195a672bfaf52d868442171c9469bbb6	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
-_md5_=22f8e59aa088d1b8f8d1041b2198d4b6
+_md5_=4f9c10a83b79cc7ecbefd1671565e69f
