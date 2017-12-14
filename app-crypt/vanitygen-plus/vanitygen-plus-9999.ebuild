@@ -5,9 +5,9 @@ EAPI="4"
 inherit eutils git-2
 
 DESCRIPTION="cryptocurrency vanity-address generator"
-HOMEPAGE="https://gitlab.com/salfter/vanitygen"
-EGIT_PROJECT="vanitygen"
-EGIT_REPO_URI="https://gitlab.com/salfter/vanitygen.git"
+HOMEPAGE="https://github.com/exploitagency/vanitygen-plus"
+EGIT_PROJECT="vanitygen-plus"
+EGIT_REPO_URI="https://github.com/exploitagency/vanitygen-plus"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -17,7 +17,7 @@ IUSE="opencl"
 DEPEND="opencl? ( virtual/opencl )
         >=dev-libs/openssl-1.0.0d
         dev-libs/libpcre
-	!app-crypt/vanitygen-plus"
+	!app-crypt/vanitygen"
 
 src_compile() 
 {
@@ -26,6 +26,11 @@ src_compile()
   then
     make oclvanitygen
   fi
+}
+
+src_prepare()
+{
+  epatch $FILESDIR/calc_addrs-pathfix.patch
 }
 
 src_install()
