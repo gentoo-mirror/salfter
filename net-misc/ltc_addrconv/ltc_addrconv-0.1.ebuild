@@ -14,6 +14,5 @@ src_unpack()
 
 src_install()
 {
-#  newbin "${FILESDIR}/ltc_addrconv" ltc_addrconv
   dobin "${FILESDIR}/ltc_addrconv"
 }
