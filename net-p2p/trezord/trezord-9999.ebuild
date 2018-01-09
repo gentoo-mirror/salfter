@@ -21,7 +21,6 @@ DEPEND="dev-libs/boost[static-libs]
 
 src_prepare() {
 	(cd ${WORKDIR}/${P}/src/config && wget https://raw.githubusercontent.com/trezor/trezor-common/master/protob/config.proto)
-	epatch ${FILESDIR}/${PN}-gentoo-build.patch
 }
 
 src_compile() {
