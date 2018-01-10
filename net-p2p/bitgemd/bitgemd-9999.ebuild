@@ -57,6 +57,10 @@ src_prepare() {
 
     # current miniupnp requires a patch
     epatch $FILESDIR/bitgemd-miniupnpc-fix.patch
+
+    # 9 Jan 18: patch needed for new Boost API?
+    # see https://github.com/FairCoinTeam/fair-coin/issues/14 for similar bug
+    epatch $FILESDIR/bitgemd-array-disambiguation.patch
 }
 
 src_compile() {
