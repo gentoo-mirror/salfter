@@ -6,10 +6,9 @@ EAPI=5
 
 inherit autotools eutils flag-o-matic
 
-DESCRIPTION="Bitcoin CPU/GPU/FPGA/ASIC miner in C"
+DESCRIPTION="Bitcoin FPGA/ASIC miner in C"
 HOMEPAGE="http://bitcointalk.org/?topic=28402.msg357369 http://github.com/ckolivas/cgminer"
 SRC_URI="http://ck.kolivas.org/apps/cgminer/${P}.tar.bz2"
-#SRC_URI="http://ck.kolivas.org/apps/cgminer/4.5/${P}.tar.bz2"
 
 LICENSE="GPL-3"
 SLOT="0"
