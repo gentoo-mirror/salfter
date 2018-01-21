@@ -1,0 +1,8 @@
+DEFINED_PHASES=install
+DESCRIPTION=EWBF Zcash CUDA miner
+EAPI=5
+HOMEPAGE=https://bitcointalk.org/index.php?topic=1707546.0
+KEYWORDS=~amd64
+SLOT=0
+SRC_URI=https://drive.google.com/uc?export=download&id=0B9EPp8NdigFiV1AwZW1lY2tEcjA -> zec-miner-bin-0.3.4b.tar.gz
+_md5_=a4b2aea78f1f102cea8ef72982c2b308
