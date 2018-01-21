@@ -1,3 +1,4 @@
+CUDA 9 SDK errors out on build if these aren't declared as unsigned int
 --- quark/cuda_skein512.cu~	2017-01-01 12:38:31.000000000 -0800
 +++ quark/cuda_skein512.cu	2018-01-20 21:23:58.688957477 -0800
 @@ -2704,7 +2704,7 @@
