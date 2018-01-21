@@ -5,9 +5,9 @@ EAPI="5"
 
 inherit autotools flag-o-matic versionator
 
-DESCRIPTION="Bitcoin CPU/GPU/FPGA miner in C"
-HOMEPAGE="https://bitcointalk.org/index.php?topic=826901"
-SRC_URI="https://github.com/sp-hash/ccminer/archive/${PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="Multi-algorithm GPU miner"
+HOMEPAGE="https://github.com/KlausT/ccminer"
+SRC_URI="https://github.com/KlausT/ccminer/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -25,8 +25,6 @@ RDEPEND="${DEPEND}"
 S="${WORKDIR}/ccminer-${PV}"
 
 src_prepare() {
-	epatch $FILESDIR/quark-cuda-skein512-cu.patch
-	epatch $FILESDIR/Makefile.am.patch
 	eautoreconf
 }
 
@@ -41,6 +39,6 @@ src_configure() {
 }
 
 src_install() {
-	newbin ccminer spccminer
+	newbin ccminer ktccminer
 	dodoc README.txt
 }
