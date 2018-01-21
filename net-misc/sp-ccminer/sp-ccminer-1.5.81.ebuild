@@ -25,6 +25,8 @@ RDEPEND="${DEPEND}"
 S="${WORKDIR}/ccminer-${PV}"
 
 src_prepare() {
+	epatch $FILESDIR/quark-cuda-skein512-cu.patch
+	epatch $FILESDIR/Makefile.am.patch
 	eautoreconf
 }
 
