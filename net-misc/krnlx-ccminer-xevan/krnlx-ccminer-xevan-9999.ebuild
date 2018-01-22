@@ -3,11 +3,12 @@
 
 EAPI="5"
 
-inherit autotools flag-o-matic versionator
+inherit autotools flag-o-matic versionator git-2
 
-DESCRIPTION="Bitcoin CPU/GPU/FPGA miner in C"
-HOMEPAGE="https://bitcointalk.org/index.php?topic=826901"
-SRC_URI="https://github.com/sp-hash/ccminer/archive/${PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="xevan GPU miner"
+HOMEPAGE="https://bitcointalk.org/index.php?topic=2237852.0"
+EGIT_PROJECT="krnlx-ccminer-xevan"
+EGIT_REPO_URI="https://github.com/krnlx/ccminer-xevan"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -22,12 +23,7 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
-S="${WORKDIR}/ccminer-${PV}"
-
 src_prepare() {
-	epatch $FILESDIR/quark-cuda-skein512-cu.patch
-	epatch $FILESDIR/Makefile.am.patch
-	epatch $FILESDIR/ccminer.cpp.patch
 	eautoreconf
 }
 
@@ -42,6 +38,6 @@ src_configure() {
 }
 
 src_install() {
-	newbin ccminer spccminer
+	newbin ccminer kxccminer-xevan
 	dodoc README.txt
 }
