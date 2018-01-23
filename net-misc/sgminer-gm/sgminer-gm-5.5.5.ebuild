@@ -71,6 +71,7 @@ src_install() {
 	if use opencl; then
 		insinto /usr/lib/sgminer
 		doins kernel/*.cl
+		doins kernel/*.h
 	fi
 	if use examples; then
 		docinto examples
