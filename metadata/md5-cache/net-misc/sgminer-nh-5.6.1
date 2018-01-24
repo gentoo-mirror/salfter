@@ -1,14 +1,14 @@
 DEFINED_PHASES=configure install prepare
 DEPEND=net-misc/curl ncurses? ( sys-libs/ncurses ) >=dev-libs/jansson-2.5 opencl? ( virtual/opencl ) udev? ( virtual/udev ) virtual/pkgconfig sys-apps/sed adl? ( >=x11-libs/amd-adl-sdk-6.0 ) >=app-portage/elt-patches-20170422 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
-DESCRIPTION=Genesis Mining fork of sgminer
+DESCRIPTION=NiceHash sgminer fork
 EAPI=5
-HOMEPAGE=https://bitcointalk.org/index.php?topic=28402.0
+HOMEPAGE=https://github.com/nicehash/sgminer
 IUSE=+adl examples hardened ncurses +opencl scrypt +udev
 KEYWORDS=~x86 ~amd64
 LICENSE=GPL-3
 RDEPEND=net-misc/curl ncurses? ( sys-libs/ncurses ) >=dev-libs/jansson-2.5 opencl? ( virtual/opencl ) udev? ( virtual/udev ) virtual/pkgconfig sys-apps/sed adl? ( >=x11-libs/amd-adl-sdk-6.0 )
 REQUIRED_USE=adl? ( opencl ) opencl? ( ncurses ) scrypt? ( opencl )
 SLOT=0
-SRC_URI=https://github.com/genesismining/sgminer-gm/archive/5.5.5.tar.gz -> sgminer-gm-5.5.5.tar.gz
+SRC_URI=https://github.com/nicehash/sgminer/archive/5.6.1.tar.gz -> sgminer-nh-5.6.1.tar.gz
 _eclasses_=autotools	dc412f38566b91012efd58b9c203e6c3	desktop	2ccd1dd1dd7bfb8795eea024a4f91bb6	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e7258392d5eda499c1cfa94db650b61	libtool	0081a71a261724730ec4c248494f044d	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9	versionator	ce21313503c41896ebcd7d58b0607e37
-_md5_=0ad438016a66e132aa38109b9c1c6af8
+_md5_=42db060d0b8a5d13a6cc7c9ca6e04504
