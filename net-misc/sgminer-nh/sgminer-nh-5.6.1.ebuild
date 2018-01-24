@@ -5,9 +5,9 @@ EAPI="5"
 
 inherit autotools versionator eutils
 
-DESCRIPTION="Genesis Mining fork of sgminer"
-HOMEPAGE="https://bitcointalk.org/index.php?topic=28402.0"
-SRC_URI="https://github.com/genesismining/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="NiceHash sgminer fork"
+HOMEPAGE="https://github.com/nicehash/sgminer"
+SRC_URI="https://github.com/nicehash/sgminer/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -19,6 +19,8 @@ REQUIRED_USE="
 	opencl? ( ncurses )
 	scrypt? ( opencl )
 "
+
+S=$WORKDIR/sgminer-$PV
 
 DEPEND="
 	net-misc/curl
@@ -44,8 +46,8 @@ RDEPEND="${DEPEND}"
 src_prepare() {
 	use adl && ln -s /usr/include/ADL/* ADL_SDK/
 
-	epatch $FILESDIR/sgminer-${PV}-system-jansson.patch
-	epatch $FILESDIR/sgminer-${PV}-kernel-path.patch
+	epatch $FILESDIR/sgminer-system-jansson.patch
+	epatch $FILESDIR/sgminer-kernel-path.patch
 	cd ${S}
 	./autogen.sh
 	eautoconf -i
@@ -68,12 +70,11 @@ src_configure() {
 }
 
 src_install() {
-	newbin sgminer sgminer-gm
+	newbin sgminer sgminer-nh
 	dodoc AUTHORS.md README.md
 	if use opencl; then
 		insinto /usr/lib/${PN}
 		doins kernel/*.cl
-		doins kernel/*.h
 	fi
 	if use examples; then
 		docinto examples
