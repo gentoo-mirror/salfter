@@ -2,7 +2,7 @@ EAPI="5"
 
 DESCRIPTION="Bminer Zcash CUDA miner"
 HOMEPAGE="https://bitcointalk.org/index.php?topic=2519271.0"
-SRC_URI="https://www.bminercontent.com/releases/bminer-v${PV}-4f20af3-amd64.tar.xz -> ${P}.tar.xz"
+SRC_URI="https://www.bminercontent.com/releases/bminer-v${PV}-e337b9a-amd64.tar.xz -> ${P}.tar.xz"
 
 SLOT="0"
 KEYWORDS="~amd64"
