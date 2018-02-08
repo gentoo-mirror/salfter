@@ -73,9 +73,10 @@ src_install() {
 		use multilib && dobin bin/i386/mmdtsdec
 	fi
 
-	# install profiles and locales
-	insinto /usr/share/MakeMKV
-	doins src/share/*.{mo.gz,xml}
+	# removed as of 1.12.0
+	## install profiles and locales
+	#insinto /usr/share/MakeMKV
+	#doins src/share/*.{mo.gz,xml}
 }
 
 pkg_preinst() { gnome2_icon_savelist; }
