@@ -4,5 +4,5 @@ EAPI=5
 HOMEPAGE=http://www.patrickmin.com/meshconv/
 KEYWORDS=~amd64 -*
 SLOT=0
-SRC_URI=http://www.patrickmin.com/meshconv/linux64/meshconv -> meshconv-bin-1.26
+SRC_URI=http://www.patrickmin.com/meshconv/linux64/meshconv -> meshconv-bin-1.27
 _md5_=b269e2a30a2b93da22233b5158dc88a5
