@@ -53,7 +53,7 @@ pkg_setup() {
 
 src_unpack() {
 	unpack $P.tar.gz
-	cd $S/cmake && unpack cable-$CABLE_COMMIT.tar.gz && rmdir cable && mv cable-* cable
+	cd $S/cmake && unpack cable-$CABLE_COMMIT.tar.gz && rmdir cable && mv cable-$CABLE_COMMIT cable
 }
 
 src_configure() {
