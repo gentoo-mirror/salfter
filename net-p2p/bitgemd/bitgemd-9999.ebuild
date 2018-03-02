@@ -15,7 +15,7 @@ MyP="${MyPN}-${MyPV}"
 DESCRIPTION="Bitgem"
 HOMEPAGE="https://github.com/bitgem/bitgem"
 EGIT_PROJECT="bitgem"
-EGIT_REPO_URI="https://github.com/bitgem/bitgem"
+EGIT_REPO_URI="https://gitlab.com/salfter/bitgem.git"
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
@@ -48,19 +48,24 @@ pkg_setup() {
 }
 
 src_prepare() {
-	if has_version '>=dev-libs/boost-1.52'; then
-		sed -i 's/\(-l db_cxx\)/-l boost_chrono$(BOOST_LIB_SUFFIX) \1/' src/makefile.unix
-	fi
+    if has_version '>=dev-libs/boost-1.52'; then
+        sed -i 's/\(-l db_cxx\)/-l boost_chrono$(BOOST_LIB_SUFFIX) \1/' src/makefile.unix
+    fi
 
     # disable FORTIFY_SOURCE
     sed -i "s/HARDENING+=-D_FORTIFY_SOURCE=2/#HARDENING+=-D_FORTIFY_SOURCE=2/" src/makefile.unix
 
     # current miniupnp requires a patch
-    epatch $FILESDIR/bitgemd-miniupnpc-fix.patch
+    epatch $S/miniupnpc-fix.patch
 
     # 9 Jan 18: patch needed for new Boost API?
     # see https://github.com/FairCoinTeam/fair-coin/issues/14 for similar bug
-    epatch $FILESDIR/bitgemd-array-disambiguation.patch
+    epatch $S/array-disambiguation.patch
+
+    # 2 Mar 18: fixes needed for Boost 1.66
+    if has_version '>=dev-libs/boost-1.66'; then
+        epatch $S/boost-1.66-fixes.patch
+    fi
 }
 
 src_compile() {
