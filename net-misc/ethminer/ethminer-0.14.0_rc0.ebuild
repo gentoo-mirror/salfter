@@ -5,8 +5,9 @@ EAPI=6
 
 inherit eutils cmake-utils versionator
 
-MY_PV="$(replace_version_separator "_" ".")"
-MY_PV="${MY_PV/rc/dev}"
+#MY_PV="$(replace_version_separator "_" ".")"
+#MY_PV="${MY_PV/rc/dev}"
+MY_PV="$(replace_version_separator "_" "")"
 S=$WORKDIR/${PN}-${MY_PV}
 CABLE_COMMIT=41e43d44457168dcbe2e00bb86b0d000cd8d58a0
 
