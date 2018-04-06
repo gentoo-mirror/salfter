@@ -30,7 +30,7 @@ DEPEND="${RDEPEND}
 	sys-devel/gettext"
 
 S="${WORKDIR}/${MY_PN}-${MY_PV}"
-#PATCHES=( "${FILESDIR}/${PN}-3.2.1-fix-install-paths.patch" )
+PATCHES=( "${FILESDIR}/${PN}-3.2.1-fix-install-paths.patch" )
 DOCS=( README.md )
 
 src_configure() {
