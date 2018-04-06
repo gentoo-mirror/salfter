@@ -21,7 +21,7 @@ IUSE="+usb"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RDEPEND="${PYTHON_DEPS}
-	dev-libs/libarcus:=[python,${PYTHON_USEDEP}]
+	~dev-libs/libarcus-${PV}:=[python,${PYTHON_USEDEP}]
 	~dev-python/uranium-${PV}[${PYTHON_USEDEP}]
 	sci-libs/scipy[${PYTHON_USEDEP}]
 	usb? ( dev-python/pyserial[${PYTHON_USEDEP}] )
@@ -47,9 +47,8 @@ src_install() {
 	cmake-utils_src_install
 	doicon icons/*.png
 	python_optimize "${D}${get_libdir}"
-	cd $WORKDIR/fdm_materials-$PV
 	insinto /usr/share/${PN}/resources/materials
-	for i in *.xml.fdm_material
+	for i in $WORKDIR/fdm_materials-$PV/*.xml.fdm_material
 	do
 		doins $i
 	done
