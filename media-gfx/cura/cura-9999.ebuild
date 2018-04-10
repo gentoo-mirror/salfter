@@ -33,6 +33,7 @@ PATCHES=( "${FILESDIR}/${PN}-3.2.1-fix-install-paths.patch" )
 DOCS=( README.md )
 
 src_unpack() {
+	git-r3_fetch
 	git-r3_checkout
 	unpack ${A}
 }
