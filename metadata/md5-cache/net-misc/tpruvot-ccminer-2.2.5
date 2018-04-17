@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install prepare
 DEPEND=net-misc/curl dev-libs/jansson dev-util/nvidia-cuda-sdk >=app-portage/elt-patches-20170422 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.16:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
-DESCRIPTION=Cryptonight CPU/GPU miner
+DESCRIPTION=Bitcoin CPU/GPU/FPGA miner in C
 EAPI=5
-HOMEPAGE=https://github.com/KlausT/ccminer-cryptonight
+HOMEPAGE=https://bitcointalk.org/index.php?topic=28402.0
 IUSE=hardened
 KEYWORDS=~x86 ~amd64
 LICENSE=GPL-3
 RDEPEND=net-misc/curl dev-libs/jansson dev-util/nvidia-cuda-sdk
 SLOT=0
-SRC_URI=https://github.com/KlausT/ccminer-cryptonight/archive/3.00.tar.gz -> klaust-ccminer-cryptonight-3.00.tar.gz
+SRC_URI=https://github.com/tpruvot/ccminer/archive/2.2.5-tpruvot.tar.gz -> tpruvot-ccminer-2.2.5.tar.gz
 _eclasses_=autotools	4842e626555a9a4344f34cef2e190b67	desktop	2ccd1dd1dd7bfb8795eea024a4f91bb6	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	63392afb034aad67f17fa129019eb4d9	flag-o-matic	02908f00f002f0f07c5b74783d778325	libtool	0081a71a261724730ec4c248494f044d	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf	versionator	ce21313503c41896ebcd7d58b0607e37
-_md5_=04ac214480cd6f16d741f2ff943675a2
+_md5_=0b6f0a1cf6a805532daeb0ba083ad2cc
