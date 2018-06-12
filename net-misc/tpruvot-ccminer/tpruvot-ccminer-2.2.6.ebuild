@@ -26,6 +26,7 @@ S="${WORKDIR}/ccminer-${PV}-tpruvot"
 
 src_prepare() {
 	epatch $FILESDIR/ccminer.cpp.patch
+	epatch $FILESDIR/cuda-version.patch
 	eautoreconf
 }
 
