@@ -1,0 +1,11 @@
+app-emulation/gsport 0.31: Apple IIGS emulator, based on KEGS
+app-emulation/kegs 0.91: Apple IIGS emulator
+games-misc/fortune-mod 1.99.5: The notorious fortune program
+media-sound/pykaraoke 0.7.5: Python powered karaoke.
+media-video/atomicparsley 0.9.0: command line program for reading, parsing and setting iTunes-style metadata in MPEG4 files
+media-video/mediaelch 2.4.2: Video metadata scraper
+net-mail/spfpolicy 2.010: Postfix policy server implementing Sender Policy Framework (SPF)
+net-news/trn 4.0-r77: threaded news reader
+net-p2p/btsync 2.2.7: Magic folder style file syncing powered by BitTorrent.
+sys-libs/glibc 2.26-r7: GNU libc C library
+x11-libs/amd-adl-sdk 10.2: API to access display driver functionality for ATI graphics cards
