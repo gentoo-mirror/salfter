@@ -37,9 +37,11 @@ src_configure() {
 		-DOpenMVG_USE_OPENCV="$(usex opencv)"
 		-DOpenMVG_USE_OPENMP="$(usex openmp)"
 		-DCMAKE_BUILD_TYPE="Release"
-#		-DFLANN_INCLUDE_DIR_HINTS=/usr/include
+		-DFLANN_INCLUDE_DIR_HINTS=/usr/include
 	)
 	cmake-utils_src_configure
+	cd ${WORKDIR}/${P}
+	cp src/software/SfMWebGLViewer/config.h.in src/software/SfMWebGLViewer/config.h
 }
 
 src_install() {
