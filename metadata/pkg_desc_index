@@ -1,5 +1,6 @@
 app-emulation/gsport 0.31: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
+app-text/calibre 3.27.1: Ebook management application
 games-misc/fortune-mod 1.99.5: The notorious fortune program
 media-sound/pykaraoke 0.7.5: Python powered karaoke.
 media-video/atomicparsley 0.9.0: command line program for reading, parsing and setting iTunes-style metadata in MPEG4 files
