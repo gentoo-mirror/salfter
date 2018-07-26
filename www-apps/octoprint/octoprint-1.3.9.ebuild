@@ -79,7 +79,7 @@ MY_PN=OctoPrint
 S=${WORKDIR}/${MY_PN}-${PV}
 
 DESCRIPTION="the snappy web interface for your 3D printer"
-HOMEPAGE="https://github.com/foosel/${MY_PN}"
+HOMEPAGE="https://octoprint.org/"
 LICENSE="AGPL-3"
 SRC_URI="https://github.com/foosel/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 SLOT="0"
