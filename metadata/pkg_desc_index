@@ -1,6 +1,15 @@
 app-emulation/gsport 0.31: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
 app-text/calibre 3.27.1: Ebook management application
+dev-python/click 6.2: A Python package for creating beautiful command line interfaces
+dev-python/flask 0.10.1-r2: A microframework based on Werkzeug, Jinja2 and good intentions
+dev-python/flask-babel 0.9: i18n and l10n support for Flask based on Babel and pytz
+dev-python/flask-login 0.2.11: Login session support for Flask
+dev-python/flask-principal 0.3.5: Identity management for flask
+dev-python/jinja 2.8.1: A full-featured template engine for Python
+dev-python/pyyaml 3.10: YAML parser and emitter for Python
+dev-python/scandir 1.3: A better directory iterator and faster os.walk()
+dev-python/semantic_version 2.4.2: Python library providing a few tools handling SemVer in Python.
 games-misc/fortune-mod 1.99.5: The notorious fortune program
 media-sound/pykaraoke 0.7.5: Python powered karaoke.
 media-video/atomicparsley 0.9.0: command line program for reading, parsing and setting iTunes-style metadata in MPEG4 files
