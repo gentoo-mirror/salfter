@@ -73,6 +73,7 @@ RDEPEND="
 	<dev-python/frozendict-1.3
 	>=dev-python/chainmap-1.0.2
 	<dev-python/chainmap-1.1
+	dev-python/pip
 "
 
 MY_PN=OctoPrint
