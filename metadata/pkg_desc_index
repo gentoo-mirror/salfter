@@ -17,4 +17,5 @@ media-video/mediaelch 2.4.2: Video metadata scraper
 net-mail/spfpolicy 2.010: Postfix policy server implementing Sender Policy Framework (SPF)
 net-news/trn 4.0-r77: threaded news reader
 net-p2p/btsync 2.2.7: Magic folder style file syncing powered by BitTorrent.
+sci-electronics/kicad 4.0.4 4.0.7: Electronic Schematic and PCB design tools.
 x11-libs/amd-adl-sdk 10.2: API to access display driver functionality for ATI graphics cards
