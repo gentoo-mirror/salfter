@@ -19,4 +19,5 @@ DEPEND=">=app-text/qtspell-0.8.0[qt5]
 	app-text/poppler[qt5]
 	scanner? ( media-gfx/sane-backends )
 	app-text/podofo
-	media-libs/libjpeg-turbo"
+	media-libs/libjpeg-turbo
+	app-text/djvu"
