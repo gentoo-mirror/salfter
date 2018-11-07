@@ -1,6 +1,8 @@
 EAPI=5
 
-DEPEND="net-libs/libmicrohttpd"
+DEPEND="net-libs/libmicrohttpd
+	sys-libs/pam
+        dev-libs/libxml2"
 
 DESCRIPTION="standalone WebDAV server"
 HOMEPAGE="https://github.com/couling/WebDAV-Daemon"
@@ -17,9 +19,10 @@ src_compile()
 
 src_install()
 {
-  cd ${S}/build
-  dosbin webdavd
-  dosbin rap
-  cd ..
+  cd ${S}
   dodoc Configuration.md
+  cd build
+  dosbin webdavd
+  exeinto /usr/lib/webdav
+  newexe rap webdav-worker
 }
