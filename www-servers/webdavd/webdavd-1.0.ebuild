@@ -19,6 +19,7 @@ src_install()
 {
   cd ${S}/build
   dosbin webdavd
+  dosbin rap
   cd ..
   dodoc Configuration.md
 }
