@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install
-DEPEND=net-libs/libmicrohttpd
+DEPEND=net-libs/libmicrohttpd sys-libs/pam dev-libs/libxml2
 DESCRIPTION=standalone WebDAV server
 EAPI=5
 HOMEPAGE=https://github.com/couling/WebDAV-Daemon
@@ -7,4 +7,4 @@ KEYWORDS=~amd64
 LICENSE=CC-BY-4.0
 SLOT=0
 SRC_URI=https://github.com/couling/WebDAV-Daemon/archive/v1.0.tar.gz -> webdavd-1.0.tar.gz
-_md5_=daae07addfb42edc9d2d5f736242d31e
+_md5_=f57a978dddeef8012c2b30b4026219c3
