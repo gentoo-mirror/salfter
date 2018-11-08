@@ -55,17 +55,7 @@ src_prepare() {
     # disable FORTIFY_SOURCE
     sed -i "s/HARDENING+=-D_FORTIFY_SOURCE=2/#HARDENING+=-D_FORTIFY_SOURCE=2/" src/makefile.unix
 
-    # current miniupnp requires a patch
-    epatch $S/miniupnpc-fix.patch
-
-    # 9 Jan 18: patch needed for new Boost API?
-    # see https://github.com/FairCoinTeam/fair-coin/issues/14 for similar bug
-    epatch $S/array-disambiguation.patch
-
-    # 2 Mar 18: fixes needed for Boost 1.66
-    if has_version '>=dev-libs/boost-1.66'; then
-        epatch $S/boost-1.66-fixes.patch
-    fi
+    # saa 8 Nov 18: necessary patches are preapplied in my source tree
 }
 
 src_compile() {
