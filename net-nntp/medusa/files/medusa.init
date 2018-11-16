@@ -36,7 +36,7 @@ check_config() {
 start() {
 	check_config
 
-	#sed -i "s/^cur_commit_hash.*/cur_commit_hash = `cat /usr/share/medusa/version.txt`/" /etc/medusa/medusa.ini
+	sed -i "s/^cur_commit_hash.*/cur_commit_hash = `cat /usr/share/medusa/version.txt`/" /etc/medusa/medusa.ini
 
         ebegin "Starting Medusa"
         start-stop-daemon --start --pidfile ${pidfile} -u ${USER} -g ${GROUP}\

@@ -12,6 +12,7 @@ PYTHON_COMPAT=( python2_7 )
 
 SRC_URI="https://github.com/pymedusa/Medusa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S=$WORKDIR/Medusa-${PV}
+GIT_COMMIT=a1d899bc882da047b3d6ff936e8b78b62b169b05
 
 inherit eutils user python-single-r1
 
@@ -24,8 +25,6 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="${PYTHON_DEPS}"
-#RDEPEND	>=dev-python/beautifulsoup-4.6.3
-#
 RDEPEND="
 	>=www-servers/tornado-5.1.1
 	dev-python/six
@@ -87,12 +86,14 @@ src_install() {
 	insopts -m0644 -o root -g root
 	newins "${FILESDIR}/${PN}.logrotate" ${PN}
 
-#	# weird stuff ;-)
-#	last_commit=$(git rev-parse HEAD)
-#	echo ${last_commit} > version.txt
-
 	insinto /usr/share/${PN}
 	doins -r themes lib runscripts medusa tests SickBeard.py ${FILESDIR}/autoProcessTV
+
+	# weird stuff for version check;-)
+	#last_commit=$(git rev-parse HEAD)
+	cd $S
+	echo $GIT_COMMIT > version.txt
+	doins $S/version.txt
 
 	fowners -R ${PN}:${PN} /usr/share/${PN}
 }
