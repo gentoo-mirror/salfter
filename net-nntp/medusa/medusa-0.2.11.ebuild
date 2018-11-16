@@ -44,7 +44,7 @@ RDEPEND="
 	dev-python/diskcache
 	dev-python/boto_utils
 	dev-python/cfscrape
-	>=dev-python/feedparser-20180811.03
+	dev-python/feedparser
 	>=dev-python/requests-oauthlib-1.0.0
 	dev-python/twitter
 	dev-python/PyGithub
