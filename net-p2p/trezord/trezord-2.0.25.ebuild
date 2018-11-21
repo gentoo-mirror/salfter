@@ -7,7 +7,7 @@ inherit eutils git-2
 DESCRIPTION="Trezor Bridge"
 HOMEPAGE="https://github.com/trezor/trezord-go"
 EGIT_REPO_URI="https://github.com/trezor/trezord-go"
-EGIT_COMMIT=743a8a2
+EGIT_COMMIT=ed8a7cb
 LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
