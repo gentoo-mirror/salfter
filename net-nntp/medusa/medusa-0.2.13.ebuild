@@ -53,6 +53,7 @@ RDEPEND="
 	>=dev-python/mako-1.0.7
 	>=dev-python/tornroutes-0.5.1
 	>=dev-python/markdown2-2.3.6
+	dev-python/pymediainfo
 "
 
 pkg_setup() {
