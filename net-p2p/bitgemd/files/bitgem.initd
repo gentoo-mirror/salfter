@@ -1,4 +1,4 @@
-#!/sbin/openrc-run
+#!/sbin/runscript
 # Distributed under the terms of the GNU General Public License, v2 or later
 
 VARDIR="/var/lib/bitgem"
@@ -9,7 +9,7 @@ depend() {
 }
 
 checkconfig() {
-	if [[ "${BITGEM_USER}" == "" ]] ; then
+	if [ "${BITGEM_USER}" = "" ] ; then
 		eerror "Please edit /etc/conf.d/bitgemd"
 		eerror "A user must be specified to run bitgemd as that user."
 		eerror "Modify USER to your needs (you may also add a group after a colon)"
@@ -41,7 +41,7 @@ checkconfig() {
 
 start() {
 	checkconfig || return 1
-	ebegin "Starting Bitgem daemon"
+	ebegin "Starting Bitgemd daemon"
 
 	pkg-config openrc
 	if [ $? = 0 ]; then

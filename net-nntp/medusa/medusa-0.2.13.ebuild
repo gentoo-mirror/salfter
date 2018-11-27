@@ -12,7 +12,7 @@ PYTHON_COMPAT=( python2_7 )
 
 SRC_URI="https://github.com/pymedusa/Medusa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S=$WORKDIR/Medusa-${PV}
-GIT_COMMIT=a1d899bc882da047b3d6ff936e8b78b62b169b05
+GIT_COMMIT=54da0c77d705a23f1ce67945ba4af3e1b978dcfc
 
 inherit eutils user python-single-r1
 
@@ -53,6 +53,7 @@ RDEPEND="
 	>=dev-python/mako-1.0.7
 	>=dev-python/tornroutes-0.5.1
 	>=dev-python/markdown2-2.3.6
+	dev-python/pymediainfo
 "
 
 pkg_setup() {

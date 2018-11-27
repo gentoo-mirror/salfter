@@ -1,10 +1,33 @@
-# Config file for /etc/init.d/bitgem
+# /etc/conf.d/bitgemd: config file for /etc/init.d/bitgemd
 
-# owner of bitgemd process (don't change, must be existing)
-BITGEM_USER="bitgem"
+# Config file location
+#BITGEMD_CONFIGFILE="/etc/bitgem/bitgem.conf"
 
-# See bitgemd --daemon
-BITGEM_OPTS="${BITGEM_OPTS}"
+# What directory to write pidfile to?  (created and owned by $BITGEMD_USER)
+#BITGEMD_PIDDIR="/var/run/bitgemd"
 
-# nice level
-NICELEVEL="19"
+# What filename to give the pidfile
+#BITGEMD_PIDFILE="${BITGEMD_PIDDIR}/bitgemd.pid"
+
+# Where to write bitgemd data (be mindful that the blockchain is large)
+#BITGEMD_DATADIR="/var/lib/bitgemd"
+
+# User and group to own bitgemd process
+#BITGEMD_USER="bitgem"
+#BITGEMD_GROUP="bitgem"
+
+# Path to bitgemd executable
+#BITGEMD_BIN="/usr/bin/bitgemd"
+
+# Nice value to run bitgemd under
+#BITGEMD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BITGEMD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for bitgemd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITGEMD_SIGTERM_TIMEOUT=60
