@@ -39,7 +39,7 @@ IUSE="ios +udisks"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 COMMON_DEPEND="${PYTHON_DEPS}
-	>=app-text/podofo-0.8.2:=
+	>=app-text/podofo-0.9.6_p20180715
 	>=app-text/poppler-0.26.5[qt5]
 	>=dev-libs/chmlib-0.40:=
 	dev-libs/glib:2=
@@ -56,7 +56,7 @@ COMMON_DEPEND="${PYTHON_DEPS}
 	dev-python/html5-parser[${PYTHON_USEDEP}]
 	>=dev-python/lxml-3.2.1[${PYTHON_USEDEP}]
 	>=dev-python/mechanize-0.2.5[${PYTHON_USEDEP}]
-	dev-python/msgpack[${PYTHON_USEDEP}]
+	>=dev-python/msgpack-0.5.6[${PYTHON_USEDEP}]
 	dev-python/netifaces[${PYTHON_USEDEP}]
 	dev-python/pillow[${PYTHON_USEDEP}]
 	dev-python/psutil[${PYTHON_USEDEP}]
@@ -94,7 +94,8 @@ RDEPEND="${COMMON_DEPEND}
 	udisks? ( || ( sys-fs/udisks:2 sys-fs/udisks:0 ) )"
 DEPEND="${COMMON_DEPEND}
 	>=dev-python/setuptools-23.1.0[${PYTHON_USEDEP}]
-	>=virtual/podofo-build-0.9.4
+	>=virtual/podofo-build-0.9.6_p20180715
+
 	virtual/pkgconfig"
 
 pkg_pretend() {
