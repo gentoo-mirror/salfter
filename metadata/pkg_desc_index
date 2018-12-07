@@ -1,6 +1,6 @@
 app-emulation/gsport 0.31: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
-app-text/calibre 3.34.0: Ebook management application
+app-text/calibre 3.35.0: Ebook management application
 dev-python/click 6.2: A Python package for creating beautiful command line interfaces
 dev-python/flask 0.10.1-r2: A microframework based on Werkzeug, Jinja2 and good intentions
 dev-python/flask-babel 0.9: i18n and l10n support for Flask based on Babel and pytz
