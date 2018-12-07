@@ -16,5 +16,5 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND=""
-DEPEND=""
+DEPEND="dev-python/protobuf-python"
 
