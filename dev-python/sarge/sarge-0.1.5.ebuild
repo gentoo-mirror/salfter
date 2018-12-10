@@ -7,7 +7,8 @@ PYTHON_COMPAT=( python{2_7,3_4,3_5,3_6,3_7} pypy )
 inherit distutils-r1
 
 MY_PN="${PN}"
-MY_P="${MY_PN}-${PV}"
+MY_P="${MY_PN}-${PV}.post0"
+S=$WORKDIR/$MY_P
 
 DESCRIPTION="wrapper for subprocess which provides command pipeline functionality"
 HOMEPAGE="http://sarge.readthedocs.org/"
