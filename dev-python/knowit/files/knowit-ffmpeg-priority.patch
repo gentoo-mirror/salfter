@@ -1,0 +1,12 @@
+--- knowit-0.2.4/knowit/api.py	2017-06-17 22:43:44.000000000 -0700
++++ knowit-0.2.4/knowit/api.py	2018-12-10 08:24:51.250716442 -0800
+@@ -10,8 +10,8 @@
+ )
+ 
+ _provider_map = OrderedDict([
+-    ('mediainfo', MediaInfoProvider),
+     ('ffmpeg', FFmpegProvider),
++    ('mediainfo', MediaInfoProvider),
+     ('enzyme', EnzymeProvider),
+ ])
+ 
