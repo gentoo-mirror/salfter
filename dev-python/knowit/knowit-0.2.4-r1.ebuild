@@ -21,3 +21,4 @@ RDEPEND="
 	>=dev-python/six-1.9.0
 "
 DEPEND=""
+PATCHES=( $FILESDIR/$PN-ffmpeg-priority.patch )
