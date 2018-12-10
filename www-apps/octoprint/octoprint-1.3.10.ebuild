@@ -1,5 +1,5 @@
 EAPI=5
-PYTHON_COMPAT=(python{2_6,2_7})
+PYTHON_COMPAT=(python2_7)
 
 inherit distutils-r1
 
@@ -32,7 +32,7 @@ RDEPEND="
 	<dev-python/netaddr-0.8
 	>=dev-python/watchdog-0.8.3
 	<dev-python/watchdog-0.9
-	=dev-python/sarge-0.1.4
+	=dev-python/sarge-0.1.5
 	>=dev-python/netifaces-0.10.6
 	<dev-python/netifaces-0.11
 	>=dev-python/pylru-1.0.9
