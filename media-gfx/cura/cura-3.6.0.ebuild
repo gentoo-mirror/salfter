@@ -29,7 +29,8 @@ RDEPEND="${PYTHON_DEPS}
 	dev-python/shapely
 	~dev-python/savitar-$PV
 	dev-python/zeroconf
-	~dev-libs/libcharon-$PV"
+	~dev-libs/libcharon-$PV
+	=dev-python/PyQt5-5.9.2"
 DEPEND="${RDEPEND}
 	sys-devel/gettext"
 
