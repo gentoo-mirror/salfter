@@ -38,6 +38,11 @@ S="${WORKDIR}/${MY_PN}-${MY_PV}"
 #PATCHES=( "${FILESDIR}/${PN}-3.2.1-fix-install-paths.patch" )
 DOCS=( README.md )
 
+src_prepare() {
+	eapply_user
+	sed -i "s/set(CURA_VERSION \"master\"/set(CURA_VERSION \"$PV\"/" CMakeLists.txt
+}
+
 src_configure() {
 	local mycmakeargs=(
 		-DPYTHON_SITE_PACKAGES_DIR="$(python_get_sitedir)" )
