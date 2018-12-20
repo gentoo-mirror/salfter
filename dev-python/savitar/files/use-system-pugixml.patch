@@ -44,11 +44,12 @@
  
 --- libSavitar-3.6.0/CMakeLists.txt	2017-11-05 17:24:59.000000000 -0800
 +++ libSavitar-3.6.0/CMakeLists.txt	2018-12-17 10:25:33.102916619 -0800
-@@ -8,7 +8,6 @@
+@@ -8,7 +8,7 @@
  option(BUILD_STATIC "Build as a static library" OFF)
  
  
 -add_subdirectory(pugixml)
++find_package(pugixml REQUIRED)
  
  if(BUILD_PYTHON)
      set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
