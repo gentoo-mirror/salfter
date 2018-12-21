@@ -14,5 +14,5 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND=">=dev-python/docopt-0.6.1"
+RDEPEND="=dev-python/docopt-0.6.1"
 DEPEND=""
