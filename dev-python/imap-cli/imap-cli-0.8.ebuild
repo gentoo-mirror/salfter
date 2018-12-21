@@ -18,3 +18,5 @@ KEYWORDS="~amd64"
 RDEPEND=">=dev-python/docopts-0.6
 	 >=dev-python/mock-1.0.1"
 DEPEND=""
+
+DOCS=( README.md config-example.ini )
