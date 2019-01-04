@@ -49,7 +49,7 @@ COMMON_DEPEND="${PYTHON_DEPS}
 	>=dev-python/beautifulsoup-3.0.5:python-2[${PYTHON_USEDEP}]
 	dev-python/chardet[${PYTHON_USEDEP}]
 	>=dev-python/cssselect-0.7.1[${PYTHON_USEDEP}]
-	>=dev-python/cssutils-1.0.1[${PYTHON_USEDEP}]
+	>=dev-python/css-parser-1.0.4[${PYTHON_USEDEP}]
 	>=dev-python/dbus-python-1.2.4[${PYTHON_USEDEP}]
 	>=dev-libs/dbus-glib-0.106
 	>=sys-apps/dbus-1.10.8
