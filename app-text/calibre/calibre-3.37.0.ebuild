@@ -162,6 +162,9 @@ src_prepare() {
 }
 
 src_install() {
+	# install manpages
+	doman $S/man-pages/man1/*.1
+
 	# Bypass kbuildsycoca and update-mime-database in order to
 	# avoid sandbox violations if xdg-mime tries to call them.
 	cat - > "${T}/kbuildsycoca" <<-EOF
@@ -261,7 +264,6 @@ src_install() {
 		ebook-edit \
 		calibre-smtp \
 		ebook-device
-
 }
 
 pkg_preinst() {
