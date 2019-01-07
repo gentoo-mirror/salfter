@@ -26,7 +26,7 @@ RDEPEND="${PYTHON_DEPS}
 	sci-libs/scipy[${PYTHON_USEDEP}]
 	usb? ( dev-python/pyserial[${PYTHON_USEDEP}] )
 	~media-gfx/curaengine-${PV}
-	dev-python/shapely
+	>=sci-libs/Shapely-1.6.4
 	~dev-python/savitar-$PV
 	dev-python/zeroconf
 	~dev-libs/libcharon-$PV
