@@ -4,7 +4,7 @@ GIT_COMMIT=c0cbae88ab47a3879aacf80d53b6a85710682a6b
 S=$WORKDIR/$PN-$GIT_COMMIT
 
 DESCRIPTION="reverse-engineered tools for Lattice iCE40 FPGAs"
-HOMEPAGE=""
+HOMEPAGE="http://www.clifford.at/icestorm/"
 SRC_URI="https://github.com/cliffordwolf/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
 LICENSE=ISC
 SLOT=0
