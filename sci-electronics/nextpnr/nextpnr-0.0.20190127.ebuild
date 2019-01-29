@@ -1,0 +1,28 @@
+EAPI=6
+
+inherit cmake-utils
+
+GIT_COMMIT=6cc1bfcb37199e0988d0f06ce34071b409ab8019
+S=$WORKDIR/$PN-$GIT_COMMIT
+
+DESCRIPTION="portable FPGA place and route tool"
+HOMEPAGE="https://github.com/YosysHQ/nextpnr"
+SRC_URI="https://github.com/YosysHQ/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
+LICENSE=ISC
+SLOT=0
+KEYWORDS=~amd64
+IUSE="ice40"
+
+DEPEND="ice40? ( sci-electronics/icestorm )
+	dev-qt/qtcore:5
+	dev-libs/boost"
+
+src_configure() {
+	local mycmakeargs=(
+		-DARCH=generic 
+		$(usex ice40 -DARCH=ice40 "")
+		$(usex ice40 -DICEBOX_ROOT=/usr/share/icebox "")
+	)
+	cmake-utils_src_configure
+}
+
