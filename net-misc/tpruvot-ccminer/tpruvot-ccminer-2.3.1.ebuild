@@ -8,6 +8,7 @@ inherit autotools flag-o-matic versionator
 DESCRIPTION="Bitcoin CPU/GPU/FPGA miner in C"
 HOMEPAGE="https://bitcointalk.org/index.php?topic=28402.0"
 SRC_URI="https://github.com/tpruvot/ccminer/archive/${PV}-tpruvot.tar.gz -> ${P}.tar.gz"
+PATCHES=( $FILESDIR/ccminer.cpp.patch )
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -25,8 +26,6 @@ RDEPEND="${DEPEND}"
 S="${WORKDIR}/ccminer-${PV}-tpruvot"
 
 src_prepare() {
-	epatch $FILESDIR/ccminer.cpp.patch
-	epatch $FILESDIR/cuda-version.patch
 	eautoreconf
 }
 
