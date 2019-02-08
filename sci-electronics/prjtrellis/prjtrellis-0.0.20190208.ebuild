@@ -2,7 +2,7 @@ EAPI=6
 
 inherit cmake-utils
 
-GIT_COMMIT=ce4a961a65519ee2f9140de0bab07911f6f26af7
+GIT_COMMIT=5b6bc700cdda8220bcea09aefc48a233cb56b534
 DB_GIT_COMMIT=d9603500f4a4df5b643c790d0e44bf7c67b755d0
 S=$WORKDIR/$PN-$GIT_COMMIT/libtrellis
 
@@ -25,10 +25,3 @@ src_unpack() {
 	mv $PN-db-$DB_GIT_COMMIT database
 }
 
-#src_compile() {
-#	emake DESTDIR="$D" PREFIX=/usr
-#}
-
-#src_install() {
-#	emake DESTDIR="$D" PREFIX=/usr install	
-#}
