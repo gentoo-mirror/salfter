@@ -1,12 +1,11 @@
-DEFINED_PHASES=compile configure install prepare test
-DEPEND=ice40? ( sci-electronics/icestorm >=sci-electronics/yosys-0.8 ) ecp5? ( sci-electronics/prjtrellis >sci-electronics/yosys-0.8 ) dev-qt/qtcore:5 dev-libs/boost sys-devel/make >=dev-util/cmake-3.9.6
-DESCRIPTION=portable FPGA place and route tool
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-vcs/git dev-libs/boost sys-devel/make >=dev-util/cmake-3.9.6
+DESCRIPTION=reverse-engineered tools for Lattice ECP5 FPGAs
 EAPI=6
-HOMEPAGE=https://github.com/YosysHQ/nextpnr
-IUSE=ice40 ecp5
+HOMEPAGE=https://prjtrellis.readthedocs.io
 KEYWORDS=~amd64
 LICENSE=ISC
 SLOT=0
-SRC_URI=https://github.com/YosysHQ/nextpnr/archive/db990d21752ad6eaecc0ca809d8eef4a910cfb03.tar.gz -> nextpnr-0.0.20190208.tar.gz
+SRC_URI=https://github.com/SymbiFlow/prjtrellis/archive/25e95bc95084e50f941f81f3d68dca3cd8dd2af5.tar.gz -> prjtrellis-0.0.20190211.tar.gz https://github.com/SymbiFlow/prjtrellis-db/archive/23630bcb9492e125b58907832c258cc3ecc91936.tar.gz -> prjtrellis-db-0.0.20190211.tar.gz
 _eclasses_=cmake-utils	ab10bd85e5d38e2a32077bcd91faa1b6	desktop	b1d22ac8bdd4679ab79c71aca235009d	epatch	a1bf4756dba418a7238f3be0cb010c54	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	55aaa148741116aa54ad0d80e361818e	ltprune	08f9e1d9ee0af8f5d9a7854efbcd8c0e	multilib	b2f01ad412baf81650c23fcf0975fa33	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	f164325a2cdb5b3ea39311d483988861	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf	xdg-utils	14d00d009167652b1fa363e55effe213
-_md5_=7500e51b3c6c132e47cfca843bf19c8e
+_md5_=8697d27de65e02f29950a6bafc1d66a4
