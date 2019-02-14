@@ -1,9 +1,0 @@
-DEFINED_PHASES=compile install unpack
-DEPEND=dev-vcs/git media-gfx/xdot dev-libs/boost >=dev-vcs/git-1.8.2.1[curl]
-DESCRIPTION=framework for Verilog RTL synthesis
-EAPI=6
-HOMEPAGE=http://www.clifford.at/yosys/
-LICENSE=ISC
-SLOT=0
-_eclasses_=git-r3	0d4635eeb5a96cd5315597a47eba25c9
-_md5_=8827023259aca622551330ffd7826433
