@@ -86,3 +86,10 @@ SRC_URI="https://github.com/foosel/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 SLOT="0"
 KEYWORDS="~arm64 ~amd64"
 
+pkg_setup()
+{
+	HOMEDIR=/var/lib/$PN
+	python-single-r1_pkg_setup
+	enewgroup $PN
+	enewuser $PN -1 -1 $HOMEDIR $PN
+}
