@@ -1,7 +1,7 @@
 EAPI=5
 PYTHON_COMPAT=(python2_7)
 
-inherit distutils-r1
+inherit distutils-r1 user
 
 DEPEND=""
 RDEPEND="
@@ -89,7 +89,13 @@ KEYWORDS="~arm64 ~amd64"
 pkg_setup()
 {
 	HOMEDIR=/var/lib/$PN
-	python-single-r1_pkg_setup
 	enewgroup $PN
 	enewuser $PN -1 -1 $HOMEDIR $PN
+}
+
+src_install()
+{
+	distutils-r1_src_install
+	newinitd $FILESDIR/$PN.initd $PN
+	newconfd $FILESDIR/$PN.confd $PN
 }
