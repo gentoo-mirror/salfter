@@ -90,7 +90,7 @@ pkg_setup()
 {
 	HOMEDIR=/var/lib/$PN
 	enewgroup $PN
-	enewuser $PN -1 -1 $HOMEDIR $PN
+	enewuser $PN -1 -1 $HOMEDIR "$PN,uucp,video"
 }
 
 src_install()
