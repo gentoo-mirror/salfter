@@ -1,5 +1,5 @@
-EAPI=5
-inherit eutils git-2
+EAPI=6
+inherit eutils git-r3
 
 DESCRIPTION="HTTP Live Streaming segmenter"
 HOMEPAGE="http://www.espend.de/artikel/iphone-ipad-ipod-http-streaming-segmenter-and-m3u8-windows.html"

@@ -21,6 +21,8 @@ start() {
 		--background --make-pidfile \
 		--pidfile "${PIDFILE}" \
 		--wait 1000 \
+		--nicelevel -2 \
+		--ionice 1 \
 		--exec /usr/bin/octoprint serve 
 
 	eend $?
