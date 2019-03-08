@@ -1,6 +1,6 @@
 app-emulation/gsport 0.31: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
-app-text/calibre 3.39.1: Ebook management application
+app-text/calibre 3.40.1: Ebook management application
 dev-python/PyQt5 5.9.2: Python bindings for the Qt framework
 dev-python/click 6.2: A Python package for creating beautiful command line interfaces
 dev-python/docopt 0.6.1: Pythonic argument parser, that will make you smile

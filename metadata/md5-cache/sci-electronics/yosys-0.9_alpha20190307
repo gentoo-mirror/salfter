@@ -5,5 +5,5 @@ EAPI=6
 HOMEPAGE=http://www.clifford.at/yosys/
 LICENSE=ISC
 SLOT=0
-SRC_URI=https://github.com/YosysHQ/yosys/archive/52f80718a780535aefcc7858152eb0fdfc0aafc4.tar.gz -> yosys-0.9_alpha20190302.tar.gz
-_md5_=4737fc0f690b9590409007174083b572
+SRC_URI=https://github.com/YosysHQ/yosys/archive/e9b34ad5c07935454367af1bee1248371d214fc9.tar.gz -> yosys-0.9_alpha20190307.tar.gz
+_md5_=79c10eac97c885258de56b37ea41655c
