@@ -6,5 +6,5 @@ HOMEPAGE=http://www.clifford.at/icestorm/
 KEYWORDS=~amd64
 LICENSE=ISC
 SLOT=0
-SRC_URI=https://github.com/cliffordwolf/icestorm/archive/15c9bfd75142efd14c37198bc2dce7e428339aa7.tar.gz -> icestorm-0.0.20190302.tar.gz
-_md5_=df987f5b36bfa3617757f8c00e1621bb
+SRC_URI=https://github.com/cliffordwolf/icestorm/archive/fa1c932452e8efe1dfcc6ff095e3f7130a7906b1.tar.gz -> icestorm-0.0.20190311.tar.gz
+_md5_=c81af3fe9b4ed3a6fc800ad98cedd4d7
