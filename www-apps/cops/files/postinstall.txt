@@ -1,0 +1,11 @@
+Post-Installation
+=================
+
+After installing COPS to a webroot directory, change to it and complete the
+following:
+
+* wget https://getcomposer.org/composer.phar
+* php composer.phar require "fxp/composer-asset-plugin:~1.1"
+
+Then, copy config_local.php.example to config_local.php and set your Calibre
+library directory in config_local.php.
