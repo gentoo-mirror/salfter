@@ -17,7 +17,7 @@ SRC_URI="https://github.com/kurtmckee/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.g
 # sgmllib is licensed under PSF-2.
 LICENSE="BSD-2 PSF-2"
 SLOT="0"
-KEYWORDS="alpha amd64 arm hppa ia64 ppc ppc64 s390 sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~x86-solaris"
+KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
