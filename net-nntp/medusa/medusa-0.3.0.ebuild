@@ -12,7 +12,7 @@ PYTHON_COMPAT=( python2_7 )
 
 SRC_URI="https://github.com/pymedusa/Medusa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S=$WORKDIR/Medusa-${PV}
-GIT_COMMIT=918cfe7ce01808499585ffe6c1356fd5ed369f76
+GIT_COMMIT=94fae847b6e7e443d74c59cb11bdbd37c464b363
 
 inherit eutils user python-single-r1
 
@@ -27,7 +27,7 @@ IUSE=""
 DEPEND="${PYTHON_DEPS}"
 RDEPEND="
 	>=www-servers/tornado-5.1.1
-	dev-python/six
+	>=dev-python/six-1.12.0
 	dev-python/profilehooks
 	dev-python/contextlib2
 	>=dev-python/rarfile-3.0
@@ -43,7 +43,7 @@ RDEPEND="
 	dev-python/diskcache
 	dev-python/boto_utils
 	dev-python/cfscrape
-	dev-python/feedparser
+	>dev-python/feedparser-5.2.1
 	>=dev-python/requests-oauthlib-1.0.0
 	dev-python/twitter
 	dev-python/PyGithub
