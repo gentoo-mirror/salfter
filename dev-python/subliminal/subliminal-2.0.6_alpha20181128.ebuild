@@ -3,13 +3,16 @@
 
 EAPI=6
 
+GIT_COMMIT=6ac2fa23ee5baa7d8452552edaa7c4a8a00d237a
+S=$WORKDIR/$PN-$GIT_COMMIT
+
 PYTHON_COMPAT=( python2_7 python3_{4,5,6} )
 
 inherit distutils-r1
 
 DESCRIPTION="Subtitles, faster than your thoughts"
-HOMEPAGE="https://github.com/pymedusa/subliminal"
-SRC_URI="https://github.com/pymedusa/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="https://github.com/Diaoul/subliminal"
+SRC_URI="https://github.com/Diaoul/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
