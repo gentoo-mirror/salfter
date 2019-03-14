@@ -20,7 +20,10 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
+DEPEND="
+	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/sgmllib3k
+"
 RDEPEND=""
 
 # Tests have issues with chardet installed, and are just kind of buggy.

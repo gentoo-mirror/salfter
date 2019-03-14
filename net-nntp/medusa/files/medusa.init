@@ -13,7 +13,7 @@ etc_dir="/etc/medusa"
 var_dir="/var/medusa"
 log_dir="/var/log/medusa"
 program="$CODE_DIR/SickBeard.py"
-bin=`which $PYTHON_BIN`
+bin=/usr/bin/python3 # force Python 3
 
 check_config() {
 	
