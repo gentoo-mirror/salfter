@@ -18,7 +18,8 @@ IUSE="test"
 
 RDEPEND="
 	dev-python/requests[${PYTHON_USEDEP}]
-	>=dev-python/lockfile-0.9[${PYTHON_USEDEP}]"
+	>=dev-python/lockfile-0.9[${PYTHON_USEDEP}]
+	>=dev-python/msgpack-0.5.2[${PYTHON_USEDEP}]"
 DEPEND="${RDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (	dev-python/pytest[${PYTHON_USEDEP}]	)

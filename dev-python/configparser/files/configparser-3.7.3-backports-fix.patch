@@ -1,0 +1,20 @@
+--- a/src/backports/__init__.py	2019-02-22 17:38:25.000000000 -0800
++++ a/src/backports/__init__.py	2014-09-04 16:12:07.000000000 -0700
+@@ -3,3 +3,9 @@
+ 
+ from pkgutil import extend_path
+ __path__ = extend_path(__path__, __name__)
++
++try:
++    import pkg_resources
++    pkg_resources.declare_namespace(__name__)
++except ImportError:
++    pass
+--- a/setup.py	2019-02-22 17:38:25.000000000 -0800
++++ a/setup.py	2019-03-14 09:45:12.668626997 -0700
+@@ -3,4 +3,5 @@
+ setuptools.setup(
+     packages=setuptools.find_packages(where='src'),
+     package_dir={'': 'src'},
++    namespace_packages=['backports'],
+ )
