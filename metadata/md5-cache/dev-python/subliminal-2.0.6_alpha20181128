@@ -2,13 +2,13 @@ DEFINED_PHASES=compile configure install prepare test
 DEPEND=python_targets_python2_7? ( >=dev-lang/python-2.7.5-r2:2.7 ) python_targets_python3_4? ( dev-lang/python:3.4 ) python_targets_python3_5? ( dev-lang/python:3.5 ) python_targets_python3_6? ( dev-lang/python:3.6 ) >=dev-lang/python-exec-2:=[python_targets_python2_7(-)?,python_targets_python3_4(-)?,python_targets_python3_5(-)?,python_targets_python3_6(-)?,-python_single_target_python2_7(-),-python_single_target_python3_4(-),-python_single_target_python3_5(-),-python_single_target_python3_6(-)]
 DESCRIPTION=Subtitles, faster than your thoughts
 EAPI=6
-HOMEPAGE=https://github.com/pymedusa/subliminal
+HOMEPAGE=https://github.com/Diaoul/subliminal
 IUSE=python_targets_python2_7 python_targets_python3_4 python_targets_python3_5 python_targets_python3_6
 KEYWORDS=~amd64 ~x86
 LICENSE=MIT
 RDEPEND=>=dev-python/guessit-2.0.1 >=dev-python/babelfish-0.5.2 >=dev-python/enzyme-0.4.1 >=dev-python/beautifulsoup-4.4.0 >=dev-python/requests-2.0 >=dev-python/click-4.0 >=dev-python/dogpile-cache-0.6.0 >=dev-python/stevedore-1.0.0 >=dev-python/chardet-2.3.0 >=dev-python/pysrt-1.0.1 >=dev-python/six-1.9.0 >=dev-python/appdirs-1.3 >=dev-python/rarfile-2.7 >=dev-python/pytz-2012c >=dev-python/futures-3.2.0 python_targets_python2_7? ( >=dev-lang/python-2.7.5-r2:2.7 ) python_targets_python3_4? ( dev-lang/python:3.4 ) python_targets_python3_5? ( dev-lang/python:3.5 ) python_targets_python3_6? ( dev-lang/python:3.6 ) >=dev-lang/python-exec-2:=[python_targets_python2_7(-)?,python_targets_python3_4(-)?,python_targets_python3_5(-)?,python_targets_python3_6(-)?,-python_single_target_python2_7(-),-python_single_target_python3_4(-),-python_single_target_python3_5(-),-python_single_target_python3_6(-)]
 REQUIRED_USE=|| ( python_targets_python2_7 python_targets_python3_4 python_targets_python3_5 python_targets_python3_6 )
 SLOT=0
-SRC_URI=https://github.com/pymedusa/subliminal/archive/2.0.5.tar.gz -> subliminal-2.0.5.tar.gz
+SRC_URI=https://github.com/Diaoul/subliminal/archive/6ac2fa23ee5baa7d8452552edaa7c4a8a00d237a.tar.gz -> subliminal-2.0.6_alpha20181128.tar.gz
 _eclasses_=distutils-r1	30044897f9a75ab6414bdb19aa3c07d4	multibuild	40fe59465edacd730c644ec2bc197809	multilib	b2f01ad412baf81650c23fcf0975fa33	multiprocessing	cac3169468f893670dac3e7cb940e045	python-r1	ce1cd23cfdc1848e8e32743efe34f299	python-utils-r1	12114a2a9aab35b93efc037a196b3234	toolchain-funcs	b45201c4e6c096b98e250336954e64b9	xdg-utils	14d00d009167652b1fa363e55effe213
-_md5_=0f5feb034dca680796c0beb681ca64e4
+_md5_=f5c7bb758492b329540639da932eed36
