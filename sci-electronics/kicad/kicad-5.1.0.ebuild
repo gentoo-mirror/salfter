@@ -10,7 +10,7 @@ inherit check-reqs cmake-utils eapi7-ver eutils gnome2-utils python-single-r1 to
 
 DESCRIPTION="Electronic Schematic and PCB design tools"
 HOMEPAGE="http://www.kicad-pcb.org"
-SRC_URI="https://launchpad.net/${PN}/$(ver_cut 1-2)/${PV}/+download/${P}.tar.xz"
+SRC_URI="https://launchpad.net/${PN}/$(ver_cut 1).0/${PV}/+download/${P}.tar.xz"
 
 LICENSE="GPL-2+ GPL-3+ Boost-1.0"
 SLOT="0"
@@ -47,11 +47,6 @@ RDEPEND="${COMMON_DEPEND}
 	sci-electronics/electronics-menu
 "
 CHECKREQS_DISK_BUILD="800M"
-
-PATCHES=(
-	"${FILESDIR}"/"${PN}-5.0.0-curl.patch"
-	"${FILESDIR}"/"${PN}-help-path.patch"
-)
 
 pkg_setup() {
 	use python && python-single-r1_pkg_setup
