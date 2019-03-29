@@ -9,52 +9,52 @@ RDEPEND="
 	<dev-python/flask-0.11
 	>=dev-python/jinja-2.8.1
 	<dev-python/jinja-2.9
-	>=dev-python/werkzeug-0.8.3
-	<dev-python/werkzeug-0.9
+	>=dev-python/werkzeug-0.15.1
+	<dev-python/werkzeug-0.16
 	=www-servers/tornado-4.5.3
-	>=dev-python/pyyaml-3.10
-	<dev-python/pyyaml-3.11
+	>=dev-python/pyyaml-5.1
+	<dev-python/pyyaml-6
 	>=dev-python/flask-login-0.2.11
 	<dev-python/flask-login-0.3
-	>=dev-python/flask-principal-0.3.5
-	<dev-python/flask-principal-0.4
-	>=dev-python/flask-babel-0.9
-	<dev-python/flask-babel-0.10
-	>=dev-python/flask-assets-0.10
-	<dev-python/flask-assets-0.11
-	>=dev-python/markdown-2.6.9
-	<dev-python/markdown-2.7
+	>=dev-python/flask-principal-0.4
+	<dev-python/flask-principal-0.5
+	>=dev-python/flask-babel-0.12
+	<dev-python/flask-babel-0.13
+	>=dev-python/flask-assets-0.12
+	<dev-python/flask-assets-0.13
+	>=dev-python/markdown-3.0
+	<dev-python/markdown-3.1
 	>=dev-python/pyserial-3.4
 	<dev-python/pyserial-3.5
 	>=dev-python/netaddr-0.7.19
 	<dev-python/netaddr-0.8
-	>=dev-python/watchdog-0.8.3
-	<dev-python/watchdog-0.9
+	>=dev-python/watchdog-0.9.0
+	<dev-python/watchdog-0.10
 	=dev-python/sarge-0.1.5
-	>=dev-python/netifaces-0.10.6
+	>=dev-python/netifaces-0.10.9
 	<dev-python/netifaces-0.11
-	>=dev-python/pylru-1.0.9
-	<dev-python/pylru-1.1
-	>=dev-python/rsa-3.2.3
-	<dev-python/rsa-3.3
-	>=dev-python/pkginfo-1.4.2
-	<dev-python/pkginfo-1.5
-	>=dev-python/requests-2.18.4
+	>=dev-python/pylru-1.2
+	<dev-python/pylru-1.3
+	>=dev-python/rsa-4.0
+	<dev-python/rsa-5
+	>=dev-python/pkginfo-1.5.0.1
+	<dev-python/pkginfo-1.6
+	>=dev-python/requests-2.21.0
 	<dev-python/requests-3
-	>=dev-python/semantic_version-2.4.2
-	<dev-python/semantic_version-2.5
-	>=dev-python/psutil-5.4.6
-	<dev-python/psutil-5.5
-	>=dev-python/click-6.2
-	<dev-python/click-6.3
+	>=dev-python/semantic_version-2.6
+	<dev-python/semantic_version-2.7
+	>=dev-python/psutil-5.6.1
+	<dev-python/psutil-5.7
+	>=dev-python/click-7
+	<dev-python/click-8
 	>=dev-python/awesome-slugify-1.6.5
 	<dev-python/awesome-slugify-1.7
 	>=dev-python/feedparser-5.2.1
 	<dev-python/feedparser-5.3
-	>=dev-python/future-0.15.2
-	<dev-python/future-0.16
-	>=dev-python/scandir-1.3
-	<dev-python/scandir-1.4
+	>=dev-python/future-0.17.1
+	<dev-python/future-0.18
+	>=dev-python/scandir-1.10
+	<dev-python/scandir-1.11
 	>=dev-python/websocket-client-0.56
 	<dev-python/websocket-client-0.57
 	>=dev-python/python-dateutil-2.6.1
@@ -69,7 +69,7 @@ RDEPEND="
 	<dev-python/monotonic-1.6
 	>=dev-python/frozendict-1.2
 	<dev-python/frozendict-1.3
-	>=dev-python/chainmap-1.0.2
+	>=dev-python/chainmap-1.0.3
 	<dev-python/chainmap-1.1
 	dev-python/pip
 	>=dev-python/typing-3.6.6
@@ -77,9 +77,9 @@ RDEPEND="
 	=dev-python/sentry-sdk-0.7.7
 	dev-python/regex
 	!=dev-python/regex-2018.11.6
+	>=dev-python/cachelib-0.1
+	<dev-python/cachelib-0.2
 "
-#	>=dev-python/sockjs-tornado-1.0.3
-#	<dev-python/sockjs-tornado-1.1
 
 MY_PN=OctoPrint
 MY_PV=1.3.11rc1
