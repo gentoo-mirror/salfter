@@ -16,8 +16,8 @@ RDEPEND="
 	<dev-python/pyyaml-6
 	>=dev-python/flask-login-0.2.11
 	<dev-python/flask-login-0.3
-	>=dev-python/flask-principal-0.3.5
-	<dev-python/flask-principal-0.4
+	>=dev-python/flask-principal-0.4
+	<dev-python/flask-principal-0.5
 	>=dev-python/flask-babel-0.12
 	<dev-python/flask-babel-0.13
 	>=dev-python/flask-assets-0.12
@@ -39,7 +39,7 @@ RDEPEND="
 	<dev-python/rsa-5
 	>=dev-python/pkginfo-1.5.0.1
 	<dev-python/pkginfo-1.6
-	>=dev-python/requests-2.18.4
+	>=dev-python/requests-2.21.0
 	<dev-python/requests-3
 	>=dev-python/semantic_version-2.6
 	<dev-python/semantic_version-2.7
@@ -80,8 +80,6 @@ RDEPEND="
 	>=dev-python/cachelib-0.1
 	<dev-python/cachelib-0.2
 "
-#	>=dev-python/sockjs-tornado-1.0.3
-#	<dev-python/sockjs-tornado-1.1
 
 MY_PN=OctoPrint
 MY_PV=1.3.11rc1
