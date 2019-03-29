@@ -6,19 +6,20 @@ dev-python/babelfish 0.5.6_alpha20160411: Python library to work with countries 
 dev-python/click 6.2: A Python package for creating beautiful command line interfaces
 dev-python/docopt 0.6.1: Pythonic argument parser, that will make you smile
 dev-python/flask 0.10.1-r2: A microframework based on Werkzeug, Jinja2 and good intentions
-dev-python/flask-babel 0.9: i18n and l10n support for Flask based on Babel and pytz
+dev-python/flask-babel 0.9 0.12.2: i18n and l10n support for Flask based on Babel and pytz
 dev-python/flask-login 0.2.11: Login session support for Flask
 dev-python/flask-principal 0.3.5: Identity management for flask
 dev-python/jinja 2.8.1: A full-featured template engine for Python
 dev-python/jsonrpclib-pelix 0.4.0: python implementation of the JSON-RPC spec (1.0 and 2.0)
 dev-python/markdown2 2.3.7: Python Markdown language reimplementation
-dev-python/pyyaml 3.10: YAML parser and emitter for Python
+dev-python/pyyaml 3.10 5.1: YAML parser and emitter for Python
 dev-python/rebulk 1.0.0: Python library that performs advanced searches in strings
 dev-python/requests-oauthlib 1.2.0: This project provides first-class OAuth library support for Requests
-dev-python/scandir 1.3: A better directory iterator and faster os.walk()
+dev-python/scandir 1.10.0: A better directory iterator and faster os.walk()
 dev-python/semantic_version 2.4.2: Python library providing a few tools handling SemVer in Python.
 dev-python/sgmllib3k 1.0.0: Py3k port of sgmllib
 dev-python/websocket-client 0.56.0: WebSocket client for python with hybi13 support
+dev-python/werkzeug 0.15.1: Collection of various utilities for WSGI applications
 dev-python/wrapt 1.11.1: Module for decorators, wrappers and monkey patching
 games-misc/fortune-mod 2.6.2: The notorious fortune program
 media-sound/pykaraoke 0.7.5: Python powered karaoke.
