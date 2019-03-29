@@ -35,26 +35,26 @@ RDEPEND="
 	<dev-python/netifaces-0.11
 	>=dev-python/pylru-1.0.9
 	<dev-python/pylru-1.1
-	>=dev-python/rsa-3.2.3
-	<dev-python/rsa-3.3
-	>=dev-python/pkginfo-1.4.2
-	<dev-python/pkginfo-1.5
+	>=dev-python/rsa-4.0
+	<dev-python/rsa-5
+	>=dev-python/pkginfo-1.5.0.1
+	<dev-python/pkginfo-1.6
 	>=dev-python/requests-2.18.4
 	<dev-python/requests-3
-	>=dev-python/semantic_version-2.4.2
-	<dev-python/semantic_version-2.5
-	>=dev-python/psutil-5.4.6
-	<dev-python/psutil-5.5
-	>=dev-python/click-6.2
-	<dev-python/click-6.3
+	>=dev-python/semantic_version-2.6
+	<dev-python/semantic_version-2.7
+	>=dev-python/psutil-5.6.1
+	<dev-python/psutil-5.7
+	>=dev-python/click-7
+	<dev-python/click-8
 	>=dev-python/awesome-slugify-1.6.5
 	<dev-python/awesome-slugify-1.7
 	>=dev-python/feedparser-5.2.1
 	<dev-python/feedparser-5.3
-	>=dev-python/future-0.15.2
-	<dev-python/future-0.16
-	>=dev-python/scandir-1.3
-	<dev-python/scandir-1.4
+	>=dev-python/future-0.17.1
+	<dev-python/future-0.18
+	>=dev-python/scandir-1.10
+	<dev-python/scandir-1.11
 	>=dev-python/websocket-client-0.56
 	<dev-python/websocket-client-0.57
 	>=dev-python/python-dateutil-2.6.1
@@ -69,7 +69,7 @@ RDEPEND="
 	<dev-python/monotonic-1.6
 	>=dev-python/frozendict-1.2
 	<dev-python/frozendict-1.3
-	>=dev-python/chainmap-1.0.2
+	>=dev-python/chainmap-1.0.3
 	<dev-python/chainmap-1.1
 	dev-python/pip
 	>=dev-python/typing-3.6.6
