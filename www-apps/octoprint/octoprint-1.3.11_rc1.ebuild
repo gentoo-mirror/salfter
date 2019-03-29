@@ -74,6 +74,8 @@ RDEPEND="
 	>=dev-python/chainmap-1.0.2
 	<dev-python/chainmap-1.1
 	dev-python/pip
+	>=dev-python/typing-3.6.6
+	<dev-python/typing-4
 "
 
 MY_PN=OctoPrint
