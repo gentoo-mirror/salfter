@@ -55,8 +55,8 @@ RDEPEND="
 	<dev-python/future-0.16
 	>=dev-python/scandir-1.3
 	<dev-python/scandir-1.4
-	>=dev-python/websocket-client-0.40.0
-	<dev-python/websocket-client-0.41
+	>=dev-python/websocket-client-0.56
+	<dev-python/websocket-client-0.57
 	>=dev-python/python-dateutil-2.6.1
 	<dev-python/python-dateutil-2.7
 	>=dev-python/wrapt-1.11.1
