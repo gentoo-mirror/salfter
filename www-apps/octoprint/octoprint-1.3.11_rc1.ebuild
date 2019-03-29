@@ -12,8 +12,6 @@ RDEPEND="
 	>=dev-python/werkzeug-0.8.3
 	<dev-python/werkzeug-0.9
 	=www-servers/tornado-4.5.3
-	>=dev-python/sockjs-tornado-1.0.3
-	<dev-python/sockjs-tornado-1.1
 	>=dev-python/pyyaml-3.10
 	<dev-python/pyyaml-3.11
 	>=dev-python/flask-login-0.2.11
@@ -61,14 +59,14 @@ RDEPEND="
 	<dev-python/websocket-client-0.41
 	>=dev-python/python-dateutil-2.6.1
 	<dev-python/python-dateutil-2.7
-	>=dev-python/wrapt-1.10.11
-	<dev-python/wrapt-1.11
-	>=dev-python/futures-3.1.1
-	<dev-python/futures-3.2
-	>=dev-python/emoji-0.4.5
-	<dev-python/emoji-0.5
-	>=dev-python/monotonic-1.3
-	<dev-python/monotonic-1.4
+	>=dev-python/wrapt-1.11.1
+	<dev-python/wrapt-1.12
+	>=dev-python/futures-3.2
+	<dev-python/futures-3.3
+	>=dev-python/emoji-0.5.1
+	<dev-python/emoji-0.6
+	>=dev-python/monotonic-1.5
+	<dev-python/monotonic-1.6
 	>=dev-python/frozendict-1.2
 	<dev-python/frozendict-1.3
 	>=dev-python/chainmap-1.0.2
@@ -76,7 +74,12 @@ RDEPEND="
 	dev-python/pip
 	>=dev-python/typing-3.6.6
 	<dev-python/typing-4
+	=dev-python/sentry-sdk-0.7.7
+	dev-python/regex
+	!=dev-python/regex-2018.11.6
 "
+#	>=dev-python/sockjs-tornado-1.0.3
+#	<dev-python/sockjs-tornado-1.1
 
 MY_PN=OctoPrint
 MY_PV=1.3.11rc1
