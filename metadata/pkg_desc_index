@@ -12,12 +12,17 @@ dev-python/flask-principal 0.3.5: Identity management for flask
 dev-python/jinja 2.8.1: A full-featured template engine for Python
 dev-python/jsonrpclib-pelix 0.4.0: python implementation of the JSON-RPC spec (1.0 and 2.0)
 dev-python/markdown2 2.3.7: Python Markdown language reimplementation
+dev-python/netaddr 0.7.19: Network address representation and manipulation library
+dev-python/pycurl 7.43.0: python binding for curl/libcurl
 dev-python/pyyaml 3.10 5.1: YAML parser and emitter for Python
 dev-python/rebulk 1.0.0: Python library that performs advanced searches in strings
 dev-python/requests-oauthlib 1.2.0: This project provides first-class OAuth library support for Requests
 dev-python/scandir 1.10.0: A better directory iterator and faster os.walk()
 dev-python/semantic_version 2.4.2: Python library providing a few tools handling SemVer in Python.
 dev-python/sgmllib3k 1.0.0: Py3k port of sgmllib
+dev-python/twisted 16.6.0-r3: An asynchronous networking framework written in Python
+dev-python/watchdog 0.8.3-r1 0.8.3-r2: Python API and shell utilities to monitor file system events
+dev-python/webassets 0.12.1: Asset management for Python web development
 dev-python/websocket-client 0.56.0: WebSocket client for python with hybi13 support
 dev-python/werkzeug 0.15.1: Collection of various utilities for WSGI applications
 dev-python/wrapt 1.11.1: Module for decorators, wrappers and monkey patching
@@ -28,4 +33,5 @@ media-video/mediaelch 2.4.2: Video metadata scraper
 net-mail/spfpolicy 2.010: Postfix policy server implementing Sender Policy Framework (SPF)
 net-news/trn 4.0-r77: threaded news reader
 net-p2p/btsync 2.2.7: Magic folder style file syncing powered by BitTorrent.
+www-servers/tornado 4.5.3: Python web framework and asynchronous networking library
 x11-libs/amd-adl-sdk 10.2: API to access display driver functionality for ATI graphics cards

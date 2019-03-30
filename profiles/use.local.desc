@@ -27,4 +27,8 @@ dev-python/PyQt5:websockets - Build bindings for the QtWebSockets module
 dev-python/PyQt5:widgets - Build bindings for the QtWidgets module
 dev-python/PyQt5:x11extras - Build bindings for the QtX11Extras module
 dev-python/PyQt5:xmlpatterns - Build bindings for the QtXmlPatterns module
+dev-python/netaddr:cli - Enable netaddr shell with dev-python/ipython
 dev-python/pyyaml:libyaml - enable support for C implementation using libyaml
+dev-python/twisted:conch - include Twisted SSHv2 implementation
+dev-python/twisted:http2 - include http2 support
+dev-python/twisted:serial - include serial port support
