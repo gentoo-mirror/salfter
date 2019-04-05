@@ -9,19 +9,23 @@ RDEPEND="
 	<dev-python/flask-0.11
 	>=dev-python/jinja-2.8.1
 	<dev-python/jinja-2.9
-	>=dev-python/werkzeug-0.15.1
-	<dev-python/werkzeug-0.16
 	=www-servers/tornado-4.5.3
-	>=dev-python/pyyaml-5.1
-	<dev-python/pyyaml-6
 	>=dev-python/flask-login-0.2.11
 	<dev-python/flask-login-0.3
+	dev-python/regex
+	!=dev-python/regex-2018.11.6
 	>=dev-python/flask-principal-0.4
 	<dev-python/flask-principal-0.5
 	>=dev-python/flask-babel-0.12
 	<dev-python/flask-babel-0.13
 	>=dev-python/flask-assets-0.12
 	<dev-python/flask-assets-0.13
+	>=dev-python/werkzeug-0.15.1
+	<dev-python/werkzeug-0.16
+	>=dev-python/cachelib-0.1
+	<dev-python/cachelib-0.2
+	>=dev-python/pyyaml-5.1
+	<dev-python/pyyaml-6
 	>=dev-python/markdown-3.0
 	<dev-python/markdown-3.1
 	>=dev-python/pyserial-3.4
@@ -51,14 +55,14 @@ RDEPEND="
 	<dev-python/awesome-slugify-1.7
 	>=dev-python/feedparser-5.2.1
 	<dev-python/feedparser-5.3
+	>=dev-python/chainmap-1.0.3
+	<dev-python/chainmap-1.1
 	>=dev-python/future-0.17.1
 	<dev-python/future-0.18
 	>=dev-python/scandir-1.10
 	<dev-python/scandir-1.11
 	>=dev-python/websocket-client-0.56
 	<dev-python/websocket-client-0.57
-	>=dev-python/python-dateutil-2.6.1
-	<dev-python/python-dateutil-2.7
 	>=dev-python/wrapt-1.11.1
 	<dev-python/wrapt-1.12
 	>=dev-python/futures-3.2
@@ -69,20 +73,14 @@ RDEPEND="
 	<dev-python/monotonic-1.6
 	>=dev-python/frozendict-1.2
 	<dev-python/frozendict-1.3
-	>=dev-python/chainmap-1.0.3
-	<dev-python/chainmap-1.1
-	dev-python/pip
+	=dev-python/sentry-sdk-0.7.7
 	>=dev-python/typing-3.6.6
 	<dev-python/typing-4
-	=dev-python/sentry-sdk-0.7.7
-	dev-python/regex
-	!=dev-python/regex-2018.11.6
-	>=dev-python/cachelib-0.1
-	<dev-python/cachelib-0.2
+	dev-python/pip
 "
 
 MY_PN=OctoPrint
-MY_PV=1.3.11rc1
+MY_PV=1.3.11rc2
 S=${WORKDIR}/${MY_PN}-${MY_PV}
 
 DESCRIPTION="the snappy web interface for your 3D printer"
