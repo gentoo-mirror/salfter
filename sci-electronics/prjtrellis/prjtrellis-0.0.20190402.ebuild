@@ -2,7 +2,7 @@ EAPI=6
 
 inherit cmake-utils
 
-GIT_COMMIT=f1b1b355a988b78c746296e097691531d5baf554
+GIT_COMMIT=7848ab8db85194cb822bc27af5b50a6fe2db55c6
 DB_GIT_COMMIT=d0b219af41ae3da6150645fbc5cc5613b530603f
 S=$WORKDIR/$PN-$GIT_COMMIT/libtrellis
 
@@ -15,7 +15,8 @@ SLOT=0
 KEYWORDS=~amd64
 
 DEPEND="dev-vcs/git
-	dev-libs/boost"
+	dev-libs/boost
+	sci-electronics/openocd"
 
 src_unpack() {
 	unpack $P.tar.gz
