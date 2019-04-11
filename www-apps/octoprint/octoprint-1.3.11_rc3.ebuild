@@ -80,7 +80,7 @@ RDEPEND="
 "
 
 MY_PN=OctoPrint
-MY_PV=1.3.11rc2
+MY_PV=1.3.11rc3
 S=${WORKDIR}/${MY_PN}-${MY_PV}
 
 DESCRIPTION="the snappy web interface for your 3D printer"
