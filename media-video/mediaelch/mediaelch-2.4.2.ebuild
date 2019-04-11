@@ -1,8 +1,11 @@
 EAPI=5
 inherit qmake-utils eutils multilib
 
+MY_PN=MediaElch
+S=$WORKDIR/$MY_PN-$PV
+
 DESCRIPTION="Video metadata scraper"
-SRC_URI="http://www.kvibes.de/releases/${PN}/${PV}/${P}.tar.gz"
+SRC_URI="https://github.com/Komet/$MY_PN/archive/v${PV}.tar.gz -> $P.tar.gz"
 HOMEPAGE="http://www.mediaelch.de/"
 
 SLOT="0"
@@ -25,12 +28,12 @@ DEPEND="dev-qt/qtsql:5
 		
 src_configure()
 {
-	cd ${WORKDIR}/${P} || die
+	cd $S || die
 	eqmake5 || die	
 }
 
 src_install()
 {
-	cd ${WORKDIR}/${P} || die
+	cd $S || die
 	INSTALL_ROOT=${D} einstall || die
 }
