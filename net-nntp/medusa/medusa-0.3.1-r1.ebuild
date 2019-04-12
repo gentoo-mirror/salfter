@@ -12,7 +12,7 @@ PYTHON_COMPAT=( python3_4 python3_5 python3_6 )
 
 SRC_URI="https://github.com/pymedusa/Medusa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S=$WORKDIR/Medusa-${PV}
-GIT_COMMIT=721c3f8bdf8a975233b9f8d19a1090531f1ec9be
+GIT_COMMIT=b34f1df336e52cf0a690acbc393440ac9f8b3581
 
 inherit eutils user python-single-r1
 
