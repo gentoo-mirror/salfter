@@ -80,13 +80,12 @@ RDEPEND="
 "
 
 MY_PN=OctoPrint
-MY_PV=1.3.11rc3
-S=${WORKDIR}/${MY_PN}-${MY_PV}
+S=${WORKDIR}/${MY_PN}-${PV}
 
 DESCRIPTION="the snappy web interface for your 3D printer"
 HOMEPAGE="https://octoprint.org/"
 LICENSE="AGPL-3"
-SRC_URI="https://github.com/foosel/${MY_PN}/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/foosel/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 SLOT="0"
 KEYWORDS="~arm64 ~amd64"
 
