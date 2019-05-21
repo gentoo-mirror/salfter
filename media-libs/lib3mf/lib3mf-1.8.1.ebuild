@@ -15,7 +15,6 @@ SLOT=0
 KEYWORDS=~amd64
 
 src_prepare() {
-#	unpack $P.tar.gz
 	unpack googletest-$GOOGLETEST_GIT_COMMIT.tar.gz
 	rmdir $S/UnitTests/googletest
 	mv $WORKDIR/googletest-$GOOGLETEST_GIT_COMMIT $S/UnitTests/googletest
