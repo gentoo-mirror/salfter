@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-vcs/git media-gfx/xdot dev-libs/boost
+DESCRIPTION=framework for Verilog RTL synthesis
+EAPI=6
+HOMEPAGE=http://www.clifford.at/yosys/
+LICENSE=ISC
+SLOT=0
+SRC_URI=https://github.com/YosysHQ/yosys/archive/c907899422884d959632ed42c6589a0720b681e4.tar.gz -> yosys-0.9_alpha20190518.tar.gz https://github.com/berkeley-abc/abc/archive/3709744c60696c5e3f4cc123939921ce8107fe04.tar.gz -> abc-3709744c60696c5e3f4cc123939921ce8107fe04.tar.gz
+_md5_=15814f6dee32c1c4bb175ee8625bc295
