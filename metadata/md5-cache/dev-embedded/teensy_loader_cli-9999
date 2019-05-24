@@ -7,4 +7,4 @@ LICENSE=GPL-3
 RDEPEND=virtual/libusb:1
 SLOT=0
 _eclasses_=git-r3	0d4635eeb5a96cd5315597a47eba25c9
-_md5_=491bbcfeb7835be0ae81698d7c23cfaf
+_md5_=3ce1d89162bdbea91f660dbc6aaeef16
