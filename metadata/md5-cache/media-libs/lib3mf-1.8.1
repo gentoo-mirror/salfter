@@ -1,6 +1,6 @@
 BDEPEND=dev-util/ninja >=dev-util/cmake-3.9.6
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=>=dev-cpp/gtest-1.8.0 dev-libs/libzip sys-libs/zlib
+DEPEND=test? ( >=dev-cpp/gtest-1.8.0 dev-libs/libzip sys-libs/zlib )
 DESCRIPTION=implementation of the 3D Manufacturing Format file standard
 EAPI=7
 HOMEPAGE=http://3mf.io/
@@ -10,4 +10,4 @@ LICENSE=BSD
 SLOT=0
 SRC_URI=https://github.com/3MFConsortium/lib3mf/archive/v1.8.1.tar.gz -> lib3mf-1.8.1.tar.gz
 _eclasses_=cmake-utils	959a7fda0dce63de9a4e73a22294d6ec	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	a09389deba2c0a7108b581e02c7cecbf	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	toolchain-funcs	8c7f9d80beedd16f2e5a7f612c609529	xdg-utils	14d00d009167652b1fa363e55effe213
-_md5_=13504e19b68e5eac72a8112629a41410
+_md5_=d30a820e96a9e935e5efc09819a1f1db
