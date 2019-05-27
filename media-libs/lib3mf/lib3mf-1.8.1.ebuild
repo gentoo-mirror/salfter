@@ -11,7 +11,7 @@ SRC_URI="https://github.com/3MFConsortium/$PN/archive/v$PV.tar.gz -> $P.tar.gz"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
-DEPEND="test? ( 
+DEPEND="test? (
 		>=dev-cpp/gtest-1.8.0
 		dev-libs/libzip
 		sys-libs/zlib
@@ -32,7 +32,7 @@ src_configure()
 src_install()
 {
 	cmake-utils_src_install
-	cd ${S}
+	cd "${S}"
 	dodoc CONTRIBUTING.md
 	dodoc Lib3MF-1.pdf
 }
