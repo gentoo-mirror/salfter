@@ -2,11 +2,14 @@ EAPI=6
 
 PYTHON_COMPAT=( python2_7 python3_{4,5,6})
 
+GIT_COMMIT=eea9ac18e38c930230cf81b5dca4a9af9fb10d4e
+S=${WORKDIR}/${PN}-${GIT_COMMIT}
+
 inherit distutils-r1
 
 DESCRIPTION="Know better your media files"
-HOMEPAGE="https://pypi.org/project/knowit/"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
+HOMEPAGE="https://github.com/ratoaq2/knowit/"
+SRC_URI="https://github.com/ratoaq2/${PN}/archive/${GIT_COMMIT}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
