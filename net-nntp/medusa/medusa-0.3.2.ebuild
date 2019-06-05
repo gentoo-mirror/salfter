@@ -12,7 +12,7 @@ PYTHON_COMPAT=( python3_4 python3_5 python3_6 )
 
 SRC_URI="https://github.com/pymedusa/Medusa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S=$WORKDIR/Medusa-${PV}
-GIT_COMMIT=b34f1df336e52cf0a690acbc393440ac9f8b3581
+GIT_COMMIT=6a21a6001b10827d14d450135bae61729b01edf1
 
 inherit eutils user python-single-r1
 
@@ -33,42 +33,38 @@ RDEPEND="
 	>=dev-python/CacheControl-0.12.5
 	>=dev-python/certifi-2019.3.9
 	>=dev-python/chardet-3.0.4
-	>=dev-python/cloudflare-scrape-1.9.6
+	>=dev-python/cloudflare-scrape-2.0.5
 	>=dev-python/configobj-5.0.6
 	>=dev-python/configparser-3.7.3
 	>=dev-python/contextlib2-0.5.5
-	>=dev-python/deluge-client-1.7.0
+	>=dev-python/deluge-client-1.7.1
 	>=dev-python/dirtyjson-1.0.7
 	>=dev-python/dogpile-cache-0.7.1
 	>=dev-python/enzyme-0.4.2_alpha20180603
 	>=dev-python/feedparser-5.2.2_alpha20180811
-	>=dev-python/future-0.17.1
-	>=dev-python/futures-3.2.0
 	>=dev-python/gntp-1.0.3
 	>=dev-python/guessit-3.0.4_alpha20190224
 	>=dev-python/html5lib-1.0.1
-	>=dev-python/imdbpie-5.6.3
+	>=dev-python/imdbpie-5.6.4
+	>=dev-python/Js2Py-0.63
 	>=dev-python/jsonrpclib-pelix-0.4.0
-	>=dev-python/knowit-0.2.4
-	>=dev-python/lockfile-0.12.2
-	>=dev-python/mako-1.0.7
+	>=dev-python/knowit-0.2.5_alpha20190305
+	>=dev-python/mako-1.0.10
 	>=dev-python/markdown2-2.3.7
-	>=dev-python/oauth2-1.10_alpha20170118
-	>=dev-python/profilehooks-1.10.0
-	>=dev-python/PyGithub-1.43.5
+	>=dev-python/profilehooks-1.11.0
+	>=dev-python/PyGithub-1.43.7
 	>=dev-python/pyjwt-1.7.1
 	>=dev-python/python-dateutil-2.8.0
 	>=dev-python/python-twitter-3.5
 	>=dev-python/rarfile-3.0
 	>=dev-python/rebulk-1.0.0
-	>=dev-python/requests-2.21.0
+	>=dev-python/requests-2.22.0
 	>=dev-python/requests-oauthlib-1.2.0
 	>=dev-python/six-1.12.0
-	>=dev-python/stevedore-1.30.1
 	>=dev-python/subliminal-2.0.6_alpha20181128
 	>=www-servers/tornado-5.1.1
 	>=dev-python/tornroutes-0.5.1
-	>=dev-python/validators-0.12.4
+	>=dev-python/validators-0.13.0
 "
 
 
