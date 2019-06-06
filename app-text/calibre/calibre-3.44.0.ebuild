@@ -159,7 +159,7 @@ src_prepare() {
 		-i "${S}"/src/calibre/linux.py || die 'sed failed'
 
 	# don't create/install uninstaller
-	sed '/self\.create_uninstaller()/d' -i src/calibre/linux.py || die
+	sed 's/self\.create_uninstaller()/pass/' -i src/calibre/linux.py || die
 }
 
 src_install() {
@@ -223,16 +223,16 @@ src_install() {
 
 	# The menu entries end up here due to '--mode user' being added to
 	# xdg-* options in src_prepare.
-	dodir /usr/share/mime/packages
-	chmod -fR a+rX,u+w,g-w,o-w "${HOME}"/.local
-	mv "${HOME}"/.local/share/mime/packages/* "${ED}"usr/share/mime/packages/ ||
-		die "failed to register mime types"
-	dodir /usr/share/icons
-	mv "${HOME}"/.local/share/icons/* "${ED}"usr/share/icons/ ||
-		die "failed to install icon files"
+#	dodir /usr/share/mime/packages
+#	chmod -fR a+rX,u+w,g-w,o-w "${HOME}"/.local
+#	mv "${HOME}"/.local/share/mime/packages/* "${ED}"usr/share/mime/packages/ ||
+#		die "failed to register mime types"
+#	dodir /usr/share/icons
+#	mv "${HOME}"/.local/share/icons/* "${ED}"usr/share/icons/ ||
+#		die "failed to install icon files"
 
-	domenu "${HOME}"/.local/share/applications/*.desktop ||
-		die "failed to install .desktop menu files"
+#	domenu "${HOME}"/.local/share/applications/*.desktop ||
+#		die "failed to install .desktop menu files"
 
 	find "${ED}"usr/share -type d -empty -delete
 
