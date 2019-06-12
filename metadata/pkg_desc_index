@@ -27,7 +27,7 @@ dev-python/webassets 0.12.1: Asset management for Python web development
 dev-python/websocket-client 0.56.0: WebSocket client for python with hybi13 support
 dev-python/werkzeug 0.15.1: Collection of various utilities for WSGI applications
 dev-python/wrapt 1.11.1: Module for decorators, wrappers and monkey patching
-games-misc/fortune-mod 2.6.2: The notorious fortune program
+games-misc/fortune-mod 2.8.0: The notorious fortune program
 media-sound/pykaraoke 0.7.5: Python powered karaoke.
 media-video/atomicparsley 0.9.0: command line program for reading, parsing and setting iTunes-style metadata in MPEG4 files
 media-video/mediaelch 2.4.2: Video metadata scraper
