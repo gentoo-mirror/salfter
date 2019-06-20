@@ -12,7 +12,7 @@ PYTHON_COMPAT=( python3_4 python3_5 python3_6 )
 
 SRC_URI="https://github.com/pymedusa/Medusa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S=$WORKDIR/Medusa-${PV}
-GIT_COMMIT=6a21a6001b10827d14d450135bae61729b01edf1
+GIT_COMMIT=74c3f124fb599ad923e23f46fc320778b8b4217c
 
 inherit eutils user python-single-r1
 
@@ -26,16 +26,15 @@ IUSE=""
 
 DEPEND="${PYTHON_DEPS}"
 RDEPEND="
-	>=dev-python/adba-1.1.1_alpha20181230
+	>=dev-python/adba-1.1.1_alpha20190605
 	>=dev-python/babelfish-0.5.6_alpha20160411
 	>=dev-python/beautifulsoup-4.7.1
 	>=dev-python/bencode-2.0.0
 	>=dev-python/CacheControl-0.12.5
 	>=dev-python/certifi-2019.3.9
-	>=dev-python/chardet-3.0.4
 	>=dev-python/cloudflare-scrape-2.0.5
+	>=dev-python/chardet-3.0.4
 	>=dev-python/configobj-5.0.6
-	>=dev-python/configparser-3.7.3
 	>=dev-python/contextlib2-0.5.5
 	>=dev-python/deluge-client-1.7.1
 	>=dev-python/dirtyjson-1.0.7
@@ -49,7 +48,7 @@ RDEPEND="
 	>=dev-python/Js2Py-0.63
 	>=dev-python/jsonrpclib-pelix-0.4.0
 	>=dev-python/knowit-0.2.5_alpha20190305
-	>=dev-python/mako-1.0.10
+	>=dev-python/mako-1.0.12
 	>=dev-python/markdown2-2.3.7
 	>=dev-python/profilehooks-1.11.0
 	>=dev-python/PyGithub-1.43.7
@@ -64,6 +63,7 @@ RDEPEND="
 	>=dev-python/subliminal-2.0.6_alpha20181128
 	>=www-servers/tornado-5.1.1
 	>=dev-python/tornroutes-0.5.1
+	>=dev-python/tvdbv2-1.0.1_alpha20190605
 	>=dev-python/validators-0.13.0
 "
 
