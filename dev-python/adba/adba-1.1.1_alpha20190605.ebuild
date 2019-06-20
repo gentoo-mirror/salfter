@@ -20,6 +20,8 @@ KEYWORDS="~amd64"
 RDEPEND="
 	>=dev-python/configparser-3.5.0
 	<dev-python/configparser-4.0.0
+	>=dev-python/requests-1.16.0
+	>=dev-python/six-1.9.0
 "
 DEPEND=""
 
