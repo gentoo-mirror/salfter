@@ -1,6 +1,3 @@
-app-emulation/gsport 0.31: Apple IIGS emulator, based on KEGS
-app-emulation/kegs 0.91: Apple IIGS emulator
-app-text/calibre 3.44.0: Ebook management application
 dev-python/PyQt5 5.9.2: Python bindings for the Qt framework
 dev-python/babelfish 0.5.6_alpha20160411: Python library to work with countries and languages
 dev-python/click 6.2: A Python package for creating beautiful command line interfaces
@@ -33,6 +30,4 @@ media-video/atomicparsley 0.9.0: command line program for reading, parsing and s
 media-video/mediaelch 2.4.2: Video metadata scraper
 net-mail/spfpolicy 2.010: Postfix policy server implementing Sender Policy Framework (SPF)
 net-news/trn 4.0-r77: threaded news reader
-net-p2p/btsync 2.2.7: Magic folder style file syncing powered by BitTorrent.
 www-servers/tornado 4.5.3: Python web framework and asynchronous networking library
-x11-libs/amd-adl-sdk 10.2: API to access display driver functionality for ATI graphics cards
