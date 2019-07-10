@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst setup
+DEPEND=>=media-libs/libpng-1.2.46 >=x11-libs/gtk+-2.24.8-r1:2 x11-libs/cairo gnome-base/gconf x11-libs/libXtst !app-editors/vscode
+DESCRIPTION=Multiplatform Visual Studio Code from Microsoft (binary version)
+EAPI=7
+HOMEPAGE=https://code.visualstudio.com
+IUSE=global-menu libsecret qt5
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=>=media-libs/libpng-1.2.46 >=x11-libs/gtk+-2.24.8-r1:2 x11-libs/cairo gnome-base/gconf x11-libs/libXtst !app-editors/vscode >=net-print/cups-2.0.0 x11-libs/libnotify x11-libs/libXScrnSaver dev-libs/nss libsecret? ( app-crypt/libsecret[crypt] ) global-menu? ( dev-libs/libdbusmenu qt5? ( dev-libs/libdbusmenu-qt ) )
+RESTRICT=mirror strip bindist
+SLOT=0
+SRC_URI=amd64? ( https://update.code.visualstudio.com/1.36.1/linux-x64/stable -> visual-studio-code-1.36.1-amd64.tar.gz )
+_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	pax-utils	db85a3c508cf82c45f24b2723791cc93
+_md5_=3a44bc896f61ea49c99334f6642dbb4f
