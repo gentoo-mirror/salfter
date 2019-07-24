@@ -19,7 +19,7 @@ RDEPEND="dev-python/pyjwt[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.14.0[${PYTHON_USEDEP}]
 	<dev-python/sphinx-1.8
 	<dev-python/sphinx_rtd_theme-0.5
-	dev-python/Deprecated"
+	dev-python/deprecated"
 DEPEND="${RDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]"
 
