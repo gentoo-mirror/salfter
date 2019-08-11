@@ -2,6 +2,11 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+app-crypt/zuluCrypt:gnome - Enable support for the freedesktop.org Secret Service API via app-crypt/libsecret. This does not control the gui!
+app-crypt/zuluCrypt:gui - Whether to build the QT gui. Highly recommended.
+app-crypt/zuluCrypt:kde - Enable support for KDE, e.g. via kde-apps/kwalletd. This does not control the gui, but NEEDS GUI ENABLED!
+app-crypt/zuluCrypt:udev - Whether udev will be consulted when deciding if a volume is system or not.
+app-editors/visual-studio-code:libsecret - Enable libsecret support
 dev-python/PyQt5:bluetooth - Build bindings for the QtBluetooth module
 dev-python/PyQt5:dbus - Build bindings for the QtDBus module
 dev-python/PyQt5:declarative - Build bindings for the QtQml/QtQuick modules and enable the qmlscene plugin
@@ -27,8 +32,164 @@ dev-python/PyQt5:websockets - Build bindings for the QtWebSockets module
 dev-python/PyQt5:widgets - Build bindings for the QtWidgets module
 dev-python/PyQt5:x11extras - Build bindings for the QtX11Extras module
 dev-python/PyQt5:xmlpatterns - Build bindings for the QtXmlPatterns module
+dev-python/cachelib:libyaml - enable support for C implementation using libyaml
 dev-python/netaddr:cli - Enable netaddr shell with dev-python/ipython
 dev-python/pyyaml:libyaml - enable support for C implementation using libyaml
 dev-python/twisted:conch - include Twisted SSHv2 implementation
 dev-python/twisted:http2 - include http2 support
 dev-python/twisted:serial - include serial port support
+media-tv/mythtv:alsa - Allows MythTV to directly output sound to ALSA devices, this is needed if you are using ALSA dmix or SPDIF. Note, you will have to physically type your device into the MythTV configuration since it will only give you /dev/dsp devices in the drop down.
+media-tv/mythtv:altivec - Builds ffmpeg's codec libraries with altivec support.
+media-tv/mythtv:autostart - Uses a custom autostart configuration gleaned from experience with MythTV since its early versions and discussed with other MythTV maintainers and users. Does not rely on KDE being installed like most methods do.
+media-tv/mythtv:bluray - Pulls in libbluray for BluRay support.
+media-tv/mythtv:cec - Allows you to control CEC enabled TVs via HDMI. Currently requires a USB based CEC -> HDMI injector between your TV and video card since no graphics drivers support CEC natively.
+media-tv/mythtv:crystalhd - Allows you to utilize a Broadcom CrystalHD hardware based video decoder to improve the performance of video decode.
+media-tv/mythtv:debug - Instructs Qt to use the 'debug' target instead of 'release' target. If your MythTV is crashing or you need a backtrace, you need to compile it with this option otherwise the debugging data is useless.
+media-tv/mythtv:egl - Support EGL video output.
+media-tv/mythtv:fftw - Support visualizations via sci-libs/fftw
+media-tv/mythtv:hls - HTTP Live Streaming support
+media-tv/mythtv:ieee1394 - Allows MythTV to communicate and use Firewire enabled Cable boxes. These are typically found in the United States, where such support is required by law. This will also install Firewire test programs and external channel changers if the internal changer does not work.
+media-tv/mythtv:jack - Allows MythTV to use JACK as your sound output device. You will have to manually configure the path to your JACK settings.
+media-tv/mythtv:lcd - Tells MythTV that you have an instance of app-misc/lcdproc configured on your machine and it should output information such as current time, show name, episode name, etc to that LCD.
+media-tv/mythtv:lirc - Adds LIRC support directly to MythTV allowing for built in control via a LIRC device.
+media-tv/mythtv:mythlogserver - Enable support for syslog and file logging. Not used with systemd.
+media-tv/mythtv:perl - Builds the perl bindings for MythTV. Allows you to write scripts in Perl to control your MythTV setup or communicate with it.
+media-tv/mythtv:wrapper - Use Ubuntu mythtfrontend wrapper.
+media-tv/mythtv:xmltv - Pulls in the media-tv/xmltv TV listing grabbers for users not using Schedules Direct.
+media-video/makemkv:gui - Build the Qt5 GUI
+net-misc/cgminer:ants1 - Enable support for Antminer S1 Bitmain
+net-misc/cgminer:ants2 - Enable support for Antminer S2 Bitmain
+net-misc/cgminer:ants3 - Enable support for Antminer S3 Bitmain
+net-misc/cgminer:avalon - Enable support for Avalon ASICs
+net-misc/cgminer:avalon2 - Enable support for Avalon2 ASICs
+net-misc/cgminer:avalon4 - Enable support for Avalon4 ASICs
+net-misc/cgminer:bab - Enable support for BlackArrow Bitfury
+net-misc/cgminer:bflsc - Enable support for BFL ASICs
+net-misc/cgminer:bitforce - Enable support for mining with ButterFly Labs BitFORCE FPGAs
+net-misc/cgminer:bitfury - Enable support for mining with BitFury ASICs
+net-misc/cgminer:bitmine_A1 - Enable support for mining with Bitmine.ch A1 ASICs
+net-misc/cgminer:blockerupter - Enable support for mining with BlockRupter ASICs
+net-misc/cgminer:cointerra - Enable support for mining with Cointerra ASICs
+net-misc/cgminer:drillbit - Enable support for mining with Drillbit BitFury ASICs
+net-misc/cgminer:hashfast - Enable support for mining with Hashfast
+net-misc/cgminer:hashratio - Enable support for mining with Hashratio
+net-misc/cgminer:icarus - Enable support for mining with Icarus FPGAs
+net-misc/cgminer:klondike - Enable support for mining with Klondik ASICs
+net-misc/cgminer:knc - Enable support for mining with KnC miners
+net-misc/cgminer:minion - Enable support for mining with BlackArrow Bitfury
+net-misc/cgminer:modminer - Enable support for mining with ModMiner FPGAs
+net-misc/cgminer:sp10 - Enable support for Spondoolies SP10
+net-misc/cgminer:sp30 - Enable support for Spondoolies SP30
+net-misc/cgminer:spondoolies - Enable support for Spondoolies
+net-nntp/sabnzbd:7za - Add support for extracting 7za files
+net-nntp/sabnzbd:rar - Add support for extracting rar files
+net-nntp/sabnzbd:unzip - Add support for extracting zip files
+net-p2p/anoncoin-cli:ljr - Enable Luke Dashjr's patches
+net-p2p/anoncoin-cli:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/anoncoin-cli:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/anoncoin-cli:upnp - Enable Universal Plug and Play
+net-p2p/anoncoin-cli:wallet - Enable wallet support
+net-p2p/anoncoind:ljr - Enable Luke Dashjr's patches
+net-p2p/anoncoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/anoncoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/anoncoind:upnp - Enable Universal Plug and Play
+net-p2p/anoncoind:wallet - Enable wallet support
+net-p2p/bitmarkd:ljr - Enable Luke Dashjr's patches
+net-p2p/bitmarkd:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/bitmarkd:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/bitmarkd:upnp - Enable Universal Plug and Play
+net-p2p/bitmarkd:wallet - Enable wallet support
+net-p2p/digibyted:ljr - Enable Luke Dashjr's patches
+net-p2p/digibyted:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/digibyted:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/digibyted:upnp - Enable Universal Plug and Play
+net-p2p/digibyted:wallet - Enable wallet support
+net-p2p/digitalcoind:ljr - Enable Luke Dashjr's patches
+net-p2p/digitalcoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/digitalcoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/digitalcoind:upnp - Enable Universal Plug and Play
+net-p2p/digitalcoind:wallet - Enable wallet support
+net-p2p/dobbscoind:ljr - Enable Luke Dashjr's patches
+net-p2p/dobbscoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/dobbscoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/dobbscoind:upnp - Enable Universal Plug and Play
+net-p2p/dobbscoind:wallet - Enable wallet support
+net-p2p/fractalcoind:ljr - Enable Luke Dashjr's patches
+net-p2p/fractalcoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/fractalcoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/fractalcoind:upnp - Enable Universal Plug and Play
+net-p2p/fractalcoind:wallet - Enable wallet support
+net-p2p/joulecoind:ljr - Enable Luke Dashjr's patches
+net-p2p/joulecoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/joulecoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/joulecoind:upnp - Enable Universal Plug and Play
+net-p2p/joulecoind:wallet - Enable wallet support
+net-p2p/litecoin-cli:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/litecoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/myriadcoin-cli:ljr - Enable Luke Dashjr's patches
+net-p2p/myriadcoin-cli:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/myriadcoin-cli:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/myriadcoin-cli:upnp - Enable Universal Plug and Play
+net-p2p/myriadcoin-cli:wallet - Enable wallet support
+net-p2p/myriadcoind:ljr - Enable Luke Dashjr's patches
+net-p2p/myriadcoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/myriadcoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/myriadcoind:upnp - Enable Universal Plug and Play
+net-p2p/myriadcoind:wallet - Enable wallet support
+net-p2p/nautiluscoind:ljr - Enable Luke Dashjr's patches
+net-p2p/nautiluscoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/nautiluscoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/nautiluscoind:upnp - Enable Universal Plug and Play
+net-p2p/nautiluscoind:wallet - Enable wallet support
+net-p2p/sexcoin-cli:ljr - Enable Luke Dashjr's patches
+net-p2p/sexcoin-cli:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/sexcoin-cli:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/sexcoin-cli:upnp - Enable Universal Plug and Play
+net-p2p/sexcoin-cli:wallet - Enable wallet support
+net-p2p/sexcoind:ljr - Enable Luke Dashjr's patches
+net-p2p/sexcoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/sexcoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/sexcoind:upnp - Enable Universal Plug and Play
+net-p2p/sexcoind:wallet - Enable wallet support
+net-p2p/terracoind:ljr - Enable Luke Dashjr's patches
+net-p2p/terracoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/terracoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/terracoind:upnp - Enable Universal Plug and Play
+net-p2p/terracoind:wallet - Enable wallet support
+net-p2p/unobtaniumd:bitcoin_policy_cpfp - Child-Pays-For-Parent policy: If you mine, you will give consideration to child transaction fees to pay for their parents
+net-p2p/unobtaniumd:bitcoin_policy_dcmp - Data Carrier Multi-Push policy: Your node will assist transactions with multiple pushes in their data carrier (if any)
+net-p2p/unobtaniumd:bitcoin_policy_spamfilter - Enhanced spam filter policy: Notorious spammers will not be assisted by your node
+net-p2p/unobtaniumd:ljr - Enable Luke Dashjr's patches
+net-p2p/unobtaniumd:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/unobtaniumd:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/unobtaniumd:upnp - Enable Universal Plug and Play
+net-p2p/unobtaniumd:wallet - Enable wallet support
+net-p2p/unobtaniumd:zeromq - Report blocks and transactions via zeromq
+net-p2p/viacoind:bitcoin_policy_cpfp - Child-Pays-For-Parent policy: If you mine, you will give consideration to child transaction fees to pay for their parents
+net-p2p/viacoind:bitcoin_policy_dcmp - Data Carrier Multi-Push policy: Your node will assist transactions with multiple pushes in their data carrier (if any)
+net-p2p/viacoind:bitcoin_policy_spamfilter - Enhanced spam filter policy: Notorious spammers will not be assisted by your node
+net-p2p/viacoind:ljr - Enable Luke Dashjr's patches
+net-p2p/viacoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/viacoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/viacoind:upnp - Enable Universal Plug and Play
+net-p2p/viacoind:wallet - Enable wallet support
+net-p2p/viacoind:zeromq - Report blocks and transactions via zeromq
+net-p2p/zetacoind:ljr - Enable Luke Dashjr's patches
+net-p2p/zetacoind:ljr-antispam - Enable Luke Dashjr's address-based spam filter
+net-p2p/zetacoind:logrotate - Use app-admin/logrotate for rotating logs
+net-p2p/zetacoind:upnp - Enable Universal Plug and Play
+net-p2p/zetacoind:wallet - Enable wallet support
+sci-electronics/kicad:github - Add github support into PCB editor
+sci-electronics/kicad:i18n - Allow GUI internationalization through l10n_* use flags
+sci-electronics/kicad:minimal - Build only binaries without parts library and examples
+sci-electronics/kicad:ngspice - Enable circuit simulation
+sci-electronics/kicad:occ - Enable viewing 3D rendering of designs via opencascade
+sci-electronics/kicad:oce - Enable viewing 3D rendering of designs via OCE
+sci-electronics/kicad:python - Enable python scripting support
+sci-electronics/kicad-packages3d:occ - Use sci-libs/opencascade for data exchange
+sci-electronics/kicad-packages3d:oce - Use sci-libs/oce for data exchange
+www-apps/wordpress:akismet - Installs Akismet comment spam plug-in
+www-apps/wordpress:themes - Installs themes (including default theme)
+www-misc/zoneminder:curl - Enable using net-misc/curl for streaming from cameras
+www-misc/zoneminder:gcrypt - ...
+www-misc/zoneminder:vlc - Enable using media-libs/vlc for streaming from cameras
