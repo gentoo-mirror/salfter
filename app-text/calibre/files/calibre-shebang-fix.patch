@@ -1,8 +1,0 @@
---- calibre-3.41.3/src/calibre/devices/mtp/unix/upstream/update.py	2019-04-22 09:23:12.000000000 -0700
-+++ calibre-3.41.3/src/calibre/devices/mtp/unix/upstream/update.py	2019-04-22 09:24:08.256944365 -0700
-@@ -1,4 +1,4 @@
--#!/usr/bin/env python3
-+#!/usr/bin/env python
- # vim:fileencoding=UTF-8:ts=4:sw=4:sta:et:sts=4:fdm=marker:ai
- from __future__ import (unicode_literals, division, absolute_import,
-                         print_function)
