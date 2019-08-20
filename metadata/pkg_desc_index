@@ -5,7 +5,6 @@ app-crypt/sshexport 2.4: SSH public key exporter
 app-crypt/vanitygen 9999: cryptocurrency vanity-address generator
 app-crypt/vanitygen-plus 9999: cryptocurrency vanity-address generator
 app-crypt/zuluCrypt 5.4.0: Front end to cryptsetup
-app-editors/visual-studio-code 1.36.1: Multiplatform Visual Studio Code from Microsoft (binary version)
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
 app-misc/raspi-config 9999: Raspberry Pi config tool
@@ -221,7 +220,7 @@ sci-electronics/altium2kicad 0.0.20181210: Altium to KiCad converter for PCB and
 sci-electronics/apio 0.4.0: Open source ecosystem for open FPGA boards
 sci-electronics/arachne-pnr 0.0.20190728: place-and-route tool for FPGAs
 sci-electronics/boms-away 20171029: BOM/component manager for KiCad
-sci-electronics/icestorm 0.0.20190808: reverse-engineered tools for Lattice iCE40 FPGAs
+sci-electronics/icestorm 0.0.20190815: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kicad 5.1.0: Electronic Schematic and PCB design tools
 sci-electronics/kicad-footprints 5.1.0: Electronic Schematic and PCB design tools footprint libraries
 sci-electronics/kicad-packages3d 5.1.0: Electronic Schematic and PCB design tools 3D package libraries
@@ -229,9 +228,10 @@ sci-electronics/kicad-symbols 5.1.0: Electronic Schematic and PCB design tools s
 sci-electronics/kicad-templates 5.1.0: Electronic Schematic and PCB design tools project templates
 sci-electronics/kicad_oce_vis 0.0.20160601: experimentation with STEP/IGES visualization in kicad via OCE
 sci-electronics/kifield 0.1.12: bulk-edit components in a KiCad schematic or library by transferring fields to/from a spreadsheet
-sci-electronics/nextpnr 0.0.20190810: portable FPGA place and route tool
+sci-electronics/nextpnr 0.0.20190815: portable FPGA place and route tool
+sci-electronics/prjtrellis 0.0.20190809: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/tinyprog 1.0.23 1.0.24_pre48: Programmer for FPGA boards using the TinyFPGA USB Bootloader
-sci-electronics/yosys 0.8 0.9_alpha20190913: framework for Verilog RTL synthesis
+sci-electronics/yosys 0.8 0.9_alpha20190920: framework for Verilog RTL synthesis
 sci-libs/Shapely 1.6.4: Manipulation and analysis of geometric objects in the Cartesian plane
 sci-libs/openmvg 9999-r1: open Multiple View Geometry library. Basis for 3D computer vision and Structure from Motion.
 sci-visualization/admesh 0.98.3: CLI and C library for processing triangulated solid meshes

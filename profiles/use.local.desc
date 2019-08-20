@@ -6,7 +6,6 @@ app-crypt/zuluCrypt:gnome - Enable support for the freedesktop.org Secret Servic
 app-crypt/zuluCrypt:gui - Whether to build the QT gui. Highly recommended.
 app-crypt/zuluCrypt:kde - Enable support for KDE, e.g. via kde-apps/kwalletd. This does not control the gui, but NEEDS GUI ENABLED!
 app-crypt/zuluCrypt:udev - Whether udev will be consulted when deciding if a volume is system or not.
-app-editors/visual-studio-code:libsecret - Enable libsecret support
 dev-python/PyQt5:bluetooth - Build bindings for the QtBluetooth module
 dev-python/PyQt5:dbus - Build bindings for the QtDBus module
 dev-python/PyQt5:declarative - Build bindings for the QtQml/QtQuick modules and enable the qmlscene plugin
