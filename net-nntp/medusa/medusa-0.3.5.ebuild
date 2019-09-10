@@ -12,7 +12,8 @@ PYTHON_COMPAT=( python3_4 python3_5 python3_6 )
 
 SRC_URI="https://github.com/pymedusa/Medusa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S=$WORKDIR/Medusa-${PV}
-GIT_COMMIT=74c3f124fb599ad923e23f46fc320778b8b4217c
+# update GIT_COMMIT on version bump
+GIT_COMMIT=baad1e5af59d7f29606c1fed1c110af1424bb117
 
 inherit eutils user python-single-r1
 
@@ -25,38 +26,40 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="${PYTHON_DEPS}"
+# check requirements.txt for dependency changes
 RDEPEND="
 	>=dev-python/adba-1.1.1_alpha20190605
 	>=dev-python/babelfish-0.5.6_alpha20160411
 	>=dev-python/beautifulsoup-4.7.1
-	>=dev-python/bencode-2.0.0
+	>=dev-python/bencode-2.1.0
 	>=dev-python/CacheControl-0.12.5
-	>=dev-python/certifi-2019.3.9
-	>=dev-python/cloudflare-scrape-2.0.5
+	>=dev-python/certifi-2019.6.16
+	>=dev-python/cloudflare-scrape-2.0.8
 	>=dev-python/chardet-3.0.4
 	>=dev-python/configobj-5.0.6
 	>=dev-python/contextlib2-0.5.5
 	>=dev-python/deluge-client-1.7.1
 	>=dev-python/dirtyjson-1.0.7
 	>=dev-python/dogpile-cache-0.7.1
+	>=dev-python/enum34-1.1.6
 	>=dev-python/enzyme-0.4.2_alpha20180603
 	>=dev-python/feedparser-5.2.2_alpha20180811
 	>=dev-python/gntp-1.0.3
-	>=dev-python/guessit-3.0.4_alpha20190224
+	>=dev-python/guessit-3.1.0
 	>=dev-python/html5lib-1.0.1
 	>=dev-python/imdbpie-5.6.4
-	>=dev-python/Js2Py-0.63
+	>=dev-python/Js2Py-0.66
 	>=dev-python/jsonrpclib-pelix-0.4.0
 	>=dev-python/knowit-0.2.5_alpha20190305
-	>=dev-python/mako-1.0.12
-	>=dev-python/markdown2-2.3.7
+	>=dev-python/mako-1.1.0
+	>=dev-python/markdown2-2.3.8
 	>=dev-python/profilehooks-1.11.0
 	>=dev-python/PyGithub-1.43.7
 	>=dev-python/pyjwt-1.7.1
 	>=dev-python/python-dateutil-2.8.0
 	>=dev-python/python-twitter-3.5
 	>=dev-python/rarfile-3.0
-	>=dev-python/rebulk-1.0.0
+	>=dev-python/rebulk-2.0.0
 	>=dev-python/requests-2.22.0
 	>=dev-python/requests-oauthlib-1.2.0
 	>=dev-python/six-1.12.0
