@@ -8,14 +8,6 @@
  
  include bin/markdown2
  include test/api.doctests
---- a/setup.cfg	2018-12-05 10:17:17.000000000 -0800
-+++ a/setup.cfg	2019-03-14 10:38:06.311695024 -0700
-@@ -1,5 +0,0 @@
--[aliases]
--build=sdist bdist_wheel
--
--[wheel]
--universal = 1
 --- a/setup.py	2018-12-05 10:17:17.000000000 -0800
 +++ a/setup.py	2019-03-14 10:38:05.229723280 -0700
 @@ -3,7 +3,8 @@
@@ -28,3 +20,8 @@
  
  _top_dir = os.path.dirname(os.path.abspath(__file__))
  sys.path.insert(0, os.path.join(_top_dir, "lib"))
+--- a/setup.cfg	2019-05-29 11:55:44.000000000 -0700
++++ a/setup.cfg	2019-09-09 21:06:46.820028174 -0700
+@@ -1,2 +0,0 @@
+-[wheel]
+-universal = 1
