@@ -133,6 +133,7 @@ dev-python/webassets 0.12.1: Asset management for Python web development
 dev-python/websocket-client 0.56.0: WebSocket client for python with hybi13 support
 dev-python/werkzeug 0.8.3 0.15.1: Collection of various utilities for WSGI applications
 dev-python/wrapt 1.11.1: Module for decorators, wrappers and monkey patching
+dev-python/zttf 0.0.20180718: Python TTF file parser
 dev-vcs/gitmon 0.3.2: Git Repository Monitor
 games-misc/fortune-mod 2.10.0: The notorious fortune program
 media-gfx/cura 3.6.0 4.0.0: A 3D model slicing application for 3D printing
