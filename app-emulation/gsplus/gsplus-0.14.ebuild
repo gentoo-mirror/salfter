@@ -55,8 +55,11 @@ src_install() {
 
 pkg_postinst() {
   elog ""
-  elog "To use, copy boot.po and config.txt from /usr/share/gsplus to"
-  elog "~/.GSplus.  boot.po contains System 6.0.1 and some games."
-  elog "By default, ROM 3 firmware is loaded.  ROM 01 is also available."
-  elog "When GSplus is running, press F4 to enter the settings menu."
+  elog "To use, copy config.txt from /usr/share/gsplus to ~/.config.gsp"
+  elog "and copy boot.po from /usr/share/gsplus to a convenient location."
+  elog "boot.po contains System 6.0.1 and some games."
+  elog ""
+  elog "ROM 01 and ROM 3 firmware are both available in /usr/share/gsplus."
+  elog "When GSplus is running, press F4 to enter the settings menu to"
+  elog "select which ROM to use."
 }
