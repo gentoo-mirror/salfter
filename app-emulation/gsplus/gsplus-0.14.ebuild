@@ -41,6 +41,8 @@ src_compile() {
 src_install() {
   dobin ${S}/gsplus
 
+  dodoc ${S}/doc/gsplusmanual.pdf
+
   dodir /usr/share/gsplus
   insinto /usr/share/gsplus
   newins ${WORKDIR}/ROMS/rom1.rom rom1.rom
