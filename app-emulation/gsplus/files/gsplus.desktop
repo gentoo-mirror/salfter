@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=GSplus
+Type=Application
+Comment=Apple IIGS emulator
+Exec=gsplus
+TryExec=gsplus
+Icon=gsplus
+Categories=Emulator;System;
