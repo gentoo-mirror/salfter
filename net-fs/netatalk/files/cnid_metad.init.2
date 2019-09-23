@@ -1,0 +1,15 @@
+#!/sbin/runscript
+# Copyright 1999-2011 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/net-fs/netatalk/files/Attic/cnid_metad.init.2,v 1.2 2015/03/31 11:06:48 jlec dead $
+
+: ${CNID_CONFIG:=-l log_note}
+
+command="/usr/sbin/${SVCNAME}"
+command_args="${CNID_CONFIG}"
+pidfile="/var/run/${SVCNAME}.pid"
+
+depend() {
+	need net
+    use logger
+}
