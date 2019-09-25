@@ -15,8 +15,6 @@ DEPEND="net-libs/libpcap
 LICENSE="GPL"
 SLOT="0"
 KEYWORDS="amd64 x86"
-# suid needed for Uthernet emulation
-IUSE="+suid"
 
 src_unpack() {
   mkdir ${WORKDIR}
@@ -57,9 +55,7 @@ src_install() {
 }
 
 pkg_postinst() {
-  if use suid; then
-    chmod u+s ${EPREFIX}/usr/bin/gsplus
-  fi 
+  setcap cap_net_raw,cap_net_admin=eip ${EPREFIX}/usr/bin/gsplus
   elog ""
   elog "To use, copy config.txt from /usr/share/gsplus to ~/.config.gsp"
   elog "and copy boot.po from /usr/share/gsplus to a convenient location."
