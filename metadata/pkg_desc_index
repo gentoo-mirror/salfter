@@ -220,10 +220,10 @@ net-p2p/viacoind 9999: Original Viacoin crypto-currency wallet for automated ser
 net-p2p/yacoind 9999: Yacoin
 net-p2p/zetacoind 9999: Zetacoin daemon
 sci-electronics/altium2kicad 0.0.20181210: Altium to KiCad converter for PCB and schematics
-sci-electronics/apio 0.4.0: Open source ecosystem for open FPGA boards
+sci-electronics/apio 0.4.1: Open source ecosystem for open FPGA boards
 sci-electronics/arachne-pnr 0.0.20190728: place-and-route tool for FPGAs
 sci-electronics/boms-away 20171029: BOM/component manager for KiCad
-sci-electronics/icestorm 0.0.20190815: reverse-engineered tools for Lattice iCE40 FPGAs
+sci-electronics/icestorm 0.0.20190913: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kicad 5.1.0: Electronic Schematic and PCB design tools
 sci-electronics/kicad-footprints 5.1.0: Electronic Schematic and PCB design tools footprint libraries
 sci-electronics/kicad-packages3d 5.1.0: Electronic Schematic and PCB design tools 3D package libraries
@@ -231,10 +231,10 @@ sci-electronics/kicad-symbols 5.1.0: Electronic Schematic and PCB design tools s
 sci-electronics/kicad-templates 5.1.0: Electronic Schematic and PCB design tools project templates
 sci-electronics/kicad_oce_vis 0.0.20160601: experimentation with STEP/IGES visualization in kicad via OCE
 sci-electronics/kifield 0.1.12: bulk-edit components in a KiCad schematic or library by transferring fields to/from a spreadsheet
-sci-electronics/nextpnr 0.0.20190815: portable FPGA place and route tool
-sci-electronics/prjtrellis 0.0.20190809: reverse-engineered tools for Lattice ECP5 FPGAs
+sci-electronics/nextpnr 0.0.20191020: portable FPGA place and route tool
+sci-electronics/prjtrellis 0.0.20191018: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/tinyprog 1.0.23 1.0.24_pre48: Programmer for FPGA boards using the TinyFPGA USB Bootloader
-sci-electronics/yosys 0.8 0.9_alpha20190920: framework for Verilog RTL synthesis
+sci-electronics/yosys 0.9 0.10_alpha20191021: framework for Verilog RTL synthesis
 sci-libs/Shapely 1.6.4: Manipulation and analysis of geometric objects in the Cartesian plane
 sci-libs/openmvg 9999-r1: open Multiple View Geometry library. Basis for 3D computer vision and Structure from Motion.
 sci-visualization/admesh 0.98.3: CLI and C library for processing triangulated solid meshes
