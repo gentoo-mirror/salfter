@@ -2,7 +2,7 @@ EAPI=6
 
 inherit cmake-utils
 
-GIT_COMMIT=a6a4349bd6ec9531937944a45fc0807c63057221
+GIT_COMMIT=b582ba810cc54282d4c574bee80a7339c8da17f9
 S=$WORKDIR/$PN-$GIT_COMMIT
 
 DESCRIPTION="portable FPGA place and route tool"

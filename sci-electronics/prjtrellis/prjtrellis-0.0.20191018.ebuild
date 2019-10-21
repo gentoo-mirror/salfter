@@ -2,8 +2,8 @@ EAPI=6
 
 inherit cmake-utils
 
-GIT_COMMIT=a67379179985bb12a611c75d975548cdf6e7d12e
-DB_GIT_COMMIT=b4d626b6402c131e9a035470ffe4cf33ccbe7986
+GIT_COMMIT=72fe507c2b445500d48e94e5bf6a9a636392823e
+DB_GIT_COMMIT=5b5bb70bae13e6b8c971b4b2d26931f4a64b51bc
 S=$WORKDIR/$PN-$GIT_COMMIT/libtrellis
 
 DESCRIPTION="reverse-engineered tools for Lattice ECP5 FPGAs"
@@ -26,3 +26,10 @@ src_unpack() {
 	mv $PN-db-$DB_GIT_COMMIT database
 }
 
+# see https://github.com/SymbiFlow/prjtrellis/pull/95
+src_configure() {
+	local mycmakeargs=(
+		-DCURRENT_GIT_VERSION=$GIT_COMMIT
+	)
+	cmake-utils_src_configure
+}
