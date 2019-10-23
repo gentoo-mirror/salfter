@@ -61,6 +61,7 @@ dev-python/emoji 0.4.5 0.5.1: Emoji for Python
 dev-python/ensure 0.8.2: Literate BDD assertions in Python with no magic
 dev-python/enzyme 0.4.2_alpha20180603: Python video metadata parser
 dev-python/feedparser 5.2.2_alpha20180811: Parse RSS and Atom feeds in Python
+dev-python/filetype 1.0.5: Small and dependency free Python package to infer file type and MIME type checking the magic numbers signature of a file or buffer.
 dev-python/flask 0.10.1-r2: A microframework based on Werkzeug, Jinja2 and good intentions
 dev-python/flask-assets 0.10 0.12: Flask webassets integration
 dev-python/flask-babel 0.9 0.12.2: i18n and l10n support for Flask based on Babel and pytz
@@ -243,7 +244,7 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-kernel/raspberrypi-sources 4.18.9999: Raspberry PI kernel sources
 virtual/podofo-build 0.9.6_p20180715: Virtual package for building against PoDoFo
 www-apps/cops 1.1.2: Calibre OPDS PHP Server
-www-apps/octoprint 1.3.11: the snappy web interface for your 3D printer
+www-apps/octoprint 1.3.12: the snappy web interface for your 3D printer
 www-apps/wordpress 5.2.2: Wordpress PHP and MySQL based content management system (CMS)
 www-misc/zoneminder 1.32.3: Capture, analyse, record and monitor any cameras attached to your system
 www-servers/tornado 4.5.3 5.1.1: Python web framework and asynchronous networking library
