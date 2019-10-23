@@ -76,6 +76,8 @@ RDEPEND="
 	=dev-python/sentry-sdk-0.7.7
 	>=dev-python/typing-3.6.6
 	<dev-python/typing-4
+	>=dev-python/filetype-1.0.5
+	<dev-python/filetype-2
 	dev-python/pip
 "
 
