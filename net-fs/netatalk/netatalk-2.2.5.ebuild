@@ -29,7 +29,7 @@ RDEPEND="
 	cracklib? ( sys-libs/cracklib )
 	kerberos? ( virtual/krb5 )
 	ldap? ( net-nds/openldap )
-	pam? ( virtual/pam )
+	pam? ( sys-libs/pam )
 	slp? ( net-libs/openslp )
 	ssl? ( dev-libs/openssl )
 	tcpd? ( sys-apps/tcp-wrappers )
