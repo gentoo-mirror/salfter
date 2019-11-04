@@ -36,20 +36,6 @@ DEPEND="${RDEPEND}
 	media-libs/libsdl
 	input_raspicam? ( >=media-libs/raspberrypi-userland-1.20190114 )"
 
-#src_prepare() {
-##	epatch "${FILESDIR}/${PV}-make-var-instead-of-cmd.patch"
-##	epatch "${FILESDIR}/${PV}-to-work-with-kernel-3.18.patch"
-#
-#	local flag switch
-#
-#	for flag in ${IUSE_PLUGINS}; do
-#		use ${flag} && switch='' || switch='#'
-#		sed -i \
-#			-e "s|^#*PLUGINS +\?= ${flag}.so|${switch}PLUGINS += ${flag}.so|" \
-#			Makefile
-#	done
-#}
-
 src_compile() {
 	local v4l=$(use v4l && use input_uvc && echo 'USE_LIBV4L2=true')
 	emake ${v4l}
@@ -65,7 +51,7 @@ src_install() {
 		doins -r www
 	fi
 
-	dodoc README TODO
+	dodoc README.md
 
 	newinitd "${FILESDIR}"/${PN}.initd ${PN}
 	newconfd "${FILESDIR}"/${PN}.confd ${PN}
