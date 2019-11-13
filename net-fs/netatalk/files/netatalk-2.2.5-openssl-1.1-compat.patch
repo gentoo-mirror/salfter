@@ -1,0 +1,296 @@
+backported from this Netatalk 3.0.5 patch:
+https://github.com/RMerl/asuswrt-merlin.ng/commit/1728f79f32d9b5d70b2efc1f741ef229db803f46.patch
+
+diff -urN netatalk-2.2.5.orig/bin/afppasswd/afppasswd.c netatalk-2.2.5/bin/afppasswd/afppasswd.c
+--- netatalk-2.2.5/bin/afppasswd/afppasswd.c	2013-07-23 02:10:55.000000000 -0700
++++ netatalk-2.2.5/bin/afppasswd/afppasswd.c	2019-11-13 10:06:37.372058872 -0800
+@@ -70,7 +70,7 @@
+ static void convert_passwd(char *buf, char *newpwd, const int keyfd)
+ {
+   u_int8_t key[HEXPASSWDLEN];
+-  Key_schedule schedule;
++  DES_key_schedule schedule;
+   unsigned int i, j;
+ 
+   if (!newpwd) {
+@@ -89,14 +89,14 @@
+       key[j] = (unhex(key[i]) << 4) | unhex(key[i + 1]);
+     if (j <= DES_KEY_SZ)
+       memset(key + j, 0, sizeof(key) - j);
+-    key_sched((C_Block *) key, schedule);
++    DES_key_sched((DES_cblock *) key, &schedule);
+     memset(key, 0, sizeof(key));   
+     if (newpwd) {
+-	ecb_encrypt((C_Block *) newpwd, (C_Block *) newpwd, schedule,
++	DES_ecb_encrypt((DES_cblock *) newpwd, (DES_cblock *) newpwd, &schedule,
+ 		    DES_ENCRYPT);
+     } else {
+       /* decrypt the password */
+-      ecb_encrypt((C_Block *) buf, (C_Block *) buf, schedule, DES_DECRYPT);
++      DES_ecb_encrypt((DES_cblock *) buf, (DES_cblock *) buf, &schedule, DES_DECRYPT);
+     }
+     memset(&schedule, 0, sizeof(schedule));      
+   }
+diff -urN netatalk-2.2.5.orig/etc/uams/openssl_compat.h netatalk-2.2.5/etc/uams/openssl_compat.h
+--- netatalk-2.2.5/etc/uams/openssl_compat.h	1969-12-31 16:00:00.000000000 -0800
++++ netatalk-2.2.5/etc/uams/openssl_compat.h	2019-11-13 09:52:48.434703519 -0800
+@@ -0,0 +1,45 @@
++/*
++
++Copyright (c) 2017 Denis Bychkov (manover@gmail.com)
++
++This file is released under the GNU General Public License (GPLv2).
++The full license text is available at:
++
++http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
++*/
++
++#ifndef OPENSSL_COMPAT_H
++#define OPENSSL_COMPAT_H
++
++#if OPENSSL_VERSION_NUMBER < 0x10100000L || defined(LIBRESSL_VERSION_NUMBER)
++inline static int DH_set0_pqg(DH *dh, BIGNUM *p, BIGNUM *q, BIGNUM *g)
++{
++   /* If the fields p and g in d are NULL, the corresponding input
++    * parameters MUST be non-NULL.  q may remain NULL.
++    */
++   if ((dh->p == NULL && p == NULL) || (dh->g == NULL && g == NULL))
++       return 0;
++
++   if (p != NULL)
++       dh->p = p;
++   if (q != NULL)
++       dh->q = q;
++   if (g != NULL)
++       dh->g = g;
++
++   if (q != NULL)
++       dh->length = BN_num_bits(q);
++
++   return 1;
++}
++
++inline static void DH_get0_key(const DH *dh, const BIGNUM **pub_key, const BIGNUM **priv_key)
++{
++   if (pub_key != NULL)
++       *pub_key = dh->pub_key;
++   if (priv_key != NULL)
++       *priv_key = dh->priv_key;
++}
++#endif /* OPENSSL_VERSION_NUMBER */
++
++#endif /* OPENSSL_COMPAT_H */
+diff -urN netatalk-2.2.5.orig/etc/uams/uams_dhx_pam.c netatalk-2.2.5/etc/uams/uams_dhx_pam.c
+--- netatalk-2.2.5/etc/uams/uams_dhx_pam.c	2013-07-23 02:10:55.000000000 -0700
++++ netatalk-2.2.5/etc/uams/uams_dhx_pam.c	2019-11-13 10:06:15.954591546 -0800
+@@ -35,6 +35,7 @@
+ #include <openssl/dh.h>
+ #include <openssl/cast.h>
+ #include <openssl/err.h>
++#include "openssl_compat.h"
+ #else /* OPENSSL_DHX */
+ #include <bn.h>
+ #include <dh.h>
+@@ -190,6 +191,7 @@
+     u_int16_t sessid;
+     size_t i;
+     BIGNUM *bn, *gbn, *pbn;
++    const BIGNUM *pub_key;
+     DH *dh;
+ 
+     /* get the client's public key */
+@@ -233,9 +235,16 @@
+       return AFPERR_PARAM;
+     }
+ 
++    if (!DH_set0_pqg(dh, pbn, NULL, gbn)) {
++      BN_free(pbn);
++      BN_free(gbn);
++    /* Log Entry */
++        LOG(log_info, logtype_uams, "uams_dhx_pam.c :PAM DH_set0_pqg() mysteriously failed  -- %s", strerror(errno));
++    /* Log Entry */
++      goto pam_fail;
++    }
++
+     /* generate key and make sure that we have enough space */
+-    dh->p = pbn;
+-    dh->g = gbn;
+     if (DH_generate_key(dh) == 0) {
+ 	unsigned long dherror;
+ 	char errbuf[256];
+@@ -249,9 +258,10 @@
+ 	ERR_free_strings();
+ 	goto pam_fail;
+     }
+-    if (BN_num_bytes(dh->pub_key) > KEYSIZE) {
+-	LOG(log_info, logtype_uams, "uams_dhx_pam.c :PAM: Err Generating Key -- Not enough Space? -- %s", strerror(errno));
+-	goto pam_fail;
++	DH_get0_key(dh, &pub_key, NULL);
++    if (BN_num_bytes(pub_key) > KEYSIZE) {
++      LOG(log_info, logtype_uams, "uams_dhx_pam.c :PAM: Err Generating Key -- Not enough Space? -- %s", strerror(errno));
++      goto pam_fail;
+     }
+ 
+     /* figure out the key. store the key in rbuf for now. */
+@@ -267,7 +277,7 @@
+     *rbuflen += sizeof(sessid);
+     
+     /* public key */
+-    BN_bn2bin(dh->pub_key, rbuf); 
++    BN_bn2bin(pub_key, (unsigned char *)rbuf); 
+     rbuf += KEYSIZE;
+     *rbuflen += KEYSIZE;
+ 
+diff -urN netatalk-2.2.5.orig/etc/uams/uams_dhx_passwd.c netatalk-2.2.5/etc/uams/uams_dhx_passwd.c
+--- netatalk-2.2.5/etc/uams/uams_dhx_passwd.c	2013-07-23 02:10:55.000000000 -0700
++++ netatalk-2.2.5/etc/uams/uams_dhx_passwd.c	2019-11-13 10:05:10.917208997 -0800
+@@ -37,6 +37,7 @@
+ #include <openssl/bn.h>
+ #include <openssl/dh.h>
+ #include <openssl/cast.h>
++#include "openssl_compat.h"
+ #else /* OPENSSL_DHX */
+ #include <bn.h>
+ #include <dh.h>
+@@ -81,6 +82,7 @@
+     struct spwd *sp;
+ #endif /* SHADOWPW */
+     BIGNUM *bn, *gbn, *pbn;
++    const BIGNUM *pub_key;
+     u_int16_t sessid;
+     size_t i;
+     DH *dh;
+@@ -144,10 +146,18 @@
+       return AFPERR_PARAM;
+     }
+ 
++    if (!DH_set0_pqg(dh, pbn, NULL, gbn)) {
++      BN_free(pbn);
++      BN_free(gbn);
++      goto passwd_fail;
++    }
++
+     /* generate key and make sure we have enough space */
+-    dh->p = pbn;
+-    dh->g = gbn;
+-    if (!DH_generate_key(dh) || (BN_num_bytes(dh->pub_key) > KEYSIZE)) {
++    if (!DH_generate_key(dh)) {
++      goto passwd_fail;
++    }
++    DH_get0_key(dh, &pub_key, NULL);
++    if (BN_num_bytes(pub_key) > KEYSIZE) {
+       goto passwd_fail;
+     }
+ 
+@@ -164,7 +174,7 @@
+     *rbuflen += sizeof(sessid);
+     
+     /* send our public key */
+-    BN_bn2bin(dh->pub_key, (unsigned char *)rbuf); 
++    BN_bn2bin(pub_key, (unsigned char *)rbuf);
+     rbuf += KEYSIZE;
+     *rbuflen += KEYSIZE;
+ 
+diff -urN netatalk-2.2.5.orig/etc/uams/uams_randnum.c netatalk-2.2.5/etc/uams/uams_randnum.c
+--- netatalk-2.2.5/etc/uams/uams_randnum.c	2013-07-23 02:10:55.000000000 -0700
++++ netatalk-2.2.5/etc/uams/uams_randnum.c	2019-11-13 09:52:48.435703494 -0800
+@@ -55,8 +55,8 @@
+ 
+ #define PASSWDLEN 8
+ 
+-static C_Block		seskey;
+-static Key_schedule	seskeysched;
++static DES_cblock	seskey;
++static DES_key_schedule	seskeysched;
+ static struct passwd	*randpwd;
+ static u_int8_t         randbuf[8];
+ 
+@@ -146,7 +146,7 @@
+ {
+   u_int8_t key[DES_KEY_SZ*2];
+   char buf[MAXPATHLEN + 1], *p;
+-  Key_schedule	schedule;
++  DES_key_schedule schedule;
+   FILE *fp;
+   unsigned int i, j;
+   int keyfd = -1, err = 0;
+@@ -203,17 +203,17 @@
+ 	key[j] = (unhex(key[i]) << 4) | unhex(key[i + 1]);
+       if (j <= DES_KEY_SZ)
+ 	memset(key + j, 0, sizeof(key) - j);
+-      key_sched((C_Block *) key, schedule);
++      DES_key_sched((DES_cblock *) key, &schedule);
+       memset(key, 0, sizeof(key));
+ 
+       if (set) {
+ 	/* NOTE: this takes advantage of the fact that passwd doesn't
+ 	 *       get used after this call if it's being set. */
+-	ecb_encrypt((C_Block *) passwd, (C_Block *) passwd, schedule,
++	DES_ecb_encrypt((DES_cblock *) passwd, (DES_cblock *) passwd, &schedule,
+ 		    DES_ENCRYPT);
+       } else {
+ 	/* decrypt the password */
+-	ecb_encrypt((C_Block *) p, (C_Block *) p, schedule, DES_DECRYPT);
++	DES_ecb_encrypt((DES_cblock *) p, (DES_cblock *) p, &schedule, DES_DECRYPT);
+       }
+       memset(&schedule, 0, sizeof(schedule));
+   }
+@@ -362,10 +362,10 @@
+ 
+   /* encrypt. this saves a little space by using the fact that
+    * des can encrypt in-place without side-effects. */
+-  key_sched((C_Block *) seskey, seskeysched);
++  DES_key_sched((DES_cblock *) seskey, &seskeysched);
+   memset(seskey, 0, sizeof(seskey));
+-  ecb_encrypt((C_Block *) randbuf, (C_Block *) randbuf,
+-	       seskeysched, DES_ENCRYPT);
++  DES_ecb_encrypt((DES_cblock *) randbuf, (DES_cblock *) randbuf,
++	       &seskeysched, DES_ENCRYPT);
+   memset(&seskeysched, 0, sizeof(seskeysched));
+ 
+   /* test against what the client sent */
+@@ -406,10 +406,10 @@
+     seskey[i] <<= 1;
+ 
+   /* encrypt randbuf */
+-  key_sched((C_Block *) seskey, seskeysched);
++  DES_key_sched((DES_cblock *) seskey, &seskeysched);
+   memset(seskey, 0, sizeof(seskey));
+-  ecb_encrypt( (C_Block *) randbuf, (C_Block *) randbuf,
+-	       seskeysched, DES_ENCRYPT);
++  DES_ecb_encrypt( (DES_cblock *) randbuf, (DES_cblock *) randbuf,
++	       &seskeysched, DES_ENCRYPT);
+ 
+   /* test against client's reply */
+   if (memcmp(randbuf, ibuf, sizeof(randbuf))) { /* != */
+@@ -421,8 +421,8 @@
+   memset(randbuf, 0, sizeof(randbuf));
+ 
+   /* encrypt client's challenge and send back */
+-  ecb_encrypt( (C_Block *) ibuf, (C_Block *) rbuf,
+-	       seskeysched, DES_ENCRYPT);
++  DES_ecb_encrypt( (DES_cblock *) ibuf, (DES_cblock *) rbuf,
++	       &seskeysched, DES_ENCRYPT);
+   memset(&seskeysched, 0, sizeof(seskeysched));
+   *rbuflen = sizeof(randbuf);
+   
+@@ -457,15 +457,15 @@
+       return err;
+ 
+     /* use old passwd to decrypt new passwd */
+-    key_sched((C_Block *) seskey, seskeysched);
++    DES_key_sched((DES_cblock *) seskey, &seskeysched);
+     ibuf += PASSWDLEN; /* new passwd */
+     ibuf[PASSWDLEN] = '\0';
+-    ecb_encrypt( (C_Block *) ibuf, (C_Block *) ibuf, seskeysched, DES_DECRYPT);
++    DES_ecb_encrypt( (DES_cblock *) ibuf, (DES_cblock *) ibuf, &seskeysched, DES_DECRYPT);
+ 
+     /* now use new passwd to decrypt old passwd */
+-    key_sched((C_Block *) ibuf, seskeysched);
++    DES_key_sched((DES_cblock *) ibuf, &seskeysched);
+     ibuf -= PASSWDLEN; /* old passwd */
+-    ecb_encrypt((C_Block *) ibuf, (C_Block *) ibuf, seskeysched, DES_DECRYPT);
++    DES_ecb_encrypt((DES_cblock *) ibuf, (DES_cblock *) ibuf, &seskeysched, DES_DECRYPT);
+     if (memcmp(seskey, ibuf, sizeof(seskey))) 
+ 	err = AFPERR_NOTAUTH;
+     else if (memcmp(seskey, ibuf + PASSWDLEN, sizeof(seskey)) == 0)
