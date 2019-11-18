@@ -13,7 +13,7 @@ PYTHON_COMPAT=( python3_4 python3_5 python3_6 )
 SRC_URI="https://github.com/pymedusa/Medusa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S=$WORKDIR/Medusa-${PV}
 # update GIT_COMMIT on version bump
-GIT_COMMIT=baad1e5af59d7f29606c1fed1c110af1424bb117
+GIT_COMMIT=fcb5a1969dcd4ea0b6fb4a9debbf60179b0bbf4b
 
 inherit eutils user python-single-r1
 
@@ -28,9 +28,9 @@ IUSE=""
 DEPEND="${PYTHON_DEPS}"
 # check requirements.txt for dependency changes
 RDEPEND="
-	>=dev-python/adba-1.1.1_alpha20190605
+	>=dev-python/adba-1.1.1_alpha20191013
 	>=dev-python/babelfish-0.5.6_alpha20160411
-	>=dev-python/beautifulsoup-4.7.1
+	>=dev-python/beautifulsoup-4.8.1
 	>=dev-python/bencode-2.1.0
 	>=dev-python/CacheControl-0.12.5
 	>=dev-python/certifi-2019.6.16
