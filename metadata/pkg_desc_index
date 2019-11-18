@@ -32,11 +32,11 @@ dev-python/PyCCEX 9999: Python binding for the C-CEX altcoin-trading API
 dev-python/PyCryptopia 9999: Python binding for the Cryptopia altcoin-trading API
 dev-python/PyCryptsy 9999: Python binding for the Cryptsy altcoin-trading API
 dev-python/PyQt5 5.9.2: Python bindings for the Qt framework
-dev-python/adba 1.1.1_alpha20190605: simple and abstract interface for anidb
+dev-python/adba 1.1.1_alpha20191013: simple and abstract interface for anidb
 dev-python/awesome-slugify 1.6.5: Python flexible slugify function
 dev-python/babelfish 0.5.6_alpha20160411: Python library to work with countries and languages
 dev-python/base58 0.2.5: Base58 and Base58Check implementation
-dev-python/beautifulsoup 4.7.1: Pythonic idioms for iterating, searching, and modifying an HTML/XML parse tree
+dev-python/beautifulsoup 4.8.1: Pythonic idioms for iterating, searching, and modifying an HTML/XML parse tree
 dev-python/bencode 2.1.0: Simple bencode parser
 dev-python/bitcoin 1.1.42: Python Bitcoin Tools
 dev-python/bitcoin-abe 9999: cryptocurrency blockchain explorer
@@ -174,7 +174,7 @@ net-misc/tpruvot-ccminer 2.3.1: Bitcoin CPU/GPU/FPGA miner in C
 net-misc/wolf-m7m-cpuminer 9999: m7m CPU miner
 net-misc/zec-miner-bin 0.3.4b: EWBF Zcash CUDA miner
 net-news/trn 4.0-r77: threaded news reader
-net-nntp/medusa 0.3.5: Automatic Video Library Manager for TV Shows
+net-nntp/medusa 0.3.7: Automatic Video Library Manager for TV Shows
 net-nntp/sabnzbd 2.3.9: Binary newsgrabber with web-interface
 net-p2p/MinerSwitcher 9999: altcoin mining profitability switcher
 net-p2p/anoncoin-cli 9999: Anoncoin daemon
