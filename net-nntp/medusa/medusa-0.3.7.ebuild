@@ -28,9 +28,9 @@ IUSE=""
 DEPEND="${PYTHON_DEPS}"
 # check requirements.txt for dependency changes
 RDEPEND="
-	>=dev-python/adba-1.1.1_alpha20190605
+	>=dev-python/adba-1.1.1_alpha20191013
 	>=dev-python/babelfish-0.5.6_alpha20160411
-	>=dev-python/beautifulsoup-4.7.1
+	>=dev-python/beautifulsoup-4.8.1
 	>=dev-python/bencode-2.1.0
 	>=dev-python/CacheControl-0.12.5
 	>=dev-python/certifi-2019.6.16
