@@ -244,7 +244,7 @@ sys-kernel/raspberrypi-sources 4.18.9999: Raspberry PI kernel sources
 virtual/podofo-build 0.9.6_p20180715: Virtual package for building against PoDoFo
 www-apps/cops 1.1.2: Calibre OPDS PHP Server
 www-apps/octoprint 1.3.12: the snappy web interface for your 3D printer
-www-apps/wordpress 5.2.2: Wordpress PHP and MySQL based content management system (CMS)
+www-apps/wordpress 5.3.1: Wordpress PHP and MySQL based content management system (CMS)
 www-misc/zoneminder 1.32.3: Capture, analyse, record and monitor any cameras attached to your system
 www-servers/tornado 4.5.3 5.1.1: Python web framework and asynchronous networking library
 x11-libs/amd-adl-sdk 10.2: API to access display driver functionality for ATI graphics cards
