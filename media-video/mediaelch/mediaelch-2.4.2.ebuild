@@ -1,4 +1,4 @@
-EAPI=5
+EAPI=6
 inherit qmake-utils eutils multilib
 
 MY_PN=MediaElch
@@ -34,6 +34,5 @@ src_configure()
 
 src_install()
 {
-	cd $S || die
-	INSTALL_ROOT=${D} einstall || die
+	dobin $S/MediaElch
 }
