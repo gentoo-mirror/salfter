@@ -153,6 +153,7 @@ media-tv/mythtv 0.28.1-r4: Homebrew PVR project
 media-video/atomicparsley 0.9.0: command line program for reading, parsing and setting iTunes-style metadata in MPEG4 files
 media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
 media-video/makemkv 1.12.0: Tool for ripping and streaming Blu-ray, HD-DVD and DVD discs
+media-video/mediaelch 2.4.2: Video metadata scraper
 media-video/mjpg-streamer 9999: MJPG-streamer takes JPGs from Linux-UVC compatible webcams
 media-video/vobsub2srt 9999: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
 net-fs/afpfs-ng 0.8.1: An Apple Filing Protocol client implemented in FUSE
