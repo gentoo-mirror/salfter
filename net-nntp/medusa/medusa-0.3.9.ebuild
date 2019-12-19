@@ -13,7 +13,7 @@ PYTHON_COMPAT=( python3_4 python3_5 python3_6 )
 SRC_URI="https://github.com/pymedusa/Medusa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S=$WORKDIR/Medusa-${PV}
 # update GIT_COMMIT on version bump
-GIT_COMMIT=fcb5a1969dcd4ea0b6fb4a9debbf60179b0bbf4b
+GIT_COMMIT=d0c136d7a528a471b51676140bd35d24d97f65c6
 
 inherit eutils user python-single-r1
 
@@ -41,7 +41,6 @@ RDEPEND="
 	>=dev-python/deluge-client-1.7.1
 	>=dev-python/dirtyjson-1.0.7
 	>=dev-python/dogpile-cache-0.7.1
-	>=dev-python/enum34-1.1.6
 	>=dev-python/enzyme-0.4.2_alpha20180603
 	>=dev-python/feedparser-5.2.2_alpha20180811
 	>=dev-python/gntp-1.0.3
