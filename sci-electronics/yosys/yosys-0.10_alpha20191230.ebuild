@@ -1,6 +1,6 @@
 EAPI=6
 
-GIT_COMMIT=5025aab8c9b47e2a201f7ffd494475882db92398
+GIT_COMMIT=c0a17c2457532726b05586d3b7a030bd9f372dea
 S=$WORKDIR/$PN-$GIT_COMMIT
 
 ABC_GIT_COMMIT=623b5e82513d076a19f864c01930ad1838498894
@@ -17,7 +17,8 @@ PATCHES="$FILESDIR/$PN-0.9-makefile-fix.patch"
 
 DEPEND="dev-vcs/git
 	media-gfx/xdot
-	dev-libs/boost"
+	dev-libs/boost
+	sys-devel/clang"
 
 src_unpack() {
 	unpack $P.tar.gz
