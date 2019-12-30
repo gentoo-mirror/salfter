@@ -22,6 +22,7 @@ dev-embedded/teensy_loader_cli 2.1_p20161201 9999: Command line Teensy Loader
 dev-libs/libarcus 3.6.0 4.0.0: This library facilitates communication between Cura and its backend
 dev-libs/libcharon 3.6.0 4.0.0: This library facilitates communication between Cura and its backend
 dev-libs/ooml 20171118: C++ Object Oriented Mechanics Language
+dev-libs/rinutils 0.2.0: C11 / gnu11 utilities C library by Shlomi Fish / Rindolf
 dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
@@ -137,7 +138,7 @@ dev-python/werkzeug 0.8.3 0.15.1: Collection of various utilities for WSGI appli
 dev-python/wrapt 1.11.1: Module for decorators, wrappers and monkey patching
 dev-python/zttf 0.0.20180718: Python TTF file parser
 dev-vcs/gitmon 0.3.2: Git Repository Monitor
-games-misc/fortune-mod 2.10.0: The notorious fortune program
+games-misc/fortune-mod 2.12.0: The notorious fortune program
 mail-filter/hashcash-milter 0.1.3: A milter-based application to mint and check HashCash stamps
 media-gfx/cura 3.6.0 4.0.0: A 3D model slicing application for 3D printing
 media-gfx/curaengine 3.6.0 4.0.0: A 3D model slicing engine for 3D printing
