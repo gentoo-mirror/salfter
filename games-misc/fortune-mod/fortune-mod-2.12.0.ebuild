@@ -10,7 +10,8 @@ SLOT="0"
 KEYWORDS="alpha amd64 arm hppa ia64 m68k mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd"
 IUSE="offensive"
 
-DEPEND="app-text/recode"
+DEPEND="app-text/recode
+	dev-libs/rinutils"
 
 src_prepare() {
 	# null out selected categories
@@ -22,8 +23,8 @@ src_prepare() {
 	# fix install paths
 	cd $S
 	sed -i "s/\"games\"/\"bin\"/;s/\/games\//\//" CMakeLists.txt
-	sed -i "s/\/games\//\//" datfiles/CMakeLists.txt
-	sed -i "s/\/games\//\//" datfiles/off/CMakeLists.txt
+	sed -i "s/LOCALDIR/COOKIEDIR/" datfiles/CMakeLists.txt
+	sed -i "s/LOCALODIR/OCOOKIEDIR/" datfiles/off/CMakeLists.txt
 
 	cmake-utils_src_prepare 
 }
