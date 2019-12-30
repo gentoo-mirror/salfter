@@ -16,7 +16,8 @@ PATCHES="$FILESDIR/$PN-0.9-makefile-fix.patch"
 
 DEPEND="dev-vcs/git
 	media-gfx/xdot
-	dev-libs/boost"
+	dev-libs/boost
+	sys-devel/clang"
 
 src_unpack() {
 	unpack $P.tar.gz
