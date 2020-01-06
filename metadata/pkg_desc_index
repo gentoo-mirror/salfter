@@ -152,6 +152,7 @@ media-sound/mp3val 0.1.8: MP3 validator
 media-sound/pykaraoke 0.7.5: Python powered karaoke.
 media-tv/mythtv 0.28.1-r4: Homebrew PVR project
 media-video/atomicparsley 0.9.0: command line program for reading, parsing and setting iTunes-style metadata in MPEG4 files
+media-video/hlsdl 0.1_alpha20200103: C program to download VoD HLS (.m3u8) files
 media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
 media-video/makemkv 1.12.0: Tool for ripping and streaming Blu-ray, HD-DVD and DVD discs
 media-video/mediaelch 2.4.2: Video metadata scraper
