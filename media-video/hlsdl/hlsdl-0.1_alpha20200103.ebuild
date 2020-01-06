@@ -19,3 +19,6 @@ src_install()
 	dobin $S/hlsdl
 }
 
+# found this at
+# https://stackoverflow.com/questions/16132088/how-to-decrypt-aes-128-encrypted-m3u8-video-files?noredirect=1,
+# where I had posted a hacky shell-script-based solution to the same problem
