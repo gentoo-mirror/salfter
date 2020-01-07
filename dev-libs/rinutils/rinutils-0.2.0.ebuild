@@ -9,3 +9,5 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
+DEPEND="dev-util/cmocka"
+
