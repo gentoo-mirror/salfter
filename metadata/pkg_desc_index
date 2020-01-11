@@ -240,7 +240,10 @@ sci-electronics/prjtrellis 0.0.20191207: reverse-engineered tools for Lattice EC
 sci-electronics/tinyprog 1.0.23 1.0.24_pre48: Programmer for FPGA boards using the TinyFPGA USB Bootloader
 sci-electronics/yosys 0.9 0.10_alpha20191230: framework for Verilog RTL synthesis
 sci-libs/Shapely 1.6.4: Manipulation and analysis of geometric objects in the Cartesian plane
+sci-libs/cadquery 0.1.5: A parametric CAD scripting framework based on PythonOCC
 sci-libs/openmvg 9999-r1: open Multiple View Geometry library. Basis for 3D computer vision and Structure from Motion.
+sci-libs/pythonocc 0.18.1: An industrial strength 3D python package for CAD/BIM/PLM/CAM
+sci-libs/smesh 6.7.6: An extension to oce, provides advanced meshing features
 sci-visualization/admesh 0.98.3: CLI and C library for processing triangulated solid meshes
 sys-fs/cpmtools 2.20: CP/M filesystem manipulation tools, similar to mtools
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
