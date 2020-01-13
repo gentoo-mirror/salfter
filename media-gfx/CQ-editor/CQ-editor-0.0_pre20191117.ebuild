@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="sci-libs/cadquery
-	 dev-python/PyQt"
+	 dev-python/PyQt5"
 DEPEND=""
 
 
