@@ -18,7 +18,12 @@ KEYWORDS="~amd64"
 RDEPEND="sci-libs/cadquery
 	 dev-python/PyQt5
 	 dev-python/spyder
-	 dev-python/parso"
+	 dev-python/parso
+	 dev-python/pyqtgraph
+	 dev-python/logbook
+	 dev-python/path-py
+         dev-python/qtconsole
+         dev-python/requests"
 DEPEND=""
 
 
