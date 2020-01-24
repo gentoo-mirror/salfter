@@ -13,7 +13,7 @@ PYTHON_COMPAT=( python3_4 python3_5 python3_6 )
 SRC_URI="https://github.com/pymedusa/Medusa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S=$WORKDIR/Medusa-${PV}
 # update GIT_COMMIT on version bump
-GIT_COMMIT=d0c136d7a528a471b51676140bd35d24d97f65c6
+GIT_COMMIT=942040af95311a71d9663236c7136434b6711ca5
 
 inherit eutils user python-single-r1
 
@@ -34,7 +34,7 @@ RDEPEND="
 	>=dev-python/bencode-2.1.0
 	>=dev-python/CacheControl-0.12.5
 	>=dev-python/certifi-2019.6.16
-	>=dev-python/cloudflare-scrape-2.0.8
+	>=dev-python/cloudflare-scrape-2.0.9_alpha20191215
 	>=dev-python/chardet-3.0.4
 	>=dev-python/configobj-5.0.6
 	>=dev-python/contextlib2-0.5.5
@@ -47,7 +47,7 @@ RDEPEND="
 	>=dev-python/guessit-3.1.0
 	>=dev-python/html5lib-1.0.1
 	>=dev-python/imdbpie-5.6.4
-	>=dev-python/Js2Py-0.66
+	>=dev-python/Js2Py-0.67
 	>=dev-python/jsonrpclib-pelix-0.4.0
 	>=dev-python/knowit-0.2.5_alpha20190305
 	>=dev-python/mako-1.1.0
@@ -61,8 +61,8 @@ RDEPEND="
 	>=dev-python/rebulk-2.0.0
 	>=dev-python/requests-2.22.0
 	>=dev-python/requests-oauthlib-1.2.0
-	>=dev-python/six-1.12.0
-	>=dev-python/subliminal-2.0.6_alpha20181128
+	>=dev-python/six-1.13.0
+	>=dev-python/subliminal-2.0.6_alpha20190225
 	>=www-servers/tornado-5.1.1
 	>=dev-python/tornroutes-0.5.1
 	>=dev-python/tvdbv2-1.0.1_alpha20190605
