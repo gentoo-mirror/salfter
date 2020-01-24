@@ -4,11 +4,14 @@
 EAPI=6
 PYTHON_COMPAT=( python{2_7,3_4,3_5,3_6} )
 
+GIT_COMMIT=713e3b4017442d87ad0d638f7991cc330abeee5e
+S=$WORKDIR/$PN-$GIT_COMMIT
+
 inherit distutils-r1
 
 DESCRIPTION="A Python module to bypass Cloudflare's anti-bot page"
 HOMEPAGE="https://github.com/Anorov/cloudflare-scrape"
-SRC_URI="https://github.com/Anorov/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/Anorov/${PN}/archive/$GIT_COMMIT.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
