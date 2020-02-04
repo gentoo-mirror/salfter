@@ -224,6 +224,7 @@ net-p2p/unobtaniumd 9999: Original Unobtanium crypto-currency wallet for automat
 net-p2p/viacoind 9999: Original Viacoin crypto-currency wallet for automated services
 net-p2p/yacoind 9999: Yacoin
 net-p2p/zetacoind 9999: Zetacoin daemon
+net-print/epson-inkjet-printer-escpr2 1.1.6: Epson Inkjet Printer Driver (ESC/P-R) 2
 sci-electronics/altium2kicad 0.0.20181210: Altium to KiCad converter for PCB and schematics
 sci-electronics/apio 0.4.1: Open source ecosystem for open FPGA boards
 sci-electronics/arachne-pnr 0.0.20190728: place-and-route tool for FPGAs
