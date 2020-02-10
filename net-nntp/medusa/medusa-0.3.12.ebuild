@@ -13,7 +13,7 @@ PYTHON_COMPAT=( python3_4 python3_5 python3_6 )
 SRC_URI="https://github.com/pymedusa/Medusa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S=$WORKDIR/Medusa-${PV}
 # update GIT_COMMIT on version bump
-GIT_COMMIT=942040af95311a71d9663236c7136434b6711ca5
+GIT_COMMIT=ee1b898d0f74750c4c265d077fcc0da73d17b41e
 
 inherit eutils user python-single-r1
 
@@ -30,17 +30,17 @@ DEPEND="${PYTHON_DEPS}"
 RDEPEND="
 	>=dev-python/adba-1.1.1_alpha20191013
 	>=dev-python/babelfish-0.5.6_alpha20160411
-	>=dev-python/beautifulsoup-4.8.1
+	>=dev-python/beautifulsoup-4.8.2
 	>=dev-python/bencode-2.1.0
-	>=dev-python/CacheControl-0.12.5
-	>=dev-python/certifi-2019.6.16
+	>=dev-python/CacheControl-0.12.6
+	>=dev-python/certifi-2019.11.28
 	>=dev-python/cloudflare-scrape-2.0.9_alpha20191215
 	>=dev-python/chardet-3.0.4
 	>=dev-python/configobj-5.0.6
-	>=dev-python/contextlib2-0.5.5
-	>=dev-python/deluge-client-1.7.1
+	>=dev-python/contextlib2-0.6.0-r1
+	>=dev-python/deluge-client-1.8.0
 	>=dev-python/dirtyjson-1.0.7
-	>=dev-python/dogpile-cache-0.7.1
+	>=dev-python/dogpile-cache-0.9.0
 	>=dev-python/enzyme-0.4.2_alpha20180603
 	>=dev-python/feedparser-5.2.2_alpha20180811
 	>=dev-python/gntp-1.0.3
@@ -50,23 +50,23 @@ RDEPEND="
 	>=dev-python/Js2Py-0.67
 	>=dev-python/jsonrpclib-pelix-0.4.0
 	>=dev-python/knowit-0.2.5_alpha20190305
-	>=dev-python/mako-1.1.0
+	>=dev-python/mako-1.1.1
 	>=dev-python/markdown2-2.3.8
-	>=dev-python/profilehooks-1.11.0
+	>=dev-python/profilehooks-1.11.1
 	>=dev-python/PyGithub-1.43.7
 	>=dev-python/pyjwt-1.7.1
-	>=dev-python/python-dateutil-2.8.0
+	>=dev-python/python-dateutil-2.8.1
 	>=dev-python/python-twitter-3.5
-	>=dev-python/rarfile-3.0
+	>=dev-python/rarfile-3.1
 	>=dev-python/rebulk-2.0.0
 	>=dev-python/requests-2.22.0
-	>=dev-python/requests-oauthlib-1.2.0
-	>=dev-python/six-1.13.0
+	>=dev-python/requests-oauthlib-1.3.0
+	>=dev-python/six-1.14.0
 	>=dev-python/subliminal-2.0.6_alpha20190225
 	>=www-servers/tornado-5.1.1
 	>=dev-python/tornroutes-0.5.1
 	>=dev-python/tvdbv2-1.0.1_alpha20190605
-	>=dev-python/validators-0.13.0
+	>=dev-python/validators-0.14.2
 "
 
 
