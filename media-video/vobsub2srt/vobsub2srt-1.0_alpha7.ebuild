@@ -7,14 +7,17 @@
 
 EAPI="5"
 
-EGIT_REPO_URI="git://github.com/ruediger/VobSub2SRT.git"
+SRC_URI="https://github.com/ruediger/VobSub2SRT/archive/v1.0pre7.tar.gz -> $P.tar.gz"
+S=$WORKDIR/VobSub2SRT-1.0pre7
 
-inherit cmake-utils git-r3
+inherit cmake-utils 
 
 IUSE=""
 
 DESCRIPTION="Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine"
 HOMEPAGE="https://github.com/ruediger/VobSub2SRT"
+
+PATCHES=$FILESDIR/cppflags.patch
 
 LICENSE="GPL-3"
 SLOT="0"

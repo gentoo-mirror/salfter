@@ -4,7 +4,6 @@ inherit autotools flag-o-matic versionator git-r3
 
 DESCRIPTION="m7m CPU miner"
 HOMEPAGE="https://github.com/magi-project/wolf-m7m-cpuminer-V2"
-EGIT_PROJECT="wolf-m7m-cpuminer"
 EGIT_REPO_URI="https://github.com/magi-project/wolf-m7m-cpuminer-V2"
 
 LICENSE="GPL-2"
