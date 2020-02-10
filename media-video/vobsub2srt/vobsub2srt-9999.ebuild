@@ -9,7 +9,7 @@ EAPI="5"
 
 EGIT_REPO_URI="git://github.com/ruediger/VobSub2SRT.git"
 
-inherit cmake-utils git-2
+inherit cmake-utils git-r3
 
 IUSE=""
 

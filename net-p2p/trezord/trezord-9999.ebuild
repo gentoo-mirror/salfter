@@ -2,7 +2,7 @@
 
 EAPI=4
 
-inherit eutils git-2
+inherit eutils git-r3
 
 DESCRIPTION="Trezor Bridge"
 HOMEPAGE="https://github.com/trezor/trezord-go"

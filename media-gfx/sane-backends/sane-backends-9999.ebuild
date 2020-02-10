@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit git-2 autotools eutils flag-o-matic multilib multilib-minimal udev user toolchain-funcs
+inherit git-r3 autotools eutils flag-o-matic multilib multilib-minimal udev user toolchain-funcs
 
 # gphoto and v4l are handled by their usual USE flags.
 # The pint backend was disabled because I could not get it to compile.

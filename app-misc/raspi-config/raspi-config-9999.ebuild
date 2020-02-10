@@ -1,5 +1,5 @@
 EAPI=5
-inherit eutils git-2
+inherit eutils git-r3
 DESCRIPTION="Raspberry Pi config tool"
 HOMEPAGE="https://github.com/asb/raspi-config"
 SRC_URI=""

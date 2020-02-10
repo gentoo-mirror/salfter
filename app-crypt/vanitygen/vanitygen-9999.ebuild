@@ -2,7 +2,7 @@
 
 EAPI="4"
 
-inherit eutils git-2
+inherit eutils git-r3
 
 DESCRIPTION="cryptocurrency vanity-address generator"
 HOMEPAGE="https://gitlab.com/salfter/vanitygen"

@@ -6,7 +6,7 @@ EAPI=4
 
 DB_VER="4.8"
 
-inherit autotools bash-completion-r1 db-use eutils git-2 user versionator systemd
+inherit autotools bash-completion-r1 db-use eutils git-r3 user versionator systemd
 
 MyPV="${PV/_/}"
 MyPN="anoncoin"

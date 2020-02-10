@@ -3,7 +3,7 @@
 
 EAPI="5"
 
-inherit autotools flag-o-matic versionator git-2
+inherit autotools flag-o-matic versionator git-r3
 
 DESCRIPTION="xevan GPU miner"
 HOMEPAGE="https://bitcointalk.org/index.php?topic=2237852.0"

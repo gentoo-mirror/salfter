@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_4,3_5} )
 
 EGIT_PROJECT="ocropy"
 EGIT_REPO_URI="https://github.com/tmbdev/ocropy"
-inherit git-2 eutils distutils-r1
+inherit git-r3 eutils distutils-r1
 
 DESCRIPTION="open-source document analysis and OCR"
 HOMEPAGE="https://github.com/tmbdev/ocropy"
