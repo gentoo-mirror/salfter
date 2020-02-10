@@ -1,6 +1,6 @@
 EAPI="5"
 
-inherit autotools flag-o-matic versionator git-2
+inherit autotools flag-o-matic versionator git-r3
 
 DESCRIPTION="m7m CPU miner"
 HOMEPAGE="https://github.com/magi-project/wolf-m7m-cpuminer-V2"
