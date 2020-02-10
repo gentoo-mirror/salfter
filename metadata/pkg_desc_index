@@ -22,7 +22,7 @@ dev-libs/rinutils 0.2.0: C11 / gnu11 utilities C library by Shlomi Fish / Rindol
 dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
-dev-python/CacheControl 0.12.5: The httplib2 caching algorithms packaged up for use with requests
+dev-python/CacheControl 0.12.6: The httplib2 caching algorithms packaged up for use with requests
 dev-python/Js2Py 0.67: JavaScript to Python Translator & JavaScript interpreter written in 100% pure Python
 dev-python/PyQt5 5.9.2: Python bindings for the Qt framework
 dev-python/adba 1.1.1_alpha20191013: simple and abstract interface for anidb
@@ -40,14 +40,15 @@ dev-python/click 6.2: A Python package for creating beautiful command line inter
 dev-python/cloudflare-scrape 2.0.9_alpha20191215: A Python module to bypass Cloudflare's anti-bot page
 dev-python/commontools 0.1.0: Common functions that are often needed but don't really belong anywhere
 dev-python/configparser 3.7.3: Backport of Python-3 built-in configparser
+dev-python/contextlib2 0.6.0-r1: Backports and enhancements for the contextlib module
 dev-python/css-parser 1.0.4: fork of cssutils with ebook extensions
 dev-python/cython-hidapi 9999: Python wrapper for the hidapi
-dev-python/deluge-client 1.7.1: Simple Deluge Client
+dev-python/deluge-client 1.8.0: Simple Deluge Client
 dev-python/dirtyjson 1.0.7: Python JSON parser for reading JSON objects out of JS files
 dev-python/diskcache 2.9.0: Disk and file backed cache
 dev-python/docopt 0.6.1: Pythonic argument parser, that will make you smile
 dev-python/docopts 0.6.1: shell interface for docopt, the CLI description language
-dev-python/dogpile-cache 0.7.1: A locking API for expiring values while a single thread generates a new value.
+dev-python/dogpile-cache 0.9.0: A locking API for expiring values while a single thread generates a new value.
 dev-python/emoji 0.4.5 0.5.1: Emoji for Python
 dev-python/ensure 0.8.2: Literate BDD assertions in Python with no magic
 dev-python/enzyme 0.4.2_alpha20180603: Python video metadata parser
@@ -69,14 +70,14 @@ dev-python/jsonrpclib-pelix 0.4.0: python implementation of the JSON-RPC spec (1
 dev-python/keychain 0.14.2.0: Library for BIP32 hierarchical deterministic keychains/wallets.
 dev-python/keylib 0.1.1: Library for creating and working with private keys, public keys, and bitcoin addresses.
 dev-python/knowit 0.2.5_alpha20190305: Know better your media files
-dev-python/mako 1.1.0: A Python templating language
+dev-python/mako 1.1.1: A Python templating language
 dev-python/markdown2 2.3.8: Python Markdown language reimplementation
 dev-python/netaddr 0.7.19: Network address representation and manipulation library
 dev-python/netifaces 0.10.9: Portable network interface information
 dev-python/oauth2 1.10_alpha20170118: A fully tested, abstract interface to creating OAuth clients and servers
 dev-python/pint 0.8.1: makes units easy
 dev-python/pkginfo 1.5.0.1: Provides an API for querying the distutils metadata written in a PKG-INFO file
-dev-python/profilehooks 1.11.0: collection of decorators for profiling functions
+dev-python/profilehooks 1.11.1: collection of decorators for profiling functions
 dev-python/psutil 5.6.1: Retrieve information on running processes and system utilization
 dev-python/pybitcoin 0.9.9: Library for Bitcoin & other cryptocurrencies. Tools are provided for blockchain transactions, RPC calls, and private keys, public keys, and addresses.
 dev-python/pycoin 0.80: Python Bitcoin Utilities
@@ -91,9 +92,10 @@ dev-python/python-sane 2.8.2: Python interface to the SANE scanner and frame gra
 dev-python/python-trezor 0.11.2: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 dev-python/python-twitter 3.5: Python wrapper around the Twitter API
 dev-python/pyyaml 3.10 5.1: YAML parser and emitter for Python
+dev-python/rarfile 3.1: Module for RAR archive reading
 dev-python/rebulk 2.0.0: Python library that performs advanced searches in strings
 dev-python/requests 2.22.0: HTTP library for human beings
-dev-python/requests-oauthlib 1.2.0: This project provides first-class OAuth library support for Requests
+dev-python/requests-oauthlib 1.3.0: This project provides first-class OAuth library support for Requests
 dev-python/rsa 4.0: Pure-Python RSA implementation
 dev-python/sarge 0.1.5: wrapper for subprocess which provides command pipeline functionality
 dev-python/savitar 3.6.0 4.0.0: a C++ implementation of 3MF loading with SIP Python bindings
@@ -113,7 +115,7 @@ dev-python/twisted 16.6.0-r3: An asynchronous networking framework written in Py
 dev-python/typing 3.6.6: Type Hints for Python
 dev-python/uranium 3.6.0 4.0.0: A Python framework for building 3D printing related applications
 dev-python/utilitybelt 0.2.6: Generally useful tools. A python utility belt.
-dev-python/validators 0.13.0: Python Data Validation for Humans
+dev-python/validators 0.14.2: Python Data Validation for Humans
 dev-python/watchdog 0.8.3-r1 0.8.3-r2 0.9.0: Python API and shell utilities to monitor file system events
 dev-python/webassets 0.12.1: Asset management for Python web development
 dev-python/websocket-client 0.56.0: WebSocket client for python with hybi13 support
@@ -157,7 +159,7 @@ net-misc/sp-ccminer 1.5.81: Bitcoin CPU/GPU/FPGA miner in C
 net-misc/tpruvot-ccminer 2.3.1: Bitcoin CPU/GPU/FPGA miner in C
 net-misc/zec-miner-bin 0.3.4b: EWBF Zcash CUDA miner
 net-news/trn 4.0-r77: threaded news reader
-net-nntp/medusa 0.3.10: Automatic Video Library Manager for TV Shows
+net-nntp/medusa 0.3.12: Automatic Video Library Manager for TV Shows
 net-nntp/sabnzbd 2.3.9: Binary newsgrabber with web-interface
 net-p2p/btsync 2.2.7: Magic folder style file syncing powered by BitTorrent.
 net-p2p/litecoin-cli 0.13.2.1: P2P Internet currency based on Bitcoin but easier to mine
