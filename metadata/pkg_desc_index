@@ -2,12 +2,16 @@ app-accessibility/onboard 1.4.1: Onscreen keyboard for everybody who can't use a
 app-arch/nulib2 3.1.0: utility & library for manipulating NuFX archives
 app-benchmarks/iometer 1.1.0: I/O subsystem measurement and characterization tool for single and clustered systems
 app-crypt/sshexport 2.4: SSH public key exporter
+app-crypt/vanitygen 9999: cryptocurrency vanity-address generator
+app-crypt/vanitygen-plus 9999: cryptocurrency vanity-address generator
 app-crypt/zuluCrypt 5.4.0: Front end to cryptsetup
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
+app-misc/raspi-config 9999: Raspberry Pi config tool
 app-misc/triggerhappy 0.5.0: a lightweight hotkey daemon
 app-text/gimagereader 3.3.0: A tesseract OCR front-end
+app-text/ocropy 9999: open-source document analysis and OCR
 app-text/pdfsandwich 0.1.6: generator of sandwich OCR pdf files
 app-text/qtspell 0.8.2-r1: Spell checking for Qt text widgets
 dev-dotnet/gnu-getopt-net 9999: a C# port of the Java port of GNU getopt
@@ -24,6 +28,10 @@ dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc librar
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
 dev-python/CacheControl 0.12.6: The httplib2 caching algorithms packaged up for use with requests
 dev-python/Js2Py 0.67: JavaScript to Python Translator & JavaScript interpreter written in 100% pure Python
+dev-python/ProfitLib 9999: altcoin mining profitability calculator
+dev-python/PyCCEX 9999: Python binding for the C-CEX altcoin-trading API
+dev-python/PyCryptopia 9999: Python binding for the Cryptopia altcoin-trading API
+dev-python/PyCryptsy 9999: Python binding for the Cryptsy altcoin-trading API
 dev-python/PyQt5 5.9.2: Python bindings for the Qt framework
 dev-python/adba 1.1.1_alpha20191013: simple and abstract interface for anidb
 dev-python/awesome-slugify 1.6.5: Python flexible slugify function
@@ -32,7 +40,9 @@ dev-python/base58 0.2.5: Base58 and Base58Check implementation
 dev-python/beautifulsoup 4.8.1: Pythonic idioms for iterating, searching, and modifying an HTML/XML parse tree
 dev-python/bencode 2.1.0: Simple bencode parser
 dev-python/bitcoin 1.1.42: Python Bitcoin Tools
+dev-python/bitcoin-abe 9999: cryptocurrency blockchain explorer
 dev-python/bitmerchant 0.1.8: Bitmerchant is a work-in-progress python library for common bitcoin/altcoin merchant uses.
+dev-python/bleuBot 9999: Python binding for the BleuTrade altcoin-trading API
 dev-python/boto_utils 0.3: Command-line tools for interacting with Amazon Web Services, based on Boto
 dev-python/cachelib 0.1: A collection of cache libraries in the same API interface.
 dev-python/chainmap 1.0.3: ChainMap implementation for older Python versions
@@ -70,6 +80,7 @@ dev-python/jsonrpclib-pelix 0.4.0: python implementation of the JSON-RPC spec (1
 dev-python/keychain 0.14.2.0: Library for BIP32 hierarchical deterministic keychains/wallets.
 dev-python/keylib 0.1.1: Library for creating and working with private keys, public keys, and bitcoin addresses.
 dev-python/knowit 0.2.5_alpha20190305: Know better your media files
+dev-python/litecoin_scrypt 9999: Python Litecoin SCrypt library from github:forrestv/p2pool
 dev-python/mako 1.1.1: A Python templating language
 dev-python/markdown2 2.3.8: Python Markdown language reimplementation
 dev-python/netaddr 0.7.19: Network address representation and manipulation library
@@ -77,15 +88,21 @@ dev-python/netifaces 0.10.9: Portable network interface information
 dev-python/oauth2 1.10_alpha20170118: A fully tested, abstract interface to creating OAuth clients and servers
 dev-python/pint 0.8.1: makes units easy
 dev-python/pkginfo 1.5.0.1: Provides an API for querying the distutils metadata written in a PKG-INFO file
+dev-python/poloniex 9999: Python binding for the Poloniex altcoin-trading API
 dev-python/profilehooks 1.11.1: collection of decorators for profiling functions
 dev-python/psutil 5.6.1: Retrieve information on running processes and system utilization
 dev-python/pybitcoin 0.9.9: Library for Bitcoin & other cryptocurrencies. Tools are provided for blockchain transactions, RPC calls, and private keys, public keys, and addresses.
+dev-python/pycgminer 9999: Python binding for the cgminer RPC API
 dev-python/pycoin 0.80: Python Bitcoin Utilities
 dev-python/pycurl 7.43.0: python binding for curl/libcurl
 dev-python/pyjsparser 2.5.2: Fast javascript parser (based on esprima.js)
 dev-python/pyjwt 1.7.1: JSON Web Token implementation in Python
+dev-python/pylcdsysinfo 9999: Python interface for Coldtears LCD module
 dev-python/pylru 1.0.9 1.2.0: A least recently used (LRU) cache for Python
+dev-python/python-bitcoinrpc 9999: Python interface to bitcoind's JSON-RPC API
+dev-python/python-bittrex 9999: Python binding for the Bittrex altcoin-trading API
 dev-python/python-dateutil 2.8.0: Extensions to the standard Python datetime module
+dev-python/python-mnemonic 9999: Mnemonic code for generating deterministic keys, BIP39
 dev-python/python-nmap 0.6.1: This is a python class to use nmap and access scan results from python3
 dev-python/python-pushover 0.3: Comprehensive bindings and command line utility for the Pushover notification service
 dev-python/python-sane 2.8.2: Python interface to the SANE scanner and frame grabber
@@ -130,6 +147,7 @@ media-gfx/cura 3.6.0 4.0.0: A 3D model slicing application for 3D printing
 media-gfx/curaengine 3.6.0 4.0.0: A 3D model slicing engine for 3D printing
 media-gfx/meshconv-bin 1.27: 3D model converter
 media-gfx/openscad 2019.05: The Programmers Solid 3D CAD Modeller
+media-gfx/sane-backends 9999: Scanner Access Now Easy - Backends
 media-gfx/slic3r-pe 1.41.3 1.42.0_beta2: Prusa Edition of a mesh slicer to generate G-code for fused-filament-fabrication (3D printers)
 media-libs/a52dec 0.7.5: library for decoding ATSC A/52 streams used in DVD
 media-libs/lib3mf 1.8.1: implementation of the 3D Manufacturing Format file standard
@@ -142,6 +160,7 @@ media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
 media-video/makemkv 1.12.0: Tool for ripping and streaming Blu-ray, HD-DVD and DVD discs
 media-video/mediaelch 2.4.2: Video metadata scraper
 media-video/mjpg-streamer 9999: MJPG-streamer takes JPGs from Linux-UVC compatible webcams
+media-video/vobsub2srt 9999: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
 net-fs/afpfs-ng 0.8.1: An Apple Filing Protocol client implemented in FUSE
 net-fs/greyhole 0.10.14: redundant storage pooling using Samba
 net-fs/netatalk 2.2.5: Open Source AFP server and other AppleTalk-related utilities
@@ -154,17 +173,56 @@ net-misc/ethminer 0.13.0 0.14.0_rc4: Ethereum miner with CUDA and stratum suppor
 net-misc/hashcash 1.22-r1: Utility to generate hashcash tokens
 net-misc/klaust-ccminer 8.24: Multi-algorithm GPU miner
 net-misc/klaust-ccminer-cryptonight 3.06: Cryptonight CPU/GPU miner
+net-misc/krnlx-ccminer-xevan 9999: xevan GPU miner
 net-misc/ltc_addrconv 0.1: Litecoin 3/M-address converter
 net-misc/sp-ccminer 1.5.81: Bitcoin CPU/GPU/FPGA miner in C
 net-misc/tpruvot-ccminer 2.3.1: Bitcoin CPU/GPU/FPGA miner in C
+net-misc/wolf-m7m-cpuminer 9999: m7m CPU miner
 net-misc/zec-miner-bin 0.3.4b: EWBF Zcash CUDA miner
 net-news/trn 4.0-r77: threaded news reader
 net-nntp/medusa 0.3.12: Automatic Video Library Manager for TV Shows
 net-nntp/sabnzbd 2.3.9: Binary newsgrabber with web-interface
+net-p2p/MinerSwitcher 9999: altcoin mining profitability switcher
+net-p2p/anoncoin-cli 9999: Anoncoin daemon
+net-p2p/anoncoind 9999: Anoncoin daemon
+net-p2p/bitgemd 9999: Bitgem
+net-p2p/bitmarkd 9999: Bitmark daemon
 net-p2p/btsync 2.2.7: Magic folder style file syncing powered by BitTorrent.
+net-p2p/coin42 9999: 42
+net-p2p/darkcoind 9999: Darkcoin
+net-p2p/digibyted 9999: Digibyte daemon and CLI
+net-p2p/digitalcoind 9999: Digitalcoin daemon
+net-p2p/dobbscoind 9999: Dobbscoin daemon
+net-p2p/earthcoind 9999: Earthcoin
+net-p2p/einsteiniumd 9999: Einsteinium
+net-p2p/emarkd 9999: Emark
+net-p2p/fastcoind 0.8.7.2: Fastcoin
+net-p2p/fireflycoind 9999: Fireflycoin
+net-p2p/fluttercoind 9999: Fluttercoin
+net-p2p/fractalcoind 9999: Fractalcoin daemon
+net-p2p/grandcoind 9999: Grandcoin
+net-p2p/joulecoind 9999: Joulecoin daemon
 net-p2p/litecoin-cli 0.13.2.1: P2P Internet currency based on Bitcoin but easier to mine
 net-p2p/litecoind 0.13.2.1: P2P Internet currency based on Bitcoin but easier to mine
+net-p2p/myriadcoin-cli 9999: Myriadcoin daemon
+net-p2p/myriadcoind 9999: Myriadcoin daemon
+net-p2p/nautiluscoind 9999: Nautiluscoin daemon
+net-p2p/neoscoind 9999: Neoscoin
+net-p2p/netcoind 9999: Netcoin
+net-p2p/novacoind 9999: Novacoin
+net-p2p/opensourcecoind 9999: Opensourcecoin
+net-p2p/ppcoind 9999: Ppcoin
+net-p2p/primecoind 9999: Primecoin
+net-p2p/sexcoin-cli 9999: Sexcoin daemon
+net-p2p/sexcoind 9999: Sexcoin daemon
+net-p2p/spots2d 9999: Spots2
+net-p2p/takeicoind 9999: Takeicoin
+net-p2p/tekcoind 9999: Tekcoin
+net-p2p/terracoind 9999: Terracoin daemon & utilities
+net-p2p/titcoind 9999: Titcoin
 net-p2p/trezord 1.2.1 2.0.27 9998 9999: Trezor Bridge
+net-p2p/yacoind 9999: Yacoin
+net-p2p/zetacoind 9999: Zetacoin daemon
 net-print/epson-inkjet-printer-escpr2 1.1.6: Epson Inkjet Printer Driver (ESC/P-R) 2
 sci-electronics/altium2kicad 0.0.20181210: Altium to KiCad converter for PCB and schematics
 sci-electronics/apio 0.4.1: Open source ecosystem for open FPGA boards
