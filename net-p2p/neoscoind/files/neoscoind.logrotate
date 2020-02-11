@@ -1,7 +1,0 @@
-/var/lib/neoscoin/.neoscoin/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP neoscoind
-	endscript
-}

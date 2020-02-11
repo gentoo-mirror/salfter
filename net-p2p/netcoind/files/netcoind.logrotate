@@ -1,7 +1,0 @@
-/var/lib/netcoin/.netcoin/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP netcoind
-	endscript
-}

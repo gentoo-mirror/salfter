@@ -1,7 +1,0 @@
-/var/lib/bitmark/.bitmark/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP bitmarkd
-	endscript
-}

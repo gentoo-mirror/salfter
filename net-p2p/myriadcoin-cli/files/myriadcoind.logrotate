@@ -1,7 +1,0 @@
-/var/lib/myriadcoin/.myriadcoin/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP myriadcoind
-	endscript
-}

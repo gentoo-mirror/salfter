@@ -1,7 +1,0 @@
-/var/lib/dobbscoin/.dobbscoin/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP dobbscoind
-	endscript
-}

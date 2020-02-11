@@ -1,7 +1,0 @@
-/var/lib/titcoin/.titcoin/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP titcoind
-	endscript
-}

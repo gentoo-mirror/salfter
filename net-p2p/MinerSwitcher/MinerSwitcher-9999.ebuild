@@ -4,7 +4,7 @@ inherit git-r3 eutils
 
 DESCRIPTION="altcoin mining profitability switcher"
 HOMEPAGE="https://gitlab.com/salfter/MinerSwitcher"
-EGIT_PROJECT="MinerSwitcher"
+
 EGIT_REPO_URI="https://gitlab.com/salfter/MinerSwitcher.git"
 
 LICENSE="MIT"
