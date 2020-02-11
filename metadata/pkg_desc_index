@@ -2,16 +2,13 @@ app-accessibility/onboard 1.4.1: Onscreen keyboard for everybody who can't use a
 app-arch/nulib2 3.1.0: utility & library for manipulating NuFX archives
 app-benchmarks/iometer 1.1.0: I/O subsystem measurement and characterization tool for single and clustered systems
 app-crypt/sshexport 2.4: SSH public key exporter
-app-crypt/vanitygen 9999: cryptocurrency vanity-address generator
 app-crypt/vanitygen-plus 9999: cryptocurrency vanity-address generator
 app-crypt/zuluCrypt 5.4.0: Front end to cryptsetup
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
-app-misc/raspi-config 9999: Raspberry Pi config tool
 app-misc/triggerhappy 0.5.0: a lightweight hotkey daemon
 app-text/gimagereader 3.3.0: A tesseract OCR front-end
-app-text/ocropy 9999: open-source document analysis and OCR
 app-text/pdfsandwich 0.1.6: generator of sandwich OCR pdf files
 app-text/qtspell 0.8.2-r1: Spell checking for Qt text widgets
 dev-dotnet/gnu-getopt-net 9999: a C# port of the Java port of GNU getopt
@@ -147,7 +144,6 @@ media-gfx/cura 3.6.0 4.0.0: A 3D model slicing application for 3D printing
 media-gfx/curaengine 3.6.0 4.0.0: A 3D model slicing engine for 3D printing
 media-gfx/meshconv-bin 1.27: 3D model converter
 media-gfx/openscad 2019.05: The Programmers Solid 3D CAD Modeller
-media-gfx/sane-backends 9999: Scanner Access Now Easy - Backends
 media-gfx/slic3r-pe 1.41.3 1.42.0_beta2: Prusa Edition of a mesh slicer to generate G-code for fused-filament-fabrication (3D printers)
 media-libs/a52dec 0.7.5: library for decoding ATSC A/52 streams used in DVD
 media-libs/lib3mf 1.8.1: implementation of the 3D Manufacturing Format file standard
@@ -160,7 +156,7 @@ media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
 media-video/makemkv 1.12.0: Tool for ripping and streaming Blu-ray, HD-DVD and DVD discs
 media-video/mediaelch 2.4.2: Video metadata scraper
 media-video/mjpg-streamer 9999: MJPG-streamer takes JPGs from Linux-UVC compatible webcams
-media-video/vobsub2srt 9999: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
+media-video/vobsub2srt 1.0_alpha7: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
 net-fs/afpfs-ng 0.8.1: An Apple Filing Protocol client implemented in FUSE
 net-fs/greyhole 0.10.14: redundant storage pooling using Samba
 net-fs/netatalk 2.2.5: Open Source AFP server and other AppleTalk-related utilities
@@ -173,7 +169,6 @@ net-misc/ethminer 0.13.0 0.14.0_rc4: Ethereum miner with CUDA and stratum suppor
 net-misc/hashcash 1.22-r1: Utility to generate hashcash tokens
 net-misc/klaust-ccminer 8.24: Multi-algorithm GPU miner
 net-misc/klaust-ccminer-cryptonight 3.06: Cryptonight CPU/GPU miner
-net-misc/krnlx-ccminer-xevan 9999: xevan GPU miner
 net-misc/ltc_addrconv 0.1: Litecoin 3/M-address converter
 net-misc/sp-ccminer 1.5.81: Bitcoin CPU/GPU/FPGA miner in C
 net-misc/tpruvot-ccminer 2.3.1: Bitcoin CPU/GPU/FPGA miner in C
