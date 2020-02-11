@@ -177,7 +177,7 @@ net-news/trn 4.0-r77: threaded news reader
 net-nntp/medusa 0.3.12: Automatic Video Library Manager for TV Shows
 net-nntp/sabnzbd 2.3.9: Binary newsgrabber with web-interface
 net-p2p/MinerSwitcher 9999: altcoin mining profitability switcher
-net-p2p/trezord 1.2.1 2.0.27 9998 9999: Trezor Bridge
+net-p2p/trezord 1.2.1 2.0.28 9998 9999: Trezor Bridge
 net-print/epson-inkjet-printer-escpr2 1.1.6: Epson Inkjet Printer Driver (ESC/P-R) 2
 sci-electronics/altium2kicad 0.0.20181210: Altium to KiCad converter for PCB and schematics
 sci-electronics/apio 0.4.1: Open source ecosystem for open FPGA boards
@@ -191,10 +191,10 @@ sci-electronics/kicad-symbols 5.1.0: Electronic Schematic and PCB design tools s
 sci-electronics/kicad-templates 5.1.0: Electronic Schematic and PCB design tools project templates
 sci-electronics/kicad_oce_vis 0.0.20160601: experimentation with STEP/IGES visualization in kicad via OCE
 sci-electronics/kifield 0.1.12: bulk-edit components in a KiCad schematic or library by transferring fields to/from a spreadsheet
-sci-electronics/nextpnr 0.0.20191230: portable FPGA place and route tool
-sci-electronics/prjtrellis 0.0.20191207: reverse-engineered tools for Lattice ECP5 FPGAs
+sci-electronics/nextpnr 0.0.20200204: portable FPGA place and route tool
+sci-electronics/prjtrellis 0.0.20200204: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/tinyprog 1.0.23 1.0.24_pre48: Programmer for FPGA boards using the TinyFPGA USB Bootloader
-sci-electronics/yosys 0.9 0.10_alpha20191230: framework for Verilog RTL synthesis
+sci-electronics/yosys 0.9 0.10_alpha20200210: framework for Verilog RTL synthesis
 sci-libs/Shapely 1.6.4: Manipulation and analysis of geometric objects in the Cartesian plane
 sci-libs/cadquery 0.1.5: A parametric CAD scripting framework based on PythonOCC
 sci-libs/openmvg 9999-r1: open Multiple View Geometry library. Basis for 3D computer vision and Structure from Motion.
