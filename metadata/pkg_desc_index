@@ -8,7 +8,6 @@ app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
 app-misc/triggerhappy 0.5.0: a lightweight hotkey daemon
-app-text/gimagereader 3.3.0: A tesseract OCR front-end
 app-text/pdfsandwich 0.1.6: generator of sandwich OCR pdf files
 app-text/qtspell 0.8.2-r1: Spell checking for Qt text widgets
 dev-dotnet/gnu-getopt-net 9999: a C# port of the Java port of GNU getopt
@@ -178,46 +177,7 @@ net-news/trn 4.0-r77: threaded news reader
 net-nntp/medusa 0.3.12: Automatic Video Library Manager for TV Shows
 net-nntp/sabnzbd 2.3.9: Binary newsgrabber with web-interface
 net-p2p/MinerSwitcher 9999: altcoin mining profitability switcher
-net-p2p/anoncoin-cli 9999: Anoncoin daemon
-net-p2p/anoncoind 9999: Anoncoin daemon
-net-p2p/bitgemd 9999: Bitgem
-net-p2p/bitmarkd 9999: Bitmark daemon
-net-p2p/btsync 2.2.7: Magic folder style file syncing powered by BitTorrent.
-net-p2p/coin42 9999: 42
-net-p2p/darkcoind 9999: Darkcoin
-net-p2p/digibyted 9999: Digibyte daemon and CLI
-net-p2p/digitalcoind 9999: Digitalcoin daemon
-net-p2p/dobbscoind 9999: Dobbscoin daemon
-net-p2p/earthcoind 9999: Earthcoin
-net-p2p/einsteiniumd 9999: Einsteinium
-net-p2p/emarkd 9999: Emark
-net-p2p/fastcoind 0.8.7.2: Fastcoin
-net-p2p/fireflycoind 9999: Fireflycoin
-net-p2p/fluttercoind 9999: Fluttercoin
-net-p2p/fractalcoind 9999: Fractalcoin daemon
-net-p2p/grandcoind 9999: Grandcoin
-net-p2p/joulecoind 9999: Joulecoin daemon
-net-p2p/litecoin-cli 0.13.2.1: P2P Internet currency based on Bitcoin but easier to mine
-net-p2p/litecoind 0.13.2.1: P2P Internet currency based on Bitcoin but easier to mine
-net-p2p/myriadcoin-cli 9999: Myriadcoin daemon
-net-p2p/myriadcoind 9999: Myriadcoin daemon
-net-p2p/nautiluscoind 9999: Nautiluscoin daemon
-net-p2p/neoscoind 9999: Neoscoin
-net-p2p/netcoind 9999: Netcoin
-net-p2p/novacoind 9999: Novacoin
-net-p2p/opensourcecoind 9999: Opensourcecoin
-net-p2p/ppcoind 9999: Ppcoin
-net-p2p/primecoind 9999: Primecoin
-net-p2p/sexcoin-cli 9999: Sexcoin daemon
-net-p2p/sexcoind 9999: Sexcoin daemon
-net-p2p/spots2d 9999: Spots2
-net-p2p/takeicoind 9999: Takeicoin
-net-p2p/tekcoind 9999: Tekcoin
-net-p2p/terracoind 9999: Terracoin daemon & utilities
-net-p2p/titcoind 9999: Titcoin
 net-p2p/trezord 1.2.1 2.0.27 9998 9999: Trezor Bridge
-net-p2p/yacoind 9999: Yacoin
-net-p2p/zetacoind 9999: Zetacoin daemon
 net-print/epson-inkjet-printer-escpr2 1.1.6: Epson Inkjet Printer Driver (ESC/P-R) 2
 sci-electronics/altium2kicad 0.0.20181210: Altium to KiCad converter for PCB and schematics
 sci-electronics/apio 0.4.1: Open source ecosystem for open FPGA boards
