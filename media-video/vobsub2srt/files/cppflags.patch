@@ -1,0 +1,12 @@
+https://github.com/ruediger/VobSub2SRT/issues/67#issuecomment-363196505
+--- CMakeLists.txt	2015-08-30 10:45:47.000000000 -0700
++++ CMakeLists.txt	2020-02-10 15:24:27.673022371 -0800
+@@ -54,7 +54,7 @@
+ include(CheckCXXSourceRuns)
+ 
+ set(CMAKE_C_FLAGS "-std=gnu99")
+-set(CMAKE_CXX_FLAGS "-ansi -pedantic -Wall -Wextra -Wno-long-long")
++set(CMAKE_CXX_FLAGS "-ansi -pedantic -Wall -Wextra -Wno-long-long -std=gnu++11")
+ 
+ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -mtune=native -march=native -DNDEBUG -fomit-frame-pointer -ffast-math") # TODO -Ofast GCC 4.6
+ set(CMAKE_C_FLAGS_RELEASE ${CMAKE_CXX_FLAGS_RELEASE})

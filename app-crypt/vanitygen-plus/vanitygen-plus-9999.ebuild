@@ -6,7 +6,6 @@ inherit eutils git-r3
 
 DESCRIPTION="cryptocurrency vanity-address generator"
 HOMEPAGE="https://github.com/exploitagency/vanitygen-plus"
-EGIT_PROJECT="vanitygen-plus"
 EGIT_REPO_URI="https://github.com/exploitagency/vanitygen-plus"
 
 LICENSE="GPL-3"
