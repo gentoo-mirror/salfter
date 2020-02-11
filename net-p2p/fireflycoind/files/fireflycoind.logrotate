@@ -1,7 +1,0 @@
-/var/lib/fireflycoin/.fireflycoin/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP fireflycoind
-	endscript
-}

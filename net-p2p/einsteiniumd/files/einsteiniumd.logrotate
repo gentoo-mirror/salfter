@@ -1,7 +1,0 @@
-/var/lib/einsteinium/.einsteinium/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP einsteiniumd
-	endscript
-}

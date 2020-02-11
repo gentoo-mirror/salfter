@@ -1,7 +1,0 @@
-/var/lib/opensourcecoin/.Ocoin/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP Ocoind
-	endscript
-}

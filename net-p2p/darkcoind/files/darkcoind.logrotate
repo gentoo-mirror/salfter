@@ -1,7 +1,0 @@
-/var/lib/darkcoin/.darkcoin/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP darkcoind
-	endscript
-}

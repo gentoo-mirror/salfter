@@ -1,7 +1,0 @@
-/var/lib/anoncoin/.anoncoin/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP anoncoind
-	endscript
-}

@@ -1,7 +1,0 @@
-/var/lib/fluttercoin/.fluttercoin/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP fluttercoind
-	endscript
-}

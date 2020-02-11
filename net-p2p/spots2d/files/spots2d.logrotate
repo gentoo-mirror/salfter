@@ -1,7 +1,0 @@
-/var/lib/spots2/.spots2/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP spots2d
-	endscript
-}

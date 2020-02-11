@@ -1,7 +1,0 @@
-/var/lib/unobtanium/.unobtanium/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP unobtaniumd
-	endscript
-}

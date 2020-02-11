@@ -1,7 +1,0 @@
-/var/lib/emark/.eMark/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP eMarkd
-	endscript
-}

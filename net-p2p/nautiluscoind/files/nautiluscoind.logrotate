@@ -1,7 +1,0 @@
-/var/lib/nautiluscoin/.nautiluscoin/debug.log {
-	weekly
-	sharedscripts
-	postrotate
-		killall -HUP nautiluscoind
-	endscript
-}
