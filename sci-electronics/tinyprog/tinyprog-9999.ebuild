@@ -1,16 +1,16 @@
 EAPI=6
 
-PYTHON_COMPAT=( python2_7 python3_{4,5,6} )
-inherit distutils-r1
+PYTHON_COMPAT=( python2_7 python3_{4,5,6,7} )
+inherit distutils-r1 git-r3
 
 DESCRIPTION="Programmer for FPGA boards using the TinyFPGA USB Bootloader"
 HOMEPAGE="https://github.com/tinyfpga/TinyFPGA-Bootloader/"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/tinyprog-1.0.24.dev20.tar.gz -> ${P}.tar.gz"
-PATCHES="$FILESDIR/$P-nongit.patch"
+EGIT_REPO_URI="https://github.com/tinyfpga/TinyFPGA-Bootloader"
+S=$WORKDIR/$P/programmer
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 
 RDEPEND=">=dev-python/pyserial-3
 	 <dev-python/pyserial-4
@@ -23,10 +23,4 @@ RDEPEND=">=dev-python/pyserial-3
 	 dev-python/six
 	 dev-python/packaging
 	 dev-python/pyusb"
-DEPEND=""
-
-src_unpack() {
-  cd $WORKDIR
-  unpack $A
-  mv $WORKDIR/tinyprog-1.0.24.dev20 $WORKDIR/$P
-}
+DEPEND="dev-python/setuptools_scm"
