@@ -1,0 +1,38 @@
+From 6209e25dab20b233e399ff36fabe4252db0f9e44 Mon Sep 17 00:00:00 2001
+From: Sandro Mani <manisandro@gmail.com>
+Date: Wed, 19 Feb 2020 12:04:10 +0100
+Subject: [PATCH] =?UTF-8?q?[Qt]=20Fix=20"incomplete=20type=20=E2=80=98QUrl?=
+ =?UTF-8?q?=E2=80=99"=20when=20compiling=20against=20Qt=205.14+?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ qt/src/hocr/HOCROdtExporter.cc  | 1 +
+ qt/src/hocr/HOCRTextExporter.cc | 1 +
+ 2 files changed, 2 insertions(+)
+
+diff --git a/qt/src/hocr/HOCROdtExporter.cc b/qt/src/hocr/HOCROdtExporter.cc
+index d8f38f3e..07179c6a 100644
+--- a/qt/src/hocr/HOCROdtExporter.cc
++++ b/qt/src/hocr/HOCROdtExporter.cc
+@@ -29,6 +29,7 @@
+ #include <QDesktopServices>
+ #include <QFileInfo>
+ #include <QMessageBox>
++#include <QUrl>
+ #include <QUuid>
+ #include <QXmlStreamWriter>
+ #include <quazipfile.h>
+diff --git a/qt/src/hocr/HOCRTextExporter.cc b/qt/src/hocr/HOCRTextExporter.cc
+index e72793fb..5e0f3488 100644
+--- a/qt/src/hocr/HOCRTextExporter.cc
++++ b/qt/src/hocr/HOCRTextExporter.cc
+@@ -28,6 +28,7 @@
+ #include <QFileInfo>
+ #include <QMessageBox>
+ #include <QTextStream>
++#include <QUrl>
+ 
+ bool HOCRTextExporter::run(const HOCRDocument* hocrdocument, QString& filebasename) {
+ 	QString suggestion = filebasename;
