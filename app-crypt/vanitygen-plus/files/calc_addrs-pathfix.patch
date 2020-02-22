@@ -1,5 +1,5 @@
---- oclengine.c~	2017-12-13 17:35:49.000000000 -0800
-+++ oclengine.c	2017-12-13 17:52:16.877546971 -0800
+--- x/oclengine.c	2017-12-13 17:35:49.000000000 -0800
++++ x/oclengine.c	2017-12-13 17:52:16.877546971 -0800
 @@ -944,7 +944,7 @@
  		end += snprintf(optbuf + end, sizeof(optbuf) - end,
  				"-cl-nv-verbose ");
