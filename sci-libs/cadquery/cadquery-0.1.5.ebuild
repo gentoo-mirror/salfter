@@ -10,7 +10,7 @@ SRC_URI="https://github.com/CadQuery/$PN/archive/$PV.tar.gz -> $P.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 
 RDEPEND=">=sci-libs/pythonocc-0.18.1
 	 dev-python/pyparsing"

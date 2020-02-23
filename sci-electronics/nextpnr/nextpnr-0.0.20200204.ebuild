@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/YosysHQ/nextpnr"
 SRC_URI="https://github.com/YosysHQ/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
 LICENSE=ISC
 SLOT=0
-KEYWORDS=~amd64
+KEYWORDS=amd64
 IUSE="ice40 ecp5"
 
 DEPEND="ice40? ( sci-electronics/icestorm 

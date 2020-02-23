@@ -6,7 +6,7 @@ HOMEPAGE="http://www.pythonocc.org/"
 SRC_URI="https://github.com/tpaviot/$PN-core/archive/$PV.tar.gz -> $P.tar.gz"
 LICENSE=LGPL-3
 SLOT=0
-KEYWORDS=~amd64
+KEYWORDS=amd64
 S=$WORKDIR/$PN-core-$PV
 
 DEPEND=">=sci-libs/oce-0.18.1
