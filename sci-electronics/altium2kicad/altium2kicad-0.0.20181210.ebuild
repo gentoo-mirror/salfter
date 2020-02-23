@@ -8,7 +8,7 @@ HOMEPAGE="https://github.com/thesourcerer8/altium2kicad"
 SRC_URI="https://github.com/thesourcerer8/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
 LICENSE=GPL-2
 SLOT=0
-KEYWORDS=~amd64
+KEYWORDS=amd64
 
 RDEPEND="dev-perl/Math-Bezier
 	 dev-perl/Math-Geometry-Planar"
