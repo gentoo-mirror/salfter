@@ -56,7 +56,6 @@ media-tv/mythtv:mythlogserver - Enable support for syslog and file logging. Not 
 media-tv/mythtv:perl - Builds the perl bindings for MythTV. Allows you to write scripts in Perl to control your MythTV setup or communicate with it.
 media-tv/mythtv:wrapper - Use Ubuntu mythtfrontend wrapper.
 media-tv/mythtv:xmltv - Pulls in the media-tv/xmltv TV listing grabbers for users not using Schedules Direct.
-media-video/makemkv:gui - Build the Qt5 GUI
 net-misc/cgminer:ants1 - Enable support for Antminer S1 Bitmain
 net-misc/cgminer:ants2 - Enable support for Antminer S2 Bitmain
 net-misc/cgminer:ants3 - Enable support for Antminer S3 Bitmain
