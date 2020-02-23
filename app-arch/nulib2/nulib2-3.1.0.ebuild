@@ -12,7 +12,7 @@ SRC_URI="https://github.com/fadden/nulib2/archive/v3.1.0.tar.gz -> nulib2-${PV}.
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~x86 amd64"
 IUSE=""
 
 src_configure() {

@@ -17,7 +17,7 @@ RDEPEND=">=dev-python/openpyxl-2.3.2
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE=""
 S=${WORKDIR}/KiField-${COMMIT}
 

@@ -8,7 +8,7 @@ HOMEPAGE="http://www.clifford.at/icestorm/"
 SRC_URI="https://github.com/cliffordwolf/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
 LICENSE=ISC
 SLOT=0
-KEYWORDS=~amd64
+KEYWORDS=amd64
 
 DEPEND="dev-embedded/libftdi
 	dev-vcs/git

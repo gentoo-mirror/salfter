@@ -21,7 +21,7 @@ PATCHES=$FILESDIR/cppflags.patch
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 
 RDEPEND=">=app-text/tesseract-2.04-r1
     >=virtual/ffmpeg-0.6.90"

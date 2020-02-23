@@ -8,7 +8,7 @@ HOMEPAGE="https://github.com/YosysHQ/arachne-pnr"
 SRC_URI="https://github.com/YosysHQ/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
 LICENSE=MIT
 SLOT=0
-KEYWORDS=~amd64
+KEYWORDS=amd64
 
 DEPEND="sci-electronics/icestorm"
 

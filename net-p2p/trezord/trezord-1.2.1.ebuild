@@ -10,7 +10,7 @@ EGIT_REPO_URI="https://github.com/trezor/trezord"
 EGIT_COMMIT=7f45f5d
 LICENSE="LGPL-3"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 
 DEPEND="dev-libs/boost[static-libs]
 	>=dev-libs/protobuf-3[static-libs]
