@@ -1,0 +1,13 @@
+--- x/cmake/FindGeogram.cmake	2020-02-06 04:05:28.000000000 -0800
++++ x/cmake/FindGeogram.cmake	2020-02-19 21:47:35.210554578 -0800
+@@ -27,8 +27,8 @@
+ )
+ 
+ set (GEOGRAM_SEARCH_PATHS_SYSTEM
+-  "/usr/lib"
+-  "/usr/lib/${CMAKE_LIBRARY_ARCHITECTURE}"
++  "/usr/lib64"
++  "/usr/lib64/${CMAKE_LIBRARY_ARCHITECTURE}"
+ )
+ 
+ find_path (GEOGRAM_INCLUDE_DIR
