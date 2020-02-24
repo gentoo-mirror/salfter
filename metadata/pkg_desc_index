@@ -137,13 +137,16 @@ dev-python/websocket-client 0.56.0: WebSocket client for python with hybi13 supp
 dev-python/werkzeug 0.8.3 0.15.1: Collection of various utilities for WSGI applications
 dev-python/wrapt 1.11.1: Module for decorators, wrappers and monkey patching
 dev-python/zttf 0.0.20180718: Python TTF file parser
+dev-qt/qtoiio 2019.2.0: Qt Image IO plugin based on OpenImageIO
 dev-vcs/gitmon 0.3.2: Git Repository Monitor
 games-misc/fortune-mod 2.12.0: The notorious fortune program
 mail-filter/hashcash-milter 0.1.3: A milter-based application to mint and check HashCash stamps
 media-gfx/CQ-editor 0.0_alpha20191117: CadQuery GUI editor based on PyQT
+media-gfx/alicevision 2.2.0: photogrammetric computer vision framework
 media-gfx/cura 3.6.0 4.0.0: A 3D model slicing application for 3D printing
 media-gfx/curaengine 3.6.0 4.0.0: A 3D model slicing engine for 3D printing
 media-gfx/meshconv-bin 1.27: 3D model converter
+media-gfx/meshroom 2019.2.0: GPU-accelerated photogrammetry
 media-gfx/openscad 2019.05: The Programmers Solid 3D CAD Modeller
 media-gfx/slic3r-pe 1.41.3 1.42.0_beta2: Prusa Edition of a mesh slicer to generate G-code for fused-filament-fabrication (3D printers)
 media-libs/a52dec 0.7.5: library for decoding ATSC A/52 streams used in DVD
@@ -191,7 +194,9 @@ sci-electronics/prjtrellis 0.0.20200204: reverse-engineered tools for Lattice EC
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
 sci-electronics/yosys 0.9 0.10_alpha20200210: framework for Verilog RTL synthesis
 sci-libs/Shapely 1.6.4: Manipulation and analysis of geometric objects in the Cartesian plane
+sci-libs/boost-numeric-bindings 0.99 20110819: Numeric Library Bindings for Boost UBlas
 sci-libs/cadquery 0.1.5: A parametric CAD scripting framework based on PythonOCC
+sci-libs/geogram 1.7.4: programming library of geometric algorithms
 sci-libs/openmvg 9999-r1: open Multiple View Geometry library. Basis for 3D computer vision and Structure from Motion.
 sci-libs/pythonocc 0.18.1: An industrial strength 3D python package for CAD/BIM/PLM/CAM
 sci-libs/smesh 6.7.6: An extension to oce, provides advanced meshing features
