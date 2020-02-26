@@ -1,4 +1,4 @@
-EAPI=5
+EAPI=7
 inherit eutils toolchain-funcs cmake-utils
 
 DESCRIPTION="The notorious fortune program"
@@ -31,7 +31,7 @@ src_prepare() {
 
 src_configure() {
 	local mycmakeargs=(
-		$(cmake-utils_useno offensive NO_OFFENSIVE)
+		-DNO_OFFENSIVE=$(usex offensive)
 	)
 	cmake-utils_src_configure
 }
