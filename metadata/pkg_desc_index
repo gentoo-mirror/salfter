@@ -157,7 +157,7 @@ media-tv/mythtv 0.28.1-r4: Homebrew PVR project
 media-video/atomicparsley 0.9.0: command line program for reading, parsing and setting iTunes-style metadata in MPEG4 files
 media-video/hlsdl 0.1_alpha20200103: C program to download VoD HLS (.m3u8) files
 media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
-media-video/mediaelch 2.4.2: Video metadata scraper
+media-video/mediaelch 2.6.2: Video metadata scraper
 media-video/mjpg-streamer 9999: MJPG-streamer takes JPGs from Linux-UVC compatible webcams
 media-video/vobsub2srt 1.0_alpha7: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
 net-fs/afpfs-ng 0.8.1: An Apple Filing Protocol client implemented in FUSE
@@ -184,15 +184,15 @@ net-p2p/MinerSwitcher 9999: altcoin mining profitability switcher
 net-p2p/trezord 2.0.28 9999: Trezor Bridge
 net-print/epson-inkjet-printer-escpr2 1.1.6: Epson Inkjet Printer Driver (ESC/P-R) 2
 sci-electronics/altium2kicad 0.0.20181210: Altium to KiCad converter for PCB and schematics
-sci-electronics/apio 0.4.1: Open source ecosystem for open FPGA boards
+sci-electronics/apio 0.5.4: Open source ecosystem for open FPGA boards
 sci-electronics/arachne-pnr 0.0.20190728: place-and-route tool for FPGAs
 sci-electronics/boms-away 20171029: BOM/component manager for KiCad
 sci-electronics/icestorm 0.0.20190913: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kifield 0.1.12: bulk-edit components in a KiCad schematic or library by transferring fields to/from a spreadsheet
-sci-electronics/nextpnr 0.0.20200204: portable FPGA place and route tool
+sci-electronics/nextpnr 0.0.20200215: portable FPGA place and route tool
 sci-electronics/prjtrellis 0.0.20200204: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
-sci-electronics/yosys 0.9 0.10_alpha20200210: framework for Verilog RTL synthesis
+sci-electronics/yosys 0.9 0.10_alpha20200226: framework for Verilog RTL synthesis
 sci-libs/Shapely 1.6.4: Manipulation and analysis of geometric objects in the Cartesian plane
 sci-libs/boost-numeric-bindings 0.99 20110819: Numeric Library Bindings for Boost UBlas
 sci-libs/cadquery 0.1.5: A parametric CAD scripting framework based on PythonOCC
