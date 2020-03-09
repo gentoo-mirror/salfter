@@ -1,0 +1,12 @@
+BDEPEND=>=dev-lang/go-1.10
+DEFINED_PHASES=compile install test unpack
+DESCRIPTION=Trezor Bridge
+EAPI=7
+HOMEPAGE=https://github.com/trezor/trezord-go
+KEYWORDS=amd64
+LICENSE=LGPL-3
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/trezor/trezord-go/archive/v2.0.29.tar.gz -> trezord-2.0.29.tar.gz
+_eclasses_=eutils	fcb2aa98e1948b835b5ae66ca52868c5	golang-base	c57d2c3f9e1a02d0feb8b87c7b689892	golang-build	dc25bafa8fc1305a4de66a0a448472e7	golang-vcs-snapshot	12177e83bede6f7fb87eae383864b40b
+_md5_=b560a3554b3c73fa830247eb220c8929
