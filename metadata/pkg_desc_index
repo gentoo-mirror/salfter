@@ -20,7 +20,6 @@ dev-embedded/teensy_loader_cli 2.1_p20161201 9999: Command line Teensy Loader
 dev-libs/libarcus 3.6.0 4.0.0: This library facilitates communication between Cura and its backend
 dev-libs/libcharon 3.6.0 4.0.0: This library facilitates communication between Cura and its backend
 dev-libs/ooml 20171118: C++ Object Oriented Mechanics Language
-dev-libs/redland 1.0.17-r2: High-level interface for the Resource Description Framework
 dev-libs/rinutils 0.2.0: C11 / gnu11 utilities C library by Shlomi Fish / Rindolf
 dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
