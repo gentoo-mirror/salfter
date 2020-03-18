@@ -16,3 +16,11 @@ KEYWORDS="amd64 x86"
 S=$WORKDIR/$PN-$GIT_COMMIT
 RDEPEND="dev-python/pygtk
 	 <dev-python/pygtk-3"
+
+src_install()
+{
+  distutils-r1_src_install
+  echo version=\'7.5.1\' > $D/usr/lib64/python2.7/site-packages/fah/Version.py
+  EPYTHON=python2.7 python_optimize
+}
+
