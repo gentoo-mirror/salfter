@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python2_7 )
+PYTHON_COMPAT=( python2_7 ) # python3_{6,7} )
 PYTHON_REQ_USE="sqlite,ssl"
 
 inherit bash-completion-r1 desktop toolchain-funcs python-single-r1 xdg-utils
@@ -38,10 +38,12 @@ IUSE="ios +udisks"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 COMMON_DEPEND="${PYTHON_DEPS}
+	>=app-text/hunspell-1.7:=
 	>=app-text/podofo-0.9.6_pre20171027:=
 	>=app-text/poppler-0.26.5[qt5]
 	>=dev-libs/chmlib-0.40:=
 	dev-libs/glib:2=
+	dev-libs/hyphen:=
 	>=dev-libs/icu-57.1:=
 	dev-libs/libinput:=
 	>=dev-libs/dbus-glib-0.106
@@ -55,6 +57,7 @@ COMMON_DEPEND="${PYTHON_DEPS}
 		>=dev-python/dbus-python-1.2.4[${PYTHON_MULTI_USEDEP}]
 		dev-python/dnspython[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/feedparser-5.2.1[${PYTHON_MULTI_USEDEP}]
+		>=dev-python/html2text-2019.8.11[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/html5-parser-0.4.9[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/lxml-3.8.0[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/markdown-3.0.1[${PYTHON_MULTI_USEDEP}]
@@ -65,12 +68,14 @@ COMMON_DEPEND="${PYTHON_DEPS}
 		>=dev-python/psutil-4.3.0[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/pygments-2.3.1[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/python-dateutil-2.5.3[${PYTHON_MULTI_USEDEP}]
-		>=dev-python/PyQt5-5.8[gui,svg,webkit,widgets,network,printsupport,${PYTHON_MULTI_USEDEP}]
+		>=dev-python/PyQt5-5.12[gui,svg,widgets,network,printsupport,${PYTHON_MULTI_USEDEP}]
+		>=dev-python/PyQtWebEngine-5.12[${PYTHON_MULTI_USEDEP}]
 		dev-python/regex[${PYTHON_MULTI_USEDEP}]
 	')
 	dev-qt/qtcore:5=
 	dev-qt/qtdbus:5=
 	dev-qt/qtgui:5=
+	>=dev-qt/qtwebengine-5.12
 	dev-qt/qtwidgets:5=
 	dev-util/desktop-file-utils
 	dev-util/gtk-update-icon-cache
@@ -104,7 +109,7 @@ DEPEND="${COMMON_DEPEND}
 	virtual/pkgconfig"
 
 pkg_pretend() {
-	if [[ ${MERGE_TYPE} != binary && $(gcc-major-version) -lt 6 ]]; then
+	if [[ ${MERGE_TYPE} != binary ]] && tc-is-gcc && [[ $(gcc-major-version) -lt 6 ]]; then
 		eerror "Calibre cannot be built with this version of gcc."
 		eerror "You need at least gcc-6.0"
 		die "Your C compiler is too old for this package."
@@ -116,7 +121,8 @@ src_prepare() {
 	# disable_plugins: walking sec-hole, wait for upstream to use GHNS interface
 	eapply \
 		"${FILESDIR}/${PN}-2.9.0-no_updates_dialog.patch" \
-		"${FILESDIR}/${PN}-disable_plugins.patch"
+		"${FILESDIR}/${PN}-disable_plugins.patch" \
+		"${FILESDIR}/${PN}-4.9.1-py3-Ignore-TypeError-sorting-collections-kobo.patch"
 
 	eapply_user
 
@@ -151,6 +157,9 @@ src_prepare() {
 }
 
 src_install() {
+	# calibre works with python 3, so remove the python 2 constraint
+	export CALIBRE_PY3_PORT=1
+
 	# Bypass kbuildsycoca and update-mime-database in order to
 	# avoid sandbox violations if xdg-mime tries to call them.
 	cat - > "${T}/kbuildsycoca" <<-EOF
@@ -175,7 +184,7 @@ src_install() {
 	#    raise ValueError, 'unknown locale: %s' % localename
 	#ValueError: unknown locale: 46
 	export -n LANG LANGUAGE ${!LC_*}
-	export LC_ALL=C #684484
+	export LC_ALL=C.utf8 #709682
 
 	# Bug #295672 - Avoid sandbox violation in ~/.config by forcing
 	# variables to point to our fake temporary $HOME.
