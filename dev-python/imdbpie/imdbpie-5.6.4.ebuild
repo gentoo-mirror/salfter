@@ -23,11 +23,11 @@ RDEPEND="
 	>=dev-python/diskcache-2.9.0
 	<dev-python/diskcache-3.0.0
 	>=dev-python/attrs-18.1.0
-	<dev-python/attrs-19.0.0
 	>=dev-python/trans-2.1.0
 	<dev-python/trans-3.0.0
 "
 #	>=dev-python/wheel-0.30.0
 #	>=dev-python/setuptools-39.0.1
+#	<dev-python/attrs-19.0.0
 
 DEPEND=""
