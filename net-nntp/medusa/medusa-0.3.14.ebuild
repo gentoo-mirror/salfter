@@ -13,7 +13,7 @@ PYTHON_COMPAT=( python3_4 python3_5 python3_6 )
 SRC_URI="https://github.com/pymedusa/Medusa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S=$WORKDIR/Medusa-${PV}
 # update GIT_COMMIT on version bump
-GIT_COMMIT=ee1b898d0f74750c4c265d077fcc0da73d17b41e
+GIT_COMMIT=4d1e78726dc94979cc7908651d13e40f199959a9
 
 inherit eutils user python-single-r1
 
@@ -34,8 +34,8 @@ RDEPEND="
 	>=dev-python/bencode-2.1.0
 	>=dev-python/CacheControl-0.12.6
 	>=dev-python/certifi-2019.11.28
-	>=dev-python/cloudflare-scrape-2.0.9_alpha20191215
-	>=dev-python/chardet-3.0.4
+ 	>=dev-python/chardet-3.0.4
+	>=dev-python/cloudscraper-1.2.30
 	>=dev-python/configobj-5.0.6
 	>=dev-python/contextlib2-0.6.0-r1
 	>=dev-python/deluge-client-1.8.0
@@ -47,19 +47,18 @@ RDEPEND="
 	>=dev-python/guessit-3.1.0
 	>=dev-python/html5lib-1.0.1
 	>=dev-python/imdbpie-5.6.4
-	>=dev-python/Js2Py-0.67
 	>=dev-python/jsonrpclib-pelix-0.4.0
 	>=dev-python/knowit-0.2.5_alpha20190305
-	>=dev-python/mako-1.1.1
+	>=dev-python/mako-1.1.2
 	>=dev-python/markdown2-2.3.8
-	>=dev-python/profilehooks-1.11.1
-	>=dev-python/PyGithub-1.43.7
+	>=dev-python/profilehooks-1.11.2
+	>=dev-python/PyGithub-1.45
 	>=dev-python/pyjwt-1.7.1
 	>=dev-python/python-dateutil-2.8.1
 	>=dev-python/python-twitter-3.5
 	>=dev-python/rarfile-3.1
 	>=dev-python/rebulk-2.0.0
-	>=dev-python/requests-2.22.0
+	>=dev-python/requests-2.23.0
 	>=dev-python/requests-oauthlib-1.3.0
 	>=dev-python/six-1.14.0
 	>=dev-python/subliminal-2.0.6_alpha20190225
