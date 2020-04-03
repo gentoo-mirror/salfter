@@ -25,7 +25,6 @@ dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
 dev-python/CacheControl 0.12.6: The httplib2 caching algorithms packaged up for use with requests
-dev-python/Js2Py 0.67: JavaScript to Python Translator & JavaScript interpreter written in 100% pure Python
 dev-python/ProfitLib 9999: altcoin mining profitability calculator
 dev-python/PyCCEX 9999: Python binding for the C-CEX altcoin-trading API
 dev-python/PyCryptopia 9999: Python binding for the Cryptopia altcoin-trading API
@@ -45,7 +44,7 @@ dev-python/boto_utils 0.3: Command-line tools for interacting with Amazon Web Se
 dev-python/cachelib 0.1: A collection of cache libraries in the same API interface.
 dev-python/chainmap 1.0.3: ChainMap implementation for older Python versions
 dev-python/click 6.2: A Python package for creating beautiful command line interfaces
-dev-python/cloudflare-scrape 2.0.9_alpha20191215: A Python module to bypass Cloudflare's anti-bot page
+dev-python/cloudscraper 1.2.32: A Python module to bypass Cloudflare's anti-bot page
 dev-python/commontools 0.1.0: Common functions that are often needed but don't really belong anywhere
 dev-python/configparser 3.7.3: Backport of Python-3 built-in configparser
 dev-python/contextlib2 0.6.0-r1: Backports and enhancements for the contextlib module
@@ -88,13 +87,12 @@ dev-python/oauth2 1.10_alpha20170118: A fully tested, abstract interface to crea
 dev-python/pint 0.8.1: makes units easy
 dev-python/pkginfo 1.5.0.1: Provides an API for querying the distutils metadata written in a PKG-INFO file
 dev-python/poloniex 9999: Python binding for the Poloniex altcoin-trading API
-dev-python/profilehooks 1.11.1: collection of decorators for profiling functions
+dev-python/profilehooks 1.11.2: collection of decorators for profiling functions
 dev-python/psutil 5.6.1: Retrieve information on running processes and system utilization
 dev-python/pybitcoin 0.9.9: Library for Bitcoin & other cryptocurrencies. Tools are provided for blockchain transactions, RPC calls, and private keys, public keys, and addresses.
 dev-python/pycgminer 9999: Python binding for the cgminer RPC API
 dev-python/pycoin 0.80: Python Bitcoin Utilities
 dev-python/pycurl 7.43.0: python binding for curl/libcurl
-dev-python/pyjsparser 2.5.2: Fast javascript parser (based on esprima.js)
 dev-python/pyjwt 1.7.1: JSON Web Token implementation in Python
 dev-python/pylcdsysinfo 9999: Python interface for Coldtears LCD module
 dev-python/pylru 1.0.9 1.2.0: A least recently used (LRU) cache for Python
@@ -179,7 +177,7 @@ net-misc/tpruvot-ccminer 2.3.1: Bitcoin CPU/GPU/FPGA miner in C
 net-misc/wolf-m7m-cpuminer 9999: m7m CPU miner
 net-misc/zec-miner-bin 0.3.4b: EWBF Zcash CUDA miner
 net-news/trn 4.0-r77: threaded news reader
-net-nntp/medusa 0.3.12: Automatic Video Library Manager for TV Shows
+net-nntp/medusa 0.3.14: Automatic Video Library Manager for TV Shows
 net-nntp/sabnzbd 2.3.9: Binary newsgrabber with web-interface
 net-p2p/MinerSwitcher 9999: altcoin mining profitability switcher
 net-p2p/trezord 2.0.29 9999: Trezor Bridge
