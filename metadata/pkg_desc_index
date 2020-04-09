@@ -49,7 +49,7 @@ dev-python/cloudscraper 1.2.32: A Python module to bypass Cloudflare's anti-bot 
 dev-python/commontools 0.1.0: Common functions that are often needed but don't really belong anywhere
 dev-python/configparser 3.7.3: Backport of Python-3 built-in configparser
 dev-python/contextlib2 0.6.0-r1: Backports and enhancements for the contextlib module
-dev-python/css-parser 1.0.4: fork of cssutils with ebook extensions
+dev-python/css-parser 1.0.4-r1: A CSS Cascading Style Sheets library (fork of cssutils)
 dev-python/cython-hidapi 9999: Python wrapper for the hidapi
 dev-python/deluge-client 1.8.0: Simple Deluge Client
 dev-python/dirtyjson 1.0.7: Python JSON parser for reading JSON objects out of JS files
@@ -148,7 +148,7 @@ media-gfx/cura 3.6.0 4.0.0: A 3D model slicing application for 3D printing
 media-gfx/curaengine 3.6.0 4.0.0: A 3D model slicing engine for 3D printing
 media-gfx/meshconv-bin 1.27: 3D model converter
 media-gfx/meshroom 2019.2.0: GPU-accelerated photogrammetry
-media-gfx/openscad 2019.05-r1: The Programmers Solid 3D CAD Modeller
+media-gfx/openscad 2019.05-r2: The Programmers Solid 3D CAD Modeller
 media-gfx/slic3r-pe 1.41.3 1.42.0_beta2: Prusa Edition of a mesh slicer to generate G-code for fused-filament-fabrication (3D printers)
 media-libs/a52dec 0.7.5: library for decoding ATSC A/52 streams used in DVD
 media-libs/lib3mf 1.8.1: implementation of the 3D Manufacturing Format file standard
