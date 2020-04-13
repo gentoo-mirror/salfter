@@ -151,7 +151,6 @@ media-gfx/meshroom 2019.2.0: GPU-accelerated photogrammetry
 media-gfx/openscad 2019.05-r2: The Programmers Solid 3D CAD Modeller
 media-gfx/slic3r-pe 1.41.3 1.42.0_beta2: Prusa Edition of a mesh slicer to generate G-code for fused-filament-fabrication (3D printers)
 media-libs/a52dec 0.7.5: library for decoding ATSC A/52 streams used in DVD
-media-libs/lib3mf 1.8.1: implementation of the 3D Manufacturing Format file standard
 media-sound/mp3val 0.1.8: MP3 validator
 media-sound/pykaraoke 0.7.5: Python powered karaoke.
 media-tv/mythtv 0.28.1-r4: Homebrew PVR project
