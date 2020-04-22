@@ -70,6 +70,7 @@ dev-python/flask-principal 0.3.5: Identity management for flask
 dev-python/frozendict 1.2: an immutable wrapper around dictionaries that implements the complete mapping interface
 dev-python/future 0.17.1: Easy, clean, reliable Python 2/3 compatibility
 dev-python/guessit 3.1.0: Python library for guessing information from video filenames
+dev-python/html2text 2019.8.11: Turn HTML into equivalent Markdown-structured text
 dev-python/imap-cli 0.8: Command line interface for imap account
 dev-python/imdbpie 5.6.4: Python IMDB client using the IMDB JSON web service made available for their iOS application
 dev-python/intelhex 2.2.1: Python library for Intel HEX files manipulations
