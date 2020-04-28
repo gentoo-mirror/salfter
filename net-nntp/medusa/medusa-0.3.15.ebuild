@@ -62,6 +62,7 @@ RDEPEND+=" >=dev-python/validators-0.14.3"
 # Portage)
 
 RDEPEND+=" >=dev-python/pysrt-1.1.2"
+RDEPEND+=" >=dev-python/gntp-1.0.3-r1"
 
 pkg_setup() {
 	python-single-r1_pkg_setup
@@ -104,9 +105,13 @@ src_install() {
 	doins $S/version.txt
 
 	fowners -R ${PN}:${PN} /usr/share/${PN}
+
 }
 
 pkg_postinst() {
+
+	# wipe this file to keep errors from showing on startup
+	cd /usr/share/medusa/ext/ && echo -n >configparser.pth
 
 	# we need to remove .git which old ebuild installed
 	if [[ -d "/usr/share/${PN}/.git" ]] ; then
