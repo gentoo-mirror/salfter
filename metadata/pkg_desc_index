@@ -60,7 +60,7 @@ dev-python/dogpile-cache 0.9.0: A locking API for expiring values while a single
 dev-python/emoji 0.4.5 0.5.1: Emoji for Python
 dev-python/ensure 0.8.2: Literate BDD assertions in Python with no magic
 dev-python/enzyme 0.4.2_alpha20180603: Python video metadata parser
-dev-python/feedparser 5.2.2_alpha20180811: Parse RSS and Atom feeds in Python
+dev-python/feedparser 6.0.0_beta1: Parse RSS and Atom feeds in Python
 dev-python/filetype 1.0.5: Small and dependency free Python package to infer file type and MIME type checking the magic numbers signature of a file or buffer.
 dev-python/flask 0.10.1-r2: A microframework based on Werkzeug, Jinja2 and good intentions
 dev-python/flask-assets 0.10 0.12: Flask webassets integration
@@ -69,6 +69,7 @@ dev-python/flask-login 0.2.11: Login session support for Flask
 dev-python/flask-principal 0.3.5: Identity management for flask
 dev-python/frozendict 1.2: an immutable wrapper around dictionaries that implements the complete mapping interface
 dev-python/future 0.17.1: Easy, clean, reliable Python 2/3 compatibility
+dev-python/gntp 1.0.3-r1: Python library for working with the Growl Notification Transport Protocol
 dev-python/guessit 3.1.0: Python library for guessing information from video filenames
 dev-python/html2text 2019.8.11: Turn HTML into equivalent Markdown-structured text
 dev-python/imap-cli 0.8: Command line interface for imap account
@@ -81,7 +82,6 @@ dev-python/keychain 0.14.2.0: Library for BIP32 hierarchical deterministic keych
 dev-python/keylib 0.1.1: Library for creating and working with private keys, public keys, and bitcoin addresses.
 dev-python/knowit 0.2.5_alpha20190305: Know better your media files
 dev-python/litecoin_scrypt 9999: Python Litecoin SCrypt library from github:forrestv/p2pool
-dev-python/mako 1.1.1: A Python templating language
 dev-python/markdown2 2.3.8: Python Markdown language reimplementation
 dev-python/msgpack 0.6.2: MessagePack (de)serializer for Python
 dev-python/netaddr 0.7.19: Network address representation and manipulation library
@@ -96,12 +96,10 @@ dev-python/pybitcoin 0.9.9: Library for Bitcoin & other cryptocurrencies. Tools 
 dev-python/pycgminer 9999: Python binding for the cgminer RPC API
 dev-python/pycoin 0.80: Python Bitcoin Utilities
 dev-python/pycurl 7.43.0: python binding for curl/libcurl
-dev-python/pyjwt 1.7.1: JSON Web Token implementation in Python
 dev-python/pylcdsysinfo 9999: Python interface for Coldtears LCD module
 dev-python/pylru 1.0.9 1.2.0: A least recently used (LRU) cache for Python
 dev-python/python-bitcoinrpc 9999: Python interface to bitcoind's JSON-RPC API
 dev-python/python-bittrex 9999: Python binding for the Bittrex altcoin-trading API
-dev-python/python-dateutil 2.8.0: Extensions to the standard Python datetime module
 dev-python/python-mnemonic 9999: Mnemonic code for generating deterministic keys, BIP39
 dev-python/python-nmap 0.6.1: This is a python class to use nmap and access scan results from python3
 dev-python/python-pushover 0.3: Comprehensive bindings and command line utility for the Pushover notification service
@@ -110,9 +108,7 @@ dev-python/python-trezor 0.11.2: Client side implementation for TREZOR-compatibl
 dev-python/python-twitter 3.5: Python wrapper around the Twitter API
 dev-python/pyyaml 3.10 5.1: YAML parser and emitter for Python
 dev-python/rarfile 3.1: Module for RAR archive reading
-dev-python/rebulk 2.0.0: Python library that performs advanced searches in strings
-dev-python/requests 2.22.0: HTTP library for human beings
-dev-python/requests-oauthlib 1.3.0: This project provides first-class OAuth library support for Requests
+dev-python/rebulk 2.0.0 2.0.1_alpha20190901: Python library that performs advanced searches in strings
 dev-python/rsa 4.0: Pure-Python RSA implementation
 dev-python/sarge 0.1.5: wrapper for subprocess which provides command pipeline functionality
 dev-python/savitar 3.6.0 4.0.0: a C++ implementation of 3MF loading with SIP Python bindings
@@ -123,7 +119,6 @@ dev-python/sentry-sdk 0.7.7: Python client for Sentry
 dev-python/sgmllib3k 1.0.0: Py3k port of sgmllib
 dev-python/sockjs-tornado 1.0.3: server side counterpart of SockJS-client browser library running on top of Tornado framework
 dev-python/soupsieve 1.7: A CSS4 selector implementation for Beautiful Soup
-dev-python/stevedore 1.30.1: Manage dynamic plugins for Python applications
 dev-python/subliminal 2.0.6_alpha20190225: Subtitles, faster than your thoughts
 dev-python/tornroutes 0.5.1: Tornado Web Route Decorator
 dev-python/trans 2.1.0: translates national characters into similar sounding latin characters (transliteration)
