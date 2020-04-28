@@ -3,16 +3,15 @@
 
 EAPI=6
 
-GIT_COMMIT=2b11c8028321ed43cbaf313f83b0c94820143d66
-S=$WORKDIR/$PN-$GIT_COMMIT
-
-PYTHON_COMPAT=( python2_7 python3_{4,5,6} pypy{,3} )
+PYTHON_COMPAT=( python2_7 python3_{4,5,6,7} pypy{,3} )
 
 inherit distutils-r1
 
 DESCRIPTION="Parse RSS and Atom feeds in Python"
 HOMEPAGE="https://github.com/kurtmckee/feedparser https://pypi.org/project/feedparser/"
-SRC_URI="https://github.com/kurtmckee/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
+SRC_URI="https://github.com/kurtmckee/$PN/archive/6.0.0b1.tar.gz -> $P.tar.gz"
+
+S=$WORKDIR/$PN-6.0.0b1
 
 # sgmllib is licensed under PSF-2.
 LICENSE="BSD-2 PSF-2"

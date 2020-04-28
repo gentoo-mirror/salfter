@@ -6,7 +6,7 @@ EAPI=6
 GIT_COMMIT=76525cc2f6545aeeccf620ca46d40c2f0aa53c6d
 S=$WORKDIR/$PN-$GIT_COMMIT
 
-PYTHON_COMPAT=( python2_7 python3_{4,5,6} )
+PYTHON_COMPAT=( python2_7 python3_{4,5,6,7} )
 
 inherit distutils-r1
 

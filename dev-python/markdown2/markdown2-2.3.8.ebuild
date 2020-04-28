@@ -3,7 +3,7 @@
 
 EAPI=5
 
-PYTHON_COMPAT=( python{2_7,3_4,3_5,3_6} pypy )
+PYTHON_COMPAT=( python{2_7,3_{4,5,6,7}} pypy )
 MY_PN=python-$PN
 S=$WORKDIR/$MY_PN-$PV
 
