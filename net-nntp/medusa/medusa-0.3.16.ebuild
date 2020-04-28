@@ -1,11 +1,11 @@
 EAPI=6
 
-PYTHON_COMPAT=( python3_4 python3_5 python3_6 python3_7 )
+PYTHON_COMPAT=( python3_{4,5,6,7} )
 
 SRC_URI="https://github.com/pymedusa/Medusa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S=$WORKDIR/Medusa-${PV}
 # update GIT_COMMIT on version bump
-GIT_COMMIT=8f6b6665c778cb456899809877c3bc15a547abf6
+GIT_COMMIT=d9c31da063e6c4b4383749e19b27b13693a1b71e
 
 inherit eutils user python-single-r1
 
@@ -26,7 +26,7 @@ RDEPEND+=" >=dev-python/bencode-2.1.0"
 RDEPEND+=" >=dev-python/CacheControl-0.12.6"
 RDEPEND+=" >=dev-python/certifi-2020.4.5.1"
 RDEPEND+=" >=dev-python/chardet-3.0.4"
-RDEPEND+=" >=dev-python/cloudscraper-1.2.33"
+RDEPEND+=" >=dev-python/cloudscraper-1.2.34"
 RDEPEND+=" >=dev-python/configobj-5.0.6"
 RDEPEND+=" >=dev-python/contextlib2-0.6.0-r1"
 RDEPEND+=" >=dev-python/deluge-client-1.8.0"
