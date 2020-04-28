@@ -1,14 +1,6 @@
-# see https://github.com/pymedusa/Medusa/issues/3147 for Medusa hints
+EAPI=6
 
-# retrieved from https://gitlab.com/salfter/portage/tree/b899ed256d8472ba9ea40e4544523c93e2998e72/net-nntp/sickrage
-
-# Copyright 1999-2015 Gentoo Foundation
-# Distributed under the terms of the GNU General Public License v2
-# $Header: $
-
-EAPI=5
-
-PYTHON_COMPAT=( python3_4 python3_5 python3_6 )
+PYTHON_COMPAT=( python3_4 python3_5 python3_6 python3_7 )
 
 SRC_URI="https://github.com/pymedusa/Medusa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 S=$WORKDIR/Medusa-${PV}
@@ -66,7 +58,10 @@ RDEPEND+=" >=dev-python/tornroutes-0.5.1"
 RDEPEND+=" >=dev-python/tvdbv2-1.0.1_alpha20190605" # (master) bf1272c9264c280c3048e89a1920e2bf5f386284
 RDEPEND+=" >=dev-python/validators-0.14.3"
 
+# additional dependencies (to make sure we have Python 3.7 ebuilds in
+# Portage)
 
+RDEPEND+=" >=dev-python/pysrt-1.1.2"
 
 pkg_setup() {
 	python-single-r1_pkg_setup

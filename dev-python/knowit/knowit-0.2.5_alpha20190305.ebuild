@@ -1,6 +1,6 @@
 EAPI=6
 
-PYTHON_COMPAT=( python2_7 python3_{4,5,6})
+PYTHON_COMPAT=( python2_7 python3_{4,5,6,7})
 
 GIT_COMMIT=eea9ac18e38c930230cf81b5dca4a9af9fb10d4e
 S=${WORKDIR}/${PN}-${GIT_COMMIT}

@@ -7,7 +7,7 @@ GIT_COMMIT=6689960ca23f79eccf9a25a39e93f6540f44ca23
 MY_PN=python-$PN
 S=$WORKDIR/$MY_PN-$GIT_COMMIT
 
-PYTHON_COMPAT=( python2_7 python3_{4,5,6} pypy{,3} )
+PYTHON_COMPAT=( python2_7 python3_{4,5,6,7} pypy{,3} )
 
 inherit distutils-r1
 
