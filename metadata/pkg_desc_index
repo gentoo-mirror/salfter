@@ -76,7 +76,6 @@ dev-python/imap-cli 0.8: Command line interface for imap account
 dev-python/imdbpie 5.6.4: Python IMDB client using the IMDB JSON web service made available for their iOS application
 dev-python/intelhex 2.2.1: Python library for Intel HEX files manipulations
 dev-python/jinja 2.8.1: A full-featured template engine for Python
-dev-python/jsonrpc 9999: JSON-RPC for Python
 dev-python/jsonrpclib-pelix 0.4.1: python implementation of the JSON-RPC spec (1.0 and 2.0)
 dev-python/keychain 0.14.2.0: Library for BIP32 hierarchical deterministic keychains/wallets.
 dev-python/keylib 0.1.1: Library for creating and working with private keys, public keys, and bitcoin addresses.
