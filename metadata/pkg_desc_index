@@ -136,7 +136,7 @@ dev-python/wrapt 1.11.1: Module for decorators, wrappers and monkey patching
 dev-python/zttf 0.0.20180718: Python TTF file parser
 dev-qt/qtoiio 2019.2.0: Qt Image IO plugin based on OpenImageIO
 dev-vcs/gitmon 0.3.2: Git Repository Monitor
-games-misc/fortune-mod 2.26.0: The notorious fortune program
+games-misc/fortune-mod 2.28.0: The notorious fortune program
 mail-filter/hashcash-milter 0.1.3: A milter-based application to mint and check HashCash stamps
 media-gfx/CQ-editor 0.0_alpha20191117: CadQuery GUI editor based on PyQT
 media-gfx/alicevision 2.2.0: photogrammetric computer vision framework
@@ -187,11 +187,11 @@ sci-electronics/arachne-pnr 0.0.20190728: place-and-route tool for FPGAs
 sci-electronics/boms-away 20171029: BOM/component manager for KiCad
 sci-electronics/icestorm 0.0.20200422: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kifield 0.1.12: bulk-edit components in a KiCad schematic or library by transferring fields to/from a spreadsheet
-sci-electronics/nextpnr 0.0.20200512: portable FPGA place and route tool
-sci-electronics/prjtrellis 0.0.20200422: reverse-engineered tools for Lattice ECP5 FPGAs
+sci-electronics/nextpnr 0.0.20200612: portable FPGA place and route tool
+sci-electronics/prjtrellis 0.0.20200612: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
 sci-electronics/verilator 4.034 9999: The fast free Verilog/SystemVerilog simulator
-sci-electronics/yosys 0.9 0.10_alpha20200512: framework for Verilog RTL synthesis
+sci-electronics/yosys 0.9 0.10_alpha20200612: framework for Verilog RTL synthesis
 sci-libs/Shapely 1.6.4: Manipulation and analysis of geometric objects in the Cartesian plane
 sci-libs/boost-numeric-bindings 0.99 20110819: Numeric Library Bindings for Boost UBlas
 sci-libs/cadquery 0.1.5: A parametric CAD scripting framework based on PythonOCC
