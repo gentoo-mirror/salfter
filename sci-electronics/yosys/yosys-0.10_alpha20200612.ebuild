@@ -1,9 +1,9 @@
 EAPI=6
 
-GIT_COMMIT=27b7ffc75444583bbecc70e2d7e2e84bc321f2cf
+GIT_COMMIT=a5f0cb4eba5d78f31c31a7c21b0dd0309363cd38
 S=$WORKDIR/$PN-$GIT_COMMIT
 
-ABC_GIT_COMMIT=fd2c9b1c19216f6b756f88b18f5ca67b759ca128
+ABC_GIT_COMMIT=58e3a5caff7033200fce5136dd7e02eee87c4e8a
 
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="http://www.clifford.at/yosys/"
