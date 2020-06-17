@@ -191,7 +191,7 @@ sci-electronics/nextpnr 0.0.20200612: portable FPGA place and route tool
 sci-electronics/prjtrellis 0.0.20200612: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
 sci-electronics/verilator 4.034 9999: The fast free Verilog/SystemVerilog simulator
-sci-electronics/yosys 0.9 0.10_alpha20200612: framework for Verilog RTL synthesis
+sci-electronics/yosys 0.9 0.10_alpha20200616: framework for Verilog RTL synthesis
 sci-libs/Shapely 1.6.4: Manipulation and analysis of geometric objects in the Cartesian plane
 sci-libs/boost-numeric-bindings 0.99 20110819: Numeric Library Bindings for Boost UBlas
 sci-libs/cadquery 0.1.5: A parametric CAD scripting framework based on PythonOCC
