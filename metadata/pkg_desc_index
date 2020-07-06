@@ -164,7 +164,7 @@ net-misc/bminer-bin 5.3.0: Bminer Zcash CUDA miner
 net-misc/cgminer 4.11.1: Bitcoin FPGA/ASIC miner in C
 net-misc/cprowl 0.5.1: command-line tool to send Prowl notifications to iOS devices
 net-misc/ethminer 0.13.0 0.14.0_rc4: Ethereum miner with CUDA and stratum support
-net-misc/hashcash 1.22-r1: Utility to generate hashcash tokens
+net-misc/hashcash 1.22-r2: Utility to generate hashcash tokens
 net-misc/klaust-ccminer 8.24: Multi-algorithm GPU miner
 net-misc/klaust-ccminer-cryptonight 3.06: Cryptonight CPU/GPU miner
 net-misc/ltc_addrconv 0.1: Litecoin 3/M-address converter
