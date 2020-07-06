@@ -28,6 +28,8 @@ src_install() {
 	dobin hashcash
 	doman hashcash.1
 	dodoc CHANGELOG
+	newinitd $FILESDIR/hashcash.init hashcash-milter
+	newconfd $FILESDIR/hashcash.conf hashcash-milter
 	insinto /usr/share/doc/${PF}/examples
 	doins contrib/hashcash-{request,sendmail{,.txt}} \
 		contrib/hashfork.{c,py,txt}
