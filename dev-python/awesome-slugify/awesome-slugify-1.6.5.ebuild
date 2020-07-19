@@ -1,10 +1,14 @@
 EAPI=5
-PYTHON_COMPAT=(python{2_6,2_7} python3_4 pypy pypy3)
+PYTHON_COMPAT=(python{2_6,2_7} python3_{4,5,6,7,8,9} pypy pypy3)
 
 inherit distutils-r1
 
 DEPEND=""
-RDEPEND="dev-python/regex >=dev-python/unidecode-0.04.14 <dev-python/unidecode-0.05"
+RDEPEND="
+	dev-python/regex[${PYTHON_USEDEP}]
+	>=dev-python/unidecode-0.04.14[${PYTHON_USEDEP}]
+	<dev-python/unidecode-0.05[${PYTHON_USEDEP}]
+"
 
 MY_PN=${PN}
 MY_P=${MY_PN}-${PV}
