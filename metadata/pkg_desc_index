@@ -42,9 +42,7 @@ dev-python/bitcoin-abe 9999: cryptocurrency blockchain explorer
 dev-python/bitmerchant 0.1.8: Bitmerchant is a work-in-progress python library for common bitcoin/altcoin merchant uses.
 dev-python/bleuBot 9999: Python binding for the BleuTrade altcoin-trading API
 dev-python/boto_utils 0.3: Command-line tools for interacting with Amazon Web Services, based on Boto
-dev-python/cachelib 0.1: A collection of cache libraries in the same API interface.
 dev-python/chainmap 1.0.3: ChainMap implementation for older Python versions
-dev-python/click 6.2: A Python package for creating beautiful command line interfaces
 dev-python/cloudscraper 1.2.34: A Python module to bypass Cloudflare's anti-bot page
 dev-python/commontools 0.1.0: Common functions that are often needed but don't really belong anywhere
 dev-python/configparser 3.7.3: Backport of Python-3 built-in configparser
@@ -57,7 +55,6 @@ dev-python/diskcache 2.9.0: Disk and file backed cache
 dev-python/docopt 0.6.1: Pythonic argument parser, that will make you smile
 dev-python/docopts 0.6.1: shell interface for docopt, the CLI description language
 dev-python/dogpile-cache 0.9.0: A locking API for expiring values while a single thread generates a new value.
-dev-python/emoji 0.4.5 0.5.1: Emoji for Python
 dev-python/ensure 0.8.2: Literate BDD assertions in Python with no magic
 dev-python/enzyme 0.4.2_alpha20180603: Python video metadata parser
 dev-python/feedparser 6.0.0_beta1: Parse RSS and Atom feeds in Python
@@ -67,8 +64,6 @@ dev-python/flask-assets 0.10 0.12: Flask webassets integration
 dev-python/flask-babel 0.9 0.12.2: i18n and l10n support for Flask based on Babel and pytz
 dev-python/flask-login 0.2.11: Login session support for Flask
 dev-python/flask-principal 0.3.5: Identity management for flask
-dev-python/frozendict 1.2: an immutable wrapper around dictionaries that implements the complete mapping interface
-dev-python/future 0.17.1: Easy, clean, reliable Python 2/3 compatibility
 dev-python/gntp 1.0.3-r1: Python library for working with the Growl Notification Transport Protocol
 dev-python/guessit 3.1.0: Python library for guessing information from video filenames
 dev-python/html2text 2019.8.11: Turn HTML into equivalent Markdown-structured text
@@ -87,16 +82,14 @@ dev-python/netaddr 0.7.19: Network address representation and manipulation libra
 dev-python/netifaces 0.10.9: Portable network interface information
 dev-python/oauth2 1.10_alpha20170118: A fully tested, abstract interface to creating OAuth clients and servers
 dev-python/pint 0.8.1: makes units easy
-dev-python/pkginfo 1.5.0.1: Provides an API for querying the distutils metadata written in a PKG-INFO file
 dev-python/poloniex 9999: Python binding for the Poloniex altcoin-trading API
 dev-python/profilehooks 1.11.2: collection of decorators for profiling functions
-dev-python/psutil 5.6.1: Retrieve information on running processes and system utilization
 dev-python/pybitcoin 0.9.9: Library for Bitcoin & other cryptocurrencies. Tools are provided for blockchain transactions, RPC calls, and private keys, public keys, and addresses.
 dev-python/pycgminer 9999: Python binding for the cgminer RPC API
 dev-python/pycoin 0.80: Python Bitcoin Utilities
 dev-python/pycurl 7.43.0: python binding for curl/libcurl
 dev-python/pylcdsysinfo 9999: Python interface for Coldtears LCD module
-dev-python/pylru 1.0.9 1.2.0: A least recently used (LRU) cache for Python
+dev-python/pylru 1.2.0: A least recently used (LRU) cache for Python
 dev-python/python-bitcoinrpc 9999: Python interface to bitcoind's JSON-RPC API
 dev-python/python-bittrex 9999: Python binding for the Bittrex altcoin-trading API
 dev-python/python-mnemonic 9999: Mnemonic code for generating deterministic keys, BIP39
@@ -105,7 +98,6 @@ dev-python/python-pushover 0.3: Comprehensive bindings and command line utility 
 dev-python/python-sane 2.8.2: Python interface to the SANE scanner and frame grabber
 dev-python/python-trezor 0.11.2: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 dev-python/python-twitter 3.5: Python wrapper around the Twitter API
-dev-python/pyyaml 3.10 5.1: YAML parser and emitter for Python
 dev-python/rarfile 3.1: Module for RAR archive reading
 dev-python/rebulk 2.0.0 2.0.1_alpha20190901: Python library that performs advanced searches in strings
 dev-python/rsa 4.0: Pure-Python RSA implementation
@@ -113,8 +105,6 @@ dev-python/sarge 0.1.5: wrapper for subprocess which provides command pipeline f
 dev-python/savitar 3.6.0 4.0.0: a C++ implementation of 3MF loading with SIP Python bindings
 dev-python/scandir 1.10.0: A better directory iterator and faster os.walk()
 dev-python/scikit-image 0.15.0: Image processing in Python
-dev-python/semantic_version 2.4.2: Python library providing a few tools handling SemVer in Python.
-dev-python/sentry-sdk 0.7.7: Python client for Sentry
 dev-python/sgmllib3k 1.0.0: Py3k port of sgmllib
 dev-python/sockjs-tornado 1.0.3: server side counterpart of SockJS-client browser library running on top of Tornado framework
 dev-python/solo-python 0.0.23: Python library for Solo U2F keys
@@ -128,11 +118,8 @@ dev-python/typing 3.6.6: Type Hints for Python
 dev-python/uranium 3.6.0 4.0.0: A Python framework for building 3D printing related applications
 dev-python/utilitybelt 0.2.6: Generally useful tools. A python utility belt.
 dev-python/validators 0.14.3: Python Data Validation for Humans
-dev-python/watchdog 0.8.3-r1 0.8.3-r2 0.9.0: Python API and shell utilities to monitor file system events
+dev-python/watchdog 0.9.0: Python API and shell utilities to monitor file system events
 dev-python/webassets 0.12.1: Asset management for Python web development
-dev-python/websocket-client 0.56.0: WebSocket client for python with hybi13 support
-dev-python/werkzeug 0.8.3 0.15.1: Collection of various utilities for WSGI applications
-dev-python/wrapt 1.11.1: Module for decorators, wrappers and monkey patching
 dev-python/zttf 0.0.20180718: Python TTF file parser
 dev-qt/qtoiio 2019.2.0: Qt Image IO plugin based on OpenImageIO
 dev-vcs/gitmon 0.3.2: Git Repository Monitor
@@ -203,7 +190,7 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-kernel/raspberrypi-sources 4.18.9999: Raspberry PI kernel sources
 virtual/podofo-build 0.9.6_p20180715: Virtual package for building against PoDoFo
 www-apps/cops 1.1.2: Calibre OPDS PHP Server
-www-apps/octoprint 1.3.12: the snappy web interface for your 3D printer
+www-apps/octoprint 1.4.0: the snappy web interface for your 3D printer
 www-apps/wordpress 5.3.2: Wordpress PHP and MySQL based content management system (CMS)
 www-misc/zoneminder 1.32.3: Capture, analyse, record and monitor any cameras attached to your system
 www-servers/tornado 4.5.3 5.1.1: Python web framework and asynchronous networking library
