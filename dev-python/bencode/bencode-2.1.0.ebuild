@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_{4,5,6,7}} pypy )
+PYTHON_COMPAT=( python{2_7,3_{4,5,6,7,8,9}} pypy )
 
 inherit distutils-r1
 
@@ -17,5 +17,5 @@ KEYWORDS="~amd64"
 
 RDEPEND=""
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
-        >dev-python/pbr-1.9"
+        >dev-python/pbr-1.9[${PYTHON_USEDEP}]"
 
