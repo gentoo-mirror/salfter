@@ -25,4 +25,5 @@ src_install() {
 
 	keepdir /etc/target /etc/target/backup
 	doman targetcli.8
+	newinitd "${FILESDIR}/target.init" target
 }
