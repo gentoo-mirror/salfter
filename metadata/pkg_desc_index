@@ -101,6 +101,7 @@ dev-python/python-twitter 3.5: Python wrapper around the Twitter API
 dev-python/rarfile 3.1: Module for RAR archive reading
 dev-python/rebulk 2.0.0 2.0.1_alpha20190901: Python library that performs advanced searches in strings
 dev-python/rsa 4.0: Pure-Python RSA implementation
+dev-python/rtslib-fb 2.1.72: A Python object API for managing the Linux LIO kernel target
 dev-python/sarge 0.1.5: wrapper for subprocess which provides command pipeline functionality
 dev-python/savitar 3.6.0 4.0.0: a C++ implementation of 3MF loading with SIP Python bindings
 dev-python/scandir 1.10.0: A better directory iterator and faster os.walk()
@@ -185,6 +186,7 @@ sci-libs/openmvg 9999-r1: open Multiple View Geometry library. Basis for 3D comp
 sci-libs/pythonocc 0.18.1: An industrial strength 3D python package for CAD/BIM/PLM/CAM
 sci-libs/smesh 6.7.6: An extension to oce, provides advanced meshing features
 sci-visualization/admesh 0.98.3: CLI and C library for processing triangulated solid meshes
+sys-block/targetcli-fb 2.1.51: Command shell for managing Linux LIO kernel target
 sys-fs/cpmtools 2.20: CP/M filesystem manipulation tools, similar to mtools
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-kernel/raspberrypi-sources 4.18.9999: Raspberry PI kernel sources
