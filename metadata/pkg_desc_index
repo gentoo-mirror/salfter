@@ -57,7 +57,7 @@ dev-python/docopts 0.6.1: shell interface for docopt, the CLI description langua
 dev-python/dogpile-cache 0.9.0: A locking API for expiring values while a single thread generates a new value.
 dev-python/ensure 0.8.2: Literate BDD assertions in Python with no magic
 dev-python/enzyme 0.4.2_alpha20180603: Python video metadata parser
-dev-python/feedparser 6.0.0_beta1: Parse RSS and Atom feeds in Python
+dev-python/feedparser 5.2.2_alpha20180811: Parse RSS and Atom feeds in Python
 dev-python/filetype 1.0.5: Small and dependency free Python package to infer file type and MIME type checking the magic numbers signature of a file or buffer.
 dev-python/flask 0.10.1-r2: A microframework based on Werkzeug, Jinja2 and good intentions
 dev-python/flask-assets 0.10 0.12: Flask webassets integration
