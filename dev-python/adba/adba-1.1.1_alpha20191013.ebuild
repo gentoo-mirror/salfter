@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_{4,5,6,7,8,9}} )
+PYTHON_COMPAT=( python3_{4,5,6,7,8,9} )
 
-GIT_COMMIT=112c04b50d318802b4a0c7924f8e26aaf9e60a5b
+GIT_COMMIT=6efeff3a6bdcb6d45a4a79f424939ade2930e5f0
 S=$WORKDIR/$PN-$GIT_COMMIT
 
 inherit distutils-r1
@@ -18,11 +18,12 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	>=dev-python/configparser-3.5.0[${PYTHON_USEDEP}]
-	<dev-python/configparser-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-1.16.0[${PYTHON_USEDEP}]
 	>=dev-python/six-1.9.0[${PYTHON_USEDEP}]
 "
+#	>=dev-python/configparser-3.5.0[${PYTHON_USEDEP}]
+#	<dev-python/configparser-4.0.0[${PYTHON_USEDEP}]
+
 DEPEND=""
 
 src_unpack()
