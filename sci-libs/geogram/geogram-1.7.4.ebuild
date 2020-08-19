@@ -15,10 +15,13 @@ CMAKE_BUILD_TYPE=Release
 
 PATCHES=$FILESDIR/$P-fix-libpath.patch
 
+DEPEND=">=media-libs/glfw-3.3.2"
+
 src_configure()
 {
   local mycmakeargs=(
     -DVORPALINE_PLATFORM="Linux64-gcc-dynamic"
+    -DGEOGRAM_USE_SYSTEM_GLFW3=y
   )
   cmake-utils_src_configure
 }
