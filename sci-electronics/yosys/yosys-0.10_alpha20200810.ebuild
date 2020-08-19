@@ -21,6 +21,16 @@ DEPEND="dev-vcs/git
 	dev-libs/boost
 	sys-devel/clang"
 
+# $FILESDIR/$PN-$PV-deps.tar.gz needs to be updated with the ebuild:
+# cd /tmp
+# tar xf yosys-tarball.tar.gz
+# cd yosys-dir
+# tar xf abc-tarball.tar.gz
+# mv abc-commit abc
+# make config-clang
+# make -j16 ABCREV=default ABCPULL=0
+# tar czf $FILESDIR/$PN-$PV-deps.tar.gz `find -name \*.d`
+
 src_unpack() {
 	unpack $P.tar.gz
 	unpack abc-$ABC_GIT_COMMIT.tar.gz
