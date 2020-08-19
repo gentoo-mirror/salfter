@@ -4,6 +4,7 @@ app-benchmarks/iometer 1.1.0: I/O subsystem measurement and characterization too
 app-crypt/sshexport 2.4: SSH public key exporter
 app-crypt/vanitygen-plus 1.54_alpha20181209 9999: cryptocurrency vanity-address generator
 app-crypt/zuluCrypt 5.4.0: Front end to cryptsetup
+app-editors/vscodium-bin 1.43.0: Free/Libre Open Source Software Binaries of VSCode (binary version)
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
@@ -198,6 +199,7 @@ virtual/podofo-build 0.9.6_p20180715: Virtual package for building against PoDoF
 www-apps/cops 1.1.2: Calibre OPDS PHP Server
 www-apps/octoprint 1.4.0: the snappy web interface for your 3D printer
 www-apps/wordpress 5.3.2: Wordpress PHP and MySQL based content management system (CMS)
+www-client/chromium 81.0.4044.113: Open-source version of Google Chrome web browser
 www-misc/zoneminder 1.32.3: Capture, analyse, record and monitor any cameras attached to your system
 www-servers/tornado 4.5.3 5.1.1: Python web framework and asynchronous networking library
 x11-apps/xinit 1.4.1: X Window System initializer
