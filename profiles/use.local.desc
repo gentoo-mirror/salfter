@@ -38,6 +38,9 @@ dev-python/rarfile:compressed - Enables the module to support compressed v3 arch
 dev-python/twisted:conch - include Twisted SSHv2 implementation
 dev-python/twisted:http2 - include http2 support
 dev-python/twisted:serial - include serial port support
+games-emulation/sdlmame:arcade - Enable the Multiple Arcade Machine Emulator for arcade games support
+games-emulation/sdlmame:mess - Enable the Multi Emulator Super System for game system support
+games-emulation/sdlmame:tools - Build development tools shared between sdlmame and sdlmess
 media-tv/mythtv:alsa - Allows MythTV to directly output sound to ALSA devices, this is needed if you are using ALSA dmix or SPDIF. Note, you will have to physically type your device into the MythTV configuration since it will only give you /dev/dsp devices in the drop down.
 media-tv/mythtv:altivec - Builds ffmpeg's codec libraries with altivec support.
 media-tv/mythtv:autostart - Uses a custom autostart configuration gleaned from experience with MythTV since its early versions and discussed with other MythTV maintainers and users. Does not rely on KDE being installed like most methods do.
