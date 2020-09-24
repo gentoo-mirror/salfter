@@ -2,6 +2,11 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+app-crypt/mit-krb5:doc - Creates and installs the API and implementation documentation. This is only useful if you want to develop software which depends on kerberos
+app-crypt/mit-krb5:keyutils - Enable for the keyring ccache using keyutils
+app-crypt/mit-krb5:lmdb - Add support for using dev-db/lmdb for lookup tables
+app-crypt/mit-krb5:openldap - Enable support for ldap as a database backend
+app-crypt/mit-krb5:pkinit - Enable pkinit support for the initial ticket
 app-crypt/zuluCrypt:gnome - Enable support for the freedesktop.org Secret Service API via app-crypt/libsecret. This does not control the gui!
 app-crypt/zuluCrypt:gui - Whether to build the QT gui. Highly recommended.
 app-crypt/zuluCrypt:kde - Enable support for KDE, e.g. via kde-apps/kwalletd. This does not control the gui, but NEEDS GUI ENABLED!
