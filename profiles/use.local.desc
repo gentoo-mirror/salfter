@@ -96,6 +96,19 @@ net-proxy/dansguardian:logrotate - Use app-admin/logrotate for rotating logs.
 net-proxy/dansguardian:ntlm - Enable support for the NTLM auth plugin.
 net-proxy/dansguardian:orig-ip - Enable support for checking the client's original destination IP address against HTTP request details when deployed as a transparent proxy (US-CERT VU#435052).
 net-proxy/dansguardian:trickledm - Enable support for the trickle download manager.
+net-proxy/e2guardian:avast - Enable support for the AvastD content scanner.
+net-proxy/e2guardian:backtrace - Enable logging a backtrace when a segmentation fault occurs.
+net-proxy/e2guardian:clamav - Enable support for the ClamD content scanner.
+net-proxy/e2guardian:commandline - Enable support for command-line content scanners.
+net-proxy/e2guardian:email - Enable support for email reporting functionality.
+net-proxy/e2guardian:fancydm - Enable support for the fancy download manager.
+net-proxy/e2guardian:icap - Enable support for ICAP AV server content scanner.
+net-proxy/e2guardian:kaspersky - Enable support for the Kaspersky AV daemon content scanner.
+net-proxy/e2guardian:lfs - Enable large file support on 32 bit systems.
+net-proxy/e2guardian:logrotate - Use app-admin/logrotate for rotating logs.
+net-proxy/e2guardian:ntlm - Enable support for the NTLM auth plugin.
+net-proxy/e2guardian:orig-ip - Enable support for checking the client's original destination IP address against HTTP request details when deployed as a transparent proxy (US-CERT VU#435052).
+net-proxy/e2guardian:trickledm - Enable support for the trickle download manager.
 www-apps/wordpress:akismet - Installs Akismet comment spam plug-in
 www-apps/wordpress:themes - Installs themes (including default theme)
 www-client/chromium:closure-compile - Enable closure type-checking for Chrome's web technology-based UI. Requires Java.
