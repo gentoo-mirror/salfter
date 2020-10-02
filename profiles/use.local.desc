@@ -83,6 +83,19 @@ net-misc/cgminer:modminer - Enable support for mining with ModMiner FPGAs
 net-misc/cgminer:sp10 - Enable support for Spondoolies SP10
 net-misc/cgminer:sp30 - Enable support for Spondoolies SP30
 net-misc/cgminer:spondoolies - Enable support for Spondoolies
+net-proxy/dansguardian:avast - Enable support for the AvastD content scanner.
+net-proxy/dansguardian:backtrace - Enable logging a backtrace when a segmentation fault occurs.
+net-proxy/dansguardian:clamav - Enable support for the ClamD content scanner.
+net-proxy/dansguardian:commandline - Enable support for command-line content scanners.
+net-proxy/dansguardian:email - Enable support for email reporting functionality.
+net-proxy/dansguardian:fancydm - Enable support for the fancy download manager.
+net-proxy/dansguardian:icap - Enable support for ICAP AV server content scanner.
+net-proxy/dansguardian:kaspersky - Enable support for the Kaspersky AV daemon content scanner.
+net-proxy/dansguardian:lfs - Enable large file support on 32 bit systems.
+net-proxy/dansguardian:logrotate - Use app-admin/logrotate for rotating logs.
+net-proxy/dansguardian:ntlm - Enable support for the NTLM auth plugin.
+net-proxy/dansguardian:orig-ip - Enable support for checking the client's original destination IP address against HTTP request details when deployed as a transparent proxy (US-CERT VU#435052).
+net-proxy/dansguardian:trickledm - Enable support for the trickle download manager.
 www-apps/wordpress:akismet - Installs Akismet comment spam plug-in
 www-apps/wordpress:themes - Installs themes (including default theme)
 www-client/chromium:closure-compile - Enable closure type-checking for Chrome's web technology-based UI. Requires Java.

@@ -131,6 +131,7 @@ net-news/trn 4.0-r77: threaded news reader
 net-p2p/MinerSwitcher 9999: altcoin mining profitability switcher
 net-p2p/trezord 2.0.29 9999: Trezor Bridge
 net-print/epson-inkjet-printer-escpr2 1.1.9: Epson Inkjet Printer Driver (ESC/P-R) 2
+net-proxy/dansguardian 2.12.0.3-r3: Web content filtering via proxy
 sci-biology/fah-control 7.5.1-r8: Folding@home Client Advanced Control GUI
 sci-biology/fah-viewer 7.5.1-r2: Folding@home 3D Viewer
 sci-electronics/altium2kicad 0.0.20200306: Altium to KiCad converter for PCB and schematics
