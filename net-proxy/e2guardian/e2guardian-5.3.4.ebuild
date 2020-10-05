@@ -1,9 +1,9 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="5"
+EAPI="7"
 
-inherit eutils user
+inherit eutils user autotools
 
 DESCRIPTION="Web content filtering via proxy"
 HOMEPAGE="http://www.e2guardian.org"
@@ -25,6 +25,12 @@ DEPEND="${RDEPEND}
 pkg_setup() {
 	enewgroup ${PN}
 	enewuser ${PN} -1 -1 /dev/null ${PN}
+}
+
+src_prepare()
+{
+	default
+	eautoreconf
 }
 
 src_configure() {
