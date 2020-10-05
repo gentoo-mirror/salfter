@@ -1,4 +1,4 @@
-/var/log/dansguardian/access.log {
+/var/log/e2guardian/access.log {
   rotate 4
   weekly
   missingok
@@ -9,6 +9,6 @@
   nocompress
 
   postrotate
-    /usr/sbin/dansguardian -r
+    /usr/sbin/e2guardian -r
   endscript
 }
