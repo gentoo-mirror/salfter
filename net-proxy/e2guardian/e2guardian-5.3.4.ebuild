@@ -12,13 +12,14 @@ SRC_URI="https://github.com/$PN/$PN/archive/v$PV.tar.gz -> $P.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~ppc64 ~sparc x86"
-IUSE="avast backtrace clamav commandline debug email +fancydm icap kaspersky +lfs logrotate ntlm orig-ip +pcre static-libs trickledm"
+IUSE="avast backtrace clamav commandline debug email +fancydm icap kaspersky +lfs logrotate ntlm orig-ip +pcre static-libs trickledm sslmitm"
 
 RDEPEND="sys-libs/zlib
 	clamav? ( app-antivirus/clamav )
 	logrotate? ( app-admin/logrotate )
 	ntlm? ( virtual/libiconv )
-	pcre? ( >=dev-libs/libpcre-8.32 )"
+	pcre? ( >=dev-libs/libpcre-8.32 )
+	sslmitm? ( dev-libs/openssl )"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
@@ -58,7 +59,8 @@ src_configure() {
 		--with-proxygroup=${PN} \
 		--with-proxyuser=${PN} \
 		$(use_enable static-libs static-zlib) \
-		$(use_enable trickledm)
+		$(use_enable trickledm) \
+		$(use_enable sslmitm)
 }
 
 src_install() {
