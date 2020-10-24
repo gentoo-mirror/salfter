@@ -11,7 +11,7 @@ SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
 
-RDEPEND="net-misc/aria2[bittorrent,metalink]"
+RDEPEND="net-misc/aria2[bittorrent,metalink,xmlrpc]"
 
 DEPEND="app-arch/libzim
 	dev-libs/icu
