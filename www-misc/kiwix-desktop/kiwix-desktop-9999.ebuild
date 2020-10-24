@@ -17,7 +17,7 @@ DEPEND="www-misc/kiwix-lib
 	dev-qt/qtwebengine:5
 	dev-qt/qtsvg:5
 	dev-qt/qtimageformats:5
-	net-misc/aria2[bittorrent]"
+	net-misc/aria2[bittorrent,metalink]"
 
 src_compile()
 {
