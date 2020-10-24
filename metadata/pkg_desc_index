@@ -1,5 +1,6 @@
 app-accessibility/onboard 1.4.1: Onscreen keyboard for everybody who can't use a hardware keyboard
 app-admin/webmin 1.955: A web-based Unix systems administration interface
+app-arch/libzim 6.2.2: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
 app-arch/nulib2 3.1.0: utility & library for manipulating NuFX archives
 app-benchmarks/iometer 1.1.0: I/O subsystem measurement and characterization tool for single and clustered systems
 app-crypt/mit-krb5 1.17.1: MIT Kerberos V
@@ -15,6 +16,7 @@ app-text/calibre 4.9.1-r2: Ebook management application
 app-text/gimagereader 3.3.1: A Gtk/Qt front-end to tesseract-ocr
 app-text/pdfsandwich 0.1.6: generator of sandwich OCR pdf files
 app-text/qtspell 0.8.5: Spell checking for Qt text widgets
+dev-cpp/mustache 3.2.1: Mustache implementation for modern C++
 dev-dotnet/gnu-getopt-net 9999: a C# port of the Java port of GNU getopt
 dev-embedded/bossac 1.7.0: flash programming utility for Atmel's SAM family of flash-based ARM microcontrollers
 dev-embedded/cc65 2.18: complete cross development package for 65(C)02 systems
@@ -164,6 +166,8 @@ www-apps/cops 1.1.3: Calibre OPDS PHP Server
 www-apps/octoprint 1.4.0: the snappy web interface for your 3D printer
 www-apps/wordpress 5.3.2: Wordpress PHP and MySQL based content management system (CMS)
 www-client/chromium 81.0.4044.113: Open-source version of Google Chrome web browser
+www-misc/kiwix-desktop 2.0.4: cross-platform viewer/manager of ZIM files
+www-misc/kiwix-lib 9.4.0: Kiwix software suite core: code shared by all Kiwix ports
 www-misc/zoneminder 1.32.3: Capture, analyse, record and monitor any cameras attached to your system
 x11-apps/xinit 1.4.1: X Window System initializer
 x11-libs/amd-adl-sdk 10.2: API to access display driver functionality for ATI graphics cards
