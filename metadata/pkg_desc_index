@@ -90,6 +90,7 @@ dev-python/uranium 3.6.0 4.0.0: A Python framework for building 3D printing rela
 dev-python/utilitybelt 0.2.6: Generally useful tools. A python utility belt.
 dev-python/watchdog 0.9.0: Python API and shell utilities to monitor file system events
 dev-python/webassets 0.12.1: Asset management for Python web development
+dev-python/youtube_dl 2020.9.20: Command-line program to download videos from YouTube.com and other video sites
 dev-python/zttf 0.0.20180718: Python TTF file parser
 dev-qt/qtoiio 2019.2.0: Qt Image IO plugin based on OpenImageIO
 dev-vcs/gitmon 0.3.2: Git Repository Monitor
