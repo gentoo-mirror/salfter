@@ -169,6 +169,7 @@ www-apps/wordpress 5.3.2: Wordpress PHP and MySQL based content management syste
 www-client/chromium 81.0.4044.113: Open-source version of Google Chrome web browser
 www-misc/kiwix-desktop 2.0.4 9999: cross-platform viewer/manager of ZIM files
 www-misc/kiwix-lib 9.4.0: Kiwix software suite core: code shared by all Kiwix ports
+www-misc/kiwix-tools 3.1.2: collection of Kiwix related command line tools
 www-misc/zoneminder 1.32.3: Capture, analyse, record and monitor any cameras attached to your system
 x11-apps/xinit 1.4.1: X Window System initializer
 x11-libs/amd-adl-sdk 10.2: API to access display driver functionality for ATI graphics cards
