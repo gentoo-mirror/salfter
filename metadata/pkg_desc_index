@@ -16,6 +16,7 @@ app-text/calibre 4.9.1-r2: Ebook management application
 app-text/gimagereader 3.3.1: A Gtk/Qt front-end to tesseract-ocr
 app-text/pdfsandwich 0.1.6: generator of sandwich OCR pdf files
 app-text/qtspell 0.8.5: Spell checking for Qt text widgets
+dev-cpp/gtkspellmm 3.0.5: C++ bindings for gtkspell
 dev-cpp/mustache 3.2.1: Mustache implementation for modern C++
 dev-dotnet/gnu-getopt-net 9999: a C# port of the Java port of GNU getopt
 dev-embedded/bossac 1.7.0: flash programming utility for Atmel's SAM family of flash-based ARM microcontrollers
