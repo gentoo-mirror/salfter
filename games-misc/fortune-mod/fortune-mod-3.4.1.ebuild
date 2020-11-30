@@ -1,5 +1,6 @@
 EAPI=7
-inherit eutils toolchain-funcs cmake-utils
+#inherit eutils toolchain-funcs cmake-utils
+inherit cmake
 
 DESCRIPTION="The notorious fortune program"
 HOMEPAGE="http://www.shlomifish.org/open-source/projects/fortune-mod/"
@@ -11,7 +12,9 @@ KEYWORDS="alpha amd64 arm hppa ia64 m68k mips ppc ppc64 s390 sh sparc x86 ~x86-f
 IUSE="offensive"
 
 DEPEND="app-text/recode
-	dev-libs/rinutils"
+	dev-libs/rinutils
+	dev-perl/Path-Tiny
+	dev-perl/App-XML-DocBook-Builder"
 
 src_prepare() {
 	# null out selected categories
@@ -26,21 +29,21 @@ src_prepare() {
 	sed -i "s/LOCALDIR/COOKIEDIR/" datfiles/CMakeLists.txt
 	sed -i "s/LOCALODIR/OCOOKIEDIR/" datfiles/off/CMakeLists.txt
 
-	cmake-utils_src_prepare 
+	cmake_src_prepare 
 }
 
 src_configure() {
 	local mycmakeargs=(
 		-DNO_OFFENSIVE=$(usex offensive)
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_compile() {
-	cmake-utils_src_make
+	cmake_src_compile
 }
 
 src_install() {
-	cmake-utils_src_install
+	cmake_src_install
 	dodoc ChangeLog INDEX Notes Offensive README TODO cookie-files
 }
