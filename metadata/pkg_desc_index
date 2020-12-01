@@ -137,6 +137,7 @@ net-misc/zec-miner-bin 0.3.4b: EWBF Zcash CUDA miner
 net-news/trn 4.0-r77: threaded news reader
 net-p2p/MinerSwitcher 9999: altcoin mining profitability switcher
 net-p2p/trezord 2.0.29 9999: Trezor Bridge
+net-p2p/trezord-go 2.0.30: Trezor Bridge
 net-print/epson-inkjet-printer-escpr2 1.1.9: Epson Inkjet Printer Driver (ESC/P-R) 2
 net-proxy/dansguardian 2.12.0.3-r3: Web content filtering via proxy
 net-proxy/e2guardian 5.3.4: Web content filtering via proxy
