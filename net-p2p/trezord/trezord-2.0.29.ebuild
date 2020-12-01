@@ -11,6 +11,7 @@ LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="amd64"
 EGO_PN=github.com/trezor/trezord-go
+DEPEND="!net-p2p/trezord-go"
 
 src_unpack()
 {

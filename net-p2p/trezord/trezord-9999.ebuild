@@ -11,6 +11,7 @@ EGIT_REPO_URI="https://github.com/trezor/trezord-go"
 LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS=""
+DEPEND="!net-p2p/trezord-go"
 
 DEPEND="dev-lang/go"
 
