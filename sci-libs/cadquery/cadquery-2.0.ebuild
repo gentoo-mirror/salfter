@@ -1,6 +1,6 @@
 EAPI=6
 
-PYTHON_COMPAT=( python3_{5,6,7} )
+PYTHON_COMPAT=( python3_{5,6,7,8,9} )
 
 inherit distutils-r1
 
@@ -16,10 +16,4 @@ RDEPEND=">=sci-libs/pythonocc-0.18.1
 	 dev-python/pyparsing"
 DEPEND=""
 PATCHES="$FILESDIR/$P-no-tests.patch"
-
-python_prepare_all()
-{
-	rm runtests.py || die
-	distutils-r1_python_prepare_all
-}
 
