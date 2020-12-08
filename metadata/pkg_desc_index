@@ -37,10 +37,9 @@ dev-python/ProfitLib 9999: altcoin mining profitability calculator
 dev-python/PyCCEX 9999: Python binding for the C-CEX altcoin-trading API
 dev-python/PyCryptopia 9999: Python binding for the Cryptopia altcoin-trading API
 dev-python/PyCryptsy 9999: Python binding for the Cryptsy altcoin-trading API
-dev-python/PyQt5 5.9.2: Python bindings for the Qt framework
 dev-python/awesome-slugify 1.6.5: Python flexible slugify function
 dev-python/base58 0.2.5: Base58 and Base58Check implementation
-dev-python/bitcoin 1.1.42: Python Bitcoin Tools
+dev-python/bitcoin 1.1.42-r1: Python Bitcoin Tools
 dev-python/bitcoin-abe 9999: cryptocurrency blockchain explorer
 dev-python/bitmerchant 0.1.8: Bitmerchant is a work-in-progress python library for common bitcoin/altcoin merchant uses.
 dev-python/bleuBot 9999: Python binding for the BleuTrade altcoin-trading API
@@ -152,11 +151,10 @@ sci-electronics/kifield 0.1.12: bulk-edit components in a KiCad schematic or lib
 sci-electronics/nextpnr 0.0.20201130: portable FPGA place and route tool
 sci-electronics/prjtrellis 0.0.20200629: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
-sci-electronics/verilator 4.034 9999: The fast free Verilog/SystemVerilog simulator
 sci-electronics/yosys 0.9 0.10_alpha20201125: framework for Verilog RTL synthesis
 sci-libs/Shapely 1.6.4: Manipulation and analysis of geometric objects in the Cartesian plane
 sci-libs/boost-numeric-bindings 0.99 20110819: Numeric Library Bindings for Boost UBlas
-sci-libs/cadquery 0.1.5: A parametric CAD scripting framework based on PythonOCC
+sci-libs/cadquery 2.0: A parametric CAD scripting framework based on PythonOCC
 sci-libs/geogram 1.7.4: programming library of geometric algorithms
 sci-libs/openmvg 9999-r1: open Multiple View Geometry library. Basis for 3D computer vision and Structure from Motion.
 sci-libs/pythonocc 0.18.1: An industrial strength 3D python package for CAD/BIM/PLM/CAM
