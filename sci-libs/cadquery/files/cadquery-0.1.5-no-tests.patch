@@ -1,0 +1,16 @@
+--- a/setup.py	2018-08-28 12:39:18.000000000 -0700
++++ a/setup.py	2020-01-10 15:27:34.594080172 -0800
+@@ -30,12 +30,11 @@
+     author_email='dave.cowden@gmail.com',
+     description='CadQuery is a parametric  scripting language for creating and traversing CAD models',
+     long_description=open('README.md').read(),
+-    packages=['cadquery','cadquery.contrib','cadquery.occ_impl','cadquery.plugins','tests'],
++    packages=['cadquery','cadquery.contrib','cadquery.occ_impl','cadquery.plugins'],
+     install_requires=['pyparsing'],
+     include_package_data=True,
+     zip_safe=False,
+     platforms='any',
+-    test_suite='tests',
+ 
+     classifiers=[
+         'Development Status :: 5 - Production/Stable',
