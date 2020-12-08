@@ -84,6 +84,12 @@ net-proxy/e2guardian:logrotate - Use app-admin/logrotate for rotating logs.
 net-proxy/e2guardian:ntlm - Enable support for the NTLM auth plugin.
 net-proxy/e2guardian:orig-ip - Enable support for checking the client's original destination IP address against HTTP request details when deployed as a transparent proxy (US-CERT VU#435052).
 net-proxy/e2guardian:trickledm - Enable support for the trickle download manager.
+sci-libs/opencascade:freeimage - Enable support for image i/o via media-libs/freeimage
+sci-libs/opencascade:gles2 - Use OpenGL ES 2.0
+sci-libs/opencascade:inspector - Build the OCCT inspector tool for low-level data inspection
+sci-libs/opencascade:optimize - Don't clear allocated memory. Use optimized memory manager unless tbb USE flag is set.
+sci-libs/opencascade:tbb - Enable multithreading with the Intel Threads Building Block dev-cpp/tbb
+sci-libs/opencascade:vtk - Enable Visualization Toolkit
 www-apps/wordpress:akismet - Installs Akismet comment spam plug-in
 www-apps/wordpress:themes - Installs themes (including default theme)
 www-client/chromium:closure-compile - Enable closure type-checking for Chrome's web technology-based UI. Requires Java.
