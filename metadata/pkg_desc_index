@@ -57,6 +57,7 @@ dev-python/flask-assets 0.10 0.12: Flask webassets integration
 dev-python/flask-babel 0.9 0.12.2: i18n and l10n support for Flask based on Babel and pytz
 dev-python/flask-login 0.2.11: Login session support for Flask
 dev-python/flask-principal 0.3.5: Identity management for flask
+dev-python/getmac 0.8.2: Get MAC addresses of remote hosts and local interfaces
 dev-python/html2text 2019.8.11: Turn HTML into equivalent Markdown-structured text
 dev-python/imap-cli 0.8: Command line interface for imap account
 dev-python/intelhex 2.2.1: Python library for Intel HEX files manipulations
