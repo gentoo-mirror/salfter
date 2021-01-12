@@ -80,6 +80,7 @@ dev-python/python-nmap 0.6.1: This is a python class to use nmap and access scan
 dev-python/python-pushover 0.3: Comprehensive bindings and command line utility for the Pushover notification service
 dev-python/python-sane 2.8.2: Python interface to the SANE scanner and frame grabber
 dev-python/python-trezor 0.11.2: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
+dev-python/pythonping 1.0.15: A simple way to ping in Python
 dev-python/rsa 4.0: Pure-Python RSA implementation
 dev-python/rtslib-fb 2.1.72: A Python object API for managing the Linux LIO kernel target
 dev-python/sarge 0.1.5: wrapper for subprocess which provides command pipeline functionality
