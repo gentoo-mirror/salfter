@@ -37,6 +37,8 @@ RDEPEND="
 	dev-libs/nss
 	app-crypt/libsecret[crypt]"
 
+PATCHES="$FILESDIR/$PN-marketplace.patch"
+
 QA_PRESTRIPPED="*"
 QA_PREBUILT="opt/${MY_PN}/codium"
 
