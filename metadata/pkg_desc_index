@@ -150,7 +150,6 @@ sci-libs/Shapely 1.6.4: Manipulation and analysis of geometric objects in the Ca
 sci-libs/boost-numeric-bindings 0.99 20110819: Numeric Library Bindings for Boost UBlas
 sci-libs/cadquery 0.1.5 2.0: A parametric CAD scripting framework based on PythonOCC
 sci-libs/geogram 1.7.4: programming library of geometric algorithms
-sci-libs/opencascade 7.5.0: Development platform for CAD/CAE, 3D surface/solid modeling and data exchange
 sci-libs/openmvg 9999-r1: open Multiple View Geometry library. Basis for 3D computer vision and Structure from Motion.
 sci-libs/pythonocc 0.18.1 7.4.1: An industrial strength 3D python package for CAD/BIM/PLM/CAM
 sci-libs/smesh 6.7.6: An extension to oce, provides advanced meshing features
