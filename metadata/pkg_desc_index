@@ -11,7 +11,6 @@ app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
 app-misc/triggerhappy 0.5.0: a lightweight hotkey daemon
-app-text/calibre 4.9.1-r2: Ebook management application
 app-text/gimagereader 3.3.1: A Gtk/Qt front-end to tesseract-ocr
 app-text/pdfsandwich 0.1.6: generator of sandwich OCR pdf files
 app-text/qtspell 0.8.5: Spell checking for Qt text widgets
@@ -30,53 +29,29 @@ dev-perl/HTML-Parser 3.750.0: Parse <HEAD> section of HTML documents
 dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
-dev-python/ProfitLib 9999: altcoin mining profitability calculator
-dev-python/PyCCEX 9999: Python binding for the C-CEX altcoin-trading API
-dev-python/PyCryptopia 9999: Python binding for the Cryptopia altcoin-trading API
-dev-python/PyCryptsy 9999: Python binding for the Cryptsy altcoin-trading API
 dev-python/awesome-slugify 1.6.5: Python flexible slugify function
 dev-python/base58 0.2.5: Base58 and Base58Check implementation
 dev-python/bitcoin 1.1.42-r1: Python Bitcoin Tools
-dev-python/bitcoin-abe 9999: cryptocurrency blockchain explorer
 dev-python/bitmerchant 0.1.8: Bitmerchant is a work-in-progress python library for common bitcoin/altcoin merchant uses.
-dev-python/bleuBot 9999: Python binding for the BleuTrade altcoin-trading API
-dev-python/boto_utils 0.3: Command-line tools for interacting with Amazon Web Services, based on Boto
 dev-python/chainmap 1.0.3: ChainMap implementation for older Python versions
 dev-python/commontools 0.1.0: Common functions that are often needed but don't really belong anywhere
 dev-python/css-parser 1.0.4-r1: A CSS Cascading Style Sheets library (fork of cssutils)
-dev-python/cython-hidapi 9999: Python wrapper for the hidapi
 dev-python/docopt 0.6.1: Pythonic argument parser, that will make you smile
-dev-python/docopts 0.6.1: shell interface for docopt, the CLI description language
 dev-python/ensure 0.8.2: Literate BDD assertions in Python with no magic
-dev-python/filetype 1.0.5: Small and dependency free Python package to infer file type and MIME type checking the magic numbers signature of a file or buffer.
-dev-python/flask 0.10.1-r2: A microframework based on Werkzeug, Jinja2 and good intentions
 dev-python/flask-assets 0.10 0.12: Flask webassets integration
 dev-python/flask-babel 0.9 0.12.2: i18n and l10n support for Flask based on Babel and pytz
 dev-python/flask-login 0.2.11: Login session support for Flask
 dev-python/flask-principal 0.3.5: Identity management for flask
 dev-python/getmac 0.8.2: Get MAC addresses of remote hosts and local interfaces
 dev-python/html2text 2019.8.11: Turn HTML into equivalent Markdown-structured text
-dev-python/imap-cli 0.8: Command line interface for imap account
 dev-python/intelhex 2.2.1: Python library for Intel HEX files manipulations
 dev-python/jinja 2.8.1: A full-featured template engine for Python
 dev-python/keychain 0.14.2.0: Library for BIP32 hierarchical deterministic keychains/wallets.
 dev-python/keylib 0.1.1: Library for creating and working with private keys, public keys, and bitcoin addresses.
-dev-python/litecoin_scrypt 9999: Python Litecoin SCrypt library from github:forrestv/p2pool
 dev-python/netaddr 0.7.19: Network address representation and manipulation library
 dev-python/netifaces 0.10.9: Portable network interface information
-dev-python/poloniex 9999: Python binding for the Poloniex altcoin-trading API
-dev-python/pybitcoin 0.9.9: Library for Bitcoin & other cryptocurrencies. Tools are provided for blockchain transactions, RPC calls, and private keys, public keys, and addresses.
-dev-python/pycgminer 9999: Python binding for the cgminer RPC API
-dev-python/pycoin 0.80: Python Bitcoin Utilities
 dev-python/pycurl 7.43.0: python binding for curl/libcurl
-dev-python/pylcdsysinfo 9999: Python interface for Coldtears LCD module
 dev-python/pylru 1.2.0: A least recently used (LRU) cache for Python
-dev-python/python-bitcoinrpc 9999: Python interface to bitcoind's JSON-RPC API
-dev-python/python-bittrex 9999: Python binding for the Bittrex altcoin-trading API
-dev-python/python-mnemonic 9999: Mnemonic code for generating deterministic keys, BIP39
-dev-python/python-nmap 0.6.1: This is a python class to use nmap and access scan results from python3
-dev-python/python-pushover 0.3: Comprehensive bindings and command line utility for the Pushover notification service
-dev-python/python-sane 2.8.2: Python interface to the SANE scanner and frame grabber
 dev-python/python-trezor 0.11.2: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 dev-python/pythonping 1.0.15: A simple way to ping in Python
 dev-python/rsa 4.0: Pure-Python RSA implementation
@@ -84,14 +59,12 @@ dev-python/rtslib-fb 2.1.72: A Python object API for managing the Linux LIO kern
 dev-python/sarge 0.1.5: wrapper for subprocess which provides command pipeline functionality
 dev-python/scikit-image 0.15.0: Image processing in Python
 dev-python/sockjs-tornado 1.0.3: server side counterpart of SockJS-client browser library running on top of Tornado framework
-dev-python/typing 3.6.6: Type Hints for Python
 dev-python/utilitybelt 0.2.6: Generally useful tools. A python utility belt.
 dev-python/watchdog 0.9.0: Python API and shell utilities to monitor file system events
 dev-python/webassets 0.12.1: Asset management for Python web development
 dev-python/youtube_dl 2020.9.20: Command-line program to download videos from YouTube.com and other video sites
 dev-python/zttf 0.0.20180718: Python TTF file parser
 dev-qt/qtoiio 2019.2.0: Qt Image IO plugin based on OpenImageIO
-dev-vcs/gitmon 0.3.2: Git Repository Monitor
 games-emulation/sdlmame 9999: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.4.1: The notorious fortune program
 mail-filter/hashcash-milter 0.1.3: A milter-based application to mint and check HashCash stamps
@@ -104,7 +77,6 @@ media-gfx/meshroom 2019.2.0: GPU-accelerated photogrammetry
 media-gfx/slic3r-pe 1.41.3 1.42.0_beta2: Prusa Edition of a mesh slicer to generate G-code for fused-filament-fabrication (3D printers)
 media-libs/a52dec 0.7.5: library for decoding ATSC A/52 streams used in DVD
 media-sound/mp3val 0.1.8: MP3 validator
-media-sound/pykaraoke 0.7.5: Python powered karaoke.
 media-video/atomicparsley 0.9.0: command line program for reading, parsing and setting iTunes-style metadata in MPEG4 files
 media-video/hlsdl 0.1_alpha20200103: C program to download VoD HLS (.m3u8) files
 media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
@@ -112,7 +84,6 @@ media-video/mediaelch 2.6.2: Video metadata scraper
 media-video/mjpg-streamer 9999: MJPG-streamer takes JPGs from Linux-UVC compatible webcams
 media-video/vobsub2srt 1.0_alpha7: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
 net-fs/afpfs-ng 0.8.1: An Apple Filing Protocol client implemented in FUSE
-net-fs/greyhole 0.10.14: redundant storage pooling using Samba
 net-fs/netatalk 2.2.5: Open Source AFP server and other AppleTalk-related utilities
 net-mail/spfpolicy 2.010: Postfix policy server implementing Sender Policy Framework (SPF)
 net-misc/alexis78-ccminer 1.5.3: Multi-algorithm GPU miner
@@ -135,18 +106,14 @@ net-p2p/trezord-go 2.0.30: Trezor Bridge
 net-print/epson-inkjet-printer-escpr2 1.1.9: Epson Inkjet Printer Driver (ESC/P-R) 2
 net-proxy/dansguardian 2.12.0.3-r3: Web content filtering via proxy
 net-proxy/e2guardian 5.3.4: Web content filtering via proxy
-sci-biology/fah-control 7.5.1-r8: Folding@home Client Advanced Control GUI
 sci-biology/fah-viewer 7.5.1-r2: Folding@home 3D Viewer
 sci-electronics/altium2kicad 0.0.20200306: Altium to KiCad converter for PCB and schematics
-sci-electronics/apio 0.5.4: Open source ecosystem for open FPGA boards
 sci-electronics/arachne-pnr 0.0.20190728: place-and-route tool for FPGAs
-sci-electronics/boms-away 20171029: BOM/component manager for KiCad
 sci-electronics/icestorm 0.0.20201204: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/nextpnr 0.0.20210102: portable FPGA place and route tool
 sci-electronics/prjtrellis 0.0.20200629: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
 sci-electronics/yosys 0.9 0.10_alpha20210104: framework for Verilog RTL synthesis
-sci-libs/Shapely 1.6.4: Manipulation and analysis of geometric objects in the Cartesian plane
 sci-libs/boost-numeric-bindings 0.99 20110819: Numeric Library Bindings for Boost UBlas
 sci-libs/cadquery 0.1.5 2.0: A parametric CAD scripting framework based on PythonOCC
 sci-libs/geogram 1.7.4: programming library of geometric algorithms
