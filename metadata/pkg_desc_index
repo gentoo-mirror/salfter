@@ -54,6 +54,7 @@ dev-python/pycurl 7.43.0: python binding for curl/libcurl
 dev-python/pylru 1.2.0: A least recently used (LRU) cache for Python
 dev-python/python-trezor 0.11.2: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 dev-python/pythonping 1.0.15: A simple way to ping in Python
+dev-python/pywrap 0.1.0: Simple function-wrapping API with ctypes
 dev-python/rsa 4.0: Pure-Python RSA implementation
 dev-python/rtslib-fb 2.1.72: A Python object API for managing the Linux LIO kernel target
 dev-python/sarge 0.1.5: wrapper for subprocess which provides command pipeline functionality
