@@ -12,8 +12,8 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND=">=sci-libs/pythonocc-7.4.0
-	 dev-python/pyparsing"
+RDEPEND="dev-python/pythonocc[${PYTHON_USEDEP}]
+	dev-python/pyparsing[${PYTHON_USEDEP}]"
 DEPEND=""
 PATCHES="$FILESDIR/$P-no-tests.patch"
 
