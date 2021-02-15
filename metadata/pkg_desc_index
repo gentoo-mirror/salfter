@@ -67,6 +67,7 @@ dev-python/zttf 0.0.20180718: Python TTF file parser
 dev-qt/qtoiio 2019.2.0: Qt Image IO plugin based on OpenImageIO
 games-emulation/sdlmame 9999: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.4.1: The notorious fortune program
+gemini-client/lagrange 1.1.3: desktop GUI client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3: A milter-based application to mint and check HashCash stamps
 media-gfx/CQ-editor 0.0_alpha20191117: CadQuery GUI editor based on PyQT
 media-gfx/alicevision 2.2.0: photogrammetric computer vision framework
