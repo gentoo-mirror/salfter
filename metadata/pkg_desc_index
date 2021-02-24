@@ -6,7 +6,7 @@ app-crypt/mit-krb5 1.17.1: MIT Kerberos V
 app-crypt/sshexport 2.4: SSH public key exporter
 app-crypt/vanitygen-plus 1.54_alpha20181209 9999: cryptocurrency vanity-address generator
 app-crypt/zuluCrypt 5.4.0: Front end to cryptsetup
-app-editors/vscodium-bin 1.52.1: Free/Libre Open Source Software Binaries of VSCode (binary version)
+app-editors/vscodium-bin 1.53.2: Free/Libre Open Source Software Binaries of VSCode (binary version)
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
