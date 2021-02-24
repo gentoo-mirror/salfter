@@ -1,13 +1,13 @@
---- a/resources/app/product.json	2020-12-16 16:27:10.000000000 -0800
-+++ a/resources/app/product.json	2021-01-19 18:25:53.040507126 -0800
-@@ -2,8 +2,8 @@
-   "serverDataFolderName": ".vscode-server-oss",
-   "linkProtectionTrustedDomains": ["https://open-vsx.org"],
+--- a/resources/app/product.json	2021-02-11 16:23:08.000000000 -0800
++++ a/resources/app/product.json	2021-02-23 20:32:32.435925494 -0800
+@@ -137,8 +137,8 @@
+   "keyboardShortcutsUrlWin": "https://go.microsoft.com/fwlink/?linkid=832145",
+   "quality": "stable",
    "extensionsGallery": {
--    "itemUrl": "https://open-vsx.org/vscode/item",
--    "serviceUrl": "https://open-vsx.org/vscode/gallery"
+-    "serviceUrl": "https://open-vsx.org/vscode/gallery",
+-    "itemUrl": "https://open-vsx.org/vscode/item"
 +    "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
 +    "itemUrl": "https://marketplace.visualstudio.com/items"
    },
-   "quality": "stable",
-   "keyboardShortcutsUrlWin": "https://go.microsoft.com/fwlink/?linkid=832145",
+   "linkProtectionTrustedDomains": ["https://open-vsx.org"],
+   "serverDataFolderName": ".vscode-server-oss",
