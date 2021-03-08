@@ -53,6 +53,7 @@ dev-python/netaddr 0.7.19: Network address representation and manipulation libra
 dev-python/netifaces 0.10.9: Portable network interface information
 dev-python/pycurl 7.43.0: python binding for curl/libcurl
 dev-python/pylru 1.2.0: A least recently used (LRU) cache for Python
+dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion representation, manipulation, 3D animation and geometry
 dev-python/python-trezor 0.11.2: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 dev-python/pythonping 1.0.15: A simple way to ping in Python
 dev-python/pywrap 0.1.0: Simple function-wrapping API with ctypes
