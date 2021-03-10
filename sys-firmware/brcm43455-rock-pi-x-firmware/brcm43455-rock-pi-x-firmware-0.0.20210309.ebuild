@@ -9,9 +9,6 @@ LICENSE="Broadcom"
 SLOT="0"
 KEYWORDS="amd64"
 
-DEPEND="!sys-kernel/genkernel[firmware]
-	!sys-kernel/linux-firmware"
-
 src_install() {
   cd $S
   insinto /lib/firmware/brcm
