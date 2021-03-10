@@ -15,7 +15,7 @@ DEPEND="!sys-kernel/genkernel[firmware]
 src_install() {
   cd $S
   insinto /lib/firmware/brcm
-  newins wifi/brcmfmac43455c0-sdio.bin brcmfmac43455-sdio.bin
+  #newins wifi/brcmfmac43455c0-sdio.bin brcmfmac43455-sdio.bin
   newins "wifi/brcmfmac43455-sdio.ROCK Pi-ROCK Pi X.txt" "brcmfmac43455-sdio.Radxa-ROCK Pi X.txt"
   doins "bt/BCM4345C0.hcd"
 }
