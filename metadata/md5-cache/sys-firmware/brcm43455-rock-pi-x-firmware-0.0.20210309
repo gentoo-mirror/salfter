@@ -7,4 +7,4 @@ KEYWORDS=amd64
 LICENSE=Broadcom
 SLOT=0
 SRC_URI=https://dl.radxa.com/rockpix/drivers/firmware/AP6255_BT_WIFI_Firmware.zip
-_md5_=f9d112b523871bbd87e26c407fcec3fd
+_md5_=4d2df56f1170c2ea382cda49bb142b99
