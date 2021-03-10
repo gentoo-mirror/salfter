@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=!sys-kernel/genkernel[firmware] !sys-kernel/linux-firmware
+DESCRIPTION=firmware for Broadcom 43455 WiFi/Bluetooth on Rock Pi X
+EAPI=7
+HOMEPAGE=https://dl.radxa.com/rockpix/
+KEYWORDS=amd64
+LICENSE=Broadcom
+SLOT=0
+SRC_URI=https://dl.radxa.com/rockpix/drivers/firmware/AP6255_BT_WIFI_Firmware.zip
+_md5_=5b54122f5abfd62c242d3e93198584ae

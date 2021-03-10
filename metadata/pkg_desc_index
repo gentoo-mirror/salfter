@@ -125,6 +125,7 @@ sci-libs/pythonocc 0.18.1 7.4.1: An industrial strength 3D python package for CA
 sci-libs/smesh 6.7.6: An extension to oce, provides advanced meshing features
 sci-visualization/admesh 0.98.3: CLI and C library for processing triangulated solid meshes
 sys-block/targetcli-fb 2.1.51: Command shell for managing Linux LIO kernel target
+sys-firmware/brcm43455-rock-pi-x-firmware 0.0.20210309: firmware for Broadcom 43455 WiFi/Bluetooth on Rock Pi X
 sys-fs/cpmtools 2.20: CP/M filesystem manipulation tools, similar to mtools
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 sys-kernel/raspberrypi-sources 4.18.9999: Raspberry PI kernel sources
