@@ -24,7 +24,6 @@ dev-embedded/cc65 2.19: complete cross development package for 65(C)02 systems
 dev-embedded/teensy-hid-listen 1.01: Command line HID-raw listener for Teensy microcontrollers
 dev-embedded/teensy_loader_cli 2.1_p20161201 9999: Command line Teensy Loader
 dev-libs/ooml 20171118: C++ Object Oriented Mechanics Language
-dev-libs/redland 1.0.17-r2: High-level interface for the Resource Description Framework
 dev-libs/rinutils 0.2.0: C11 / gnu11 utilities C library by Shlomi Fish / Rindolf
 dev-perl/App-XML-DocBook-Builder 0.1003: build DocBook/XML files
 dev-perl/HTML-Parser 3.750.0: Parse <HEAD> section of HTML documents
