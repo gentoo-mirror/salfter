@@ -7,7 +7,7 @@ app-crypt/mit-krb5 1.17.1: MIT Kerberos V
 app-crypt/sshexport 2.4: SSH public key exporter
 app-crypt/vanitygen-plus 1.54_alpha20181209 9999: cryptocurrency vanity-address generator
 app-crypt/zuluCrypt 5.4.0: Front end to cryptsetup
-app-editors/vscodium-bin 1.53.2: Free/Libre Open Source Software Binaries of VSCode (binary version)
+app-editors/vscodium-bin 1.54.2: Free/Libre Open Source Software Binaries of VSCode (binary version)
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
@@ -105,7 +105,6 @@ net-news/trn 4.0-r77: threaded news reader
 net-p2p/MinerSwitcher 9999: altcoin mining profitability switcher
 net-p2p/trezord 2.0.29 9999: Trezor Bridge
 net-p2p/trezord-go 2.0.30: Trezor Bridge
-net-print/epson-inkjet-printer-escpr2 1.1.9: Epson Inkjet Printer Driver (ESC/P-R) 2
 net-proxy/dansguardian 2.12.0.3-r3: Web content filtering via proxy
 net-proxy/e2guardian 5.3.4: Web content filtering via proxy
 sci-biology/fah-viewer 7.5.1-r2: Folding@home 3D Viewer
