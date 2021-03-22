@@ -12,7 +12,8 @@ SRC_URI="https://github.com/revarbat/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz
 S=$WORKDIR/$PN-$GIT_COMMIT
 
 RDEPEND="dev-python/numpy[${PYTHON_USEDEP}]
-	 dev-python/pyquaternion[${PYTHON_USEDEP}]"
+	 dev-python/pyquaternion[${PYTHON_USEDEP}]
+	 dev-python/pyopengl[${PYTHON_USEDEP}]"
 
 LICENSE="BSD-2"
 SLOT="0"
