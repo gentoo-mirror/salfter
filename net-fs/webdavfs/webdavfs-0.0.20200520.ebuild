@@ -25,6 +25,6 @@ src_install()
 {
   golang-single_src_install
   insinto /usr/sbin
-  newbin $WORKDIR/gobin/webdavfs mount.webdavfs
+  newsbin $WORKDIR/gobin/webdavfs mount.webdavfs
 }
 
