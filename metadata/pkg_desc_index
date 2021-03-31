@@ -87,6 +87,7 @@ media-video/mjpg-streamer 9999: MJPG-streamer takes JPGs from Linux-UVC compatib
 media-video/vobsub2srt 1.0_alpha7: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
 net-fs/afpfs-ng 0.8.1: An Apple Filing Protocol client implemented in FUSE
 net-fs/netatalk 2.2.5: Open Source AFP server and other AppleTalk-related utilities
+net-fs/webdavfs 0.0.20200520: A FUSE filesystem for WebDAV shares
 net-mail/spfpolicy 2.010: Postfix policy server implementing Sender Policy Framework (SPF)
 net-misc/alexis78-ccminer 1.5.3: Multi-algorithm GPU miner
 net-misc/bminer-bin 5.3.0: Bminer Zcash CUDA miner
