@@ -1,6 +1,6 @@
 EAPI=6
 
-GIT_COMMIT=81c2b92bb419d5b58d47fa8bb8cbb134fb2773bc
+GIT_COMMIT=0ccc7229c02449618209a20d66b9fa07e3ea79f2
 S=$WORKDIR/$PN-$GIT_COMMIT
 
 # get the current value from the yosys makefile
