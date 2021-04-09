@@ -103,7 +103,7 @@ net-misc/tpruvot-ccminer 2.3.1: Bitcoin CPU/GPU/FPGA miner in C
 net-misc/wolf-m7m-cpuminer 9999: m7m CPU miner
 net-misc/zec-miner-bin 0.3.4b: EWBF Zcash CUDA miner
 net-news/trn 4.0-r77: threaded news reader
-net-p2p/trezord-go 2.0.30: Trezor Bridge
+net-p2p/trezord-go 2.0.31: Trezor Bridge
 net-proxy/dansguardian 2.12.0.3-r3: Web content filtering via proxy
 net-proxy/e2guardian 5.3.4: Web content filtering via proxy
 sci-electronics/altium2kicad 0.0.20200306: Altium to KiCad converter for PCB and schematics
