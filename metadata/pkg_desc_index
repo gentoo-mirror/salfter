@@ -30,14 +30,12 @@ dev-perl/HTML-Parser 3.750.0: Parse <HEAD> section of HTML documents
 dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
-dev-python/awesome-slugify 1.6.5: Python flexible slugify function
 dev-python/base58 0.2.5: Base58 and Base58Check implementation
 dev-python/bitcoin 1.1.42-r1: Python Bitcoin Tools
 dev-python/bitmerchant 0.1.8: Bitmerchant is a work-in-progress python library for common bitcoin/altcoin merchant uses.
 dev-python/chainmap 1.0.3: ChainMap implementation for older Python versions
 dev-python/commontools 0.1.0: Common functions that are often needed but don't really belong anywhere
 dev-python/css-parser 1.0.4-r1: A CSS Cascading Style Sheets library (fork of cssutils)
-dev-python/docopt 0.6.1: Pythonic argument parser, that will make you smile
 dev-python/ensure 0.8.2: Literate BDD assertions in Python with no magic
 dev-python/flask-babel 0.9 0.12.2: i18n and l10n support for Flask based on Babel and pytz
 dev-python/flask-login 0.2.11: Login session support for Flask
@@ -50,13 +48,10 @@ dev-python/keychain 0.14.2.0: Library for BIP32 hierarchical deterministic keych
 dev-python/keylib 0.1.1: Library for creating and working with private keys, public keys, and bitcoin addresses.
 dev-python/netaddr 0.7.19: Network address representation and manipulation library
 dev-python/netifaces 0.10.9: Portable network interface information
-dev-python/pycurl 7.43.0: python binding for curl/libcurl
-dev-python/pylru 1.2.0: A least recently used (LRU) cache for Python
 dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion representation, manipulation, 3D animation and geometry
 dev-python/python-trezor 0.11.2: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 dev-python/pythonping 1.0.15: A simple way to ping in Python
 dev-python/pywrap 0.1.0: Simple function-wrapping API with ctypes
-dev-python/rsa 4.0: Pure-Python RSA implementation
 dev-python/rtslib-fb 2.1.72: A Python object API for managing the Linux LIO kernel target
 dev-python/sarge 0.1.5: wrapper for subprocess which provides command pipeline functionality
 dev-python/scikit-image 0.15.0: Image processing in Python
@@ -64,7 +59,6 @@ dev-python/sockjs-tornado 1.0.3: server side counterpart of SockJS-client browse
 dev-python/utilitybelt 0.2.6: Generally useful tools. A python utility belt.
 dev-python/watchdog 0.9.0: Python API and shell utilities to monitor file system events
 dev-python/webassets 0.12.1: Asset management for Python web development
-dev-python/zttf 0.0.20180718: Python TTF file parser
 dev-qt/qtoiio 2019.2.0: Qt Image IO plugin based on OpenImageIO
 games-emulation/sdlmame 9999: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.4.1: The notorious fortune program
