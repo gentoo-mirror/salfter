@@ -26,7 +26,7 @@ DEPEND=">=app-text/tesseract-3.04
 	  dev-qt/qtcore:5
 	  app-text/qtspell[qt5]
 	  app-text/poppler
-	  dev-libs/quazip	
+	  <dev-libs/quazip-1	
 	)
 	gtk? (
 	  dev-cpp/gtkmm

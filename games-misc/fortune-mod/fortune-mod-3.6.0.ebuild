@@ -17,11 +17,11 @@ DEPEND="app-text/recode
 	dev-perl/App-XML-DocBook-Builder"
 
 src_prepare() {
-	# null out selected categories
-	for i in $FORTUNE_DELETE
-	do
-		find $S/datfiles $S/datfiles/off/unrotated -name $i -exec truncate -s 0 \{} \;
-	done
+#	# null out selected categories
+#	for i in ${IUSE_FORTUNE_DELETE[@]}
+#	do
+#		find $S/datfiles $S/datfiles/off/unrotated -name $i -exec truncate -s 0 \{} \;
+#	done
 
 	# fix install paths
 	cd $S
@@ -34,7 +34,7 @@ src_prepare() {
 
 src_configure() {
 	local mycmakeargs=(
-		-DNO_OFFENSIVE=$(usex offensive)
+		-DNO_OFFENSIVE=$(usex offensive "no" "yes")
 	)
 	cmake_src_configure
 }
