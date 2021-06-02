@@ -3,6 +3,7 @@ app-admin/webmin 1.955: A web-based Unix systems administration interface
 app-arch/libzim 6.3.0: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
 app-arch/nulib2 3.1.0: utility & library for manipulating NuFX archives
 app-benchmarks/iometer 1.1.0: I/O subsystem measurement and characterization tool for single and clustered systems
+app-crypt/mit-krb5 1.17.1: MIT Kerberos V
 app-crypt/sshexport 2.4: SSH public key exporter
 app-crypt/vanitygen-plus 1.54_alpha20181209 9999: cryptocurrency vanity-address generator
 app-crypt/zuluCrypt 5.4.0: Front end to cryptsetup
