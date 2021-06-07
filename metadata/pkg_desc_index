@@ -39,9 +39,10 @@ dev-python/getmac 0.8.2: Get MAC addresses of remote hosts and local interfaces
 dev-python/keychain 0.14.2.0: Library for BIP32 hierarchical deterministic keychains/wallets.
 dev-python/keylib 0.1.1: Library for creating and working with private keys, public keys, and bitcoin addresses.
 dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion representation, manipulation, 3D animation and geometry
+dev-python/python-trezor 0.11.2: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 dev-python/pythonping 1.0.15: A simple way to ping in Python
 dev-python/pywrap 0.1.0: Simple function-wrapping API with ctypes
-dev-python/scikit-image 0.15.0: Image processing in Python
+dev-python/sockjs-tornado 1.0.3: server side counterpart of SockJS-client browser library running on top of Tornado framework
 dev-python/utilitybelt 0.2.6: Generally useful tools. A python utility belt.
 dev-qt/qtoiio 2019.2.0: Qt Image IO plugin based on OpenImageIO
 games-emulation/sdlmame 9999: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
