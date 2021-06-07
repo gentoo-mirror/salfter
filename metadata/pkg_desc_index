@@ -35,24 +35,14 @@ dev-python/bitcoin 1.1.42-r1: Python Bitcoin Tools
 dev-python/bitmerchant 0.1.8: Bitmerchant is a work-in-progress python library for common bitcoin/altcoin merchant uses.
 dev-python/commontools 0.1.0: Common functions that are often needed but don't really belong anywhere
 dev-python/ensure 0.8.2: Literate BDD assertions in Python with no magic
-dev-python/flask-babel 0.9 0.12.2: i18n and l10n support for Flask based on Babel and pytz
-dev-python/flask-login 0.2.11: Login session support for Flask
-dev-python/flask-principal 0.3.5: Identity management for flask
 dev-python/getmac 0.8.2: Get MAC addresses of remote hosts and local interfaces
-dev-python/html2text 2019.8.11: Turn HTML into equivalent Markdown-structured text
-dev-python/jinja 2.8.1: A full-featured template engine for Python
 dev-python/keychain 0.14.2.0: Library for BIP32 hierarchical deterministic keychains/wallets.
 dev-python/keylib 0.1.1: Library for creating and working with private keys, public keys, and bitcoin addresses.
-dev-python/netaddr 0.7.19: Network address representation and manipulation library
-dev-python/netifaces 0.10.9: Portable network interface information
 dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion representation, manipulation, 3D animation and geometry
 dev-python/pythonping 1.0.15: A simple way to ping in Python
 dev-python/pywrap 0.1.0: Simple function-wrapping API with ctypes
-dev-python/sarge 0.1.5: wrapper for subprocess which provides command pipeline functionality
 dev-python/scikit-image 0.15.0: Image processing in Python
 dev-python/utilitybelt 0.2.6: Generally useful tools. A python utility belt.
-dev-python/watchdog 0.9.0: Python API and shell utilities to monitor file system events
-dev-python/webassets 0.12.1: Asset management for Python web development
 dev-qt/qtoiio 2019.2.0: Qt Image IO plugin based on OpenImageIO
 games-emulation/sdlmame 9999: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.6.1: The notorious fortune program
