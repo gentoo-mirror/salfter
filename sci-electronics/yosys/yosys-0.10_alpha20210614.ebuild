@@ -1,9 +1,9 @@
 EAPI=6
 
-GIT_COMMIT=8cfed1a97957e4c096d1e0a0304d978bcb27e116
+GIT_COMMIT=c6681508f1a2e35d41e8fc6f1f5dec41972ef6fd
 S=$WORKDIR/$PN-$GIT_COMMIT
 
-# get the current value from the yosys makefile
+# get the current value from the yosys makefile...look for ABCREV
 ABC_GIT_COMMIT=4f5f73d18b137930fb3048c0b385c82fa078db38
 
 DESCRIPTION="framework for Verilog RTL synthesis"
