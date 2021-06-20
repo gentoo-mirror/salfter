@@ -4,7 +4,6 @@ app-arch/libzim 6.3.0: reference implementation for the ZIM file format, an offl
 app-arch/nulib2 3.1.0: utility & library for manipulating NuFX archives
 app-benchmarks/iometer 1.1.0: I/O subsystem measurement and characterization tool for single and clustered systems
 app-crypt/mit-krb5 1.17.1: MIT Kerberos V
-app-crypt/sshexport 2.4: SSH public key exporter
 app-crypt/vanitygen-plus 1.54_alpha20181209 9999: cryptocurrency vanity-address generator
 app-crypt/zuluCrypt 5.4.0: Front end to cryptsetup
 app-editors/vscodium-bin 1.57.0: Free/Libre Open Source Software Binaries of VSCode (binary version)
@@ -18,10 +17,7 @@ app-text/pdfsandwich 0.1.6: generator of sandwich OCR pdf files
 app-text/qtspell 0.8.5: Spell checking for Qt text widgets
 dev-cpp/gtkspellmm 3.0.5: C++ bindings for gtkspell
 dev-cpp/mustache 3.2.1: Mustache implementation for modern C++
-dev-dotnet/gnu-getopt-net 9999: a C# port of the Java port of GNU getopt
 dev-embedded/bossac 1.7.0: flash programming utility for Atmel's SAM family of flash-based ARM microcontrollers
-dev-embedded/cc65 2.19: complete cross development package for 65(C)02 systems
-dev-embedded/teensy-hid-listen 1.01: Command line HID-raw listener for Teensy microcontrollers
 dev-embedded/teensy_loader_cli 2.1_p20161201 9999: Command line Teensy Loader
 dev-libs/ooml 20171118: C++ Object Oriented Mechanics Language
 dev-libs/rinutils 0.2.0: C11 / gnu11 utilities C library by Shlomi Fish / Rindolf
@@ -56,7 +52,6 @@ media-gfx/curaengine 3.6.0 4.0.0: A 3D model slicing engine for 3D printing
 media-gfx/meshconv-bin 1.27: 3D model converter
 media-gfx/meshroom 2019.2.0: GPU-accelerated photogrammetry
 media-gfx/stl_normalize 0.0.20210314: A script to normalize and validate STL files
-media-sound/mp3val 0.1.8: MP3 validator
 media-video/hlsdl 0.1_alpha20200103: C program to download VoD HLS (.m3u8) files
 media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
 media-video/mediaelch 2.6.2: Video metadata scraper
@@ -64,11 +59,9 @@ media-video/mjpg-streamer 9999: MJPG-streamer takes JPGs from Linux-UVC compatib
 media-video/vobsub2srt 1.0_alpha7: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
 net-fs/netatalk 2.2.5: Open Source AFP server and other AppleTalk-related utilities
 net-fs/webdavfs 0.0.20200520: A FUSE filesystem for WebDAV shares
-net-mail/spfpolicy 2.010: Postfix policy server implementing Sender Policy Framework (SPF)
 net-misc/alexis78-ccminer 1.5.3: Multi-algorithm GPU miner
 net-misc/bminer-bin 5.3.0: Bminer Zcash CUDA miner
 net-misc/cgminer 4.11.1: Bitcoin FPGA/ASIC miner in C
-net-misc/cprowl 0.5.1: command-line tool to send Prowl notifications to iOS devices
 net-misc/ethminer 0.13.0 0.14.0_rc4: Ethereum miner with CUDA and stratum support
 net-misc/hashcash 1.22-r2: Utility to generate hashcash tokens
 net-misc/klaust-ccminer 8.24: Multi-algorithm GPU miner
