@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst setup
+DESCRIPTION=Postfix policy server implementing Sender Policy Framework (SPF)
+EAPI=7
+HOMEPAGE=http://www.openspf.org/Software
+INHERIT=eutils user
+KEYWORDS=amd64 ~hppa ~ppc ppc64 x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/perl-5.6.0 >=dev-perl/Mail-SPF-2.006 dev-perl/NetAddr-IP dev-perl/Sys-Hostname-Long
+SLOT=0
+SRC_URI=http://launchpad.net/postfix-policyd-spf-perl/trunk/release2.010/+download/postfix-policyd-spf-perl-2.010.tar.gz
+_eclasses_=edos2unix	33e347e171066657f91f8b0c72ec8773	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	wrapper	4251d4c84c25f59094fd557e0063a974	eutils	dab5d8ec471d025b79c9e6906bcf3bff	user-info	2e75eaea3582b052ec16d9d5aa74ced3	user	1033b6bed7cf367c4507ea9a3ff503d0
+_md5_=7fea4fe5661c7d4332dea085777af6e8
