@@ -2,16 +2,16 @@ EAPI=7
 
 inherit cmake-utils
 
-GIT_COMMIT=f4bfc2af5b5fac1151a4f582b139d5add4467d9a
+GIT_COMMIT=dd6376433154e008045695f5420469670b0c3a88
 S=$WORKDIR/$PN-$GIT_COMMIT
 
 #ABSEIL_CPP_GIT_COMMIT=a76698790753d2ec71f655cdc84d61bcb27780d4
-FPGA_INTERCHANGE_SCHEMA_GIT_COMMIT=6b2973788692be86c4a8b2cff1353e603e5857a3
+#FPGA_INTERCHANGE_SCHEMA_GIT_COMMIT=6b2973788692be86c4a8b2cff1353e603e5857a3
 
 DESCRIPTION="portable FPGA place and route tool"
 HOMEPAGE="https://github.com/YosysHQ/nextpnr"
-SRC_URI="https://github.com/YosysHQ/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz
-	 https://github.com/SymbiFlow/fpga-interchange-schema/archive/$FPGA_INTERCHANGE_SCHEMA_GIT_COMMIT.tar.gz -> fpga-interchange-schema-$FPGA_INTERCHANGE_SCHEMA_GIT_COMMIT.tar.gz"
+SRC_URI="https://github.com/YosysHQ/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
+#	 https://github.com/SymbiFlow/fpga-interchange-schema/archive/$FPGA_INTERCHANGE_SCHEMA_GIT_COMMIT.tar.gz -> fpga-interchange-schema-$FPGA_INTERCHANGE_SCHEMA_GIT_COMMIT.tar.gz"
 #	 https://github.com/abseil/abseil-cpp/archive/$ABSEIL_CPP_GIT_COMMIT.tar.gz -> abseil-cpp-$ABSEIL_CPP_GIT_COMMIT.tar.gz
 LICENSE=ISC
 SLOT=0
@@ -31,8 +31,8 @@ src_unpack() {
 	rmdir $S/3rdparty/fpga-interchange-schema # $S/3rdparty/abseil-cpp
 #	unpack abseil-cpp-$ABSEIL_CPP_GIT_COMMIT.tar.gz
 #	mv $WORKDIR/abseil-cpp-$ABSEIL_CPP_GIT_COMMIT $S/3rdparty/abseil-cpp
-	unpack fpga-interchange-schema-$FPGA_INTERCHANGE_SCHEMA_GIT_COMMIT.tar.gz
-	mv $WORKDIR/fpga-interchange-schema-$FPGA_INTERCHANGE_SCHEMA_GIT_COMMIT $S/3rdparty/fpga-interchange-schema
+#	unpack fpga-interchange-schema-$FPGA_INTERCHANGE_SCHEMA_GIT_COMMIT.tar.gz
+#	mv $WORKDIR/fpga-interchange-schema-$FPGA_INTERCHANGE_SCHEMA_GIT_COMMIT $S/3rdparty/fpga-interchange-schema
 }
 
 src_configure() {
