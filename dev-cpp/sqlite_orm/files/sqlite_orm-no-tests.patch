@@ -1,0 +1,24 @@
+--- a/CMakeLists.txt	2020-10-08 10:16:14.000000000 -0700
++++ a/CMakeLists.txt	2021-08-20 20:23:01.393806628 -0700
+@@ -29,7 +29,7 @@
+ 
+ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
+ 
+-include(CTest)
++#include(CTest)
+ 
+ ### Dependencies
+ add_subdirectory(dependencies)
+@@ -65,9 +65,9 @@
+ message(STATUS "CMAKE_BUILD_TYPE: ${CMAKE_BUILD_TYPE}")
+ 
+ # Tests
+-if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME AND BUILD_TESTING)
+-    add_subdirectory(tests)
+-endif()
++#if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME AND BUILD_TESTING)
++#    add_subdirectory(tests)
++#endif()
+ 
+ option(BUILD_EXAMPLES ON)
+ if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME AND BUILD_EXAMPLES)
