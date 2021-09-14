@@ -14,6 +14,7 @@ KEYWORDS="amd64"
 
 RDEPEND="dev-python/jinja
 	 dev-python/markupsafe
-	 dev-python/six"
+	 dev-python/six
+	 sci-electronics/yosys"
 DEPEND=""
 
