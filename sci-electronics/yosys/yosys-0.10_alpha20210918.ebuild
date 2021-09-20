@@ -1,6 +1,6 @@
 EAPI=6
 
-GIT_COMMIT=616ace2d9299eee2006650ed3f13e9241664ad20
+GIT_COMMIT=3931b3a03f65965daca20b1228d8882192e74650
 S=$WORKDIR/$PN-$GIT_COMMIT
 
 # get the current value from the yosys makefile...look for ABCREV
