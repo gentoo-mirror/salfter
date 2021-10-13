@@ -1,0 +1,11 @@
+--- a/GNUmakefile	2020-05-23 09:23:54.000000000 -0700
++++ a/GNUmakefile	2021-10-13 13:49:18.263134789 -0700
+@@ -40,7 +40,7 @@
+ 
+ LIBS3_VER_MAJOR ?= 4
+ LIBS3_VER_MINOR ?= 1
+-LIBS3_VER := $(LIBS3_VER_MAJOR).$(LIBS3_VER_MINOR).bac
++LIBS3_VER := $(LIBS3_VER_MAJOR).$(LIBS3_VER_MINOR)
+ 
+ 
+ # -----------------------------------------------------------------------------
