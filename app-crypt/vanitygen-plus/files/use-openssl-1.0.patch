@@ -1,0 +1,9 @@
+--- ./Makefile	2018-03-21 12:29:56.000000000 -0700
++++ ./Makefile	2021-10-17 12:49:28.884689618 -0700
+@@ -1,5 +1,5 @@
+ LIBS=-lpcre -lcrypto -lm -lpthread
+-CFLAGS=-ggdb -O3 -Wall
++CFLAGS=-ggdb -O3 -Wall -I../openssl-1.0.0s/include -L../openssl-1.0.0s
+ OBJS=vanitygen.o oclvanitygen.o oclvanityminer.o oclengine.o keyconv.o pattern.o util.o groestl.o
+ PROGS=vanitygen keyconv oclvanitygen oclvanityminer
+ 
