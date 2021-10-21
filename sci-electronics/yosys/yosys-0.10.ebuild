@@ -2,7 +2,8 @@ EAPI=6
 
 S=$WORKDIR/$PN-$PN-$PV
 
-ABC_GIT_COMMIT=3709744c60696c5e3f4cc123939921ce8107fe04
+#ABC_GIT_COMMIT=3709744c60696c5e3f4cc123939921ce8107fe04
+ABC_GIT_COMMIT=4f5f73d18b137930fb3048c0b385c82fa078db38
 
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="http://www.clifford.at/yosys/"
@@ -12,7 +13,7 @@ LICENSE=ISC
 SLOT=0
 KEYWORDS=amd64
 
-PATCHES="$FILESDIR/$PN-0.9-makefile-fix.patch"
+PATCHES="$FILESDIR/$P-makefile-fix.patch"
 
 DEPEND="dev-vcs/git
 	media-gfx/xdot
