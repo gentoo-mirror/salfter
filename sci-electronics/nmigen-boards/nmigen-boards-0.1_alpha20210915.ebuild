@@ -13,5 +13,5 @@ SLOT="0"
 KEYWORDS="amd64"
 
 RDEPEND="sci-electronics/nmigen"
-DEPEND=""
+DEPEND="dev-python/wheel"
 
