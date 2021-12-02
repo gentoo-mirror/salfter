@@ -17,5 +17,5 @@ RDEPEND="dev-python/jinja
 	 dev-python/six
 	 sci-electronics/pyvcd
 	 sci-electronics/yosys"
-DEPEND=""
+DEPEND="dev-python/pip"
 
