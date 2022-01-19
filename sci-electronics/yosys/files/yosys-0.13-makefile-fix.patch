@@ -1,6 +1,6 @@
---- yosys/Makefile	2021-09-27 07:07:30.000000000 -0700
-+++ yosys/Makefile	2021-10-21 13:08:57.205525773 -0700
-@@ -735,16 +735,16 @@
+--- yosys/Makefile	2022-01-10 23:35:50.000000000 -0800
++++ yosys.Makefile	2022-01-19 14:46:04.195813139 -0800
+@@ -745,16 +745,16 @@
  	$(Q) if test -d abc/.hg; then \
  		echo 'REEBE: NOP qverpgbel vf n ut jbexvat pbcl! Erzbir nop/ naq er-eha "znxr".' | tr 'A-Za-z' 'N-ZA-Mn-za-m'; false; \
  	fi
