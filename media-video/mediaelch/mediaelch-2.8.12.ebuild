@@ -22,17 +22,11 @@ DEPEND="dev-qt/qtquickcontrols:5
 
 src_configure()
 {
-	cd $S || die
-	eqmake5 || die
+  cd $S
+  eqmake5
 }
 
 src_install()
 {
-  dobin $S/MediaElch 
-  insinto /usr/share/applications
-  doins $S/data/desktop/MediaElch.desktop 
-  insinto /usr/share/pixmaps
-  doins $S/data/desktop/MediaElch.png 
-  insinto /usr/share/metainfo
-  doins $S/data/desktop/com.kvibes.MediaElch.metainfo.xml 
+  emake install INSTALL_ROOT=$D
 }
