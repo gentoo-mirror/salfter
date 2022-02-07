@@ -1,8 +1,8 @@
-EAPI=7
+EAPI=8
 
-inherit cmake-utils
+inherit cmake
 
-GIT_COMMIT=1301feb4ad607d5bc7341a1d7059c75077b0e8e9
+GIT_COMMIT=74c99f9195eeb47d106ca74b7abb894cfd47cc03
 S=$WORKDIR/$PN-$GIT_COMMIT
 
 
@@ -35,6 +35,6 @@ src_configure() {
 		$(usex ecp5 -DTRELLIS_ROOT=/usr/share/trellis "")
 		$(usex gui -DBUILD_GUI=ON "")
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
