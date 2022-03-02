@@ -1,15 +1,19 @@
 EAPI=8
 
-GIT_COMMIT=818060880d80b28d483cf5e1c71fcd139d37fe97
-S=$WORKDIR/$PN-$GIT_COMMIT
+inherit git-r3
+
+#GIT_COMMIT=818060880d80b28d483cf5e1c71fcd139d37fe97
+#S=$WORKDIR/$PN-$GIT_COMMIT
 
 # get the current value from the yosys makefile...look for ABCREV
 ABC_GIT_COMMIT=f6fa2ddcfc89099726d60386befba874c7ac1e0d
 
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="http://www.clifford.at/yosys/"
-SRC_URI="https://github.com/YosysHQ/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz
-	 https://github.com/YosysHQ/abc/archive/$ABC_GIT_COMMIT.tar.gz -> abc-$ABC_GIT_COMMIT.tar.gz"
+#SRC_URI="https://github.com/YosysHQ/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz
+SRC_URI="https://github.com/YosysHQ/abc/archive/$ABC_GIT_COMMIT.tar.gz -> abc-$ABC_GIT_COMMIT.tar.gz"
+EGIT_REPO_URI="https://github.com/YosysHQ/yosys"
+EGIT_SUBMODULES=( abc )
 LICENSE=ISC
 SLOT=0
 KEYWORDS=
@@ -20,8 +24,13 @@ DEPEND="dev-vcs/git
 	sys-devel/clang"
 
 src_unpack() {
-	unpack $P.tar.gz
+	git-r3_fetch $EGIT_REPO_URI 
+	git-r3_checkout $EGIT_REPO_URI 
 	unpack abc-$ABC_GIT_COMMIT.tar.gz
+}
+
+src_prepare() {
+	default_src_prepare
 	mv $WORKDIR/abc-$ABC_GIT_COMMIT $S/abc
 }
 
@@ -34,5 +43,5 @@ src_compile() {
 }
 
 src_install() {
-	make DESTDIR="$D" ABCREV=default ABCPULL=0 PREFIX=/usr install	
+	make DESTDIR="$D" ABCREV=default ABCPULL=0 PREFIX=/usr install
 }
