@@ -17,7 +17,8 @@ DEPEND="sci-electronics/icestorm
 	gui? ( dev-qt/qtcore:5 
                virtual/opengl )
 	dev-libs/boost
-	dev-cpp/eigen"
+	dev-cpp/eigen
+	!<sci-electronics/nextpnr-0.2"
 
 src_unpack() {
 	unpack nextpnr-$PV.tar.gz
