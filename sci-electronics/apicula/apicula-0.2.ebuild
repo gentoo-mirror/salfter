@@ -8,7 +8,7 @@ S=$WORKDIR/Apycula-$PV
 
 DESCRIPTION="documentation and tools for the Gowin FPGA bitstream format"
 HOMEPAGE="https://github.com/YosysHQ/apicula"
-SRC_URI="https://files.pythonhosted.org/packages/5d/fd/0f5e342aa4310423292b374f247bc37dd09006aaa36f68c2fe6f939a0952/Apycula-0.2.tar.gz -> $P.tar.gz"
+SRC_URI="mirror://pypi/A/Apycula/Apycula-$PV.tar.gz -> $P.tar.gz"
 
 DEPEND="dev-python/numpy
 	dev-python/pandas
