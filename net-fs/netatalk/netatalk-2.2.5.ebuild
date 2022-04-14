@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/net-fs/netatalk/Attic/netatalk-2.2.5.ebuild,v 1.4 2014/12/15 11:08:19 jlec dead $
 
-EAPI=5
+EAPI=8
 
-inherit pam eutils flag-o-matic multilib autotools
+inherit pam flag-o-matic multilib autotools
 
 DESCRIPTION="Open Source AFP server and other AppleTalk-related utilities"
 HOMEPAGE="http://netatalk.sourceforge.net/"
@@ -43,8 +43,9 @@ REQUIRED_USE="ldap? ( acl )"
 DOCS=( CONTRIBUTORS NEWS VERSION AUTHORS doc/README.AppleTalk )
 
 src_prepare() {
-	epatch "${FILESDIR}"/${P}-gentoo.patch
-	epatch "${FILESDIR}"/${P}-openssl-1.1-compat.patch
+	eapply_user
+	eapply "${FILESDIR}"/${P}-gentoo.patch
+	eapply "${FILESDIR}"/${P}-openssl-1.1-compat.patch
 	eautoreconf
 }
 
