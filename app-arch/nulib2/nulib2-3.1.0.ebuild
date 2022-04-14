@@ -15,7 +15,14 @@ IUSE=""
 
 S=$WORKDIR/$P/$PN
 
+RDEPEND="=app-arch/nufxlib-$PV"
+
+src_prepare() {
+  eapply_user
+  eapply $FILESDIR/$P-make.patch
+}
+
 src_install() {
-	cd ${S}
-        emake
+  cd $S
+  dobin nulib2
 }
