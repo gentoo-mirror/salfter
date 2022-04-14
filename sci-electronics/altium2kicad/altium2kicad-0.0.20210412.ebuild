@@ -1,6 +1,6 @@
-EAPI=7
+EAPI=8
 
-GIT_COMMIT=3203ebf4ab1973912b743b82e603d0aa92a6eb9f
+GIT_COMMIT=f9eb66df30c2ac11ad64f007ffd20c376c3cb93b
 S=$WORKDIR/$PN-$GIT_COMMIT
 
 DESCRIPTION="Altium to KiCad converter for PCB and schematics"
