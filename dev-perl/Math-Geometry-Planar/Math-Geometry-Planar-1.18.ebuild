@@ -1,10 +1,12 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=8
 
-MODULE_AUTHOR=DVDPOL
-MODULE_VERSION=1.18
+DIST_AUTHOR=DVDPOL
+DIST_VERSION=1.18
+DIST_A_EXT=tar.gz
+
 inherit perl-module
 
 DESCRIPTION="A collection of planar geometry functions"

@@ -1,10 +1,12 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=8
 
-MODULE_AUTHOR=EWILHELM
-MODULE_VERSION=1.05
+DIST_AUTHOR=EWILHELM
+DIST_VERSION=1.05
+DIST_A_EXT=tar.gz
+
 inherit perl-module
 
 DESCRIPTION="Calculate offset polygons"
@@ -15,4 +17,4 @@ IUSE=""
 
 SRC_TEST=do
 
-DEPEND="dev-perl/Module-Build"
+BDEPEND="dev-perl/Module-Build"

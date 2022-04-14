@@ -1,10 +1,10 @@
-EAPI="5"
+EAPI=8
 
-inherit eutils
+inherit desktop
 
 DESCRIPTION="Apple IIGS emulator, based on KEGS"
 HOMEPAGE="http://gsport.sourceforge.net"
-SRC_URI="mirror://sourceforge/gsport/GSport-${PV}/${PN}_${PV}.tar.gz -> ${P}.tar.gz
+SRC_URI="https://github.com/david-schmidt/$PN/releases/download/$PV/${PN}_${PV}.tar.gz -> ${P}.tar.gz
          ftp://ftp.apple.asimov.net/pub/apple_II/emulators/kegs/Kegs%20v0.91%20%28with%20system%206%20and%20free%20games%29.zip -> kegs-0.91.zip"
 DEPEND="x11-libs/libXext"
 LICENSE="GPL"
@@ -12,7 +12,6 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 
 src_unpack() {
-  mkdir ${WORKDIR}
   unpack ${P}.tar.gz
   mv ${PN}_${PV} ${P}
   mkdir kegs-0.91
@@ -29,11 +28,12 @@ src_unpack() {
 }
 
 src_prepare() {
+  eapply_user
   cd ${S}
-  epatch ${FILESDIR}/${P}-vars.patch
+  eapply ${FILESDIR}/${P}-vars.patch
   tr -d "\r" <config.template >config.template~ && mv config.template~ config.template
-  epatch ${FILESDIR}/${PN}-config.patch
-  epatch ${FILESDIR}/${PN}-path.patch
+  eapply ${FILESDIR}/${PN}-config.patch
+  eapply ${FILESDIR}/${PN}-path.patch
 }
 
 src_compile() {

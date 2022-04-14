@@ -1,4 +1,4 @@
-EAPI=5
+EAPI=8
 
 DESCRIPTION="3D model converter"
 SRC_URI="http://www.patrickmin.com/meshconv/linux64/meshconv -> ${P}"
@@ -11,7 +11,7 @@ src_unpack() {
 }
 
 src_prepare() {
-  true
+  default
 }
 
 src_install() {

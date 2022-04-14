@@ -1,5 +1,5 @@
---- config.template     2014-06-21 13:37:14.000000000 -0700
-+++ config.template  2015-06-10 18:01:03.963740264 -0700
+--- a/config.template     2014-06-21 13:37:14.000000000 -0700
++++ a/config.template  2015-06-10 18:01:03.963740264 -0700
 @@ -1,9 +1,11 @@
 -# GSport configuration file
 -

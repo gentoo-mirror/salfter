@@ -1,6 +1,6 @@
-EAPI="5"
+EAPI=8
 
-inherit eutils
+inherit desktop
 
 DESCRIPTION="Apple IIGS emulator, based on KEGS"
 HOMEPAGE="https://apple2.gs/plus/"
@@ -28,6 +28,7 @@ src_unpack() {
 }
 
 src_prepare() {
+  default
   cd ${S}/src
   ln -s vars_x86linux_sdl2 vars
 }

@@ -1,6 +1,6 @@
-EAPI="5"
+EAPI=8
 
-inherit eutils
+inherit desktop
 
 DESCRIPTION="Apple IIGS emulator"
 HOMEPAGE="http://kegs.sourceforge.net"
@@ -23,8 +23,9 @@ src_unpack() {
 }
 
 src_prepare() {
-  epatch ${FILESDIR}/${P}-vars.patch
-  epatch ${FILESDIR}/${P}-config.patch  
+  eapply_user
+  eapply ${FILESDIR}/${P}-vars.patch
+  eapply ${FILESDIR}/${P}-config.patch  
 }
 
 src_compile() {

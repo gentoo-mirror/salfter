@@ -4,5 +4,5 @@ Type=Application
 Comment=Apple IIGS emulator
 Exec=xkegs
 TryExec=xkegs
-Icon=kegs.png
+Icon=kegs
 Categories=Emulator;System;

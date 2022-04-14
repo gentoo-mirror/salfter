@@ -5,12 +5,12 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="5"
+EAPI=8
 
 SRC_URI="https://github.com/ruediger/VobSub2SRT/archive/v1.0pre7.tar.gz -> $P.tar.gz"
 S=$WORKDIR/VobSub2SRT-1.0pre7
 
-inherit cmake-utils 
+inherit cmake
 
 IUSE=""
 

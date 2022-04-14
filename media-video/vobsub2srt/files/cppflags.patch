@@ -1,6 +1,6 @@
 https://github.com/ruediger/VobSub2SRT/issues/67#issuecomment-363196505
---- CMakeLists.txt	2015-08-30 10:45:47.000000000 -0700
-+++ CMakeLists.txt	2020-02-10 15:24:27.673022371 -0800
+--- a/CMakeLists.txt	2015-08-30 10:45:47.000000000 -0700
++++ a/CMakeLists.txt	2020-02-10 15:24:27.673022371 -0800
 @@ -54,7 +54,7 @@
  include(CheckCXXSourceRuns)
  

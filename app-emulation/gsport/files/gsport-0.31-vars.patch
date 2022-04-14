@@ -1,6 +1,6 @@
 diff -urN gsport_0.31.orig/src/vars gsport_0.31/src/vars
---- src/vars	1969-12-31 16:00:00.000000000 -0800
-+++ src/vars	2015-06-10 17:38:21.729464444 -0700
+--- a/src/vars	1969-12-31 16:00:00.000000000 -0800
++++ a/src/vars	2015-06-10 17:38:21.729464444 -0700
 @@ -0,0 +1,17 @@
 +TARGET = gsportx
 +OBJECTS = $(OBJECTS1) $(TFEOBJ) $(ATOBJ) $(PCAPOBJ) xdriver.o

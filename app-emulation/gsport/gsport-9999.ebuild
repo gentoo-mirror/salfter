@@ -1,11 +1,10 @@
-EAPI="5"
+EAPI=8
 
-inherit eutils subversion
+inherit desktop git-r3
 
 DESCRIPTION="Apple IIGS emulator, based on KEGS"
 HOMEPAGE="http://gsport.sourceforge.net"
-ESVN_REPO_URI="svn://svn.code.sf.net/p/gsport/code/trunk"
-ESVN_PROJECT="gsport"
+EGIT_REPO_URI="https://github.com/david-schmidt/gsport"
 SRC_URI="ftp://ftp.apple.asimov.net/pub/apple_II/emulators/kegs/Kegs%20v0.91%20%28with%20system%206%20and%20free%20games%29.zip -> kegs-0.91.zip"
 DEPEND="x11-libs/libXext
         sdl? ( media-libs/libsdl media-libs/freetype )"
@@ -15,7 +14,8 @@ KEYWORDS=""
 IUSE="sdl"
 
 src_unpack() {
-  subversion_src_unpack
+  git-r3_fetch
+  git-r3_checkout
   mkdir kegs-0.91
   cd kegs-0.91
   unpack kegs-0.91.zip
@@ -30,19 +30,21 @@ src_unpack() {
 }
 
 src_prepare() {
+  eapply_user
+
   cd ${S}
   
   if use sdl; then
     cp src/vars_x86linux_sdl src/vars
-    epatch ${FILESDIR}/${P}-vars-sdl.patch
+    eapply ${FILESDIR}/${P}-vars-sdl.patch
   else
     cp src/vars_x86linux src/vars
-    epatch ${FILESDIR}/${P}-vars.patch
+    eapply ${FILESDIR}/${P}-vars.patch
   fi
 
   tr -d "\r" <config.template >config.template~ && mv config.template~ config.template
-  epatch ${FILESDIR}/${PN}-config.patch
-  epatch ${FILESDIR}/${PN}-path.patch
+  eapply ${FILESDIR}/${PN}-config.patch
+  eapply ${FILESDIR}/${PN}-path.patch
 }
 
 src_compile() {

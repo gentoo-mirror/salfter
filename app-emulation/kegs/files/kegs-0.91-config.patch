@@ -1,5 +1,5 @@
---- config.kegs	2004-12-07 03:42:48.000000000 -0800
-+++ config.kegs	2015-06-10 12:30:55.465863675 -0700
+--- a/config.kegs	2004-12-07 03:42:48.000000000 -0800
++++ a/config.kegs	2015-06-10 12:30:55.465863675 -0700
 @@ -1,11 +1,48 @@
 -# KEGS configuration file version 0.80
 +# KEGS configuration file version 0.91
