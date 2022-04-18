@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DESCRIPTION=Altium to KiCad converter for PCB and schematics
+EAPI=8
+HOMEPAGE=https://github.com/thesourcerer8/altium2kicad
+KEYWORDS=amd64
+LICENSE=GPL-2
+RDEPEND=dev-perl/Math-Bezier dev-perl/Math-Geometry-Planar
+SLOT=0
+SRC_URI=https://github.com/thesourcerer8/altium2kicad/archive/f9eb66df30c2ac11ad64f007ffd20c376c3cb93b.tar.gz -> altium2kicad-0.0.20210412.tar.gz
+_md5_=de76f48708db79e725862b6569266d02

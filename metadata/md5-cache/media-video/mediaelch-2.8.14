@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=dev-qt/qtquickcontrols:5 dev-qt/qtcore:5 media-video/mediainfo dev-qt/qtmultimedia:5[widgets] dev-qt/qtdeclarative:5 dev-qt/qtopengl:5 dev-qt/qtsvg:5
+DESCRIPTION=Video metadata scraper
+EAPI=8
+HOMEPAGE=https://www.kvibes.de/mediaelch/
+INHERIT=qmake-utils
+KEYWORDS=amd64 x86
+LICENSE=LGPL-3
+SLOT=0
+SRC_URI=https://alfter.us/wp-content/uploads/2022/03/mediaelch-2.8.14.tar.xz
+_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	qmake-utils	f5eb2f69fffe94292aaaf802fb21c8d1
+_md5_=2c7df820c243c083fcfcca7aa672b7f0

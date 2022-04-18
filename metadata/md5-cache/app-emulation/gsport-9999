@@ -1,0 +1,14 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install postinst prepare unpack
+DEPEND=x11-libs/libXext sdl? ( media-libs/libsdl media-libs/freetype )
+DESCRIPTION=Apple IIGS emulator, based on KEGS
+EAPI=8
+HOMEPAGE=http://gsport.sourceforge.net
+INHERIT=desktop git-r3
+IUSE=sdl
+LICENSE=GPL
+PROPERTIES=live
+SLOT=0
+SRC_URI=ftp://ftp.apple.asimov.net/pub/apple_II/emulators/kegs/Kegs%20v0.91%20%28with%20system%206%20and%20free%20games%29.zip -> kegs-0.91.zip
+_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	git-r3	b9ac6f96d2a88edb5b351df634dc5e53
+_md5_=ee46a9b940387215f7d51a14cda11bc0

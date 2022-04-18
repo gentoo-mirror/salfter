@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install
+DEPEND=sci-electronics/icestorm
+DESCRIPTION=place-and-route tool for FPGAs
+EAPI=6
+HOMEPAGE=https://github.com/YosysHQ/arachne-pnr
+KEYWORDS=amd64
+LICENSE=MIT
+SLOT=0
+SRC_URI=https://github.com/YosysHQ/arachne-pnr/archive/c40fb2289952f4f120cc10a5a4c82a6fb88442dc.tar.gz -> arachne-pnr-0.0.20190728.tar.gz
+_md5_=280b060670a3811be8fc1bc7a77cf0cd

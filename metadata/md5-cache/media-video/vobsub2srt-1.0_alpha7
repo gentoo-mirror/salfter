@@ -1,0 +1,14 @@
+BDEPEND=dev-util/ninja >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=>=app-text/tesseract-2.04-r1 >=virtual/ffmpeg-0.6.90
+DESCRIPTION=Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
+EAPI=8
+HOMEPAGE=https://github.com/ruediger/VobSub2SRT
+INHERIT=cmake
+KEYWORDS=amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=>=app-text/tesseract-2.04-r1 >=virtual/ffmpeg-0.6.90
+SLOT=0
+SRC_URI=https://github.com/ruediger/VobSub2SRT/archive/v1.0pre7.tar.gz -> vobsub2srt-1.0_alpha7.tar.gz
+_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	fef481272d4a8e136a7d8a0fb1329384	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	cmake	3c38df051095289667b6f09ebd0cc149
+_md5_=20ec3710cd3e3c3508a8645c3f96c973

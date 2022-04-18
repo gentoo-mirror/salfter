@@ -1,0 +1,26 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml.
+# Please add your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using pmaint *
+
+app-admin/keepass:aot - Generate native code at build time, rather than runtime.
+app-backup/bacula:bacula-clientonly - Disable DB support, and just build a client
+app-backup/bacula:bacula-nodir - Disable building of director
+app-backup/bacula:bacula-nosd - Disable building of storage daemon
+app-backup/bacula:batch-insert - Enable batch insert into data base
+app-backup/bacula:logwatch - Install support files for logwatch
+app-crypt/mit-krb5:doc - Creates and installs the API and implementation documentation. This is only useful if you want to develop software which depends on kerberos
+app-crypt/mit-krb5:keyutils - Enable for the keyring ccache using keyutils
+app-crypt/mit-krb5:lmdb - Add support for using dev-db/lmdb for lookup tables
+app-crypt/mit-krb5:openldap - Enable support for ldap as a database backend
+app-crypt/mit-krb5:pkinit - Enable pkinit support for the initial ticket
+app-crypt/zuluCrypt:gnome - Enable support for the freedesktop.org Secret Service API via app-crypt/libsecret. This does not control the gui!
+app-crypt/zuluCrypt:gui - Whether to build the QT gui. Highly recommended.
+app-crypt/zuluCrypt:kde - Enable support for KDE, e.g. via kde-apps/kwalletd. This does not control the gui, but NEEDS GUI ENABLED!
+app-crypt/zuluCrypt:udev - Whether udev will be consulted when deciding if a volume is system or not.
+games-emulation/sdlmame:arcade - Enable the Multiple Arcade Machine Emulator for arcade games support
+games-emulation/sdlmame:mess - Enable the Multi Emulator Super System for game system support
+games-emulation/sdlmame:tools - Build development tools shared between sdlmame and sdlmess
+www-misc/zoneminder:curl - Enable using net-misc/curl for streaming from cameras
+www-misc/zoneminder:gcrypt - ...
+www-misc/zoneminder:vlc - Enable using media-libs/vlc for streaming from cameras
+x11-apps/xinit:twm - Control dependencies on legacy apps (xterm, twm, ...). Safe to disable if you use a modern desktop environment.

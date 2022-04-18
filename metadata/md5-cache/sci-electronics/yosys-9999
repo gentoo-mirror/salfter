@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=dev-vcs/git media-gfx/xdot dev-libs/boost sys-devel/clang
+DESCRIPTION=framework for Verilog RTL synthesis
+EAPI=8
+HOMEPAGE=http://www.clifford.at/yosys/
+INHERIT=git-r3
+LICENSE=ISC
+PROPERTIES=live
+SLOT=0
+SRC_URI=https://github.com/YosysHQ/abc/archive/f6fa2ddcfc89099726d60386befba874c7ac1e0d.tar.gz -> abc-f6fa2ddcfc89099726d60386befba874c7ac1e0d.tar.gz
+_eclasses_=git-r3	b9ac6f96d2a88edb5b351df634dc5e53
+_md5_=bc3bf20e800779dbab5d324d80614789

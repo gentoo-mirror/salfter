@@ -1,0 +1,110 @@
+app-admin/keepass 2.47: A free, open source, light-weight and easy-to-use password manager
+app-arch/libzim 6.3.0: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
+app-arch/nufxlib 3.1.0: library for manipulating NuFX archives
+app-arch/nulib2 3.1.0: utility for manipulating NuFX archives
+app-backup/bacula 11.0.5: Featureful client/server network backup suite
+app-benchmarks/iometer 1.1.0: I/O subsystem measurement and characterization tool for single and clustered systems
+app-cdr/dvdisaster 0.79.9: Tool for creating error correction data (ecc) for optical media (DVD, CD, BD)
+app-crypt/mit-krb5 1.17.1: MIT Kerberos V
+app-crypt/vanitygen-plus 1.53: cryptocurrency vanity-address generator
+app-crypt/zuluCrypt 5.4.0: Front end to cryptsetup
+app-emulation/container-linux-config-transpiler 0.9.1: Container Linux Config Transpiler
+app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
+app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
+app-emulation/kegs 0.91: Apple IIGS emulator
+app-text/asciidoc 9.0.4: A plain text human readable/writable document format
+app-text/gimagereader 3.3.1: A Gtk/Qt front-end to tesseract-ocr
+app-text/pdfsandwich 0.1.6: generator of sandwich OCR pdf files
+app-text/qtspell 0.8.5: Spell checking for Qt text widgets
+dev-cpp/mustache 3.2.1: Mustache implementation for modern C++
+dev-cpp/sqlite_orm 1.6: SQLite ORM light header only library for modern C++
+dev-embedded/bossac 1.7.0: flash programming utility for Atmel's SAM family of flash-based ARM microcontrollers
+dev-embedded/teensy_loader_cli 2.1_p20161201 9999: Command line Teensy Loader
+dev-libs/ooml 20171118: C++ Object Oriented Mechanics Language
+dev-libs/rinutils 0.2.0: C11 / gnu11 utilities C library by Shlomi Fish / Rindolf
+dev-perl/App-XML-DocBook-Builder 0.1003: build DocBook/XML files
+dev-perl/HTML-Parser 3.750.0: Parse <HEAD> section of HTML documents
+dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
+dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
+dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
+dev-python/base58 0.2.5: Base58 and Base58Check implementation
+dev-python/bitcoin 1.1.42-r1: Python Bitcoin Tools
+dev-python/bitmerchant 0.1.8: Bitmerchant is a work-in-progress python library for common bitcoin/altcoin merchant uses.
+dev-python/commontools 0.1.0: Common functions that are often needed but don't really belong anywhere
+dev-python/ensure 0.8.2: Literate BDD assertions in Python with no magic
+dev-python/getmac 0.8.2: Get MAC addresses of remote hosts and local interfaces
+dev-python/hdwallet 1.3.2: Hierarchical Deterministic Wallet
+dev-python/keychain 0.14.2.0: Library for BIP32 hierarchical deterministic keychains/wallets.
+dev-python/keylib 0.1.1: Library for creating and working with private keys, public keys, and bitcoin addresses.
+dev-python/pick 1.0.0: pick an option in the terminal with a simple GUI
+dev-python/pybars3 0.9.7: Handlebars.js for Python 3 and 2
+dev-python/pymeta3 0.5.1: a fork of PyMeta 0.5.0 that supports Python 2 and 3
+dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion representation, manipulation, 3D animation and geometry
+dev-python/pysha3 1.0.2: SHA-3 wrapper for Python
+dev-python/python-trezor 0.11.2: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
+dev-python/pythonping 1.0.15: A simple way to ping in Python
+dev-python/pywrap 0.1.0: Simple function-wrapping API with ctypes
+dev-python/sockjs-tornado 1.0.3: server side counterpart of SockJS-client browser library running on top of Tornado framework
+dev-python/utilitybelt 0.2.6: Generally useful tools. A python utility belt.
+dev-python/yamlreader 3.0.4: Merge YAML data from given files, dir or file glob
+dev-qt/qtoiio 2019.2.0: Qt Image IO plugin based on OpenImageIO
+games-emulation/sdlmame 9999: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
+games-misc/fortune-mod 3.12.0: The notorious fortune program
+gemini-client/lagrange 1.12.1: desktop GUI client for browsing Geminispace
+mail-filter/hashcash-milter 0.1.3: A milter-based application to mint and check HashCash stamps
+media-gfx/alicevision 2.2.0: photogrammetric computer vision framework
+media-gfx/arcwelder 1.2.0: 3D printer anti-stutter tool
+media-gfx/curaengine 3.6.0 4.0.0: A 3D model slicing engine for 3D printing
+media-gfx/meshconv-bin 1.29: 3D model converter
+media-gfx/meshroom 2019.2.0: GPU-accelerated photogrammetry
+media-gfx/stl_normalize 0.0.20210314: A script to normalize and validate STL files
+media-video/hlsdl 0.1_alpha20210419: C program to download VoD HLS (.m3u8) files
+media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
+media-video/mediaelch 2.8.14: Video metadata scraper
+media-video/mjpg-streamer 9999: MJPG-streamer takes JPGs from Linux-UVC compatible webcams
+media-video/vobsub2srt 1.0_alpha7: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
+net-fs/libs3 20200523: S3 library, forked for Bacula
+net-fs/netatalk 2.2.5: Open Source AFP server and other AppleTalk-related utilities
+net-fs/webdavfs 0.0.20200520: A FUSE filesystem for WebDAV shares
+net-mail/spfpolicy 2.010: Postfix policy server implementing Sender Policy Framework (SPF)
+net-misc/ethminer 0.13.0 0.14.0_rc4: Ethereum miner with CUDA and stratum support
+net-misc/hashcash 1.22-r2: Utility to generate hashcash tokens
+net-misc/ltc_addrconv 0.1: Litecoin 3/M-address converter
+net-p2p/trezord-go 2.0.31: Trezor Bridge
+net-vpn/pia-wg 0.0.20210712: Private Internet Access WireGuard configurator
+sci-electronics/altium2kicad 0.0.20210412: Altium to KiCad converter for PCB and schematics
+sci-electronics/apicula 0.2: documentation and tools for the Gowin FPGA bitstream format
+sci-electronics/arachne-pnr 0.0.20190728: place-and-route tool for FPGAs
+sci-electronics/ecpprog 0.0.20211203: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
+sci-electronics/icestorm 0.0.20220325: reverse-engineered tools for Lattice iCE40 FPGAs
+sci-electronics/kicad 6.0.0: Electronic Schematic and PCB design tools
+sci-electronics/kikit 1.0.2: Automation for KiCad
+sci-electronics/nextpnr 0.3: portable FPGA place and route tool
+sci-electronics/nmigen 0.2: A refreshed Python toolbox for building complex digital hardware
+sci-electronics/nmigen-boards 0.1_alpha20210915: nMigen boards and connectors
+sci-electronics/nmigen-soc 0.1_alpha20211105: System on Chip toolkit for nMigen
+sci-electronics/pcbnewTransition 0.2.0: support both KiCad 5 & 6 in your plugins
+sci-electronics/prjoxide 0.1.0 9999: documenting Lattice's 28nm Nexus FPGAs
+sci-electronics/prjtrellis 1.2.1: reverse-engineered tools for Lattice ECP5 FPGAs
+sci-electronics/pyvcd 0.2.4: writes Value Change Dump (VCD) files as specified in IEEE 1364-2005
+sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
+sci-electronics/yosys 0.16 9999: framework for Verilog RTL synthesis
+sci-libs/boost-numeric-bindings 0.99 20110819: Numeric Library Bindings for Boost UBlas
+sci-libs/cadquery 0.1.5 2.0: A parametric CAD scripting framework based on PythonOCC
+sci-libs/euclid3 0.2.0: vector, matrix, quaternion and some geometry in 2D and 3D for Python 3
+sci-libs/geogram 1.7.4: programming library of geometric algorithms
+sci-libs/openmvg 9999-r1: open Multiple View Geometry library. Basis for 3D computer vision and Structure from Motion.
+sci-libs/pythonocc 0.18.1 7.4.1: An industrial strength 3D python package for CAD/BIM/PLM/CAM
+sci-libs/smesh 6.7.6: An extension to oce, provides advanced meshing features
+sci-libs/solidpython 1.1.2: OpenSCAD for Python
+sci-visualization/admesh 0.98.3: CLI and C library for processing triangulated solid meshes
+sys-cluster/kubectl 1.17.5: CLI to run commands against Kubernetes clusters
+sys-firmware/brcm43455-rock-pi-x-firmware 0.0.20210309: firmware for Broadcom 43455 WiFi/Bluetooth on Rock Pi X
+sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
+virtual/podofo-build 0.9.6_p20180715: Virtual package for building against PoDoFo
+www-apps/cops 1.1.3: Calibre OPDS PHP Server
+www-misc/kiwix-desktop 2.0.5 9999: cross-platform viewer/manager of ZIM files
+www-misc/kiwix-lib 9.4.1: Kiwix software suite core: code shared by all Kiwix ports
+www-misc/kiwix-tools 3.1.2: collection of Kiwix related command line tools
+www-misc/zoneminder 1.32.3: Capture, analyse, record and monitor any cameras attached to your system
+x11-apps/xinit 1.4.1: X Window System initializer
