@@ -1,15 +1,14 @@
-EAPI=6
+EAPI=7
 
 inherit cmake-utils
 
 DESCRIPTION="programming library of geometric algorithms"
 HOMEPAGE=http://alice.loria.fr/software/geogram/doc/html/index.html
 
-SRC_URI="https://gforge.inria.fr/frs/download.php/file/38269/$PN_$PV.tar.gz -> $P.tar.gz"
+SRC_URI="https://github.com/alicevision/geogram/archive/refs/tags/v$PV.tar.gz -> $P.tar.gz"
 LICENSE=BSD
 SLOT=0
 KEYWORDS=~amd64
-S=${WORKDIR}/${PN}_${PV}
 
 CMAKE_BUILD_TYPE=Release
 
