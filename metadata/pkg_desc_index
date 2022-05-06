@@ -79,7 +79,7 @@ sci-electronics/arachne-pnr 0.0.20190728: place-and-route tool for FPGAs
 sci-electronics/ecpprog 0.0.20211203: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
 sci-electronics/icestorm 0.0.20220325: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kicad 6.0.0: Electronic Schematic and PCB design tools
-sci-electronics/kikit 1.0.2: Automation for KiCad
+sci-electronics/kikit 1.0.5: Automation for KiCad
 sci-electronics/nextpnr 0.3: portable FPGA place and route tool
 sci-electronics/nmigen 0.2: A refreshed Python toolbox for building complex digital hardware
 sci-electronics/nmigen-boards 0.1_alpha20210915: nMigen boards and connectors
