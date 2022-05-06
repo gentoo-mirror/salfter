@@ -1,12 +1,12 @@
 EAPI=8
 
-PYTHON_COMPAT=( python3_{7,8,9,10} pypy3)
+PYTHON_COMPAT=( python3_{7,8,9,10} )
 
 inherit distutils-r1
 
 DESCRIPTION="Automation for KiCad"
 HOMEPAGE="https://github.com/yaqwsx/KiKit/"
-SRC_URI="https://github.com/yaqwsx/KiKit/releases/download/v$PV/KiKit-$PV.tar.gz -> $P.tar.gz"
+SRC_URI="https://github.com/yaqwsx/KiKit/archive/refs/tags/v$PV.tar.gz -> $P.tar.gz"
 S=$WORKDIR/KiKit-$PV
 
 LICENSE="MIT"
