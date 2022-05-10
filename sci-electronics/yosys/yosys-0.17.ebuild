@@ -3,7 +3,7 @@ EAPI=6
 S=$WORKDIR/$PN-$PN-$PV
 
 # get the current value from the yosys makefile...look for ABCREV
-ABC_GIT_COMMIT=00b674d5b3ccefc7f2abcbf5b650fc14298ac549
+ABC_GIT_COMMIT=09a7e6dac739133a927ae7064d319068ab927f90
 
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="http://www.clifford.at/yosys/"
