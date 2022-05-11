@@ -51,7 +51,7 @@ dev-python/yamlreader 3.0.4: Merge YAML data from given files, dir or file glob
 dev-qt/qtoiio 2019.2.0: Qt Image IO plugin based on OpenImageIO
 games-emulation/sdlmame 9999: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.14.0: The notorious fortune program
-gemini-client/lagrange 1.13.2: desktop GUI client for browsing Geminispace
+gemini-client/lagrange 1.13.4: desktop GUI client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3: A milter-based application to mint and check HashCash stamps
 media-gfx/alicevision 2.5.0_alpha20220427: photogrammetric computer vision framework
 media-gfx/arcwelder 1.2.0: 3D printer anti-stutter tool
