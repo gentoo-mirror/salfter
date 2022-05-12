@@ -59,7 +59,6 @@ media-gfx/cctag 1.0.1: Detection of CCTag markers made up of concentric circles
 media-gfx/curaengine 3.6.0 4.0.0: A 3D model slicing engine for 3D printing
 media-gfx/meshconv-bin 1.29: 3D model converter
 media-gfx/meshroom 2021.1.0 2022.0.0_alpha20220424: GPU-accelerated photogrammetry
-media-gfx/prusaslicer 2.4.2: A mesh slicer to generate G-code for fused-filament-fabrication (3D printers)
 media-gfx/stl_normalize 0.0.20210314: A script to normalize and validate STL files
 media-video/hlsdl 0.1_alpha20210419: C program to download VoD HLS (.m3u8) files
 media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
