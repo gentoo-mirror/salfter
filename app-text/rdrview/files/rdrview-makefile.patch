@@ -1,0 +1,12 @@
+diff -ur a/Makefile b/Makefile
+--- a/Makefile	2022-05-20 12:48:10.497274847 -0700
++++ b/Makefile	2022-05-20 12:48:31.009273502 -0700
+@@ -14,7 +14,7 @@
+ 	LDLIBS += -liconv
+ endif
+ 
+-PREFIX = /usr/local
++PREFIX = /usr
+ BINDIR = $(DESTDIR)$(PREFIX)/bin
+ MANDIR = $(DESTDIR)$(PREFIX)/share/man/man1
+ 
