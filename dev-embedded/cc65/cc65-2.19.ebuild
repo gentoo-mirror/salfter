@@ -1,12 +1,12 @@
 # $Header: $
 
-EAPI="2"
+EAPI="6"
 
 inherit eutils toolchain-funcs multilib
 
 DESCRIPTION="complete cross development package for 65(C)02 systems"
 HOMEPAGE="https://cc65.github.io/cc65/"
-SRC_URI="https://github.com/cc65/${PN}/archive/V${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/cc65/$PN/archive/refs/tags/V$PV.tar.gz -> $P.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
