@@ -40,7 +40,7 @@ DEPEND=">=dev-libs/boost-1.70.0
 	opencv? ( >=media-libs/openimageio-2.1.0[opencv] )
 	!opencv? ( >=media-libs/openimageio-2.1.0 )
 	sys-libs/zlib
-	cuda? ( >=dev-util/nvidia-cuda-sdk-10.0 <sys-devel/gcc-9 )
+	cuda? ( >=dev-util/nvidia-cuda-toolkit-11.6 )
 	openmp? ( sys-devel/gcc[openmp] )
 	alembic? ( media-gfx/alembic )"
 
