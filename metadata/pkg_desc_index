@@ -26,7 +26,6 @@ dev-libs/boost 1.77.0-r4 1.78.0-r2 1.79.0: Boost Libraries for C++
 dev-libs/ooml 20171118: C++ Object Oriented Mechanics Language
 dev-libs/rinutils 0.2.0: C11 / gnu11 utilities C library by Shlomi Fish / Rindolf
 dev-perl/App-XML-DocBook-Builder 0.1003: build DocBook/XML files
-dev-perl/HTML-Parser 3.750.0: Parse <HEAD> section of HTML documents
 dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
@@ -59,7 +58,6 @@ media-gfx/CQ-editor 0.0_alpha20191117: CadQuery GUI editor based on PyQT
 media-gfx/alicevision 2.5.0_alpha20220427: photogrammetric computer vision framework
 media-gfx/arcwelder 1.2.0: 3D printer anti-stutter tool
 media-gfx/cctag 1.0.1: Detection of CCTag markers made up of concentric circles
-media-gfx/curaengine 3.6.0 4.0.0: A 3D model slicing engine for 3D printing
 media-gfx/meshconv-bin 1.29: 3D model converter
 media-gfx/meshroom 2021.1.0 2022.0.0_alpha20220424: GPU-accelerated photogrammetry
 media-gfx/stl_normalize 0.0.20210314: A script to normalize and validate STL files
