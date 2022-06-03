@@ -1,6 +1,6 @@
 # $Header: $
 
-EAPI="6"
+EAPI=7
 
 inherit eutils toolchain-funcs multilib
 
@@ -17,8 +17,8 @@ DEPEND="doc? ( app-text/linuxdoc-tools )"
 RDEPEND=""
 
 src_compile() {
-	emake
-	use doc && emake -C doc 
+	emake -j1
+	use doc && emake -j1 -C doc 
 }
 
 src_install() {
