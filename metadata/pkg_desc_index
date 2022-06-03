@@ -6,7 +6,6 @@ app-backup/bacula 11.0.5: Featureful client/server network backup suite
 app-cdr/dvdisaster 0.79.9: Tool for creating error correction data (ecc) for optical media (DVD, CD, BD)
 app-crypt/mit-krb5 1.17.1: MIT Kerberos V
 app-crypt/vanitygen-plus 1.53: cryptocurrency vanity-address generator
-app-crypt/zuluCrypt 5.4.0: Front end to cryptsetup
 app-emulation/container-linux-config-transpiler 0.9.1: Container Linux Config Transpiler
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
