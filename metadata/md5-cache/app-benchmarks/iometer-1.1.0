@@ -1,9 +1,0 @@
-DEFINED_PHASES=compile install
-DESCRIPTION=I/O subsystem measurement and characterization tool for single and clustered systems
-EAPI=2
-HOMEPAGE=http://www.iometer.org/
-KEYWORDS=~x86
-LICENSE=ipw3945
-SLOT=0
-SRC_URI=mirror://sourceforge/iometer/iometer-1.1.0-src.tar.bz2 -> iometer-1.1.0.tar.bz2
-_md5_=03b30a6092cf032a869315270bb280e1

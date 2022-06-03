@@ -3,7 +3,6 @@ app-arch/libzim 6.3.0: reference implementation for the ZIM file format, an offl
 app-arch/nufxlib 3.1.0: library for manipulating NuFX archives
 app-arch/nulib2 3.1.0: utility for manipulating NuFX archives
 app-backup/bacula 11.0.5: Featureful client/server network backup suite
-app-benchmarks/iometer 1.1.0: I/O subsystem measurement and characterization tool for single and clustered systems
 app-cdr/dvdisaster 0.79.9: Tool for creating error correction data (ecc) for optical media (DVD, CD, BD)
 app-crypt/mit-krb5 1.17.1: MIT Kerberos V
 app-crypt/vanitygen-plus 1.53: cryptocurrency vanity-address generator
@@ -14,7 +13,6 @@ app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
 app-text/asciidoc 9.0.4: A plain text human readable/writable document format
 app-text/gimagereader 3.3.1: A Gtk/Qt front-end to tesseract-ocr
-app-text/pdfsandwich 0.1.6: generator of sandwich OCR pdf files
 app-text/qtspell 0.8.5: Spell checking for Qt text widgets
 app-text/rdrview 0.0_alpha20210912: C port of Mozilla's Readability library
 dev-cpp/mustache 3.2.1: Mustache implementation for modern C++
