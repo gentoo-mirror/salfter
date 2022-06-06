@@ -61,7 +61,7 @@ media-gfx/stl_normalize 0.0.20210314: A script to normalize and validate STL fil
 media-sound/mp3val 0.1.8: MP3 validator
 media-video/hlsdl 0.1_alpha20210419: C program to download VoD HLS (.m3u8) files
 media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
-media-video/mediaelch 2.8.14: Video metadata scraper
+media-video/mediaelch 2.8.16: Video metadata scraper
 media-video/mjpg-streamer 9999: MJPG-streamer takes JPGs from Linux-UVC compatible webcams
 media-video/vobsub2srt 1.0_alpha7: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
 net-fs/libs3 20200523: S3 library, forked for Bacula
