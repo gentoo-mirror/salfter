@@ -1,4 +1,4 @@
-EAPI=6
+EAPI=7
 inherit eutils git-r3
 
 DESCRIPTION="HTTP Live Streaming segmenter"

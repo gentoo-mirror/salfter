@@ -1,4 +1,4 @@
-EAPI=6
+EAPI=7
 inherit cmake-utils
 
 DESCRIPTION="An extension to oce, provides advanced meshing features"
