@@ -22,10 +22,10 @@ dev-perl/App-XML-DocBook-Builder 0.1003: build DocBook/XML files
 dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
-dev-python/base58 0.2.5: Base58 and Base58Check implementation
+dev-python/base58 2.1.1: Base58 and Base58Check implementation
 dev-python/bitmerchant 0.1.8: Bitmerchant is a work-in-progress python library for common bitcoin/altcoin merchant uses.
-dev-python/commontools 0.1.0: Common functions that are often needed but don't really belong anywhere
-dev-python/ensure 0.8.2: Literate BDD assertions in Python with no magic
+dev-python/commontools 0.1.1: Common functions that are often needed but don't really belong anywhere
+dev-python/ensure 1.0.2: Literate BDD assertions in Python with no magic
 dev-python/getmac 0.8.2: Get MAC addresses of remote hosts and local interfaces
 dev-python/hdwallet 1.3.2: Hierarchical Deterministic Wallet
 dev-python/keychain 0.14.2.0: Library for BIP32 hierarchical deterministic keychains/wallets.
@@ -38,10 +38,9 @@ dev-python/pysha3 1.0.2: SHA-3 wrapper for Python
 dev-python/python-trezor 0.11.2: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 dev-python/pythonping 1.0.15: A simple way to ping in Python
 dev-python/pywrap 0.1.0: Simple function-wrapping API with ctypes
-dev-python/sockjs-tornado 1.0.3: server side counterpart of SockJS-client browser library running on top of Tornado framework
+dev-python/sockjs-tornado 1.0.6: server side counterpart of SockJS-client browser library running on top of Tornado framework
 dev-python/utilitybelt 0.2.6: Generally useful tools. A python utility belt.
 dev-python/yamlreader 3.0.4: Merge YAML data from given files, dir or file glob
-dev-qt/qtoiio 2019.2.0: Qt Image IO plugin based on OpenImageIO
 games-emulation/sdlmame 9999: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.14.0: The notorious fortune program
 gemini-client/lagrange 1.13.6: desktop GUI client for browsing Geminispace
@@ -90,7 +89,6 @@ sci-libs/openmvg 9999-r1: open Multiple View Geometry library. Basis for 3D comp
 sci-libs/pythonocc 0.18.1 7.5.1: An industrial strength 3D python package for CAD/BIM/PLM/CAM
 sci-libs/smesh 6.7.6: An extension to oce, provides advanced meshing features
 sci-libs/solidpython 1.1.2: OpenSCAD for Python
-sci-visualization/admesh 0.98.3: CLI and C library for processing triangulated solid meshes
 sys-block/targetcli-fb 2.1.51: Command shell for managing Linux LIO kernel target
 sys-cluster/kubectl 1.17.5: CLI to run commands against Kubernetes clusters
 sys-firmware/brcm43455-rock-pi-x-firmware 0.0.20210309: firmware for Broadcom 43455 WiFi/Bluetooth on Rock Pi X
@@ -100,5 +98,4 @@ www-apps/wordpress 5.9.3: Wordpress PHP and MySQL based content management syste
 www-misc/kiwix-desktop 2.0.5 9999: cross-platform viewer/manager of ZIM files
 www-misc/kiwix-lib 9.4.1: Kiwix software suite core: code shared by all Kiwix ports
 www-misc/kiwix-tools 3.1.2: collection of Kiwix related command line tools
-www-misc/zoneminder 1.32.3: Capture, analyse, record and monitor any cameras attached to your system
 x11-apps/xinit 1.4.1: X Window System initializer

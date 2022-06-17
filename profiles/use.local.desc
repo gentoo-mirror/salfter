@@ -16,7 +16,4 @@ app-crypt/mit-krb5:pkinit - Enable pkinit support for the initial ticket
 games-emulation/sdlmame:arcade - Enable the Multiple Arcade Machine Emulator for arcade games support
 games-emulation/sdlmame:mess - Enable the Multi Emulator Super System for game system support
 games-emulation/sdlmame:tools - Build development tools shared between sdlmame and sdlmess
-www-misc/zoneminder:curl - Enable using net-misc/curl for streaming from cameras
-www-misc/zoneminder:gcrypt - ...
-www-misc/zoneminder:vlc - Enable using media-libs/vlc for streaming from cameras
 x11-apps/xinit:twm - Control dependencies on legacy apps (xterm, twm, ...). Safe to disable if you use a modern desktop environment.
