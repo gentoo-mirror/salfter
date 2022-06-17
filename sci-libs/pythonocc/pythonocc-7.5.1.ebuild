@@ -1,5 +1,5 @@
-EAPI=6
-PYTHON_COMPAT=( python3_{6,7,8,9} )
+EAPI=7
+PYTHON_COMPAT=( python3_{6,7,8,9,10} )
 inherit python-single-r1 cmake-utils
 
 DESCRIPTION="An industrial strength 3D python package for CAD/BIM/PLM/CAM"

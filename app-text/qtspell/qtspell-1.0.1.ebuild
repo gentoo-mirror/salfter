@@ -1,4 +1,4 @@
-EAPI=6
+EAPI=7
 inherit cmake-utils
 
 DESCRIPTION="Spell checking for Qt text widgets"

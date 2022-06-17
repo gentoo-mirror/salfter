@@ -1,6 +1,6 @@
-EAPI=6
+EAPI=8
 
-PYTHON_COMPAT=( python3_{5,6,7,8,9} )
+PYTHON_COMPAT=( python3_{5,6,7,8,9,10} )
 
 inherit distutils-r1
 
@@ -15,5 +15,4 @@ KEYWORDS="~amd64"
 RDEPEND="dev-python/pythonocc[${PYTHON_USEDEP}]
 	dev-python/pyparsing[${PYTHON_USEDEP}]"
 DEPEND=""
-PATCHES="$FILESDIR/$P-no-tests.patch"
 
