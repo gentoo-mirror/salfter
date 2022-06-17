@@ -12,22 +12,17 @@ app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 0.91: Apple IIGS emulator
 app-text/asciidoc 9.0.4: A plain text human readable/writable document format
 app-text/gimagereader 3.3.1: A Gtk/Qt front-end to tesseract-ocr
-app-text/qtspell 0.8.5: Spell checking for Qt text widgets
+app-text/qtspell 1.0.1: Spell checking for Qt text widgets
 app-text/rdrview 0.0_alpha20210912: C port of Mozilla's Readability library
 dev-cpp/mustache 3.2.1: Mustache implementation for modern C++
 dev-cpp/sqlite_orm 1.6: SQLite ORM light header only library for modern C++
-dev-embedded/bossac 1.7.0: flash programming utility for Atmel's SAM family of flash-based ARM microcontrollers
 dev-embedded/cc65 2.19: complete cross development package for 65(C)02 systems
-dev-embedded/teensy_loader_cli 2.1_p20161201 9999: Command line Teensy Loader
-dev-libs/boost 1.77.0-r4 1.78.0-r2 1.79.0: Boost Libraries for C++
-dev-libs/ooml 20171118: C++ Object Oriented Mechanics Language
-dev-libs/rinutils 0.2.0: C11 / gnu11 utilities C library by Shlomi Fish / Rindolf
+dev-embedded/teensy_loader_cli 2.2: Command line Teensy Loader
 dev-perl/App-XML-DocBook-Builder 0.1003: build DocBook/XML files
 dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
 dev-python/base58 0.2.5: Base58 and Base58Check implementation
-dev-python/bitcoin 1.1.42-r1: Python Bitcoin Tools
 dev-python/bitmerchant 0.1.8: Bitmerchant is a work-in-progress python library for common bitcoin/altcoin merchant uses.
 dev-python/commontools 0.1.0: Common functions that are often needed but don't really belong anywhere
 dev-python/ensure 0.8.2: Literate BDD assertions in Python with no magic
@@ -68,16 +63,13 @@ net-fs/libs3 20200523: S3 library, forked for Bacula
 net-fs/netatalk 2.2.5: Open Source AFP server and other AppleTalk-related utilities
 net-fs/webdavfs 0.0.20200520: A FUSE filesystem for WebDAV shares
 net-mail/spfpolicy 2.010: Postfix policy server implementing Sender Policy Framework (SPF)
-net-misc/ethminer 0.13.0 0.14.0_rc4: Ethereum miner with CUDA and stratum support
 net-misc/hashcash 1.22-r2: Utility to generate hashcash tokens
-net-misc/ltc_addrconv 0.1: Litecoin 3/M-address converter
 net-p2p/trezord-go 2.0.31: Trezor Bridge
 net-vpn/pia-wg 0.0.20210712: Private Internet Access WireGuard configurator
 sci-electronics/altium2kicad 0.0.20210412: Altium to KiCad converter for PCB and schematics
 sci-electronics/apicula 0.2: documentation and tools for the Gowin FPGA bitstream format
-sci-electronics/arachne-pnr 0.0.20190728: place-and-route tool for FPGAs
 sci-electronics/ecpprog 0.0.20211203: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
-sci-electronics/icestorm 0.0.20220325: reverse-engineered tools for Lattice iCE40 FPGAs
+sci-electronics/icestorm 0.0.20220603: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kicad 6.0.0: Electronic Schematic and PCB design tools
 sci-electronics/kikit 1.0.5: Automation for KiCad
 sci-electronics/nextpnr 0.3: portable FPGA place and route tool
@@ -91,11 +83,11 @@ sci-electronics/pyvcd 0.2.4: writes Value Change Dump (VCD) files as specified i
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
 sci-electronics/yosys 0.18 9999: framework for Verilog RTL synthesis
 sci-libs/boost-numeric-bindings 0.99 20110819: Numeric Library Bindings for Boost UBlas
-sci-libs/cadquery 0.1.5 2.0: A parametric CAD scripting framework based on PythonOCC
+sci-libs/cadquery 0.1.5 2.1: A parametric CAD scripting framework based on PythonOCC
 sci-libs/euclid3 0.2.0: vector, matrix, quaternion and some geometry in 2D and 3D for Python 3
 sci-libs/geogram 1.7.7: programming library of geometric algorithms
 sci-libs/openmvg 9999-r1: open Multiple View Geometry library. Basis for 3D computer vision and Structure from Motion.
-sci-libs/pythonocc 0.18.1 7.4.1: An industrial strength 3D python package for CAD/BIM/PLM/CAM
+sci-libs/pythonocc 0.18.1 7.5.1: An industrial strength 3D python package for CAD/BIM/PLM/CAM
 sci-libs/smesh 6.7.6: An extension to oce, provides advanced meshing features
 sci-libs/solidpython 1.1.2: OpenSCAD for Python
 sci-visualization/admesh 0.98.3: CLI and C library for processing triangulated solid meshes
@@ -103,7 +95,6 @@ sys-block/targetcli-fb 2.1.51: Command shell for managing Linux LIO kernel targe
 sys-cluster/kubectl 1.17.5: CLI to run commands against Kubernetes clusters
 sys-firmware/brcm43455-rock-pi-x-firmware 0.0.20210309: firmware for Broadcom 43455 WiFi/Bluetooth on Rock Pi X
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
-virtual/podofo-build 0.9.6_p20180715: Virtual package for building against PoDoFo
 www-apps/cops 1.1.3: Calibre OPDS PHP Server
 www-apps/wordpress 5.9.3: Wordpress PHP and MySQL based content management system (CMS)
 www-misc/kiwix-desktop 2.0.5 9999: cross-platform viewer/manager of ZIM files

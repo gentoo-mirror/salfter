@@ -13,12 +13,6 @@ app-crypt/mit-krb5:keyutils - Enable for the keyring ccache using keyutils
 app-crypt/mit-krb5:lmdb - Add support for using dev-db/lmdb for lookup tables
 app-crypt/mit-krb5:openldap - Enable support for ldap as a database backend
 app-crypt/mit-krb5:pkinit - Enable pkinit support for the initial ticket
-dev-libs/boost:context - Build and install the Boost.Context (and Boost.Fiber) library and all other Boost libraries that depend on it
-dev-libs/boost:debug - Build and install only the debug version of the Boost libraries. Only enable this flag if you're developing against boost.
-dev-libs/boost:doc - Install the full API documentation documentation. This takes over 200MB of extra disk space.
-dev-libs/boost:nls - Build libboost_locale. This library requires compatible C library interfaces, which might not be provided by uClibc or other embedded libraries.
-dev-libs/boost:numpy - Optionally build NumPy extensions when Boost.Python is enabled
-dev-libs/boost:tools - Build and install the boost tools (bcp, quickbook, inspect, wave)
 games-emulation/sdlmame:arcade - Enable the Multiple Arcade Machine Emulator for arcade games support
 games-emulation/sdlmame:mess - Enable the Multi Emulator Super System for game system support
 games-emulation/sdlmame:tools - Build development tools shared between sdlmame and sdlmess
