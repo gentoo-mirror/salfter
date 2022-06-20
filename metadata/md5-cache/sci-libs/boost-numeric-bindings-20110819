@@ -1,8 +1,0 @@
-DEFINED_PHASES=configure install
-DESCRIPTION=Numeric Library Bindings for Boost UBlas
-EAPI=6
-KEYWORDS=~amd64
-LICENSE=Boost-1.0
-SLOT=0
-SRC_URI=https://git.tiker.net/boost-numeric-bindings.git/snapshot/1f994e8a2e161cddb6577eacc76b7bc358701cbe.tar.gz -> boost-numeric-bindings-20110819.tar.gz
-_md5_=193bc958b45663cf5eb544e914bd7048
