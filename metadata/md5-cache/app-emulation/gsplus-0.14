@@ -8,5 +8,5 @@ KEYWORDS=amd64 x86
 LICENSE=GPL
 SLOT=0
 SRC_URI=https://github.com/digarok/gsplus/archive/v0.14.tar.gz -> gsplus-0.14.tar.gz ftp://ftp.apple.asimov.net/pub/apple_II/emulators/rom_images/iigs_rom01.zip ftp://ftp.apple.asimov.net/pub/apple_II/emulators/rom_images/iigs_rom03.zip ftp://ftp.apple.asimov.net/pub/apple_II/images/gs/os/gsos/Apple_IIGS_System_6.0.4/Live.Install.po -> boot.po
-_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28
+_eclasses_=desktop	22952d8f27cac191d75529d4c38e6bfa
 _md5_=db13972a804bc2536b16da55d7ad57f6

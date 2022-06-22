@@ -10,5 +10,5 @@ LICENSE=GPL
 PROPERTIES=live
 SLOT=0
 SRC_URI=ftp://ftp.apple.asimov.net/pub/apple_II/emulators/kegs/Kegs%20v0.91%20%28with%20system%206%20and%20free%20games%29.zip -> kegs-0.91.zip
-_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	git-r3	b9ac6f96d2a88edb5b351df634dc5e53
+_eclasses_=desktop	22952d8f27cac191d75529d4c38e6bfa	git-r3	b9ac6f96d2a88edb5b351df634dc5e53
 _md5_=ee46a9b940387215f7d51a14cda11bc0
