@@ -23,4 +23,7 @@ RDEPEND="(
 	   >=dev-python/ply-3.11
          )"
 
-BDEPEND=">=dev-python/poetry-core-0.12"
+BDEPEND="(
+	   >=dev-python/poetry-core-0.12
+	   dev-python/pyproject2setuppy
+	 )"
