@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-PYTHON_COMPAT=( python{2_7,3_{6,7,8}} )
+PYTHON_COMPAT=( python3_{6,7,8,9,10,11} )
 inherit desktop eutils python-any-r1 toolchain-funcs qmake-utils xdg-utils git-r3
 
 MY_PV="${PV/.}"
