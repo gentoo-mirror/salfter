@@ -1,15 +1,15 @@
-BDEPEND=python_targets_python3_8? ( >=dev-lang/python-3.8.13:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.12:3.9 ) >=dev-python/setuptools-42.0.2[python_targets_python3_8(-)?,python_targets_python3_9(-)?]
+BDEPEND=python_targets_python3_8? ( >=dev-lang/python-3.8.13:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.12:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.4:3.10 ) python_targets_python3_11? ( >=dev-lang/python-3.11.0_beta3:3.11 ) >=dev-python/setuptools-42.0.2[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?,python_targets_python3_11(-)?]
 DEFINED_PHASES=compile configure install prepare test unpack
 DESCRIPTION=Private Internet Access WireGuard configurator
 EAPI=7
 HOMEPAGE=https://github.com/hsand/pia-wg
 INHERIT=distutils-r1
-IUSE=python_targets_python3_8 python_targets_python3_9
+IUSE=python_targets_python3_8 python_targets_python3_9 python_targets_python3_10 python_targets_python3_11
 KEYWORDS=amd64
 LICENSE=GPL-3
-RDEPEND=>=dev-python/certifi-2021.5.30 >=dev-python/chardet-3.0.4 >=dev-python/idna-2.10 >=dev-python/pick-1.0.0 >=dev-python/requests-2.24.0 >=dev-python/requests-toolbelt-0.9.1 >=dev-python/urllib3-1.26.6 python_targets_python3_8? ( >=dev-lang/python-3.8.13:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.12:3.9 )
-REQUIRED_USE=|| ( python_targets_python3_8 python_targets_python3_9 )
+RDEPEND=>=dev-python/certifi-2021.5.30 >=dev-python/chardet-3.0.4 >=dev-python/idna-2.10 >=dev-python/pick-1.0.0 >=dev-python/requests-2.24.0 >=dev-python/requests-toolbelt-0.9.1 >=dev-python/urllib3-1.26.6 python_targets_python3_8? ( >=dev-lang/python-3.8.13:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.12:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.4:3.10 ) python_targets_python3_11? ( >=dev-lang/python-3.11.0_beta3:3.11 )
+REQUIRED_USE=|| ( python_targets_python3_8 python_targets_python3_9 python_targets_python3_10 python_targets_python3_11 )
 SLOT=0
 SRC_URI=https://github.com/hsand/pia-wg/archive/fe03e1129e780efd137989ccce0cd8df0106cb2c.tar.gz -> pia-wg-0.0.20210712.tar.gz
 _eclasses_=multibuild	d26d81f242cb193d899a72bca423d0bd	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	e9da88162e7a3c60376e80c2c2adcdfb	multilib	4fbbbc98f236f1b43acd99476bc3cd85	eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	python-utils-r1	32313e7e2fbfba8f62a99ef923fc923c	python-r1	e2883e4f04f0503cdf7f2954e2bf5e15	distutils-r1	64c5b9cc381383c9c1ef74fb199293ea
-_md5_=219c935807d858adebf4a1707edb6ea9
+_md5_=9d81c916ff6cbd71c1bd2ce74c61874c
