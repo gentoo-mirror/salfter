@@ -1,4 +1,4 @@
-BDEPEND=>=dev-python/poetry-core-0.12 python_targets_pypy3? ( >=dev-python/pypy3-7.3.9_p1:0= ) python_targets_python3_8? ( >=dev-lang/python-3.8.13:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.12:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.4:3.10 ) >=dev-python/setuptools-42.0.2[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+BDEPEND=( >=dev-python/poetry-core-0.12 dev-python/pyproject2setuppy ) python_targets_pypy3? ( >=dev-python/pypy3-7.3.9_p1:0= ) python_targets_python3_8? ( >=dev-lang/python-3.8.13:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.12:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.4:3.10 ) >=dev-python/setuptools-42.0.2[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
 DEFINED_PHASES=compile configure install prepare test
 DESCRIPTION=OpenSCAD for Python
 EAPI=8
@@ -12,4 +12,4 @@ REQUIRED_USE=|| ( python_targets_pypy3 python_targets_python3_8 python_targets_p
 SLOT=0
 SRC_URI=https://github.com/SolidCode/SolidPython/archive/refs/tags/v1.1.2.tar.gz -> solidpython-1.1.2.tar.gz
 _eclasses_=multibuild	d26d81f242cb193d899a72bca423d0bd	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	e9da88162e7a3c60376e80c2c2adcdfb	multilib	4fbbbc98f236f1b43acd99476bc3cd85	python-utils-r1	32313e7e2fbfba8f62a99ef923fc923c	python-r1	e2883e4f04f0503cdf7f2954e2bf5e15	distutils-r1	64c5b9cc381383c9c1ef74fb199293ea
-_md5_=5b2646b3a2a40ffbacc48ff76337037e
+_md5_=e19b77ec1527f8f18a8d9c82b4fbb6e3
