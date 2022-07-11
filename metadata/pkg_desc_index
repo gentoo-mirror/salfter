@@ -54,6 +54,7 @@ net-vpn/pia-wg 0.0.20210712: Private Internet Access WireGuard configurator
 sci-electronics/altium2kicad 0.0.20210412: Altium to KiCad converter for PCB and schematics
 sci-electronics/apicula 0.2: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/ecpprog 0.0.20211203: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
+sci-electronics/icestorm 0.0.20220603-r1: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kicad 6.0.0: Electronic Schematic and PCB design tools
 sci-electronics/kikit 1.0.5: Automation for KiCad
 sci-electronics/nextpnr 0.3: portable FPGA place and route tool
