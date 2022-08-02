@@ -14,6 +14,7 @@ app-text/gimagereader 3.3.1: A Gtk/Qt front-end to tesseract-ocr
 app-text/rdrview 0.0_alpha20210912: C port of Mozilla's Readability library
 dev-cpp/mustache 3.2.1: Mustache implementation for modern C++
 dev-embedded/cc65 2.19: complete cross development package for 65(C)02 systems
+dev-embedded/rpi-imager 1.7.2: Raspberry Pi Imaging Utility
 dev-embedded/teensy_loader_cli 2.2: Command line Teensy Loader
 dev-perl/App-XML-DocBook-Builder 0.1003: build DocBook/XML files
 dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
