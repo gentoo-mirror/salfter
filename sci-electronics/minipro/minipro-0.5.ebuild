@@ -1,14 +1,14 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-inherit bash-completion-r1 udev
+inherit udev
 
 DESCRIPTION="A free and open TL866XX programmer"
 HOMEPAGE="https://gitlab.com/DavidGriffith/minipro"
 SRC_URI="https://gitlab.com/DavidGriffith/minipro/-/archive/${PV}/${P}.tar.gz"
-PATCHES="$FILESDIR/$P-makefile.patch"
+PATCHES=( "$FILESDIR/$P-makefile.patch" )
 
 LICENSE="GPL-3"
 SLOT="0"
