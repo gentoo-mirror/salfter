@@ -51,7 +51,6 @@ sci-electronics/altium2kicad 0.0.20210412: Altium to KiCad converter for PCB and
 sci-electronics/apicula 0.2: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/ecpprog 0.0.20211203: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
 sci-electronics/icestorm 0.0.20220603-r1: reverse-engineered tools for Lattice iCE40 FPGAs
-sci-electronics/kicad 6.0.0: Electronic Schematic and PCB design tools
 sci-electronics/kicost 1.1.10: generate part-cost spreadsheets for circuit boards developed with KiCad
 sci-electronics/kicost-digikey-api-v3 0.1.1: experimental plug-in to allow KiCost to do native Digi-Key API requests
 sci-electronics/kikit 1.0.5: Automation for KiCad
