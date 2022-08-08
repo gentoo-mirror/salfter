@@ -1,10 +1,11 @@
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
-DESCRIPTION="desktop GUI client for browsing Geminispace"
+DESCRIPTION="desktop GUI (and optional TUI) client for browsing Geminispace"
 HOMEPAGE="https://gmi.skyjake.fi/lagrange/"
 SRC_URI="https://github.com/skyjake/$PN/releases/download/v$PV/$P.tar.gz"
+#IUSE="tui"
 
 LICENSE="BSD-2"
 SLOT="0"
@@ -20,11 +21,14 @@ RDEPEND="media-libs/libsdl2
 	 media-libs/libsdl2
 	 media-sound/mpg123
 	 media-libs/libwebp"
+# 	 tui? ( dev-libs/sealcurses )
 
 
-src_unpack() {
-	if [[ -n ${A} ]]; then
-		unpack ${A}
-	fi
-	rm -r $S/lib/fribidi $S/lib/harfbuzz $S/lib/the_Foundation
+src_configure() {
+	local mycmakeargs=(
+		-DENABLE_FRIBIDI_BUILD=OFF
+		-DENABLE_HARFBUZZ_MINIMAL=OFF
+	)
+#		-DENABLE_TUI=$(usex tui)
+	cmake_src_configure
 }
