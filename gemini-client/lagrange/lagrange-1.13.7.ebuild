@@ -24,13 +24,6 @@ RDEPEND="media-libs/libsdl2
 # 	 tui? ( dev-libs/sealcurses )
 
 
-src_unpack() {
-	if [[ -n ${A} ]]; then
-		unpack ${A}
-	fi
-	rm -r $S/lib/fribidi $S/lib/harfbuzz $S/lib/the_Foundation
-}
-
 src_configure() {
 	local mycmakeargs=(
 		-DENABLE_FRIBIDI_BUILD=OFF
