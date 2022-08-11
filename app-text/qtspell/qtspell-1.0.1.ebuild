@@ -1,5 +1,5 @@
-EAPI=7
-inherit cmake-utils
+EAPI=8
+inherit cmake
 
 DESCRIPTION="Spell checking for Qt text widgets"
 HOMEPAGE="https://github.com/manisandro/qtspell"

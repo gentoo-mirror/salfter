@@ -1,5 +1,5 @@
-EAPI=7
-#inherit eutils toolchain-funcs cmake-utils
+EAPI=8
+
 inherit cmake
 
 DESCRIPTION="The notorious fortune program"

@@ -1,6 +1,6 @@
-EAPI=7
+EAPI=8
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="an object-oriented C library whose API is designed for a particular coding style, taking cues from C++ STL and Qt"
 HOMEPAGE="https://git.skyjake.fi/skyjake/the_Foundation"
