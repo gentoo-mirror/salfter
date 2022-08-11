@@ -1,6 +1,6 @@
-EAPI=7
+EAPI=8
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="SDL Emulation and Adaptation Layer for Curses"
 HOMEPAGE="https://git.skyjake.fi/skyjake/sealcurses"

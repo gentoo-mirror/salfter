@@ -1,4 +1,4 @@
-EAPI=7
+EAPI=8
 
 DESCRIPTION="SQLite ORM light header only library for modern C++"
 HOMEPAGE="https://github.com/fnc12/sqlite_orm"
@@ -6,7 +6,7 @@ CATCH2_VER=2.13.2
 SRC_URI="https://github.com/fnc12/$PN/archive/refs/tags/$PV.tar.gz -> $P.tar.gz
 	 https://github.com/catchorg/Catch2/archive/refs/tags/v${CATCH2_VER}.tar.gz -> catch2-${CATCH2_VER}.tar.gz"
 
-inherit cmake-utils
+inherit cmake
 
 LICENSE="BSD"
 SLOT="0"
@@ -31,5 +31,5 @@ src_configure()
     BUILD_TESTING=
   )
 
-  cmake-utils_src_configure
+  cmake_src_configure
 }

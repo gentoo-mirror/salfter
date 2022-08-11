@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit eutils git-r3 cmake-utils
+inherit eutils git-r3 cmake
 
 DESCRIPTION="MJPG-streamer takes JPGs from Linux-UVC compatible webcams"
 HOMEPAGE="https://sourceforge.net/projects/mjpg-streamer"
