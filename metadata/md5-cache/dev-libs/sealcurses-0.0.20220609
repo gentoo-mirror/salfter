@@ -1,14 +1,13 @@
 BDEPEND=>=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=app-text/recode dev-libs/rinutils dev-perl/Path-Tiny dev-perl/App-XML-DocBook-Builder
-DESCRIPTION=The notorious fortune program
+DESCRIPTION=SDL Emulation and Adaptation Layer for Curses
 EAPI=8
-HOMEPAGE=http://www.shlomifish.org/open-source/projects/fortune-mod/
+HOMEPAGE=https://git.skyjake.fi/skyjake/sealcurses
 INHERIT=cmake
-IUSE=offensive
-KEYWORDS=alpha amd64 arm hppa ia64 m68k mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
-LICENSE=BSD
+KEYWORDS=amd64
+LICENSE=BSD-2
+RDEPEND=sys-libs/ncurses
 SLOT=0
-SRC_URI=http://www.shlomifish.org/open-source/projects/fortune-mod/arcs/fortune-mod-3.14.0.tar.xz
+SRC_URI=https://alfter.us/wp-content/uploads/2022/08/sealcurses-0.0.20220609.tar.gz
 _eclasses_=toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	38d6ec96711cea42a5cb1cc723a6e906	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	58ec4e54962bf45d065fb95030701514	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	cmake	44afbf15c35884f7c840470f1cf05d0d
-_md5_=2dff0f9372da3f557df5cbbadc32c4ad
+_md5_=4bfac317fb11e1c32287837607f57c43
