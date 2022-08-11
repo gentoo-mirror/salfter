@@ -1,6 +1,6 @@
-EAPI=7
+EAPI=8
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION="3D printer anti-stutter tool"
 HOMEPAGE="https://github.com/FormerLurker/ArcWelderLib"
@@ -14,6 +14,6 @@ S=$WORKDIR/ArcWelderLib-$GIT_COMMIT
 
 src_install()
 {
-  dobin $WORKDIR/${P}_build/ArcWelderConsole/ArcWelder
-  dobin $WORKDIR/${P}_build/ArcWelderInverseProcessor/ArcStraightener
+  dobin ${S}_build/ArcWelderConsole/ArcWelder
+  dobin ${S}_build/ArcWelderInverseProcessor/ArcStraightener
 }
