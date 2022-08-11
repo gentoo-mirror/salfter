@@ -22,4 +22,8 @@ DEPEND="
 	media-libs/gstreamer
 	dev-libs/spdlog
 	media-libs/taglib
+	media-plugins/gst-plugins-mpg123
+	media-plugins/gst-plugins-faad
+	media-plugins/gst-plugins-flac
+	media-plugins/gst-plugins-opus
        "
