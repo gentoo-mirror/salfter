@@ -34,7 +34,7 @@ dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion
 dev-python/pysha3 1.0.2: SHA-3 wrapper for Python
 dev-python/python-trezor 0.11.2: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 games-emulation/sdlmame 9999: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
-games-misc/fortune-mod 3.14.0: The notorious fortune program
+games-misc/fortune-mod 3.14.1: The notorious fortune program
 gemini-client/lagrange 1.13.7: desktop GUI (and optional TUI) client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3: A milter-based application to mint and check HashCash stamps
 media-gfx/arcwelder 2.0: 3D printer anti-stutter tool
