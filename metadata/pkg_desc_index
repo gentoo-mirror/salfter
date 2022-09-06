@@ -70,7 +70,7 @@ sci-electronics/prjoxide 0.1.0 9999: documenting Lattice's 28nm Nexus FPGAs
 sci-electronics/prjtrellis 1.2.1: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/pyvcd 0.2.4: writes Value Change Dump (VCD) files as specified in IEEE 1364-2005
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
-sci-electronics/yosys 0.20 9999: framework for Verilog RTL synthesis
+sci-electronics/yosys 0.21 9999: framework for Verilog RTL synthesis
 sci-libs/euclid3 0.2.0: vector, matrix, quaternion and some geometry in 2D and 3D for Python 3
 sci-libs/solidpython 1.1.2: OpenSCAD for Python
 sys-block/targetcli-fb 2.1.51: Command shell for managing Linux LIO kernel target
