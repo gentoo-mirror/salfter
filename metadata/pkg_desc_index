@@ -74,6 +74,7 @@ sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyF
 sci-electronics/yosys 0.21 9999: framework for Verilog RTL synthesis
 sci-libs/euclid3 0.2.0: vector, matrix, quaternion and some geometry in 2D and 3D for Python 3
 sci-libs/solidpython 1.1.2: OpenSCAD for Python
+sys-apps/fw-ectool 0.0.20220412: EC manipulation tool for the Framework Laptop
 sys-block/targetcli-fb 2.1.51: Command shell for managing Linux LIO kernel target
 sys-cluster/kubectl 1.17.5: CLI to run commands against Kubernetes clusters
 sys-firmware/brcm43455-rock-pi-x-firmware 0.0.20210309: firmware for Broadcom 43455 WiFi/Bluetooth on Rock Pi X
