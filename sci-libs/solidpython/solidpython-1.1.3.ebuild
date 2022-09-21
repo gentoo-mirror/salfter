@@ -4,13 +4,13 @@ PYTHON_COMPAT=( python3_{7,8,9,10,11} pypy3)
 
 inherit distutils-r1
 
+GIT_COMMIT=0a4f539c31a25df52a42bab2ceeffafd45596f73
+
 DESCRIPTION="OpenSCAD for Python"
 HOMEPAGE="https://github.com/SolidCode/SolidPython/"
-SRC_URI="https://github.com/SolidCode/SolidPython/archive/refs/tags/v$PV.tar.gz -> $P.tar.gz"
-S=$WORKDIR/SolidPython-$PV
+SRC_URI="https://github.com/SolidCode/SolidPython/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
+S=$WORKDIR/SolidPython-$GIT_COMMIT
 DISTUTILS_USE_SETUPTOOLS=pyproject.toml
-
-PATCHES="$FILESDIR/$P-euclid.patch"
 
 LICENSE="LGPL-2.1+"
 SLOT="0"
