@@ -2,13 +2,13 @@ EAPI=8
 
 inherit cmake
 
-RELEASE_GIT_COMMIT=3ae21cf6a07f3883fafa5bf31e9104dfa6c9a63f
-DB_GIT_COMMIT=0ee729d20eaf9f1e0f1d657bc6452e3ffe6a0d63
-S=$WORKDIR/$P/libtrellis
+GIT_COMMIT=488f4e71073062de314c55a037ede7cf03a3324c
+DB_GIT_COMMIT=35d900a94ff0db152679a67bf6e4fbf40ebc34aa
+S=$WORKDIR/$PN-$GIT_COMMIT/libtrellis
 
 DESCRIPTION="reverse-engineered tools for Lattice ECP5 FPGAs"
 HOMEPAGE="https://prjtrellis.readthedocs.io"
-SRC_URI="https://github.com/YosysHQ/$PN/archive/refs/tags/$PV.tar.gz -> $P.tar.gz
+SRC_URI="https://github.com/YosysHQ/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz
 	 https://github.com/YosysHQ/$PN-db/archive/$DB_GIT_COMMIT.tar.gz -> $PN-db-$PV.tar.gz"
 LICENSE=ISC
 SLOT=0
@@ -28,7 +28,7 @@ src_unpack() {
 # see https://github.com/YosysHQ/prjtrellis/pull/95
 src_configure() {
 	local mycmakeargs=(
-		-DCURRENT_GIT_VERSION=$RELEASE_GIT_COMMIT
+		-DCURRENT_GIT_VERSION=$GIT_COMMIT
 	)
 	cmake_src_configure
 }
