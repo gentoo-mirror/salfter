@@ -1,6 +1,7 @@
 EAPI=8
 
-PYTHON_COMPAT=( python3_{7,8,9,10,11} pypy3)
+DISTUTILS_USE_PEP517=poetry
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
@@ -10,7 +11,6 @@ DESCRIPTION="OpenSCAD for Python"
 HOMEPAGE="https://github.com/SolidCode/SolidPython/"
 SRC_URI="https://github.com/SolidCode/SolidPython/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
 S=$WORKDIR/SolidPython-$GIT_COMMIT
-DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 LICENSE="LGPL-2.1+"
 SLOT="0"
@@ -23,7 +23,3 @@ RDEPEND="(
 	   >=dev-python/ply-3.11
          )"
 
-BDEPEND="(
-	   >=dev-python/poetry-core-0.12
-	   dev-python/pyproject2setuppy
-	 )"
