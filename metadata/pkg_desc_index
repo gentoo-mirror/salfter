@@ -68,7 +68,7 @@ sci-electronics/nmigen-boards 0.1_alpha20210915: nMigen boards and connectors
 sci-electronics/nmigen-soc 0.1_alpha20211105: System on Chip toolkit for nMigen
 sci-electronics/pcbnewTransition 0.2.0: support both KiCad 5 & 6 in your plugins
 sci-electronics/prjoxide 0.1.0 9999: documenting Lattice's 28nm Nexus FPGAs
-sci-electronics/prjtrellis 1.2.1 1.2.2_alpha20220914: reverse-engineered tools for Lattice ECP5 FPGAs
+sci-electronics/prjtrellis 1.2.1 1.2.2_alpha20220923: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/pyvcd 0.2.4: writes Value Change Dump (VCD) files as specified in IEEE 1364-2005
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
 sci-electronics/yosys 0.21 9999: framework for Verilog RTL synthesis
