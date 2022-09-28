@@ -9,7 +9,7 @@ S=$WORKDIR/$P/libtrellis
 DESCRIPTION="reverse-engineered tools for Lattice ECP5 FPGAs"
 HOMEPAGE="https://prjtrellis.readthedocs.io"
 SRC_URI="https://github.com/YosysHQ/$PN/archive/refs/tags/$PV.tar.gz -> $P.tar.gz
-	 https://github.com/YosysHQ/$PN-db/archive/$DB_GIT_COMMIT.tar.gz -> $PN-db-$PV.tar.gz"
+	 https://github.com/YosysHQ/$PN-db/archive/$DB_GIT_COMMIT.tar.gz -> $PN-db-$DB_GIT_COMMIT.tar.gz"
 LICENSE=ISC
 SLOT=0
 KEYWORDS=~amd64
@@ -20,9 +20,10 @@ DEPEND="dev-vcs/git
 src_unpack() {
 	unpack $P.tar.gz
 	cd $WORKDIR/$P
-	unpack $PN-db-$PV.tar.gz
+	unpack $PN-db-$DB_GIT_COMMIT.tar.gz
 	rmdir database
 	mv $PN-db-$DB_GIT_COMMIT database
+	mv database $WORKDIR/$P/
 }
 
 # see https://github.com/YosysHQ/prjtrellis/pull/95
