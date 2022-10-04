@@ -2,7 +2,7 @@ EAPI=8
 
 inherit cmake
 
-GIT_COMMIT=488f4e71073062de314c55a037ede7cf03a3324c
+GIT_COMMIT=5e515296468bcfe4c981a3f413b4964d3e821bd2
 DB_GIT_COMMIT=35d900a94ff0db152679a67bf6e4fbf40ebc34aa
 S=$WORKDIR/$PN-$GIT_COMMIT/libtrellis
 
@@ -23,6 +23,7 @@ src_unpack() {
 	unpack $PN-db-$PV.tar.gz
 	rmdir database
 	mv $PN-db-$DB_GIT_COMMIT database
+	mv database $WORKDIR/$PN-$GIT_COMMIT/
 }
 
 # see https://github.com/YosysHQ/prjtrellis/pull/95
