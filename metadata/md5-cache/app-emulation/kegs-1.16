@@ -8,5 +8,5 @@ KEYWORDS=amd64 x86
 LICENSE=GPL
 SLOT=0
 SRC_URI=http://kegs.sourceforge.net/kegs.1.16.tar.gz -> kegs-1.16.tar.gz ftp://ftp.apple.asimov.net/pub/apple_II/emulators/kegs/Kegs%20v0.91%20%28with%20system%206%20and%20free%20games%29.zip -> kegs-1.16-ROMs.zip
-_eclasses_=desktop	22952d8f27cac191d75529d4c38e6bfa
+_eclasses_=desktop	7eb20ad915a0a318176d51bc2508ff5c
 _md5_=8e7590088975c7deda13a7f0919645b4
