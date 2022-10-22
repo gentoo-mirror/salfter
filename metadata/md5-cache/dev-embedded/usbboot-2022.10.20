@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=tool to load Raspberry Pi Compute Modules over USB
+EAPI=8
+HOMEPAGE=https://github.com/raspberrypi/usbboot/
+KEYWORDS=amd64 aarch64
+LICENSE=Apache-2.0
+SLOT=0
+SRC_URI=https://github.com/raspberrypi/usbboot/archive/15aac0cd08039ac28225d5820c38c4ce733f0cd8.tar.gz -> usbboot-2022.10.20.tar.gz
+_md5_=885dc9becb6750df3ff751f0ea6d286d
