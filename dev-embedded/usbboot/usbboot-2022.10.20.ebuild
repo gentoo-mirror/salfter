@@ -9,6 +9,8 @@ LICENSE=Apache-2.0
 SLOT=0
 KEYWORDS="amd64 aarch64"
 
+RDEPEND="virtual/libusb:1"
+
 src_install()
 {
   dobin $S/rpiboot
