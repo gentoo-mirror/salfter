@@ -1,14 +1,13 @@
 EAPI=8
 
-inherit cmake
+inherit cmake git-r3
 
 DESCRIPTION="karaoke show hosting software"
 HOMEPAGE="https://openkj.org/"
-SRC_URI="https://github.com/OpenKJ/OpenKJ/archive/refs/tags/v2.0.8-release.tar.gz -> $P.tar.gz"
+EGIT_REPO_URI="https://github.com/OpenKJ/OpenKJ"
 LICENSE="GPL-3"
 SLOT=0
-KEYWORDS="amd64"
-S=$WORKDIR/OpenKJ-$PV-release
+KEYWORDS=""
 
 DEPEND="
 	dev-qt/qtconcurrent:5
@@ -26,4 +25,4 @@ DEPEND="
 	media-plugins/gst-plugins-faad
 	media-plugins/gst-plugins-flac
 	media-plugins/gst-plugins-opus
-       "
+	"
