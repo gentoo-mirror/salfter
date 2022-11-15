@@ -20,3 +20,9 @@ RDEPEND=">=dev-python/ecdsa-0.13
 	 <dev-python/pysha3-2
 	 >=dev-python/base58-2.0.1
 	 <dev-python/base58-3"
+
+src_prepare()
+{
+	default_src_prepare
+	rm -r $S/tests
+}
