@@ -7,7 +7,7 @@ MY_PN="trezor"
 MY_P="${MY_PN}-${PV}"
 
 DESCRIPTION="Client side implementation for TREZOR-compatible Bitcoin hardware wallets"
-HOMEPAGE="https://github.com/trezor/python-trezor"
+HOMEPAGE="https://github.com/trezor/python-firmware"
 SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/${MY_P}"
 
