@@ -7,7 +7,7 @@ EGIT_REPO_URI="https://gitlab.com/salfter/httpsegmenter.git"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
-DEPEND="virtual/ffmpeg"
+DEPEND="media-video/ffmpeg"
                                                 
 src_compile() {
 	cd ${WORKDIR}/${P}
