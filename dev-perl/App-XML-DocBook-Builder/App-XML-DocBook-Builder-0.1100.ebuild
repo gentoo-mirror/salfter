@@ -16,7 +16,6 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="dev-perl/Class-XSAccessor
 	 dev-perl/Test-Trap"
-DEPEND="${RDEPEND}
-	dev-perl/Module-Build
-"
+DEPEND="${RDEPEND}"
+BDEPEND="dev-perl/Module-Build"
 
