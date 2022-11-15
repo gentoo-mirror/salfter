@@ -47,7 +47,6 @@ media-sound/openkj 2.0.8 9999: karaoke show hosting software
 media-video/hlsdl 0.1_alpha20210419: C program to download VoD HLS (.m3u8) files
 media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
 media-video/mediaelch 2.8.16: Video metadata scraper
-media-video/mjpg-streamer 9999: MJPG-streamer takes JPGs from Linux-UVC compatible webcams
 media-video/vobsub2srt 1.0_alpha7: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
 net-fs/libs3 20200523: S3 library, forked for Bacula
 net-fs/netatalk 2.2.5: Open Source AFP server and other AppleTalk-related utilities
