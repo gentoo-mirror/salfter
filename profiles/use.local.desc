@@ -2,11 +2,6 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-app-backup/bacula:bacula-clientonly - Disable DB support, and just build a client
-app-backup/bacula:bacula-nodir - Disable building of director
-app-backup/bacula:bacula-nosd - Disable building of storage daemon
-app-backup/bacula:batch-insert - Enable batch insert into data base
-app-backup/bacula:logwatch - Install support files for logwatch
 app-crypt/mit-krb5:doc - Creates and installs the API and implementation documentation. This is only useful if you want to develop software which depends on kerberos
 app-crypt/mit-krb5:keyutils - Enable for the keyring ccache using keyutils
 app-crypt/mit-krb5:lmdb - Add support for using dev-db/lmdb for lookup tables
