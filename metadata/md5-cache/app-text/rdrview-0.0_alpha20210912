@@ -1,9 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=C port of Mozilla's Readability library
-EAPI=7
-HOMEPAGE=https://github.com/eafer/rdrview
-KEYWORDS=amd64 ~x86
-LICENSE=Apache-2.0
-SLOT=0
-SRC_URI=https://github.com/eafer/rdrview/archive/9bde19f9e53562790b363bb2e3b15707c8c67676.tar.gz -> rdrview-0.0_alpha20210912.tar.gz
-_md5_=b9583dcc6097515890783e47ae8dd8db
