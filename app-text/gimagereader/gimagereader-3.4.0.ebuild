@@ -18,7 +18,6 @@ DEPEND=">=app-text/tesseract-3.04
 	app-text/djvu
 	dev-util/intltool
 	dev-libs/libzip
-	sys-libs/e2fsprogs-libs
 	dev-libs/libxml2
 	app-text/enchant
 	qt5? (
@@ -26,7 +25,7 @@ DEPEND=">=app-text/tesseract-3.04
 	  dev-qt/qtcore:5
 	  app-text/qtspell[qt5]
 	  app-text/poppler
-	  <dev-libs/quazip-1	
+	  dev-libs/quazip	
 	)
 	gtk? (
 	  dev-cpp/gtkmm
@@ -37,11 +36,6 @@ DEPEND=">=app-text/tesseract-3.04
 	  dev-python/pygobject
 	  dev-cpp/gtkspellmm
 	)"
-
-PATCHES=(
-	$FILESDIR/$P-qurl-fix.patch
-	$FILESDIR/$P-cmake-fixes.patch
-	)
 
 src_configure()
 {
