@@ -24,11 +24,10 @@ dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc librar
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
 dev-python/base58 2.1.1: Base58 and Base58Check implementation
 dev-python/hdwallet 2.1.2: Hierarchical Deterministic Wallet
-dev-python/pick 1.0.0: pick an option in the terminal with a simple GUI
+dev-python/pick 2.1.0: pick an option in the terminal with a simple GUI
 dev-python/pybars3 0.9.7: Handlebars.js for Python 3 and 2
 dev-python/pymeta3 0.5.1: a fork of PyMeta 0.5.0 that supports Python 2 and 3
 dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion representation, manipulation, 3D animation and geometry
-dev-python/pysha3 1.0.2: SHA-3 wrapper for Python
 dev-python/python-trezor 0.11.2: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 games-emulation/sdlmame 9999: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.14.1: The notorious fortune program
