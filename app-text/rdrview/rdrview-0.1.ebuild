@@ -1,10 +1,8 @@
-EAPI=7
+EAPI=8
  
 DESCRIPTION="C port of Mozilla's Readability library"
 HOMEPAGE="https://github.com/eafer/rdrview"
-GIT_COMMIT=9bde19f9e53562790b363bb2e3b15707c8c67676
-SRC_URI="https://github.com/eafer/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
-S=$WORKDIR/$PN-$GIT_COMMIT
+SRC_URI="https://github.com/eafer/$PN/archive/refs/tags/v$PV.tar.gz -> $P.tar.gz"
 PATCHES=( $FILESDIR/$PN-makefile.patch )
  
 LICENSE="Apache-2.0"
