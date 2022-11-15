@@ -1,17 +1,18 @@
-EAPI=7
+EAPI=8
 
-inherit qmake-utils git-r3
+inherit qmake-utils
 
 DESCRIPTION="cross-platform viewer/manager of ZIM files"
 HOMEPAGE="https://kiwix.org/"
-EGIT_REPO_URI="https://github.com/kiwix/$PN"
+SRC_URI="https://github.com/kiwix/$PN/archive/$PV.tar.gz -> $P.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE=""
 
-DEPEND="www-misc/kiwix-lib
+DEPEND=">=www-misc/libkiwix-11
+	!www-misc/kiwix-lib
 	dev-qt/qtgui:5
 	dev-qt/qtcore:5
 	dev-qt/qtwebengine:5

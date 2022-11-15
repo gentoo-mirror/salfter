@@ -11,7 +11,8 @@ SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
 
-DEPEND="www-misc/kiwix-lib
+DEPEND=">=www-misc/libkiwix-11
+	!www-misc/kiwix-lib
 	net-libs/libmicrohttpd
 	sys-libs/zlib"
 

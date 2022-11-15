@@ -16,6 +16,6 @@ RDEPEND="net-misc/aria2[bittorrent,metalink,xmlrpc]"
 DEPEND=">=app-arch/libzim-6.3.0
 	dev-libs/icu
 	dev-libs/pugixml
-	<dev-cpp/mustache-4.0
+	>=dev-cpp/mustache-4.1
 	net-libs/libmicrohttpd"
 
