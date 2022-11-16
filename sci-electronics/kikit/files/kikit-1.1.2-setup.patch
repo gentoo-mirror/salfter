@@ -1,0 +1,29 @@
+--- kikit-1.1.2/setup.py	2022-10-31 15:16:05.000000000 -0700
++++ kikit-1.1.2/setup.py	2022-11-16 09:30:00.369962200 -0800
+@@ -1,7 +1,6 @@
+ # -*- coding: utf-8 -*-
+ 
+ import setuptools
+-import versioneer
+ import os
+ import sys
+ 
+@@ -35,8 +34,8 @@
+ setuptools.setup(
+     name="KiKit",
+     python_requires='>=3.7',
+-    version=versioneer.get_version(),
+-    cmdclass=versioneer.get_cmdclass(),
++    version='1.1.2',
++    cmdclass={},
+     author="Jan Mrázek",
+     author_email="email@honzamrazek.cz",
+     description="Automation for KiCAD boards",
+@@ -60,7 +59,6 @@
+         "commentjson>=0.9"
+     ],
+     setup_requires=[
+-        "versioneer"
+     ],
+     extras_require={
+         "dev": ["pytest"],
