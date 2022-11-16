@@ -50,6 +50,8 @@ net-misc/hashcash 1.22-r2: Utility to generate hashcash tokens
 net-p2p/trezord-go 2.0.32: Trezor Bridge
 net-vpn/pia-wg 0.0.20210712: Private Internet Access WireGuard configurator
 sci-electronics/altium2kicad 0.0.20220814: Altium to KiCad converter for PCB and schematics
+sci-electronics/amaranth 0.3: A refreshed Python toolbox for building complex digital hardware
+sci-electronics/amaranth-boards 0.1_alpha20220309: Amaranth boards and connectors
 sci-electronics/apicula 0.5: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
 sci-electronics/icestorm 0.0.20220915: reverse-engineered tools for Lattice iCE40 FPGAs
@@ -57,8 +59,6 @@ sci-electronics/kicost 1.1.12: generate part-cost spreadsheets for circuit board
 sci-electronics/kicost-digikey-api-v3 0.1.2: experimental plug-in to allow KiCost to do native Digi-Key API requests
 sci-electronics/kikit 1.1.2: Automation for KiCad
 sci-electronics/nextpnr 0.4: portable FPGA place and route tool
-sci-electronics/nmigen 0.2: A refreshed Python toolbox for building complex digital hardware
-sci-electronics/nmigen-boards 0.1_alpha20210915: nMigen boards and connectors
 sci-electronics/nmigen-soc 0.1_alpha20211105: System on Chip toolkit for nMigen
 sci-electronics/pcbnewTransition 0.2.0: support both KiCad 5 & 6 in your plugins
 sci-electronics/prjoxide 0.1.0 9999: documenting Lattice's 28nm Nexus FPGAs
