@@ -55,7 +55,7 @@ sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes 
 sci-electronics/icestorm 0.0.20220915: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kicost 1.1.12: generate part-cost spreadsheets for circuit boards developed with KiCad
 sci-electronics/kicost-digikey-api-v3 0.1.2: experimental plug-in to allow KiCost to do native Digi-Key API requests
-sci-electronics/kikit 1.0.5: Automation for KiCad
+sci-electronics/kikit 1.1.2: Automation for KiCad
 sci-electronics/nextpnr 0.4: portable FPGA place and route tool
 sci-electronics/nmigen 0.2: A refreshed Python toolbox for building complex digital hardware
 sci-electronics/nmigen-boards 0.1_alpha20210915: nMigen boards and connectors
