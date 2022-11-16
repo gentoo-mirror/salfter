@@ -10,7 +10,7 @@ SRC_URI="https://github.com/mamedev/mame/archive/mame${MY_PV}.tar.gz -> mame-${P
 
 LICENSE="GPL-2+ BSD-2 MIT CC0-1.0"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE="alsa +arcade debug +mess opengl openmp tools"
 REQUIRED_USE="|| ( arcade mess )"
 
