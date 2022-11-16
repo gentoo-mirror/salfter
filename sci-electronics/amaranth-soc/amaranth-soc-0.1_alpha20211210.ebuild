@@ -12,7 +12,7 @@ LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="amd64"
 
-RDEPEND="sci-electronics/nmigen"
+RDEPEND="sci-electronics/amaranth"
 DEPEND="dev-python/wheel
 	!sci-electronics/nmigen-soc"
 
