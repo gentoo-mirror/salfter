@@ -29,7 +29,6 @@ dev-python/pybars3 0.9.7: Handlebars.js for Python 3 and 2
 dev-python/pymeta3 0.5.1: a fork of PyMeta 0.5.0 that supports Python 2 and 3
 dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion representation, manipulation, 3D animation and geometry
 dev-python/python-trezor 0.13.4: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
-games-emulation/sdlmame 0.249 9999: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.14.1: The notorious fortune program
 gemini-client/lagrange 1.13.8: desktop GUI (and optional TUI) client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3: A milter-based application to mint and check HashCash stamps
