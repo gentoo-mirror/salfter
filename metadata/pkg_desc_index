@@ -23,7 +23,7 @@ dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
 dev-python/base58 2.1.1: Base58 and Base58Check implementation
-dev-python/hdwallet 2.1.2: Hierarchical Deterministic Wallet
+dev-python/hdwallet 2.1.2-r1: Hierarchical Deterministic Wallet
 dev-python/pick 2.1.0: pick an option in the terminal with a simple GUI
 dev-python/pybars3 0.9.7: Handlebars.js for Python 3 and 2
 dev-python/pymeta3 0.5.1: a fork of PyMeta 0.5.0 that supports Python 2 and 3
