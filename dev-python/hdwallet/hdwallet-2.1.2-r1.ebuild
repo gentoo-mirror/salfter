@@ -16,10 +16,10 @@ RDEPEND=">=dev-python/ecdsa-0.13
 	 <dev-python/ecdsa-1
 	 >=dev-python/mnemonic-0.19
 	 <dev-python/mnemonic-1
-	 >=dev-python/pysha3-1.0.2
-	 <dev-python/pysha3-2
 	 >=dev-python/base58-2.0.1
-	 <dev-python/base58-3"
+	 <dev-python/base58-3
+	 >=dev-python/pycryptodome-3.15
+	 <dev-python/pycryptodome-4"
 
 src_prepare()
 {
