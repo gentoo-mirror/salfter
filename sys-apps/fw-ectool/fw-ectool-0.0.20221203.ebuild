@@ -1,6 +1,6 @@
 EAPI=8
 
-GIT_COMMIT=d5b5b5008d2f98400206deb182e8ce772b6df9df
+GIT_COMMIT=54c140399bbc3e6a3dce6c9f842727c4128367be
 SRC_URI="https://github.com/DHowett/framework-ec/archive/${GIT_COMMIT}.tar.gz -> $P.tar.gz" 
 DESCRIPTION="EC manipulation tool for the Framework Laptop"
 HOMEPAGE=https://github.com/DHowett/framework-ec
