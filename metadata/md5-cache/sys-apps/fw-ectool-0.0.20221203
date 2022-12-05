@@ -5,5 +5,5 @@ HOMEPAGE=https://github.com/DHowett/framework-ec
 KEYWORDS=amd64
 LICENSE=BSD-3
 SLOT=0
-SRC_URI=https://github.com/DHowett/framework-ec/archive/d5b5b5008d2f98400206deb182e8ce772b6df9df.tar.gz -> fw-ectool-0.0.20220412.tar.gz
-_md5_=cb2ad6d68af3c6de7723f55592750a83
+SRC_URI=https://github.com/DHowett/framework-ec/archive/54c140399bbc3e6a3dce6c9f842727c4128367be.tar.gz -> fw-ectool-0.0.20221203.tar.gz
+_md5_=96db18b85e29320f4b10ec28167dc780
