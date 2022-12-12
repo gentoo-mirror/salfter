@@ -4,7 +4,7 @@
 
 EAPI=7
 
-inherit eutils flag-o-matic toolchain-funcs user
+inherit eutils flag-o-matic toolchain-funcs 
 
 DESCRIPTION="A milter-based application to mint and check HashCash stamps"
 HOMEPAGE="http://althenia.net/hashcash"
@@ -17,15 +17,9 @@ IUSE=""
 
 DEPEND="sys-libs/db
 	|| ( mail-filter/libmilter mail-mta/sendmail )"
-RDEPEND="${DEPEND}"
-
-pkg_setup() {
-	enewgroup milter
-	# mail-milter/spamass-milter creates milter user with this home directory
-	# For consistency reasons, milter user must be created here with this home directory
-	# even though this package doesn't need a home directory for this user (#280571)
-	enewuser milter -1 -1 /var/lib/milter milter
-}
+RDEPEND="${DEPEND}
+	 acct-user/milter
+	 acct-group/milter"
 
 src_configure() {
 	local CC="$(tc-getCC)"
