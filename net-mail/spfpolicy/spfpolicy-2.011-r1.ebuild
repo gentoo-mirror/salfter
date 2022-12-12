@@ -2,7 +2,7 @@
 
 EAPI="7"
 
-inherit eutils user
+inherit eutils 
 
 DESCRIPTION="Postfix policy server implementing Sender Policy Framework (SPF)"
 HOMEPAGE="http://www.openspf.org/Software"
@@ -16,7 +16,9 @@ DEPEND=""
 RDEPEND=">=dev-lang/perl-5.6.0
 	>=dev-perl/Mail-SPF-2.006
 	dev-perl/NetAddr-IP
-	dev-perl/Sys-Hostname-Long"
+	dev-perl/Sys-Hostname-Long
+	acct-user/spfpolicy
+	acct-group/spfpolicy"
 
 # Unfortunately our tar file uses a long name, so we have to set the
 # source directory here.
