@@ -62,7 +62,7 @@ sci-electronics/amaranth-soc 0.1_alpha20211210: System on Chip toolkit for Amara
 sci-electronics/apicula 0.5.1: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
 sci-electronics/icestorm 0.0.20220915: reverse-engineered tools for Lattice iCE40 FPGAs
-sci-electronics/kicost 1.1.12: generate part-cost spreadsheets for circuit boards developed with KiCad
+sci-electronics/kicost 1.1.14: generate part-cost spreadsheets for circuit boards developed with KiCad
 sci-electronics/kicost-digikey-api-v3 0.1.2: experimental plug-in to allow KiCost to do native Digi-Key API requests
 sci-electronics/kikit 1.1.2: Automation for KiCad
 sci-electronics/nextpnr 0.4: portable FPGA place and route tool
