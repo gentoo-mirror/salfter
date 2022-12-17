@@ -2,7 +2,7 @@ EAPI=8
 
 DESCRIPTION="tool to load Raspberry Pi Compute Modules over USB"
 HOMEPAGE=https://github.com/raspberrypi/usbboot/
-GIT_COMMIT=a6976b714821ea372706c923f8ba30d0594eb12c
+GIT_COMMIT=1afa26c567503ca1595279d74a5c46d66c66a1bd
 S=$WORKDIR/$PN-$GIT_COMMIT
 SRC_URI="https://github.com/raspberrypi/$PN/archive/${GIT_COMMIT}.tar.gz -> $P.tar.gz"
 LICENSE=Apache-2.0
