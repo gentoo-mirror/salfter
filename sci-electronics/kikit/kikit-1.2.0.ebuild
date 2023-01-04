@@ -17,7 +17,6 @@ PATCHES="$FILESDIR/$P-setup.patch"
 
 RDEPEND="(
 	   >=sci-electronics/pcbnewTransition-0.2.0
-	   >=dev-python/numpy-1.21
 	   >=dev-python/shapely-1.7
            >=dev-python/click-7.1
            >=dev-python/markdown2-2.4
