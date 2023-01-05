@@ -5,7 +5,7 @@
  export GOFLAGS=-mod=vendor
  export CGO_ENABLED=0
 -version=$(git describe --dirty --always)
-+version=0.16.0
++version=0.17.0
  LDFLAGS="-w -X github.com/coreos/butane/internal/version.Raw=$version"
  
  NAME=butane
