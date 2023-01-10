@@ -5,7 +5,7 @@ PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-GIT_COMMIT=0a4f539c31a25df52a42bab2ceeffafd45596f73
+GIT_COMMIT=a6822d518859efe9c3a08074dfa258e8cff1962d
 
 DESCRIPTION="OpenSCAD for Python"
 HOMEPAGE="https://github.com/SolidCode/SolidPython/"
