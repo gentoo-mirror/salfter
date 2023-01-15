@@ -57,7 +57,7 @@ net-misc/hashcash 1.22-r2: Utility to generate hashcash tokens
 net-vpn/pia-wg 0.0.20210712: Private Internet Access WireGuard configurator
 sci-electronics/altium2kicad 0.0.20221123: Altium to KiCad converter for PCB and schematics
 sci-electronics/amaranth 0.3: A refreshed Python toolbox for building complex digital hardware
-sci-electronics/amaranth-boards 0.1_alpha20230111: Amaranth boards and connectors
+sci-electronics/amaranth-boards 0.1_alpha20230113: Amaranth boards and connectors
 sci-electronics/amaranth-soc 0.1_alpha20211210: System on Chip toolkit for Amaranth
 sci-electronics/apicula 0.6.1: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
@@ -66,7 +66,7 @@ sci-electronics/kicost 1.1.15: generate part-cost spreadsheets for circuit board
 sci-electronics/kicost-digikey-api-v3 0.1.2: experimental plug-in to allow KiCost to do native Digi-Key API requests
 sci-electronics/kikit 1.2.0: Automation for KiCad
 sci-electronics/nextpnr 0.5: portable FPGA place and route tool
-sci-electronics/pcbnewTransition 0.3.1: support both KiCad 5 & 6 in your plugins
+sci-electronics/pcbnewTransition 0.3.2: support both KiCad 5 & 6 in your plugins
 sci-electronics/prjoxide 0.1.0.20220925 9999: documenting Lattice's 28nm Nexus FPGAs
 sci-electronics/prjtrellis 1.2.1 1.2.2_alpha20221012: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/pyvcd 0.3.0: writes Value Change Dump (VCD) files as specified in IEEE 1364-2005
