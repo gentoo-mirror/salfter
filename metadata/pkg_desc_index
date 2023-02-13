@@ -45,7 +45,7 @@ media-gfx/meshconv-bin 1.29: 3D model converter
 media-gfx/stl_normalize 0.0.20210314: A script to normalize and validate STL files
 media-sound/mp3val 0.1.8: MP3 validator
 media-sound/openkj 2.0.8 9999: karaoke show hosting software
-media-video/hlsdl 0.1_alpha20221126: C program to download VoD HLS (.m3u8) files
+media-video/hlsdl 0.1_alpha20230213: C program to download VoD HLS (.m3u8) files
 media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
 media-video/mediaelch 2.10.0: Video metadata scraper
 media-video/vobsub2srt 1.0_alpha7: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
@@ -65,7 +65,7 @@ sci-electronics/icestorm 0.0.20221227: reverse-engineered tools for Lattice iCE4
 sci-electronics/kicost 1.1.15: generate part-cost spreadsheets for circuit boards developed with KiCad
 sci-electronics/kicost-digikey-api-v3 0.1.2: experimental plug-in to allow KiCost to do native Digi-Key API requests
 sci-electronics/kikit 1.2.0: Automation for KiCad
-sci-electronics/nextpnr 0.5: portable FPGA place and route tool
+sci-electronics/nextpnr 0.5 0.6_alpha20230206: portable FPGA place and route tool
 sci-electronics/pcbnewTransition 0.3.2: support both KiCad 5 & 6 in your plugins
 sci-electronics/prjoxide 0.1.0.20220925 9999: documenting Lattice's 28nm Nexus FPGAs
 sci-electronics/prjtrellis 1.2.1 1.2.2_alpha20230208: reverse-engineered tools for Lattice ECP5 FPGAs
