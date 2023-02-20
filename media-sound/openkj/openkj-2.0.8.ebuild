@@ -26,4 +26,5 @@ DEPEND="
 	media-plugins/gst-plugins-faad
 	media-plugins/gst-plugins-flac
 	media-plugins/gst-plugins-opus
+	<dev-libs/libfmt-9
        "
