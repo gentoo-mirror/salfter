@@ -69,7 +69,7 @@ sci-electronics/kikit 1.2.0: Automation for KiCad
 sci-electronics/nextpnr 0.5 0.6_alpha20230206: portable FPGA place and route tool
 sci-electronics/pcbnewTransition 0.3.2: support both KiCad 5 & 6 in your plugins
 sci-electronics/prjoxide 0.1.0.20220925 9999: documenting Lattice's 28nm Nexus FPGAs
-sci-electronics/prjtrellis 1.2.1 1.2.2_alpha20230208: reverse-engineered tools for Lattice ECP5 FPGAs
+sci-electronics/prjtrellis 1.2.1 1.2.2_alpha20230222: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/pyvcd 0.3.0: writes Value Change Dump (VCD) files as specified in IEEE 1364-2005
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
 sci-electronics/yosys 0.26 9999: framework for Verilog RTL synthesis
