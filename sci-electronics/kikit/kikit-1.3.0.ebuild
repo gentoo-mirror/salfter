@@ -8,12 +8,13 @@ DESCRIPTION="Automation for KiCad"
 HOMEPAGE="https://github.com/yaqwsx/KiKit/"
 SRC_URI="https://github.com/yaqwsx/KiKit/archive/refs/tags/v$PV.tar.gz -> $P.tar.gz"
 S=$WORKDIR/KiKit-$PV
+DISTUTILS_USE_PEP517=setuptools
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64"
 
-PATCHES="$FILESDIR/$P-setup.patch"
+#PATCHES="$FILESDIR/$P-setup.patch"
 
 RDEPEND="(
 	   >=sci-electronics/pcbnewTransition-0.2.0
@@ -25,3 +26,4 @@ RDEPEND="(
 	   >=dev-python/commentjson-0.9
 	 )"
 
+distutils_enable_tests unittest
