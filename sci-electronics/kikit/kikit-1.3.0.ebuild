@@ -14,8 +14,6 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64"
 
-#PATCHES="$FILESDIR/$P-setup.patch"
-
 RDEPEND="(
 	   >=sci-electronics/pcbnewTransition-0.2.0
 	   >=dev-python/shapely-1.7
