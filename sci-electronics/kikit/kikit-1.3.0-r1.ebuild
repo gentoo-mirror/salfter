@@ -9,6 +9,7 @@ HOMEPAGE="https://github.com/yaqwsx/KiKit/"
 SRC_URI="https://github.com/yaqwsx/KiKit/archive/refs/tags/v$PV.tar.gz -> $P.tar.gz"
 S=$WORKDIR/KiKit-$PV
 DISTUTILS_USE_PEP517=setuptools
+PATCHES="$FILESDIR/$P-solidpython2.patch"
 
 LICENSE="MIT"
 SLOT="0"
@@ -20,8 +21,10 @@ RDEPEND="(
            >=dev-python/click-7.1
            >=dev-python/markdown2-2.4
 	   >=dev-python/pybars3-0.9
-	   >=sci-libs/solidpython-1.1.2
+	   sci-libs/solidpython2-legacy
+	   !sci-libs/solidpython
 	   >=dev-python/commentjson-0.9
+	   media-gfx/openscad
 	 )"
 
 distutils_enable_tests unittest
