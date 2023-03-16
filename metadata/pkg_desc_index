@@ -67,7 +67,7 @@ sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes 
 sci-electronics/icestorm 0.0.20230218: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kicost 1.1.15: generate part-cost spreadsheets for circuit boards developed with KiCad
 sci-electronics/kicost-digikey-api-v3 0.1.2: experimental plug-in to allow KiCost to do native Digi-Key API requests
-sci-electronics/kikit 1.3.0: Automation for KiCad
+sci-electronics/kikit 1.3.0-r1: Automation for KiCad
 sci-electronics/nextpnr 0.5 0.6_alpha20230206: portable FPGA place and route tool
 sci-electronics/pcbnewTransition 0.3.4: support both KiCad 5 & 6 in your plugins
 sci-electronics/prjoxide 0.1.0.20220925 9999: documenting Lattice's 28nm Nexus FPGAs
