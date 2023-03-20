@@ -7,8 +7,8 @@ inherit distutils-r1
 
 DESCRIPTION="OpenSCAD for Python"
 HOMEPAGE="https://github.com/jeff-dh/SolidPython/"
-SRC_URI="https://github.com/jeff-dh/SolidPython/archive/refs/tags/v2.0.0-beta-02.tar.gz -> $P.tar.gz"
-S=$WORKDIR/SolidPython-2.0.0-beta-02
+SRC_URI="https://github.com/jeff-dh/SolidPython/archive/refs/tags/v2.0.0-beta-03.tar.gz -> $P.tar.gz"
+S=$WORKDIR/SolidPython-2.0.0-beta-03
 
 LICENSE="LGPL-2.1+"
 SLOT="0"
