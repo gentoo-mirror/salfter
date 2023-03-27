@@ -5,8 +5,7 @@ inherit distutils-r1 git-r3
 
 DESCRIPTION="A refreshed Python toolbox for building complex digital hardware"
 HOMEPAGE="https://github.com/amaranth-lang/amaranth"
-# GitHub tarballs don't work, and PyPi doesn't provide source tarballs
-EGIT_COMMIT=39a83f4d995d16364cc9b99da646ff8db6394166
+EGIT_COMMIT=5f6b36e91f44c43bd7073fc94be239e795a12128
 EGIT_REPO_URI=https://github.com/amaranth-lang/$PN
 DISTUTILS_USE_PEP517=setuptools
 
