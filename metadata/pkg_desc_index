@@ -60,7 +60,7 @@ net-wireless/linux-wifi-hotspot 4.4.0: Feature-rich wifi hotspot creator for Lin
 net-wireless/rtlsdr-airband 4.0.3: converts analog broadcast radio to audio streams
 sci-electronics/altium2kicad 0.0.20221123: Altium to KiCad converter for PCB and schematics
 sci-electronics/amaranth 0.3: A refreshed Python toolbox for building complex digital hardware
-sci-electronics/amaranth-boards 0.1_alpha20230322: Amaranth boards and connectors
+sci-electronics/amaranth-boards 0.1_alpha20230325: Amaranth boards and connectors
 sci-electronics/amaranth-soc 0.1_alpha20230214: System on Chip toolkit for Amaranth
 sci-electronics/apicula 0.7: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
