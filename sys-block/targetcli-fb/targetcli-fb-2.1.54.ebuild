@@ -9,6 +9,7 @@ inherit distutils-r1
 DESCRIPTION="Command shell for managing Linux LIO kernel target"
 HOMEPAGE="https://github.com/open-iscsi/targetcli-fb"
 SRC_URI="https://github.com/open-iscsi/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+DISTUTILS_USE_PEP517=setuptools
 
 LICENSE="Apache-2.0"
 SLOT="0"

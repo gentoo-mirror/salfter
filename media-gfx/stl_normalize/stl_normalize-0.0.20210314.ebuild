@@ -10,6 +10,7 @@ DESCRIPTION="A script to normalize and validate STL files"
 HOMEPAGE="https://github.com/revarbat/stl_normalize/"
 SRC_URI="https://github.com/revarbat/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
 S=$WORKDIR/$PN-$GIT_COMMIT
+DISTUTILS_USE_PEP517=setuptools
 
 RDEPEND="dev-python/numpy[${PYTHON_USEDEP}]
 	 dev-python/pyquaternion[${PYTHON_USEDEP}]

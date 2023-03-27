@@ -6,6 +6,7 @@ inherit distutils-r1
 DESCRIPTION="use nmap from Python"
 HOMEPAGE="https://xael.org/pages/python-nmap-en.html"
 SRC_URI="https://xael.org/pages/$P.tar.gz"
+DISTUTILS_USE_PEP517=setuptools
 
 LICENSE="GPL-3"
 SLOT=0

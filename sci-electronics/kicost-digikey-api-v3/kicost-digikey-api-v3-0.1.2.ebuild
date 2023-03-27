@@ -6,6 +6,7 @@ inherit distutils-r1
 DESCRIPTION="experimental plug-in to allow KiCost to do native Digi-Key API requests"
 HOMEPAGE="https://github.com/set-soft/kicost-digikey-api-v3"
 SRC_URI="https://github.com/set-soft/$PN/archive/refs/tags/v$PV.tar.gz -> $P.tar.gz"
+DISTUTILS_USE_PEP517=setuptools
 
 LICENSE=GPL-3
 SLOT=0

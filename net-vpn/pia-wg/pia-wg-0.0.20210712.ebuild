@@ -8,6 +8,7 @@ inherit distutils-r1
 DESCRIPTION="Private Internet Access WireGuard configurator"
 HOMEPAGE="https://github.com/hsand/pia-wg"
 SRC_URI="https://github.com/hsand/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
+DISTUTILS_USE_PEP517=no
 
 RDEPEND=">=dev-python/certifi-2021.5.30
 	 >=dev-python/chardet-3.0.4
