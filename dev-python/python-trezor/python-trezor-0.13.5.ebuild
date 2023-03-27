@@ -10,6 +10,7 @@ DESCRIPTION="Client side implementation for TREZOR-compatible Bitcoin hardware w
 HOMEPAGE="https://github.com/trezor/python-firmware"
 SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/${MY_P}"
+DISTUTILS_USE_PEP517=setuptools
 
 LICENSE="LGPL-3"
 SLOT="0"

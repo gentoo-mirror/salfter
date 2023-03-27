@@ -7,6 +7,7 @@ DESCRIPTION="Hierarchical Deterministic Wallet"
 HOMEPAGE="https://github.com/meherett/python-hdwallet"
 SRC_URI="https://github.com/meherett/$PN/archive/refs/tags/v$PV.tar.gz -> $P.tar.gz"
 S=$WORKDIR/python-$P
+DISTUTILS_USE_PEP517=setuptools
 
 LICENSE="ISC"
 SLOT="0"

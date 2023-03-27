@@ -7,6 +7,7 @@ DESCRIPTION="System on Chip toolkit for Amaranth"
 HOMEPAGE="https://github.com/amaranth-lang/amaranth-soc"
 EGIT_COMMIT=d2185e3082c8101720d1a951a2e090a989b82394
 EGIT_REPO_URI=https://github.com/amaranth-lang/$PN
+DISTUTILS_USE_PEP517=setuptools
 
 LICENSE="BSD-2"
 SLOT="0"

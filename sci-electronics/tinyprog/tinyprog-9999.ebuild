@@ -7,6 +7,7 @@ DESCRIPTION="Programmer for FPGA boards using the TinyFPGA USB Bootloader"
 HOMEPAGE="https://github.com/tinyfpga/TinyFPGA-Bootloader/"
 EGIT_REPO_URI="https://github.com/tinyfpga/TinyFPGA-Bootloader"
 S=$WORKDIR/$P/programmer
+DISTUTILS_USE_PEP517=setuptools
 
 LICENSE="GPL-2"
 SLOT="0"
