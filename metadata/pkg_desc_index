@@ -31,7 +31,7 @@ dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc librar
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
 dev-python/base58 2.1.1: Base58 and Base58Check implementation
 dev-python/hdwallet 2.2.1: Hierarchical Deterministic Wallet
-dev-python/pick 2.1.0: pick an option in the terminal with a simple GUI
+dev-python/pick 2.2.0: pick an option in the terminal with a simple GUI
 dev-python/pybars3 0.9.7: Handlebars.js for Python 3 and 2
 dev-python/pymeta3 0.5.1: a fork of PyMeta 0.5.0 that supports Python 2 and 3
 dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion representation, manipulation, 3D animation and geometry
@@ -55,7 +55,7 @@ net-fs/netatalk 2.2.5: Open Source AFP server and other AppleTalk-related utilit
 net-fs/webdavfs 0.0.20200520: A FUSE filesystem for WebDAV shares
 net-mail/spfpolicy 2.011-r1: Postfix policy server implementing Sender Policy Framework (SPF)
 net-misc/hashcash 1.22-r2: Utility to generate hashcash tokens
-net-vpn/pia-wg 0.0.20210712: Private Internet Access WireGuard configurator
+net-vpn/pia-wg 0.0.20230313: Private Internet Access WireGuard configurator
 net-wireless/linux-wifi-hotspot 4.4.0: Feature-rich wifi hotspot creator for Linux which provides both GUI and command-line interface
 net-wireless/rtlsdr-airband 4.0.3: converts analog broadcast radio to audio streams
 sci-electronics/altium2kicad 0.0.20221123: Altium to KiCad converter for PCB and schematics
