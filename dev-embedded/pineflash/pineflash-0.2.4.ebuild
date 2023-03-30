@@ -8,18 +8,26 @@ EAPI=8
 CRATES="
 	ab_glyph-0.2.17
 	ab_glyph_rasterizer-0.1.7
+	accesskit-0.8.1
+	accesskit_consumer-0.10.0
+	accesskit_macos-0.2.1
+	accesskit_windows-0.10.1
+	accesskit_winit-0.7.1
 	adler-1.0.2
-	ahash-0.8.0
+	ahash-0.8.2
 	aho-corasick-0.7.19
-	arboard-2.1.1
+	arboard-3.2.0
 	arrayref-0.3.6
 	arrayvec-0.5.2
+	arrayvec-0.7.2
 	atk-sys-0.15.1
 	atomic_refcell-0.1.8
 	autocfg-1.1.0
 	base64-0.13.0
 	bitflags-1.3.2
 	block-0.1.6
+	block-sys-0.1.0-beta.1
+	block2-0.2.0-alpha.6
 	bumpalo-3.11.0
 	bytemuck-1.12.1
 	bytemuck_derive-1.2.1
@@ -33,6 +41,7 @@ CRATES="
 	cesu8-1.1.0
 	cfg-expr-0.10.3
 	cfg-if-1.0.0
+	cfg_aliases-0.1.1
 	cgl-0.3.2
 	chunked_transfer-1.4.0
 	clipboard-win-4.4.2
@@ -49,20 +58,26 @@ CRATES="
 	crossfont-0.5.0
 	cty-0.2.2
 	darling-0.13.4
+	darling-0.14.2
 	darling_core-0.13.4
+	darling_core-0.14.2
 	darling_macro-0.13.4
+	darling_macro-0.14.2
 	dispatch-0.2.0
 	dlib-0.5.0
 	downcast-rs-1.2.0
 	dwrote-0.11.0
-	eframe-0.19.0
-	egui-0.19.0
-	egui-notify-0.4.0
-	egui-winit-0.19.0
-	egui_glow-0.19.0
+	ecolor-0.20.0
+	eframe-0.20.1
+	egui-0.20.1
+	egui-notify-0.5.0
+	egui-winit-0.20.1
+	egui_glow-0.20.1
 	ehttp-0.2.0
-	emath-0.19.0
-	epaint-0.19.0
+	emath-0.20.0
+	enumset-1.0.12
+	enumset_derive-0.6.1
+	epaint-0.20.0
 	error-code-2.3.1
 	expat-sys-2.1.6
 	flate2-1.0.24
@@ -78,16 +93,14 @@ CRATES="
 	gdk-pixbuf-sys-0.15.10
 	gdk-sys-0.15.1
 	gethostname-0.2.3
-	getrandom-0.2.7
 	gio-sys-0.15.10
 	gl_generator-0.14.0
 	glib-sys-0.15.10
 	glow-0.11.2
-	glutin-0.29.1
-	glutin_egl_sys-0.1.6
-	glutin_gles2_sys-0.1.5
-	glutin_glx_sys-0.1.8
-	glutin_wgl_sys-0.1.5
+	glutin-0.30.3
+	glutin_egl_sys-0.3.1
+	glutin_glx_sys-0.3.0
+	glutin_wgl_sys-0.3.0
 	gobject-sys-0.15.10
 	gtk-sys-0.15.3
 	heck-0.4.0
@@ -95,10 +108,11 @@ CRATES="
 	idna-0.3.0
 	instant-0.1.12
 	itoa-1.0.4
-	jni-0.19.0
+	jni-0.20.0
 	jni-sys-0.3.0
 	js-sys-0.3.60
 	khronos_api-3.1.0
+	kurbo-0.8.3
 	lazy_static-1.4.0
 	libc-0.2.132
 	libloading-0.7.3
@@ -111,15 +125,11 @@ CRATES="
 	minimal-lexical-0.2.1
 	miniz_oxide-0.5.4
 	mio-0.8.4
-	ndk-0.6.0
 	ndk-0.7.0
 	ndk-context-0.1.1
-	ndk-glue-0.6.2
 	ndk-glue-0.7.0
 	ndk-macro-0.3.0
-	ndk-sys-0.3.0
 	ndk-sys-0.4.0
-	nix-0.22.3
 	nix-0.24.2
 	nohash-hasher-0.2.0
 	nom-7.1.1
@@ -127,13 +137,16 @@ CRATES="
 	num_enum_derive-0.5.7
 	objc-0.2.7
 	objc-foundation-0.1.1
+	objc-sys-0.2.0-beta.2
+	objc2-0.3.0-beta.3
+	objc2-encode-2.0.0-pre.2
 	objc_id-0.1.1
 	once_cell-1.14.0
-	osmesa-sys-0.1.2
 	owned_ttf_parser-0.15.2
 	pango-sys-0.15.10
 	parking_lot-0.12.1
 	parking_lot_core-0.9.3
+	paste-1.0.10
 	percent-encoding-2.2.0
 	pin-project-lite-0.2.9
 	pkg-config-0.3.25
@@ -162,7 +175,6 @@ CRATES="
 	serde_json-1.0.89
 	servo-fontconfig-0.5.1
 	servo-fontconfig-sys-5.1.0
-	shared_library-0.1.9
 	slotmap-1.0.6
 	smallvec-1.9.0
 	smithay-client-toolkit-0.16.0
@@ -206,12 +218,12 @@ CRATES="
 	wayland-client-0.29.5
 	wayland-commons-0.29.5
 	wayland-cursor-0.29.5
-	wayland-egl-0.29.5
 	wayland-protocols-0.29.5
 	wayland-scanner-0.29.5
 	wayland-sys-0.29.5
+	wayland-sys-0.30.1
 	web-sys-0.3.60
-	webbrowser-0.7.1
+	webbrowser-0.8.2
 	webpki-0.22.0
 	webpki-roots-0.22.4
 	whoami-1.2.3
@@ -222,21 +234,31 @@ CRATES="
 	winapi-wsapoll-0.1.1
 	winapi-x86_64-pc-windows-gnu-0.4.0
 	windows-0.37.0
+	windows-0.42.0
+	windows-implement-0.42.0
 	windows-sys-0.36.1
+	windows_aarch64_gnullvm-0.42.0
 	windows_aarch64_msvc-0.36.1
 	windows_aarch64_msvc-0.37.0
+	windows_aarch64_msvc-0.42.0
 	windows_i686_gnu-0.36.1
 	windows_i686_gnu-0.37.0
+	windows_i686_gnu-0.42.0
 	windows_i686_msvc-0.36.1
 	windows_i686_msvc-0.37.0
+	windows_i686_msvc-0.42.0
 	windows_x86_64_gnu-0.36.1
 	windows_x86_64_gnu-0.37.0
+	windows_x86_64_gnu-0.42.0
+	windows_x86_64_gnullvm-0.42.0
 	windows_x86_64_msvc-0.36.1
 	windows_x86_64_msvc-0.37.0
+	windows_x86_64_msvc-0.42.0
 	winit-0.27.3
 	wio-0.2.2
 	x11-dl-2.20.0
-	x11rb-0.9.0
+	x11rb-0.10.1
+	x11rb-protocol-0.10.0
 	xcursor-0.3.4
 	xml-rs-0.8.4
 	zip-0.5.13
@@ -248,9 +270,16 @@ inherit cargo
 DESCRIPTION="firmware updating GUI for Pinecil soldering iron"
 HOMEPAGE="https://github.com/Laar3/PineFlash"
 SRC_URI="$(cargo_crate_uris)
-	 https://github.com/Laar3/PineFlash/archive/refs/tags/$PV.tar.gz -> $P.tar.gz"
+	 https://github.com/Spagett1/PineFlash/archive/refs/tags/$PV.tar.gz -> $P.tar.gz"
 S=$WORKDIR/PineFlash-$PV
-LICENSE="GPL-2"
+LICENSE="0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD BSD-2 Boost-1.0 ISC LicenseRef-UFL-1.0 MIT MPL-2.0 OFL-1.1 Unicode-DFS-2016 Unlicense ZLIB"
 SLOT="0"
 KEYWORDS="amd64"
-RDEPEND="app-mobilephone/dfu-util"
+
+DEPEND=""
+RDEPEND="${DEPEND}"
+BDEPEND=""
+
+# rust does not use *FLAGS from make.conf, silence portage warning
+# update with proper path to binaries this crate installs, omit leading /
+QA_FLAGS_IGNORED="usr/bin/${PN}"
