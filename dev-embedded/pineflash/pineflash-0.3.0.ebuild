@@ -268,7 +268,7 @@ CRATES="
 inherit cargo
 
 DESCRIPTION="firmware updating GUI for Pinecil soldering iron"
-HOMEPAGE="https://github.com/Laar3/PineFlash"
+HOMEPAGE="https://github.com/Spagett1/PineFlash"
 SRC_URI="$(cargo_crate_uris)
 	 https://github.com/Spagett1/PineFlash/archive/refs/tags/$PV.tar.gz -> $P.tar.gz"
 S=$WORKDIR/PineFlash-$PV
