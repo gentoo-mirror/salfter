@@ -11,7 +11,7 @@ SRC_URI="https://github.com/mamedev/mame/archive/mame${MY_PV}.tar.gz -> mame-${P
 LICENSE="GPL-2+ BSD-2 MIT CC0-1.0"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="alsa +arcade debug +mess opengl openmp tools"
+IUSE="alsa +arcade debug +mess opengl openmp pulseaudio tools"
 REQUIRED_USE="|| ( arcade mess )"
 
 # MAME and MESS: +arcade +mess
@@ -91,6 +91,10 @@ src_prepare() {
 		enable_feature USE_SYSTEM_LIB_PORTMIDI
 	else
 		enable_feature NO_USE_MIDI
+	fi
+
+	if ! use pulseaudio ; then
+		enable_feature NO_USE_PULSEAUDIO
 	fi
 
 	sed -i \
