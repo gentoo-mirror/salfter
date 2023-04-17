@@ -52,7 +52,7 @@ media-video/mediaelch 2.10.0: Video metadata scraper
 media-video/vobsub2srt 1.0_alpha7: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
 net-fs/libs3 20200523: S3 library, forked for Bacula
 net-fs/netatalk 2.2.5: Open Source AFP server and other AppleTalk-related utilities
-net-fs/webdavfs 0.0.20200520: A FUSE filesystem for WebDAV shares
+net-fs/webdavfs 1.0: A FUSE filesystem for WebDAV shares
 net-mail/spfpolicy 2.011-r1: Postfix policy server implementing Sender Policy Framework (SPF)
 net-misc/hashcash 1.22-r2: Utility to generate hashcash tokens
 net-vpn/pia-wg 0.0.20230313: Private Internet Access WireGuard configurator
