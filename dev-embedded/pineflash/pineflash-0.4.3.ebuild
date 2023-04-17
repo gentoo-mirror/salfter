@@ -101,9 +101,11 @@ CRATES="
 	glutin_wgl_sys-0.3.0
 	gobject-sys-0.15.10
 	gtk-sys-0.15.3
+	hashbrown-0.12.3
 	heck-0.4.0
 	ident_case-1.0.1
 	idna-0.3.0
+	indexmap-1.9.3
 	instant-0.1.12
 	itoa-1.0.4
 	jni-0.20.0
@@ -171,6 +173,7 @@ CRATES="
 	serde-1.0.148
 	serde_derive-1.0.148
 	serde_json-1.0.89
+	serde_spanned-0.6.1
 	servo-fontconfig-0.5.1
 	servo-fontconfig-sys-5.1.0
 	slotmap-1.0.6
@@ -192,6 +195,9 @@ CRATES="
 	tinyvec-1.6.0
 	tinyvec_macros-0.1.0
 	toml-0.5.9
+	toml-0.7.3
+	toml_datetime-0.6.1
+	toml_edit-0.19.8
 	tracing-0.1.36
 	tracing-core-0.1.29
 	ttf-parser-0.15.2
@@ -253,6 +259,8 @@ CRATES="
 	windows_x86_64_msvc-0.37.0
 	windows_x86_64_msvc-0.42.0
 	winit-0.27.3
+	winnow-0.4.1
+	winresource-0.1.15
 	wio-0.2.2
 	x11-dl-2.20.0
 	x11rb-0.10.1
