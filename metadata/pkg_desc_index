@@ -19,7 +19,7 @@ app-text/qtspell 1.0.1: Spell checking for Qt text widgets
 app-text/rdrview 0.1: C port of Mozilla's Readability library
 dev-cpp/mustache 4.1: Mustache implementation for modern C++
 dev-embedded/cc65 2.19: complete cross development package for 65(C)02 systems
-dev-embedded/pineflash 0.3.1: firmware updating GUI for Pinecil soldering iron
+dev-embedded/pineflash 0.4.3: firmware updating GUI for Pinecil soldering iron
 dev-embedded/rpi-imager 1.7.4: Raspberry Pi Imaging Utility
 dev-embedded/teensy_loader_cli 2.2: Command line Teensy Loader
 dev-embedded/usbboot 2022.12.15: tool to load Raspberry Pi Compute Modules over USB
@@ -62,7 +62,7 @@ sci-electronics/altium2kicad 0.0.20221123: Altium to KiCad converter for PCB and
 sci-electronics/amaranth 0.4_alpha20230322: A refreshed Python toolbox for building complex digital hardware
 sci-electronics/amaranth-boards 0.1_alpha20230325: Amaranth boards and connectors
 sci-electronics/amaranth-soc 0.1_alpha20230214: System on Chip toolkit for Amaranth
-sci-electronics/apicula 0.7: documentation and tools for the Gowin FPGA bitstream format
+sci-electronics/apicula 0.8: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
 sci-electronics/icestorm 0.0.20230218: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kicost 1.1.16: generate part-cost spreadsheets for circuit boards developed with KiCad
