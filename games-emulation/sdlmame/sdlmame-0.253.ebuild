@@ -11,12 +11,7 @@ SRC_URI="https://github.com/mamedev/mame/archive/mame${MY_PV}.tar.gz -> mame-${P
 LICENSE="GPL-2+ BSD-2 MIT CC0-1.0"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="alsa +arcade debug +mess opengl openmp tools"
-REQUIRED_USE="|| ( arcade mess )"
-
-# MAME and MESS: +arcade +mess
-# MAME only: +arcade -mess
-# MESS only: -arcade +mess
+IUSE="alsa debug opengl openmp tools" 
 
 RDEPEND="dev-db/sqlite:3
 	 dev-libs/expat
@@ -103,9 +98,6 @@ src_compile() {
 	local targetargs
 	local qtdebug=$(usex debug 1 0)
 
-	use arcade && ! use mess && targetargs="SUBTARGET=arcade"
-	! use arcade && use mess && targetargs="SUBTARGET=mess"
-
 	function my_emake() {
 		# Workaround conflicting $ARCH variable used by both Gentoo's
 		# portage and by Mame's build scripts
@@ -128,29 +120,12 @@ src_compile() {
 
 src_install()
 {
-	if use mess; then
-		MAMEBIN=mamemess
-		if use arcade; then
-			MAMEBIN=mame
-		else
-			newbin $MAMEBIN mess
-		fi
-		newman docs/man/mame.6 mess.6
-	fi
-	if use arcade; then
-		MAMEBIN=mamearcade
-		if use mess; then
-			MAMEBIN=mame
-		fi
-		newbin $MAMEBIN mame
-		if use mess; then
-			dosym 	mame /usr/bin/mess
-		fi
-		doman docs/man/mame.6
-	fi
+	MAMEBIN=mame
+	dobin $MAMEBIN
+	doman docs/man/mame.6
 
 	insinto "/usr/share/${PN}"
-	doins -r keymaps $(use mess && echo hash)
+	doins -r keymaps hash
 
 	# Create default mame.ini and inject Gentoo settings into it
 	#  Note that '~' does not work and '$HOME' must be used
