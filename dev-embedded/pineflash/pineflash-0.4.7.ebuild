@@ -4,6 +4,8 @@
 EAPI=8
 
 CRATES="
+	CoreFoundation-sys-0.1.4
+	IOKit-sys-0.1.5
 	ab_glyph-0.2.17
 	ab_glyph_rasterizer-0.1.7
 	accesskit-0.8.1
@@ -47,6 +49,7 @@ CRATES="
 	cocoa-0.24.0
 	cocoa-foundation-0.1.0
 	combine-4.6.6
+	confy-0.5.1
 	core-foundation-0.9.3
 	core-foundation-sys-0.8.3
 	core-graphics-0.22.3
@@ -61,6 +64,8 @@ CRATES="
 	darling_core-0.14.2
 	darling_macro-0.13.4
 	darling_macro-0.14.2
+	directories-4.0.1
+	dirs-sys-0.3.7
 	dispatch-0.2.0
 	dlib-0.5.0
 	downcast-rs-1.2.0
@@ -91,6 +96,7 @@ CRATES="
 	gdk-pixbuf-sys-0.15.10
 	gdk-sys-0.15.1
 	gethostname-0.2.3
+	getrandom-0.2.9
 	gio-sys-0.15.10
 	gl_generator-0.14.0
 	glib-sys-0.15.10
@@ -114,10 +120,15 @@ CRATES="
 	khronos_api-3.1.0
 	kurbo-0.8.3
 	lazy_static-1.4.0
-	libc-0.2.132
+	libc-0.2.141
 	libloading-0.7.3
+	libudev-0.3.0
+	libudev-sys-0.1.4
+	libusb1-sys-0.6.4
 	lock_api-0.4.8
 	log-0.4.17
+	mach-0.1.2
+	mach-0.3.2
 	malloc_buf-0.0.6
 	memchr-2.5.0
 	memmap2-0.5.7
@@ -158,10 +169,12 @@ CRATES="
 	raw-window-handle-0.4.3
 	raw-window-handle-0.5.0
 	redox_syscall-0.2.16
+	redox_users-0.4.3
 	regex-1.6.0
 	regex-syntax-0.6.27
 	rfd-0.10.0
 	ring-0.16.20
+	rusb-0.9.2
 	rustls-0.20.6
 	ryu-1.0.11
 	safe_arch-0.5.2
@@ -174,6 +187,7 @@ CRATES="
 	serde_derive-1.0.148
 	serde_json-1.0.89
 	serde_spanned-0.6.1
+	serialport-4.2.0
 	servo-fontconfig-0.5.1
 	servo-fontconfig-sys-5.1.0
 	slotmap-1.0.6
@@ -207,6 +221,7 @@ CRATES="
 	untrusted-0.7.1
 	ureq-2.5.0
 	url-2.3.1
+	vcpkg-0.2.15
 	vec_map-0.8.2
 	version-compare-0.1.0
 	version_check-0.9.4
