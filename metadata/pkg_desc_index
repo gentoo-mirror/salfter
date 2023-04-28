@@ -3,7 +3,7 @@ acct-group/spfpolicy 0: Group for net-mail/spfpolicy
 acct-user/milter 0: User for mail-filter/hashcash-milter
 acct-user/spfpolicy 0: User for net-mail/spfpolicy
 app-admin/keepass 2.53.1: A free, open source, light-weight and easy-to-use password manager
-app-arch/libzim 8.1.1: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
+app-arch/libzim 8.2.0: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
 app-arch/nufxlib 3.1.0: library for manipulating NuFX archives
 app-arch/nulib2 3.1.0: utility for manipulating NuFX archives
 app-arch/tarballize 0.0.20180904: Make tarballs of given git repository, including its submodules
@@ -39,7 +39,7 @@ dev-python/python-nmap 0.7.1: use nmap from Python
 dev-python/python-trezor 0.13.6: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 games-emulation/sdlmame 0.254: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.18.0: The notorious fortune program
-gemini-client/lagrange 1.15.8: desktop GUI (and optional TUI) client for browsing Geminispace
+gemini-client/lagrange 1.15.9: desktop GUI (and optional TUI) client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3-r1: A milter-based application to mint and check HashCash stamps
 media-gfx/arcwelder 2.0: 3D printer anti-stutter tool
 media-gfx/meshconv-bin 1.29: 3D model converter
@@ -85,5 +85,5 @@ sys-firmware/brcm43455-rock-pi-x-firmware 0.0.20210309: firmware for Broadcom 43
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 www-apps/cops 1.1.3: Calibre OPDS PHP Server
 www-misc/kiwix-desktop 2.3.1: cross-platform viewer/manager of ZIM files
-www-misc/kiwix-tools 3.4.0: collection of Kiwix related command line tools
+www-misc/kiwix-tools 3.5.0: collection of Kiwix related command line tools
 www-misc/libkiwix 12.0.0: Kiwix software suite core: code shared by all Kiwix ports
