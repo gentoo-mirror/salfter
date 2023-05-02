@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="amd64"
 
 RDEPEND="(
-	   >=sci-electronics/pcbnewTransition-0.2.0
+	   >=sci-electronics/pcbnewTransition-0.3.4-r1
 	   >=dev-python/shapely-1.7
            >=dev-python/click-7.1
            >=dev-python/markdown2-2.4
