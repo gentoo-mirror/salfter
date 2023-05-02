@@ -24,4 +24,4 @@ RDEPEND=">=dev-python/pyserial-3
 	 dev-python/six
 	 dev-python/packaging
 	 dev-python/pyusb"
-DEPEND="dev-python/setuptools_scm"
+DEPEND="" # "dev-python/setuptools_scm"
