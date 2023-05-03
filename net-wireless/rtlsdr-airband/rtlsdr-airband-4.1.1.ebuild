@@ -13,7 +13,7 @@ S=$WORKDIR/RTLSDR-Airband-${PV}
 IUSE="pulseaudio nfm rtlsdr soapysdr" # mirisdr
 
 RDEPEND="dev-libs/libconfig[cxx]
-	 media-libs/libshout
+	 <media-libs/libshout-2.4.6
 	 media-sound/lame
 	 sci-libs/fftw
 	 pulseaudio? ( media-sound/pulseaudio )
