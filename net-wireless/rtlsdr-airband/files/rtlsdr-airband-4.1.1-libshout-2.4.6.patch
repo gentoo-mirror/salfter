@@ -1,0 +1,85 @@
+From 8b2492e84cf53937a624a6a8081df771abf8230f Mon Sep 17 00:00:00 2001
+From: charlie-foxtrot <13514783+charlie-foxtrot@users.noreply.github.com>
+Date: Wed, 3 May 2023 20:58:58 -0700
+Subject: [PATCH] changes to support libshout v2.4.6
+
+---
+ src/CMakeLists.txt | 17 +++++++++++++++++
+ src/config.h.in    |  3 +++
+ src/output.cpp     | 10 +++++-----
+ 3 files changed, 25 insertions(+), 5 deletions(-)
+
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index ccbc073..3f1972f 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -91,6 +91,23 @@ if(HAVE_SHOUT_TLS_AUTO AND HAVE_SHOUT_TLS_AUTO_NO_PLAIN AND
+ else()
+ 	set(LIBSHOUT_HAS_TLS FALSE)
+ endif()
++
++# check for shout_set_metadata_utf8() - introduced in libshout v2.4.6
++CHECK_CXX_SYMBOL_EXISTS("shout_set_metadata_utf8" ${LIBSHOUT_HEADER}
++	HAVE_SHOUT_SET_METADATA_UTF8)
++if(HAVE_SHOUT_SET_METADATA_UTF8)
++	set(SHOUT_SET_METADATA "shout_set_metadata_utf8")
++else()
++	set(SHOUT_SET_METADATA "shout_set_metadata")
++endif()
++
++# check for shout_set_content_format() - introduced in libshout v2.4.3
++CHECK_CXX_SYMBOL_EXISTS("shout_set_content_format" ${LIBSHOUT_HEADER}
++	HAVE_SHOUT_SET_CONTENT_FORMAT)
++if(NOT HAVE_SHOUT_SET_CONTENT_FORMAT)
++	message(FATAL_ERROR "Required function shout_set_content_format() is unavailable, libshout v2.4.3 or later required")
++endif()
++
+ set(CMAKE_REQUIRED_INCLUDES ${CMAKE_REQUIRED_INCLUDES_SAVE})
+ set(CMAKE_REQUIRED_LIBRARIES ${CMAKE_REQUIRED_LIBRARIES_SAVE})
+ 
+diff --git a/src/config.h.in b/src/config.h.in
+index b566628..494a904 100644
+--- a/src/config.h.in
++++ b/src/config.h.in
+@@ -29,4 +29,7 @@
+ #cmakedefine WITH_BCM_VC
+ #cmakedefine LIBSHOUT_HAS_TLS
+ #define SINCOSF @SINCOSF@
++
++#define SHOUT_SET_METADATA @SHOUT_SET_METADATA@
++
+ #endif // !_CONFIG_H
+diff --git a/src/output.cpp b/src/output.cpp
+index a45dc09..8e3d317 100644
+--- a/src/output.cpp
++++ b/src/output.cpp
+@@ -78,16 +78,16 @@ void shout_setup(icecast_data *icecast, mix_modes mixmode) {
+ 	if (shout_set_password(shouttemp, icecast->password) != SHOUTERR_SUCCESS) {
+ 		shout_free(shouttemp); return;
+ 	}
+-	if (shout_set_format(shouttemp, SHOUT_FORMAT_MP3) != SHOUTERR_SUCCESS){
++	if (shout_set_content_format(shouttemp, SHOUT_FORMAT_MP3, SHOUT_USAGE_AUDIO, NULL) != SHOUTERR_SUCCESS){
+ 		shout_free(shouttemp); return;
+ 	}
+-	if(icecast->name && shout_set_name(shouttemp, icecast->name) != SHOUTERR_SUCCESS) {
++	if(icecast->name && shout_set_meta(shouttemp, SHOUT_META_NAME, icecast->name) != SHOUTERR_SUCCESS) {
+ 		shout_free(shouttemp); return;
+ 	}
+-	if(icecast->genre && shout_set_genre(shouttemp, icecast->genre) != SHOUTERR_SUCCESS) {
++	if(icecast->genre && shout_set_meta(shouttemp, SHOUT_META_GENRE, icecast->genre) != SHOUTERR_SUCCESS) {
+ 		shout_free(shouttemp); return;
+ 	}
+-	if(icecast->description && shout_set_description(shouttemp, icecast->description) != SHOUTERR_SUCCESS) {
++	if(icecast->description && shout_set_meta(shouttemp, SHOUT_META_DESCRIPTION, icecast->description) != SHOUTERR_SUCCESS) {
+ 		shout_free(shouttemp); return;
+ 	}
+ 	char samplerates[20];
+@@ -476,7 +476,7 @@ void process_outputs(channel_t *channel, int cur_scan_freq) {
+ 						log(LOG_WARNING, "Failed to add shout metadata\n");
+ 					}
+ 				}
+-				if (shout_set_metadata(icecast->shout, meta) != SHOUTERR_SUCCESS) {
++				if (SHOUT_SET_METADATA(icecast->shout, meta) != SHOUTERR_SUCCESS) {
+ 					log(LOG_WARNING, "Failed to add shout metadata\n");
+ 				}
+ 				shout_metadata_free(meta);
