@@ -13,12 +13,14 @@ S=$WORKDIR/RTLSDR-Airband-${PV}
 IUSE="pulseaudio nfm rtlsdr soapysdr" # mirisdr
 
 RDEPEND="dev-libs/libconfig[cxx]
-	 <media-libs/libshout-2.4.6
+	 media-libs/libshout
 	 media-sound/lame
 	 sci-libs/fftw
 	 pulseaudio? ( media-sound/pulseaudio )
 	 rtlsdr? ( net-wireless/rtl-sdr )
 	 soapysdr? ( net-wireless/soapysdr )"
+
+PATCHES="$FILESDIR/$P-libshout-2.4.6.patch"
 
 src_configure(){
 	local mycmakeargs=(
