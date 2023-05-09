@@ -2,11 +2,8 @@ EAPI=8
 
 inherit git-r3
 
-#GIT_COMMIT=818060880d80b28d483cf5e1c71fcd139d37fe97
-#S=$WORKDIR/$PN-$GIT_COMMIT
-
 # get the current value from the yosys makefile...look for ABCREV
-ABC_GIT_COMMIT=f6fa2ddcfc89099726d60386befba874c7ac1e0d
+ABC_GIT_COMMIT=2c1c83f75b8078ced51f92c697da3e712feb3ac3
 
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="http://www.clifford.at/yosys/"
