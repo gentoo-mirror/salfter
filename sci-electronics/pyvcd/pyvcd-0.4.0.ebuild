@@ -15,3 +15,4 @@ KEYWORDS="amd64"
 RDEPEND=""
 DEPEND=""
 
+distutils_enable_tests pytest
