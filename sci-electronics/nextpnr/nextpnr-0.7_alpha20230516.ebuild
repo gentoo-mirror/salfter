@@ -2,7 +2,7 @@ EAPI=8
 
 inherit cmake
 
-GIT_COMMIT=a93f49eb04f4086065fd6fd8e6f777743f2509ff
+GIT_COMMIT=bc7b8b63ed6c8e855ca0256a2fde2b8c5885fd79
 S=$WORKDIR/nextpnr-$GIT_COMMIT
 
 DESCRIPTION="portable FPGA place and route tool"
