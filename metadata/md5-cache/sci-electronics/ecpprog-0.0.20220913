@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install
+DEPEND=dev-embedded/libftdi
+DESCRIPTION=A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
+EAPI=8
+HOMEPAGE=https://github.com/gregdavill/ecpprog
+KEYWORDS=amd64
+LICENSE=ISC
+SLOT=0
+SRC_URI=https://github.com/gregdavill/ecpprog/archive/8af8863855599f4b8ef8f46a336408b1aba60e9d.tar.gz -> ecpprog-0.0.20220913.tar.gz
+_md5_=5296be49295db8c4fddfdbe2df2b5a78

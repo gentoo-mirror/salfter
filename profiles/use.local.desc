@@ -1,0 +1,7 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml.
+# Please add your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using pmaint *
+
+app-admin/keepass:aot - Generate native code at build time, rather than runtime.
+net-p2p/trezord-go:systemd - Install systemd service file
+net-p2p/trezord-go:udev - Install udev rules

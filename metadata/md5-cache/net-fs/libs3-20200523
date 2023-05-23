@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=S3 library, forked for Bacula
+EAPI=7
+HOMEPAGE=https://www.bacula.org/
+KEYWORDS=amd64
+LICENSE=LGPL-3
+SLOT=0
+SRC_URI=https://www.bacula.org/downloads/libs3-20200523.tar.gz
+_md5_=ba38d4cf486b2a07d822af8be3550290
