@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=net-misc/curl dev-libs/openssl
+DESCRIPTION=C program to download VoD HLS (.m3u8) files
+EAPI=8
+HOMEPAGE=https://github.com/selsta/hlsdl
+KEYWORDS=amd64
+LICENSE=MIT
+SLOT=0
+SRC_URI=https://github.com/selsta/hlsdl/archive/cc9d22f92082565cec9c18ea313b8fc354a9283e.tar.gz -> hlsdl-0.1_alpha20230213.tar.gz
+_md5_=9425deae99c3ccbedd058f6e0919ce90

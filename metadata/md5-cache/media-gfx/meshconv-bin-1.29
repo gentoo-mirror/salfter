@@ -1,0 +1,8 @@
+DEFINED_PHASES=install prepare unpack
+DESCRIPTION=3D model converter
+EAPI=8
+HOMEPAGE=http://www.patrickmin.com/meshconv/
+KEYWORDS=~amd64 -*
+SLOT=0
+SRC_URI=http://www.patrickmin.com/meshconv/linux64/meshconv -> meshconv-bin-1.29
+_md5_=b15196c0debc0bee203df7b4559afe90
