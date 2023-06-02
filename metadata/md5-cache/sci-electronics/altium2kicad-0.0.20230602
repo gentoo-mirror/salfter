@@ -6,5 +6,5 @@ KEYWORDS=amd64
 LICENSE=GPL-2
 RDEPEND=dev-perl/Math-Bezier dev-perl/Math-Geometry-Planar
 SLOT=0
-SRC_URI=https://github.com/thesourcerer8/altium2kicad/archive/d4dd7107447298d78cbb9aed55b14507a8c3b83d.tar.gz -> altium2kicad-0.0.20230601.tar.gz
-_md5_=d5e50e44dbc3bae38bf5e8017e1404b5
+SRC_URI=https://github.com/thesourcerer8/altium2kicad/archive/75125f1fd5178e8adf5910d3509a0bad0287b1ce.tar.gz -> altium2kicad-0.0.20230602.tar.gz
+_md5_=ab383f7f599ff8128ddbcd0955c98a2f
