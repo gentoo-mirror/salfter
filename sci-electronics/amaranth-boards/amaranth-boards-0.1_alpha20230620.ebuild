@@ -1,11 +1,11 @@
-EAPI=7
+EAPI=8
 PYTHON_COMPAT=( python3_{8,9,10,11} pypy3 )
 
 inherit distutils-r1 git-r3
 
 DESCRIPTION="Amaranth boards and connectors"
 HOMEPAGE="https://github.com/amaranth-lang/amaranth-boards"
-EGIT_COMMIT=130123d28dc0d16faab6a02fd07eea4dbb6d43fb
+EGIT_COMMIT=54e6ac41662f81881f89efed7db085432be1071b
 EGIT_REPO_URI=https://github.com/amaranth-lang/$PN
 DISTUTILS_USE_PEP517=setuptools
 
