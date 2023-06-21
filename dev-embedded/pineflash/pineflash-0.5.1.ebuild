@@ -59,7 +59,6 @@ CRATES="
 	cfg-if-1.0.0
 	cfg_aliases-0.1.1
 	cgl-0.3.2
-	chunked_transfer-1.4.0
 	clipboard-win-4.4.2
 	cocoa-0.24.0
 	cocoa-foundation-0.1.0
@@ -76,6 +75,8 @@ CRATES="
 	crossbeam-utils-0.8.15
 	crypto-common-0.1.6
 	cty-0.2.2
+	curl-0.4.44
+	curl-sys-0.4.63+curl-8.1.2
 	data-url-0.2.0
 	derivative-2.2.0
 	digest-0.10.6
@@ -92,7 +93,6 @@ CRATES="
 	egui-winit-0.21.1
 	egui_extras-0.21.0
 	egui_glow-0.21.0
-	ehttp-0.2.0
 	emath-0.21.0
 	enumflags2-0.7.7
 	enumflags2_derive-0.7.7
@@ -152,6 +152,7 @@ CRATES="
 	libudev-0.3.0
 	libudev-sys-0.1.4
 	libusb1-sys-0.6.4
+	libz-sys-1.1.9
 	linux-raw-sys-0.3.3
 	lock_api-0.4.8
 	log-0.4.17
@@ -184,6 +185,8 @@ CRATES="
 	objc2-encode-2.0.0-pre.2
 	objc_id-0.1.1
 	once_cell-1.14.0
+	openssl-probe-0.1.5
+	openssl-sys-0.9.88
 	orbclient-0.3.44
 	ordered-stream-0.2.0
 	owned_ttf_parser-0.15.2
@@ -198,7 +201,6 @@ CRATES="
 	pin-utils-0.1.0
 	pkg-config-0.3.25
 	png-0.17.6
-	poll-promise-0.2.0
 	polling-2.8.0
 	ppv-lite86-0.2.17
 	proc-macro-crate-1.2.1
@@ -217,16 +219,14 @@ CRATES="
 	resvg-0.28.0
 	rfd-0.11.3
 	rgb-0.8.36
-	ring-0.16.20
 	roxmltree-0.15.1
 	rusb-0.9.2
 	rustix-0.37.13
-	rustls-0.20.6
 	ryu-1.0.11
 	same-file-1.0.6
+	schannel-0.1.21
 	scoped-tls-1.0.0
 	scopeguard-1.1.0
-	sct-0.7.0
 	sctk-adwaita-0.5.4
 	serde-1.0.148
 	serde-xml-rs-0.4.1
@@ -244,7 +244,6 @@ CRATES="
 	smithay-client-toolkit-0.16.0
 	smithay-clipboard-0.6.6
 	socket2-0.4.9
-	spin-0.5.2
 	static_assertions-1.1.0
 	str-buf-1.0.6
 	strict-num-0.1.0
@@ -258,7 +257,6 @@ CRATES="
 	time-0.1.44
 	tiny-skia-0.8.3
 	tiny-skia-path-0.8.3
-	tinyjson-2.5.0
 	tinyvec-1.6.0
 	tinyvec_macros-0.1.0
 	toml-0.5.9
@@ -274,8 +272,6 @@ CRATES="
 	unicode-bidi-0.3.8
 	unicode-ident-1.0.4
 	unicode-normalization-0.1.22
-	untrusted-0.7.1
-	ureq-2.5.0
 	url-2.3.1
 	usvg-0.28.0
 	vcpkg-0.2.15
@@ -301,8 +297,6 @@ CRATES="
 	wayland-sys-0.30.1
 	web-sys-0.3.60
 	webbrowser-0.8.9
-	webpki-0.22.0
-	webpki-roots-0.22.4
 	whoami-1.2.3
 	winapi-0.3.9
 	winapi-i686-pc-windows-gnu-0.4.0
@@ -313,6 +307,7 @@ CRATES="
 	windows-0.44.0
 	windows-implement-0.42.0
 	windows-sys-0.36.1
+	windows-sys-0.42.0
 	windows-sys-0.45.0
 	windows-sys-0.48.0
 	windows-targets-0.42.2
