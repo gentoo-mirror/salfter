@@ -8,5 +8,5 @@ LICENSE=Apache-2.0
 RESTRICT=strip
 SLOT=0
 SRC_URI=https://github.com/coreos/butane/archive/refs/tags/v0.18.0.tar.gz -> butane-0.18.0.tar.gz
-_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	go-module	8624eede24936fd7666e5298e5332f22
+_eclasses_=go-module	8624eede24936fd7666e5298e5332f22	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c
 _md5_=4910b42ddef065a3e287231e35edbd0f
