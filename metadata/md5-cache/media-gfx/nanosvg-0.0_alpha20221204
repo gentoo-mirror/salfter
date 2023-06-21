@@ -1,12 +1,12 @@
 BDEPEND=>=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DESCRIPTION=an object-oriented C library whose API is designed for a particular coding style, taking cues from C++ STL and Qt
+DESCRIPTION=a simple stupid single-header-file SVG parser
 EAPI=8
-HOMEPAGE=https://git.skyjake.fi/skyjake/the_Foundation
+HOMEPAGE=https://github.com/memononen/nanosvg
 INHERIT=cmake
-KEYWORDS=amd64
-LICENSE=BSD-2
+KEYWORDS=~amd64
+LICENSE=ZLIB
 SLOT=0
-SRC_URI=https://git.skyjake.fi/skyjake/the_Foundation/archive/v1.4.0.tar.gz -> the_foundation-1.4.0.tar.gz
+SRC_URI=https://github.com/memononen/nanosvg/archive/9da543e8329fdd81b64eb48742d8ccb09377aed1.tar.gz
 _eclasses_=cmake	7fb5980de96325cbab639f5b2187357c	flag-o-matic	ad475baa777c9978fa035216c8264a10	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	76050953ad5b70d7e09a6ca55558db92	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	xdg-utils	baea6080dd821f5562d715887954c9d3
-_md5_=3df2e0759d14f311138761c8bc310d8d
+_md5_=b76bb22219195e54f14d84ff821ee4d7
