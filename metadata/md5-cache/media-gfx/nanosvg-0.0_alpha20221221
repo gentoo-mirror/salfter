@@ -1,12 +1,12 @@
 BDEPEND=>=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DESCRIPTION=3D printer anti-stutter tool
+DESCRIPTION=a simple stupid single-header-file SVG parser
 EAPI=8
-HOMEPAGE=https://github.com/FormerLurker/ArcWelderLib
+HOMEPAGE=https://github.com/fltk/nanosvg
 INHERIT=cmake
-KEYWORDS=amd64
-LICENSE=AGPL-3
+KEYWORDS=~amd64
+LICENSE=ZLIB
 SLOT=0
-SRC_URI=https://github.com/FormerLurker/ArcWelderLib/archive/0cb60875b90c7a87b8ec9ba3b213a49b2b08ddc6.tar.gz -> arcwelder-2.0.tar.gz
+SRC_URI=https://github.com/fltk/nanosvg/archive/abcd277ea45e9098bed752cf9c6875b533c0892f.tar.gz
 _eclasses_=cmake	1abaebfe913f48975739281ab7d7ab75	flag-o-matic	ad475baa777c9978fa035216c8264a10	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	76050953ad5b70d7e09a6ca55558db92	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	xdg-utils	baea6080dd821f5562d715887954c9d3
-_md5_=226ce2f341cd437a4ab81a33ee03b670
+_md5_=e818986851839c65f3f6b5a37c85c2c3
