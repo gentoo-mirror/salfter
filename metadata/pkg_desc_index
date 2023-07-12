@@ -14,6 +14,7 @@ app-emulation/container-linux-config-transpiler 0.9.4: Container Linux Config Tr
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 1.16: Apple IIGS emulator
+app-emulation/linode-cli 5.41.2: CLI for the Linode API
 app-text/gimagereader 3.4.1: A Gtk/Qt front-end to tesseract-ocr
 app-text/qtspell 1.0.1: Spell checking for Qt text widgets
 app-text/rdrview 0.1: C port of Mozilla's Readability library
