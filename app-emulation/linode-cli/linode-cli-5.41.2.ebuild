@@ -13,5 +13,11 @@ SLOT="0"
 KEYWORDS="amd64"
 
 RDEPEND=""
-DEPEND=""
+DEPEND="
+	dev-python/requests
+	dev-python/pyyaml
+	dev-python/packaging
+	dev-python/rich
+	<dev-python/urllib3-2
+"
 
