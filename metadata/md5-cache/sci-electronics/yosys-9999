@@ -10,4 +10,4 @@ PROPERTIES=live
 SLOT=0
 SRC_URI=https://github.com/YosysHQ/abc/archive/bb64142b07794ee685494564471e67365a093710.tar.gz -> abc-bb64142b07794ee685494564471e67365a093710.tar.gz
 _eclasses_=git-r3	27e13c09a4c7e4c78ac812f74727e676
-_md5_=b379fa24e32f05a1b0f56fd9f310cf59
+_md5_=9a2c1afdf9cc18e653e4bbeaa2da8ba3

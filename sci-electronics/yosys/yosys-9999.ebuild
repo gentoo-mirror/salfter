@@ -20,11 +20,6 @@ DEPEND="dev-vcs/git
 	dev-libs/boost
 	sys-devel/clang"
 
-src_configure() {
-	append-cflags -std=c++14
-	default
-}
-
 src_unpack() {
 	git-r3_fetch $EGIT_REPO_URI 
 	git-r3_checkout $EGIT_REPO_URI 
