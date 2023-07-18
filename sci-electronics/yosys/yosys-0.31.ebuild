@@ -3,7 +3,7 @@ EAPI=8
 S=$WORKDIR/$PN-$PN-$PV
 
 # get the current value from the yosys makefile...look for ABCREV
-ABC_GIT_COMMIT=2c1c83f75b8078ced51f92c697da3e712feb3ac3
+ABC_GIT_COMMIT=bb64142b07794ee685494564471e67365a093710
 
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="http://www.clifford.at/yosys/"
@@ -22,6 +22,7 @@ src_unpack() {
 	unpack $P.tar.gz
 	unpack abc-$ABC_GIT_COMMIT.tar.gz
 	mv $WORKDIR/abc-$ABC_GIT_COMMIT $S/abc
+	patch -p0 <$FILESDIR/$P-abc-c++17-fix.patch
 }
 
 src_compile() {
