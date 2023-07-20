@@ -1,6 +1,6 @@
 EAPI=7
 
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{8..12} )
 GIT_COMMIT=be3106985604af14582f0b1fd1c8b5559cc640ba
 
 inherit distutils-r1
@@ -14,8 +14,7 @@ S=$WORKDIR/$PN-$GIT_COMMIT
 PATCHES="$FILESDIR/$PN-hashbang.patch"
 
 RDEPEND=">=dev-python/certifi-2022.12.7
-	 >=dev-python/chardet-5.1.0
-	 >=dev-python/charset_normalizer-3.1.0
+	 >=dev-python/charset-normalizer-3.1.0
 	 >=dev-python/idna-3.4
 	 >=dev-python/pick-2.2.0
 	 >=dev-python/requests-2.28.2

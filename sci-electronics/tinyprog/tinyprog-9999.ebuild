@@ -1,6 +1,6 @@
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{8..12} )
 inherit distutils-r1 git-r3
 
 DESCRIPTION="Programmer for FPGA boards using the TinyFPGA USB Bootloader"

@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-sudo egencache --repo=salfter --update && chown -R salfter . && git commit -a && git remote | xargs -l git push
+sudo egencache --repo=salfter --update && sudo chown -R salfter /var/db/repos/salfter && git add /var/db/repos/salfter/metadata && git commit -a && git remote | xargs -l git push
