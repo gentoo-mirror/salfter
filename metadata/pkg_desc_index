@@ -3,7 +3,7 @@ acct-group/spfpolicy 0: Group for net-mail/spfpolicy
 acct-user/milter 0: User for mail-filter/hashcash-milter
 acct-user/spfpolicy 0: User for net-mail/spfpolicy
 app-admin/keepass 2.53.1: A free, open source, light-weight and easy-to-use password manager
-app-arch/libzim 8.2.0: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
+app-arch/libzim 8.2.1: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
 app-arch/nufxlib 3.1.0: library for manipulating NuFX archives
 app-arch/nulib2 3.1.0: utility for manipulating NuFX archives
 app-arch/tarballize 0.0.20180904: Make tarballs of given git repository, including its submodules
@@ -31,7 +31,6 @@ dev-perl/App-XML-DocBook-Builder 0.1100: build DocBook/XML files
 dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
-dev-python/base58 2.1.1: Base58 and Base58Check implementation
 dev-python/hdwallet 2.2.1: Hierarchical Deterministic Wallet
 dev-python/ogr 0.44.0: One Git library to Rule
 dev-python/pick 2.2.0: pick an option in the terminal with a simple GUI
@@ -92,4 +91,4 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 www-apps/cops 1.1.3: Calibre OPDS PHP Server
 www-misc/kiwix-desktop 2.3.1: cross-platform viewer/manager of ZIM files
 www-misc/kiwix-tools 3.5.0: collection of Kiwix related command line tools
-www-misc/libkiwix 12.0.0: Kiwix software suite core: code shared by all Kiwix ports
+www-misc/libkiwix 12.1.0: Kiwix software suite core: code shared by all Kiwix ports
