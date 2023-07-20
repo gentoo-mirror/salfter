@@ -1,6 +1,6 @@
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..11} pypy3 )
+PYTHON_COMPAT=( python3_{8..12} pypy3 )
 PYPI_PN=Apycula
 PYPI_NO_NORMALIZE=1
 
