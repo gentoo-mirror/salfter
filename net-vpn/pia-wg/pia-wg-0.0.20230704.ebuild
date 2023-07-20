@@ -14,7 +14,6 @@ S=$WORKDIR/$PN-$GIT_COMMIT
 PATCHES="$FILESDIR/$PN-hashbang.patch"
 
 RDEPEND=">=dev-python/certifi-2022.12.7
-	 >=dev-python/chardet-5.1.0
 	 >=dev-python/charset-normalizer-3.1.0
 	 >=dev-python/idna-3.4
 	 >=dev-python/pick-2.2.0
