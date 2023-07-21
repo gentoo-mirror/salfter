@@ -21,6 +21,7 @@ RDEPEND="dev-python/milc
 	 dev-python/jsonschema
 	 dev-python/pillow
 	 dev-python/pygments
-	 dev-python/pyserial"
+	 dev-python/pyserial
+	 dev-python/appdirs"
 DEPEND=""
 
