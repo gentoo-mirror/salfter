@@ -24,6 +24,7 @@ RDEPEND="dev-python/milc
 	 dev-python/pyserial
 	 dev-python/appdirs
 	 cross-arm-none-eabi/gcc
+	 cross-arm-none-eabi/newlib[nano]
 	 cross-avr/gcc
 	 dev-embedded/avrdude
 	 dev-embedded/dfu-programmer
