@@ -21,6 +21,13 @@ RDEPEND="dev-python/milc
 	 dev-python/jsonschema
 	 dev-python/pillow
 	 dev-python/pygments
-	 dev-python/pyserial"
+	 dev-python/pyserial
+	 dev-python/appdirs
+	 cross-arm-none-eabi/gcc
+	 cross-arm-none-eabi/newlib[nano]
+	 cross-avr/gcc
+	 dev-embedded/avrdude
+	 dev-embedded/dfu-programmer
+	 app-mobilephone/dfu-util"
 DEPEND=""
 
