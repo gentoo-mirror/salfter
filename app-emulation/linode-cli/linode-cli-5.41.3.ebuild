@@ -18,6 +18,6 @@ DEPEND="
 	dev-python/pyyaml
 	dev-python/packaging
 	dev-python/rich
-	<dev-python/urllib3-2
+	<dev-python/urllib3-3
 "
 
