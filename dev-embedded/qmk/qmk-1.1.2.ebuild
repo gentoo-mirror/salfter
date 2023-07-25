@@ -23,9 +23,9 @@ RDEPEND="dev-python/milc
 	 dev-python/pygments
 	 dev-python/pyserial
 	 dev-python/appdirs
-	 cross-arm-none-eabi/gcc
+	 cross-arm-none-eabi/gcc[vanilla]
 	 cross-arm-none-eabi/newlib[nano]
-	 cross-avr/gcc
+	 <cross-avr/gcc-9[vanilla]
 	 dev-embedded/avrdude
 	 dev-embedded/dfu-programmer
 	 app-mobilephone/dfu-util"
