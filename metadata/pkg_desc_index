@@ -14,7 +14,7 @@ app-emulation/container-linux-config-transpiler 0.9.4: Container Linux Config Tr
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 1.16: Apple IIGS emulator
-app-emulation/linode-cli 5.41.2: CLI for the Linode API
+app-emulation/linode-cli 5.41.3: CLI for the Linode API
 app-text/gimagereader 3.4.1: A Gtk/Qt front-end to tesseract-ocr
 app-text/qtspell 1.0.1: Spell checking for Qt text widgets
 app-text/rdrview 0.1: C port of Mozilla's Readability library
@@ -54,7 +54,6 @@ mail-filter/hashcash-milter 0.1.3-r2: A milter-based application to mint and che
 media-gfx/arcwelder 2.0: 3D printer anti-stutter tool
 media-gfx/meshconv-bin 1.29: 3D model converter
 media-gfx/nanosvg 0.0_alpha20221221: a simple stupid single-header-file SVG parser
-media-gfx/prusaslicer 2.6.0: A mesh slicer to generate G-code for fused-filament-fabrication (3D printers)
 media-gfx/stl_normalize 0.0.20210314: A script to normalize and validate STL files
 media-libs/libshout 2.4.5: library for connecting and sending data to icecast servers
 media-sound/mp3val 0.1.8: MP3 validator
