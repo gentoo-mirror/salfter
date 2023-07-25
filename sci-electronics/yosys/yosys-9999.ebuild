@@ -3,7 +3,7 @@ EAPI=8
 inherit git-r3
 
 # get the current value from the yosys makefile...look for ABCREV
-ABC_GIT_COMMIT=354d302fefa532194cf9114dcc420434a406a074
+ABC_GIT_COMMIT=bb64142b07794ee685494564471e67365a093710
 
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="http://www.clifford.at/yosys/"
@@ -24,6 +24,7 @@ src_unpack() {
 	git-r3_fetch $EGIT_REPO_URI 
 	git-r3_checkout $EGIT_REPO_URI 
 	unpack abc-$ABC_GIT_COMMIT.tar.gz
+	patch -p0 <$FILESDIR/$P-abc-c++17-fix.patch
 }
 
 src_prepare() {
