@@ -47,7 +47,7 @@ dev-python/python-nmap 0.7.1: use nmap from Python
 dev-python/python-trezor 0.13.7: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 dev-python/qmk-dotty-dict 1.3.0_p1: Dictionary wrapper for quick access to deeply nested keys
 dev-python/spinners 0.0.24: Spinners for terminals
-games-emulation/sdlmame 0.256: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
+games-emulation/sdlmame 0.257: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.20.0: The notorious fortune program
 gemini-client/lagrange 1.16.5: desktop GUI (and optional TUI) client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3-r2: A milter-based application to mint and check HashCash stamps
