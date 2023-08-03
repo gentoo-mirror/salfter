@@ -6,5 +6,5 @@ HOMEPAGE=https://github.com/selsta/hlsdl
 KEYWORDS=amd64
 LICENSE=MIT
 SLOT=0
-SRC_URI=https://github.com/selsta/hlsdl/archive/cc9d22f92082565cec9c18ea313b8fc354a9283e.tar.gz -> hlsdl-0.1_alpha20230213.tar.gz
-_md5_=9425deae99c3ccbedd058f6e0919ce90
+SRC_URI=https://github.com/selsta/hlsdl/archive/42dcfa401deedbdc1af22ae9e5a8965563a6583b.tar.gz -> hlsdl-0.1_alpha20230803.tar.gz
+_md5_=d3819597152d66e2c6190eb07a5f6f21
