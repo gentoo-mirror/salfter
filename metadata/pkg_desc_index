@@ -58,7 +58,7 @@ media-gfx/stl_normalize 0.0.20210314: A script to normalize and validate STL fil
 media-libs/libshout 2.4.5: library for connecting and sending data to icecast servers
 media-sound/mp3val 0.1.8: MP3 validator
 media-sound/openkj 2.0.8 9999: karaoke show hosting software
-media-video/hlsdl 0.1_alpha20230213: C program to download VoD HLS (.m3u8) files
+media-video/hlsdl 0.1_alpha20230803: C program to download VoD HLS (.m3u8) files
 media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
 media-video/mediaelch 2.10.4: Video metadata scraper
 media-video/vobsub2srt 1.0_alpha7: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
@@ -75,7 +75,7 @@ sci-electronics/altium2kicad 0.0.20230603: Altium to KiCad converter for PCB and
 sci-electronics/amaranth 0.4_alpha20230322: A refreshed Python toolbox for building complex digital hardware
 sci-electronics/amaranth-boards 0.1_alpha20230620: Amaranth boards and connectors
 sci-electronics/amaranth-soc 0.1_alpha20230629: System on Chip toolkit for Amaranth
-sci-electronics/apicula 0.8.1: documentation and tools for the Gowin FPGA bitstream format
+sci-electronics/apicula 0.8.2: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
 sci-electronics/icestorm 0.0.20230218: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kicost 1.1.18: generate part-cost spreadsheets for circuit boards developed with KiCad
