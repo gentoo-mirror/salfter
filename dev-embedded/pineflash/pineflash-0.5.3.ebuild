@@ -8,15 +8,15 @@ CRATES="
 	IOKit-sys-0.1.5
 	ab_glyph-0.2.17
 	ab_glyph_rasterizer-0.1.7
-	accesskit-0.9.0
-	accesskit_consumer-0.13.0
-	accesskit_macos-0.5.0
-	accesskit_unix-0.2.0
-	accesskit_windows-0.12.0
-	accesskit_winit-0.10.0
+	accesskit-0.11.0
+	accesskit_consumer-0.15.0
+	accesskit_macos-0.7.1
+	accesskit_unix-0.5.0
+	accesskit_windows-0.14.0
+	accesskit_winit-0.14.1
 	adler-1.0.2
 	ahash-0.8.2
-	aho-corasick-0.7.19
+	aho-corasick-1.0.2
 	android-activity-0.4.1
 	android-properties-0.2.2
 	arboard-3.2.0
@@ -34,8 +34,8 @@ CRATES="
 	atk-sys-0.16.0
 	atomic-waker-1.1.1
 	atomic_refcell-0.1.8
-	atspi-0.8.7
-	atspi-macros-0.1.4
+	atspi-0.10.1
+	atspi-macros-0.2.0
 	autocfg-1.1.0
 	base64-0.13.0
 	bitflags-1.3.2
@@ -60,7 +60,7 @@ CRATES="
 	cfg_aliases-0.1.1
 	cgl-0.3.2
 	clipboard-win-4.4.2
-	cocoa-0.24.0
+	cocoa-0.24.1
 	cocoa-foundation-0.1.0
 	color_quant-1.1.0
 	combine-4.6.6
@@ -86,17 +86,18 @@ CRATES="
 	dispatch-0.2.0
 	dlib-0.5.0
 	downcast-rs-1.2.0
-	ecolor-0.21.0
-	eframe-0.21.3
-	egui-0.21.0
-	egui-notify-0.6.0
-	egui-winit-0.21.1
-	egui_extras-0.21.0
-	egui_glow-0.21.0
-	emath-0.21.0
+	ecolor-0.22.0
+	eframe-0.22.0
+	egui-0.22.0
+	egui-notify-0.7.0
+	egui-winit-0.22.0
+	egui_extras-0.22.0
+	egui_file-0.9.0
+	egui_glow-0.22.0
+	emath-0.22.0
 	enumflags2-0.7.7
 	enumflags2_derive-0.7.7
-	epaint-0.21.0
+	epaint-0.22.0
 	errno-0.3.1
 	errno-dragonfly-0.1.2
 	error-code-2.3.1
@@ -168,7 +169,7 @@ CRATES="
 	mio-0.8.4
 	ndk-0.7.0
 	ndk-context-0.1.1
-	ndk-sys-0.4.0
+	ndk-sys-0.4.1+23.1.7779620
 	nix-0.24.2
 	nix-0.26.2
 	nohash-hasher-0.2.0
@@ -214,8 +215,9 @@ CRATES="
 	redox_syscall-0.2.16
 	redox_syscall-0.3.5
 	redox_users-0.4.3
-	regex-1.6.0
-	regex-syntax-0.6.27
+	regex-1.9.1
+	regex-automata-0.3.4
+	regex-syntax-0.7.4
 	resvg-0.28.0
 	rfd-0.11.3
 	rgb-0.8.36
@@ -229,13 +231,13 @@ CRATES="
 	scopeguard-1.1.0
 	sctk-adwaita-0.5.4
 	serde-1.0.148
-	serde-xml-rs-0.4.1
 	serde_derive-1.0.148
 	serde_json-1.0.89
 	serde_repr-0.1.12
 	serde_spanned-0.6.1
 	serialport-4.2.0
 	sha1-0.10.5
+	simple-home-dir-0.1.2
 	simplecss-0.2.1
 	siphasher-0.3.10
 	slab-0.4.8
@@ -276,18 +278,18 @@ CRATES="
 	usvg-0.28.0
 	vcpkg-0.2.15
 	vec_map-0.8.2
-	version-compare-0.1.0
+	version-compare-0.1.1
 	version_check-0.9.4
 	waker-fn-1.1.0
 	walkdir-2.3.2
 	wasi-0.10.0+wasi-snapshot-preview1
 	wasi-0.11.0+wasi-snapshot-preview1
-	wasm-bindgen-0.2.84
-	wasm-bindgen-backend-0.2.84
+	wasm-bindgen-0.2.87
+	wasm-bindgen-backend-0.2.87
 	wasm-bindgen-futures-0.4.33
-	wasm-bindgen-macro-0.2.84
-	wasm-bindgen-macro-support-0.2.84
-	wasm-bindgen-shared-0.2.84
+	wasm-bindgen-macro-0.2.87
+	wasm-bindgen-macro-support-0.2.87
+	wasm-bindgen-shared-0.2.87
 	wayland-client-0.29.5
 	wayland-commons-0.29.5
 	wayland-cursor-0.29.5
@@ -303,9 +305,9 @@ CRATES="
 	winapi-util-0.1.5
 	winapi-wsapoll-0.1.1
 	winapi-x86_64-pc-windows-gnu-0.4.0
-	windows-0.42.0
 	windows-0.44.0
-	windows-implement-0.42.0
+	windows-implement-0.44.0
+	windows-interface-0.44.0
 	windows-sys-0.36.1
 	windows-sys-0.42.0
 	windows-sys-0.45.0
@@ -358,7 +360,7 @@ HOMEPAGE="https://github.com/Spagett1/PineFlash"
 SRC_URI="$(cargo_crate_uris)
 	 https://github.com/Spagett1/PineFlash/archive/refs/tags/$PV.tar.gz -> $P.tar.gz"
 S=$WORKDIR/PineFlash-$PV
-LICENSE="0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD BSD-2 Boost-1.0 ISC LicenseRef-UFL-1.0 MIT MPL-2.0 OFL-1.1 Unicode-DFS-2016 Unlicense ZLIB"
+LICENSE="0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD BSD-2 Boost-1.0 ISC LicenseRef-UFL-1.0 MIT MPL-2.0 OFL-1.1 Unicode-DFS-2016 Unlicense X11 ZLIB"
 SLOT="0"
 KEYWORDS="amd64"
 
