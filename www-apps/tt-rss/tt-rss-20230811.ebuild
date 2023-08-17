@@ -8,7 +8,7 @@ inherit git-r3 webapp
 DESCRIPTION="Tiny Tiny RSS - A web-based news feed (RSS/Atom) aggregator using AJAX"
 HOMEPAGE="https://tt-rss.org/"
 EGIT_REPO_URI="https://git.tt-rss.org/fox/${PN}.git"
-EGIT_COMMIT=dc25a9cf6816b756cb38490eab93f02589c44a10
+EGIT_COMMIT=e2ab00c8892be2965cfd09a9b3f9c8cc0bc07f04
 LICENSE="GPL-3"
 KEYWORDS="~amd64 ~arm ~arm64 ~mips ~x86"
 SLOT="${PV}" # Single live slot.
