@@ -1,0 +1,13 @@
+BDEPEND=>=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-vcs/git dev-libs/boost
+DESCRIPTION=reverse-engineered tools for Lattice ECP5 FPGAs
+EAPI=8
+HOMEPAGE=https://prjtrellis.readthedocs.io
+INHERIT=cmake
+KEYWORDS=~amd64
+LICENSE=ISC
+SLOT=0
+SRC_URI=https://github.com/YosysHQ/prjtrellis/archive/4d01640911538ff896691d9ca41a2e67e20bc002.tar.gz -> prjtrellis-1.3.1_alpha20230817.tar.gz https://github.com/YosysHQ/prjtrellis-db/archive/0110372c4b77223ab14c65bfb2876c68f5fc0845.tar.gz -> prjtrellis-db-1.3.1_alpha20230817.tar.gz
+_eclasses_=cmake	aa1d1fa7be37663d48162ac963b22692	flag-o-matic	ad475baa777c9978fa035216c8264a10	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	toolchain-funcs	0c8a0b0d318eb5d5180d114bd3f6592b	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=11f2d4590d04d60f307157c5ce68ddc6
