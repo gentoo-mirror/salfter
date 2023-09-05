@@ -1,4 +1,4 @@
-EAPI=7
+EAPI=8
 
 DESCRIPTION="firmware for Broadcom 43455 WiFi/Bluetooth on Rock Pi X"
 HOMEPAGE="https://dl.radxa.com/rockpix/"

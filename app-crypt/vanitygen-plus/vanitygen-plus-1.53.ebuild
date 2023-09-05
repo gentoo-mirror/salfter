@@ -1,6 +1,6 @@
-EAPI=7
+EAPI=8
 
-inherit eutils
+inherit
 
 DESCRIPTION="cryptocurrency vanity-address generator"
 HOMEPAGE="https://github.com/exploitagency/vanitygen-plus"

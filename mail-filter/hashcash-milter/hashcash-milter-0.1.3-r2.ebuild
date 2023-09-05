@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=7
+EAPI=8
 
-inherit eutils flag-o-matic toolchain-funcs 
+inherit flag-o-matic toolchain-funcs 
 
 DESCRIPTION="A milter-based application to mint and check HashCash stamps"
 HOMEPAGE="http://althenia.net/hashcash"

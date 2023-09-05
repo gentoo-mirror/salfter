@@ -1,6 +1,6 @@
-EAPI=7
+EAPI=8
 PYTHON_COMPAT=( python3_{8,9,10,11})
-inherit desktop eutils python-any-r1 toolchain-funcs qmake-utils xdg-utils
+inherit desktop python-any-r1 toolchain-funcs qmake-utils xdg-utils
 
 MY_PV="${PV/.}"
 

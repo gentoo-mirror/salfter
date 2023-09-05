@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=7
+EAPI=8
 
-inherit eutils
+inherit
 
 DESCRIPTION="MP3 validator"
 HOMEPAGE="http://mp3val.sourceforge.net/"

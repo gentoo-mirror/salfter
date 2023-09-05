@@ -1,9 +1,9 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-inherit eutils toolchain-funcs
+inherit toolchain-funcs
 
 IUSE=""
 DESCRIPTION="Utility to generate hashcash tokens"

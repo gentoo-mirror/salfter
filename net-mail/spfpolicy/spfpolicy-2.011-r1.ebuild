@@ -1,8 +1,8 @@
 # cribbed from http://www.exonotes.com/node/71
 
-EAPI="7"
+EAPI=8
 
-inherit eutils 
+inherit 
 
 DESCRIPTION="Postfix policy server implementing Sender Policy Framework (SPF)"
 HOMEPAGE="http://www.openspf.org/Software"

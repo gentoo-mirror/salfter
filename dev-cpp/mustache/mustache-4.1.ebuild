@@ -1,4 +1,4 @@
-EAPI=7
+EAPI=8
 
 DESCRIPTION="Mustache implementation for modern C++"
 HOMEPAGE="https://github.com/kainjow/Mustache"
