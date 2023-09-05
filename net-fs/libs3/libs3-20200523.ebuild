@@ -1,4 +1,4 @@
-EAPI=7
+EAPI=8
 
 DESCRIPTION="S3 library, forked for Bacula"
 HOMEPAGE=https://www.bacula.org/
