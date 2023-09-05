@@ -1,4 +1,4 @@
-EAPI=7
+EAPI=8
 inherit cmake
 
 DESCRIPTION="A Gtk/Qt front-end to tesseract-ocr"
