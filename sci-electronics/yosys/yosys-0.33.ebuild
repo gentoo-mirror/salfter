@@ -12,6 +12,7 @@ SRC_URI="https://github.com/YosysHQ/$PN/archive/$P.tar.gz
 LICENSE=ISC
 SLOT=0
 KEYWORDS=amd64
+PATCHES="$FILESDIR/$PN-abc-cpp17.patch"
 
 DEPEND="dev-vcs/git
 	media-gfx/xdot
