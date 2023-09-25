@@ -9,7 +9,6 @@ HOMEPAGE="https://github.com/yaqwsx/KiKit/"
 SRC_URI="https://github.com/yaqwsx/KiKit/archive/refs/tags/v$PV.tar.gz -> $P.tar.gz"
 S=$WORKDIR/KiKit-$PV
 DISTUTILS_USE_PEP517=setuptools
-PATCHES="$FILESDIR/$P-solidpython2.patch"
 
 LICENSE="MIT"
 SLOT="0"
