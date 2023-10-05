@@ -9,5 +9,5 @@ LICENSE=MIT
 RESTRICT=mirror test strip
 SLOT=0
 SRC_URI=https://github.com/miquels/webdavfs/archive/v1.0.tar.gz -> webdavfs-1.0.tar.gz https://alfter.us/wp-content/uploads/2023/04/webdavfs-1.0-deps.tar.xz
-_eclasses_=go-module	8624eede24936fd7666e5298e5332f22	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	fbbbc99d10168de2926e06da7169b8dc
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	fbbbc99d10168de2926e06da7169b8dc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	go-module	8624eede24936fd7666e5298e5332f22
 _md5_=a2dcd2f66f62566d1639bee71e0ae5a8

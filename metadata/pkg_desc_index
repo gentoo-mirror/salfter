@@ -8,12 +8,12 @@ app-arch/nufxlib 3.1.0: library for manipulating NuFX archives
 app-arch/nulib2 3.1.0: utility for manipulating NuFX archives
 app-arch/tarballize 0.0.20180904: Make tarballs of given git repository, including its submodules
 app-cdr/dvdisaster 0.79.10: Tool for creating error correction data (ecc) for optical media (DVD, CD, BD)
-app-emulation/butane 0.18.0: Butane translates human-readable Butane Configs into machine-readable Ignition Configs
+app-emulation/butane 0.19.0: Butane translates human-readable Butane Configs into machine-readable Ignition Configs
 app-emulation/container-linux-config-transpiler 0.9.4: Container Linux Config Transpiler
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 1.16: Apple IIGS emulator
-app-emulation/linode-cli 5.44.1: CLI for the Linode API
+app-emulation/linode-cli 5.44.2: CLI for the Linode API
 app-text/gimagereader 3.4.1: A Gtk/Qt front-end to tesseract-ocr
 app-text/qtspell 1.0.1: Spell checking for Qt text widgets
 app-text/rdrview 0.1: C port of Mozilla's Readability library
@@ -86,7 +86,7 @@ sci-electronics/prjoxide 0.1.0.20220925 9999: documenting Lattice's 28nm Nexus F
 sci-electronics/prjtrellis 1.3 1.3.1_alpha20230928: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/pyvcd 0.4.0: writes Value Change Dump (VCD) files as specified in IEEE 1364-2005
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
-sci-electronics/yosys 0.33 9999: framework for Verilog RTL synthesis
+sci-electronics/yosys 0.34 9999: framework for Verilog RTL synthesis
 sci-libs/euclid3 0.2.0: vector, matrix, quaternion and some geometry in 2D and 3D for Python 3
 sci-libs/solidpython2 2.0.3: OpenSCAD for Python
 sci-libs/solidpython2-legacy 0.1.1: legacy SolidPython utils ported to SolidPython 2
