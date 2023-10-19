@@ -20,8 +20,6 @@ RDEPEND="dev-libs/libconfig[cxx]
 	 rtlsdr? ( net-wireless/rtl-sdr )
 	 soapysdr? ( net-wireless/soapysdr )"
 
-PATCHES="$FILESDIR/$P-libshout-2.4.6.patch"
-
 src_configure(){
 	local mycmakeargs=(
 		-DNFM=$(usex nfm ON OFF)
