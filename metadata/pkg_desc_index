@@ -13,7 +13,7 @@ app-emulation/container-linux-config-transpiler 0.9.4: Container Linux Config Tr
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 1.16: Apple IIGS emulator
-app-emulation/linode-cli 5.44.3: CLI for the Linode API
+app-emulation/linode-cli 5.45.0: CLI for the Linode API
 app-text/gimagereader 3.4.1: A Gtk/Qt front-end to tesseract-ocr
 app-text/qtspell 1.0.1: Spell checking for Qt text widgets
 app-text/rdrview 0.1: C port of Mozilla's Readability library
@@ -68,11 +68,11 @@ net-misc/hashcash 1.22-r2: Utility to generate hashcash tokens
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-vpn/pia-wg 0.0.20230704: Private Internet Access WireGuard configurator
 net-wireless/linux-wifi-hotspot 4.5.0: Feature-rich wifi hotspot creator for Linux which provides both GUI and command-line interface
-net-wireless/rtlsdr-airband 4.1.1-r1: converts analog broadcast radio to audio streams
+net-wireless/rtlsdr-airband 4.2.0: converts analog broadcast radio to audio streams
 sci-electronics/altium2kicad 0.0.20230603: Altium to KiCad converter for PCB and schematics
 sci-electronics/amaranth 0.4_alpha20230322: A refreshed Python toolbox for building complex digital hardware
 sci-electronics/amaranth-boards 0.1_alpha20230822: Amaranth boards and connectors
-sci-electronics/amaranth-soc 0.1_alpha20231006: System on Chip toolkit for Amaranth
+sci-electronics/amaranth-soc 0.1_alpha20231012: System on Chip toolkit for Amaranth
 sci-electronics/apicula 0.9.1: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/easyeda2kicad 0.6.3: convert components from EasyEDA or LCSC for use with KiCad
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
