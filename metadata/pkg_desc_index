@@ -21,7 +21,7 @@ dev-cpp/mustache 4.1: Mustache implementation for modern C++
 dev-embedded/cc65 2.19: complete cross development package for 65(C)02 systems
 dev-embedded/pineflash 0.5.3: firmware updating GUI for Pinecil soldering iron
 dev-embedded/qmk 1.1.2: A program to help users work with QMK Firmware
-dev-embedded/rpi-imager 1.7.4: Raspberry Pi Imaging Utility
+dev-embedded/rpi-imager 1.8.1: Raspberry Pi Imaging Utility
 dev-embedded/teensy_loader_cli 2.2: Command line Teensy Loader
 dev-embedded/usbboot 2022.12.15: tool to load Raspberry Pi Compute Modules over USB
 dev-libs/sealcurses 0.0.20220609: SDL Emulation and Adaptation Layer for Curses
@@ -43,12 +43,12 @@ dev-python/pybars3 0.9.7: Handlebars.js for Python 3 and 2
 dev-python/pymeta3 0.5.1: a fork of PyMeta 0.5.0 that supports Python 2 and 3
 dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion representation, manipulation, 3D animation and geometry
 dev-python/python-nmap 0.7.1: use nmap from Python
-dev-python/python-trezor 0.13.7: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
+dev-python/python-trezor 0.13.8: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 dev-python/qmk-dotty-dict 1.3.0_p1: Dictionary wrapper for quick access to deeply nested keys
 dev-python/spinners 0.0.24: Spinners for terminals
 games-emulation/sdlmame 0.259: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.20.0: The notorious fortune program
-gemini-client/lagrange 1.17.0: desktop GUI (and optional TUI) client for browsing Geminispace
+gemini-client/lagrange 1.17.1: desktop GUI (and optional TUI) client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3-r2: A milter-based application to mint and check HashCash stamps
 media-gfx/arcwelder 2.0: 3D printer anti-stutter tool
 media-gfx/meshconv-bin 1.29: 3D model converter
