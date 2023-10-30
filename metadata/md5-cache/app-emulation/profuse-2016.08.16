@@ -1,8 +1,8 @@
 DEFINED_PHASES=compile install
-DESCRIPTION=ProDOS and Apple Pascal filesystems for FUSE
+DESCRIPTION=read-only ProDOS and Apple Pascal filesystems for FUSE
 EAPI=8
 HOMEPAGE=https://github.com/ksherlock/profuse
 KEYWORDS=amd64 x86
 SLOT=0
 SRC_URI=https://github.com/ksherlock/profuse/archive/refs/tags/2016-08-16.tar.gz -> profuse-2016.08.16.tar.gz
-_md5_=478225d31a47c952d774a41f3119d10b
+_md5_=65e3a53d3fdb96801a46af9ca44e89c3
