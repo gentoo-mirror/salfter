@@ -54,6 +54,7 @@ media-gfx/arcwelder 2.0: 3D printer anti-stutter tool
 media-gfx/meshconv-bin 1.29: 3D model converter
 media-gfx/nanosvg 0.0_alpha20221221: a simple stupid single-header-file SVG parser
 media-gfx/prusaslicer 2.6.1: A mesh slicer to generate G-code for fused-filament-fabrication (3D printers)
+media-gfx/qrscad_gen 0.1.0: qrscad_gen
 media-gfx/stl_normalize 0.0.20210314: A script to normalize and validate STL files
 media-libs/libshout 2.4.5: library for connecting and sending data to icecast servers
 media-sound/openkj 2.0.8 9999: karaoke show hosting software
