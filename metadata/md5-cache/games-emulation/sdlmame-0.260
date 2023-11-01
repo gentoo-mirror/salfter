@@ -10,5 +10,5 @@ LICENSE=GPL-2+ BSD-2 MIT CC0-1.0
 RDEPEND=dev-db/sqlite:3 dev-libs/expat media-libs/fontconfig media-libs/flac media-libs/libsdl2[joystick,opengl?,sound,video,X] media-libs/portaudio media-libs/sdl2-ttf sys-libs/zlib virtual/jpeg:0 virtual/opengl alsa? ( media-libs/alsa-lib media-libs/portmidi ) debug? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 ) x11-libs/libX11 x11-libs/libXinerama dev-cpp/asio dev-libs/libutf8proc media-libs/glm dev-libs/rapidjson dev-libs/pugixml
 SLOT=0
 SRC_URI=https://github.com/mamedev/mame/archive/mame0260.tar.gz -> mame-0.260.tar.gz
-_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	70ec42843fec87d20fd94c67e77cdbff	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	f6221c2f55e5e832be9919fe1711f33b	python-any-r1	f5169813d1619761b459800587005fd2	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	xdg-utils	baea6080dd821f5562d715887954c9d3
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	python-any-r1	f5169813d1619761b459800587005fd2	python-utils-r1	f6221c2f55e5e832be9919fe1711f33b	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	toolchain-funcs	70ec42843fec87d20fd94c67e77cdbff	xdg-utils	baea6080dd821f5562d715887954c9d3
 _md5_=a215a22b8e69a88e89b0478dae1925dd
