@@ -5,4 +5,3 @@
 app-admin/keepass:aot - Generate native code at build time, rather than runtime.
 net-p2p/trezord-go:systemd - Install systemd service file
 net-p2p/trezord-go:udev - Install udev rules
-www-apps/tt-rss:daemon - Install additional init scripts for automated RSS updates

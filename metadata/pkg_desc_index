@@ -3,101 +3,88 @@ acct-group/spfpolicy 0: Group for net-mail/spfpolicy
 acct-user/milter 0: User for mail-filter/hashcash-milter
 acct-user/spfpolicy 0: User for net-mail/spfpolicy
 app-admin/keepass 2.53.1: A free, open source, light-weight and easy-to-use password manager
-app-arch/libzim 8.2.1: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
+app-arch/libzim 8.2.0: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
 app-arch/nufxlib 3.1.0: library for manipulating NuFX archives
 app-arch/nulib2 3.1.0: utility for manipulating NuFX archives
 app-arch/tarballize 0.0.20180904: Make tarballs of given git repository, including its submodules
 app-cdr/dvdisaster 0.79.10: Tool for creating error correction data (ecc) for optical media (DVD, CD, BD)
-app-emulation/butane 0.19.0: Butane translates human-readable Butane Configs into machine-readable Ignition Configs
+app-crypt/vanitygen-plus 1.53: cryptocurrency vanity-address generator
+app-emulation/butane 0.18.0: Butane translates human-readable Butane Configs into machine-readable Ignition Configs
 app-emulation/container-linux-config-transpiler 0.9.4: Container Linux Config Transpiler
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 1.16: Apple IIGS emulator
-app-emulation/linode-cli 5.45.1: CLI for the Linode API
 app-text/gimagereader 3.4.1: A Gtk/Qt front-end to tesseract-ocr
 app-text/qtspell 1.0.1: Spell checking for Qt text widgets
 app-text/rdrview 0.1: C port of Mozilla's Readability library
 dev-cpp/mustache 4.1: Mustache implementation for modern C++
 dev-embedded/cc65 2.19: complete cross development package for 65(C)02 systems
-dev-embedded/pineflash 0.5.3: firmware updating GUI for Pinecil soldering iron
-dev-embedded/qmk 1.1.2: A program to help users work with QMK Firmware
-dev-embedded/rpi-imager 1.8.1: Raspberry Pi Imaging Utility
+dev-embedded/pineflash 0.5.0: firmware updating GUI for Pinecil soldering iron
+dev-embedded/rpi-imager 1.7.4: Raspberry Pi Imaging Utility
 dev-embedded/teensy_loader_cli 2.2: Command line Teensy Loader
 dev-embedded/usbboot 2022.12.15: tool to load Raspberry Pi Compute Modules over USB
 dev-libs/sealcurses 0.0.20220609: SDL Emulation and Adaptation Layer for Curses
-dev-libs/spdlog 1.10.0: Fast C++ logging library
 dev-libs/the_foundation 1.4.0: an object-oriented C library whose API is designed for a particular coding style, taking cues from C++ STL and Qt
 dev-perl/App-XML-DocBook-Builder 0.1100: build DocBook/XML files
 dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
-dev-python/halo 0.0.31: Beautiful terminal spinners in Python
+dev-python/base58 2.1.1: Base58 and Base58Check implementation
 dev-python/hdwallet 2.2.1: Hierarchical Deterministic Wallet
-dev-python/hid 1.0.5: ctypes bindings for hidapi
-dev-python/hjson 3.1.0: a user interface for JSON
-dev-python/log-symbols 0.0.14: Colored symbols for various log levels for Python
-dev-python/milc 1.6.8: Opinionated Batteries-Included Python 3 CLI Framework
 dev-python/ogr 0.44.0: One Git library to Rule
 dev-python/pick 2.2.0: pick an option in the terminal with a simple GUI
 dev-python/pybars3 0.9.7: Handlebars.js for Python 3 and 2
 dev-python/pymeta3 0.5.1: a fork of PyMeta 0.5.0 that supports Python 2 and 3
 dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion representation, manipulation, 3D animation and geometry
 dev-python/python-nmap 0.7.1: use nmap from Python
-dev-python/python-trezor 0.13.8: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
-dev-python/qmk-dotty-dict 1.3.0_p1: Dictionary wrapper for quick access to deeply nested keys
-dev-python/spinners 0.0.24: Spinners for terminals
-games-emulation/sdlmame 0.260: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
-games-misc/fortune-mod 3.20.0: The notorious fortune program
-gemini-client/lagrange 1.17.3: desktop GUI (and optional TUI) client for browsing Geminispace
+dev-python/python-trezor 0.13.6: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
+games-emulation/sdlmame 0.254: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
+games-misc/fortune-mod 3.18.0: The notorious fortune program
+gemini-client/lagrange 1.15.9: desktop GUI (and optional TUI) client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3-r2: A milter-based application to mint and check HashCash stamps
 media-gfx/arcwelder 2.0: 3D printer anti-stutter tool
 media-gfx/meshconv-bin 1.29: 3D model converter
-media-gfx/nanosvg 0.0_alpha20221221: a simple stupid single-header-file SVG parser
-media-gfx/prusaslicer 2.6.1: A mesh slicer to generate G-code for fused-filament-fabrication (3D printers)
-media-gfx/qrscad_gen 0.1.0: qrscad_gen
 media-gfx/stl_normalize 0.0.20210314: A script to normalize and validate STL files
 media-libs/libshout 2.4.5: library for connecting and sending data to icecast servers
+media-sound/mp3val 0.1.8: MP3 validator
 media-sound/openkj 2.0.8 9999: karaoke show hosting software
-media-video/hlsdl 0.1_alpha20230803: C program to download VoD HLS (.m3u8) files
+media-video/hlsdl 0.1_alpha20230213: C program to download VoD HLS (.m3u8) files
 media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
-media-video/mediaelch 2.10.4: Video metadata scraper
+media-video/mediaelch 2.10.0: Video metadata scraper
 media-video/vobsub2srt 1.0_alpha7: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
 net-fs/libs3 20200523: S3 library, forked for Bacula
 net-fs/netatalk 2.2.5: Open Source AFP server and other AppleTalk-related utilities
 net-fs/webdavfs 1.0: A FUSE filesystem for WebDAV shares
+net-mail/spfpolicy 2.011-r1: Postfix policy server implementing Sender Policy Framework (SPF)
 net-misc/hashcash 1.22-r2: Utility to generate hashcash tokens
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
-net-vpn/pia-wg 0.0.20230704: Private Internet Access WireGuard configurator
-net-wireless/linux-wifi-hotspot 4.5.0: Feature-rich wifi hotspot creator for Linux which provides both GUI and command-line interface
-net-wireless/rtlsdr-airband 4.2.0: converts analog broadcast radio to audio streams
-sci-electronics/altium2kicad 0.0.20230603: Altium to KiCad converter for PCB and schematics
+net-vpn/pia-wg 0.0.20230313: Private Internet Access WireGuard configurator
+net-wireless/rtlsdr-airband 4.1.1-r1: converts analog broadcast radio to audio streams
+sci-electronics/altium2kicad 0.0.20221123: Altium to KiCad converter for PCB and schematics
 sci-electronics/amaranth 0.4_alpha20230322: A refreshed Python toolbox for building complex digital hardware
-sci-electronics/amaranth-boards 0.1_alpha20231028: Amaranth boards and connectors
-sci-electronics/amaranth-soc 0.1_alpha20231012: System on Chip toolkit for Amaranth
-sci-electronics/apicula 0.9.1: documentation and tools for the Gowin FPGA bitstream format
-sci-electronics/easyeda2kicad 0.6.3: convert components from EasyEDA or LCSC for use with KiCad
+sci-electronics/amaranth-boards 0.1_alpha20230505: Amaranth boards and connectors
+sci-electronics/amaranth-soc 0.1_alpha20230214: System on Chip toolkit for Amaranth
+sci-electronics/apicula 0.8: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
 sci-electronics/icestorm 0.0.20230218: reverse-engineered tools for Lattice iCE40 FPGAs
-sci-electronics/kicost 1.1.18: generate part-cost spreadsheets for circuit boards developed with KiCad
+sci-electronics/kicost 1.1.17: generate part-cost spreadsheets for circuit boards developed with KiCad
 sci-electronics/kicost-digikey-api-v3 0.1.2: experimental plug-in to allow KiCost to do native Digi-Key API requests
-sci-electronics/kikit 1.4.0: Automation for KiCad
+sci-electronics/kikit 1.3.0-r2: Automation for KiCad
 sci-electronics/nextpnr 0.6 0.7_alpha20230516: portable FPGA place and route tool
 sci-electronics/pcbnewTransition 0.3.4-r1: support KiCad 5-7 in your plugins
 sci-electronics/prjoxide 0.1.0.20220925 9999: documenting Lattice's 28nm Nexus FPGAs
-sci-electronics/prjtrellis 1.3 1.3.1_alpha20230928: reverse-engineered tools for Lattice ECP5 FPGAs
+sci-electronics/prjtrellis 1.3 1.3.1_alpha20230508: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/pyvcd 0.4.0: writes Value Change Dump (VCD) files as specified in IEEE 1364-2005
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
-sci-electronics/yosys 0.35 9999: framework for Verilog RTL synthesis
+sci-electronics/yosys 0.29 9999: framework for Verilog RTL synthesis
 sci-libs/euclid3 0.2.0: vector, matrix, quaternion and some geometry in 2D and 3D for Python 3
-sci-libs/solidpython2 2.0.3: OpenSCAD for Python
+sci-libs/solidpython2 2.0.2: OpenSCAD for Python
 sci-libs/solidpython2-legacy 0.1.1: legacy SolidPython utils ported to SolidPython 2
 sys-apps/fw-ectool 0.0.20221203: EC manipulation tool for the Framework Laptop
-sys-block/targetcli-fb 2.1.57: Command shell for managing Linux LIO kernel target
+sys-block/targetcli-fb 2.1.54: Command shell for managing Linux LIO kernel target
 sys-firmware/brcm43455-rock-pi-x-firmware 0.0.20210309: firmware for Broadcom 43455 WiFi/Bluetooth on Rock Pi X
-sys-fs/profuse 2016.08.16: read-only ProDOS and Apple Pascal filesystems for FUSE
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 www-apps/cops 1.1.3: Calibre OPDS PHP Server
-www-apps/tt-rss 20230827: Tiny Tiny RSS - A web-based news feed (RSS/Atom) aggregator using AJAX
 www-misc/kiwix-desktop 2.3.1: cross-platform viewer/manager of ZIM files
 www-misc/kiwix-tools 3.5.0: collection of Kiwix related command line tools
-www-misc/libkiwix 12.1.0: Kiwix software suite core: code shared by all Kiwix ports
+www-misc/libkiwix 12.0.0: Kiwix software suite core: code shared by all Kiwix ports
