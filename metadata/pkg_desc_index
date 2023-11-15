@@ -3,7 +3,7 @@ acct-group/spfpolicy 0: Group for net-mail/spfpolicy
 acct-user/milter 0: User for mail-filter/hashcash-milter
 acct-user/spfpolicy 0: User for net-mail/spfpolicy
 app-admin/keepass 2.53.1: A free, open source, light-weight and easy-to-use password manager
-app-arch/libzim 8.2.1: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
+app-arch/libzim 9.0.0: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
 app-arch/nufxlib 3.1.0: library for manipulating NuFX archives
 app-arch/nulib2 3.1.0: utility for manipulating NuFX archives
 app-arch/tarballize 0.0.20180904: Make tarballs of given git repository, including its submodules
@@ -13,7 +13,7 @@ app-emulation/container-linux-config-transpiler 0.9.4: Container Linux Config Tr
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 1.16: Apple IIGS emulator
-app-emulation/linode-cli 5.45.1: CLI for the Linode API
+app-emulation/linode-cli 5.45.2: CLI for the Linode API
 app-text/gimagereader 3.4.1: A Gtk/Qt front-end to tesseract-ocr
 app-text/qtspell 1.0.1: Spell checking for Qt text widgets
 app-text/rdrview 0.1: C port of Mozilla's Readability library
@@ -68,14 +68,14 @@ net-fs/webdavfs 1.0: A FUSE filesystem for WebDAV shares
 net-misc/hashcash 1.22-r2: Utility to generate hashcash tokens
 net-p2p/trezord-go 2.0.33: TREZOR Communication Daemon
 net-vpn/pia-wg 0.0.20230704: Private Internet Access WireGuard configurator
-net-wireless/linux-wifi-hotspot 4.5.0: Feature-rich wifi hotspot creator for Linux which provides both GUI and command-line interface
+net-wireless/linux-wifi-hotspot 4.6.0: Feature-rich wifi hotspot creator for Linux which provides both GUI and command-line interface
 net-wireless/rtlsdr-airband 4.2.0: converts analog broadcast radio to audio streams
 sci-electronics/altium2kicad 0.0.20230603: Altium to KiCad converter for PCB and schematics
 sci-electronics/amaranth 0.4_alpha20230322: A refreshed Python toolbox for building complex digital hardware
 sci-electronics/amaranth-boards 0.1_alpha20231028: Amaranth boards and connectors
 sci-electronics/amaranth-soc 0.1_alpha20231012: System on Chip toolkit for Amaranth
 sci-electronics/apicula 0.9.1: documentation and tools for the Gowin FPGA bitstream format
-sci-electronics/easyeda2kicad 0.6.3: convert components from EasyEDA or LCSC for use with KiCad
+sci-electronics/easyeda2kicad 0.6.6: convert components from EasyEDA or LCSC for use with KiCad
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
 sci-electronics/icestorm 0.0.20230218: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kicost 1.1.18: generate part-cost spreadsheets for circuit boards developed with KiCad
@@ -89,7 +89,7 @@ sci-electronics/pyvcd 0.4.0: writes Value Change Dump (VCD) files as specified i
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
 sci-electronics/yosys 0.35 9999: framework for Verilog RTL synthesis
 sci-libs/euclid3 0.2.0: vector, matrix, quaternion and some geometry in 2D and 3D for Python 3
-sci-libs/solidpython2 2.0.3: OpenSCAD for Python
+sci-libs/solidpython2 2.1.0: OpenSCAD for Python
 sci-libs/solidpython2-legacy 0.1.1: legacy SolidPython utils ported to SolidPython 2
 sys-apps/fw-ectool 0.0.20221203: EC manipulation tool for the Framework Laptop
 sys-block/targetcli-fb 2.1.57: Command shell for managing Linux LIO kernel target
