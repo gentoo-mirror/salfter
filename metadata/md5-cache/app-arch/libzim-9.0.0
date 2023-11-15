@@ -9,6 +9,6 @@ KEYWORDS=amd64
 LICENSE=GPL-2
 RDEPEND=sys-libs/zlib app-arch/lzma dev-libs/icu app-arch/zstd dev-libs/xapian sys-fs/e2fsprogs
 SLOT=0
-SRC_URI=https://github.com/openzim/libzim/archive/8.2.1.tar.gz -> libzim-8.2.1.tar.gz
+SRC_URI=https://github.com/openzim/libzim/archive/9.0.0.tar.gz -> libzim-9.0.0.tar.gz
 _eclasses_=meson	1be925a1f585b2f19a8e45737f09016c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	python-utils-r1	30999b80ec1fe0b4af340ae819375346	toolchain-funcs	edeef89edaf21d30225d31702ab117ac
 _md5_=f0ca1d9cea8588eb4657653a1efd0b7f
