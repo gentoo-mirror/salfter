@@ -48,7 +48,7 @@ dev-python/qmk-dotty-dict 1.3.0_p1: Dictionary wrapper for quick access to deepl
 dev-python/spinners 0.0.24: Spinners for terminals
 games-emulation/sdlmame 0.260: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.20.0: The notorious fortune program
-gemini-client/lagrange 1.17.3: desktop GUI (and optional TUI) client for browsing Geminispace
+gemini-client/lagrange 1.17.4: desktop GUI (and optional TUI) client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3-r2: A milter-based application to mint and check HashCash stamps
 media-gfx/arcwelder 2.0: 3D printer anti-stutter tool
 media-gfx/meshconv-bin 1.29: 3D model converter
@@ -99,5 +99,5 @@ sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 www-apps/cops 1.1.3: Calibre OPDS PHP Server
 www-apps/tt-rss 20230827: Tiny Tiny RSS - A web-based news feed (RSS/Atom) aggregator using AJAX
 www-misc/kiwix-desktop 2.3.1: cross-platform viewer/manager of ZIM files
-www-misc/kiwix-tools 3.5.0: collection of Kiwix related command line tools
-www-misc/libkiwix 12.1.0: Kiwix software suite core: code shared by all Kiwix ports
+www-misc/kiwix-tools 3.6.0: collection of Kiwix related command line tools
+www-misc/libkiwix 13.0.0: Kiwix software suite core: code shared by all Kiwix ports
