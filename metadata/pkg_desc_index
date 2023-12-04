@@ -44,11 +44,11 @@ dev-python/pymeta3 0.5.1: a fork of PyMeta 0.5.0 that supports Python 2 and 3
 dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion representation, manipulation, 3D animation and geometry
 dev-python/python-nmap 0.7.1: use nmap from Python
 dev-python/python-trezor 0.13.8: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
-dev-python/qmk-dotty-dict 1.3.0_p1: Dictionary wrapper for quick access to deeply nested keys
+dev-python/qmk-dotty-dict 1.3.1: Dictionary wrapper for quick access to deeply nested keys
 dev-python/spinners 0.0.24: Spinners for terminals
 games-emulation/sdlmame 0.261: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.20.0: The notorious fortune program
-gemini-client/lagrange 1.17.4: desktop GUI (and optional TUI) client for browsing Geminispace
+gemini-client/lagrange 1.17.5: desktop GUI (and optional TUI) client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3-r2: A milter-based application to mint and check HashCash stamps
 media-gfx/arcwelder 2.0: 3D printer anti-stutter tool
 media-gfx/meshconv-bin 1.29: 3D model converter
@@ -60,7 +60,7 @@ media-libs/libshout 2.4.5: library for connecting and sending data to icecast se
 media-sound/openkj 2.0.8 9999: karaoke show hosting software
 media-video/hlsdl 0.1_alpha20230803: C program to download VoD HLS (.m3u8) files
 media-video/httpsegmenter 9999: HTTP Live Streaming segmenter
-media-video/mediaelch 2.10.4: Video metadata scraper
+media-video/mediaelch 2.10.6: Video metadata scraper
 media-video/vobsub2srt 1.0_alpha7: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
 net-fs/libs3 20200523: S3 library, forked for Bacula
 net-fs/netatalk 2.2.5: Open Source AFP server and other AppleTalk-related utilities
@@ -74,7 +74,7 @@ sci-electronics/altium2kicad 0.0.20230603: Altium to KiCad converter for PCB and
 sci-electronics/amaranth 0.4_alpha20230322: A refreshed Python toolbox for building complex digital hardware
 sci-electronics/amaranth-boards 0.1_alpha20231028: Amaranth boards and connectors
 sci-electronics/amaranth-soc 0.1_alpha20231012: System on Chip toolkit for Amaranth
-sci-electronics/apicula 0.9.1: documentation and tools for the Gowin FPGA bitstream format
+sci-electronics/apicula 0.10.0: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/easyeda2kicad 0.6.6: convert components from EasyEDA or LCSC for use with KiCad
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
 sci-electronics/icestorm 0.0.20230218: reverse-engineered tools for Lattice iCE40 FPGAs
