@@ -1,6 +1,6 @@
 EAPI=8
 
-GIT_COMMIT=d20a5e9001f46262bf0cef220f1a6943946e421d
+GIT_COMMIT=1a40ae75d4eebee9cce73a2c4d634fd42ed0110f
 S=$WORKDIR/$PN-$GIT_COMMIT
 
 DESCRIPTION="reverse-engineered tools for Lattice iCE40 FPGAs"
