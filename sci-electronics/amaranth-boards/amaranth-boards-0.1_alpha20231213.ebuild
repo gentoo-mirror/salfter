@@ -3,9 +3,9 @@ PYTHON_COMPAT=( python3_{8..12} pypy3 )
 
 inherit distutils-r1 git-r3
 
-DESCRIPTION="System on Chip toolkit for Amaranth"
-HOMEPAGE="https://github.com/amaranth-lang/amaranth-soc"
-EGIT_COMMIT=ad9f7d461243b9e050c319692ea55cc59f310dd4
+DESCRIPTION="Amaranth boards and connectors"
+HOMEPAGE="https://github.com/amaranth-lang/amaranth-boards"
+EGIT_COMMIT=170675812b71ee722bcf8ccdb88409a9ad97ffe2
 EGIT_REPO_URI=https://github.com/amaranth-lang/$PN
 DISTUTILS_USE_PEP517=setuptools
 
@@ -15,5 +15,5 @@ KEYWORDS="amd64"
 
 RDEPEND="sci-electronics/amaranth"
 DEPEND="dev-python/wheel
-	!sci-electronics/nmigen-soc"
+	!sci-electronics/nmigen-boards"
 
