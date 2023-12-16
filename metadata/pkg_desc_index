@@ -3,7 +3,7 @@ acct-group/spfpolicy 0: Group for net-mail/spfpolicy
 acct-user/milter 0: User for mail-filter/hashcash-milter
 acct-user/spfpolicy 0: User for net-mail/spfpolicy
 app-admin/keepass 2.53.1: A free, open source, light-weight and easy-to-use password manager
-app-arch/libzim 9.0.0: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
+app-arch/libzim 9.1.0: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
 app-arch/nufxlib 3.1.0: library for manipulating NuFX archives
 app-arch/nulib2 3.1.0: utility for manipulating NuFX archives
 app-arch/tarballize 0.0.20180904: Make tarballs of given git repository, including its submodules
@@ -71,8 +71,8 @@ net-wireless/linux-wifi-hotspot 4.6.0: Feature-rich wifi hotspot creator for Lin
 net-wireless/rtlsdr-airband 4.2.0: converts analog broadcast radio to audio streams
 sci-electronics/altium2kicad 0.0.20230603: Altium to KiCad converter for PCB and schematics
 sci-electronics/amaranth 0.4.0: A refreshed Python toolbox for building complex digital hardware
-sci-electronics/amaranth-boards 0.1_alpha20231207: Amaranth boards and connectors
-sci-electronics/amaranth-soc 0.1_alpha20231211: System on Chip toolkit for Amaranth
+sci-electronics/amaranth-boards 0.1_alpha20231213: Amaranth boards and connectors
+sci-electronics/amaranth-soc 0.1_alpha20231213: System on Chip toolkit for Amaranth
 sci-electronics/apicula 0.10.0: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/easyeda2kicad 0.6.6: convert components from EasyEDA or LCSC for use with KiCad
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
