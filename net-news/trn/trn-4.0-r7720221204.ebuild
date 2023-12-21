@@ -61,6 +61,7 @@ src_install() {
   for i in Rnmail Pnews trn trn-artchk nntplist inews
   do
     dobin ${S}/$i
+    dosym /usr/bin/$i /usr/local/bin/$i
   done
   
   dosym /usr/bin/trn /usr/bin/strn
