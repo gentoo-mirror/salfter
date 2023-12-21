@@ -8,12 +8,47 @@ SRC_URI="https://github.com/arnoldrobbins/$PN/archive/$GIT_COMMIT.tar.gz -> $P.t
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="amd64 x86" # won't build on non-multilib amd64
 
 src_prepare() {
   cd $S 
   cp ${FILESDIR}/config.sh . 
-  yes | ./Configure -dse 
+  # don't know how to non-interactively configure this elsewise
+  yes | ./Configure -dse \
+    -D phost=alfter.diespammersdie.us \
+    -D orgname='USS Voyager NCC-74656, Delta Quadrant' \
+    -D defeditor='/usr/bin/joe' \
+    -D active='remote' \
+    -D acttimes='remote' \
+    -D bin='/usr/bin' \
+    -D binexp='/usr/bin' \
+    -D cc='gcc' \
+    -D cpprun='gcc -E' \
+    -D cppstdin='gcc -E' \
+    -D  d_genauth='define' \
+    -D d_local='undef' \
+    -D extrainews='' \
+    -D filexp='/usr/lib/trn/filexp' \
+    -D groupdesc='' \
+    -D hostbits='0' \
+    -D installbin='/usr/bin' \
+    -D installinews='/usr/bin' \
+    -D installprivlib='/usr/lib/trn' \
+    -D mimecap='' \
+    -D myactive='.falseactive' \
+    -D newslib='/tmp' \
+    -D newslibexp='/tmp' \
+    -D newsspool='none' \
+    -D overviewdir='remote' \
+    -D overviewfmt='none' \
+    -D prefix='/usr' \
+    -D prefixexp='/usr' \
+    -D privlib='/usr/lib/trn' \
+    -D privlibexp='/usr/lib/trn' \
+    -D servername='no default' \
+    -D subscriptions='' \
+    -D threaddir='remote' \
+    -D useinews='/usr/bin/inews'
   default
 }
 
