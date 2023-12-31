@@ -41,6 +41,7 @@ dev-python/pick 2.2.0: pick an option in the terminal with a simple GUI
 dev-python/pybars3 0.9.7: Handlebars.js for Python 3 and 2
 dev-python/pymeta3 0.5.1: a fork of PyMeta 0.5.0 that supports Python 2 and 3
 dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion representation, manipulation, 3D animation and geometry
+dev-python/pytaglib 2.1.0: cross-platform, Python audio metadata library based on TagLib
 dev-python/python-nmap 0.7.1: use nmap from Python
 dev-python/python-trezor 0.13.8: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 dev-python/qmk-dotty-dict 1.3.1: Dictionary wrapper for quick access to deeply nested keys
