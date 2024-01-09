@@ -27,6 +27,7 @@ EGO_SUM=(
 	"gopkg.in/yaml.v2 v2.4.0"
 	"gopkg.in/yaml.v2 v2.4.0/go.mod"
 )
+PATCHES=$FILESDIR/$P-usblib.patch
 
 go-module_set_globals
 
