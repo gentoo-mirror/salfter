@@ -24,6 +24,7 @@ RDEPEND="(
 	   !sci-libs/solidpython
 	   >=dev-python/commentjson-0.9
 	   media-gfx/openscad
+	   sci-electronics/kicad
 	 )"
 
 distutils_enable_tests unittest
