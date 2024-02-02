@@ -4,8 +4,6 @@
 
 EAPI=8
 
-inherit
-
 DESCRIPTION="MP3 validator"
 HOMEPAGE="http://mp3val.sourceforge.net/"
 SRC_URI="mirror://sourceforge/mp3val/${P}-src.tar.gz"
