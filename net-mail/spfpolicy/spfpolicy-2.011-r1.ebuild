@@ -2,8 +2,6 @@
 
 EAPI=8
 
-inherit 
-
 DESCRIPTION="Postfix policy server implementing Sender Policy Framework (SPF)"
 HOMEPAGE="http://www.openspf.org/Software"
 SRC_URI="http://launchpad.net/postfix-policyd-spf-perl/trunk/${PV}/+download/postfix-policyd-spf-perl-${PV}.tar.gz"
