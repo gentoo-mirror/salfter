@@ -61,6 +61,7 @@ media-gfx/prusaslicer 2.6.1: A mesh slicer to generate G-code for fused-filament
 media-gfx/qrscad_gen 0.1.0: qrscad_gen
 media-gfx/stl_normalize 0.0.20210314: A script to normalize and validate STL files
 media-libs/libshout 2.4.5: library for connecting and sending data to icecast servers
+media-sound/mp3val 0.1.8: MP3 validator
 media-sound/openkj 2.0.8 9999: karaoke show hosting software
 media-sound/tageditor 3.9.0: A tag editor with command-line interface supporting MP4/M4A/AAC (iTunes), ID3, Vorbis, Opus, FLAC and Matroska
 media-sound/tagparser 12.1.0: C++ library for reading and writing MP4/M4A/AAC (iTunes), ID3, Vorbis, Opus, FLAC and Matroska tags
@@ -71,6 +72,7 @@ media-video/vobsub2srt 1.0_alpha7: Converts image subtitles created by VobSub (.
 net-fs/libs3 20200523: S3 library, forked for Bacula
 net-fs/netatalk 2.2.5: Open Source AFP server and other AppleTalk-related utilities
 net-fs/webdavfs 1.0: A FUSE filesystem for WebDAV shares
+net-mail/spfpolicy 2.011-r1: Postfix policy server implementing Sender Policy Framework (SPF)
 net-misc/hashcash 1.22-r2: Utility to generate hashcash tokens
 net-news/trn 4.0-r7720221204: threaded news reader
 net-p2p/trezord-go 2.0.33-r1: TREZOR Communication Daemon
