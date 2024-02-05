@@ -11,6 +11,7 @@ KEYWORDS="amd64 aarch64"
 S=$WORKDIR/$P/src
 
 DEPEND="
+	dev-qt/qtbase:5
 	dev-qt/qtdbus:5
 	sys-libs/zlib
 	app-arch/lzma
