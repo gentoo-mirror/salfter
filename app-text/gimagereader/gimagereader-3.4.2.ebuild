@@ -21,7 +21,6 @@ DEPEND=">=app-text/tesseract-3.04
 	dev-libs/libxml2
 	app-text/enchant
 	qt5? (
-	  app-text/qtspell
 	  dev-qt/qtcore:5
 	  app-text/qtspell[qt5]
 	  app-text/poppler
