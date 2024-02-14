@@ -10,6 +10,7 @@ app-arch/nulib2 3.1.0: utility for manipulating NuFX archives
 app-arch/tarballize 0.0.20180904: Make tarballs of given git repository, including its submodules
 app-cdr/dvdisaster 0.79.10: Tool for creating error correction data (ecc) for optical media (DVD, CD, BD)
 app-emulation/butane 0.19.0: Butane translates human-readable Butane Configs into machine-readable Ignition Configs
+app-emulation/cadius 1.4.5: BrutalDeluxe's Cadius disk imaging utility, with some maintenance and *nix support
 app-emulation/container-linux-config-transpiler 0.9.4: Container Linux Config Transpiler
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
 app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
