@@ -8,6 +8,7 @@ app-arch/libzim 9.1.0: reference implementation for the ZIM file format, an offl
 app-arch/nufxlib 3.1.0: library for manipulating NuFX archives
 app-arch/nulib2 3.1.0: utility for manipulating NuFX archives
 app-arch/tarballize 0.0.20180904: Make tarballs of given git repository, including its submodules
+app-cdr/dmg2img 0.0_alpha20201227: a tool which allows converting Apple compressed dmg archives to standard (hfsplus) image disk files
 app-cdr/dvdisaster 0.79.10: Tool for creating error correction data (ecc) for optical media (DVD, CD, BD)
 app-emulation/butane 0.19.0: Butane translates human-readable Butane Configs into machine-readable Ignition Configs
 app-emulation/cadius 1.4.5: BrutalDeluxe's Cadius disk imaging utility, with some maintenance and *nix support
