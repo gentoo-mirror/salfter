@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=a tool which allows converting Apple compressed dmg archives to standard (hfsplus) image disk files
+EAPI=8
+HOMEPAGE=https://github.com/Lekensteyn/dmg2img
+KEYWORDS=amd64
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=https://github.com/Lekensteyn/dmg2img/archive/a3e413489ccdd05431401357bf21690536425012.tar.gz -> dmg2img-0.0_alpha20201227.tar.gz
+_md5_=e07c5a64594512f843ad0d1c27d34797
