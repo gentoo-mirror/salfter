@@ -5,5 +5,5 @@ HOMEPAGE=https://sourceforge.net/projects/acme-crossass/
 KEYWORDS=amd64
 LICENSE=GPL-2
 SLOT=0
-SRC_URI=https://gitlab.alfter.us/salfter/acme/-/archive/release-0.97/acme-release-0.97.tar.bz2 -> acme-0.97.tar.bz2
-_md5_=cdff160a4399dd61144eda7163567305
+SRC_URI=https://gitlab.alfter.us/salfter/acme/-/archive/0.97/acme-0.97.tar.bz2
+_md5_=e1b5dc5d47d2ff6248fc9e99c74a937a
