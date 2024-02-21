@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile configure install
+DESCRIPTION=a port of mp3gain that also works with .m4a files
+EAPI=8
+HOMEPAGE=https://github.com/dgilman/aacgain
+KEYWORDS=amd64
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=https://alfter.us/wp-content/uploads/2024/02/aacgain-2.0.0.tar.xz
+_md5_=2c9b913f4be1bc5051b60e25e6717ce7
