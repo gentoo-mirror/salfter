@@ -65,6 +65,7 @@ media-gfx/prusaslicer 2.6.1: A mesh slicer to generate G-code for fused-filament
 media-gfx/qrscad_gen 0.1.0: qrscad_gen
 media-gfx/stl_normalize 0.0.20210314: A script to normalize and validate STL files
 media-libs/libshout 2.4.5: library for connecting and sending data to icecast servers
+media-sound/aacgain 2.0.0: a port of mp3gain that also works with .m4a files
 media-sound/mp3val 0.1.8: MP3 validator
 media-sound/openkj 2.0.8 9999: karaoke show hosting software
 media-sound/tageditor 3.9.0: A tag editor with command-line interface supporting MP4/M4A/AAC (iTunes), ID3, Vorbis, Opus, FLAC and Matroska
