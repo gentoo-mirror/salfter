@@ -1,0 +1,12 @@
+BDEPEND=>=dev-lang/go-1.20:= app-arch/unzip
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Butane translates human-readable Butane Configs into machine-readable Ignition Configs
+EAPI=8
+INHERIT=go-module
+KEYWORDS=amd64
+LICENSE=Apache-2.0
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/coreos/butane/archive/refs/tags/v0.20.0.tar.gz -> butane-0.20.0.tar.gz
+_eclasses_=go-env	96e1747610bbb2f5c5d3fb16f0f3a83a	go-module	09ccb1fdea4f1f3f718e27b756636097	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084
+_md5_=a72407282afaf8bb030fd6d9b58d1735
