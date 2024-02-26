@@ -7,4 +7,4 @@ KEYWORDS=amd64
 LICENSE=ISC
 SLOT=0
 SRC_URI=https://github.com/YosysHQ/yosys/archive/yosys-0.38.tar.gz https://github.com/YosysHQ/abc/archive/896e5e7dedf9b9b1459fa019f1fa8aa8101fdf43.tar.gz -> abc-896e5e7dedf9b9b1459fa019f1fa8aa8101fdf43.tar.gz
-_md5_=fef552696c2950e0c89fcb2ad9848110
+_md5_=ce55068f0901dd477335831e3b8bb4e7

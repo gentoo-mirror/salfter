@@ -24,7 +24,6 @@ src_unpack() {
 	git-r3_fetch $EGIT_REPO_URI 
 	git-r3_checkout $EGIT_REPO_URI 
 	unpack abc-$ABC_GIT_COMMIT.tar.gz
-	patch -p0 <$FILESDIR/$P-abc-c++17-fix.patch
 }
 
 src_prepare() {
