@@ -22,7 +22,6 @@ src_unpack() {
 	unpack $P.tar.gz
 	unpack abc-$ABC_GIT_COMMIT.tar.gz
 	mv $WORKDIR/abc-$ABC_GIT_COMMIT $S/abc
-	patch -p0 <$FILESDIR/$P-abc-c++17-fix.patch
 }
 
 src_compile() {
