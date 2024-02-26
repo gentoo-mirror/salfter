@@ -10,7 +10,7 @@ app-arch/nulib2 3.1.0: utility for manipulating NuFX archives
 app-arch/tarballize 0.0.20180904: Make tarballs of given git repository, including its submodules
 app-cdr/dmg2img 0.0_alpha20201227: a tool which allows converting Apple compressed dmg archives to standard (hfsplus) image disk files
 app-cdr/dvdisaster 0.79.10: Tool for creating error correction data (ecc) for optical media (DVD, CD, BD)
-app-emulation/butane 0.19.0: Butane translates human-readable Butane Configs into machine-readable Ignition Configs
+app-emulation/butane 0.20.0: Butane translates human-readable Butane Configs into machine-readable Ignition Configs
 app-emulation/cadius 1.4.5: BrutalDeluxe's Cadius disk imaging utility, with some maintenance and *nix support
 app-emulation/container-linux-config-transpiler 0.9.4: Container Linux Config Transpiler
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
@@ -85,16 +85,16 @@ net-vpn/pia-wg 0.0.20230704: Private Internet Access WireGuard configurator
 net-wireless/linux-wifi-hotspot 4.7.1: Feature-rich wifi hotspot creator for Linux which provides both GUI and command-line interface
 net-wireless/rtlsdr-airband 5.0.12: converts analog broadcast radio to audio streams
 sci-electronics/altium2kicad 0.0.20230603: Altium to KiCad converter for PCB and schematics
-sci-electronics/amaranth 0.4.1: A refreshed Python toolbox for building complex digital hardware
+sci-electronics/amaranth 0.4.2: A refreshed Python toolbox for building complex digital hardware
 sci-electronics/amaranth-boards 0.1_alpha20231213: Amaranth boards and connectors
-sci-electronics/amaranth-soc 0.1_alpha20240209: System on Chip toolkit for Amaranth
+sci-electronics/amaranth-soc 0.1_alpha20240216: System on Chip toolkit for Amaranth
 sci-electronics/apicula 0.11.1: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/easyeda2kicad 0.6.6: convert components from EasyEDA or LCSC for use with KiCad
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
 sci-electronics/icestorm 0.0.20231212: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kicost 1.1.18: generate part-cost spreadsheets for circuit boards developed with KiCad
 sci-electronics/kicost-digikey-api-v3 0.1.3: experimental plug-in to allow KiCost to do native Digi-Key API requests
-sci-electronics/kikit 1.4.0: Automation for KiCad
+sci-electronics/kikit 1.5.0: Automation for KiCad
 sci-electronics/nextpnr 0.7: portable FPGA place and route tool
 sci-electronics/pcbnewTransition 0.4.0: support KiCad 5-7 in your plugins
 sci-electronics/prjoxide 0.1.0.20220925 9999: documenting Lattice's 28nm Nexus FPGAs
@@ -111,7 +111,6 @@ sys-firmware/brcm43455-rock-pi-x-firmware 0.0.20210309: firmware for Broadcom 43
 sys-fs/profuse 2016.08.16: read-only ProDOS and Apple Pascal filesystems for FUSE
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 www-apps/cops 1.1.3: Calibre OPDS PHP Server
-www-apps/tt-rss 20231125: Tiny Tiny RSS - A web-based news feed (RSS/Atom) aggregator using AJAX
 www-misc/kiwix-desktop 2.3.1: cross-platform viewer/manager of ZIM files
 www-misc/kiwix-tools 3.6.0: collection of Kiwix related command line tools
-www-misc/libkiwix 13.0.0: Kiwix software suite core: code shared by all Kiwix ports
+www-misc/libkiwix 13.1.0: Kiwix software suite core: code shared by all Kiwix ports
