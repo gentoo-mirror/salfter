@@ -88,7 +88,7 @@ net-wireless/rtlsdr-airband 5.0.12: converts analog broadcast radio to audio str
 sci-electronics/altium2kicad 0.0.20230603: Altium to KiCad converter for PCB and schematics
 sci-electronics/amaranth 0.4.3: A refreshed Python toolbox for building complex digital hardware
 sci-electronics/amaranth-boards 0.1_alpha20240228: Amaranth boards and connectors
-sci-electronics/amaranth-soc 0.1_alpha20240216: System on Chip toolkit for Amaranth
+sci-electronics/amaranth-soc 0.1_alpha20240312: System on Chip toolkit for Amaranth
 sci-electronics/apicula 0.11.1: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/easyeda2kicad 0.6.6: convert components from EasyEDA or LCSC for use with KiCad
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
