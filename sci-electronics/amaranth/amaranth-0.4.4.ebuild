@@ -6,10 +6,10 @@ inherit distutils-r1 git-r3
 
 DESCRIPTION="A refreshed Python toolbox for building complex digital hardware"
 HOMEPAGE="https://github.com/amaranth-lang/amaranth"
-EGIT_COMMIT=a430c1d4a37c07328d30e37de15d077c90dc0aa5
+EGIT_COMMIT=0564dd5d7853bd768aef8cc1bd8405ec0b7e48c5
 EGIT_REPO_URI=https://github.com/amaranth-lang/$PN
 EGIT_BRANCH=v0.4.x
-PATCHES="$FILESDIR/$P-versioning.patch"
+PATCHES="$FILESDIR/$PN-versioning.patch"
 PDM_BUILD_SCM_VERSION=$PV
 
 LICENSE="BSD-2"
