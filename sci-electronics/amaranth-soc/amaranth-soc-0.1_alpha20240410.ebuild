@@ -5,7 +5,7 @@ inherit distutils-r1 git-r3
 
 DESCRIPTION="System on Chip toolkit for Amaranth"
 HOMEPAGE="https://github.com/amaranth-lang/amaranth-soc"
-EGIT_COMMIT=8b1de15973edf51ebe4d5c86a1c9704b17578483
+EGIT_COMMIT=ce4ad768dc590c38de0d76a560e76a94a615a782
 EGIT_REPO_URI=https://github.com/amaranth-lang/$PN
 DISTUTILS_USE_PEP517=pdm-backend
 PATCHES="$FILESDIR/$PN-versioning.patch"
