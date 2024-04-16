@@ -4,7 +4,7 @@ acct-user/milter 0: User for mail-filter/hashcash-milter
 acct-user/spfpolicy 0: User for net-mail/spfpolicy
 acct-user/trezord 0: User for TREZOR Bridge
 app-admin/keepass 2.53.1: A free, open source, light-weight and easy-to-use password manager
-app-arch/libzim 9.1.0: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
+app-arch/libzim 9.2.0: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
 app-arch/nufxlib 3.1.0: library for manipulating NuFX archives
 app-arch/nulib2 3.1.0: utility for manipulating NuFX archives
 app-arch/tarballize 0.0.20180904: Make tarballs of given git repository, including its submodules
