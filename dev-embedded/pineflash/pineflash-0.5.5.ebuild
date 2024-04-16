@@ -464,18 +464,15 @@ CRATES="
 
 inherit cargo
 
-DESCRIPTION=""
-HOMEPAGE=""
-SRC_URI="
-	${CARGO_CRATE_URIS}
+DESCRIPTION="firmware updating GUI for Pinecil soldering iron"
+HOMEPAGE="https://github.com/Spagett1/PineFlash"
+SRC_URI="${CARGO_CRATE_URIS}
 	 https://github.com/Spagett1/PineFlash/archive/refs/tags/$PV.tar.gz -> $P.tar.gz"
 S=$WORKDIR/pineflash-$PV
 
-LICENSE=""
-# Dependent crate licenses
-LICENSE+="
-	Apache-2.0 BSD-2 BSD Boost-1.0 CC0-1.0 ISC MIT MPL-2.0 OFL-1.1
-	Unicode-DFS-2016 ZLIB
-"
+LICENSE="GPL-2"
+LICENSE+="Apache-2.0 BSD-2 BSD Boost-1.0 CC0-1.0 ISC MIT MPL-2.0 OFL-1.1 
+	  Unicode-DFS-2016 ZLIB"
+
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
