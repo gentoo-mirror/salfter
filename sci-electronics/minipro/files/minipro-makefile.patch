@@ -1,0 +1,11 @@
+--- minipro-0.7/Makefile	2024-04-11 11:08:29.000000000 -0700
++++ minipro-0.7/Makefile	2024-04-17 18:42:07.004986453 -0700
+@@ -11,7 +11,7 @@
+ 
+ # Normally minipro is installed to /usr/local.  If you want to put it
+ # somewhere else, define that location here.
+-PREFIX ?= /usr/local
++PREFIX ?= /usr
+ MANDIR ?= $(PREFIX)/share/man
+ 
+ # Some older releases of MacOS need some extra library flags.
