@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DESCRIPTION=run GUI applications in containers
+EAPI=8
+HOMEPAGE=https://github.com/mviereck/x11docker
+KEYWORDS=amd64
+LICENSE=MIT
+RDEPEND=x11-base/xorg-server[xcsecurity] x11-misc/xclip x11-apps/xrandr x11-apps/xhost x11-apps/xdpyinfo app-containers/catatonit x11-wm/xpra
+SLOT=0
+SRC_URI=https://github.com/mviereck/x11docker/archive/refs/tags/v7.6.0.tar.gz -> x11docker-7.6.0.tar.gz
+_md5_=53568cf87d24c6b28f727d7e98f12f7d
