@@ -43,6 +43,7 @@ dev-python/hid 1.0.5: ctypes bindings for hidapi
 dev-python/hjson 3.1.0: a user interface for JSON
 dev-python/log-symbols 0.0.14: Colored symbols for various log levels for Python
 dev-python/milc 1.6.8: Opinionated Batteries-Included Python 3 CLI Framework
+dev-python/mnemonic 0.21: Mnemonic code for generating deterministic keys, BIP39
 dev-python/ogr 0.44.0: One Git library to Rule
 dev-python/pick 2.2.0: pick an option in the terminal with a simple GUI
 dev-python/pybars3 0.9.7: Handlebars.js for Python 3 and 2
@@ -54,7 +55,7 @@ dev-python/python-trezor 0.13.8: Client side implementation for TREZOR-compatibl
 dev-python/qmk-dotty-dict 1.3.1: Dictionary wrapper for quick access to deeply nested keys
 dev-python/spinners 0.0.24: Spinners for terminals
 dev-util/cpp-utilities 5.24.5: Common C++ classes and routines used by my applications such as argument parser, IO and conversion utilities
-games-emulation/sdlmame 0.264: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
+games-emulation/sdlmame 0.265: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.20.0: The notorious fortune program
 gemini-client/lagrange 1.17.6: desktop GUI (and optional TUI) client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3-r2: A milter-based application to mint and check HashCash stamps
