@@ -18,5 +18,5 @@
 +    #if version.is_prerelease:
 +    #    url_version = "latest"
 +    #else:
-+    url_version = f"v0.4.0"
++    url_version = f"v0.4.5"
      context.config.metadata["urls"]["Documentation"] += url_version
