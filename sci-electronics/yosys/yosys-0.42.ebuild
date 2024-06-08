@@ -5,9 +5,10 @@ inherit git-r3
 DESCRIPTION="framework for Verilog RTL synthesis"
 HOMEPAGE="http://www.clifford.at/yosys/"
 EGIT_REPO_URI=https://github.com/YosysHQ/yosys
+EGIT_COMMIT=yosys-0.42
 LICENSE=ISC
 SLOT=0
-KEYWORDS=
+KEYWORDS=amd64
 PATCHES=( $FILESDIR/$PN-makefile.patch )
 
 DEPEND="dev-vcs/git
