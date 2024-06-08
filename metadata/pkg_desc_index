@@ -26,7 +26,7 @@ dev-embedded/cc65 2.19: complete cross development package for 65(C)02 systems
 dev-embedded/exomizer 3.1.2: efficient compressor for resource-constrained targets
 dev-embedded/pineflash 0.5.5: firmware updating GUI for Pinecil soldering iron
 dev-embedded/qmk 1.1.2: A program to help users work with QMK Firmware
-dev-embedded/rpi-imager 1.8.5: Raspberry Pi Imaging Utility
+dev-embedded/rpi-imager 1.8.5-r1: Raspberry Pi Imaging Utility
 dev-embedded/teensy_loader_cli 2.2: Command line Teensy Loader
 dev-embedded/usbboot 2022.12.15: tool to load Raspberry Pi Compute Modules over USB
 dev-libs/libfmt 8.1.1-r1: Small, safe and fast formatting library
@@ -104,7 +104,7 @@ sci-electronics/prjoxide 0.1.0.20220925 9999: documenting Lattice's 28nm Nexus F
 sci-electronics/prjtrellis 1.3 1.3.1_alpha20240129: reverse-engineered tools for Lattice ECP5 FPGAs
 sci-electronics/pyvcd 0.4.0: writes Value Change Dump (VCD) files as specified in IEEE 1364-2005
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
-sci-electronics/yosys 0.41 9999: framework for Verilog RTL synthesis
+sci-electronics/yosys 0.42 9999: framework for Verilog RTL synthesis
 sci-libs/euclid3 0.2.0: vector, matrix, quaternion and some geometry in 2D and 3D for Python 3
 sci-libs/solidpython2 2.1.0: OpenSCAD for Python
 sci-libs/solidpython2-legacy 0.1.1: legacy SolidPython utils ported to SolidPython 2
