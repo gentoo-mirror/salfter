@@ -1,6 +1,6 @@
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..12} )
+PYTHON_COMPAT=( python3_{8..13} )
 
 GIT_COMMIT=9f60064ed329a90bc0f38caf270f19e438eace85
 
