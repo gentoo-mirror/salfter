@@ -11,7 +11,7 @@ app-arch/tarballize 0.0.20180904: Make tarballs of given git repository, includi
 app-cdr/dmg2img 0.0_alpha20201227: a tool which allows converting Apple compressed dmg archives to standard (hfsplus) image disk files
 app-cdr/dvdisaster 0.79.10: Tool for creating error correction data (ecc) for optical media (DVD, CD, BD)
 app-containers/x11docker 7.6.0: run GUI applications in containers
-app-emulation/butane 0.20.0: Butane translates human-readable Butane Configs into machine-readable Ignition Configs
+app-emulation/butane 0.21.0: Butane translates human-readable Butane Configs into machine-readable Ignition Configs
 app-emulation/cadius 1.4.5: BrutalDeluxe's Cadius disk imaging utility, with some maintenance and *nix support
 app-emulation/container-linux-config-transpiler 0.9.4: Container Linux Config Transpiler
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
@@ -27,7 +27,7 @@ dev-embedded/exomizer 3.1.2: efficient compressor for resource-constrained targe
 dev-embedded/pineflash 0.5.5: firmware updating GUI for Pinecil soldering iron
 dev-embedded/qmk 1.1.2: A program to help users work with QMK Firmware
 dev-embedded/rpi-imager 1.8.5-r1: Raspberry Pi Imaging Utility
-dev-embedded/teensy_loader_cli 2.2: Command line Teensy Loader
+dev-embedded/teensy_loader_cli 2.3: Command line Teensy Loader
 dev-embedded/usbboot 2022.12.15: tool to load Raspberry Pi Compute Modules over USB
 dev-libs/libfmt 8.1.1-r1: Small, safe and fast formatting library
 dev-libs/sealcurses 0.0.20220609: SDL Emulation and Adaptation Layer for Curses
