@@ -1,6 +1,6 @@
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..12} )
+PYTHON_COMPAT=( python3_{8..13} )
 GIT_COMMIT=be3106985604af14582f0b1fd1c8b5559cc640ba
 
 inherit distutils-r1
