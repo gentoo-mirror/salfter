@@ -8,7 +8,6 @@ HOMEPAGE="https://github.com/amaranth-lang/amaranth-soc"
 EGIT_COMMIT=e1b842800533f44924f21c3867bc2290084d100f
 EGIT_REPO_URI=https://github.com/amaranth-lang/$PN
 DISTUTILS_USE_PEP517=pdm-backend
-PATCHES="$FILESDIR/$PN-versioning.patch"
 PDM_BUILD_SCM_VERSION=$PV
 
 LICENSE="BSD-2"
@@ -19,3 +18,9 @@ RDEPEND="sci-electronics/amaranth"
 DEPEND="dev-python/wheel
 	!sci-electronics/nmigen-soc"
 
+src_prepare()
+{
+  cd $S
+  default
+  sed -i -e "s/pdm\\.backend\\._vendor\\.//" pdm_build.py
+}
