@@ -9,7 +9,6 @@ HOMEPAGE="https://github.com/amaranth-lang/amaranth"
 EGIT_COMMIT=4d1c4fc20dc44398c09d334b7f34096b0185d43d
 EGIT_REPO_URI=https://github.com/amaranth-lang/$PN
 EGIT_BRANCH=v0.4.x
-PATCHES="$FILESDIR/$PN-versioning.patch"
 PDM_BUILD_SCM_VERSION=$PV
 
 LICENSE="BSD-2"
@@ -22,3 +21,9 @@ RDEPEND="dev-python/jinja
 	 sci-electronics/pyvcd
 	 sci-electronics/yosys"
 
+src_prepare()
+{
+  cd $S
+  default
+  sed -i -e "s/pdm\\.backend\\._vendor\\.//" pdm_build.py
+}
