@@ -4,7 +4,7 @@ acct-user/milter 0: User for mail-filter/hashcash-milter
 acct-user/spfpolicy 0: User for net-mail/spfpolicy
 acct-user/trezord 0: User for TREZOR Bridge
 app-admin/keepass 2.53.1: A free, open source, light-weight and easy-to-use password manager
-app-arch/libzim 9.2.1: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
+app-arch/libzim 9.2.2: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
 app-arch/nufxlib 3.1.0: library for manipulating NuFX archives
 app-arch/nulib2 3.1.0: utility for manipulating NuFX archives
 app-arch/tarballize 0.0.20180904: Make tarballs of given git repository, including its submodules
@@ -51,7 +51,7 @@ dev-python/pymeta3 0.5.1: a fork of PyMeta 0.5.0 that supports Python 2 and 3
 dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion representation, manipulation, 3D animation and geometry
 dev-python/pytaglib 2.1.0: cross-platform, Python audio metadata library based on TagLib
 dev-python/python-nmap 0.7.1: use nmap from Python
-dev-python/python-trezor 0.13.8: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
+dev-python/python-trezor 0.13.9: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 dev-python/qmk-dotty-dict 1.3.1: Dictionary wrapper for quick access to deeply nested keys
 dev-python/spinners 0.0.24: Spinners for terminals
 dev-util/cpp-utilities 5.24.5: Common C++ classes and routines used by my applications such as argument parser, IO and conversion utilities
