@@ -55,7 +55,7 @@ dev-python/python-trezor 0.13.9: Client side implementation for TREZOR-compatibl
 dev-python/qmk-dotty-dict 1.3.1: Dictionary wrapper for quick access to deeply nested keys
 dev-python/spinners 0.0.24: Spinners for terminals
 dev-util/cpp-utilities 5.24.5: Common C++ classes and routines used by my applications such as argument parser, IO and conversion utilities
-games-emulation/sdlmame 0.266: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
+games-emulation/sdlmame 0.267: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.20.0: The notorious fortune program
 gemini-client/lagrange 1.17.6: desktop GUI (and optional TUI) client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3-r2: A milter-based application to mint and check HashCash stamps
