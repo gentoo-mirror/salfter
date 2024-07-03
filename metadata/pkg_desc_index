@@ -56,7 +56,7 @@ dev-python/qmk-dotty-dict 1.3.1: Dictionary wrapper for quick access to deeply n
 dev-python/spinners 0.0.24: Spinners for terminals
 dev-util/cpp-utilities 5.24.5: Common C++ classes and routines used by my applications such as argument parser, IO and conversion utilities
 games-emulation/sdlmame 0.267: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
-games-misc/fortune-mod 3.20.0: The notorious fortune program
+games-misc/fortune-mod 3.22.0: The notorious fortune program
 gemini-client/lagrange 1.17.6: desktop GUI (and optional TUI) client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3-r2: A milter-based application to mint and check HashCash stamps
 media-gfx/iscan-data 1.39.0.1: Image Scan! for Linux data files
@@ -88,12 +88,12 @@ net-wireless/linux-wifi-hotspot 4.7.1: Feature-rich wifi hotspot creator for Lin
 net-wireless/rtlsdr-airband 5.0.12: converts analog broadcast radio to audio streams
 sci-electronics/altium2kicad 0.0.20230603: Altium to KiCad converter for PCB and schematics
 sci-electronics/amaranth 0.5.0: A refreshed Python toolbox for building complex digital hardware
-sci-electronics/amaranth-boards 0.1_alpha20240501: Amaranth boards and connectors
-sci-electronics/amaranth-soc 0.1_alpha20240610: System on Chip toolkit for Amaranth
+sci-electronics/amaranth-boards 0.1_alpha20240622: Amaranth boards and connectors
+sci-electronics/amaranth-soc 0.1_alpha20240702: System on Chip toolkit for Amaranth
 sci-electronics/apicula 0.12: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/easyeda2kicad 0.6.6: convert components from EasyEDA or LCSC for use with KiCad
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
-sci-electronics/icestorm 0.0.20240517: reverse-engineered tools for Lattice iCE40 FPGAs
+sci-electronics/icestorm 0.0.20240624: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kicost 1.1.19: generate part-cost spreadsheets for circuit boards developed with KiCad
 sci-electronics/kicost-digikey-api-v3 0.1.3: experimental plug-in to allow KiCost to do native Digi-Key API requests
 sci-electronics/kikit 1.5.1: Automation for KiCad
