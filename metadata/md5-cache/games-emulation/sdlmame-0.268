@@ -9,6 +9,6 @@ KEYWORDS=amd64
 LICENSE=GPL-2+ BSD-2 MIT CC0-1.0
 RDEPEND=dev-db/sqlite:3 dev-libs/expat media-libs/fontconfig media-libs/flac media-libs/libsdl2[joystick,opengl?,sound,video,X] media-libs/portaudio media-libs/sdl2-ttf sys-libs/zlib virtual/jpeg:0 virtual/opengl alsa? ( media-libs/alsa-lib media-libs/portmidi ) debug? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 ) x11-libs/libX11 x11-libs/libXinerama dev-cpp/asio dev-libs/libutf8proc media-libs/glm dev-libs/rapidjson dev-libs/pugixml
 SLOT=0
-SRC_URI=https://github.com/mamedev/mame/archive/mame0267.tar.gz -> mame-0.267.tar.gz
+SRC_URI=https://github.com/mamedev/mame/archive/mame0268.tar.gz -> mame-0.268.tar.gz
 _eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	0c713337f7872f1a002cecaaea9bef73	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	6881b056477c23167d9a6b33e146374e	python-any-r1	5af215c3da6aef17a2d5e02968df1d5a	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	xdg-utils	baea6080dd821f5562d715887954c9d3
 _md5_=2921915622059463c3a4acdbec2ac7fb

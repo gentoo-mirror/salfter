@@ -55,7 +55,7 @@ dev-python/python-trezor 0.13.9: Client side implementation for TREZOR-compatibl
 dev-python/qmk-dotty-dict 1.3.1: Dictionary wrapper for quick access to deeply nested keys
 dev-python/spinners 0.0.24: Spinners for terminals
 dev-util/cpp-utilities 5.24.5: Common C++ classes and routines used by my applications such as argument parser, IO and conversion utilities
-games-emulation/sdlmame 0.267: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
+games-emulation/sdlmame 0.268: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.22.0: The notorious fortune program
 gemini-client/lagrange 1.17.6: desktop GUI (and optional TUI) client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3-r2: A milter-based application to mint and check HashCash stamps
@@ -96,7 +96,7 @@ sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes 
 sci-electronics/icestorm 0.0.20240624: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kicost 1.1.19: generate part-cost spreadsheets for circuit boards developed with KiCad
 sci-electronics/kicost-digikey-api-v3 0.1.3: experimental plug-in to allow KiCost to do native Digi-Key API requests
-sci-electronics/kikit 1.5.1: Automation for KiCad
+sci-electronics/kikit 1.6.0: Automation for KiCad
 sci-electronics/minipro 0.7: A free and open TL866XX programmer
 sci-electronics/nextpnr 0.7: portable FPGA place and route tool
 sci-electronics/pcbnewTransition 0.4.1: support KiCad 5-7 in your plugins
