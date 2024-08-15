@@ -33,7 +33,7 @@ dev-libs/libfmt 8.1.1-r1: Small, safe and fast formatting library
 dev-libs/sealcurses 0.0.20220609: SDL Emulation and Adaptation Layer for Curses
 dev-libs/spdlog 1.10.0: Fast C++ logging library
 dev-libs/the_foundation 1.4.0: an object-oriented C library whose API is designed for a particular coding style, taking cues from C++ STL and Qt
-dev-perl/App-XML-DocBook-Builder 0.1100: build DocBook/XML files
+dev-perl/App-XML-DocBook-Builder 0.1101: build DocBook/XML files
 dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
