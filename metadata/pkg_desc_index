@@ -90,7 +90,7 @@ sci-electronics/altium2kicad 0.0.20230603: Altium to KiCad converter for PCB and
 sci-electronics/amaranth 0.5.1: A refreshed Python toolbox for building complex digital hardware
 sci-electronics/amaranth-boards 0.1_alpha20240720: Amaranth boards and connectors
 sci-electronics/amaranth-soc 0.1_alpha20240723: System on Chip toolkit for Amaranth
-sci-electronics/apicula 0.12: documentation and tools for the Gowin FPGA bitstream format
+sci-electronics/apicula 0.13: documentation and tools for the Gowin FPGA bitstream format
 sci-electronics/easyeda2kicad 0.6.6: convert components from EasyEDA or LCSC for use with KiCad
 sci-electronics/ecpprog 0.0.20220913: A basic driver for FTDI based JTAG probes (FT232H, FT2232H, FT4232H), to program Lattice ECP5/Nexus FPGAs
 sci-electronics/icestorm 0.0.20240624: reverse-engineered tools for Lattice iCE40 FPGAs
