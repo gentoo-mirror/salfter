@@ -26,7 +26,6 @@ dev-embedded/cc65 2.19: complete cross development package for 65(C)02 systems
 dev-embedded/exomizer 3.1.2: efficient compressor for resource-constrained targets
 dev-embedded/pineflash 0.5.5: firmware updating GUI for Pinecil soldering iron
 dev-embedded/qmk 1.1.2: A program to help users work with QMK Firmware
-dev-embedded/rpi-imager 1.8.5-r1: Raspberry Pi Imaging Utility
 dev-embedded/teensy_loader_cli 2.3: Command line Teensy Loader
 dev-embedded/usbboot 2022.12.15: tool to load Raspberry Pi Compute Modules over USB
 dev-libs/libfmt 8.1.1-r1: Small, safe and fast formatting library
