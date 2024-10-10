@@ -6,7 +6,7 @@ inherit distutils-r1 git-r3
 
 DESCRIPTION="Amaranth boards and connectors"
 HOMEPAGE="https://github.com/amaranth-lang/amaranth-boards"
-EGIT_COMMIT=19b97324ecf9111c5d16377af79f82aad761c476
+EGIT_COMMIT=d2caa61a1ceb851da8e4e1109fddc56dc29e05ec
 EGIT_REPO_URI=https://github.com/amaranth-lang/$PN
 PDM_BUILD_SCM_VERSION=$PV
 
