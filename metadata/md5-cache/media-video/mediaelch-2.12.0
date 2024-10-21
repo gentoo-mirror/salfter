@@ -8,5 +8,5 @@ KEYWORDS=amd64 x86
 LICENSE=LGPL-3
 SLOT=0
 SRC_URI=https://alfter.us/wp-content/uploads/2024/10/mediaelch-2.12.0.tar.xz
-_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	toolchain-funcs	0c713337f7872f1a002cecaaea9bef73
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81
 _md5_=15afd9082e13b7e8d9ff392e8f63ca06
