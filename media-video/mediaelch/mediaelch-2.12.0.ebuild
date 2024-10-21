@@ -4,7 +4,7 @@ inherit qmake-utils
 DESCRIPTION="Video metadata scraper"
 # tarball produced with this command:
 # docker run "-v${PWD}:/a" devsisters/tarballize https://github.com/Komet/MediaElch v$PV
-SRC_URI="https://alfter.us/wp-content/uploads/2023/12/$P.tar.xz"
+SRC_URI="https://alfter.us/wp-content/uploads/2024/10/$P.tar.xz"
 S=$WORKDIR/v$PV
 HOMEPAGE="https://www.kvibes.de/mediaelch/"
 
