@@ -6,5 +6,5 @@ KEYWORDS=amd64 aarch64
 LICENSE=Apache-2.0
 RDEPEND=virtual/libusb:1
 SLOT=0
-SRC_URI=https://github.com/raspberrypi/usbboot/archive/1afa26c567503ca1595279d74a5c46d66c66a1bd.tar.gz -> usbboot-2022.12.15.tar.gz
-_md5_=1acaaa2cbaf4045f2ee240c801f6efab
+SRC_URI=https://github.com/raspberrypi/usbboot/archive/82d875522d1a0896e55c90f9e9f47cb4640812c9.tar.gz -> usbboot-2024.09.26.tar.gz
+_md5_=228cbe1228529ee90a5f78e1dc6ddaf3
