@@ -8,5 +8,5 @@ KEYWORDS=amd64 x86
 LICENSE=GPL
 SLOT=0
 SRC_URI=https://github.com/david-schmidt/gsport/releases/download/0.31/gsport_0.31.tar.gz -> gsport-0.31.tar.gz ftp://ftp.apple.asimov.net/pub/apple_II/emulators/kegs/Kegs%20v0.91%20%28with%20system%206%20and%20free%20games%29.zip -> kegs-0.91.zip
-_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d
+_eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed
 _md5_=8089156ad789173b29736791369b6617
