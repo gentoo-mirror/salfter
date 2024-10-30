@@ -19,7 +19,7 @@ app-emulation/gsport 0.31 9999: Apple IIGS emulator, based on KEGS
 app-emulation/kegs 1.16: Apple IIGS emulator
 app-text/gimagereader 3.4.2: A Gtk/Qt front-end to tesseract-ocr
 app-text/qtspell 1.0.1: Spell checking for Qt text widgets
-app-text/rdrview 0.1.2: C port of Mozilla's Readability library
+app-text/rdrview 0.1.3: C port of Mozilla's Readability library
 dev-cpp/mustache 4.1: Mustache implementation for modern C++
 dev-embedded/acme 0.97 0.98_alpha20240214: multi-platform cross assembler for 6502/6510/65816 cpu
 dev-embedded/cc65 2.19: complete cross development package for 65(C)02 systems
