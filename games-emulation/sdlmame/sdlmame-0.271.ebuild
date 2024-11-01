@@ -18,6 +18,7 @@ RDEPEND="dev-db/sqlite:3
 	 media-libs/fontconfig
 	 media-libs/flac
 	 media-libs/libsdl2[joystick,opengl?,sound,video,X]
+	 media-libs/libpulse
 	 media-libs/portaudio
 	 media-libs/sdl2-ttf
 	 sys-libs/zlib
