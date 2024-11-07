@@ -6,5 +6,5 @@ HOMEPAGE=https://github.com/gregdavill/ecpprog
 KEYWORDS=amd64
 LICENSE=ISC
 SLOT=0
-SRC_URI=https://github.com/gregdavill/ecpprog/archive/8af8863855599f4b8ef8f46a336408b1aba60e9d.tar.gz -> ecpprog-0.0.20220913.tar.gz
-_md5_=5296be49295db8c4fddfdbe2df2b5a78
+SRC_URI=https://github.com/gregdavill/ecpprog/archive/1931c3e121f682536a9d80ca1ce1b651c11aef76.tar.gz -> ecpprog-0.0.20241107.tar.gz
+_md5_=fdaadc78d445eed85eea0bbb71e5b9e0
