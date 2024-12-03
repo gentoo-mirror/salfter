@@ -37,7 +37,6 @@ dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
 dev-perl/Math-Geometry-Planar-Offset 1.05: Calculate offset polygons
 dev-python/halo 0.0.31: Beautiful terminal spinners in Python
-dev-python/hdwallet 3.0.0: Hierarchical Deterministic Wallet
 dev-python/hid 1.0.5: ctypes bindings for hidapi
 dev-python/hjson 3.1.0: a user interface for JSON
 dev-python/log-symbols 0.0.14: Colored symbols for various log levels for Python
