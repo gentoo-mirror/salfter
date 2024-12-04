@@ -1,3 +1,4 @@
+BDEPEND=<sys-devel/gcc-14
 DEFINED_PHASES=install prepare
 DESCRIPTION=threaded news reader
 EAPI=8
@@ -6,4 +7,4 @@ KEYWORDS=amd64 x86
 LICENSE=MIT
 SLOT=0
 SRC_URI=https://github.com/arnoldrobbins/trn/archive/a7853e2a71996c93db86a14b41f086778449064e.tar.gz -> trn-4.0.tar.gz
-_md5_=32b8d1725138783368aad2bcd7386081
+_md5_=9e67252bfc9d64f814faf22a3206cbfd
