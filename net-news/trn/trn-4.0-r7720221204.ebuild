@@ -5,6 +5,9 @@ HOMEPAGE="https://github.com/arnoldrobbins/trn/"
 GIT_COMMIT=a7853e2a71996c93db86a14b41f086778449064e
 S=$WORKDIR/$PN-$GIT_COMMIT
 SRC_URI="https://github.com/arnoldrobbins/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
+BDEPEND="<sys-devel/gcc-14"
+CC=gcc-13
+CXX=$CC
 
 LICENSE="MIT"
 SLOT="0"
@@ -22,10 +25,10 @@ src_prepare() {
     -D acttimes='remote' \
     -D bin='/usr/bin' \
     -D binexp='/usr/bin' \
-    -D cc='gcc' \
-    -D cpprun='gcc -E' \
-    -D cppstdin='gcc -E' \
-    -D  d_genauth='define' \
+    -D cc='gcc-13' \
+    -D cpprun='gcc-13 -E' \
+    -D cppstdin='gcc-13 -E' \
+    -D d_genauth='define' \
     -D d_local='undef' \
     -D extrainews='' \
     -D filexp='/usr/lib/trn/filexp' \
