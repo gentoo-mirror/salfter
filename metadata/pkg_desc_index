@@ -11,7 +11,6 @@ app-arch/tarballize 0.0.20180904: Make tarballs of given git repository, includi
 app-cdr/dmg2img 0.0_alpha20201227: a tool which allows converting Apple compressed dmg archives to standard (hfsplus) image disk files
 app-cdr/dvdisaster 0.79.10: Tool for creating error correction data (ecc) for optical media (DVD, CD, BD)
 app-containers/x11docker 7.6.0: run GUI applications in containers
-app-emulation/butane 0.22.0: Butane translates human-readable Butane Configs into machine-readable Ignition Configs
 app-emulation/cadius 1.4.5: BrutalDeluxe's Cadius disk imaging utility, with some maintenance and *nix support
 app-emulation/container-linux-config-transpiler 0.9.4: Container Linux Config Transpiler
 app-emulation/gsplus 0.14: Apple IIGS emulator, based on KEGS
