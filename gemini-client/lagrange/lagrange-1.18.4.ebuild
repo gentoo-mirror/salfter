@@ -22,7 +22,7 @@ RDEPEND="media-libs/libsdl2
 	 media-sound/mpg123
 	 media-libs/libwebp"
 # 	 tui? ( dev-libs/sealcurses )
-
+BDEPEND="app-arch/zip"
 
 src_configure() {
 	local mycmakeargs=(
