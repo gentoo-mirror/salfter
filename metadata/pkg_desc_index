@@ -111,6 +111,5 @@ sys-firmware/brcm43455-rock-pi-x-firmware 0.0.20210309: firmware for Broadcom 43
 sys-fs/profuse 2016.08.16: read-only ProDOS and Apple Pascal filesystems for FUSE
 sys-fs/ufiformat 0.9.9: USB Floppy Disk formatting tool
 www-apps/cops 1.1.3: Calibre OPDS PHP Server
-www-misc/kiwix-desktop 2.3.1: cross-platform viewer/manager of ZIM files
 www-misc/kiwix-tools 3.7.0: collection of Kiwix related command line tools
 www-misc/libkiwix 14.0.0: Kiwix software suite core: code shared by all Kiwix ports
