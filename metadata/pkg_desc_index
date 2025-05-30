@@ -4,7 +4,7 @@ acct-user/milter 0: User for mail-filter/hashcash-milter
 acct-user/spfpolicy 0: User for net-mail/spfpolicy
 acct-user/trezord 0: User for TREZOR Bridge
 app-admin/keepass 2.53.1: A free, open source, light-weight and easy-to-use password manager
-app-arch/libzim 9.2.3: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
+app-arch/libzim 9.3.0: reference implementation for the ZIM file format, an offline storage solution for content coming from the Web
 app-arch/nufxlib 3.1.0: library for manipulating NuFX archives
 app-arch/nulib2 3.1.0: utility for manipulating NuFX archives
 app-arch/tarballize 0.0.20180904: Make tarballs of given git repository, including its submodules
@@ -26,7 +26,7 @@ dev-embedded/exomizer 3.1.2: efficient compressor for resource-constrained targe
 dev-embedded/pineflash 0.5.5: firmware updating GUI for Pinecil soldering iron
 dev-embedded/qmk 1.1.2: A program to help users work with QMK Firmware
 dev-embedded/teensy_loader_cli 2.3: Command line Teensy Loader
-dev-embedded/usbboot 2024.09.26: tool to load Raspberry Pi Compute Modules over USB
+dev-embedded/usbboot 2025.02.27: tool to load Raspberry Pi Compute Modules over USB
 dev-libs/libfmt 8.1.1-r1: Small, safe and fast formatting library
 dev-libs/sealcurses 0.0.20220609: SDL Emulation and Adaptation Layer for Curses
 dev-libs/spdlog 1.10.0: Fast C++ logging library
@@ -48,7 +48,7 @@ dev-python/pymeta3 0.5.1: a fork of PyMeta 0.5.0 that supports Python 2 and 3
 dev-python/pyquaternion 0.9.9: A fully featured, pythonic library for quaternion representation, manipulation, 3D animation and geometry
 dev-python/pytaglib 2.1.0: cross-platform, Python audio metadata library based on TagLib
 dev-python/python-nmap 0.7.1: use nmap from Python
-dev-python/python-trezor 0.13.9: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
+dev-python/python-trezor 0.13.10: Client side implementation for TREZOR-compatible Bitcoin hardware wallets
 dev-python/qmk-dotty-dict 1.3.1: Dictionary wrapper for quick access to deeply nested keys
 dev-python/spinners 0.0.24: Spinners for terminals
 dev-util/cpp-utilities 5.24.5: Common C++ classes and routines used by my applications such as argument parser, IO and conversion utilities
@@ -82,7 +82,7 @@ net-news/trn 4.0-r7720221204: threaded news reader
 net-p2p/trezord-go 2.0.33-r1: TREZOR Communication Daemon
 net-vpn/pia-wg 0.0.20230704: Private Internet Access WireGuard configurator
 net-wireless/linux-wifi-hotspot 4.7.2: Feature-rich wifi hotspot creator for Linux which provides both GUI and command-line interface
-net-wireless/rtlsdr-airband 5.0.12: converts analog broadcast radio to audio streams
+net-wireless/rtlsdr-airband 5.1.1: converts analog broadcast radio to audio streams
 sci-electronics/altium2kicad 0.0.20230603: Altium to KiCad converter for PCB and schematics
 sci-electronics/amaranth 0.5.6: A refreshed Python toolbox for building complex digital hardware
 sci-electronics/amaranth-boards 0.1_alpha20250329: Amaranth boards and connectors
@@ -93,7 +93,7 @@ sci-electronics/ecpprog 0.0.20241107: A basic driver for FTDI based JTAG probes 
 sci-electronics/icestorm 0.0.20250331: reverse-engineered tools for Lattice iCE40 FPGAs
 sci-electronics/kicost 1.1.20: generate part-cost spreadsheets for circuit boards developed with KiCad
 sci-electronics/kicost-digikey-api-v3 0.1.3: experimental plug-in to allow KiCost to do native Digi-Key API requests
-sci-electronics/kikit 1.6.0: Automation for KiCad
+sci-electronics/kikit 1.7.2: Automation for KiCad
 sci-electronics/minipro 0.7: A free and open TL866XX programmer
 sci-electronics/nextpnr 0.8: portable FPGA place and route tool
 sci-electronics/pcbnewTransition 0.5.2: support KiCad 5-7 in your plugins
@@ -103,7 +103,7 @@ sci-electronics/pyvcd 0.4.1: writes Value Change Dump (VCD) files as specified i
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
 sci-electronics/yosys 0.53 9999: framework for Verilog RTL synthesis
 sci-libs/euclid3 0.2.0: vector, matrix, quaternion and some geometry in 2D and 3D for Python 3
-sci-libs/solidpython2 2.1.0: OpenSCAD for Python
+sci-libs/solidpython2 2.1.1: OpenSCAD for Python
 sci-libs/solidpython2-legacy 0.1.1: legacy SolidPython utils ported to SolidPython 2
 sys-apps/fw-ectool 0.0.20221203: EC manipulation tool for the Framework Laptop
 sys-firmware/brcm43455-rock-pi-x-firmware 0.0.20210309: firmware for Broadcom 43455 WiFi/Bluetooth on Rock Pi X
