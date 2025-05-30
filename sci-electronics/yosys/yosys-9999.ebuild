@@ -13,7 +13,7 @@ PATCHES=( $FILESDIR/$PN-makefile.patch )
 DEPEND="dev-vcs/git
 	media-gfx/xdot
 	dev-libs/boost
-	sys-devel/clang"
+	dev-lang/tcl"
 
 src_compile() 
 {
