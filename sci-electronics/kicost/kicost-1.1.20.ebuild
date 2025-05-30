@@ -1,6 +1,7 @@
 EAPI=8
 PYTHON_COMPAT=( python3_{8..13} ) 
 
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
 DESCRIPTION="generate part-cost spreadsheets for circuit boards developed with KiCad"
