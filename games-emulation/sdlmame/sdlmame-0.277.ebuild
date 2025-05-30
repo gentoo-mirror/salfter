@@ -31,7 +31,6 @@ RDEPEND="dev-db/sqlite:3
 		  dev-qt/qtwidgets:5 )
 	 x11-libs/libX11
 	 x11-libs/libXinerama
-	 dev-cpp/asio
 	 dev-libs/libutf8proc
 	 media-libs/glm
 	 dev-libs/rapidjson
@@ -58,7 +57,6 @@ pkg_setup() {
 src_prepare() {
 	default
 	# Disable using bundled libraries
-	enable_feature USE_SYSTEM_LIB_ASIO
 	enable_feature USE_SYSTEM_LIB_UTF8PROC
 	enable_feature USE_SYSTEM_LIB_GLM
 	enable_feature USE_SYSTEM_LIB_RAPIDJSON
