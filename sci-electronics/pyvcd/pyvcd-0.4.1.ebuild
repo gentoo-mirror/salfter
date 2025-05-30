@@ -1,6 +1,7 @@
 EAPI=8
 PYTHON_COMPAT=( python3_{8..13} pypy3 )
 
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
 DESCRIPTION="writes Value Change Dump (VCD) files as specified in IEEE 1364-2005"

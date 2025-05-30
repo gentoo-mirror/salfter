@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=sys-libs/db || ( mail-filter/libmilter mail-mta/sendmail ) acct-user/milter acct-group/milter
 SLOT=0
 SRC_URI=http://althenia.net/files/hashcash-milter-0.1.3.tar.gz
-_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a
+_eclasses_=flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169
 _md5_=16fbd0ff576c57a16d84ebf6dfc66dd6
