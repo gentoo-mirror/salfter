@@ -1,12 +1,11 @@
 EAPI=8
 
-inherit cmake
-
-S=$WORKDIR/nextpnr-$P
+inherit cmake git-r3
 
 DESCRIPTION="portable FPGA place and route tool"
 HOMEPAGE="https://github.com/YosysHQ/nextpnr"
-SRC_URI="https://github.com/YosysHQ/nextpnr/archive/$P.tar.gz"
+EGIT_REPO_URI="https://github.com/YosysHQ/nextpnr/"
+EGIT_COMMIT=$PN-$PV
 LICENSE=ISC
 SLOT=0
 KEYWORDS="amd64"
@@ -22,11 +21,6 @@ DEPEND="ice40? ( sci-electronics/icestorm )
                virtual/opengl )
 	dev-libs/boost
 	dev-cpp/eigen"
-
-src_unpack() {
-	unpack $P.tar.gz
-	rmdir $S/3rdparty/fpga-interchange-schema # $S/3rdparty/abseil-cpp
-}
 
 src_configure() {
 	local mycmakeargs=(
