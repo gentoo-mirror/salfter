@@ -10,5 +10,5 @@ LICENSE=GPL-3
 RDEPEND=>=app-text/tesseract-2.04-r1 >=virtual/ffmpeg-0.6.90
 SLOT=0
 SRC_URI=https://github.com/ruediger/VobSub2SRT/archive/v1.0pre7.tar.gz -> vobsub2srt-1.0_alpha7.tar.gz
-_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	90d8ee8393c5c815637fd3cb87828c9b
+_eclasses_=cmake	90d8ee8393c5c815637fd3cb87828c9b	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	xdg-utils	42869b3c8d86a70ef3cf75165a395e09
 _md5_=20ec3710cd3e3c3508a8645c3f96c973
