@@ -6,8 +6,9 @@ EAPI=8
 inherit desktop toolchain-funcs xdg
 
 DESCRIPTION="Tool for creating error correction data (ecc) for optical media (DVD, CD, BD)"
-HOMEPAGE="http://dvdisaster.jcea.es/"
-SRC_URI="http://dvdisaster.jcea.es/downloads/${P}.tar.bz2"
+HOMEPAGE="https://github.com/speed47/dvdisaster/"
+SRC_URI="https://github.com/speed47/dvdisaster/archive/refs/tags/v0.79.10-pl5.tar.gz -> $P.tar.gz"
+S=$WORKDIR/$PN-0.79.10-pl5
 
 LICENSE="GPL-3+"
 SLOT="0"
@@ -23,7 +24,7 @@ unset dvdi_lang
 RDEPEND="
 	dev-libs/glib:2
 	x11-libs/gdk-pixbuf
-	x11-libs/gtk+:2
+	x11-libs/gtk+:3
 	nls? ( virtual/libintl )"
 DEPEND="${RDEPEND}"
 BDEPEND="
