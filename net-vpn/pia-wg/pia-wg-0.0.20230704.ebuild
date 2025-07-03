@@ -1,6 +1,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..13} )
+DISTUTILS_USE_PEP517=no
 GIT_COMMIT=be3106985604af14582f0b1fd1c8b5559cc640ba
 
 inherit distutils-r1
@@ -8,7 +9,6 @@ inherit distutils-r1
 DESCRIPTION="Private Internet Access WireGuard configurator"
 HOMEPAGE="https://github.com/jauderho/pia-wg"
 SRC_URI="https://github.com/jauderho/$PN/archive/$GIT_COMMIT.tar.gz -> $P.tar.gz"
-DISTUTILS_USE_PEP517=no
 S=$WORKDIR/$PN-$GIT_COMMIT
 
 PATCHES="$FILESDIR/$PN-hashbang.patch"
