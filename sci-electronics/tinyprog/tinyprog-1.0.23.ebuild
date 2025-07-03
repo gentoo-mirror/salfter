@@ -1,6 +1,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..13} )
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
 GIT_COMMIT=0b70c51b8a3fa6b4b2ce4f8d31435ec80d0c8a3f
@@ -8,7 +9,6 @@ GIT_COMMIT=0b70c51b8a3fa6b4b2ce4f8d31435ec80d0c8a3f
 DESCRIPTION="Programmer for FPGA boards using the TinyFPGA USB Bootloader"
 HOMEPAGE="https://github.com/tinyfpga/TinyFPGA-Bootloader/"
 SRC_URI="https://github.com/tinyfpga/TinyFPGA-Bootloader/archive/$GIT_COMMIT.tar.gz -> ${P}.tar.gz"
-DISTUTILS_USE_PEP517=setuptools
 
 LICENSE="GPL-2"
 SLOT="0"

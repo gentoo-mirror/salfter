@@ -1,11 +1,11 @@
 EAPI=8
 PYTHON_COMPAT=( python3_{8..13} pypy3 ) 
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1 pypi
 
 DESCRIPTION="A program to help users work with QMK Firmware"
 HOMEPAGE="https://github.com/qmk/qmk_cli"
-DISTUTILS_USE_PEP517=setuptools
 
 LICENSE="MIT"
 SLOT="0"

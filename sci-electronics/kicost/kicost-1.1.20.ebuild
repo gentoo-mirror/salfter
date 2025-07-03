@@ -8,7 +8,6 @@ DESCRIPTION="generate part-cost spreadsheets for circuit boards developed with K
 HOMEPAGE="https://github.com/hildogjr/KiCost"
 SRC_URI="https://github.com/hildogjr/KiCost/archive/refs/tags/v$PV.tar.gz -> $P.tar.gz"
 S=$WORKDIR/KiCost-$PV
-DISTUTILS_USE_PEP517=setuptools
 
 LICENSE=MIT
 SLOT=0

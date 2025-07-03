@@ -1,13 +1,13 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..13} )
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 git-r3
 
 DESCRIPTION="Programmer for FPGA boards using the TinyFPGA USB Bootloader"
 HOMEPAGE="https://github.com/tinyfpga/TinyFPGA-Bootloader/"
 EGIT_REPO_URI="https://github.com/tinyfpga/TinyFPGA-Bootloader"
 S=$WORKDIR/$P/programmer
-DISTUTILS_USE_PEP517=setuptools
 
 LICENSE="GPL-2"
 SLOT="0"
