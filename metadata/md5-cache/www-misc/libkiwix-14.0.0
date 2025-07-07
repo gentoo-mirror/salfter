@@ -10,5 +10,5 @@ LICENSE=GPL-3
 RDEPEND=net-misc/aria2[bittorrent,metalink,xmlrpc]
 SLOT=0
 SRC_URI=https://github.com/kiwix/libkiwix/archive/14.0.0.tar.gz -> libkiwix-14.0.0.tar.gz
-_eclasses_=toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	5ffe8ec396a751540949b565de0f048c	meson	99466844dd8d4fcfb07578a76f5a9922
+_eclasses_=flag-o-matic	a7afe42e95fb46ce9691605acfb24672	meson	99466844dd8d4fcfb07578a76f5a9922	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	5ffe8ec396a751540949b565de0f048c	toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772
 _md5_=de13c739aaf28ceff1c57c56e577e76a
