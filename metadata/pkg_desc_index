@@ -104,7 +104,7 @@ sci-electronics/pyvcd 0.4.1: writes Value Change Dump (VCD) files as specified i
 sci-electronics/tinyprog 1.0.23 9999: Programmer for FPGA boards using the TinyFPGA USB Bootloader
 sci-electronics/yosys 0.55 9999: framework for Verilog RTL synthesis
 sci-libs/euclid3 0.2.0: vector, matrix, quaternion and some geometry in 2D and 3D for Python 3
-sci-libs/solidpython2 2.1.1: OpenSCAD for Python
+sci-libs/solidpython2 2.1.2: OpenSCAD for Python
 sci-libs/solidpython2-legacy 0.1.1: legacy SolidPython utils ported to SolidPython 2
 sys-apps/fw-ectool 0.0.20221203: EC manipulation tool for the Framework Laptop
 sys-firmware/brcm43455-rock-pi-x-firmware 0.0.20210309: firmware for Broadcom 43455 WiFi/Bluetooth on Rock Pi X
