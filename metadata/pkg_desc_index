@@ -84,7 +84,7 @@ net-vpn/pia-wg 0.0.20230704: Private Internet Access WireGuard configurator
 net-wireless/linux-wifi-hotspot 4.7.2: Feature-rich wifi hotspot creator for Linux which provides both GUI and command-line interface
 net-wireless/rtlsdr-airband 5.1.1: converts analog broadcast radio to audio streams
 sci-electronics/altium2kicad 0.0.20230603: Altium to KiCad converter for PCB and schematics
-sci-electronics/amaranth 0.5.6: A refreshed Python toolbox for building complex digital hardware
+sci-electronics/amaranth 0.5.7: A refreshed Python toolbox for building complex digital hardware
 sci-electronics/amaranth-boards 0.1_alpha20250329: Amaranth boards and connectors
 sci-electronics/amaranth-soc 0.1_alpha20241012: System on Chip toolkit for Amaranth
 sci-electronics/apicula 0.21: documentation and tools for the Gowin FPGA bitstream format
