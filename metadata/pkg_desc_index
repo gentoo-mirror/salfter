@@ -26,7 +26,6 @@ dev-embedded/qmk 1.1.2: A program to help users work with QMK Firmware
 dev-embedded/rpi-imager 1.9.6: Raspberry Pi Imaging Utility
 dev-embedded/teensy_loader_cli 2.3: Command line Teensy Loader
 dev-embedded/usbboot 2025.02.27: tool to load Raspberry Pi Compute Modules over USB
-dev-libs/libfmt 8.1.1-r1: Small, safe and fast formatting library
 dev-libs/sealcurses 0.0.20220609: SDL Emulation and Adaptation Layer for Curses
 dev-libs/spdlog 1.10.0: Fast C++ logging library
 dev-libs/the_foundation 1.4.0: an object-oriented C library whose API is designed for a particular coding style, taking cues from C++ STL and Qt
