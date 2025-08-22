@@ -29,7 +29,7 @@ dev-embedded/usbboot 2025.02.27: tool to load Raspberry Pi Compute Modules over 
 dev-libs/libfmt 8.1.1-r1: Small, safe and fast formatting library
 dev-libs/sealcurses 0.0.20220609: SDL Emulation and Adaptation Layer for Curses
 dev-libs/spdlog 1.10.0: Fast C++ logging library
-dev-libs/the_foundation 1.4.0: an object-oriented C library whose API is designed for a particular coding style, taking cues from C++ STL and Qt
+dev-libs/the_foundation 1.9.1: an object-oriented C library whose API is designed for a particular coding style, taking cues from C++ STL and Qt
 dev-perl/App-XML-DocBook-Builder 0.1101: build DocBook/XML files
 dev-perl/Math-Geometry-Planar 1.18: A collection of planar geometry functions
 dev-perl/Math-Geometry-Planar-GPC 1.04: Perl wrapper for Alan Murta's gpc library
@@ -53,7 +53,7 @@ dev-python/spinners 0.0.24: Spinners for terminals
 dev-util/cpp-utilities 5.24.5: Common C++ classes and routines used by my applications such as argument parser, IO and conversion utilities
 games-emulation/sdlmame 0.279: Multiple Arcade Machine Emulator + Multi Emulator Super System (MESS)
 games-misc/fortune-mod 3.24.0: The notorious fortune program
-gemini-client/lagrange 1.18.7: desktop GUI (and optional TUI) client for browsing Geminispace
+gemini-client/lagrange 1.18.8: desktop GUI (and optional TUI) client for browsing Geminispace
 mail-filter/hashcash-milter 0.1.3-r2: A milter-based application to mint and check HashCash stamps
 media-gfx/iscan-data 1.39.0.1: Image Scan! for Linux data files
 media-gfx/meshconv-bin 1.29: 3D model converter
