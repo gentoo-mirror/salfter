@@ -2,7 +2,7 @@ EAPI=8
 
 inherit cmake git-r3
 
-GIT_COMMIT=f98e72e4963d9c9da57620595282e58d46a045f7
+GIT_COMMIT=92345b77edf775fe5668700dd9931e19db2d36b0
 S=$WORKDIR/$P/libtrellis
 
 DESCRIPTION="reverse-engineered tools for Lattice ECP5 FPGAs"
